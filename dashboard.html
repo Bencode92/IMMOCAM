@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IMMOCAM</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 :root{
@@ -122,6 +124,16 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 .sim-row .sk{color:var(--text3)}.sim-row .sv{color:var(--text);font-weight:500}
 .sim-total{border-top:1px solid var(--border);margin-top:.3rem;padding-top:.35rem}
 
+/* MAP */
+.map-wrap{display:none;flex:1;position:relative}
+#mapView{width:100%;height:100%;min-height:70vh}
+.map-popup h4{font-size:.85rem;margin-bottom:.4rem;color:#1c1917}
+.map-popup .mp-row{display:flex;justify-content:space-between;font-size:.78rem;padding:.1rem 0}
+.map-popup .mp-k{color:#78716c}.map-popup .mp-v{font-weight:500}
+.map-popup .mp-grade{display:inline-block;padding:.1rem .4rem;border-radius:4px;font-size:.72rem;font-weight:700}
+.map-popup .mp-btn{display:block;margin-top:.5rem;padding:.35rem;background:#1e3a5f;color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;text-align:center;width:100%}
+.leaflet-popup-content{margin:10px 14px;min-width:200px}
+
 .empty{text-align:center;padding:3rem;color:var(--text3);font-size:.82rem}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -134,6 +146,7 @@ a:hover{text-decoration:underline}
   <nav>
     <button class="active" data-view="kanban">Kanban</button>
     <button data-view="tableau">Tableau</button>
+    <button data-view="carte">Carte</button>
   </nav>
   <div class="meta">
     <span><span class="dot" style="background:var(--green)"></span><span id="sNew">0</span> nouveaux</span>
@@ -164,6 +177,7 @@ a:hover{text-decoration:underline}
     <div class="kanban-col col-simulation"><div class="col-label">Simulation <span class="cnt" id="cS">0</span></div><div id="colS"></div></div>
   </div>
   <div class="tbl-wrap" id="viewTableau"><table><thead id="tH"></thead><tbody id="tB"></tbody></table></div>
+  <div class="map-wrap" id="viewCarte"><div id="mapView"></div></div>
 </div>
 
 <div class="overlay" id="ov"></div>
@@ -291,7 +305,9 @@ document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()
   view=b.dataset.view;
   document.getElementById("viewKanban").style.display=view==="kanban"?"grid":"none";
   document.getElementById("viewTableau").style.display=view==="tableau"?"block":"none";
+  document.getElementById("viewCarte").style.display=view==="carte"?"block":"none";
   render();
+  if(view==="carte")renderMap(filtered());
 }));
 
 function render(){
@@ -443,6 +459,109 @@ document.getElementById("dwContact").addEventListener("click",()=>{if(curKey){se
 document.getElementById("dwSim").addEventListener("click",()=>{if(curKey){setSt(curKey,"simulation");closeDw();}});
 
 window.setSt=(k,s)=>{if(D[k]){D[k]._statut=s;render();}};
+
+// ===================================================================
+// MAP — Leaflet + Nominatim geocoding
+// ===================================================================
+let map=null, markers=[], geocodeCache={};
+
+function initMap(){
+  if(map) return;
+  map=L.map("mapView").setView([48.8566,2.3522],11);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
+    attribution:'&copy; OpenStreetMap',maxZoom:19
+  }).addTo(map);
+}
+
+function gradeColor(g){return g==="A"?"#16a34a":g==="B"?"#b45309":g==="C"?"#dc2626":"#a8a29e";}
+
+function makeIcon(grade){
+  const c=gradeColor(grade);
+  return L.divIcon({
+    className:"",
+    html:`<div style="width:28px;height:28px;border-radius:50%;background:${c};border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700">${grade||"?"}</div>`,
+    iconSize:[28,28],iconAnchor:[14,14],popupAnchor:[0,-16]
+  });
+}
+
+async function geocode(addr,commune){
+  const q=(addr?addr+", ":"")+commune+", France";
+  if(geocodeCache[q]) return geocodeCache[q];
+  try{
+    const r=await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&limit=1`,{
+      headers:{"User-Agent":"IMMOCAM/1.0"}
+    });
+    if(r.ok){
+      const data=await r.json();
+      if(data.length>0){
+        const res={lat:parseFloat(data[0].lat),lng:parseFloat(data[0].lon)};
+        geocodeCache[q]=res;
+        return res;
+      }
+    }
+  }catch(e){}
+  // Fallback: geocoder juste la commune
+  if(addr){
+    return geocode("",commune);
+  }
+  return null;
+}
+
+async function renderMap(deals){
+  initMap();
+  // Clear markers
+  markers.forEach(m=>map.removeLayer(m));
+  markers=[];
+
+  const bounds=[];
+  let geocoded=0;
+
+  for(const[k,d]of deals){
+    if(d._statut==="poubelle") continue;
+    const loc=d.localisation||{};
+    const fin=d.financier||{};
+    const bien=d.bien||{};
+    const s=d.scoring||{};
+
+    // Check si deja geocode (lat/lng en cache ou dans le deal)
+    let pos=null;
+    if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};}
+    else{
+      pos=await geocode(loc.adresse,loc.commune);
+      if(pos){d._lat=pos.lat;d._lng=pos.lng;}
+      geocoded++;
+      // Rate limit Nominatim: 1 req/sec
+      if(geocoded%1===0) await new Promise(r=>setTimeout(r,1100));
+    }
+
+    if(!pos) continue;
+    bounds.push([pos.lat,pos.lng]);
+
+    const grade=s.grade||"?";
+    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(grade)}).addTo(map);
+
+    const ec=s.prix_vs_marche_pct;
+    const ecStr=ec!=null?(ec>0?"+":"")+ec.toFixed(1)+"%":"—";
+    const ecCol=ec!=null?(ec<=-20?"#16a34a":ec<=0?"#b45309":"#dc2626"):"#a8a29e";
+
+    marker.bindPopup(`
+      <div class="map-popup">
+        <h4>${bien.surface_m2||"?"}m\u00B2 — ${loc.commune||"?"}</h4>
+        <div class="mp-row"><span class="mp-k">Adresse</span><span class="mp-v">${loc.adresse||"—"}</span></div>
+        <div class="mp-row"><span class="mp-k">Prix</span><span class="mp-v">${fin.prix_affiche?(fin.prix_affiche/1e6).toFixed(2)+"M\u20AC":"—"}</span></div>
+        <div class="mp-row"><span class="mp-k">\u20AC/m\u00B2</span><span class="mp-v">${fin.prix_m2?fin.prix_m2.toLocaleString("fr"):"—"}</span></div>
+        <div class="mp-row"><span class="mp-k">vs March\u00E9</span><span class="mp-v" style="color:${ecCol}">${ecStr}</span></div>
+        <div class="mp-row"><span class="mp-k">DPE</span><span class="mp-v">${bien.dpe||"—"}</span></div>
+        <div class="mp-row"><span class="mp-k">Score</span><span class="mp-grade" style="background:${gradeColor(grade)}22;color:${gradeColor(grade)}">${grade} (${s.score_global||0})</span></div>
+        <button class="mp-btn" onclick="openDw('${k}')">Voir le detail</button>
+      </div>
+    `);
+
+    markers.push(marker);
+  }
+
+  if(bounds.length>0) map.fitBounds(bounds,{padding:[30,30]});
+}
 
 init();
 </script>
