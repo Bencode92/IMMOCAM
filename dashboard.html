@@ -467,29 +467,50 @@ let map=null, markers=[], geocodeCache={};
 
 function initMap(){
   if(map) return;
-  map=L.map("mapView").setView([48.8566,2.3522],11);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
-    attribution:'&copy; OpenStreetMap',maxZoom:19
+  map=L.map("mapView",{zoomControl:false}).setView([48.86,2.34],12);
+  // CartoDB Positron — carte epuree, pro
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{
+    attribution:'&copy; OSM &copy; CARTO',maxZoom:19,subdomains:'abcd'
   }).addTo(map);
+  L.control.zoom({position:'bottomleft'}).addTo(map);
 }
 
 function surfColor(s){return s<300?"#dc2626":s<=700?"#16a34a":"#3b82f6";}
 
-function makeIcon(surf){
+function makeIcon(surf,prix){
   const c=surfColor(surf);
-  const label=surf?Math.round(surf)+"":"?";
+  const pLabel=prix?(prix/1e6).toFixed(1)+"M":"?";
   return L.divIcon({
     className:"",
-    html:`<div style="min-width:36px;padding:2px 6px;border-radius:14px;background:${c};border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3);color:#fff;font-size:10px;font-weight:700;text-align:center;white-space:nowrap">${label}m\u00B2</div>`,
-    iconSize:[44,24],iconAnchor:[22,12],popupAnchor:[0,-14]
+    html:`<div style="min-width:52px;padding:5px 10px;border-radius:20px;background:${c};border:3px solid #fff;box-shadow:0 3px 12px rgba(0,0,0,.35);color:#fff;font-size:13px;font-weight:700;text-align:center;white-space:nowrap;cursor:pointer;line-height:1.2">${pLabel}<div style="font-size:9px;font-weight:500;opacity:.85">${Math.round(surf)}m\u00B2</div></div>`,
+    iconSize:[60,38],iconAnchor:[30,19],popupAnchor:[0,-22]
   });
 }
 
+// Coordonnees communes IDF courantes (evite geocoding)
+const COMMUNE_COORDS={"Paris 1er":{"lat":48.86,"lng":2.34},"Paris 2e":{"lat":48.87,"lng":2.34},"Paris 3e":{"lat":48.866,"lng":2.36},"Paris 4e":{"lat":48.855,"lng":2.355},"Paris 5e":{"lat":48.846,"lng":2.35},"Paris 6e":{"lat":48.85,"lng":2.33},"Paris 7e":{"lat":48.858,"lng":2.315},"Paris 8e":{"lat":48.875,"lng":2.31},"Paris 9e":{"lat":48.877,"lng":2.34},"Paris 10e":{"lat":48.876,"lng":2.36},"Paris 11e":{"lat":48.86,"lng":2.38},"Paris 12e":{"lat":48.84,"lng":2.39},"Paris 13e":{"lat":48.83,"lng":2.36},"Paris 14e":{"lat":48.83,"lng":2.33},"Paris 15e":{"lat":48.84,"lng":2.30},"Paris 16e":{"lat":48.86,"lng":2.27},"Paris 17e":{"lat":48.887,"lng":2.31},"Paris 18e":{"lat":48.892,"lng":2.35},"Paris 19e":{"lat":48.884,"lng":2.38},"Paris 20e":{"lat":48.865,"lng":2.40},
+"Boulogne-Billancourt":{"lat":48.835,"lng":2.24},"Issy-les-Moulineaux":{"lat":48.824,"lng":2.27},"Levallois-Perret":{"lat":48.895,"lng":2.29},"Neuilly-sur-Seine":{"lat":48.885,"lng":2.27},"Clichy":{"lat":48.904,"lng":2.31},"Montrouge":{"lat":48.818,"lng":2.32},"Courbevoie":{"lat":48.897,"lng":2.26},"Puteaux":{"lat":48.885,"lng":2.24},"Nanterre":{"lat":48.892,"lng":2.21},"Rueil-Malmaison":{"lat":48.878,"lng":2.18},"Saint-Denis":{"lat":48.936,"lng":2.36},"Montreuil":{"lat":48.863,"lng":2.44},"Aubervilliers":{"lat":48.917,"lng":2.38},"Pantin":{"lat":48.895,"lng":2.40},"Ivry-sur-Seine":{"lat":48.812,"lng":2.39},"Vitry-sur-Seine":{"lat":48.788,"lng":2.39},"Cr\u00e9teil":{"lat":48.79,"lng":2.46},"Suresnes":{"lat":48.87,"lng":2.22},"Malakoff":{"lat":48.82,"lng":2.30},"Vanves":{"lat":48.82,"lng":2.29},"Clamart":{"lat":48.80,"lng":2.26},"Colombes":{"lat":48.92,"lng":2.25},"Asni\u00e8res-sur-Seine":{"lat":48.91,"lng":2.29},"Fontenay-sous-Bois":{"lat":48.85,"lng":2.48},"Nogent-sur-Marne":{"lat":48.84,"lng":2.48},"Vincennes":{"lat":48.85,"lng":2.44},"Saint-Ouen-sur-Seine":{"lat":48.91,"lng":2.33},"Bagnolet":{"lat":48.87,"lng":2.42},"Noisy-le-Grand":{"lat":48.85,"lng":2.56}};
+
+function communeKey(commune){
+  if(!commune)return null;
+  // Matcher "Paris" + arrondissement
+  const m=commune.match(/paris.*?(\d+)/i);
+  if(m)return "Paris "+parseInt(m[1])+"e";
+  return commune;
+}
+
 async function geocode(addr,commune){
+  // 1) Check cache commune rapide
+  const ck=communeKey(commune);
+  if(ck&&COMMUNE_COORDS[ck]) return COMMUNE_COORDS[ck];
+
+  // 2) Check cache geocode
   const q=(addr?addr+", ":"")+commune+", France";
   if(geocodeCache[q]) return geocodeCache[q];
+
+  // 3) Nominatim
   try{
-    const r=await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&limit=1`,{
+    const r=await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&limit=1&countrycodes=fr`,{
       headers:{"User-Agent":"IMMOCAM/1.0"}
     });
     if(r.ok){
@@ -501,10 +522,8 @@ async function geocode(addr,commune){
       }
     }
   }catch(e){}
-  // Fallback: geocoder juste la commune
-  if(addr){
-    return geocode("",commune);
-  }
+  // Fallback commune seule
+  if(addr) return geocode("",commune);
   return null;
 }
 
@@ -524,23 +543,25 @@ async function renderMap(deals){
     const bien=d.bien||{};
     const s=d.scoring||{};
 
-    // Check si deja geocode (lat/lng en cache ou dans le deal)
     let pos=null;
     if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};}
     else{
-      pos=await geocode(loc.adresse,loc.commune);
+      // Check cache commune rapide (pas de requete reseau)
+      const ck=communeKey(loc.commune);
+      if(ck&&COMMUNE_COORDS[ck]){
+        pos=COMMUNE_COORDS[ck];
+      }else{
+        pos=await geocode(loc.adresse,loc.commune);
+        geocoded++;
+        await new Promise(r=>setTimeout(r,1100)); // Rate limit Nominatim
+      }
       if(pos){d._lat=pos.lat;d._lng=pos.lng;}
-      geocoded++;
-      // Rate limit Nominatim: 1 req/sec
-      if(geocoded%1===0) await new Promise(r=>setTimeout(r,1100));
     }
 
     if(!pos) continue;
     bounds.push([pos.lat,pos.lng]);
-
-    const grade=s.grade||"?";
     const surf=bien.surface_m2||0;
-    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf)}).addTo(map);
+    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf,fin.prix_affiche)}).addTo(map);
 
     const prixStr=fin.prix_affiche?(fin.prix_affiche/1e6).toFixed(2)+"M\u20AC":"—";
 
