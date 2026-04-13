@@ -1,0 +1,44 @@
+name: Daily Scrape
+
+on:
+  schedule:
+    # 6h00 heure Paris (4h UTC en été, 5h UTC en hiver)
+    - cron: '0 4 * * *'
+  workflow_dispatch:  # Permet de lancer manuellement depuis GitHub
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 rapidfuzz
+
+      - name: Download referentiel from DVFMAJ
+        run: |
+          curl -s -o data/referentiel_bureaux.json \
+            "https://raw.githubusercontent.com/Bencode92/DVFMAJ/main/output/referentiel_bureaux.json" || true
+
+      - name: Run scrape pipeline
+        run: |
+          python run_scrape.py \
+            --sites bureauxlocaux geolocaux investisseur-immo \
+            --depts 75 92 93 94 \
+            --surface 300 700 \
+            --prix 5000000
+
+      - name: Commit results
+        run: |
+          git config user.name "IMMOCAM Bot"
+          git config user.email "bot@immocam.local"
+          git add data/deals_db.json
+          git diff --staged --quiet || git commit -m "🔄 scrape $(date +%Y-%m-%d) — $(python3 -c "import json;d=json.load(open('data/deals_db.json'));s=d['meta']['par_statut'];print(f\"{s.get('nouveau',0)} nouveaux, {d['meta']['total_deals']} total\")")"
+          git push

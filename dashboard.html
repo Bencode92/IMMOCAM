@@ -139,7 +139,9 @@ a:hover{text-decoration:underline}
     <span><span class="dot" style="background:var(--green)"></span><span id="sNew">0</span> nouveaux</span>
     <span><span class="dot" style="background:var(--red)"></span><span id="sDrop">0</span> baisses</span>
     <span id="sTotal" style="color:var(--text2)">0 deals</span>
+    <span id="sLastScrape" style="color:var(--text3);font-size:.7rem"></span>
   </div>
+  <button id="btnSaveGH" style="padding:.4rem .9rem;border:1px solid var(--accent);background:none;color:var(--accent);border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500" title="Sauvegarder les statuts sur GitHub">Sauver</button>
 </header>
 
 <div class="filter-bar">
@@ -182,12 +184,51 @@ const RAW="https://raw.githubusercontent.com/"+REPO+"/main";
 const RAW_D="https://raw.githubusercontent.com/"+DVFMAJ+"/main";
 let D={},REF=null,curKey=null,view="kanban",tCol=null,tAsc=true;
 
+let DB_META = {};
+const WORKER = "https://studyforge-proxy.benoit-comas.workers.dev";
+
 async function init(){
-  try{const r=await fetch(RAW+"/data/deals_db.json");if(r.ok){const j=await r.json();D=j.deals||{};}}catch(e){}
+  try{
+    const r=await fetch(RAW+"/data/deals_db.json");
+    if(r.ok){const j=await r.json();D=j.deals||{};DB_META=j.meta||{};}
+  }catch(e){}
   try{const r=await fetch(RAW_D+"/output/referentiel_bureaux.json");if(r.ok)REF=await r.json();}catch(e){}
   if(!Object.keys(D).length)loadDemo();
+
+  // Afficher date dernier scrape
+  if(DB_META.last_scrape){
+    const d=new Date(DB_META.last_scrape);
+    document.getElementById("sLastScrape").textContent="Dernier scrape: "+d.toLocaleDateString("fr")+" "+d.toLocaleTimeString("fr",{hour:"2-digit",minute:"2-digit"});
+  }
+
   popFilters();render();
 }
+
+// Sauver statuts sur GitHub via Worker proxy
+document.getElementById("btnSaveGH").addEventListener("click", async ()=>{
+  const btn=document.getElementById("btnSaveGH");
+  btn.textContent="Sauvegarde...";btn.disabled=true;
+  try{
+    // Rebuild DB
+    const db={meta:{last_scrape:DB_META.last_scrape||new Date().toISOString(),total_deals:Object.keys(D).length,par_statut:{}},deals:D};
+    for(const d of Object.values(D)){const s=d._statut||"nouveau";db.meta.par_statut[s]=(db.meta.par_statut[s]||0)+1;}
+
+    // Get current SHA
+    let sha=null;
+    try{const r=await fetch(`${WORKER}/github/${REPO}/contents/data/deals_db.json?ref=main`);if(r.ok){sha=(await r.json()).sha;}}catch(e){}
+
+    const content=btoa(unescape(encodeURIComponent(JSON.stringify(db,null,2))));
+    const body={message:"dashboard: update statuts "+new Date().toISOString().split("T")[0],content,branch:"main"};
+    if(sha)body.sha=sha;
+
+    const r=await fetch(`${WORKER}/github/${REPO}/contents/data/deals_db.json`,{
+      method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)
+    });
+    if(r.ok){btn.textContent="Sauve !";btn.style.color="var(--green)";btn.style.borderColor="var(--green)";}
+    else{const e=await r.json().catch(()=>({}));throw new Error(e.message||"HTTP "+r.status);}
+  }catch(e){btn.textContent="Erreur";btn.style.color="var(--red)";btn.style.borderColor="var(--red)";console.error(e);}
+  setTimeout(()=>{btn.textContent="Sauver";btn.disabled=false;btn.style.color="var(--accent)";btn.style.borderColor="var(--accent)";},3000);
+});
 
 function loadDemo(){
   const ds=[
