@@ -765,12 +765,10 @@ function initMap(){
   }).addTo(map);
   L.control.zoom({position:'bottomleft'}).addTo(map);
   map.on('zoomend',function(){renderPOI()});
-  // Charger les lignes de metro RATP (GeoJSON open data)
-  fetch("https://data.ratp.fr/api/explore/v2.1/catalog/datasets/traces-du-reseau-ferre-idf/exports/geojson?limit=-1&refine=mode%3A%22Metro%22").then(function(r){return r.ok?r.json():null}).then(function(gj){
-    if(!gj)return;
-    var METRO_COLORS={"1":"#FFCD00","2":"#003CA6","3":"#837902","3bis":"#6EC4E8","4":"#CF009E","5":"#FF7E2E","6":"#6ECA97","7":"#FA9ABA","7bis":"#6ECA97","8":"#E19BDF","9":"#B6BD00","10":"#C9910D","11":"#704B1C","12":"#007852","13":"#6EC4E8","14":"#62259D"};
-    L.geoJSON(gj,{style:function(f){var line=f.properties.res_com||f.properties.indice_lig||"";var c=METRO_COLORS[line]||"#888";return{color:c,weight:3,opacity:0.5}},onEachFeature:function(f,layer){var name=f.properties.res_com||f.properties.indice_lig||"";if(name)layer.bindTooltip("M"+name,{sticky:true,className:"",direction:"top"});}}).addTo(map);
-  }).catch(function(){});
+  // Overlay lignes de transport (OPNVKarte — transports publics OSM)
+  L.tileLayer("https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png",{
+    attribution:'&copy; OPNVKarte',maxZoom:18,opacity:0.6
+  }).addTo(map);
 }
 
 function gradeColor(g){return g==="A"?"#16a34a":g==="B"?"#1e3a5f":g==="C"?"#b45309":"#6b7280";}
