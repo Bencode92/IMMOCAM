@@ -138,6 +138,21 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 .empty{text-align:center;padding:3rem;color:var(--text3);font-size:.82rem}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
+
+/* IMPORT MODAL */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.3);backdrop-filter:blur(3px);z-index:200;display:none;align-items:center;justify-content:center}
+.modal-bg.open{display:flex}
+.modal{background:var(--surface);border-radius:16px;padding:2rem;width:600px;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.15)}
+.modal h2{font-size:1rem;font-weight:600;margin-bottom:1rem}
+.modal .step{margin-bottom:1.25rem}
+.modal .step-num{display:inline-block;width:24px;height:24px;background:var(--accent);color:#fff;border-radius:50%;text-align:center;line-height:24px;font-size:.75rem;font-weight:700;margin-right:.5rem}
+.modal .step p{font-size:.82rem;color:var(--text2);margin:.4rem 0}
+.modal code{display:block;background:var(--surface2);padding:.6rem;border-radius:8px;font-size:.7rem;color:var(--text);word-break:break-all;max-height:80px;overflow:auto;margin:.4rem 0;cursor:pointer}
+.modal code:hover{background:var(--border)}
+.modal textarea{width:100%;height:120px;background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:.6rem;border-radius:8px;font-size:.78rem;font-family:monospace;resize:vertical}
+.modal .modal-btns{display:flex;gap:.75rem;margin-top:1rem}
+.modal .modal-btns button{flex:1;padding:.6rem;border:none;border-radius:8px;font-size:.82rem;font-weight:500;cursor:pointer}
+.modal .modal-status{font-size:.82rem;margin-top:.75rem;padding:.5rem;border-radius:6px}
 </style>
 </head>
 <body>
@@ -155,6 +170,7 @@ a:hover{text-decoration:underline}
     <span id="sTotal" style="color:var(--text2)">0 deals</span>
     <span id="sLastScrape" style="color:var(--text3);font-size:.7rem"></span>
   </div>
+  <button id="btnImportLP" style="padding:.4rem .9rem;background:var(--accent);color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ LoopNet</button>
   <button id="btnSaveGH" style="padding:.4rem .9rem;border:1px solid var(--accent);background:none;color:var(--accent);border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500" title="Sauvegarder les statuts sur GitHub">Sauver</button>
 </header>
 
@@ -191,6 +207,34 @@ a:hover{text-decoration:underline}
     <button class="btn-ghost" id="dwContact" style="color:var(--blue)">Contacter</button>
     <button class="btn-primary" id="dwSim">Simuler</button>
   </div>
+</div>
+
+<!-- IMPORT LOOPNET MODAL -->
+<div class="modal-bg" id="importModal">
+<div class="modal">
+  <h2>Import LoopNet</h2>
+  <div class="step">
+    <span class="step-num">1</span><b>Ouvre LoopNet "a vendre"</b>
+    <p>Va sur la page de recherche bureaux a vendre sur LoopNet</p>
+  </div>
+  <div class="step">
+    <span class="step-num">2</span><b>Colle ce script dans la console (F12)</b>
+    <p>Clique sur le code pour le copier :</p>
+    <code id="lpScript" onclick="navigator.clipboard.writeText(this.textContent);this.style.background='#dcfce7'">var d=window._LP||[];function ex(){document.querySelectorAll("article").forEach(function(c){var t=c.innerText.replace(/\s+/g," ");var lk=c.querySelector("a");var u=lk?lk.href:"";var pM=t.match(/(\d[\d\s]+)\u20ac/);var sM=t.match(/(\d+)\s*m/);var cpM=t.match(/(\d{5})/);if(!pM)return;var prix=parseInt(pM[1].replace(/\s/g,""));var surf=sM?parseInt(sM[1]):0;var cp=cpM?cpM[1]:"";if(prix&lt;100000)return;d.push({source:"loopnet",url:u,localisation:{adresse:t.substring(0,60),code_postal:cp,commune:"Paris",departement:cp.substring(0,2)||"75"},bien:{surface_m2:surf},financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0}})});window._LP=d;console.log(d.length+" biens");var n=document.querySelector("[data-automation-id='NextPage']");if(n){n.click();setTimeout(ex,4000)}else{console.log("FINI! Tape: copy(JSON.stringify(window._LP))")}}ex()</code>
+  </div>
+  <div class="step">
+    <span class="step-num">3</span><b>Quand c'est fini, tape <code style="display:inline;padding:.2rem .4rem">copy(JSON.stringify(window._LP))</code></b>
+  </div>
+  <div class="step">
+    <span class="step-num">4</span><b>Colle le JSON ici :</b>
+    <textarea id="lpJsonInput" placeholder='Colle le JSON ici (commence par [{"source":"loopnet",...}])'></textarea>
+  </div>
+  <div class="modal-btns">
+    <button style="background:var(--surface2);color:var(--text2)" onclick="document.getElementById('importModal').classList.remove('open')">Annuler</button>
+    <button style="background:var(--accent);color:#fff" id="btnImportGo">Importer et sauver sur GitHub</button>
+  </div>
+  <div class="modal-status" id="importStatus" style="display:none"></div>
+</div>
 </div>
 
 <script>
@@ -465,6 +509,77 @@ document.getElementById("dwContact").addEventListener("click",()=>{if(curKey){se
 document.getElementById("dwSim").addEventListener("click",()=>{if(curKey){setSt(curKey,"simulation");closeDw();}});
 
 window.setSt=(k,s)=>{if(D[k]){D[k]._statut=s;render();}};
+
+// ===================================================================
+// IMPORT LOOPNET
+// ===================================================================
+document.getElementById("btnImportLP").addEventListener("click",function(){document.getElementById("importModal").classList.add("open")});
+
+document.getElementById("btnImportGo").addEventListener("click",async function(){
+  var st=document.getElementById("importStatus");
+  st.style.display="block";st.style.background="#fef3c7";st.style.color="#92400e";st.textContent="Parsing JSON...";
+
+  var raw=document.getElementById("lpJsonInput").value.trim();
+  if(!raw){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Colle le JSON d'abord";return}
+
+  try{
+    var deals=JSON.parse(raw);
+    if(!Array.isArray(deals)){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Le JSON doit etre un array [...]";return}
+
+    st.textContent=deals.length+" biens parses. Dedoublonnage...";
+
+    // Dedoublonnage par URL
+    var existingUrls=new Set();
+    for(var k in D){if(D[k].url)existingUrls.add(D[k].url)}
+
+    var added=0;
+    var today=new Date().toISOString().split("T")[0];
+    for(var i=0;i<deals.length;i++){
+      var deal=deals[i];
+      if(existingUrls.has(deal.url))continue;
+      // Generer une cle unique
+      var key="lp-"+Math.random().toString(36).substring(2,10);
+      deal._statut="nouveau";
+      deal._first_seen=today;
+      deal._last_seen=today;
+      deal._sources=["loopnet"];
+      deal._notes="";
+      deal._prix_historique=[{d:today,p:deal.financier?deal.financier.prix_affiche:0}];
+      if(!deal.annonce)deal.annonce={titre:"Bureaux "+(deal.bien?deal.bien.surface_m2:"")+String.fromCharCode(109,178)};
+      if(!deal.scoring)deal.scoring={score_global:50,grade:"?",alertes:[]};
+      D[key]=deal;
+      added++;
+    }
+
+    st.textContent=added+" nouveaux biens ajoutes ("+deals.length+" total, "+(deals.length-added)+" doublons ignores). Push GitHub...";
+
+    // Push sur GitHub
+    var db={meta:{last_scrape:new Date().toISOString(),total_deals:Object.keys(D).length,par_statut:{}},deals:D};
+    for(var k2 in D){var s2=D[k2]._statut||"nouveau";db.meta.par_statut[s2]=(db.meta.par_statut[s2]||0)+1}
+
+    var sha=null;
+    try{var r=await fetch(WORKER+"/github/"+REPO+"/contents/data/deals_db.json?ref=main");if(r.ok)sha=(await r.json()).sha}catch(e){}
+
+    var content=btoa(unescape(encodeURIComponent(JSON.stringify(db,null,2))));
+    var body={message:"import loopnet "+today+" — "+added+" nouveaux",content:content,branch:"main"};
+    if(sha)body.sha=sha;
+
+    var r2=await fetch(WORKER+"/github/"+REPO+"/contents/data/deals_db.json",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+
+    if(r2.ok){
+      st.style.background="#dcfce7";st.style.color="#15803d";
+      st.textContent="OK! "+added+" nouveaux biens importes. Total: "+Object.keys(D).length+" deals.";
+      render();
+      setTimeout(function(){document.getElementById("importModal").classList.remove("open")},3000);
+    }else{
+      var err=await r2.json().catch(function(){return{}});
+      throw new Error(err.message||"HTTP "+r2.status);
+    }
+  }catch(e){
+    st.style.background="#fee2e2";st.style.color="#b91c1c";
+    st.textContent="Erreur: "+e.message;
+  }
+});
 
 // ===================================================================
 // MAP — Leaflet + Nominatim geocoding
