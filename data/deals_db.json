@@ -2309,7 +2309,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.7809848,
+      "_lng": 2.2142566
     },
     "8f2fb697e2e2": {
       "source": "bureauxlocaux",
@@ -2373,7 +2375,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.7867656,
+      "_lng": 2.0569548
     },
     "bcc92f9e14e0": {
       "source": "bureauxlocaux",
@@ -2437,7 +2441,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.893828,
+      "_lng": 2.073413
     },
     "8f833e926c59": {
       "source": "bureauxlocaux",
@@ -2501,7 +2507,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.995389,
+      "_lng": 2.0842132
     },
     "7b5f67ec5295": {
       "source": "bureauxlocaux",
@@ -2565,7 +2573,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.7989798,
+      "_lng": 1.9547718
     },
     "a3b4893d47b5": {
       "source": "bureauxlocaux",
@@ -2629,7 +2639,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.792716,
+      "_lng": 1.979976
     },
     "21ca08f91156": {
       "source": "bureauxlocaux",
@@ -2693,7 +2705,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.6299549,
+      "_lng": 2.4073811
     },
     "38c453ea0c69": {
       "source": "bureauxlocaux",
@@ -2757,7 +2771,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.7095896,
+      "_lng": 2.2564593
     },
     "74e006cb85df": {
       "source": "bureauxlocaux",
@@ -2821,7 +2837,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.6502603,
+      "_lng": 2.4069765
     },
     "a55d2f7b5b47": {
       "source": "bureauxlocaux",
@@ -2885,7 +2903,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.6975824,
+      "_lng": 2.3009753
     },
     "2c9ac92a3bfc": {
       "source": "bureauxlocaux",
@@ -2949,7 +2969,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.6844893,
+      "_lng": 2.2036167
     },
     "2b2dfbc2b38f": {
       "source": "bureauxlocaux",
@@ -3013,7 +3035,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.6975824,
+      "_lng": 2.3009753
     },
     "68bb94a2fbd1": {
       "source": "bureauxlocaux",
@@ -3077,7 +3101,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.6296099,
+      "_lng": 2.4435959
     },
     "98f6e8fe7de7": {
       "source": "bureauxlocaux",
@@ -3141,7 +3167,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.9190542,
+      "_lng": 2.210569
     },
     "24a8ed604dfa": {
       "source": "bureauxlocaux",
@@ -3205,7 +3233,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 49.0506684,
+      "_lng": 2.0415357
     },
     "e2d8b20fbd47": {
       "source": "bureauxlocaux",
@@ -3269,7 +3299,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 49.0450571,
+      "_lng": 2.1263007
     },
     "0b3c0ac077d7": {
       "source": "bureauxlocaux",
@@ -3333,7 +3365,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 49.0831701,
+      "_lng": 2.0268915
     },
     "dae05983b6c4": {
       "source": "bureauxlocaux",
@@ -3397,7 +3431,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 49.0380632,
+      "_lng": 2.3581717
     },
     "f773555c3fb9": {
       "source": "bureauxlocaux",
@@ -3461,7 +3497,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.8361362,
+      "_lng": 2.5859435
     },
     "0ab75d2bce2b": {
       "source": "bureauxlocaux",
@@ -3525,7 +3563,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.8303964,
+      "_lng": 2.6303743
     },
     "57671689ea99": {
       "source": "bureauxlocaux",
@@ -3589,7 +3629,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.8253213,
+      "_lng": 2.7170474
     },
     "3b53b32cf939": {
       "source": "bureauxlocaux",
@@ -3653,7 +3695,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.8397475,
+      "_lng": 2.5935384
     },
     "72b606c0cfd1": {
       "source": "bureauxlocaux",
@@ -3717,7 +3761,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.8486886,
+      "_lng": 2.5954263
     },
     "f3e4fd25db0a": {
       "source": "investisseur-immo",
@@ -3781,7 +3827,9 @@
         "alertes": [
           "Pas de referentiel"
         ]
-      }
+      },
+      "_lat": 48.9096049,
+      "_lng": 2.3334706
     },
     "ff3cf23cc5f0": {
       "source": "geolocaux",
@@ -9217,7 +9265,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.835138,
+      "_lng": 2.4035686
     },
     "317f7a957e53": {
       "source": "loopnet",
@@ -9277,7 +9327,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8790655,
+      "_lng": 2.3136758
     },
     "4676f6c2dc27": {
       "source": "loopnet",
@@ -9307,7 +9359,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8766199,
+      "_lng": 2.3144492
     },
     "f3046a35d492": {
       "source": "loopnet",
@@ -9337,7 +9391,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8820477,
+      "_lng": 2.3271958
     },
     "e0bd52d080a8": {
       "source": "loopnet",
@@ -9397,7 +9453,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8801537,
+      "_lng": 2.3638024
     },
     "1917be8af586": {
       "source": "loopnet",
@@ -9427,7 +9485,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8721138,
+      "_lng": 2.3461506
     },
     "e688d7feb820": {
       "source": "loopnet",
@@ -9457,7 +9517,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.879668,
+      "_lng": 2.3155363
     },
     "932b760501c9": {
       "source": "loopnet",
@@ -9487,7 +9549,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8375794,
+      "_lng": 2.3491314
     },
     "67cc2bad6549": {
       "source": "loopnet",
@@ -9517,7 +9581,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8730649,
+      "_lng": 2.3534395
     },
     "85687159b70f": {
       "source": "loopnet",
@@ -9547,7 +9613,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8460439,
+      "_lng": 2.3261661
     },
     "a7c637ce21da": {
       "source": "loopnet",
@@ -9577,7 +9645,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8833235,
+      "_lng": 2.3240199
     },
     "2eb60c515cd9": {
       "source": "loopnet",
@@ -9607,7 +9677,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8503989,
+      "_lng": 2.3688938
     },
     "fa6ef04a353d": {
       "source": "loopnet",
@@ -9637,7 +9709,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8726185,
+      "_lng": 2.3595812
     },
     "f2089b87119f": {
       "source": "loopnet",
@@ -9667,7 +9741,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8669055,
+      "_lng": 2.2730684
     },
     "5f3a03cd99f9": {
       "source": "loopnet",
@@ -9727,7 +9803,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8733001,
+      "_lng": 2.2999949
     },
     "0c3241ef52ab": {
       "source": "loopnet",
@@ -9757,7 +9835,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 48.8460439,
+      "_lng": 2.3261661
     },
     "8fd5aa7ff2da": {
       "source": "loopnet",
@@ -11497,7 +11577,9 @@
       "_sources": [
         "loopnet"
       ],
-      "_notes": ""
+      "_notes": "",
+      "_lat": 43.6422285,
+      "_lng": 1.426854
     },
     "25aac87134d5": {
       "source": "loopnet",
