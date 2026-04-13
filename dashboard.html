@@ -473,14 +473,15 @@ function initMap(){
   }).addTo(map);
 }
 
-function gradeColor(g){return g==="A"?"#16a34a":g==="B"?"#b45309":g==="C"?"#dc2626":"#a8a29e";}
+function surfColor(s){return s<300?"#dc2626":s<=700?"#16a34a":"#3b82f6";}
 
-function makeIcon(grade){
-  const c=gradeColor(grade);
+function makeIcon(surf){
+  const c=surfColor(surf);
+  const label=surf?Math.round(surf)+"":"?";
   return L.divIcon({
     className:"",
-    html:`<div style="width:28px;height:28px;border-radius:50%;background:${c};border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700">${grade||"?"}</div>`,
-    iconSize:[28,28],iconAnchor:[14,14],popupAnchor:[0,-16]
+    html:`<div style="min-width:36px;padding:2px 6px;border-radius:14px;background:${c};border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3);color:#fff;font-size:10px;font-weight:700;text-align:center;white-space:nowrap">${label}m\u00B2</div>`,
+    iconSize:[44,24],iconAnchor:[22,12],popupAnchor:[0,-14]
   });
 }
 
@@ -538,22 +539,17 @@ async function renderMap(deals){
     bounds.push([pos.lat,pos.lng]);
 
     const grade=s.grade||"?";
-    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(grade)}).addTo(map);
+    const surf=bien.surface_m2||0;
+    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf)}).addTo(map);
 
-    const ec=s.prix_vs_marche_pct;
-    const ecStr=ec!=null?(ec>0?"+":"")+ec.toFixed(1)+"%":"—";
-    const ecCol=ec!=null?(ec<=-20?"#16a34a":ec<=0?"#b45309":"#dc2626"):"#a8a29e";
+    const prixStr=fin.prix_affiche?(fin.prix_affiche/1e6).toFixed(2)+"M\u20AC":"—";
 
     marker.bindPopup(`
-      <div class="map-popup">
-        <h4>${bien.surface_m2||"?"}m\u00B2 — ${loc.commune||"?"}</h4>
-        <div class="mp-row"><span class="mp-k">Adresse</span><span class="mp-v">${loc.adresse||"—"}</span></div>
-        <div class="mp-row"><span class="mp-k">Prix</span><span class="mp-v">${fin.prix_affiche?(fin.prix_affiche/1e6).toFixed(2)+"M\u20AC":"—"}</span></div>
-        <div class="mp-row"><span class="mp-k">\u20AC/m\u00B2</span><span class="mp-v">${fin.prix_m2?fin.prix_m2.toLocaleString("fr"):"—"}</span></div>
-        <div class="mp-row"><span class="mp-k">vs March\u00E9</span><span class="mp-v" style="color:${ecCol}">${ecStr}</span></div>
-        <div class="mp-row"><span class="mp-k">DPE</span><span class="mp-v">${bien.dpe||"—"}</span></div>
-        <div class="mp-row"><span class="mp-k">Score</span><span class="mp-grade" style="background:${gradeColor(grade)}22;color:${gradeColor(grade)}">${grade} (${s.score_global||0})</span></div>
-        <button class="mp-btn" onclick="openDw('${k}')">Voir le detail</button>
+      <div style="font-family:Inter,sans-serif;min-width:180px">
+        <div style="font-size:1rem;font-weight:700;margin-bottom:.3rem">${prixStr}</div>
+        <div style="font-size:.8rem;color:#57534e;margin-bottom:.15rem">${surf}m\u00B2 \u2014 ${loc.commune||"?"}</div>
+        <div style="font-size:.75rem;color:#a8a29e;margin-bottom:.5rem">${loc.adresse||""}</div>
+        <button onclick="openDw('${k}')" style="width:100%;padding:.45rem;background:#1e3a5f;color:#fff;border:none;border-radius:6px;font-size:.78rem;font-weight:600;cursor:pointer">Voir le d\u00E9tail</button>
       </div>
     `);
 
