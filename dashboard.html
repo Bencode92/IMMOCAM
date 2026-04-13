@@ -706,14 +706,11 @@ async function geocode(addr,commune){
   return null;
 }
 
-async function renderMap(deals){
+function renderMap(deals){
   initMap();
-  // Clear markers
   markers.forEach(m=>map.removeLayer(m));
   markers=[];
-
   const bounds=[];
-  let geocoded=0;
 
   for(const[k,d]of deals){
     if(d._statut==="poubelle") continue;
@@ -725,16 +722,14 @@ async function renderMap(deals){
     let pos=null;
     if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};}
     else{
-      // Check cache commune rapide (pas de requete reseau)
+      // Cache commune rapide (pas de requete reseau)
       const ck=communeKey(loc.commune);
       if(ck&&COMMUNE_COORDS[ck]){
         pos=COMMUNE_COORDS[ck];
-      }else{
-        pos=await geocode(loc.adresse,loc.commune);
-        geocoded++;
-        await new Promise(r=>setTimeout(r,1100)); // Rate limit Nominatim
+        d._lat=pos.lat;d._lng=pos.lng;
       }
-      if(pos){d._lat=pos.lat;d._lng=pos.lng;}
+      // PAS de geocoding Nominatim en live — trop lent
+      // Les coords sont pre-calculees dans deals_db.json
     }
 
     if(!pos) continue;
