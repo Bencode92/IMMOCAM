@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "last_scrape": null,
+    "total_deals": 0,
+    "par_statut": { "nouveau": 0, "a_verifier": 0, "a_contacter": 0, "simulation": 0, "poubelle": 0 }
+  },
+  "deals": {}
+}
