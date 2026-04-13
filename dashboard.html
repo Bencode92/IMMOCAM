@@ -91,7 +91,7 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 .tbl-wrap .num{text-align:right;font-variant-numeric:tabular-nums}
 
 /* DRAWER */
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.25);backdrop-filter:blur(4px);z-index:100;opacity:0;pointer-events:none;transition:opacity .3s}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.15);backdrop-filter:blur(2px);z-index:100;opacity:0;pointer-events:none;transition:opacity .3s}
 .overlay.open{opacity:1;pointer-events:auto}
 .drawer{position:fixed;top:0;right:-520px;width:500px;height:100%;background:var(--surface);border-left:1px solid var(--border);z-index:101;display:flex;flex-direction:column;transition:right .3s ease;box-shadow:-10px 0 40px rgba(0,0,0,.08)}
 .drawer.open{right:0}
@@ -125,7 +125,8 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 .sim-total{border-top:1px solid var(--border);margin-top:.3rem;padding-top:.35rem}
 
 /* MAP */
-.map-wrap{display:none;flex:1;position:relative}
+.map-wrap{display:none;flex:1;position:relative;transition:margin-right .3s ease}
+.map-wrap.drawer-open{margin-right:500px}
 #mapView{width:100%;height:100%;min-height:70vh}
 .map-popup h4{font-size:.85rem;margin-bottom:.4rem;color:#1c1917}
 .map-popup .mp-row{display:flex;justify-content:space-between;font-size:.78rem;padding:.1rem 0}
@@ -379,6 +380,8 @@ window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
 window.openDw=key=>{
   curKey=key;const d=D[key];if(!d)return;
   document.getElementById("dw").classList.add("open");document.getElementById("ov").classList.add("open");
+  document.querySelector(".map-wrap")?.classList.add("drawer-open");
+  if(map)setTimeout(()=>map.invalidateSize(),350);
   document.getElementById("dwTitle").textContent=d.annonce?.titre||"D\u00E9tail";
   const s=d.scoring||{},f=d.financier||{},l=d.locatif||{},b=d.bien||{},hi=d._prix_historique||[];
   const det=s.scores_detail||{};
@@ -449,7 +452,10 @@ function mkSim(d){
 
 function closeDw(){
   if(curKey&&D[curKey]){const n=document.getElementById("dwNotes");if(n)D[curKey]._notes=n.value;}
-  document.getElementById("dw").classList.remove("open");document.getElementById("ov").classList.remove("open");curKey=null;
+  document.getElementById("dw").classList.remove("open");document.getElementById("ov").classList.remove("open");
+  document.querySelector(".map-wrap")?.classList.remove("drawer-open");
+  if(map)setTimeout(()=>map.invalidateSize(),350);
+  curKey=null;
 }
 document.getElementById("dwClose").addEventListener("click",closeDw);
 document.getElementById("ov").addEventListener("click",closeDw);
