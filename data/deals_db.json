@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_scrape": "2026-04-13T15:21:40.014563",
-    "total_deals": 50,
+    "last_scrape": "2026-04-13T15:42:49.954546",
+    "total_deals": 134,
     "par_statut": {
-      "nouveau": 50
+      "nouveau": 134
     }
   },
   "deals": {
@@ -1270,6 +1270,286 @@
       "_last_seen": "2026-04-13",
       "_statut": "nouveau",
       "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
         {
           "date": "2026-04-13",
           "prix": 1026064.0
@@ -3493,6 +3773,5382 @@
       ],
       "_sources": [
         "investisseur-immo"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "ff3cf23cc5f0": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-stains-proche-metro-ligne-13-rer-d-tramway-t5-682269.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68226",
+        "commune": "Vente bureaux Stains - Proche métro ligne 13, RER D, tramway T5",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 429,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1100000.0,
+        "prix_m2": 2564.102564102564,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Stains - Proche métro ligne 13, RER D, tramway T5",
+        "description": "Ensemble de 429 m² de bureaux loués, répartis sur deux lots. Prestations haut de gamme : climatisation, fibre optique, vidéo-surveillance, sept places de parking. Baux commerciaux 3-6-9 ans. Rentabilité brute indicative : 7,0 %.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "RRS"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1100000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "adf8226d4da8": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-chelles-proximite-rer-et-gare-chelles-gournay-546648.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "54664",
+        "commune": "Bureaux à vendre Chelles - Proximité RER et gare Chelles-Gournay",
+        "departement": "54",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 515,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1286500.0,
+        "prix_m2": 2498.0582524271845,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Chelles - Proximité RER et gare Chelles-Gournay",
+        "description": "Bureaux de standing, modernes, lumineux et modulables. Façade mur-rideau, accès sécurisé, fibre optique, faux-plafond, moquette, ascenseurs, parkings extérieurs et intérieurs. Immeuble de bon standing avec parties communes soignées.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Creno Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1286500.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "55cb9052d5fc": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-neufs-avon-proche-gare-et-ligne-r-526729.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "52672",
+        "commune": "Vente bureaux neufs Avon - Proche gare et ligne R",
+        "departement": "52",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 322,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 483000.0,
+        "prix_m2": 1500.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux neufs Avon - Proche gare et ligne R",
+        "description": "Bureaux neufs, livrés brut, avec places de parking. Accès handicapés, ascenseur, cadre verdoyant. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Arthur Loyd Seine et Marne - Essonne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 483000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "a3f1593f77ef": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-chessy-proximite-a4-rer-a-et-tgv-388194.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "38819",
+        "commune": "Vente bureaux Chessy - Proximité A4, RER A et TGV",
+        "departement": "38",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 469,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1524250.0,
+        "prix_m2": 3250.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Chessy - Proximité A4, RER A et TGV",
+        "description": "Immeuble de bureaux sur deux étages, équipé de hall d'entrée, ascenseurs, climatisation, éclairage LED, faux plafond acoustique, sanitaires privatifs, moquette antistatique, fibre, local à vélo, terrasse, jardin, parking en sous-sol, accessibilité PMR, ERP catégorie 5.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Scamac IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1524250.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "c6bcb7243a83": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-neufs-champs-sur-marne-proche-rer-a-noisy-champs-689678.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68967",
+        "commune": "Vente bureaux neufs Champs-sur-Marne - Proche RER A Noisy-Champs",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 542,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1026478.0,
+        "prix_m2": 1893.870848708487,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux neufs Champs-sur-Marne - Proche RER A Noisy-Champs",
+        "description": "Plateau lumineux de 542 m², divisible à partir de 271 m². Immeuble neuf certifié CERTIVEA, GTB, air rafraîchi, fibre optique, faux plafonds, sanitaires privatifs. Espace ouvert, traversant et lumineux. Proche bus, autoroute et route.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Siège"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1026478.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "a4d3df2ba2f4": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-pontault-combault-parkings-exterieurs-688622.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68862",
+        "commune": "Vente bureaux Pontault-Combault - Parkings extérieurs",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 670,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1360000.0,
+        "prix_m2": 2029.8507462686566,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Pontault-Combault - Parkings extérieurs",
+        "description": "Immeuble de bureaux sur 3 étages. Nombreux emplacements de parkings extérieurs. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1360000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "4e3f221c4f0d": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-pantin-proche-eglise-de-pantin-673165.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67316",
+        "commune": "Bureaux à vendre Pantin - Proche Église de Pantin",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 640,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2650004.0,
+        "prix_m2": 4140.63125,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Pantin - Proche Église de Pantin",
+        "description": "Bâtiment indépendant de 640 m² sur 3 niveaux avec entrée privative et ascenseur-monte charge. Espaces modulables, cuisine, double sanitaires, hauteur sous plafond, structure renforcée. Parking en face du bâtiment. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Consult'Im"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2650004.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "3461bc44f907": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-meaux-cite-administrative-bus-autoroute-et-gare-645887.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "64588",
+        "commune": "Bureaux à vendre Meaux - Cité administrative, bus, autoroute et gare",
+        "departement": "64",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 347,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 449712.0,
+        "prix_m2": 1296.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Meaux - Cité administrative, bus, autoroute et gare",
+        "description": "Bureaux cloisonnés et open space, moquette, faux plafond, chauffage central, plinthe pour câblage. Digicode, interphone, ascenseur, sanitaires. Possibilité de normes ERP.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 449712.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "4ce8c227b15e": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-chelles-600-m-699710.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69971",
+        "commune": "Vente bureaux Chelles - 600 m²",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 600,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1200000.0,
+        "prix_m2": 2000.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Chelles - 600 m²",
+        "description": "Bureaux à vendre dans une zone dynamique. Surface de 600 m², idéal pour une activité professionnelle en expansion.",
+        "photos": 3,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1200000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "4cd870aee327": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-vitry-sur-seine-gare-du-grand-paris-651415.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65141",
+        "commune": "Bureaux à vendre Vitry-sur-Seine - Gare du Grand Paris",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 536,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1200000.0,
+        "prix_m2": 2238.805970149254,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Vitry-sur-Seine - Gare du Grand Paris",
+        "description": "Bureaux en R+1 et R+2 avec ascenseurs, monte-charge, 25 parkings privatifs, portail électrique, câblage informatique, fibre optique, site clos et sécurisé. Travaux prévus par la copropriété. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "EOL Paris"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1200000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "d1b379974e51": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-avon-proche-gare-et-autoroutes-a5-et-a6-650376.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65037",
+        "commune": "Bureaux à vendre Avon - Proche gare et autoroutes A5 et A6",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 563,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 844650.0,
+        "prix_m2": 1500.266429840142,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Avon - Proche gare et autoroutes A5 et A6",
+        "description": "Bureaux dans un immeuble neuf avec ascenseurs et terrasses. Proximité des transports en commun : Transilien, bus et gare routière. Idéal pour une activité professionnelle dynamique.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "MCarré Conseil"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 844650.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "ab4a7ee6722f": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-villepinte-proche-rer-b-parc-des-expositions-et-aeroport-cdg-613191.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "61319",
+        "commune": "Vente bureaux Villepinte - Proche RER B, Parc des Expositions et Aéroport CDG",
+        "departement": "61",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 318,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 556500.0,
+        "prix_m2": 1750.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Villepinte - Proche RER B, Parc des Expositions et Aéroport CDG",
+        "description": "Immeuble moderne de bon standing avec façades rideau, accès PMR, sécurisé, ascenseurs, chauffage, fibre optique, faux plafond, moquette. Parkings en sous-sol et extérieurs disponibles.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Creno Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 556500.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "52a3a0ed634f": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-emerainville-proche-n104-a4-rer-et-transilien-505098.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "50509",
+        "commune": "Vente bureaux Émerainville - Proche N104, A4, RER et Transilien",
+        "departement": "50",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 300,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 410829.0,
+        "prix_m2": 1369.43,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Émerainville - Proche N104, A4, RER et Transilien",
+        "description": "Site gardienné avec accès contrôlés, chauffage électrique, charge au sol 350 kg, hauteur sous plafond 2,60 m. Idéal pour activités tertiaires, divisibles à partir de 143 m².",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "G2B Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 410829.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "f5fd824c2987": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-villiers-sur-marne-proche-a4-a86-n104-et-rer-a-687043.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68704",
+        "commune": "Bureaux à vendre Villiers-sur-Marne - Proche A4, A86, N104 et RER A",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 385,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 750630.0,
+        "prix_m2": 1949.6883116883116,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Villiers-sur-Marne - Proche A4, A86, N104 et RER A",
+        "description": "Bureaux lumineux rénovés, parquet chêne massif, climatisation, câblage RJ45, bornes de recharge pour véhicules électriques. Immeuble gardienné 24h/7j, nombreuses places de parking. Idéal pour entreprises cherchant un environnement professionnel accessible et sécurisé.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Sergic Entreprises Chennevières-sur-Marne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 750630.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "4288cae32df3": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-creteil-425-m-679328.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67932",
+        "commune": "Bureaux à vendre Créteil - 425 m²",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 425,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 980000.0,
+        "prix_m2": 2305.8823529411766,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Créteil - 425 m²",
+        "description": "Bureaux en bon état, disponibles immédiatement. Bâtiment non indépendant. Prix de vente : 980 000 € HT. Charges locatives et de copropriété : 0 €/m².",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "EOL Paris"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 980000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "132eb99b5e93": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-fontainebleau-proche-centre-ville-et-gare-d-avon-636581.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "63658",
+        "commune": "Vente bureaux Fontainebleau - Proche centre-ville et gare d'Avon",
+        "departement": "63",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 317,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 794000.0,
+        "prix_m2": 2504.731861198738,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Fontainebleau - Proche centre-ville et gare d'Avon",
+        "description": "Bureaux et espace de stockage en rez-de-chaussée. 3 places de stationnement privatives, portes pour livraison, proximité du centre-ville. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Arthur Loyd Seine et Marne - Essonne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 794000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "2df77baf4aa8": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-neufs-chalifert-proche-d934-chessy-et-transports-693954.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69395",
+        "commune": "Bureaux neufs Chalifert - Proche D934, Chessy et transports",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 667,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1800630.0,
+        "prix_m2": 2699.5952023988007,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux neufs Chalifert - Proche D934, Chessy et transports",
+        "description": "Bureaux neufs avec aménagement sur mesure, RT2012, interphone, ascenseur, climatisation réversible, open space, sanitaires communs. Proche des axes routiers et des transports en commun.",
+        "photos": 1,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1800630.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "8623ecacb1bb": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-vincennes-proche-gare-de-vincennes-679632.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67963",
+        "commune": "Vente bureaux Vincennes - Proche Gare de Vincennes",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 370,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2500000.0,
+        "prix_m2": 6756.756756756757,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Vincennes - Proche Gare de Vincennes",
+        "description": "Bureaux en RDC avec accès indépendant sur rue. 10 bureaux décloisonnables, salle de réunion, local reprographie, cuisine, sanitaires PMR. Sous-sol avec grand local archives et local technique. 5 à 7 places de parking. Accès PMR et ERP possibles. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Consult'Im"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2500000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "1c39e0bc7009": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-savigny-le-temple-proche-rer-d-et-a5-651958.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65195",
+        "commune": "Bureaux à vendre Savigny-le-Temple - Proche RER D et A5",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 378,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 137000.0,
+        "prix_m2": 362.43386243386243,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Savigny-le-Temple - Proche RER D et A5",
+        "description": "Bureaux divisibles à partir de 136 m², en bon état, avec contrôle d'accès, interphone, ascenseur, chauffage central, faux plafonds, sol PVC, pré-câblage informatique et téléphonique, sanitaires privatifs.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 137000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "8ea52f4bb5cf": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-neuilly-plaisance-proche-rer-a-e-et-a86-640555.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "64055",
+        "commune": "Bureaux à vendre Neuilly-Plaisance - Proche RER A, E et A86",
+        "departement": "64",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 700,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1050000.0,
+        "prix_m2": 1500.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Neuilly-Plaisance - Proche RER A, E et A86",
+        "description": "Bureaux conçus pour le confort et la performance. Proximité du pôle d'affaires de Val de Fontenay. Environnement idéal pour une activité professionnelle dynamique.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1050000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "82bb563159c7": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-les-lilas-proche-metro-mairie-des-lilas-527390.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "52739",
+        "commune": "Vente bureaux Les Lilas - Proche métro Mairie des Lilas",
+        "departement": "52",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 473,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1300000.0,
+        "prix_m2": 2748.414376321353,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Les Lilas - Proche métro Mairie des Lilas",
+        "description": "Immeuble mixte indépendant nécessitant rénovation. Idéal pour personnalisation. Bus Paul de Kock, Maréchal Juin et métro Mairie des Lilas à proximité.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "G2B Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1300000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "1bdfcc1163d8": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-villemomble-proche-rer-et-autoroutes-a3-a86-641920.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "64192",
+        "commune": "Bureaux à vendre Villemomble - Proche RER et autoroutes A3, A86",
+        "departement": "64",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 370,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1000000.0,
+        "prix_m2": 2702.7027027027025,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Villemomble - Proche RER et autoroutes A3, A86",
+        "description": "Bâtiment indépendant de 370 m², non divisible, avec espace de stockage, 10 emplacements de stationnement, terrain privatif et dépendance. Locaux lumineux, aménagés en bureaux, salle de réunion, espace détente, cuisine, sanitaires privatifs, jardin privatif. Accès PMR, portail, télésurveillance, fib",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1000000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "7a99195d2733": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-noisy-le-grand-proximite-rer-a-et-autoroute-a4-654442.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65444",
+        "commune": "Vente bureaux Noisy-le-Grand - Proximité RER A et autoroute A4",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 700,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1540000.0,
+        "prix_m2": 2200.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Noisy-le-Grand - Proximité RER A et autoroute A4",
+        "description": "Plateau de 700 m² non divisibles, baigné de lumière naturelle, avec ascenseur, site sécurisé, air rafraîchi, fibre optique. Bureaux cloisonnés, salle de réunion, faux plafonds, moquette, convecteurs électriques, sanitaires privatifs.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1540000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "f34fe81bcd5d": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-les-lilas-proche-metro-ligne-11-679538.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67953",
+        "commune": "Vente bureaux Les Lilas - Proche métro ligne 11",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 424,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1750000.0,
+        "prix_m2": 4127.358490566037,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Les Lilas - Proche métro ligne 11",
+        "description": "Bureaux en rez-de-chaussée, idéalement situés à deux minutes du métro ligne 11. Un emplacement pratique pour une activité professionnelle dynamique.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1750000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "d350f9847a6e": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-location-le-raincy-pres-gare-rer-697347.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69734",
+        "commune": "Bureaux à vendre/location Le Raincy près gare RER",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 513,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 750000.0,
+        "prix_m2": 1461.9883040935672,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre/location Le Raincy près gare RER",
+        "description": "Locaux modulables sur deux niveaux avec cour privative. Accès direct sur rue, site clos, contrôle d'accès, chauffage gaz, fibre optique. Espaces ouverts, bureaux cloisonnés, salle de réunion, local technique et sanitaires privatifs.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 750000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "04d706207eda": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-saint-maur-des-fosses-proche-rer-a-la-varennes-chennevieres-366003.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "36600",
+        "commune": "Bureaux à vendre Saint-Maur-des-Fossés - Proche RER A La Varennes - Chennevières",
+        "departement": "36",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 542,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1300000.0,
+        "prix_m2": 2398.523985239852,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Saint-Maur-des-Fossés - Proche RER A La Varennes - Chennevières",
+        "description": "Plateau de très bonne qualité, bien agencé et lumineux. Bureaux cloisonnés, salle de réunion, open-spaces, cuisine et archives.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1300000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "8cb09d5377c5": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-champs-sur-marne-proche-rer-et-a4-697544.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69754",
+        "commune": "Bureaux à vendre Champs-sur-Marne - Proche RER et A4",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 532,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 511000.0,
+        "prix_m2": 960.5263157894736,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Champs-sur-Marne - Proche RER et A4",
+        "description": "Plateau de bureaux moderne et flexible, divisibles à partir de 266 m². Immeuble de standing RT 2012, climatisation réversible, accès ERP, ascenseur duplex. Quartier en pleine expansion, idéal pour l'innovation et la collaboration.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 511000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "d28bd45aa0df": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-fontenay-sous-bois-proche-rer-val-de-fontenay-639372.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "63937",
+        "commune": "Vente bureaux Fontenay-sous-Bois - Proche RER Val de Fontenay",
+        "departement": "63",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 505,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1010000.0,
+        "prix_m2": 2000.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Fontenay-sous-Bois - Proche RER Val de Fontenay",
+        "description": "Locaux traversants, rationnels et modulables. Espaces ouverts, bureaux cloisonnés, salle de réunion, espace détente. Façade mur rideau, accès PMR, parties communes de qualité, ascenseur, contrôle d'accès, télésurveillance, fibre optique.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1010000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "d607021c0024": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-villiers-sur-marne-proche-a4-et-bus-641402.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "64140",
+        "commune": "Bureaux à vendre Villiers-sur-Marne - Proche A4 et bus",
+        "departement": "64",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 534,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 765000.0,
+        "prix_m2": 1432.5842696629213,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Villiers-sur-Marne - Proche A4 et bus",
+        "description": "Bureaux climatisés de 534 m² au 1er étage, avec accès véhicules, site sécurisé, gardien, PC sécurité, télésurveillance, fibre optique. Espaces modulables, faux plafonds, moquette, climatisation réversible, chauffage gaz, sanitaires privatifs.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 765000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "4447246df683": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-nogent-sur-marne-proche-rer-a-et-bois-de-vincennes-686497.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68649",
+        "commune": "Bureaux à vendre Nogent-sur-Marne - Proche RER A et Bois de Vincennes",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 325,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2275000.0,
+        "prix_m2": 7000.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Nogent-sur-Marne - Proche RER A et Bois de Vincennes",
+        "description": "Bureaux neufs, climatisés, ERP, terrasse privative, locaux lumineux et modulables. Ascenseur PMR, contrôle d'accès, fibre optique, crèche à proximité. Accès facile aux transports et commodités.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2275000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "4ff41f5ec01b": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-bobigny-proche-metro-tramway-et-bus-659887.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65988",
+        "commune": "Bureaux à vendre Bobigny - Proche métro, tramway et bus",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 368,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 905000.0,
+        "prix_m2": 2459.2391304347825,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Bobigny - Proche métro, tramway et bus",
+        "description": "Locaux ERP en bon état, chauffage électrique, accès PMR, fibre optique, gardien sur site. Idéal pour un centre de formation. Fenêtres double vitrage, faux plafond, bureaux cloisonnés, salle de réunion, réfectoire, accueil, archives au sous-sol, sortie de secours, carrelage au sol, sanitaires PMR. P",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 905000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "34113d49e647": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-saint-denis-metro-ligne-13-et-tram-t8-695875.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69587",
+        "commune": "Vente bureaux Saint-Denis - Métro ligne 13 et tram T8",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 511,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1000000.0,
+        "prix_m2": 1956.9471624266146,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Saint-Denis - Métro ligne 13 et tram T8",
+        "description": "Bureaux en rez-de-chaussée et sous-sol dans résidence sécurisée. Modulables, adaptés aux professions libérales, médicales ou tertiaires. Accès véhicules légers, PMR, double accès, aire de chargement, gardiennage, télésurveillance. Jardin commun, fibre optique, chauffage individuel.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1000000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "013d133f1801": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-nogent-sur-marne-proche-rer-a-et-commerces-618841.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "61884",
+        "commune": "Vente bureaux Nogent-sur-Marne - Proche RER A et commerces",
+        "departement": "61",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 325,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2275000.0,
+        "prix_m2": 7000.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Nogent-sur-Marne - Proche RER A et commerces",
+        "description": "Bureaux neufs de 325 m², accessibles par ascenseur PMR, avec terrasses privatives et parties communes de qualité. Conformité ERP 5ème catégorie, livraison prévue pour le 1er trimestre 2024.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2275000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "0b211090ce95": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-boissy-saint-leger-proche-rer-a-et-autoroutes-636782.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "63678",
+        "commune": "Bureaux à vendre Boissy-Saint-Léger - Proche RER A et autoroutes",
+        "departement": "63",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 300,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 470000.0,
+        "prix_m2": 1566.6666666666667,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Boissy-Saint-Léger - Proche RER A et autoroutes",
+        "description": "Bureaux de 300 m² aménagés, climatisés, avec 5 places de parking privatives. Immeuble moderne avec ascenseur, contrôle d'accès, fibre optique, faux plafonds, pré-câblage informatique. Idéal pour une variété d'activités professionnelles.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 470000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "c2cb2c210655": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-villiers-sur-marne-proche-a4-et-rer-a-643798.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "64379",
+        "commune": "Vente bureaux Villiers-sur-Marne - Proche A4 et RER A",
+        "departement": "64",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 647,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1287530.0,
+        "prix_m2": 1990.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Villiers-sur-Marne - Proche A4 et RER A",
+        "description": "Bureaux lumineux, divisibles à partir de 90 m², 14 parkings inclus. Site gardienné 24/24, accès PMR, monte-charge, chauffage central, faux plafonds, parquet, câblage informatique et téléphonique.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1287530.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "d6a15b3bc3c7": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-joinville-le-pont-proche-a4-a86-et-rer-nogent-sur-marne-687744.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68774",
+        "commune": "Bureaux à vendre Joinville-le-Pont - Proche A4/A86 et RER Nogent-sur-Marne",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 600,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2200000.0,
+        "prix_m2": 3666.6666666666665,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Joinville-le-Pont - Proche A4/A86 et RER Nogent-sur-Marne",
+        "description": "Bâtiment indépendant de 600 m², en excellent état, avec accueil, espaces ouverts et cloisonnés, salle de réunion, espace détente, cuisine, locaux lumineux et modulables. Double exposition, faux plafonds, carrelage, câblage informatique, système de télésurveillance, sanitaires privatifs. Disponible",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2200000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "6b3d62673878": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-saint-maur-des-fosses-centre-ville-proche-transports-691200.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69120",
+        "commune": "Vente bureaux Saint-Maur-des-Fossés - Centre-ville, proche transports",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 470,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1200000.0,
+        "prix_m2": 2553.191489361702,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Saint-Maur-des-Fossés - Centre-ville, proche transports",
+        "description": "Immeuble indépendant de 470 m² en R+3 avec cour et jardin privatifs. Chauffage central, climatisation, sécurité renforcée, conformité ERP. 5 places de parking, borne de recharge. Proche bus, Grand Paris Express et port fluvial.",
+        "photos": 0,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1200000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "b02691acf0b3": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-cachan-proche-rer-b-et-metro-ligne-15-695816.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69581",
+        "commune": "Vente bureaux Cachan - Proche RER B et métro Ligne 15",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 480,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1600000.0,
+        "prix_m2": 3333.3333333333335,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Cachan - Proche RER B et métro Ligne 15",
+        "description": "Bâtiment indépendant sur deux niveaux, cour privative, accès RER B et future gare métro Ligne 15. Espace accueil double hauteur, bureaux cloisonnés/open space, salles de réunion, cuisine aménagée, fibre optique, sanitaires privatifs et douche.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1600000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "7f05b35c5a02": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-le-kremlin-bicetre-proche-metro-lignes-7-et-14-650672.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65067",
+        "commune": "Vente bureaux Le Kremlin-Bicêtre - Proche métro lignes 7 et 14",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 446,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2200000.0,
+        "prix_m2": 4932.735426008969,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Le Kremlin-Bicêtre - Proche métro lignes 7 et 14",
+        "description": "Bureaux transformables en logements, 95 m² de stockage, cave, 7 places de parking avec bornes de recharge. Immeuble moderne, parties communes de qualité, ascenseur, accès sécurisé, fibre optique, accès PMR. Proximité des commerces et services.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Cushman & Wakefield IDF Ouest"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2200000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "b4ea8d569206": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-torcy-proximite-rer-a-a4-et-a104-438781.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "43878",
+        "commune": "Vente bureaux Torcy - Proximité RER A, A4 et A104",
+        "departement": "43",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 690,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1050000.0,
+        "prix_m2": 1521.7391304347825,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Torcy - Proximité RER A, A4 et A104",
+        "description": "Immeuble de 690 m², 48 places de stationnement en sous-sol. Idéalement placé, proche du centre commercial et des axes routiers.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Scamac IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1050000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "c9f76ab9e339": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-champs-sur-marne-proche-rer-a-et-autoroute-a4-690513.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69051",
+        "commune": "Vente bureaux Champs-sur-Marne - Proche RER A et autoroute A4",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 665,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1213625.0,
+        "prix_m2": 1825.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Champs-sur-Marne - Proche RER A et autoroute A4",
+        "description": "Plateau de 665 m² avec amphithéâtre de 120 places, 20 parkings, climatisé, normé PMR et ERP. Bureaux lumineux, fibre optique, sanitaires privatifs. Proche établissements universitaires et restauration.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Sergic Entreprises Chennevières-sur-Marne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1213625.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "55384a4a033e": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-le-kremlin-bicetre-proche-lignes-7-et-14-628831.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "62883",
+        "commune": "Vente bureaux Le Kremlin-Bicêtre - Proche lignes 7 et 14",
+        "departement": "62",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 550,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 832000.0,
+        "prix_m2": 1512.7272727272727,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Le Kremlin-Bicêtre - Proche lignes 7 et 14",
+        "description": "Plateaux de bureaux divisibles à partir de 208 m². Stockage, cave, parking extérieur, hauteur sous plafond. Paiement trimestriel d'avance.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Scamac IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 832000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "18516a1f8804": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-choisy-le-roi-proche-gare-683813.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68381",
+        "commune": "Vente bureaux Choisy-le-Roi - Proche gare",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 370,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1200000.0,
+        "prix_m2": 3243.2432432432433,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Choisy-le-Roi - Proche gare",
+        "description": "Immeuble indépendant récent. Bureaux cloisonnés, salles de réunion, espace cuisine/détente. Disponibilité immédiate.",
+        "photos": 3,
+        "date_publication": "",
+        "agent": "Consult'Im"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1200000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "80c9b37e0b3e": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureau-arcueil-proche-paris-et-metro-bagneux-697255.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69725",
+        "commune": "Vente bureau Arcueil proche Paris et métro Bagneux",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 481,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1100000.0,
+        "prix_m2": 2286.902286902287,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureau Arcueil proche Paris et métro Bagneux",
+        "description": "Local ERP indépendant, climatisation réversible, accès PMR, accueil, espace ouvert, sanitaires privatifs, belle hauteur sous plafond. Immeuble mixte (commerce + bureaux). Configuration fonctionnelle et polyvalente.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Siège"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1100000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "499e95120cb7": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-dammarie-les-lys-zone-commerciale-chamlys-451377.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "45137",
+        "commune": "Vente bureaux Dammarie-les-Lys - Zone Commerciale Chamlys",
+        "departement": "45",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 700,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1113000.0,
+        "prix_m2": 1590.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Dammarie-les-Lys - Zone Commerciale Chamlys",
+        "description": "Immeuble de 700 m² sur 2 niveaux, ascenseur, accès PMR, 10 parkings, bureaux indépendants, revenus locatifs de 58 000 €/an. Disponibilité immédiate.",
+        "photos": 3,
+        "date_publication": "",
+        "agent": "Arthur Loyd Seine et Marne - Essonne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1113000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "e0c10d10a7fc": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-ivry-sur-seine-proche-metro-m7-et-rer-c-677430.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67743",
+        "commune": "Bureaux à vendre Ivry-sur-Seine - Proche métro M7 et RER C",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 389,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1127520.0,
+        "prix_m2": 2898.508997429306,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Ivry-sur-Seine - Proche métro M7 et RER C",
+        "description": "Plateaux lumineux et modulables dans immeuble moderne. Accès sécurisé, ascenseurs, parkings en sous-sol, jardin commun, fibre optique, faux-plafond, sols PVC/moquette, hauteur sous plafond 2.50 m. Proximité gare SNCF, Transilien, bus et autoroute.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Creno Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1127520.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "104c90af3341": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-saint-ouen-proche-transports-en-commun-670161.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67016",
+        "commune": "Bureaux à vendre Saint-Ouen - Proche transports en commun",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 300,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1150000.0,
+        "prix_m2": 3833.3333333333335,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Saint-Ouen - Proche transports en commun",
+        "description": "Local brut avec fluides en attente, sans vitrines. Quartier en plein essor, bien desservi par les transports en commun. Idéal pour investir dans l'avenir de votre entreprise.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "G2B Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1150000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "15296d40901a": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-neuilly-plaisance-proche-rer-a-550993.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "55099",
+        "commune": "Bureaux à vendre Neuilly-Plaisance - Proche RER A",
+        "departement": "55",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 539,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1078000.0,
+        "prix_m2": 2000.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Neuilly-Plaisance - Proche RER A",
+        "description": "Bureaux au pied du RER A. Offre attractive et à ne pas manquer.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1078000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "5ade3f9e2738": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-saint-thibault-des-vignes-proche-a104-et-a4-689708.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68970",
+        "commune": "Vente bureaux Saint-Thibault-des-Vignes - Proche A104 et A4",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 530,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 680000.0,
+        "prix_m2": 1283.0188679245282,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Saint-Thibault-des-Vignes - Proche A104 et A4",
+        "description": "Cellule d'activités avec bureaux d'accompagnement rénovés. Espace de stockage avec hauteur libre de 7m, accès poids lourds, aire de manœuvre, fibre optique, climatisation réversible, faux plafonds, moquette, sanitaires. Proche RER A et SNCF Ligne P.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 680000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "5893f352645c": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-joinville-le-pont-bords-de-marne-a86-a4-rer-669780.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "66978",
+        "commune": "Vente bureaux Joinville-le-Pont - Bords de Marne, A86, A4, RER",
+        "departement": "66",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 600,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2200000.0,
+        "prix_m2": 3666.6666666666665,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Joinville-le-Pont - Bords de Marne, A86, A4, RER",
+        "description": "Bâtiment indépendant de 600 m² avec accès PMR, fibre optique, cour privative, climatisation réversible. Espaces aménagés : accueil, bureaux cloisonnés, salle de réunion, espace détente, cuisine, archives. Locaux prêts à emménager.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2200000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "2a7d148ebe55": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-villiers-sur-marne-proche-a4-et-rer-697898.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69789",
+        "commune": "Vente bureaux Villiers-sur-Marne - Proche A4 et RER",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 385,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 750630.0,
+        "prix_m2": 1949.6883116883116,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Villiers-sur-Marne - Proche A4 et RER",
+        "description": "Bureaux lumineux, accès sécurisés 24/7, espaces verts, bornes de recharge, immeuble gardienné. Divisibles à partir de 191 m². Prestations : parquet, coin cuisine, câblage RJ45, douche et sanitaires privatifs.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 750630.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "a7d1a618d2f8": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-torcy-proche-a104-et-rer-a-torcy-645921.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "64592",
+        "commune": "Bureaux à vendre Torcy - Proche A104 et RER A Torcy",
+        "departement": "64",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 366,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1100000.0,
+        "prix_m2": 3005.464480874317,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Torcy - Proche A104 et RER A Torcy",
+        "description": "Bureaux rénovés sur 2 niveaux, accès véhicules légers, aire de chargement, portail sécurisé, site clos. Bureaux cloisonnés, hall d'accueil, 2 entrées indépendantes, parquet, carrelage, faux plafond, prises RJ45, chauffage électrique, climatisation réversible, sanitaires privatifs. Locaux lumineux e",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1100000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "2cc6f071d8b3": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-melun-proche-gare-et-tribunal-judiciaire-677237.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67723",
+        "commune": "Vente bureaux Melun - Proche gare et tribunal judiciaire",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 310,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1150000.0,
+        "prix_m2": 3709.6774193548385,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Melun - Proche gare et tribunal judiciaire",
+        "description": "Bureaux de 310 m² non divisibles avec 8 places de parking en sous-sol. Immeuble sécurisé, accès privatif, fibre optique, sanitaires privatifs, locaux modulables. Chauffage électrique, faux plafonds, moquette.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1150000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "63c133525958": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-dammarie-les-lys-proche-melun-et-transports-678012.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67801",
+        "commune": "Vente bureaux Dammarie-les-Lys - Proche Melun et transports",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 622,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 3450000.0,
+        "prix_m2": 5546.623794212219,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Dammarie-les-Lys - Proche Melun et transports",
+        "description": "Immeuble indépendant de 622 m² sur 4 niveaux. Prestations : portail, parties communes, ascenseur, contrôle d'accès, fibre optique. 18 parkings. Surface vacante de 76 m² en mezzanine.",
+        "photos": 1,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 3450000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "f3d3b0d7b18c": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-pontault-combault-proche-francilienne-689259.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68925",
+        "commune": "Vente bureaux Pontault-Combault - Proche Francilienne",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 670,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1360000.0,
+        "prix_m2": 2029.8507462686566,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Pontault-Combault - Proche Francilienne",
+        "description": "Bâtiment indépendant de 670 m², site clos, 45 places de parking. Locaux lumineux, climatisation réversible, nombreuses possibilités d'aménagement. Carrelage, faux plafond, accueil.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1360000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "0e2d6777f63a": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-montreuil-proche-rer-vincennes-et-metro-berault-659903.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65990",
+        "commune": "Bureaux à vendre Montreuil - Proche RER Vincennes et métro Bérault",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 476,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2100000.0,
+        "prix_m2": 4411.764705882353,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Montreuil - Proche RER Vincennes et métro Bérault",
+        "description": "Plateau de bureaux en étage, copropriété gardiennée, nombreux stationnements sous-sol. Immeuble ancien, parties communes de bon standing, ascenseur, contrôle d'accès, gardiennage, interphone, fibre optique, locaux lumineux, double exposition, décloisonnement possible.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2100000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "f7b21be23418": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-creteil-proche-metro-pointe-du-lac-et-a86-665185.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "66518",
+        "commune": "Vente bureaux Créteil - Proche Métro Pointe du Lac et A86",
+        "departement": "66",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 695,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 455680.0,
+        "prix_m2": 655.6546762589928,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Créteil - Proche Métro Pointe du Lac et A86",
+        "description": "Bureaux aménagés, cloisonnés et climatisés. Accès véhicules légers, PMR, privatif sur rue, ascenseur, contrôle d'accès, alarme, fibre optique, cafétéria, faux plafonds, moquette, pré-câblage informatique. Possibilité de normes E.R.P.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 455680.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "faf430dd4f02": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-amiens-sud-vallee-des-vignes-acces-rocade-et-autoroutes-674398.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67439",
+        "commune": "Vente bureaux Amiens Sud - Vallée des Vignes, accès rocade et autoroutes",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 557,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1350001.0,
+        "prix_m2": 2423.7001795332135,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Amiens Sud - Vallée des Vignes, accès rocade et autoroutes",
+        "description": "Bureaux de 557 m² sur deux niveaux, moquette, cuisine équipée, ascenseur. Quartier tertiaire dynamique avec commerces, restaurants, services de santé. Proximité des autoroutes A29 et A16.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Arthur Loyd Amiens"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1350001.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "a22c649c9b70": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-plateaux-bureaux-amiens-proche-autoroutes-a1-a16-a29-622681.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "62268",
+        "commune": "Vente plateaux bureaux Amiens - Proche autoroutes A1, A16, A29",
+        "departement": "62",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 500,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1325000.0,
+        "prix_m2": 2650.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente plateaux bureaux Amiens - Proche autoroutes A1, A16, A29",
+        "description": "Plateaux de bureaux de 500 m² à 3 500 m². Cloison périphérique, faux plafond, luminaires, sol, point d'eau, sanitaires. Bâtiment aux dernières normes. Accessibilité : Bus Amétis, SNCF Amiens / Longueau.",
+        "photos": 1,
+        "date_publication": "",
+        "agent": "Evolis Amiens"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1325000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "0f0dcc88705a": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-melun-proche-gare-rer-d-et-autoroute-a5-589625.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "58962",
+        "commune": "Vente bureaux Melun - Proche gare RER D et autoroute A5",
+        "departement": "58",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 424,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 750000.0,
+        "prix_m2": 1768.867924528302,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Melun - Proche gare RER D et autoroute A5",
+        "description": "Bureaux aménagés en accueil, bureaux cloisonnés, salle de réunion, espace détente, cuisine, sanitaires privatifs. Contrôle d'accès, interphone, deux ascenseurs, chauffage collectif, parking privé en sous-sol, climatisation.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "GSA Immobilier"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 750000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "5b3cdc7cff92": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-lognes-proche-gare-rer-a-et-axes-a4-et-n104-616526.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "61652",
+        "commune": "Vente bureaux Lognes - Proche gare RER A et axes A4 et N104",
+        "departement": "61",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 600,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 279900.0,
+        "prix_m2": 466.5,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Lognes - Proche gare RER A et axes A4 et N104",
+        "description": "Plateau de bureaux rénové en R+2, divisibles à partir de 187m². Cloisons amovibles, salle de réunion, espace détente, local technique, fibre optique, contrôle d'accès, chauffage électrique et parking en sous-sol.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Scamac IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 279900.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "65dd9fed30c1": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-champigny-sur-marne-proche-rer-e-et-a4-652134.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65213",
+        "commune": "Vente bureaux Champigny-sur-Marne - Proche RER E et A4",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 308,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 815000.0,
+        "prix_m2": 2646.103896103896,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Champigny-sur-Marne - Proche RER E et A4",
+        "description": "Bureaux sécurisés, climatisation réversible, jardin, hall d'entrée avec accueil. Accès 24h/24, parking, emplacement verdoyant. Proximité des aéroports Paris-Charles de Gaulle et Paris-Orly.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "EOL Paris"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 815000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "c417df18af98": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-villepinte-proche-rer-b-parc-des-expositions-et-aeroport-cdg-613192.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "61319",
+        "commune": "Vente bureaux Villepinte - Proche RER B, Parc des Expositions et Aéroport CDG",
+        "departement": "61",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 536,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 938350.0,
+        "prix_m2": 1750.652985074627,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Villepinte - Proche RER B, Parc des Expositions et Aéroport CDG",
+        "description": "Bureaux modernes avec sanitaires privatifs, cuisine, parkings, accès PMR, sécurisé, fibre optique, climatisation, moquette, faux plafond. Proche RER, autoroute, aéroport CDG.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Creno Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 938350.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "ddf89f0d0da6": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-dammarie-les-lys-proche-gare-et-rer-d-melun-633066.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "63306",
+        "commune": "Vente bureaux Dammarie-les-Lys - Proche gare et RER D Melun",
+        "departement": "63",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 622,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 3300000.0,
+        "prix_m2": 5305.4662379421225,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Dammarie-les-Lys - Proche gare et RER D Melun",
+        "description": "Bureaux répartis sur 2 niveaux, plusieurs bureaux cloisonnés, 20 places de parking, locataire qualitatif. Disponibilité immédiate.",
+        "photos": 1,
+        "date_publication": "",
+        "agent": "Arthur Loyd Seine et Marne - Essonne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 3300000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "cf39983397d2": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-boissy-saint-leger-proche-rer-a-et-a86-636391.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "63639",
+        "commune": "Bureaux à vendre Boissy-Saint-Léger - Proche RER A et A86",
+        "departement": "63",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 300,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 470000.0,
+        "prix_m2": 1566.6666666666667,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Boissy-Saint-Léger - Proche RER A et A86",
+        "description": "Bureaux lumineux et en bon état, fibre optique, monte-charge, contrôle d'accès, climatisation réversible, sanitaires privatifs, salle de réunion, cuisine, accès livraison et véhicules légers. Immeuble récent avec parties communes de bon standing.",
+        "photos": 1,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 470000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "cda316d0dccf": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-maisons-alfort-proche-metro-les-juilliottes-686499.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68649",
+        "commune": "Bureaux à vendre Maisons-Alfort - Proche métro Les Juilliottes",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 400,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1390000.0,
+        "prix_m2": 3475.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Maisons-Alfort - Proche métro Les Juilliottes",
+        "description": "Plateau de 400 m² en espace ouvert avec 5 bureaux cloisonnés, triple exposition, climatisation réversible. Entièrement rénové, dernier étage, accès sécurisé 24h/24h, fibre optique, baies de brassage, ascenseur. Possibilité de stationnement en sous-sol.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1390000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "1c928c05d9f7": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-noisy-le-grand-proche-rer-a-a4-a104-et-a86-597804.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "59780",
+        "commune": "Vente bureaux Noisy-le-Grand, proche RER A, A4, A104 et A86",
+        "departement": "59",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 677,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1587500.0,
+        "prix_m2": 2344.903988183161,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Noisy-le-Grand, proche RER A, A4, A104 et A86",
+        "description": "Bureaux aménagés, cloisonnés, avec excellente luminosité, climatisation réversible, faux plafonds, moquette, câblage informatique. Copropriété sécurisée avec gardien, restaurant inter-entreprises, ascenseurs, air rafraîchi.",
+        "photos": 1,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1587500.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "c1f335a083ea": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-neufs-champs-sur-marne-proche-rer-a-et-a4-690515.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69051",
+        "commune": "Vente bureaux neufs Champs-sur-Marne - Proche RER A et A4",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 466,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1147680.0,
+        "prix_m2": 2462.832618025751,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux neufs Champs-sur-Marne - Proche RER A et A4",
+        "description": "Plateau de 466 m² avec 17 places de parking. ERP de type U et W, climatisation réversible, faux plafonds, éclairage, goulottes courant fort/faible. Proche universités et futur Grand Paris Express.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Sergic Entreprises Chennevières-sur-Marne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1147680.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "ba07ff65deab": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-montreuil-proche-metro-ligne-9-1-et-rer-a-492551.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "49255",
+        "commune": "Vente bureaux Montreuil - Proche métro ligne 9, 1 et RER A",
+        "departement": "49",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 623,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 4000000.0,
+        "prix_m2": 6420.545746388443,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Montreuil - Proche métro ligne 9, 1 et RER A",
+        "description": "Locaux atypiques sous verrière, climatisation neuve, open-space, terrasse privative. Secteur en plein développement.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 4000000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "9c866539ec72": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-vincennes-renove-et-atypique-697701.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69770",
+        "commune": "Vente bureaux Vincennes - Rénové et atypique",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 360,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 3000000.0,
+        "prix_m2": 8333.333333333334,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Vincennes - Rénové et atypique",
+        "description": "Surface entièrement rénovée, adaptée aux besoins spécifiques. Environnement dynamique et bien desservi.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 3000000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "1f2aeb3a7407": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-locaux-ferrieres-en-brie-proche-a4-a104-et-tgv-marne-la-vallee-680842.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68084",
+        "commune": "Vente locaux Ferrières-en-Brie - Proche A4, A104 et TGV Marne-la-Vallée",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 450,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1249000.0,
+        "prix_m2": 2775.5555555555557,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente locaux Ferrières-en-Brie - Proche A4, A104 et TGV Marne-la-Vallée",
+        "description": "Locaux d'activités avec bureaux en mezzanine. Site clos sécurisé, fibre optique, ascenseur, chauffage électrique. Proximité Bussy-Saint-Georges et gare TGV Marne-la-Vallée. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Evolis Île-de-France Est"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1249000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "2f5264a36a57": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-saint-ouen-proche-rer-metro-et-gare-sncf-663710.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "66371",
+        "commune": "Bureaux à vendre Saint-Ouen - Proche RER, Métro et Gare SNCF",
+        "departement": "66",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 448,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1700000.0,
+        "prix_m2": 3794.6428571428573,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Saint-Ouen - Proche RER, Métro et Gare SNCF",
+        "description": "Locaux commerciaux de 148 m² et 300 m² en rez-de-chaussée d'un immeuble neuf. Livrés brut de béton, fluides en attente, belle visibilité sur rue. Possibilité de parkings en sous-sol.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1700000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "26c1698c8d3b": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-serris-proximite-a4-456498.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "45649",
+        "commune": "Vente bureaux Serris - Proximité A4",
+        "departement": "45",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 334,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 847420.0,
+        "prix_m2": 2537.185628742515,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Serris - Proximité A4",
+        "description": "Parc de bureaux avec nombreux services. Division possible à partir de 293 m².",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 847420.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "ef36f63eb9df": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-montreuil-proximite-metro-robespierre-656743.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "65674",
+        "commune": "Bureaux à vendre Montreuil - Proximité métro Robespierre",
+        "departement": "65",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 473,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1980000.0,
+        "prix_m2": 4186.046511627907,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Montreuil - Proximité métro Robespierre",
+        "description": "Bureaux entièrement réhabilités, modernes et modulables. Espaces ouverts, salle de réunion, parquet, poutre apparente, chauffage individuel gaz, câblage informatique, kitchenette, cuisine, sanitaires. Système de vidéo surveillance, fibre optique. Location partielle possible.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "G2B Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1980000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "0f5c8c1e0457": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-neufs-chessy-proche-disneyland-paris-461647.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "46164",
+        "commune": "Vente bureaux neufs Chessy - Proche Disneyland Paris",
+        "departement": "46",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 365,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 985365.0,
+        "prix_m2": 2699.6301369863013,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux neufs Chessy - Proche Disneyland Paris",
+        "description": "Plateaux de bureaux neufs, idéalement situés pour une activité professionnelle dynamique.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 985365.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "10bcdd2801f7": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-vaux-le-penil-proche-a5-et-bus-640891.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "64089",
+        "commune": "Bureaux à vendre Vaux-le-Pénil - Proche A5 et bus",
+        "departement": "64",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 625,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 950000.0,
+        "prix_m2": 1520.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Vaux-le-Pénil - Proche A5 et bus",
+        "description": "Bâtiment indépendant de 635 m² sur deux niveaux, jardin privatif, 15 places de stationnement. Deux entrées, alarme, climatisation, fibre optique, kitchenette. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Arthur Loyd Seine et Marne - Essonne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 950000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "47e5721b0075": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-serris-parc-medical-val-d-europe-a4-proche-697816.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "69781",
+        "commune": "Bureaux à vendre Serris - Parc médical Val d'Europe, A4 proche",
+        "departement": "69",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 650,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2762441.0,
+        "prix_m2": 4249.909230769231,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Serris - Parc médical Val d'Europe, A4 proche",
+        "description": "Bureaux sécurisés avec accès contrôlés, halls de standing et services dédiés. Parkings aériens et sous-sol. Proximité RER Val d'Europe et bus.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "G2B Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2762441.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "ae0706e638b5": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-saint-denis-pleyel-proche-ligne-14-et-rer-680407.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "68040",
+        "commune": "Bureaux à vendre Saint-Denis Pleyel - Proche ligne 14 et RER",
+        "departement": "68",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 420,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1050000.0,
+        "prix_m2": 2500.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Saint-Denis Pleyel - Proche ligne 14 et RER",
+        "description": "Bureaux lumineux et climatisés, vue sur la Seine, hall d'accueil soigné, parking souterrain. Immeuble moderne avec accès PMR, gardiennage, climatisation réversible, fibre optique. Idéal pour activités de formation. Disponibilité immédiate.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1050000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "070ead19ea6c": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-arcueil-proche-rer-laplace-et-grand-paris-express-677212.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "67721",
+        "commune": "Bureaux à vendre Arcueil - Proche RER Laplace et Grand Paris Express",
+        "departement": "67",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 320,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1300000.0,
+        "prix_m2": 4062.5,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Arcueil - Proche RER Laplace et Grand Paris Express",
+        "description": "Bâtiment indépendant de 320 m² avec espaces d'activité et bureaux. Rez-de-chaussée accessible aux véhicules légers, jardin privatif, 3 parkings extérieurs. Travaux de rénovation à prévoir. Idéal pour entreprises en quête d'un espace modulable et lumineux.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1300000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "54f1385484f2": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-serris-proximite-a4-456497.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "45649",
+        "commune": "Vente bureaux Serris - Proximité A4",
+        "departement": "45",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 300,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1336543.0,
+        "prix_m2": 4455.143333333333,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Serris - Proximité A4",
+        "description": "Parc de bureaux avec nombreux services. Division possible à partir de 293 m².",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "BNP Paribas Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1336543.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "c418e6c46304": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-vaux-le-penil-proche-a5-et-rd-605-661287.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "66128",
+        "commune": "Vente bureaux Vaux-le-Pénil - Proche A5 et RD 605",
+        "departement": "66",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 650,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 950000.0,
+        "prix_m2": 1461.5384615384614,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Vaux-le-Pénil - Proche A5 et RD 605",
+        "description": "Immeuble de bureaux en R+1, partiellement cloisonnés, sur un terrain de 1500 m². Immeuble indépendant, cadre de travail agréable. Arrêt de bus à 500 mètres. Disponibilité : 1er février 2026.",
+        "photos": 3,
+        "date_publication": "",
+        "agent": "Arthur Loyd Seine et Marne - Essonne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 950000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "9a901d51ad4a": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/vente-bureaux-chessy-proche-a4-rer-et-tgv-505090.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "50509",
+        "commune": "Vente bureaux Chessy - Proche A4, RER et TGV",
+        "departement": "50",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 378,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1096635.0,
+        "prix_m2": 2901.1507936507937,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente bureaux Chessy - Proche A4, RER et TGV",
+        "description": "Immeuble de standing neuf en R+5, hall d'accueil, parkings en sous-sol, commerces à proximité. Régime fiscal : droits d'enregistrement.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "G2B Real Estate"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1096635.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "95f171df0502": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/bureaux-a-vendre-chessy-proche-rer-a-et-val-d-europe-665234.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "66523",
+        "commune": "Bureaux à vendre Chessy - Proche RER A et Val d'Europe",
+        "departement": "66",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 378,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1019574.0,
+        "prix_m2": 2697.285714285714,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre Chessy - Proche RER A et Val d'Europe",
+        "description": "Bureaux neufs certifiés HQE, divisibles à partir de 185 m². Contrôle d'accès, hall d'accueil, ascenseur PMR, climatisation double flux, moquette, faux plafond, sanitaires privatifs. Possibilité E.R.P.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": "Immprove Paris IDF"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1019574.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "25ed7f08fd7d": {
+      "source": "geolocaux",
+      "url": "https://www.geolocaux.com/annonce/investissement-bureaux-melun-proche-gare-rer-et-a5-669619.html",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "66961",
+        "commune": "Investissement bureaux Melun - Proche gare RER et A5",
+        "departement": "66",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 300,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 570000.0,
+        "prix_m2": 1900.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Investissement bureaux Melun - Proche gare RER et A5",
+        "description": "Bâtiment indépendant loué, idéal pour investisseurs. Bail commercial en place, accès handicapés RDC, tuiles. Disponibilité immédiate.",
+        "photos": 3,
+        "date_publication": "",
+        "agent": "Arthur Loyd Seine et Marne - Essonne"
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 570000.0
+        }
+      ],
+      "_sources": [
+        "geolocaux"
       ],
       "_notes": "",
       "scoring": {
