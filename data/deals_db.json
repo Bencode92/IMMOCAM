@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_scrape": "2026-04-13T15:01:47.164375",
-    "total_deals": 49,
+    "last_scrape": "2026-04-13T15:11:34.180883",
+    "total_deals": 50,
     "par_statut": {
-      "nouveau": 49
+      "nouveau": 50
     }
   },
   "deals": {
@@ -1270,6 +1270,14 @@
       "_last_seen": "2026-04-13",
       "_statut": "nouveau",
       "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
         {
           "date": "2026-04-13",
           "prix": 1026064.0
@@ -3141,6 +3149,70 @@
       ],
       "_sources": [
         "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "f3e4fd25db0a": {
+      "source": "investisseur-immo",
+      "url": "https://www.investisseur-immo.fr/Annonce/2110784/Bureaux/a-Vendre/93400-SAINT-OUEN",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "93400",
+        "commune": "SAINT OUEN",
+        "departement": "93",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 370,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 580000,
+        "prix_m2": 1567.5675675675675,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux 370m² — SAINT OUEN",
+        "description": "",
+        "photos": 0,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 580000
+        }
+      ],
+      "_sources": [
+        "investisseur-immo"
       ],
       "_notes": "",
       "scoring": {

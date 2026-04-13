@@ -1,12 +1,10 @@
 """
-Scraper Investisseur-Immo.fr — spécialiste IDR et bureaux pleine propriété IDF.
-Site plus simple, HTML classique, moins de protection anti-bot.
+Scraper Investisseur-Immo.fr — HTML classique, div.vignette-offre.
 """
 import requests
 from bs4 import BeautifulSoup
-import json
-import time
 import re
+import time
 from base_scraper import BaseScraper
 
 
@@ -14,12 +12,10 @@ class InvestisseurImmoScraper(BaseScraper):
     name = "investisseur-immo"
     BASE = "https://www.investisseur-immo.fr"
     HEADERS = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
     }
 
     def scrape(self, filters=None):
-        """Scrape les biens bureaux en vente."""
         filters = filters or {}
         surface_min = filters.get("surface_min", 300)
         surface_max = filters.get("surface_max", 700)
@@ -27,40 +23,79 @@ class InvestisseurImmoScraper(BaseScraper):
 
         all_results = []
         page = 1
-        max_pages = 10
 
         print(f"  InvestisseurImmo: recherche bureaux {surface_min}-{surface_max}m²...")
 
-        while page <= max_pages:
+        while page <= 5:
+            url = f"{self.BASE}/annonces" + (f"?page={page}" if page > 1 else "")
             try:
-                url = f"{self.BASE}/annonces/bureaux/vente/ile-de-france"
-                params = {"page": page}
-                resp = requests.get(url, headers=self.HEADERS, params=params, timeout=20)
-
-                if resp.status_code != 200:
+                r = requests.get(url, headers=self.HEADERS, timeout=20)
+                if r.status_code != 200:
                     break
 
-                soup = BeautifulSoup(resp.text, "html.parser")
-
-                # Chercher les cartes d'annonces
-                cards = soup.select(".annonce-card, .listing-item, .property-card, article.annonce, .bien-item")
-                if not cards:
-                    # Essayer des selecteurs plus generiques
-                    cards = soup.select("[data-listing], [data-annonce], .card")
-
-                if not cards:
+                soup = BeautifulSoup(r.text, "html.parser")
+                vignettes = soup.select(".vignette-offre")
+                if not vignettes:
                     break
 
-                count_before = len(all_results)
-                for card in cards:
-                    deal = self._parse_card(card, surface_min, surface_max, prix_max)
-                    if deal:
-                        all_results.append(deal)
+                found = 0
+                for v in vignettes:
+                    td = v.find("div")
+                    if not td or "vendre" not in td.get_text().lower():
+                        continue
 
-                # Si aucun nouveau resultat, on a fini
-                if len(all_results) == count_before:
+                    link = v.select_one('a[href*="/Annonce"]')
+                    deal_url = self.BASE + link["href"] if link else ""
+
+                    resume = v.select_one(".resume-offre")
+                    if not resume:
+                        continue
+
+                    text = resume.get_text(separator=" ", strip=True).replace("\xa0", " ").replace("\u202f", " ")
+
+                    h2 = resume.select_one("h2")
+                    type_b = h2.get_text(strip=True) if h2 else ""
+                    h3 = resume.select_one("h3")
+                    ville = h3.get_text(strip=True) if h3 else ""
+
+                    # Surface
+                    nums = re.findall(r"(\d[\d\s]*)\s*m[²2]", text)
+                    surface = int(re.sub(r"\s", "", nums[0])) if nums else 0
+
+                    # Prix (le plus grand nombre avant €)
+                    pnums = re.findall(r"(\d[\d\s]*)\s*€", text)
+                    prix = 0
+                    for p in pnums:
+                        val = int(re.sub(r"\s", "", p))
+                        if val > prix:
+                            prix = val
+
+                    # Code postal
+                    cpm = re.search(r"(\d{5})", text)
+                    cp = cpm.group(1) if cpm else ""
+                    dept = cp[:2] if cp else ""
+
+                    if not ("bureau" in type_b.lower()):
+                        continue
+                    if surface < surface_min or surface > surface_max:
+                        continue
+                    if prix > prix_max:
+                        continue
+
+                    deal = self.to_standard({
+                        "url": deal_url,
+                        "commune": ville,
+                        "code_postal": cp,
+                        "departement": dept,
+                        "surface": surface,
+                        "prix": prix,
+                        "titre": f"{type_b} {surface}m² — {ville}",
+                    })
+                    all_results.append(deal)
+                    found += 1
+
+                if found == 0:
                     break
-
                 page += 1
                 time.sleep(2)
 
@@ -72,71 +107,9 @@ class InvestisseurImmoScraper(BaseScraper):
         self.results = all_results
         return all_results
 
-    def _parse_card(self, card, surf_min, surf_max, prix_max):
-        """Parser une carte HTML d'annonce."""
-        try:
-            text = card.get_text(separator=" ", strip=True)
-
-            # Extraire le prix
-            prix_match = re.search(r'(\d[\d\s,.]+)\s*(?:€|EUR)', text)
-            if not prix_match:
-                return None
-            prix = float(prix_match.group(1).replace(" ", "").replace(",", "."))
-            if prix < 100000:  # Probablement un loyer, pas un prix
-                return None
-            if prix > prix_max:
-                return None
-
-            # Extraire la surface
-            surf_match = re.search(r'(\d[\d\s,.]+)\s*m[²2]', text)
-            if not surf_match:
-                return None
-            surface = float(surf_match.group(1).replace(" ", "").replace(",", "."))
-            if surface < surf_min or surface > surf_max:
-                return None
-
-            # Extraire l'adresse/ville
-            ville = ""
-            addr_el = card.select_one(".ville, .city, .location, .adresse, h3, h4")
-            if addr_el:
-                ville = addr_el.get_text(strip=True)
-
-            # URL
-            link = card.select_one("a[href]")
-            url = ""
-            if link:
-                href = link.get("href", "")
-                url = href if href.startswith("http") else self.BASE + href
-
-            # Titre
-            title_el = card.select_one("h2, h3, .titre, .title")
-            titre = title_el.get_text(strip=True) if title_el else f"Bureaux {surface}m²"
-
-            # DPE
-            dpe = ""
-            dpe_match = re.search(r'DPE\s*[:=]?\s*([A-G])', text, re.IGNORECASE)
-            if dpe_match:
-                dpe = dpe_match.group(1).upper()
-
-            # Rendement
-            rdt_match = re.search(r'(\d[,.]?\d*)\s*%', text)
-            rendement = float(rdt_match.group(1).replace(",", ".")) if rdt_match else 0
-
-            return self.to_standard({
-                "url": url,
-                "commune": ville,
-                "surface": surface,
-                "prix": prix,
-                "dpe": dpe,
-                "titre": titre,
-                "description": text[:300],
-            })
-
-        except Exception:
-            return None
-
 
 if __name__ == "__main__":
-    scraper = InvestisseurImmoScraper()
-    results = scraper.scrape({"surface_min": 300, "surface_max": 700})
-    print(f"\n{len(results)} biens")
+    s = InvestisseurImmoScraper()
+    results = s.scrape({"surface_min": 300, "surface_max": 700})
+    for r in results:
+        print(f"  {r['bien']['surface_m2']}m² {r['localisation']['commune']} | {r['financier']['prix_affiche']/1e6:.2f}M€")
