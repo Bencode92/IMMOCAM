@@ -1,15 +1,18 @@
 """
-Scraper LoopNet.fr — nécessite Playwright (Cloudflare protection).
+Scraper LoopNet.fr — Cloudflare + pageguid.
+Nécessite Playwright pour passer Cloudflare, puis API /services/search.
 """
 import json
 import re
 import time
+from bs4 import BeautifulSoup
 from base_scraper import BaseScraper
 
 
 class LoopNetScraper(BaseScraper):
     name = "loopnet"
     BASE = "https://www.loopnet.fr"
+    SEARCH_API = "/services/search"
 
     def scrape(self, filters=None):
         filters = filters or {}
@@ -20,112 +23,149 @@ class LoopNetScraper(BaseScraper):
         try:
             from playwright.sync_api import sync_playwright
         except ImportError:
-            print("  LoopNet: playwright non installé")
+            print("  LoopNet: playwright requis (pip install playwright && playwright install chromium)")
             return []
 
         all_results = []
-        print(f"  LoopNet: lancement headless browser...")
+        print("  LoopNet: lancement Playwright (Cloudflare bypass)...")
 
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             ctx = browser.new_context(
-                user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",
+                user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0 Safari/537.36",
                 viewport={"width": 1920, "height": 1080},
+                locale="fr-FR",
             )
             page = ctx.new_page()
 
-            # Intercepter les réponses API
-            api_data = []
-            def handle_response(response):
-                if "/api/" in response.url or "search" in response.url.lower():
-                    try:
-                        if "json" in response.headers.get("content-type", ""):
-                            data = response.json()
-                            api_data.append(data)
-                    except:
-                        pass
-            page.on("response", handle_response)
-
-            url = f"{self.BASE}/recherche/bureaux/paris---france/a-vendre/"
-            print(f"  LoopNet: chargement {url}...")
-
+            # 1) Charger la page pour passer Cloudflare et obtenir pageguid
+            print("    Chargement page vente bureaux Paris...")
             try:
-                page.goto(url, timeout=30000, wait_until="domcontentloaded")
-                time.sleep(5)  # Attendre le JS
-
-                # Essayer de passer le Cloudflare challenge
-                page.wait_for_load_state("networkidle", timeout=15000)
+                page.goto(f"{self.BASE}/recherche/bureaux/paris---france/a-vendre/", timeout=30000)
+                page.wait_for_load_state("networkidle", timeout=20000)
                 time.sleep(3)
+            except:
+                print("    Timeout page initiale, tentative continue...")
 
-                content = page.content()
-                print(f"    Page chargée: {len(content)} chars")
+            content = page.content()
+            print(f"    Page: {len(content)} chars")
 
-                # Chercher les placards/listings dans le DOM
-                listings = page.evaluate("""() => {
-                    const results = [];
-                    const cards = document.querySelectorAll('.placard-content, .search-card, [class*="listing"], article');
-                    cards.forEach(card => {
-                        const text = card.innerText || '';
-                        const link = card.querySelector('a[href]');
-                        const priceMatch = text.match(/([\d\s.,]+)\s*€/);
-                        const surfMatch = text.match(/(\d+)\s*m[²2]/);
-                        const addrEl = card.querySelector('[class*="address"], [class*="location"]');
-                        if (priceMatch || surfMatch) {
-                            results.push({
-                                url: link ? link.href : '',
-                                text: text.substring(0, 500),
-                                price: priceMatch ? priceMatch[1].replace(/[\s.]/g, '').replace(',', '.') : '',
-                                surface: surfMatch ? surfMatch[1] : '',
-                                address: addrEl ? addrEl.innerText.trim() : '',
-                            });
-                        }
-                    });
-                    return results;
-                }""")
+            # 2) Extraire pageguid
+            guid_match = re.search(r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}', content)
+            pageguid = guid_match.group(0) if guid_match else None
+            print(f"    pageguid: {pageguid or 'non trouvé'}")
 
-                print(f"    DOM cards: {len(listings)}")
-
-                # Parser les API interceptées
-                if api_data:
-                    print(f"    API interceptées: {len(api_data)}")
-
-                for raw in listings:
+            # 3) Si pas de GUID, parser directement le HTML déjà chargé
+            if not pageguid:
+                print("    Fallback: parsing HTML direct...")
+                all_results = self._parse_html(content, surface_min, surface_max, prix_max)
+            else:
+                # 4) Appeler l'API via le navigateur (cookies Cloudflare inclus)
+                print("    Appel API /services/search via navigateur...")
+                for pg in range(1, 30):
                     try:
-                        prix = float(raw.get("price", 0) or 0)
-                        surface = float(raw.get("surface", 0) or 0)
-                        if surface < surface_min or surface > surface_max:
-                            continue
-                        if prix > prix_max or prix < 10000:
-                            continue
+                        api_result = page.evaluate(f"""async () => {{
+                            const resp = await fetch('{self.BASE}{self.SEARCH_API}', {{
+                                method: 'POST',
+                                headers: {{'Content-Type': 'application/json'}},
+                                body: JSON.stringify({{
+                                    pageguid: '{pageguid}',
+                                    pageNumber: {pg},
+                                    criteria: {{
+                                        PropertyTypes: 536870920,
+                                        Country: 'FR',
+                                        State: 'PAR',
+                                        GeographyFilters: [{{
+                                            GeographyId: 393,
+                                            GeographyType: 1,
+                                            Display: 'Paris',
+                                        }}],
+                                    }}
+                                }})
+                            }});
+                            return await resp.text();
+                        }}""")
 
-                        # Extraire ville/CP du texte
-                        addr = raw.get("address", "")
-                        cp_match = re.search(r"(\d{5})", raw.get("text", ""))
-                        cp = cp_match.group(1) if cp_match else ""
+                        data = json.loads(api_result)
+                        html = data.get("SearchPlacards", {}).get("Html", "")
+                        if not html:
+                            break
 
-                        deal = self.to_standard({
-                            "url": raw.get("url", ""),
-                            "adresse": addr,
-                            "code_postal": cp,
-                            "departement": cp[:2] if cp else "75",
-                            "commune": addr or "Paris",
-                            "surface": surface,
-                            "prix": prix,
-                            "titre": f"Bureaux {int(surface)}m²",
-                            "description": raw.get("text", "")[:300],
-                        })
-                        all_results.append(deal)
-                    except:
-                        continue
+                        results = self._parse_html(html, surface_min, surface_max, prix_max)
+                        if not results and pg > 1:
+                            break
+                        all_results.extend(results)
+                        print(f"    Page {pg}: {len(results)} biens")
 
-            except Exception as e:
-                print(f"    Erreur: {e}")
+                        time.sleep(1.5)
+                    except Exception as e:
+                        print(f"    Page {pg}: {e}")
+                        break
 
             browser.close()
 
         print(f"  LoopNet: {len(all_results)} biens")
         self.results = all_results
         return all_results
+
+    def _parse_html(self, html, surf_min, surf_max, prix_max):
+        """Parser les cards HTML LoopNet."""
+        results = []
+        soup = BeautifulSoup(html, "html.parser")
+        cards = soup.select("article")
+
+        for card in cards:
+            text = card.get_text(separator=" | ", strip=True)
+            if not text:
+                continue
+
+            link = card.select_one("a[href*='/annonce/']")
+            url = link["href"] if link else ""
+            if url and not url.startswith("http"):
+                url = self.BASE + url
+
+            # Surface
+            surf_m = re.search(r"(\d[\d\s]*)\s*m[²2]", text)
+            if not surf_m:
+                continue
+            surface = int(re.sub(r"\s", "", surf_m.group(1)))
+            if surface < surf_min or surface > surf_max:
+                continue
+
+            # Prix (vente = montant global, pas €/m²/an)
+            prix = 0
+            prix_matches = re.findall(r"([\d\s.,]+)\s*€", text)
+            for pm in prix_matches:
+                val = float(re.sub(r"[\s.]", "", pm).replace(",", "."))
+                if val > 10000:  # Ignorer les loyers
+                    prix = max(prix, val)
+            if prix <= 0 or prix > prix_max:
+                continue
+
+            # Adresse
+            addr = ""
+            cp = ""
+            addr_match = re.search(r"(\d+[^|]*?\d{5}\s+\w+)", text)
+            if addr_match:
+                addr = addr_match.group(1).strip()
+            cp_match = re.search(r"(\d{5})", text)
+            if cp_match:
+                cp = cp_match.group(1)
+
+            deal = self.to_standard({
+                "url": url,
+                "adresse": addr,
+                "code_postal": cp,
+                "departement": cp[:2] if cp else "75",
+                "commune": "Paris",
+                "surface": surface,
+                "prix": prix,
+                "titre": f"Bureaux {surface}m²",
+                "description": text[:300],
+            })
+            results.append(deal)
+
+        return results
 
 
 if __name__ == "__main__":
