@@ -68,6 +68,15 @@ class BureauxLocauxScraper(BaseScraper):
                 print(f"    {len(listings)} annonces trouvees")
 
                 for raw in listings:
+                    # Filtrer: bureaux en vente, dans la fourchette de surface
+                    if not raw.get("is_office") or not raw.get("is_sale"):
+                        continue
+                    surf = float(raw.get("total_surface", 0) or 0)
+                    prix = float(raw.get("sale_price", 0) or 0)
+                    if surf < surface_min or surf > surface_max:
+                        continue
+                    if prix > prix_max or prix <= 0:
+                        continue
                     deal = self._parse_listing(raw, dept)
                     if deal:
                         all_results.append(deal)
@@ -82,51 +91,40 @@ class BureauxLocauxScraper(BaseScraper):
         return all_results
 
     def _extract_json(self, html):
-        """Extraire les données JSON des annonces depuis le HTML."""
+        """Extraire les données JSON des annonces depuis le HTML.
+
+        BureauxLocaux embed un array JSON [{ad_level:..., sale_price:...}]
+        dans un <script> tag. On le parse avec bracket matching.
+        """
         listings = []
 
-        # Méthode 1: chercher le JSON dans les scripts
-        patterns = [
-            r'"items"\s*:\s*(\[.*?\])\s*[,}]',
-            r'"results"\s*:\s*\{[^}]*"items"\s*:\s*(\[.*?\])',
-            r'window\.__INITIAL_STATE__\s*=\s*(\{.*?\});',
-            r'window\.__data__\s*=\s*(\{.*?\});',
-        ]
+        scripts = re.findall(r'<script[^>]*>(.*?)</script>', html, re.DOTALL)
+        for s in scripts:
+            if 'sale_price' not in s:
+                continue
 
-        for pattern in patterns:
-            match = re.search(pattern, html, re.DOTALL)
-            if match:
-                try:
-                    data = json.loads(match.group(1))
-                    if isinstance(data, list):
-                        listings = data
-                    elif isinstance(data, dict):
-                        # Chercher les items dans la structure
-                        for key in ("items", "results", "listings", "annonces"):
-                            if key in data:
-                                items = data[key]
-                                if isinstance(items, dict) and "items" in items:
-                                    listings = items["items"]
-                                elif isinstance(items, list):
-                                    listings = items
-                                break
-                    if listings:
-                        break
-                except json.JSONDecodeError:
-                    continue
+            # Trouver le debut du array JSON
+            start = s.find('[{"ad_level"')
+            if start == -1:
+                continue
 
-        # Méthode 2: chercher des blocs JSON-LD
-        if not listings:
-            ld_matches = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.DOTALL)
-            for ld in ld_matches:
-                try:
-                    data = json.loads(ld)
-                    if isinstance(data, list):
-                        listings.extend(data)
-                    elif isinstance(data, dict) and data.get("@type") in ("Product", "RealEstateListing", "Offer"):
-                        listings.append(data)
-                except json.JSONDecodeError:
-                    continue
+            # Bracket matching pour trouver la fin
+            depth = 0
+            end = start
+            for i in range(start, len(s)):
+                if s[i] == '[':
+                    depth += 1
+                elif s[i] == ']':
+                    depth -= 1
+                if depth == 0:
+                    end = i + 1
+                    break
+
+            try:
+                listings = json.loads(s[start:end])
+                break
+            except json.JSONDecodeError:
+                continue
 
         return listings
 

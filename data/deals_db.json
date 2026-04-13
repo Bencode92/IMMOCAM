@@ -1,8 +1,1419 @@
 {
   "meta": {
-    "last_scrape": null,
-    "total_deals": 0,
-    "par_statut": { "nouveau": 0, "a_verifier": 0, "a_contacter": 0, "simulation": 0, "poubelle": 0 }
+    "last_scrape": "2026-04-13T14:43:20.031892",
+    "total_deals": 22,
+    "par_statut": {
+      "nouveau": 22
+    }
   },
-  "deals": {}
+  "deals": {
+    "60b13fa32a37": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-paris-75009--40090362",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "40  rue Condorcet",
+        "code_postal": "75009",
+        "commune": "Paris",
+        "departement": "75",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 331.94,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1920",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 3415000.0,
+        "prix_m2": 10288.003856118576,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau Paris 75009",
+        "description": "",
+        "photos": 4,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 3415000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "0dfc6faacc41": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-ou-a-louer--40014476",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "40  Cours Albert Ier",
+        "code_postal": "75008",
+        "commune": "Paris",
+        "departement": "75",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 325.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1896",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 4800000.0,
+        "prix_m2": 14769.23076923077,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE OU A LOUER",
+        "description": "ALEX BOLTON vous propose d'acquérir ou de louer des bureaux premium dans le coeur de Paris! Situés dans un emplacement stratégique, ces 325 m² non divisibles offrent un espace de travail moderne et spacieux idéal pour les entreprises exigeantes. Dotés d'une architecture contemporaine et de finitions haut de gamme, ces bureaux offrent un environnement professionnel idéal. Bénéficiant d'une visibilité optimale et d'un accès facile aux transports en commun, cet actif représente une véritable opportunité.  Contactez-nous dès maintenant pour organiser une visite.\n\n\n- Immeuble Lalique classé à l'inventaire des monuments historiques et situé face à la Seine\n- Parties communes de grand standing\n- Digicode\n- Interphone\n- Gardienne\n- Climatisation\n- Capacitaire de 35 personnes\n- Locaux rénovés\n- Climatisation réversible\n- Escalier intérieur\nSurface RDC : 88 m²",
+        "photos": 45,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 4800000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "fed19b567861": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureaux-paris-75017--40003010",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "98  Avenue De Villiers",
+        "code_postal": "75017",
+        "commune": "Paris",
+        "departement": "75",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 313.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1974",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 4200000.0,
+        "prix_m2": 13418.5303514377,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureaux Paris 75017",
+        "description": "Porte de Champerret, Knight Frank vous propose une surface de bureaux sur deux niveaux, reliés par un escalier intérieur, au sein d'un immeuble moderne situé avenue de Villiers. À proximité immédiate de la place Pereire (RER) et du métro Wagram (ligne 3), cet espace bénéficie d'un cadre pratique et bien desservi. Malgré le style contemporain de l'immeuble, les locaux affichent un charme industriel avec une vue dégagée sur une cour arborée. Climatisés, ils offrent une technique apparente qui renforce ce style unique. L'accès se fait par les parties communes, avec deux entrées distinctes, garantissant flexibilité et confort au quotidien.\n\n\nHauteur sous plafond : 5 m\nBelle vue sur cour arborée\nLumineux\nClimatisation\nRez-de-chaussée : accueil, open space, 2 bureaux cloisonnés et salle de réunion\nRez-de-jardin : 1 grand open space, 1 bureau séparé, 1 coin cuisine, double sanitaire, local technique et archives\n\nPossibilité d'ERP\n\nConditions juridiques et financieres :\nRégime fiscal : Droits d'enregistrement\nHonoraires : à la charge de l'acquéreur",
+        "photos": 7,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 4200000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "a709e5e8c0a0": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-lumineux-et-modulables-censier-daubenton--39939885",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "44  Rue Du Fer À Moulin",
+        "code_postal": "75005",
+        "commune": "Paris",
+        "departement": "75",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 357.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2050000.0,
+        "prix_m2": 5742.296918767507,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE, LUMINEUX ET MODULABLES - CENSIER - DAUBENTON",
+        "description": "IMMPROVE vous propose à la vente un bureau idéalement situé au coeur du 5eme arrondissement de Paris, à proximité immédiate du métro Censier-Daubenton et des rues Monge et Mouffetard.\nCe bureau se compose d'une surface totale de 357,52 m², dont 246,11 m² en rez-de-chaussée et 111,41 m² en sous-sol, idéal pour des salles de réunion ou espaces annexes. Il bénéficie d'une grande vitrine et d'une double exposition sur rue et jardin, offrant une belle luminosité. Les locaux sont libres de toute occupation.\n\n\n. Immeuble récent\n. Accès PMR\n. Accès privatif sur rue\n. Double accès\n. Chauffage immeuble gaz\n. Accueil\n. Espace ouvert\n. Bureaux cloisonnés\n. Salle de réunion\n. Local technique\n. Locaux traversants\n. Locaux lumineux\n. Double exposition\n. Décloisonnement possible\n. Carrelage\n. Chauffage central\n. Cuisine\n. Sanitaires privatifs\nSurface RDC : 246,11 m²\n\n\nSituation/Transports :\nBus Les Gobelins (83, 91, N01, N02, 59), Monge - Claude Bernard (24, 27, 47, N22, N15)\nMétro Censier - Daubenton (7)\nTransilien Gare de Lyon (TER), Gare d'Austerlitz (TER)\nRocade Autoroute A6b (Périphérique Paris)\nParking PATRIARCHES (Parking)\nBorne de recharge Paris | Rue Monge 112 (Bornes de recharge)\n\n\nLoi Carrez et affectation juridique en cours de détermination\n\n\nConditions particulières à la vente : Loi Carrez et affectation juridique en cours de détermination",
+        "photos": 13,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2050000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "a21ee6d392c7": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureaux-paris-75010--39815477",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "251  Rue Du Faubourg Saint-Martin",
+        "code_postal": "75010",
+        "commune": "Paris",
+        "departement": "75",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 317.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1960",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2757900.0,
+        "prix_m2": 8700.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureaux Paris 75010",
+        "description": "Au dernier étage d'un immeuble moderne, Knight Frank nous vous proposons une surface de bureaux à l'acquisition à proximité du Bassin de la Villette.\nLes bureaux situés au 7ème et dernier étage de l'immeuble, bénéfcient d'une belle luminosité et peuvent êtres améangés en espaces ouverts ou cloisonnés.\nDisponibilité immédiate.\n\n\nDouble batteries d'ascenseurs\nClimatisation\nSurface traversante\nPeu de contraintes porteuses\n\nConditions juridiques et financieres :\nRégime fiscal : Droits d'enregistrement\nTaxe foncière : 16 €/m²/an\nHonoraires : à la charge de l'acquéreur",
+        "photos": 9,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2757900.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "6b8db7ee13d6": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-paris-75005--39802119",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "31  Rue Censier",
+        "code_postal": "75005",
+        "commune": "Paris",
+        "departement": "75",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 484.3,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 4200000.0,
+        "prix_m2": 8672.310551311171,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau Paris 75005",
+        "description": "A proximité du métro Censier-Daubenton, nous vous proposons d'acquérir une surface livrée curée dans un ensemble de bon standing.\nCinq emplacements de parking en sous-sol complètent l'actif.\n\nBNP Paribas Real Estate vous propose d'acquérir des locaux d'une surface de 484 m² dans le 5ème arrondissement de Paris.\n \nLes locaux se situent au rez-de-chaussée d'un immeuble années 70.\n \n\nVous y retrouverez un plan facilement modulable avec faibles contraintes porteuses. Le plateau est traversant sur rue, jardin et patio, il est livré curé. \nDe plus, l'actif bénéficie de cinq emplacements de parking situés au 2ème sous-sol.\n \nIl dispose d'une bonne accessibilité à seulement 2 minutes à pied du métro Censier-Daubenton, à 2 stations de métro de la Place d'Italie et à 15 minutes en voiture de la Porte d'Italie.\n \nN'hésitez plus et venez découvrir ce bien.\n\n\nMétro : M7 Censier-Daubenton\nBus : 24 & 47\nGare : Austerlitz\nEtat de l'immeuble : Seconde main\nEtat des locaux : Brut de béton\nImmeuble copropriété : Oui\nTerrasses - jardins : Patio\nTerrasses - jardins : Patio\nAménagement des bureaux : Cloisonnés/Ouverts\nSanitaire(s) : Oui\nSanitaire(s) : Oui\nAutre élément bureau : Entrée indépendante",
+        "photos": 9,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 4200000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "4ab674368ccd": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-a-vendre-proche-metro-13--39829732",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "Rue Valiton",
+        "code_postal": "92110",
+        "commune": "Clichy",
+        "departement": "92",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 587.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 459000.0,
+        "prix_m2": 781.9420783645655,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "BUREAUX A VENDRE PROCHE METRO 13",
+        "description": "Saisissez une occasion rare avec EVOLIS pour l'acquisition de bureaux à Clichy, conçus pour les exigences des entreprises d'aujourd'hui. Offrant une flexibilité remarquable, ces espaces totalisent 587 m², divisibles à partir de 102 m², idéals pour adapter vos bureaux à vos besoins spécifiques. Situés dans un quartier dynamique, ces bureaux modernisés vous assurent un cadre de travail optimal. Que vous soyez une start-up en pleine expansion ou une entreprise établie, cette offre exclusive d'EVOLIS est l'opportunité parfaite pour donner un nouvel élan à votre activité. Ne manquez pas cette chance de concrétiser votre projet immobilier professionnel !\n\n\n. Ascenseur\n. Jardin paysager\n. Contrôle d'accès\n. Accès camionnettes\n. Climatisation\n. Faux-plafonds\n. Pré-câblage informatique et téléphonique\n. Accès PMR\n. Portail d'accès\n. Parties communes de qualité\nImmeuble indépendant\nSurface RDC : 350 m²\n\n\nSituation/Transports :\nBus Fournier (274)\nSNCF Clichy-Levallois (Gare SNCF)\nTransilien Asnières-sur-Seine (TER)\nTransilien Clichy - Levallois (L)\nA 1 (Entrée), A 1 (Sortie), A 86 (Entrée Porte de Clichy), A 86 (Sortie Porte de Clichy)",
+        "photos": 11,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 459000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "652b8f2f50e2": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/immeuble-pleine-propriete--39668691",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "37  Rue Louise Michel",
+        "code_postal": "92300",
+        "commune": "Levallois-Perret",
+        "departement": "92",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 338.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1980",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1700000.0,
+        "prix_m2": 5029.585798816568,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Immeuble pleine propriété",
+        "description": "En face du métro Louise Michel, nous vous proposons à la vente un immeuble de bureaux de 338 m² en R+3 en pleine propriété. Vitrine sur rue, rez-de-chaussée de 82 m² donnant sur cour, étages courants d'environ 58 m² chacun et sous-sol d'environ 82 m². Toit-terrasse à aménager.\nPrestations : climatisation réversible, fibre optique, terrasse, sanitaires à tous les niveaux.\n\nImmeuble en pleine propriété en face du métro Louise Michel",
+        "photos": 14,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1700000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "dd7fc4509462": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-immeuble-independant-de-330-m2-dependance--39438342",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "2  Rue De La Vanne",
+        "code_postal": "92120",
+        "commune": "Montrouge",
+        "departement": "92",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 431.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1910",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 2100000.0,
+        "prix_m2": 4872.389791183295,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "À vendre - Immeuble indépendant de 330 m² + dépendance de 100 m² - Cour intérieure - Belle HSP de 3 m à 4,50 m",
+        "description": "Nous vous proposons à la vente un bâtiment indépendant élevé en R+3 développant 330 m², complété par une dépendance de 100 m², offrant un fort potentiel d'exploitation pour un utilisateur ou un investisseur.\n\n\nL'actif bénéficie de deux entrées indépendantes, permettant une organisation flexible des espaces ou une division fonctionnelle des lots. Les plateaux profitent d'une hauteur sous plafond généreuse comprise entre 3 m et 4,50 m, apportant volume, luminosité et qualité architecturale.\n\n\nUne cour intérieure privative vient compléter l'ensemble et constitue un véritable atout différenciant, rare dans le secteur.\n\n\nCe bien s'adresse à une entreprise souhaitant installer son siège dans un immeuble indépendant, à un cabinet professionnel, à un centre de formation ou à un investisseur.\n\n\nTransformation en logement à étudier, sous réserve des autorisations administratives nécessaires, offrant ainsi une perspective de valorisation complémentaire.\n\n\nUn actif rare combinant indépendance, volumes, extérieur et potentiel d'évolution.\n\n\nImmeuble indépendant\nChauffage à gaz\nClimatisation\nBelle HSP de 3m à 4,50m\nCour intérieure\nBâtiment de 330 m² avec une dépendance de 100 m²\nEntrée indépendante pour les deux lots\nBâtiment en R+3\nBeaux volumes\nCour privative\nCuisine\nImmeuble indépendant\nSurface RDC : 0 m²",
+        "photos": 15,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 2100000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "14d19c2e947d": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-clichy-92110--39359958",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "1  Impasse Valiton",
+        "code_postal": "92110",
+        "commune": "Clichy",
+        "departement": "92",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 485.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 607500.0,
+        "prix_m2": 1252.5773195876288,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau Clichy 92110",
+        "description": "Wellstone vous propose des bureaux à la vente en plein coeur de Clichy.\n\n\nLocaux lumineux en bon état\nSurfaces organisées en espaces ouverts/bureaux cloisonnés\nTerrasses privatives R+3\nJardin privatif de 250 m² vendu avec le lot de 200 m²\nEmplacements de parking\nSurface RDC : 350 m²",
+        "photos": 12,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 607500.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "38a7b0351057": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-a-vendre-quai-de-clichy--39298126",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "202  Quai De Clichy - Charles-De-Gaulle",
+        "code_postal": "92110",
+        "commune": "Clichy",
+        "departement": "92",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 411.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2002",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1500000.0,
+        "prix_m2": 3649.6350364963505,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "BUREAUX A VENDRE QUAI DE CLICHY",
+        "description": "L’immeuble, construit en 2010, se situe directement sur les quais de Clichy, dans un environnement urbain animé et facilement accessible. Il s’agit d’un bâtiment moderne offrant des prestations soignées ainsi que des parties communes entretenues. L’accès est facilité par la présence d’ascenseurs ainsi que par la proximité immédiate de divers commerces et services. Le quartier bénéficie d’une bonne desserte en transports et d’un cadre tertiaire établi, rendant l’adresse attractive pour les entreprises.",
+        "photos": 7,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1500000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "97f0ceb72120": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/type-industriel-a-renover--39298085",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "7  Rue Marcel Miquel",
+        "code_postal": "92130",
+        "commune": "Issy-les-Moulineaux",
+        "departement": "92",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 324.98,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1950",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1850000.0,
+        "prix_m2": 5692.658009723675,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "TYPE INDUSTRIEL - A RENOVER",
+        "description": "A toute proximité des transports et de la future Ligne 15 du métro, nous vous proposons ce local commercial au TYPE/LOOK INDUSTRIEL avec un fort POTENTIEL de développement et un large panel d'activités possibles.\n\n- Tram T2 - Station Les Moulineaux - 300m\n- A la sortie du Pont de Billancourt - 200 m\n- Secteur des Trois Moulins\n\nGrand(s) volume(s) - Local lumineux \nStructure métallique principalement - Jusqu'à 4,5 m de hauteur sous faîtage \nVitrine sur rue - 3 ml environ - Porte sectionnelle hauteur 3 m - 2 accès sur rue\n\nPont roulant \nTRAVAUX A PREVOIR - Agenda de projet immobilier utilisateur à environ 12/18 mois.\n\nproduit de type \"value added\" - Fort potentiel de réversion et de création de valeur",
+        "photos": 9,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1850000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "f667da1dd53c": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-au-coeur-du-quartier-daffaires-de-champs--39263247",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "177  Avenue Georges Clemenceau",
+        "code_postal": "92000",
+        "commune": "Nanterre",
+        "departement": "92",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 329.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1990",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 806050.0,
+        "prix_m2": 2450.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE, AU COEUR DU QUARTIER D'AFFAIRES DE CHAMPS PIERREUX",
+        "description": "Au sein d'un immeuble moderne et de bon standing, situé en plein coeur du quartier d'affaires de Champs Pierreux, Immprove vous propose de très beaux bureaux à la vente\n\n\n. Accès P.M.R.\n. Parties communes rénové récemment\n. Ascenseur PMR\n. Accès sécurisé par badge\n. Climatisation\n. Fibre\n. Bureaux cloisonnés\n. Câblage informatique\n. Sanitaires\nImmeuble indépendant\n\n\nSituation/Transports :\nBus Félix Faure (Ligne 258, Ligne 158), Les Alouettes (Ligne 157)\nMétro Ligne 15\nTram T 1\nSNCF Gare de Puteaux (Ligne L et U)\n\n\nLoi Carrez et affectation juridique en cours de détermination\nTaxe foncière : 38 282 euros/an\nTaxe bureaux & stationnement : 45 126 euros/an\n\n\nConditions particulières à la vente : Loi Carrez et affectation juridique en cours de détermination\nTaxe foncière : 38 282 euros/an\nTaxe bureaux & stationnement : 45 126 euros/an",
+        "photos": 19,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 806050.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "6c7ccbbe02c8": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-ou-a-louer-noisy-mont-dest--39207146",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "8  Avenue Montaigne",
+        "code_postal": "93160",
+        "commune": "Noisy-le-Grand",
+        "departement": "93",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 677.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1587500.0,
+        "prix_m2": 2344.903988183161,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE OU A LOUER, NOISY MONT D'EST",
+        "description": "Située à proximité immédiate des autoroutes A4, A104 et A86, au sein d'un ensemble immobilier tertiaire, Immprove vous propose une opportunité exclusive de location/vente de bureaux d'une superficie totale de 677 m² non divisibles. L'emplacement stratégique à proximité de la station RER A \"Noisy-Mont d'Est\" et du centre commercial \"Les Arcades\" assure une accessibilité optimale.\nIntégrés dans une copropriété sécurisée avec poste de contrôle sécurité, gardien, et Restaurant Inter-entreprise, les bureaux sont aménagés, cloisonnés, bénéficient d'une excellente luminosité naturelle et de plusieurs options de stationnement. Ces bureaux offrent un environnement professionnel de qualité. Pour de plus amples informations ou pour organiser une visite exclusive, n'hésitez pas à contacter IMMPROVE.\n\n\nImmeuble de standing\n. PC sécurité\n. Gardien\n. Ascenseurs\n. Air rafraîchi\n. Restaurant Inter Entreprises\n. Locaux aménagés en :\n. Bureaux cloisonnés\n. Salle de réunion\n. Sanitaires privatifs\n. Faux plafonds\n. Moquette\n. Cloisonnement amovible\n. Plinthes périphériques\n. Câblage informatique et téléphonique\n. Prises RJ45\n. Climatisation réversible",
+        "photos": 1,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1587500.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "b6bd706b2358": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-recents-michelet--39290814",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "93400",
+        "commune": "Saint-Ouen-sur-Seine",
+        "departement": "93",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 370.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2006",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 820000.0,
+        "prix_m2": 2216.2162162162163,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "BUREAUX RECENTS MICHELET",
+        "description": "Magnifique bureau idéal toutes solutions y compris Co- working  , situe a 5mn des transports périphérique Nord,  À moins de 10 min à pied du métro Mairie de Saint-Ouen (ligne 14 & RER C).  Au 4eme étage double ascenseur, comprenant un plateau de 370M2 entièrement aménagé en 10 bureaux de 2 a 4 personnes, bureaux direction, salle de réunion pour 15 personnes avec possibilités de doubler, accueil avec 3 postes, cuisine, toilettes .\nLocal ARCHIVE réserve DE 46m2 en sous-sol, 8 places de Parking extérieures, et 4 parkings en Sous-Sol. Chauffage individuel par CLIMATISATION REVERSIBLE. Excellent état exploitable de suite.  Environnement mixte mêlant bureaux, logements récents, commerces et établissements culturels, Immeuble de 10 étage construit en 2006, de class énergétique C .\nFaux plafonds, parquet au sol, cloisonnement amovible, plinthes périphériques, câblage informatique et téléphonique, prises RJ45, système de télésurveillance, alarme\n•\tServices dans l’immeuble : \no\t2 Bars\no\t2 Boulangeries\no\t1 Restaurant\no\t2 Supermarchés\no\t1 Supérette\no\t1 Tabac & Presse\no\tSalle de sport\n\nTRANSPORTS EN COMMUN/MÉTRO/BUS\nCarrefour Pleyel RATP 13\t10 min à pied\tSaint-Denis – Pleyel RATP 14\t11 min à pied\t\nMairie De Saint-Ouen RATP 13 14\t11 min à pied\tGaribaldi RATP 13\t17 min à pied\t\nPorte De Clignancourt RATP T3b\t4 min en voiture\t1,9 mi\nTRAIN DE BANLIEUE\nStade De France Saint-Denis\t14 min à pied\tLa Plaine Stade De France\t19 min à pied\t\nLIBRE DE SUITE. Charges 11000€ /an. Travaux d’entretien toiture etc…votés payés en 2025 \nPRIX 820.000€ net vendeur + honoraires 5% HT\n\nRAPPORT QUALITE PRIX EXCELLENT. TRES PRATIQUE PROCHE HUB METRO RER TRAIN BUS FACILE D ACCES PAR LA ROUTE DU PERIPHERIQUE BEAUCOUP DE MODERNISATION ONT ETE VOTES EN 2025 ,TRES CALME ET TRES CLAIR . UNE SITUATION ATTIRANTE POUR LE PERSONNEL .",
+        "photos": 10,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 820000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "9e636ee441cf": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-a-louer-bureaux-climatises-erp--39263529",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "93100",
+        "commune": "Montreuil",
+        "departement": "93",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 331.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1224700.0,
+        "prix_m2": 3700.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE /A LOUER BUREAUX CLIMATISES ERP",
+        "description": "93100 - BAS MONTREUIL\nA quelques pas de Paris, du Boulevard Périphérique et du métro ligne 9, Groupe Babylone vous propose à la VENTE et à la location des bureaux en parfait état et climatisés.\nCes bureaux sont lumineux et traversants avec une grande flexibilité d'aménagement dans un immeuble moderne de bon standing.\nLe bâtiment possède un accueil mutualisé et de nombreux parkings, ainsi qu'un monte-charge.\nAccès PMR & ERP-able.\nM(9), RER A\n\n\nERP : Catégorie non définie\nPRESTATIONS IMMEUBLE :\nHall d'accueil\nGardien\nDigicode et télésurveillance\nContrôle d'accès extérieur\nTélésurveillance\nAscenseur\nPRESTATIONS LOT :\nLocaux rénovés\nAccès PMR et ERP\nGrands open space\nSurfaces traversantes et lumineuses\nCâblage informatique\nClimatisation réversible\nPlusieurs sanitaires\nPlusieurs sorties de secours\nKitchenette\nFaux plafond\nMoquette\nGrande flexibilité d'aménagement",
+        "photos": 6,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1224700.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "b2c064417882": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-a-louer-bureaux-climatises-erp--39262955",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "93100",
+        "commune": "Montreuil",
+        "departement": "93",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 359.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1328300.0,
+        "prix_m2": 3700.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE /A LOUER BUREAUX CLIMATISES ERP",
+        "description": "Groupe Babylone vous propose des bureaux en parfait état et climatisée.\nCes locaux situés à proximité du métro (LIGNE 9) sont proposés à la vente  ainsi que la location.\nCes bureaux sont lumineux et traversants avec une grande flexibilité d'aménagement dans un immeuble moderne de bon standing.\nLe bâtiment possède un accueil mutualisé et de nombreux parkings.\nAccès PMR & ERP-able.\nM(Ligne 9), RER A\n\n\nERP : Catégorie non définie\nPRESTATIONS IMMEUBLE :\nHall d'accueil\nGardien\nDigicode et télésurveillance\nContrôle d'accès extérieur\nTélésurveillance\nAscenseur\nPRESTATIONS LOT :\nLocaux rénovés\nAccès PMR et ERP\nGrands open space\nSurfaces traversantes et lumineuses\nCâblage informatique\nClimatisation réversible\nPlusieurs sanitaires\nPlusieurs sorties de secours\nKitchenette\nFaux plafond\nMoquette\nGrande flexibilité d'aménagement\nSurface RDC : 0 m²",
+        "photos": 7,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1328300.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "075fe97a0189": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-proximite-immediate-de-la-gare--39261037",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "93420",
+        "commune": "Villepinte",
+        "departement": "93",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 425.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 714840.0,
+        "prix_m2": 1681.9764705882353,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE, PROXIMITE IMMEDIATE DE LA GARE",
+        "description": "Situé à Villepinte (93) au coeur du parc d'affaire Paris Nord 2, face à la gare RER B du Parc des expositions, au sein d'un ensemble immobilier de qualité composé de 2 immeubles, IMMPROVE vous propose à la vente plusieurs plateaux de bureaux divisibles à partir de 100 m². Places de Parkings privatives en sous-sol.\n\n\n. Immeuble récent\n. Façade mur rideau\n. Accès privatif sur rue\n. Double accès\n. Parties communes rénovées récemment\n. Ascenseur PMR\n. Digicode et interphone\n. Air rafraichi\n. Bon état\n. Bureaux cloisonnés\n. Locaux lumineux\n. Décloisonnement possible\n. Locaux rationnels et modulables\n. Faux plafonds\n. Cloisonnement amovible\n. Climatisation\nPrix places de parking : 10 000 euros/U HT\n\n\nSituation/Transports :\nBus Nombreuses lignes\nRER RER B - Parc des Expositions\nTramway Ligne T1\nAutoroute A1, A3 et A104\n\n\nLOI CARREZ APPLICABLE\n\n\nConditions particulières à la vente : LOI CARREZ APPLICABLE",
+        "photos": 10,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 714840.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "12fcb198f1c3": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-charenton-le-pont-94220--39259842",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "24  Rue Du Cadran",
+        "code_postal": "94220",
+        "commune": "Charenton-le-Pont",
+        "departement": "94",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 323.26,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1983",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 950000.0,
+        "prix_m2": 2938.810864319743,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau CHARENTON LE PONT 94220",
+        "description": "BNP Paribas Real Estate vous propose à la vente une surface de bureaux en RDC avec entrée indépendante sur rue. Les locaux situés au cœur de Charenton-Le-Pont à 180m du métro \"Charenton-Ecoles\" Ligne 8, sont en état d'usage avec des travaux à prévoir et disposent d'une surface extérieure à usage privatif.\n\nAdresse : 24 rue du Cadran, Charenton-Le-Pont\nSurface : 319m² utile lot 717 de copropriété\nLocal en RDC avec accès indépendant sur rue\nJardin commun à usage privatif à la surface du RDC\nNombre de lots dans la co-propriété: 696 lots\nMontant annuel moyen de la quote-part à la charge du vendeur du bugdet prévisionnel de dépenses courantes s'élève à 2174\nAncien centre médical\nERPéable avec travaux\nPrix de vente : 950 000\nHonoraires de 5% à la charge de l'acquéreur\n\n\nMétro : M8 Station \"Charenton Ecoles\"\nDesserte routière : A3 PORTE DE BERCY\nEtat de l'immeuble : Etat d'usage\nImmeuble copropriété : Oui\nType chauffage : Individuel\nTerrasses - jardins : Jardinet commun à usage privatif\nFenêtres : Linéaire de façade\nAménagement des bureaux : Cloisonnés",
+        "photos": 14,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 950000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "77c31b0c8de2": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-bureaux-avec-possibilite-de-transformatio--37674672",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "38  Rue De La Convention",
+        "code_postal": "94270",
+        "commune": "Le Kremlin-Bicêtre",
+        "departement": "94",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 446.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1962",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1026064.0,
+        "prix_m2": 2300.591928251121,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "À vendre - Bureaux avec possibilité de transformation en logements au Kremlin-Bicêtre",
+        "description": "Cushman & Wakefield vous propose à la vente une surface de bureaux de 446 m² idéalement située au Kremlin-Bicêtre, à seulement 9 minutes de la ligne 14 et à 6 minutes de la ligne 7, permettant un accès rapide et fluide vers Paris et l'ensemble de l'Île-de-France.\n\n\nCes bureaux spacieux sont proposés au prix de 2 200 000 euros et bénéficient de nombreux atouts rares sur le marché. En complément de la surface principale, 95 m² de stockage sont disponibles, ainsi qu'une cave de 9 m² qui vient renforcer le potentiel fonctionnel des locaux. Sept places de parkings en sous-sol accompagnent le bien, dont trois équipées de bornes de recharge déjà installées, offrant une solution idéale pour anticiper les besoins liés à la mobilité électrique.\n\n\nL'ensemble immobilier présente un fort potentiel et peut, selon les besoins et projets, faire l'objet d'une transformation en logements, ce qui en fait une véritable opportunité d'investissement. Grâce à sa configuration, il peut aussi bien accueillir des bureaux modernes qu'un projet résidentiel ambitieux.\n\n\nLe Kremlin-Bicêtre est une localisation attractive, au coeur d'un environnement dynamique bénéficiant de nombreux commerces, services et restaurants. La proximité immédiate du métro et des grands axes routiers renforce l'accessibilité et fait de ce bien une adresse stratégique, à la frontière de Paris.\n\n\nCette surface de 446 m², avec ses annexes et ses parkings, représente une opportunité rare à la vente, que ce soit pour un utilisateur final à la recherche de bureaux fonctionnels et bien situés ou pour un investisseur souhaitant développer un projet de transformation à forte valeur ajoutée.\n\n\nContactez-nous dès aujourd'hui pour plus d'informations ou pour organiser une visite de ce bien exceptionnel au Kremlin-Bicêtre.\n\n\nImmeuble moderne mixte, proche toutes commodités\nParties communes de qualité\nAscenseur\nAccès sécurisé (Digicode)\nFibre optique\nCave de 9 m² en sous-sol\nAccès PMR\nAccès par ascenseur\nBornes de recharges électriques pour les places de parkings\nTransformation en logement possible et envisageable\nSurface RDC : 303 m²\nInclut des archives d’une surface totale de 95 m²",
+        "photos": 18,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "bc15ef2e177e": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-ou-a-louer-batiment-independant-a-louer-a--39187459",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "50  Rue Alphonse Melun",
+        "code_postal": "94230",
+        "commune": "Cachan",
+        "departement": "94",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 480.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1600000.0,
+        "prix_m2": 3333.3333333333335,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE OU A LOUER, Bâtiment indépendant à louer au pied du RER B !",
+        "description": "IMMPROVE vous propose une opportunité exceptionnelle à la vente ou à la location, avec ces bureaux ce bâtiment indépendant de bureaux sur deux niveaux d'une superficie globale de 480 m² non divisibles dans la commune de Cachan.\n\n\nBâtiment indépendant sur deux niveaux avec sa cour privative pour parkings situé au pied du RER B \"Arcueil-Cachan\", et de la future gare du métro Ligne 15 du Grand Paris.\n\n\nIdéalement situés dans un quartier dynamique et en plein essor, ces espaces de travail offrent un cadre professionnel de qualité pour votre entreprise.\n\n\nBénéficiant d'une superficie généreuse, de belles hauteurs sous plafond, très lumineux,  ces bureaux sont parfaitement adaptés pour accueillir vos équipes et développer votre activité.\n\n\nNe manquez pas cette occasion unique de vous installer dans un environnement propice à la croissance de votre entreprise. Contactez-nous dès maintenant pour plus d'informations et pour organiser une visite.\n\n\nBâtiment type loft atelier bureaux\n. Espace accueil avec double hauteur\n. Bureaux cloisonnés / Open space\n. Salles de réunion\n. Cuisine aménagée\n. Fibre optique\n. Plinthes périphériques pour le câblage informatique\n. Sanitaires privatifs et douche\n. Chauffage électrique\n. Cour extérieure privative\nImmeuble indépendant\nSurface RDC : 240 m²",
+        "photos": 16,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1600000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "92ddf3883243": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-batiments-a-vendre-proche-paris--37673483",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "29  Rue Maurice Berteaux",
+        "code_postal": "94200",
+        "commune": "Ivry-sur-Seine",
+        "departement": "94",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 429.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1925",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1000000.0,
+        "prix_m2": 2331.002331002331,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE, Batiments à vendre proche Paris",
+        "description": "Immprove vous propose à la vente plusieurs lofts dans une petite copropriété à proximité immédiate de Paris, à 4 minutes à pied du tramway T9 station « Châteaudun - Barbes » et à 10 minutes à pied du métro ligne 7 station « Le Kremlin-Bicêtre ». Les locaux sont dans un style atelier et offrent la possibilité d'y développer de multiples activités car ils ont les cinq destinations. Une surélévation est possible. Si vous voulez en savoir plus. Appelez-nous !\n\n\nERP : Catégorie non définie\n. Immeuble mixte\n. Accès véhicules légers\n. Accès PMR\n. Accès privatif sur rue\n. Portail d'accès\n. Digicode\n. Interphone\n. Site clos\n. Fibre optique\n. Cour\n. Possibilité d'accès sur rue\n. Possibilité de décloisonnement total\n. Belle hauteur sous plafonds\n. Pas de voisin au-dessus\n. Cour commune\nSurface RDC : 262 m²",
+        "photos": 11,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1000000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    }
+  }
 }
