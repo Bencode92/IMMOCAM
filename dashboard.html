@@ -3,569 +3,406 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IMMOCAM — Deal Pipeline</title>
+<title>IMMOCAM</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root{
+  --bg:#09090b;--surface:#18181b;--surface2:#27272a;--border:#3f3f46;
+  --text:#fafafa;--text2:#a1a1aa;--text3:#71717a;
+  --accent:#f97316;--accent2:#fb923c;--green:#22c55e;--red:#ef4444;--blue:#3b82f6;--yellow:#eab308;
+  --radius:12px;--radius-sm:8px;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0e1a;color:#e0e0e0;min-height:100vh;display:flex;flex-direction:column}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#000}
 
 /* TOPBAR */
-.topbar{background:#0d1117;border-bottom:1px solid #1a2035;padding:.6rem 1.5rem;display:flex;align-items:center;gap:1.5rem}
-.topbar h1{font-size:1.1rem;color:#ff6644;letter-spacing:.05em}
-.topbar .views{display:flex;gap:0;background:#161b2e;border-radius:6px;overflow:hidden}
-.topbar .vbtn{padding:.4rem .9rem;font-size:.78rem;cursor:pointer;color:#888;border:none;background:none;transition:all .2s}
-.topbar .vbtn.active{background:#ff6644;color:#fff}
-.topbar .vbtn:hover:not(.active){color:#e0e0e0}
-.topbar .stats{margin-left:auto;font-size:.75rem;color:#555}
-.topbar .stats span{margin-left:1rem;color:#888}
+header{padding:1.25rem 2.5rem;display:flex;align-items:center;gap:2rem;border-bottom:1px solid var(--border)}
+header .logo{font-size:1.15rem;font-weight:700;letter-spacing:-.02em;color:var(--text)}
+header .logo span{color:var(--accent)}
+header nav{display:flex;gap:.25rem;background:var(--surface);border-radius:var(--radius-sm);padding:3px}
+header nav button{padding:.45rem 1rem;border:none;background:none;color:var(--text3);font-size:.8rem;font-weight:500;cursor:pointer;border-radius:6px;transition:all .2s}
+header nav button.active{background:var(--accent);color:#000}
+header nav button:hover:not(.active){color:var(--text)}
+header .meta{margin-left:auto;display:flex;gap:1.5rem;font-size:.78rem;color:var(--text3)}
+header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:.4rem}
 
 /* FILTERS */
-.filters{background:#0d1117;padding:.5rem 1.5rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;border-bottom:1px solid #1a2035}
-.filters select,.filters input{background:#161b2e;border:1px solid #2a3050;color:#e0e0e0;padding:.35rem .6rem;border-radius:5px;font-size:.78rem}
-.filters label{font-size:.72rem;color:#888;display:flex;align-items:center;gap:.3rem;cursor:pointer}
-.filters .badge-filter{padding:.25rem .6rem;border-radius:4px;font-size:.72rem;cursor:pointer;border:1px solid #2a3050;background:none;color:#888}
-.filters .badge-filter.active{background:#ff6644;color:#fff;border-color:#ff6644}
+.filter-bar{padding:.75rem 2.5rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.filter-bar select,.filter-bar input[type=text],.filter-bar input[type=number]{
+  background:var(--surface);border:1px solid var(--border);color:var(--text);
+  padding:.45rem .75rem;border-radius:var(--radius-sm);font-size:.78rem;font-family:inherit;outline:none;transition:border .2s}
+.filter-bar select:focus,.filter-bar input:focus{border-color:var(--accent)}
+.filter-bar input::placeholder{color:var(--text3)}
+.pill{padding:.35rem .75rem;border-radius:20px;font-size:.72rem;font-weight:500;cursor:pointer;border:1px solid var(--border);background:none;color:var(--text3);transition:all .2s}
+.pill:hover{border-color:var(--text2);color:var(--text2)}
+.pill.active{background:var(--accent);border-color:var(--accent);color:#000}
+.filter-bar label{font-size:.75rem;color:var(--text3);display:flex;align-items:center;gap:.35rem;cursor:pointer}
+.filter-bar label input{accent-color:var(--accent)}
 
 /* MAIN */
-.main{flex:1;display:flex;overflow:hidden}
+.main{padding:1rem 2.5rem;flex:1}
 
 /* KANBAN */
-.kanban{display:flex;flex:1;gap:0;overflow-x:auto;padding:.75rem}
-.kanban-col{flex:1;min-width:260px;max-width:350px;background:#0d1117;border-radius:10px;margin:0 .4rem;display:flex;flex-direction:column}
-.kanban-col .col-header{padding:.6rem .8rem;font-size:.82rem;font-weight:600;border-bottom:1px solid #1a2035;display:flex;align-items:center;gap:.5rem}
-.kanban-col .col-header .count{background:#2a3050;padding:.1rem .5rem;border-radius:10px;font-size:.7rem;color:#888}
-.col-nouveau .col-header{color:#00d4aa}
-.col-averifier .col-header{color:#ffaa00}
-.col-acontacter .col-header{color:#4488ff}
-.col-simulation .col-header{color:#ff6644}
-.kanban-col .col-body{flex:1;overflow-y:auto;padding:.5rem}
+.kanban{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;min-height:60vh}
+.kanban-col{display:flex;flex-direction:column;min-height:200px}
+.col-label{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:.5rem 0 .75rem;display:flex;align-items:center;gap:.5rem}
+.col-label .cnt{background:var(--surface2);padding:.15rem .5rem;border-radius:10px;font-size:.65rem;font-weight:500;color:var(--text3)}
+.col-nouveau .col-label{color:var(--green)}
+.col-averifier .col-label{color:var(--yellow)}
+.col-acontacter .col-label{color:var(--blue)}
+.col-simulation .col-label{color:var(--accent)}
 
 /* CARD */
-.deal-card{background:#161b2e;border:1px solid #2a3050;border-radius:8px;padding:.7rem;margin-bottom:.5rem;cursor:pointer;transition:all .15s;position:relative}
-.deal-card:hover{border-color:#ff6644;transform:translateY(-1px)}
-.deal-card .card-top{display:flex;justify-content:space-between;align-items:start;margin-bottom:.4rem}
-.deal-card .card-title{font-size:.8rem;font-weight:600;color:#e0e0e0;line-height:1.3}
-.deal-card .card-grade{font-size:.85rem;font-weight:700;padding:.1rem .4rem;border-radius:4px}
-.grade-A{background:#00d4aa22;color:#00d4aa}
-.grade-B{background:#ffaa0022;color:#ffaa00}
-.grade-C{background:#ff666622;color:#ff6666}
-.grade-D{background:#88888822;color:#888}
-.deal-card .card-row{display:flex;justify-content:space-between;font-size:.73rem;padding:.1rem 0}
-.deal-card .card-row .lbl{color:#888}
-.deal-card .card-row .val{color:#e0e0e0}
-.deal-card .card-row .val.good{color:#00d4aa}
-.deal-card .card-row .val.warn{color:#ffaa00}
-.deal-card .card-row .val.bad{color:#ff6666}
-.deal-card .card-badges{display:flex;gap:.3rem;margin-top:.4rem;flex-wrap:wrap}
-.deal-card .badge{font-size:.62rem;padding:.1rem .35rem;border-radius:3px}
-.badge-source{background:#2a3050;color:#888}
-.badge-drop{background:#ff444422;color:#ff6666}
-.badge-new{background:#00d4aa22;color:#00d4aa}
-.deal-card .card-actions{display:flex;gap:.3rem;margin-top:.4rem}
-.deal-card .card-actions button{flex:1;padding:.25rem;border:none;border-radius:4px;font-size:.65rem;cursor:pointer;color:#fff}
-.btn-trash{background:#ff444466}
-.btn-verify{background:#ffaa0066}
-.btn-contact{background:#4488ff66}
-.btn-sim{background:#ff664466}
+.card{background:var(--surface);border-radius:var(--radius);padding:1rem;margin-bottom:.6rem;cursor:pointer;transition:all .2s;border:1px solid transparent}
+.card:hover{border-color:var(--border);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.card-head{display:flex;justify-content:space-between;align-items:start;margin-bottom:.6rem}
+.card-head h4{font-size:.82rem;font-weight:600;line-height:1.35;color:var(--text)}
+.grade{font-size:.7rem;font-weight:700;padding:.2rem .5rem;border-radius:6px;letter-spacing:.02em}
+.grade-A{background:rgba(34,197,94,.15);color:var(--green)}
+.grade-B{background:rgba(234,179,8,.12);color:var(--yellow)}
+.grade-C{background:rgba(239,68,68,.12);color:var(--red)}
+.grade-D{background:var(--surface2);color:var(--text3)}
+.card-metric{display:flex;justify-content:space-between;padding:.15rem 0;font-size:.75rem}
+.card-metric .k{color:var(--text3)}
+.card-metric .v{color:var(--text2);font-weight:500}
+.card-metric .v.up{color:var(--green)}.card-metric .v.down{color:var(--red)}.card-metric .v.neutral{color:var(--yellow)}
+.card-tags{display:flex;gap:.35rem;margin-top:.6rem;flex-wrap:wrap}
+.tag{font-size:.62rem;font-weight:500;padding:.15rem .45rem;border-radius:4px;letter-spacing:.02em}
+.tag-src{background:var(--surface2);color:var(--text3)}
+.tag-drop{background:rgba(239,68,68,.1);color:var(--red)}
+.tag-new{background:rgba(34,197,94,.1);color:var(--green)}
+.card-btns{display:flex;gap:.35rem;margin-top:.6rem;opacity:0;transition:opacity .2s}
+.card:hover .card-btns{opacity:1}
+.card-btns button{flex:1;padding:.3rem;border:none;border-radius:6px;font-size:.6rem;cursor:pointer;background:var(--surface2);color:var(--text3);transition:all .15s}
+.card-btns button:hover{background:var(--accent);color:#000}
 
 /* TABLEAU */
-.tableau{flex:1;overflow:auto;padding:.75rem;display:none}
-.tableau table{width:100%;border-collapse:collapse;font-size:.78rem}
-.tableau th{background:#161b2e;color:#ff6644;font-weight:600;text-align:left;padding:.5rem .6rem;position:sticky;top:0;cursor:pointer;white-space:nowrap}
-.tableau th:hover{background:#1a2240}
-.tableau td{padding:.45rem .6rem;border-bottom:1px solid #1a2035;white-space:nowrap}
-.tableau tr:hover td{background:rgba(255,102,68,.03)}
-.tableau .num{text-align:right}
+.tbl-wrap{display:none;overflow:auto;max-height:75vh}
+.tbl-wrap table{width:100%;border-collapse:separate;border-spacing:0;font-size:.78rem}
+.tbl-wrap th{background:var(--surface);color:var(--text3);font-weight:500;text-align:left;padding:.65rem .8rem;position:sticky;top:0;cursor:pointer;white-space:nowrap;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+.tbl-wrap th:first-child{border-radius:var(--radius-sm) 0 0 0}
+.tbl-wrap th:last-child{border-radius:0 var(--radius-sm) 0 0}
+.tbl-wrap td{padding:.6rem .8rem;border-bottom:1px solid var(--border);white-space:nowrap;color:var(--text2)}
+.tbl-wrap tr{transition:background .15s}
+.tbl-wrap tr:hover td{background:var(--surface)}
+.tbl-wrap .num{text-align:right;font-variant-numeric:tabular-nums}
 
 /* DRAWER */
-.drawer-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:100;display:none}
-.drawer{position:fixed;top:0;right:0;width:480px;height:100%;background:#0d1117;border-left:1px solid #2a3050;z-index:101;display:none;flex-direction:column;overflow:hidden}
-.drawer.open{display:flex}
-.drawer-overlay.open{display:block}
-.drawer .drawer-header{padding:.75rem 1rem;border-bottom:1px solid #1a2035;display:flex;align-items:center;justify-content:space-between}
-.drawer .drawer-header h2{font-size:.95rem;color:#ff6644}
-.drawer .drawer-close{cursor:pointer;color:#888;font-size:1.3rem;background:none;border:none}
-.drawer .drawer-body{flex:1;overflow-y:auto;padding:1rem}
-.drawer .section{margin-bottom:1.25rem}
-.drawer .section h3{font-size:.82rem;color:#888;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem;padding-bottom:.3rem;border-bottom:1px solid #1a2035}
-.drawer .detail-row{display:flex;justify-content:space-between;font-size:.8rem;padding:.2rem 0}
-.drawer .detail-row .dlbl{color:#888}
-.drawer .detail-row .dval{color:#e0e0e0}
-.drawer .score-bar{height:6px;background:#1a2035;border-radius:3px;margin:.2rem 0;overflow:hidden}
-.drawer .score-fill{height:100%;border-radius:3px}
-.drawer .notes-area{width:100%;background:#161b2e;border:1px solid #2a3050;color:#e0e0e0;padding:.5rem;border-radius:6px;font-size:.8rem;min-height:60px;resize:vertical}
-.drawer .drawer-actions{padding:.75rem 1rem;border-top:1px solid #1a2035;display:flex;gap:.5rem}
-.drawer .drawer-actions button{flex:1;padding:.5rem;border:none;border-radius:6px;font-size:.8rem;cursor:pointer;font-weight:600}
-.drawer .btn-primary{background:#ff6644;color:#fff}
-.drawer .btn-secondary{background:#2a3050;color:#e0e0e0}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);z-index:100;opacity:0;pointer-events:none;transition:opacity .3s}
+.overlay.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:-520px;width:500px;height:100%;background:var(--bg);border-left:1px solid var(--border);z-index:101;display:flex;flex-direction:column;transition:right .3s ease}
+.drawer.open{right:0}
+.drawer-head{padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+.drawer-head h2{font-size:.95rem;font-weight:600}
+.drawer-head button{background:none;border:none;color:var(--text3);font-size:1.4rem;cursor:pointer;padding:.25rem;transition:color .15s}
+.drawer-head button:hover{color:var(--text)}
+.drawer-body{flex:1;overflow-y:auto;padding:1.5rem}
+.section{margin-bottom:1.75rem}
+.section h3{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:.65rem}
+.row{display:flex;justify-content:space-between;padding:.25rem 0;font-size:.8rem}
+.row .k{color:var(--text3)}.row .v{color:var(--text);font-weight:500}
+.bar{height:4px;background:var(--surface2);border-radius:2px;margin:.2rem 0 .4rem;overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;transition:width .4s ease}
+.notes{width:100%;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:.65rem;border-radius:var(--radius-sm);font-size:.8rem;font-family:inherit;min-height:70px;resize:vertical;outline:none;transition:border .2s}
+.notes:focus{border-color:var(--accent)}
+.alert-item{font-size:.75rem;color:var(--red);padding:.15rem 0}
+.drawer-foot{padding:1rem 1.5rem;border-top:1px solid var(--border);display:flex;gap:.5rem}
+.drawer-foot button{flex:1;padding:.6rem;border:none;border-radius:var(--radius-sm);font-size:.78rem;font-weight:500;cursor:pointer;transition:all .15s}
+.btn-primary{background:var(--accent);color:#000}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{background:var(--surface);color:var(--text2);border:1px solid var(--border)}
+.btn-ghost:hover{border-color:var(--text3);color:var(--text)}
 
 /* SIM */
 .sim-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
-.sim-card{background:#161b2e;border:1px solid #2a3050;border-radius:8px;padding:.75rem}
-.sim-card h4{font-size:.78rem;color:#ff6644;margin-bottom:.5rem}
-.sim-card .sim-row{display:flex;justify-content:space-between;font-size:.78rem;padding:.15rem 0}
-.sim-card .sim-row .slbl{color:#888}
-.sim-card .sim-row .sval{color:#e0e0e0;font-weight:600}
-.sim-card .sim-total{border-top:1px solid #2a3050;margin-top:.3rem;padding-top:.3rem;font-weight:700}
+.sim-box{background:var(--surface);border-radius:var(--radius-sm);padding:.85rem}
+.sim-box h4{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:.55rem}
+.sim-row{display:flex;justify-content:space-between;font-size:.78rem;padding:.15rem 0}
+.sim-row .sk{color:var(--text3)}.sim-row .sv{color:var(--text);font-weight:500}
+.sim-total{border-top:1px solid var(--border);margin-top:.3rem;padding-top:.35rem}
 
-.empty-state{text-align:center;padding:3rem;color:#555;font-size:.85rem}
+.empty{text-align:center;padding:3rem;color:var(--text3);font-size:.82rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
 
-<div class="topbar">
-  <h1>IMMOCAM</h1>
-  <div class="views">
-    <button class="vbtn active" data-view="kanban">Kanban</button>
-    <button class="vbtn" data-view="tableau">Tableau</button>
+<header>
+  <div class="logo">IMMO<span>CAM</span></div>
+  <nav>
+    <button class="active" data-view="kanban">Kanban</button>
+    <button data-view="tableau">Tableau</button>
+  </nav>
+  <div class="meta">
+    <span><span class="dot" style="background:var(--green)"></span><span id="sNew">0</span> nouveaux</span>
+    <span><span class="dot" style="background:var(--red)"></span><span id="sDrop">0</span> baisses</span>
+    <span id="sTotal" style="color:var(--text2)">0 deals</span>
   </div>
-  <div class="stats">
-    <span id="statTotal">0 deals</span>
-    <span id="statNew" style="color:#00d4aa">0 nouveaux</span>
-    <span id="statDrop" style="color:#ff6666">0 baisses</span>
-  </div>
-</div>
+</header>
 
-<div class="filters">
-  <select id="fSource"><option value="">Source</option></select>
-  <select id="fDept"><option value="">Dept</option></select>
-  <select id="fScore"><option value="">Score</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select>
-  <input id="fSurfMin" type="number" placeholder="Surf min" style="width:75px" />
-  <input id="fSurfMax" type="number" placeholder="Surf max" style="width:75px" />
-  <input id="fPrixMax" type="number" placeholder="Prix max (M)" style="width:90px" />
-  <button class="badge-filter" id="fBaisse" data-active="0">📉 Baisse prix</button>
-  <label><input type="checkbox" id="fArchive"> Archivés</label>
-  <input id="fSearch" type="text" placeholder="Rechercher..." style="flex:1;min-width:150px" />
+<div class="filter-bar">
+  <select id="fSource"><option value="">Toutes sources</option></select>
+  <select id="fDept"><option value="">Tous depts</option></select>
+  <select id="fScore"><option value="">Score</option><option value="A">A</option><option value="B">B</option><option value="C">C</option></select>
+  <input id="fSurfMin" type="number" placeholder="m² min" style="width:72px" />
+  <input id="fSurfMax" type="number" placeholder="m² max" style="width:72px" />
+  <input id="fPrixMax" type="number" placeholder="Prix max (M)" style="width:95px" />
+  <button class="pill" id="fBaisse">Baisse prix</button>
+  <label><input type="checkbox" id="fArchive"> Archives</label>
+  <input id="fSearch" type="text" placeholder="Rechercher..." style="flex:1;min-width:140px" />
 </div>
 
 <div class="main">
-  <!-- KANBAN VIEW -->
   <div class="kanban" id="viewKanban">
-    <div class="kanban-col col-nouveau"><div class="col-header">🆕 Nouveau <span class="count" id="cntNouveau">0</span></div><div class="col-body" id="colNouveau"></div></div>
-    <div class="kanban-col col-averifier"><div class="col-header">🔍 À vérifier <span class="count" id="cntVerifier">0</span></div><div class="col-body" id="colVerifier"></div></div>
-    <div class="kanban-col col-acontacter"><div class="col-header">📞 À contacter <span class="count" id="cntContacter">0</span></div><div class="col-body" id="colContacter"></div></div>
-    <div class="kanban-col col-simulation"><div class="col-header">💰 Simulation <span class="count" id="cntSimulation">0</span></div><div class="col-body" id="colSimulation"></div></div>
+    <div class="kanban-col col-nouveau"><div class="col-label">Nouveau <span class="cnt" id="cN">0</span></div><div id="colN"></div></div>
+    <div class="kanban-col col-averifier"><div class="col-label">A verifier <span class="cnt" id="cV">0</span></div><div id="colV"></div></div>
+    <div class="kanban-col col-acontacter"><div class="col-label">A contacter <span class="cnt" id="cC">0</span></div><div id="colC"></div></div>
+    <div class="kanban-col col-simulation"><div class="col-label">Simulation <span class="cnt" id="cS">0</span></div><div id="colS"></div></div>
   </div>
-
-  <!-- TABLEAU VIEW -->
-  <div class="tableau" id="viewTableau">
-    <table><thead id="tHead"></thead><tbody id="tBody"></tbody></table>
-  </div>
+  <div class="tbl-wrap" id="viewTableau"><table><thead id="tH"></thead><tbody id="tB"></tbody></table></div>
 </div>
 
-<!-- DRAWER -->
-<div class="drawer-overlay" id="drawerOverlay"></div>
-<div class="drawer" id="drawer">
-  <div class="drawer-header">
-    <h2 id="drawerTitle">Détail du bien</h2>
-    <button class="drawer-close" id="drawerClose">&times;</button>
-  </div>
-  <div class="drawer-body" id="drawerBody"></div>
-  <div class="drawer-actions">
-    <button class="btn-secondary" id="drawerTrash">🗑 Poubelle</button>
-    <button class="btn-secondary" id="drawerVerify">🔍 Vérifier</button>
-    <button class="btn-secondary" id="drawerContact" style="background:#4488ff66">📞 Contacter</button>
-    <button class="btn-primary" id="drawerSim">💰 Simuler</button>
+<div class="overlay" id="ov"></div>
+<div class="drawer" id="dw">
+  <div class="drawer-head"><h2 id="dwTitle">Detail</h2><button id="dwClose">&times;</button></div>
+  <div class="drawer-body" id="dwBody"></div>
+  <div class="drawer-foot">
+    <button class="btn-ghost" id="dwTrash">Archiver</button>
+    <button class="btn-ghost" id="dwVerify">Verifier</button>
+    <button class="btn-ghost" id="dwContact" style="color:var(--blue)">Contacter</button>
+    <button class="btn-primary" id="dwSim">Simuler</button>
   </div>
 </div>
 
 <script>
-// ===================================================================
-// CONFIG
-// ===================================================================
-const WORKER_URL = "https://studyforge-proxy.benoit-comas.workers.dev";
-const REPO = "Bencode92/IMMOCAM";
-const DVFMAJ = "Bencode92/DVFMAJ";
-const RAW = "https://raw.githubusercontent.com/" + REPO + "/main";
-const RAW_DVFMAJ = "https://raw.githubusercontent.com/" + DVFMAJ + "/main";
+const REPO="Bencode92/IMMOCAM",DVFMAJ="Bencode92/DVFMAJ";
+const RAW="https://raw.githubusercontent.com/"+REPO+"/main";
+const RAW_D="https://raw.githubusercontent.com/"+DVFMAJ+"/main";
+let D={},REF=null,curKey=null,view="kanban",tCol=null,tAsc=true;
 
-let DEALS = {};  // deal_key -> deal object
-let REFERENTIEL = null;
-let currentDealKey = null;
-let currentView = "kanban";
-let tSortCol = null, tSortAsc = true;
-
-// ===================================================================
-// LOAD DATA
-// ===================================================================
-async function init() {
-  // Load deals DB
-  try {
-    const r = await fetch(RAW + "/data/deals_db.json");
-    if (r.ok) { const db = await r.json(); DEALS = db.deals || {}; }
-  } catch(e) { console.warn("deals_db:", e.message); }
-
-  // Load referentiel
-  try {
-    const r = await fetch(RAW_DVFMAJ + "/output/referentiel_bureaux.json");
-    if (r.ok) REFERENTIEL = await r.json();
-  } catch(e) { console.warn("referentiel:", e.message); }
-
-  // If empty, load demo data
-  if (Object.keys(DEALS).length === 0) loadDemo();
-
-  populateFilters();
-  render();
+async function init(){
+  try{const r=await fetch(RAW+"/data/deals_db.json");if(r.ok){const j=await r.json();D=j.deals||{};}}catch(e){}
+  try{const r=await fetch(RAW_D+"/output/referentiel_bureaux.json");if(r.ok)REF=await r.json();}catch(e){}
+  if(!Object.keys(D).length)loadDemo();
+  popFilters();render();
 }
 
-function loadDemo() {
-  // Some demo deals for UI testing
-  const demos = [
-    { k: "demo1", s: "nouveau", commune: "Paris 8e Arrondissement", dept: "75", addr: "45 rue de Courcelles", surf: 485, prix: 3200000, dpe: "D", loyer: 185000, score: 78, grade: "A", ecart: -40.3, sources: ["bureauxlocaux","geolocaux"], drops: [] },
-    { k: "demo2", s: "nouveau", commune: "Boulogne-Billancourt", dept: "92", addr: "12 rue du Château", surf: 320, prix: 1800000, dpe: "C", loyer: 95000, score: 65, grade: "B", ecart: -15.2, sources: ["bureauxlocaux"], drops: [] },
-    { k: "demo3", s: "a_verifier", commune: "Paris 11e Arrondissement", dept: "75", addr: "89 avenue Parmentier", surf: 380, prix: 2500000, dpe: "E", loyer: 0, score: 52, grade: "C", ecart: -8.1, sources: ["loopnet"], drops: [{date:"2026-04-10",ancien:2800000,nouveau:2500000}] },
-    { k: "demo4", s: "a_contacter", commune: "Issy-les-Moulineaux", dept: "92", addr: "5 rue Ernest Renan", surf: 600, prix: 3100000, dpe: "B", loyer: 210000, score: 82, grade: "A", ecart: -25.0, sources: ["geolocaux","investisseur-immo"], drops: [] },
-    { k: "demo5", s: "simulation", commune: "Paris 15e Arrondissement", dept: "75", addr: "120 rue de Vaugirard", surf: 450, prix: 4200000, dpe: "C", loyer: 280000, score: 71, grade: "B", ecart: -8.5, sources: ["bureauxlocaux"], drops: [] },
-    { k: "demo6", s: "nouveau", commune: "Paris 17e Arrondissement", dept: "75", addr: "30 rue de Lévis", surf: 700, prix: 4500000, dpe: "D", loyer: 0, score: 68, grade: "B", ecart: -22.0, sources: ["bnp-pre"], drops: [] },
-    { k: "demo7", s: "nouveau", commune: "Levallois-Perret", dept: "92", addr: "18 rue Rivay", surf: 350, prix: 2600000, dpe: "C", loyer: 165000, score: 73, grade: "B", ecart: -18.7, sources: ["bureauxlocaux","loopnet","geolocaux"], drops: [{date:"2026-04-08",ancien:2900000,nouveau:2600000}] },
+function loadDemo(){
+  const ds=[
+    {k:"d1",s:"nouveau",c:"Paris 8e Arrondissement",d:"75",a:"45 rue de Courcelles",sf:485,px:3200000,dpe:"D",lo:185000,sc:78,g:"A",ec:-40.3,src:["bureauxlocaux","geolocaux"],hi:[]},
+    {k:"d2",s:"nouveau",c:"Boulogne-Billancourt",d:"92",a:"12 rue du Chateau",sf:320,px:1800000,dpe:"C",lo:95000,sc:65,g:"B",ec:-15.2,src:["bureauxlocaux"],hi:[]},
+    {k:"d3",s:"a_verifier",c:"Paris 11e Arrondissement",d:"75",a:"89 avenue Parmentier",sf:380,px:2500000,dpe:"E",lo:0,sc:52,g:"C",ec:-8.1,src:["loopnet"],hi:[{d:"2026-04-01",p:2800000},{d:"2026-04-10",p:2500000}]},
+    {k:"d4",s:"a_contacter",c:"Issy-les-Moulineaux",d:"92",a:"5 rue Ernest Renan",sf:600,px:3100000,dpe:"B",lo:210000,sc:82,g:"A",ec:-25,src:["geolocaux","investisseur-immo"],hi:[]},
+    {k:"d5",s:"simulation",c:"Paris 15e Arrondissement",d:"75",a:"120 rue de Vaugirard",sf:450,px:4200000,dpe:"C",lo:280000,sc:71,g:"B",ec:-8.5,src:["bureauxlocaux"],hi:[]},
+    {k:"d6",s:"nouveau",c:"Paris 17e Arrondissement",d:"75",a:"30 rue de Levis",sf:700,px:4500000,dpe:"D",lo:0,sc:68,g:"B",ec:-22,src:["bnp-pre"],hi:[]},
+    {k:"d7",s:"nouveau",c:"Levallois-Perret",d:"92",a:"18 rue Rivay",sf:350,px:2600000,dpe:"C",lo:165000,sc:73,g:"B",ec:-18.7,src:["bureauxlocaux","loopnet","geolocaux"],hi:[{d:"2026-04-01",p:2900000},{d:"2026-04-08",p:2600000}]},
+    {k:"d8",s:"nouveau",c:"Nanterre",d:"92",a:"4 rue des Trois Fontanot",sf:520,px:2200000,dpe:"D",lo:140000,sc:75,g:"B",ec:-28,src:["loopnet"],hi:[]},
   ];
-  for (const d of demos) {
-    DEALS[d.k] = {
-      _statut: d.s, _first_seen: "2026-04-13", _last_seen: "2026-04-13",
-      _sources: d.sources, _notes: "", _prix_historique: d.drops.length ? [{date:"2026-04-01",prix:d.drops[0].ancien},{date:d.drops[0].date,prix:d.drops[0].nouveau}] : [{date:"2026-04-13",prix:d.prix}],
-      source: d.sources[0], url: "#",
-      localisation: { adresse: d.addr, commune: d.commune, departement: d.dept, code_insee: "" },
-      bien: { type: "bureaux", surface_m2: d.surf, dpe: d.dpe },
-      financier: { prix_affiche: d.prix, prix_m2: Math.round(d.prix / d.surf) },
-      locatif: { loyer_actuel_an: d.loyer, loyer_m2_an: d.loyer > 0 ? Math.round(d.loyer / d.surf) : 0 },
-      annonce: { titre: `Bureaux ${d.surf}m² — ${d.commune}` },
-      scoring: { score_global: d.score, grade: d.grade, prix_vs_marche_pct: d.ecart, alertes: d.dpe >= "D" ? [`DPE ${d.dpe}`] : [] },
+  for(const x of ds){
+    D[x.k]={_statut:x.s,_first_seen:"2026-04-13",_last_seen:"2026-04-13",_sources:x.src,_notes:"",
+      _prix_historique:x.hi.length?x.hi:[{d:"2026-04-13",p:x.px}],
+      source:x.src[0],url:"#",
+      localisation:{adresse:x.a,commune:x.c,departement:x.d},
+      bien:{surface_m2:x.sf,dpe:x.dpe},
+      financier:{prix_affiche:x.px,prix_m2:Math.round(x.px/x.sf)},
+      locatif:{loyer_actuel_an:x.lo,loyer_m2_an:x.lo?Math.round(x.lo/x.sf):0},
+      annonce:{titre:`Bureaux ${x.sf}m\u00B2 \u2014 ${x.c}`},
+      scoring:{score_global:x.sc,grade:x.g,prix_vs_marche_pct:x.ec,scores_detail:{prix:x.sc,loyer:60,rendement:55,risque:50},alertes:x.dpe>="D"?[`DPE ${x.dpe}`]:[]},
     };
   }
 }
 
-// ===================================================================
-// FILTERS
-// ===================================================================
-function populateFilters() {
-  const sources = new Set(), depts = new Set();
-  for (const d of Object.values(DEALS)) {
-    (d._sources || []).forEach(s => sources.add(s));
-    const dp = d.localisation?.departement; if (dp) depts.add(dp);
-  }
-  const fS = document.getElementById("fSource");
-  sources.forEach(s => { const o = document.createElement("option"); o.value = s; o.textContent = s; fS.appendChild(o); });
-  const fD = document.getElementById("fDept");
-  [...depts].sort().forEach(s => { const o = document.createElement("option"); o.value = s; o.textContent = s; fD.appendChild(o); });
+function popFilters(){
+  const ss=new Set,dd=new Set;
+  for(const v of Object.values(D)){(v._sources||[]).forEach(s=>ss.add(s));const dp=v.localisation?.departement;if(dp)dd.add(dp);}
+  const fS=document.getElementById("fSource");ss.forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;fS.appendChild(o);});
+  const fD=document.getElementById("fDept");[...dd].sort().forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;fD.appendChild(o);});
 }
 
-function getFilteredDeals() {
-  const fSrc = document.getElementById("fSource").value;
-  const fDpt = document.getElementById("fDept").value;
-  const fScr = document.getElementById("fScore").value;
-  const fSMin = parseFloat(document.getElementById("fSurfMin").value) || 0;
-  const fSMax = parseFloat(document.getElementById("fSurfMax").value) || 999999;
-  const fPMax = (parseFloat(document.getElementById("fPrixMax").value) || 999) * 1e6;
-  const fBaisse = document.getElementById("fBaisse").dataset.active === "1";
-  const fArch = document.getElementById("fArchive").checked;
-  const fQ = document.getElementById("fSearch").value.toLowerCase();
-
-  return Object.entries(DEALS).filter(([k, d]) => {
-    if (!fArch && d._statut === "poubelle") return false;
-    if (fSrc && !(d._sources || []).includes(fSrc)) return false;
-    if (fDpt && d.localisation?.departement !== fDpt) return false;
-    if (fScr && d.scoring?.grade !== fScr) return false;
-    const surf = d.bien?.surface_m2 || 0;
-    if (surf < fSMin || surf > fSMax) return false;
-    if ((d.financier?.prix_affiche || 0) > fPMax) return false;
-    if (fBaisse && (d._prix_historique || []).length < 2) return false;
-    if (fQ) {
-      const txt = (d.localisation?.commune + " " + d.localisation?.adresse + " " + d.annonce?.titre).toLowerCase();
-      if (!txt.includes(fQ)) return false;
-    }
+function filtered(){
+  const fs=document.getElementById("fSource").value,fd=document.getElementById("fDept").value,fg=document.getElementById("fScore").value;
+  const sn=parseFloat(document.getElementById("fSurfMin").value)||0,sx=parseFloat(document.getElementById("fSurfMax").value)||999999;
+  const px=(parseFloat(document.getElementById("fPrixMax").value)||999)*1e6;
+  const fb=document.getElementById("fBaisse").classList.contains("active"),fa=document.getElementById("fArchive").checked;
+  const fq=document.getElementById("fSearch").value.toLowerCase();
+  return Object.entries(D).filter(([,d])=>{
+    if(!fa&&d._statut==="poubelle")return false;
+    if(fs&&!(d._sources||[]).includes(fs))return false;
+    if(fd&&d.localisation?.departement!==fd)return false;
+    if(fg&&d.scoring?.grade!==fg)return false;
+    const sf=d.bien?.surface_m2||0;if(sf<sn||sf>sx)return false;
+    if((d.financier?.prix_affiche||0)>px)return false;
+    if(fb&&(d._prix_historique||[]).length<2)return false;
+    if(fq){const t=(d.localisation?.commune+" "+d.localisation?.adresse+" "+d.annonce?.titre).toLowerCase();if(!t.includes(fq))return false;}
     return true;
   });
 }
 
-// Filter events
-["fSource","fDept","fScore","fSurfMin","fSurfMax","fPrixMax","fSearch","fArchive"].forEach(id => {
-  document.getElementById(id).addEventListener("input", () => render());
-  document.getElementById(id).addEventListener("change", () => render());
+["fSource","fDept","fScore","fSurfMin","fSurfMax","fPrixMax","fSearch","fArchive"].forEach(id=>{
+  const el=document.getElementById(id);el.addEventListener("input",()=>render());el.addEventListener("change",()=>render());
 });
-document.getElementById("fBaisse").addEventListener("click", function() {
-  this.dataset.active = this.dataset.active === "1" ? "0" : "1";
-  this.classList.toggle("active");
+document.getElementById("fBaisse").addEventListener("click",function(){this.classList.toggle("active");render();});
+
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+  view=b.dataset.view;
+  document.getElementById("viewKanban").style.display=view==="kanban"?"grid":"none";
+  document.getElementById("viewTableau").style.display=view==="tableau"?"block":"none";
   render();
-});
+}));
 
-// ===================================================================
-// VIEW TOGGLE
-// ===================================================================
-document.querySelectorAll(".vbtn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".vbtn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    currentView = btn.dataset.view;
-    document.getElementById("viewKanban").style.display = currentView === "kanban" ? "flex" : "none";
-    document.getElementById("viewTableau").style.display = currentView === "tableau" ? "block" : "none";
-    render();
-  });
-});
-
-// ===================================================================
-// RENDER
-// ===================================================================
-function render() {
-  const deals = getFilteredDeals();
-  updateStats(deals);
-  if (currentView === "kanban") renderKanban(deals);
-  else renderTableau(deals);
+function render(){
+  const deals=filtered();
+  document.getElementById("sTotal").textContent=deals.length+" deals";
+  document.getElementById("sNew").textContent=deals.filter(([,d])=>d._statut==="nouveau").length;
+  document.getElementById("sDrop").textContent=deals.filter(([,d])=>(d._prix_historique||[]).length>=2).length;
+  if(view==="kanban")renderK(deals);else renderT(deals);
 }
 
-function updateStats(deals) {
-  const total = deals.length;
-  const nouveau = deals.filter(([,d]) => d._statut === "nouveau").length;
-  const drops = deals.filter(([,d]) => (d._prix_historique || []).length >= 2).length;
-  document.getElementById("statTotal").textContent = total + " deals";
-  document.getElementById("statNew").textContent = nouveau + " nouveaux";
-  document.getElementById("statDrop").textContent = drops + " baisses";
-}
-
-// ===================================================================
-// KANBAN
-// ===================================================================
-function renderKanban(deals) {
-  const cols = { nouveau: [], a_verifier: [], a_contacter: [], simulation: [] };
-  for (const [k, d] of deals) {
-    const s = d._statut || "nouveau";
-    if (cols[s]) cols[s].push([k, d]);
-  }
-
-  const colMap = { nouveau: "colNouveau", a_verifier: "colVerifier", a_contacter: "colContacter", simulation: "colSimulation" };
-  const cntMap = { nouveau: "cntNouveau", a_verifier: "cntVerifier", a_contacter: "cntContacter", simulation: "cntSimulation" };
-
-  for (const [statut, items] of Object.entries(cols)) {
-    document.getElementById(cntMap[statut]).textContent = items.length;
-    const body = document.getElementById(colMap[statut]);
-    if (items.length === 0) { body.innerHTML = '<div class="empty-state">Aucun deal</div>'; continue; }
-    body.innerHTML = items.map(([k, d]) => buildCard(k, d)).join("");
+function renderK(deals){
+  const cols={nouveau:[],a_verifier:[],a_contacter:[],simulation:[]};
+  for(const[k,d]of deals){const s=d._statut||"nouveau";if(cols[s])cols[s].push([k,d]);}
+  const map={nouveau:"colN",a_verifier:"colV",a_contacter:"colC",simulation:"colS"};
+  const cnt={nouveau:"cN",a_verifier:"cV",a_contacter:"cC",simulation:"cS"};
+  for(const[s,items]of Object.entries(cols)){
+    document.getElementById(cnt[s]).textContent=items.length;
+    document.getElementById(map[s]).innerHTML=items.length?items.map(([k,d])=>mkCard(k,d)).join(""):'<div class="empty">Aucun deal</div>';
   }
 }
 
-function buildCard(key, d) {
-  const s = d.scoring || {};
-  const prix = d.financier?.prix_affiche || 0;
-  const prixM2 = d.financier?.prix_m2 || 0;
-  const surf = d.bien?.surface_m2 || 0;
-  const commune = d.localisation?.commune || "?";
-  const grade = s.grade || "?";
-  const ecart = s.prix_vs_marche_pct;
-  const ecartCls = ecart != null ? (ecart <= -20 ? "good" : ecart <= 0 ? "warn" : "bad") : "";
-  const sources = d._sources || [];
-  const hist = d._prix_historique || [];
-  const hasDrop = hist.length >= 2 && hist[hist.length-1].prix < hist[hist.length-2].prix;
-  const dropAmt = hasDrop ? hist[hist.length-1].prix - hist[hist.length-2].prix : 0;
-
-  return `<div class="deal-card" onclick="openDrawer('${key}')">
-    <div class="card-top">
-      <div class="card-title">${surf}m² — ${commune}</div>
-      <span class="card-grade grade-${grade}">${grade}</span>
+function mkCard(key,d){
+  const s=d.scoring||{},px=d.financier?.prix_affiche||0,pm=d.financier?.prix_m2||0,sf=d.bien?.surface_m2||0;
+  const c=d.localisation?.commune||"",g=s.grade||"?",ec=s.prix_vs_marche_pct;
+  const ecCls=ec!=null?(ec<=-20?"up":ec<=0?"neutral":"down"):"";
+  const src=d._sources||[],hi=d._prix_historique||[];
+  const drop=hi.length>=2&&hi[hi.length-1].p<hi[hi.length-2].p;
+  const dropK=drop?Math.round((hi[hi.length-1].p-hi[hi.length-2].p)/1e3):0;
+  return `<div class="card" onclick="openDw('${key}')">
+    <div class="card-head"><h4>${sf}m\u00B2 \u2014 ${c}</h4><span class="grade grade-${g}">${g}</span></div>
+    <div class="card-metric"><span class="k">Prix</span><span class="v">${(px/1e6).toFixed(2)}M\u20AC</span></div>
+    <div class="card-metric"><span class="k">\u20AC/m\u00B2</span><span class="v">${pm.toLocaleString("fr")}</span></div>
+    <div class="card-metric"><span class="k">vs march\u00E9</span><span class="v ${ecCls}">${ec!=null?(ec>0?"+":"")+ec.toFixed(1)+"%":"\u2014"}</span></div>
+    ${d.bien?.dpe?`<div class="card-metric"><span class="k">DPE</span><span class="v">${d.bien.dpe}</span></div>`:""}
+    <div class="card-tags">
+      ${src.length>1?`<span class="tag tag-src">${src.length} sources</span>`:""}
+      ${drop?`<span class="tag tag-drop">\u2193 ${dropK}K\u20AC</span>`:""}
+      ${!drop&&hi.length<=1?'<span class="tag tag-new">NEW</span>':""}
     </div>
-    <div class="card-row"><span class="lbl">Prix</span><span class="val">${(prix/1e6).toFixed(2)}M€</span></div>
-    <div class="card-row"><span class="lbl">€/m²</span><span class="val">${prixM2.toLocaleString("fr")}</span></div>
-    <div class="card-row"><span class="lbl">vs marché</span><span class="val ${ecartCls}">${ecart != null ? (ecart > 0 ? "+" : "") + ecart.toFixed(1) + "%" : "-"}</span></div>
-    ${d.bien?.dpe ? `<div class="card-row"><span class="lbl">DPE</span><span class="val">${d.bien.dpe}</span></div>` : ""}
-    <div class="card-badges">
-      ${sources.length > 1 ? `<span class="badge badge-source">📍${sources.length} sources</span>` : ""}
-      ${hasDrop ? `<span class="badge badge-drop">📉 ${(dropAmt/1e3).toFixed(0)}K€</span>` : ""}
-      ${d._statut === "nouveau" && hist.length <= 1 ? '<span class="badge badge-new">NEW</span>' : ""}
-    </div>
-    <div class="card-actions">
-      <button class="btn-trash" onclick="event.stopPropagation();setStatut('${key}','poubelle')">🗑</button>
-      <button class="btn-verify" onclick="event.stopPropagation();setStatut('${key}','a_verifier')">🔍</button>
-      <button class="btn-contact" onclick="event.stopPropagation();setStatut('${key}','a_contacter')">📞</button>
-      <button class="btn-sim" onclick="event.stopPropagation();setStatut('${key}','simulation')">💰</button>
+    <div class="card-btns">
+      <button onclick="event.stopPropagation();setSt('${key}','poubelle')">Archive</button>
+      <button onclick="event.stopPropagation();setSt('${key}','a_verifier')">V\u00E9rifier</button>
+      <button onclick="event.stopPropagation();setSt('${key}','a_contacter')">Contact</button>
+      <button onclick="event.stopPropagation();setSt('${key}','simulation')">Simuler</button>
     </div>
   </div>`;
 }
 
-// ===================================================================
-// TABLEAU
-// ===================================================================
-function renderTableau(deals) {
-  const cols = [
-    {k:"_statut",l:"Statut"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},
-    {k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"€/m²",n:1},{k:"ecart",l:"vs Marché",n:1},
-    {k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer/an",n:1},{k:"yield",l:"Yield",n:1},
-    {k:"grade",l:"Score"},{k:"sources",l:"Sources",n:1}
-  ];
-
-  let rows = deals.map(([k,d]) => ({
-    k, _statut: d._statut, commune: d.localisation?.commune || "",
-    surface: d.bien?.surface_m2 || 0, prix: d.financier?.prix_affiche || 0,
-    prix_m2: d.financier?.prix_m2 || 0, ecart: d.scoring?.prix_vs_marche_pct,
-    dpe: d.bien?.dpe || "", loyer: d.locatif?.loyer_actuel_an || 0,
-    yield: d.locatif?.loyer_actuel_an && d.financier?.prix_affiche ? (d.locatif.loyer_actuel_an / d.financier.prix_affiche * 100) : 0,
-    grade: d.scoring?.grade || "?", sources: (d._sources||[]).length,
-  }));
-
-  if (tSortCol) rows.sort((a,b) => { let va=a[tSortCol],vb=b[tSortCol]; if(va==null)return 1;if(vb==null)return -1; return typeof va==="string"?(tSortAsc?va.localeCompare(vb):vb.localeCompare(va)):(tSortAsc?va-vb:vb-va); });
-
-  const arrow = k => tSortCol===k?(tSortAsc?" ▲":" ▼"):"";
-  document.getElementById("tHead").innerHTML = "<tr>" + cols.map(c => `<th class="${c.n?'num':''}" onclick="sortTableau('${c.k}')">${c.l}${arrow(c.k)}</th>`).join("") + "</tr>";
-
-  const ecC = v => v==null?"":(v<=-20?"good":v<=0?"warn":"bad");
-  const grC = g => g==="A"?"grade-A":g==="B"?"grade-B":g==="C"?"grade-C":"grade-D";
-  const stL = s => ({nouveau:"🆕",a_verifier:"🔍",a_contacter:"📞",simulation:"💰",poubelle:"🗑"}[s]||s);
-
-  document.getElementById("tBody").innerHTML = rows.map(r => `<tr onclick="openDrawer('${r.k}')" style="cursor:pointer">
-    <td>${stL(r._statut)}</td><td>${r.commune}</td><td class="num">${r.surface}m²</td>
-    <td class="num">${(r.prix/1e6).toFixed(2)}M€</td><td class="num">${r.prix_m2.toLocaleString("fr")}</td>
-    <td class="num ${ecC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"-"}</td>
-    <td>${r.dpe}</td><td class="num">${r.loyer>0?(r.loyer/1e3).toFixed(0)+"K€":"-"}</td>
-    <td class="num">${r.yield>0?r.yield.toFixed(1)+"%":"-"}</td>
-    <td><span class="${grC(r.grade)}" style="padding:.1rem .4rem;border-radius:3px">${r.grade}</span></td>
-    <td class="num">${r.sources}</td>
+function renderT(deals){
+  const cols=[{k:"_statut",l:"Statut"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"sources",l:"Src",n:1}];
+  let rows=deals.map(([k,d])=>({k,_statut:d._statut,commune:d.localisation?.commune||"",surface:d.bien?.surface_m2||0,prix:d.financier?.prix_affiche||0,prix_m2:d.financier?.prix_m2||0,ecart:d.scoring?.prix_vs_marche_pct,dpe:d.bien?.dpe||"",loyer:d.locatif?.loyer_actuel_an||0,yield:d.locatif?.loyer_actuel_an&&d.financier?.prix_affiche?(d.locatif.loyer_actuel_an/d.financier.prix_affiche*100):0,grade:d.scoring?.grade||"?",sources:(d._sources||[]).length}));
+  if(tCol)rows.sort((a,b)=>{let va=a[tCol],vb=b[tCol];if(va==null)return 1;if(vb==null)return -1;return typeof va==="string"?(tAsc?va.localeCompare(vb):vb.localeCompare(va)):(tAsc?va-vb:vb-va);});
+  const ar=k=>tCol===k?(tAsc?" \u25B2":" \u25BC"):"";
+  const stI={nouveau:"\uD83C\uDD95",a_verifier:"\uD83D\uDD0D",a_contacter:"\uD83D\uDCDE",simulation:"\uD83D\uDCB0",poubelle:"\uD83D\uDDD1"};
+  document.getElementById("tH").innerHTML="<tr>"+cols.map(c=>`<th class="${c.n?'num':''}" onclick="tSort('${c.k}')">${c.l}${ar(c.k)}</th>`).join("")+"</tr>";
+  const eC=v=>v==null?"":(v<=-20?"color:var(--green)":v<=0?"color:var(--yellow)":"color:var(--red)");
+  document.getElementById("tB").innerHTML=rows.map(r=>`<tr onclick="openDw('${r.k}')" style="cursor:pointer">
+    <td>${stI[r._statut]||r._statut}</td><td>${r.commune}</td><td class="num">${r.surface}m\u00B2</td>
+    <td class="num">${(r.prix/1e6).toFixed(2)}M\u20AC</td><td class="num">${r.prix_m2.toLocaleString("fr")}</td>
+    <td class="num" style="${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"\u2014"}</td>
+    <td>${r.dpe}</td><td class="num">${r.loyer>0?(r.loyer/1e3).toFixed(0)+"K\u20AC":"\u2014"}</td>
+    <td class="num">${r.yield>0?r.yield.toFixed(1)+"%":"\u2014"}</td>
+    <td><span class="grade grade-${r.grade}">${r.grade}</span></td><td class="num">${r.sources}</td>
   </tr>`).join("");
 }
+window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
 
-window.sortTableau = k => { if(tSortCol===k)tSortAsc=!tSortAsc;else{tSortCol=k;tSortAsc=true;} render(); };
-
-// ===================================================================
 // DRAWER
-// ===================================================================
-window.openDrawer = (key) => {
-  currentDealKey = key;
-  const d = DEALS[key];
-  if (!d) return;
+window.openDw=key=>{
+  curKey=key;const d=D[key];if(!d)return;
+  document.getElementById("dw").classList.add("open");document.getElementById("ov").classList.add("open");
+  document.getElementById("dwTitle").textContent=d.annonce?.titre||"D\u00E9tail";
+  const s=d.scoring||{},f=d.financier||{},l=d.locatif||{},b=d.bien||{},hi=d._prix_historique||[];
+  const det=s.scores_detail||{};
+  const bFill=(v,c)=>`<div class="bar"><div class="bar-fill" style="width:${v}%;background:${c}"></div></div>`;
+  const bCol=v=>v>=70?"var(--green)":v>=40?"var(--yellow)":"var(--red)";
 
-  document.getElementById("drawer").classList.add("open");
-  document.getElementById("drawerOverlay").classList.add("open");
-  document.getElementById("drawerTitle").textContent = d.annonce?.titre || "Détail du bien";
+  let h=`<div class="section"><h3>Localisation</h3>
+    <div class="row"><span class="k">Adresse</span><span class="v">${d.localisation?.adresse||"\u2014"}</span></div>
+    <div class="row"><span class="k">Commune</span><span class="v">${d.localisation?.commune||"\u2014"}</span></div>
+    <div class="row"><span class="k">Sources</span><span class="v">${(d._sources||[]).join(", ")}</span></div>
+    <div class="row"><span class="k">Premier vu</span><span class="v">${d._first_seen||"\u2014"}</span></div></div>
 
-  const s = d.scoring || {};
-  const fin = d.financier || {};
-  const loc = d.locatif || {};
-  const bien = d.bien || {};
-  const hist = d._prix_historique || [];
+    <div class="section"><h3>Score \u2014 ${s.grade||"?"} (${s.score_global||0}/100)</h3>
+    ${Object.entries(det).map(([k,v])=>`<div class="row"><span class="k">${k}</span><span class="v">${Math.round(v)}</span></div>${bFill(v,bCol(v))}`).join("")}
+    ${(s.alertes||[]).map(a=>`<div class="alert-item">\u26A0 ${a}</div>`).join("")}</div>
 
-  const scFill = (v,c) => `<div class="score-bar"><div class="score-fill" style="width:${v}%;background:${c}"></div></div>`;
-  const details = s.scores_detail || {};
+    <div class="section"><h3>Financier</h3>
+    <div class="row"><span class="k">Prix</span><span class="v">${f.prix_affiche?(f.prix_affiche/1e6).toFixed(2)+"M\u20AC":"\u2014"}</span></div>
+    <div class="row"><span class="k">\u20AC/m\u00B2</span><span class="v">${f.prix_m2?f.prix_m2.toLocaleString("fr"):"\u2014"}</span></div>
+    <div class="row"><span class="k">vs march\u00E9</span><span class="v" style="${s.prix_vs_marche_pct!=null?(s.prix_vs_marche_pct<=-20?"color:var(--green)":"color:var(--yellow)"):""}">
+      ${s.prix_vs_marche_pct!=null?s.prix_vs_marche_pct.toFixed(1)+"%":"\u2014"}</span></div></div>
 
-  let html = `
-    <div class="section">
-      <h3>Localisation</h3>
-      <div class="detail-row"><span class="dlbl">Adresse</span><span class="dval">${d.localisation?.adresse || "-"}</span></div>
-      <div class="detail-row"><span class="dlbl">Commune</span><span class="dval">${d.localisation?.commune || "-"}</span></div>
-      <div class="detail-row"><span class="dlbl">Sources</span><span class="dval">${(d._sources||[]).join(", ")}</span></div>
-      <div class="detail-row"><span class="dlbl">Vu le</span><span class="dval">${d._first_seen || "-"}</span></div>
-    </div>
+    <div class="section"><h3>Bien</h3>
+    <div class="row"><span class="k">Surface</span><span class="v">${b.surface_m2||"\u2014"} m\u00B2</span></div>
+    <div class="row"><span class="k">DPE</span><span class="v">${b.dpe||"\u2014"}</span></div>
+    <div class="row"><span class="k">Parking</span><span class="v">${b.parking||"\u2014"}</span></div></div>
 
-    <div class="section">
-      <h3>Scoring — ${s.grade || "?"} (${s.score_global || 0}/100)</h3>
-      <div class="detail-row"><span class="dlbl">Prix vs marché</span><span class="dval">${s.prix_vs_marche_pct != null ? s.prix_vs_marche_pct.toFixed(1)+"%" : "-"}</span></div>
-      ${Object.entries(details).map(([k,v]) => `<div class="detail-row"><span class="dlbl">${k}</span><span class="dval">${Math.round(v)}/100</span></div>${scFill(v, v>=70?"#00d4aa":v>=40?"#ffaa00":"#ff6666")}`).join("")}
-      ${(s.alertes||[]).map(a => `<div style="color:#ff6666;font-size:.75rem;margin:.2rem 0">⚠ ${a}</div>`).join("")}
-    </div>
+    <div class="section"><h3>Locatif</h3>
+    <div class="row"><span class="k">Loyer/an</span><span class="v">${l.loyer_actuel_an?l.loyer_actuel_an.toLocaleString("fr")+"\u20AC":"Vacant"}</span></div>
+    <div class="row"><span class="k">Yield brut</span><span class="v">${f.prix_affiche&&l.loyer_actuel_an?(l.loyer_actuel_an/f.prix_affiche*100).toFixed(2)+"%":"\u2014"}</span></div></div>
 
-    <div class="section">
-      <h3>Financier</h3>
-      <div class="detail-row"><span class="dlbl">Prix affiché</span><span class="dval">${fin.prix_affiche ? (fin.prix_affiche/1e6).toFixed(2)+"M€" : "-"}</span></div>
-      <div class="detail-row"><span class="dlbl">Prix/m²</span><span class="dval">${fin.prix_m2 ? fin.prix_m2.toLocaleString("fr")+"€" : "-"}</span></div>
-      <div class="detail-row"><span class="dlbl">Charges/an</span><span class="dval">${fin.charges_copro_an ? fin.charges_copro_an.toLocaleString("fr")+"€" : "-"}</span></div>
-      <div class="detail-row"><span class="dlbl">Taxe foncière</span><span class="dval">${fin.taxe_fonciere_an ? fin.taxe_fonciere_an.toLocaleString("fr")+"€" : "-"}</span></div>
-    </div>
+    ${hi.length>1?`<div class="section"><h3>Historique prix</h3>${hi.map(x=>`<div class="row"><span class="k">${x.d||x.date}</span><span class="v">${((x.p||x.prix)/1e6).toFixed(2)}M\u20AC</span></div>`).join("")}</div>`:""}
 
-    <div class="section">
-      <h3>Bien</h3>
-      <div class="detail-row"><span class="dlbl">Surface</span><span class="dval">${bien.surface_m2 || "-"} m²</span></div>
-      <div class="detail-row"><span class="dlbl">DPE</span><span class="dval">${bien.dpe || "-"}</span></div>
-      <div class="detail-row"><span class="dlbl">Parking</span><span class="dval">${bien.parking || "-"}</span></div>
-      <div class="detail-row"><span class="dlbl">État</span><span class="dval">${bien.etat || "-"}</span></div>
-    </div>
+    <div class="section"><h3>Notes</h3><textarea class="notes" id="dwNotes">${d._notes||""}</textarea></div>
 
-    <div class="section">
-      <h3>Locatif</h3>
-      <div class="detail-row"><span class="dlbl">Loyer actuel/an</span><span class="dval">${loc.loyer_actuel_an ? loc.loyer_actuel_an.toLocaleString("fr")+"€" : "Vacant"}</span></div>
-      <div class="detail-row"><span class="dlbl">Loyer/m²/an</span><span class="dval">${loc.loyer_m2_an ? loc.loyer_m2_an+"€" : "-"}</span></div>
-      <div class="detail-row"><span class="dlbl">Yield brut</span><span class="dval">${fin.prix_affiche && loc.loyer_actuel_an ? (loc.loyer_actuel_an/fin.prix_affiche*100).toFixed(2)+"%" : "-"}</span></div>
-    </div>
+    ${d._statut==="simulation"?mkSim(d):""}
 
-    ${hist.length > 1 ? `<div class="section"><h3>📉 Historique prix</h3>${hist.map(h => `<div class="detail-row"><span class="dlbl">${h.date}</span><span class="dval">${(h.prix/1e6).toFixed(2)}M€</span></div>`).join("")}</div>` : ""}
+    <a href="${d.url||"#"}" target="_blank" style="font-size:.82rem">Voir l'annonce \u2192</a>`;
 
-    <div class="section">
-      <h3>Notes</h3>
-      <textarea class="notes-area" id="drawerNotes" placeholder="Ajouter des notes...">${d._notes || ""}</textarea>
-    </div>
-
-    ${d._statut === "simulation" ? buildSimulation(d) : ""}
-
-    <div style="margin-top:.75rem">
-      <a href="${d.url || "#"}" target="_blank" style="color:#ff6644;font-size:.82rem">Voir l'annonce →</a>
-    </div>
-  `;
-
-  document.getElementById("drawerBody").innerHTML = html;
+  document.getElementById("dwBody").innerHTML=h;
 };
 
-function buildSimulation(d) {
-  const prix = d.financier?.prix_affiche || 0;
-  const surf = d.bien?.surface_m2 || 1;
-  const loyer = d.locatif?.loyer_actuel_an || 0;
-  const charges = (d.financier?.charges_copro_an || 0) + (d.financier?.taxe_fonciere_an || 0);
-  const dpe = d.bien?.dpe || "C";
-  const travaux = ({"A":0,"B":0,"C":50,"D":150,"E":300,"F":500,"G":700}[dpe] || 150) * surf;
-  const frais = Math.round(prix * 0.075);
-  const total = prix + frais + travaux;
-  const apport = Math.round(total * 0.30);
-  const emprunt = total - apport;
-  const mensualite = Math.round(emprunt * 0.038 / 12 / (1 - Math.pow(1 + 0.038/12, -240)));
-  const annuite = mensualite * 12;
-  const vacance = Math.round(loyer * 0.05);
-  const loyerNet = loyer - charges - vacance;
-  const cashflow = loyerNet - annuite;
-  const yieldNet = total > 0 ? (loyerNet / total * 100) : 0;
-
-  return `<div class="section"><h3>💰 Simulation</h3><div class="sim-grid">
-    <div class="sim-card"><h4>Acquisition</h4>
-      <div class="sim-row"><span class="slbl">Prix net vendeur</span><span class="sval">${(prix/1e6).toFixed(2)}M€</span></div>
-      <div class="sim-row"><span class="slbl">Frais notaire 7.5%</span><span class="sval">${(frais/1e3).toFixed(0)}K€</span></div>
-      <div class="sim-row"><span class="slbl">Travaux DPE ${dpe}</span><span class="sval">${(travaux/1e3).toFixed(0)}K€</span></div>
-      <div class="sim-row sim-total"><span class="slbl">Total</span><span class="sval">${(total/1e6).toFixed(2)}M€</span></div>
-      <div class="sim-row"><span class="slbl">Apport 30%</span><span class="sval">${(apport/1e3).toFixed(0)}K€</span></div>
-      <div class="sim-row"><span class="slbl">Emprunt 70%</span><span class="sval">${(emprunt/1e6).toFixed(2)}M€</span></div>
-    </div>
-    <div class="sim-card"><h4>Exploitation an 1</h4>
-      <div class="sim-row"><span class="slbl">Loyer brut</span><span class="sval">${loyer>0?(loyer/1e3).toFixed(0)+"K€":"Vacant"}</span></div>
-      <div class="sim-row"><span class="slbl">- Charges+TF</span><span class="sval">-${(charges/1e3).toFixed(0)}K€</span></div>
-      <div class="sim-row"><span class="slbl">- Vacance 5%</span><span class="sval">-${(vacance/1e3).toFixed(0)}K€</span></div>
-      <div class="sim-row sim-total"><span class="slbl">Loyer net</span><span class="sval">${(loyerNet/1e3).toFixed(0)}K€</span></div>
-      <div class="sim-row"><span class="slbl">Annuité emprunt</span><span class="sval">-${(annuite/1e3).toFixed(0)}K€</span></div>
-      <div class="sim-row sim-total"><span class="slbl">Cashflow</span><span class="sval" style="color:${cashflow>=0?"#00d4aa":"#ff6666"}">${(cashflow/1e3).toFixed(0)}K€</span></div>
-      <div class="sim-row"><span class="slbl">Yield net</span><span class="sval">${yieldNet.toFixed(2)}%</span></div>
-    </div>
+function mkSim(d){
+  const px=d.financier?.prix_affiche||0,sf=d.bien?.surface_m2||1,lo=d.locatif?.loyer_actuel_an||0;
+  const ch=(d.financier?.charges_copro_an||0)+(d.financier?.taxe_fonciere_an||0);
+  const dp=d.bien?.dpe||"C",tw=({A:0,B:0,C:50,D:150,E:300,F:500,G:700}[dp]||150)*sf;
+  const fr=Math.round(px*.075),tot=px+fr+tw,ap=Math.round(tot*.3),em=tot-ap;
+  const mens=Math.round(em*.038/12/(1-Math.pow(1+.038/12,-240))),ann=mens*12;
+  const vac=Math.round(lo*.05),net=lo-ch-vac,cf=net-ann,yn=tot>0?(net/tot*100):0;
+  return `<div class="section"><h3>Simulation</h3><div class="sim-grid">
+    <div class="sim-box"><h4>Acquisition</h4>
+    <div class="sim-row"><span class="sk">Prix</span><span class="sv">${(px/1e6).toFixed(2)}M\u20AC</span></div>
+    <div class="sim-row"><span class="sk">Frais 7.5%</span><span class="sv">${(fr/1e3).toFixed(0)}K\u20AC</span></div>
+    <div class="sim-row"><span class="sk">Travaux DPE ${dp}</span><span class="sv">${(tw/1e3).toFixed(0)}K\u20AC</span></div>
+    <div class="sim-row sim-total"><span class="sk">Total</span><span class="sv">${(tot/1e6).toFixed(2)}M\u20AC</span></div>
+    <div class="sim-row"><span class="sk">Apport 30%</span><span class="sv">${(ap/1e3).toFixed(0)}K\u20AC</span></div>
+    <div class="sim-row"><span class="sk">Emprunt</span><span class="sv">${(em/1e6).toFixed(2)}M\u20AC</span></div></div>
+    <div class="sim-box"><h4>Exploitation an 1</h4>
+    <div class="sim-row"><span class="sk">Loyer brut</span><span class="sv">${lo>0?(lo/1e3).toFixed(0)+"K\u20AC":"Vacant"}</span></div>
+    <div class="sim-row"><span class="sk">Charges+TF</span><span class="sv">-${(ch/1e3).toFixed(0)}K\u20AC</span></div>
+    <div class="sim-row"><span class="sk">Vacance 5%</span><span class="sv">-${(vac/1e3).toFixed(0)}K\u20AC</span></div>
+    <div class="sim-row sim-total"><span class="sk">Net</span><span class="sv">${(net/1e3).toFixed(0)}K\u20AC</span></div>
+    <div class="sim-row"><span class="sk">Annuit\u00E9</span><span class="sv">-${(ann/1e3).toFixed(0)}K\u20AC</span></div>
+    <div class="sim-row sim-total"><span class="sk">Cashflow</span><span class="sv" style="color:${cf>=0?"var(--green)":"var(--red)"}">${(cf/1e3).toFixed(0)}K\u20AC</span></div>
+    <div class="sim-row"><span class="sk">Yield net</span><span class="sv">${yn.toFixed(2)}%</span></div></div>
   </div></div>`;
 }
 
-// Close drawer
-function closeDrawer() {
-  // Save notes
-  if (currentDealKey && DEALS[currentDealKey]) {
-    const notes = document.getElementById("drawerNotes")?.value;
-    if (notes !== undefined) DEALS[currentDealKey]._notes = notes;
-  }
-  document.getElementById("drawer").classList.remove("open");
-  document.getElementById("drawerOverlay").classList.remove("open");
-  currentDealKey = null;
+function closeDw(){
+  if(curKey&&D[curKey]){const n=document.getElementById("dwNotes");if(n)D[curKey]._notes=n.value;}
+  document.getElementById("dw").classList.remove("open");document.getElementById("ov").classList.remove("open");curKey=null;
 }
-document.getElementById("drawerClose").addEventListener("click", closeDrawer);
-document.getElementById("drawerOverlay").addEventListener("click", closeDrawer);
+document.getElementById("dwClose").addEventListener("click",closeDw);
+document.getElementById("ov").addEventListener("click",closeDw);
+document.getElementById("dwTrash").addEventListener("click",()=>{if(curKey){setSt(curKey,"poubelle");closeDw();}});
+document.getElementById("dwVerify").addEventListener("click",()=>{if(curKey){setSt(curKey,"a_verifier");closeDw();}});
+document.getElementById("dwContact").addEventListener("click",()=>{if(curKey){setSt(curKey,"a_contacter");closeDw();}});
+document.getElementById("dwSim").addEventListener("click",()=>{if(curKey){setSt(curKey,"simulation");closeDw();}});
 
-// Drawer action buttons
-document.getElementById("drawerTrash").addEventListener("click", () => { if(currentDealKey){setStatut(currentDealKey,"poubelle");closeDrawer();} });
-document.getElementById("drawerVerify").addEventListener("click", () => { if(currentDealKey){setStatut(currentDealKey,"a_verifier");closeDrawer();} });
-document.getElementById("drawerContact").addEventListener("click", () => { if(currentDealKey){setStatut(currentDealKey,"a_contacter");closeDrawer();} });
-document.getElementById("drawerSim").addEventListener("click", () => { if(currentDealKey){setStatut(currentDealKey,"simulation");closeDrawer();} });
+window.setSt=(k,s)=>{if(D[k]){D[k]._statut=s;render();}};
 
-// ===================================================================
-// STATUS CHANGE
-// ===================================================================
-window.setStatut = (key, statut) => {
-  if (DEALS[key]) { DEALS[key]._statut = statut; render(); }
-};
-
-// ===================================================================
-// INIT
-// ===================================================================
 init();
 </script>
 </body>
