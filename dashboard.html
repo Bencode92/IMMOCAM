@@ -586,6 +586,64 @@ document.getElementById("btnImportGo").addEventListener("click",async function()
 // ===================================================================
 let map=null, markers=[], geocodeCache={};
 
+// POI — Maisons de luxe (rose) + Ecoles de mode (violet)
+var POI=[
+// Maisons de luxe
+{n:"Dior",t:"luxe",a:"30 Av. Montaigne",lat:48.866847,lng:2.3063837},
+{n:"Dior Couture",t:"luxe",a:"11 Rue François 1er",lat:48.8664253,lng:2.3069864},
+{n:"Chanel",t:"luxe",a:"31 Rue Cambon",lat:48.868201,lng:2.326632},
+{n:"Lanvin",t:"luxe",a:"22 Rue Fbg St-Honoré",lat:48.8688586,lng:2.3220432},
+{n:"Celine",t:"luxe",a:"16 Rue Vivienne",lat:48.8680033,lng:2.3398901},
+{n:"Hermès",t:"luxe",a:"24 Rue Fbg St-Honoré",lat:48.8690615,lng:2.3218392},
+{n:"Saint Laurent",t:"luxe",a:"7 Av. George V",lat:48.8657814,lng:2.30109},
+{n:"Louis Vuitton",t:"luxe",a:"2 Rue du Pont Neuf",lat:48.8589469,lng:2.3432021},
+{n:"Kering",t:"luxe",a:"40 Rue de Sèvres",lat:48.8499586,lng:2.3218197},
+{n:"Balenciaga",t:"luxe",a:"16-18 Rue Vaneau",lat:48.8539008,lng:2.3193066},
+{n:"Givenchy",t:"luxe",a:"3 Av. George V",lat:48.8653747,lng:2.3011364},
+{n:"Valentino",t:"luxe",a:"273 Rue St-Honoré",lat:48.8679085,lng:2.3243513},
+{n:"Balmain",t:"luxe",a:"44 Rue François 1er",lat:48.868562,lng:2.304094},
+{n:"Loewe",t:"luxe",a:"3 Rue Scribe",lat:48.8709568,lng:2.3299074},
+{n:"Bottega Veneta",t:"luxe",a:"12 Av. Montaigne",lat:48.8658579,lng:2.3044883},
+{n:"Alexander McQueen",t:"luxe",a:"372 Rue St-Honoré",lat:48.8673494,lng:2.3270341},
+{n:"Prada / Miu Miu",t:"luxe",a:"18 Av. Matignon",lat:48.8710441,lng:2.3137834},
+{n:"Fendi",t:"luxe",a:"51 Av. Montaigne",lat:48.8680166,lng:2.3076168},
+{n:"Rick Owens",t:"luxe",a:"130-133 Galerie de Valois",lat:48.8651847,lng:2.3386044},
+{n:"Maison Margiela",t:"luxe",a:"163 Rue St-Maur",lat:48.8695035,lng:2.3736627},
+{n:"Acne Studios",t:"luxe",a:"48 Rue Petites Écuries",lat:48.8742516,lng:2.3493247},
+{n:"Jacquemus",t:"luxe",a:"58 Av. Montaigne",lat:48.8681537,lng:2.3090712},
+{n:"Coperni",t:"luxe",a:"21 Rue Fbg St-Antoine",lat:48.8525,lng:2.3725},
+{n:"Courrèges",t:"luxe",a:"40 Rue François 1er",lat:48.8684047,lng:2.3043746},
+{n:"The Row",t:"luxe",a:"1 Rue du Mont Thabor",lat:48.8653578,lng:2.3294541},
+// Ecoles de mode
+{n:"IFM",t:"ecole",a:"36 Quai d'Austerlitz",lat:48.8411104,lng:2.3692753},
+{n:"ESMOD",t:"ecole",a:"12 Rue C. de la Rochefoucauld",lat:48.8777278,lng:2.3345405},
+{n:"Studio Berçot",t:"ecole",a:"29 Rue Petites Écuries",lat:48.873648,lng:2.351196},
+{n:"Parsons Paris",t:"ecole",a:"45 Rue Saint-Roch",lat:48.8664937,lng:2.3329041},
+{n:"Chambre Syndicale Couture",t:"ecole",a:"102 Rue Fbg St-Honoré",lat:48.871498,lng:2.3157028},
+{n:"LISAA Mode",t:"ecole",a:"5 Rue Laromiguière",lat:48.8441719,lng:2.3473691},
+{n:"Mod'Art International",t:"ecole",a:"35 Quai André Citroën",lat:48.8473424,lng:2.2794485},
+{n:"Atelier Chardon Savard",t:"ecole",a:"15 Rue Gambey",lat:48.8652543,lng:2.3716567},
+{n:"EIML Paris",t:"ecole",a:"35 Quai André Citroën",lat:48.8473398,lng:2.2794503},
+];
+
+var poiMarkers=[];
+function renderPOI(){
+  poiMarkers.forEach(function(m){map.removeLayer(m)});
+  poiMarkers=[];
+  POI.forEach(function(p){
+    var color=p.t==="luxe"?"#e11d48":"#8b5cf6";
+    var emoji=p.t==="luxe"?"\uD83D\uDC8E":"\uD83C\uDF93";
+    var icon=L.divIcon({
+      className:"",
+      html:'<div style="width:22px;height:22px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-size:11px">'+emoji+'</div>',
+      iconSize:[22,22],iconAnchor:[11,11],popupAnchor:[0,-14]
+    });
+    var m=L.marker([p.lat,p.lng],{icon:icon}).addTo(map);
+    m.bindPopup('<div style="font-family:Inter,sans-serif"><b style="color:'+color+'">'+p.n+'</b><br><span style="font-size:.78rem;color:#666">'+p.a+'</span><br><span style="font-size:.7rem;color:#999">'+(p.t==="luxe"?"Maison de luxe":"École de mode")+'</span></div>');
+    poiMarkers.push(m);
+  });
+}
+
 function initMap(){
   if(map) return;
   map=L.map("mapView",{zoomControl:false}).setView([48.86,2.34],12);
@@ -699,6 +757,7 @@ async function renderMap(deals){
   }
 
   if(bounds.length>0) map.fitBounds(bounds,{padding:[30,30]});
+  renderPOI();
 }
 
 init();
