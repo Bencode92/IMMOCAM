@@ -20,6 +20,7 @@ sys.path.insert(0, str(Path(__file__).parent / "engine"))
 from bureauxlocaux import BureauxLocauxScraper
 from geolocaux import GeolocauxScraper
 from investisseur_immo import InvestisseurImmoScraper
+from loopnet import LoopNetScraper
 from delta import compute_delta, merge_into_db, deal_key
 from scorer import load_referentiel, find_commune_ref, score_deal, get_segment
 
@@ -31,6 +32,7 @@ SCRAPERS = {
     "bureauxlocaux": BureauxLocauxScraper,
     "geolocaux": GeolocauxScraper,
     "investisseur-immo": InvestisseurImmoScraper,
+    "loopnet": LoopNetScraper,
 }
 
 

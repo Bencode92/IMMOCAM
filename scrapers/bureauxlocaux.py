@@ -57,34 +57,45 @@ class BureauxLocauxScraper(BaseScraper):
                 "budget_max": prix_max,
             }
 
-            try:
-                resp = requests.get(url, headers=self.HEADERS, params=params, timeout=30)
-                if resp.status_code != 200:
-                    print(f"    HTTP {resp.status_code}")
-                    continue
+            page = 1
+            max_pages = 35  # ~900 annonces / 30 par page
 
-                # Extraire le JSON embarque dans la page
-                listings = self._extract_json(resp.text)
-                print(f"    {len(listings)} annonces trouvees")
+            while page <= max_pages:
+                try:
+                    page_params = {**params, "page": page}
+                    resp = requests.get(url, headers=self.HEADERS, params=page_params, timeout=30)
+                    if resp.status_code != 200:
+                        break
 
-                for raw in listings:
-                    # Filtrer: bureaux en vente, dans la fourchette de surface
-                    if not raw.get("is_office") or not raw.get("is_sale"):
-                        continue
-                    surf = float(raw.get("total_surface", 0) or 0)
-                    prix = float(raw.get("sale_price", 0) or 0)
-                    if surf < surface_min or surf > surface_max:
-                        continue
-                    if prix > prix_max or prix <= 0:
-                        continue
-                    deal = self._parse_listing(raw, dept)
-                    if deal:
-                        all_results.append(deal)
+                    listings = self._extract_json(resp.text)
+                    if not listings:
+                        break
 
-            except Exception as e:
-                print(f"    Erreur: {e}")
+                    count_before = len(all_results)
+                    for raw in listings:
+                        if not raw.get("is_office") or not raw.get("is_sale"):
+                            continue
+                        surf = float(raw.get("total_surface", 0) or 0)
+                        prix = float(raw.get("sale_price", 0) or 0)
+                        if surf < surface_min or surf > surface_max:
+                            continue
+                        if prix > prix_max or prix <= 0:
+                            continue
+                        deal = self._parse_listing(raw, dept)
+                        if deal:
+                            all_results.append(deal)
 
-            time.sleep(2)  # Rate limiting respectueux
+                    if page == 1:
+                        print(f"    Page 1: {len(listings)} annonces, {len(all_results) - count_before + (count_before - len(all_results))} matchent")
+
+                    page += 1
+                    time.sleep(1.5)
+
+                except Exception as e:
+                    print(f"    Page {page} erreur: {e}")
+                    break
+
+            print(f"    {page-1} pages scrapees")
 
         print(f"  BureauxLocaux: {len(all_results)} biens au total")
         self.results = all_results
