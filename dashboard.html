@@ -413,7 +413,7 @@ function renderT(deals){
     dpe:d.bien?.dpe||"",
     loyer:d._loyer_estime||lo||0,
     yield:lo>0&&px>0?(lo/px*100):(d._yield_zone||0),
-    grade:d.scoring?.grade||"?",sources:(d._sources||[]).length};
+    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",sources:(d._sources||[]).length};
   });
   if(tCol)rows.sort((a,b)=>{let va=a[tCol],vb=b[tCol];if(va==null)return 1;if(vb==null)return -1;return typeof va==="string"?(tAsc?va.localeCompare(vb):vb.localeCompare(va)):(tAsc?va-vb:vb-va);});
   const ar=k=>tCol===k?(tAsc?" \u25B2":" \u25BC"):"";
@@ -426,7 +426,7 @@ function renderT(deals){
     <td class="num" style="${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"\u2014"}</td>
     <td>${r.dpe}</td><td class="num">${r.loyer>0?r.loyer+"\u20AC":"\u2014"}</td>
     <td class="num" style="${r.yield>=8?"color:#16a34a":r.yield>=6?"color:#b45309":"color:#dc2626"}">${r.yield>0?r.yield.toFixed(1)+"%":"\u2014"}</td>
-    <td><span class="grade grade-${r.grade}">${r.grade}</span></td><td class="num">${r.sources}</td>
+    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td class="num">${r.sources}</td>
   </tr>`).join("");
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
@@ -526,6 +526,8 @@ window.setSt=(k,s)=>{if(D[k]){D[k]._statut=s;render();}};
 // ===================================================================
 var YIELD_MAP={"75":7.5,"92":7.25,"93":8.75,"94":7.75,"78":8.5,"91":8.5,"95":9.0,"77":8.5,"69":7.0,"13":8.0,"31":8.0,"33":8.5,"21":8.5,"67":8.5,"38":8.0,"44":8.0,"71":9.0,"82":9.0,"86":9.0};
 var PRIX_MARCHE={"75":9500,"92":5500,"93":3000,"94":4000,"78":3500,"91":3000,"95":3000,"77":2800,"69":4000,"13":3000,"31":3500,"33":3000,"21":2500,"67":2500,"38":3000,"44":3000};
+var VACANCE_MAP={"75":7.8,"92":12.0,"93":25.0,"94":16.4,"78":9.4,"91":9.4,"95":9.0,"77":7.9,"69":10.0,"13":10.0,"31":10.0,"33":10.0,"21":8.0,"67":8.0,"38":8.0,"44":8.0};
+var DPE_COUT={"A":0,"B":0,"C":50,"D":150,"E":300,"F":500,"G":700};
 
 function scoreAllDeals(){
   for(var k in D){
@@ -541,10 +543,18 @@ function scoreAllDeals(){
     // Yield de la zone
     var yieldZone=YIELD_MAP[dept]||8.0;
 
+    // Vacance zone
+    var vacanceZone=VACANCE_MAP[dept]||10.0;
+    d._vacance_zone=vacanceZone;
+
     // Loyer estimé par cap rate
     var loyerEstime=pm2>0?Math.round(pm2*yieldZone/100):0;
     d._loyer_estime=loyerEstime;
     d._yield_zone=yieldZone;
+
+    // Cout travaux DPE
+    var coutDPE=(DPE_COUT[dpe]||0)*surf;
+    d._cout_dpe=coutDPE;
 
     // Prix marché de la zone
     var prixMarche=PRIX_MARCHE[dept]||4000;
@@ -584,14 +594,24 @@ function scoreAllDeals(){
     var grade=scoreGlobal>=75?"A":scoreGlobal>=55?"B":scoreGlobal>=35?"C":"D";
 
     var alertes=[];
+    var suspect=false;
+    var fiabilite="green";
+    if(ecart!==null&&ecart<-40){suspect=true;alertes.push("Prix suspect ("+ecart.toFixed(0)+"% vs marche) — verifier les donnees");fiabilite="red";}
+    else if(ecart!==null&&ecart<-30){alertes.push("Prix bas ("+ecart.toFixed(0)+"% vs marche)");fiabilite="yellow";}
     if(ecart!==null&&ecart>20)alertes.push("Prix "+ecart.toFixed(0)+"% au-dessus du marche");
     if(dpe>="E")alertes.push("DPE "+dpe+" — travaux a prevoir");
+    if(!dpe&&!bien.surface_m2)fiabilite="yellow";
+
+    // Plafonner score si suspect
+    if(suspect&&scoreGlobal>65)scoreGlobal=65;
+    var grade=scoreGlobal>=75?"A":scoreGlobal>=55?"B":scoreGlobal>=35?"C":"D";
+    if(suspect&&grade==="A")grade="B";
 
     d.scoring={
       score_global:scoreGlobal,grade:grade,
       prix_vs_marche_pct:ecart,
       scores_detail:{prix:Math.round(scorePrix),loyer:Math.round(scoreLoyer),dpe:Math.round(scoreDPE)},
-      alertes:alertes
+      alertes:alertes,suspect:suspect,fiabilite:fiabilite
     };
   }
 }
@@ -672,63 +692,39 @@ document.getElementById("btnImportGo").addEventListener("click",async function()
 // ===================================================================
 let map=null, markers=[], geocodeCache={};
 
-// POI — Maisons de luxe (rose) + Ecoles de mode (violet)
+// POI — Gares principales IDF (pertinent pour bureaux)
 var POI=[
-// Maisons de luxe
-{n:"Dior",t:"luxe",a:"30 Av. Montaigne",lat:48.866847,lng:2.3063837},
-{n:"Dior Couture",t:"luxe",a:"11 Rue François 1er",lat:48.8664253,lng:2.3069864},
-{n:"Chanel",t:"luxe",a:"31 Rue Cambon",lat:48.868201,lng:2.326632},
-{n:"Lanvin",t:"luxe",a:"22 Rue Fbg St-Honoré",lat:48.8688586,lng:2.3220432},
-{n:"Celine",t:"luxe",a:"16 Rue Vivienne",lat:48.8680033,lng:2.3398901},
-{n:"Hermès",t:"luxe",a:"24 Rue Fbg St-Honoré",lat:48.8690615,lng:2.3218392},
-{n:"Saint Laurent",t:"luxe",a:"7 Av. George V",lat:48.8657814,lng:2.30109},
-{n:"Louis Vuitton",t:"luxe",a:"2 Rue du Pont Neuf",lat:48.8589469,lng:2.3432021},
-{n:"Kering",t:"luxe",a:"40 Rue de Sèvres",lat:48.8499586,lng:2.3218197},
-{n:"Balenciaga",t:"luxe",a:"16-18 Rue Vaneau",lat:48.8539008,lng:2.3193066},
-{n:"Givenchy",t:"luxe",a:"3 Av. George V",lat:48.8653747,lng:2.3011364},
-{n:"Valentino",t:"luxe",a:"273 Rue St-Honoré",lat:48.8679085,lng:2.3243513},
-{n:"Balmain",t:"luxe",a:"44 Rue François 1er",lat:48.868562,lng:2.304094},
-{n:"Loewe",t:"luxe",a:"3 Rue Scribe",lat:48.8709568,lng:2.3299074},
-{n:"Bottega Veneta",t:"luxe",a:"12 Av. Montaigne",lat:48.8658579,lng:2.3044883},
-{n:"Alexander McQueen",t:"luxe",a:"372 Rue St-Honoré",lat:48.8673494,lng:2.3270341},
-{n:"Prada / Miu Miu",t:"luxe",a:"18 Av. Matignon",lat:48.8710441,lng:2.3137834},
-{n:"Fendi",t:"luxe",a:"51 Av. Montaigne",lat:48.8680166,lng:2.3076168},
-{n:"Rick Owens",t:"luxe",a:"130-133 Galerie de Valois",lat:48.8651847,lng:2.3386044},
-{n:"Maison Margiela",t:"luxe",a:"163 Rue St-Maur",lat:48.8695035,lng:2.3736627},
-{n:"Acne Studios",t:"luxe",a:"48 Rue Petites Écuries",lat:48.8742516,lng:2.3493247},
-{n:"Jacquemus",t:"luxe",a:"58 Av. Montaigne",lat:48.8681537,lng:2.3090712},
-{n:"Coperni",t:"luxe",a:"21 Rue Fbg St-Antoine",lat:48.8525,lng:2.3725},
-{n:"Courrèges",t:"luxe",a:"40 Rue François 1er",lat:48.8684047,lng:2.3043746},
-{n:"The Row",t:"luxe",a:"1 Rue du Mont Thabor",lat:48.8653578,lng:2.3294541},
-// Ecoles de mode
-{n:"IFM",t:"ecole",a:"36 Quai d'Austerlitz",lat:48.8411104,lng:2.3692753},
-{n:"ESMOD",t:"ecole",a:"12 Rue C. de la Rochefoucauld",lat:48.8777278,lng:2.3345405},
-{n:"Studio Berçot",t:"ecole",a:"29 Rue Petites Écuries",lat:48.873648,lng:2.351196},
-{n:"Parsons Paris",t:"ecole",a:"45 Rue Saint-Roch",lat:48.8664937,lng:2.3329041},
-{n:"Chambre Syndicale Couture",t:"ecole",a:"102 Rue Fbg St-Honoré",lat:48.871498,lng:2.3157028},
-{n:"LISAA Mode",t:"ecole",a:"5 Rue Laromiguière",lat:48.8441719,lng:2.3473691},
-{n:"Mod'Art International",t:"ecole",a:"35 Quai André Citroën",lat:48.8473424,lng:2.2794485},
-{n:"Atelier Chardon Savard",t:"ecole",a:"15 Rue Gambey",lat:48.8652543,lng:2.3716567},
-{n:"EIML Paris",t:"ecole",a:"35 Quai André Citroën",lat:48.8473398,lng:2.2794503},
+{n:"Gare Saint-Lazare",t:"gare",a:"Rue d'Amsterdam",lat:48.8764,lng:2.3259},
+{n:"Gare du Nord",t:"gare",a:"Rue de Dunkerque",lat:48.8809,lng:2.3553},
+{n:"Gare de l'Est",t:"gare",a:"Place du 11 Novembre",lat:48.8768,lng:2.3591},
+{n:"Gare de Lyon",t:"gare",a:"Place Louis-Armand",lat:48.8443,lng:2.3735},
+{n:"Gare Montparnasse",t:"gare",a:"Bd de Vaugirard",lat:48.8414,lng:2.3210},
+{n:"Gare d'Austerlitz",t:"gare",a:"Quai d'Austerlitz",lat:48.8424,lng:2.3651},
+{n:"La Défense",t:"gare",a:"Parvis de la Défense",lat:48.8920,lng:2.2380},
+{n:"Châtelet-Les Halles",t:"gare",a:"Place Marguerite de Navarre",lat:48.8621,lng:2.3467},
+{n:"Nation",t:"gare",a:"Place de la Nation",lat:48.8483,lng:2.3959},
+{n:"Opéra",t:"gare",a:"Place de l'Opéra",lat:48.8714,lng:2.3316},
+{n:"République",t:"gare",a:"Place de la République",lat:48.8675,lng:2.3638},
+{n:"Bastille",t:"gare",a:"Place de la Bastille",lat:48.8533,lng:2.3692},
 ];
 
 var poiMarkers=[];
 function renderPOI(){
   poiMarkers.forEach(function(m){map.removeLayer(m)});
   poiMarkers=[];
+  if(map.getZoom()<12) return; // POI seulement au zoom >=12
   POI.forEach(function(p){
-    var color=p.t==="luxe"?"#e11d48":"#8b5cf6";
-    var emoji=p.t==="luxe"?"\uD83D\uDC8E":"\uD83C\uDF93";
     var icon=L.divIcon({
       className:"",
-      html:'<div style="width:22px;height:22px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-size:11px">'+emoji+'</div>',
-      iconSize:[22,22],iconAnchor:[11,11],popupAnchor:[0,-14]
+      html:'<div style="width:20px;height:20px;border-radius:50%;background:#1e3a5f;border:2px solid #fff;box-shadow:0 2px 4px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font-size:10px">\uD83D\uDE89</div>',
+      iconSize:[20,20],iconAnchor:[10,10],popupAnchor:[0,-12]
     });
     var m=L.marker([p.lat,p.lng],{icon:icon}).addTo(map);
-    m.bindPopup('<div style="font-family:Inter,sans-serif"><b style="color:'+color+'">'+p.n+'</b><br><span style="font-size:.78rem;color:#666">'+p.a+'</span><br><span style="font-size:.7rem;color:#999">'+(p.t==="luxe"?"Maison de luxe":"École de mode")+'</span></div>');
+    m.bindPopup('<div style="font-family:Inter,sans-serif"><b style="color:#1e3a5f">'+p.n+'</b><br><span style="font-size:.75rem;color:#666">'+p.a+'</span></div>');
     poiMarkers.push(m);
   });
 }
+
 
 function initMap(){
   if(map) return;
@@ -738,16 +734,18 @@ function initMap(){
     attribution:'&copy; OSM &copy; CARTO',maxZoom:19,subdomains:'abcd'
   }).addTo(map);
   L.control.zoom({position:'bottomleft'}).addTo(map);
+  map.on('zoomend',function(){renderPOI()});
 }
 
-function surfColor(s){return s<300?"#dc2626":s<=700?"#16a34a":"#3b82f6";}
+function gradeColor(g){return g==="A"?"#16a34a":g==="B"?"#1e3a5f":g==="C"?"#b45309":"#6b7280";}
 
-function makeIcon(surf,prix){
-  const c=surfColor(surf);
+function makeIcon(surf,prix,grade,suspect){
+  const c=suspect?"#b45309":gradeColor(grade);
+  const border=suspect?"2px dashed #dc2626":"3px solid #fff";
   const pLabel=prix?(prix/1e6).toFixed(1)+"M":"?";
   return L.divIcon({
     className:"",
-    html:`<div style="min-width:52px;padding:5px 10px;border-radius:20px;background:${c};border:3px solid #fff;box-shadow:0 3px 12px rgba(0,0,0,.35);color:#fff;font-size:13px;font-weight:700;text-align:center;white-space:nowrap;cursor:pointer;line-height:1.2">${pLabel}<div style="font-size:9px;font-weight:500;opacity:.85">${Math.round(surf)}m\u00B2</div></div>`,
+    html:`<div style="min-width:52px;padding:5px 10px;border-radius:20px;background:${c};border:${border};box-shadow:0 3px 12px rgba(0,0,0,.35);color:#fff;font-size:13px;font-weight:700;text-align:center;white-space:nowrap;cursor:pointer;line-height:1.2">${pLabel}<div style="font-size:9px;font-weight:500;opacity:.85">${Math.round(surf)}m\u00B2</div></div>`,
     iconSize:[60,38],iconAnchor:[30,19],popupAnchor:[0,-22]
   });
 }
@@ -821,7 +819,9 @@ function renderMap(deals){
     if(!pos) continue;
     bounds.push([pos.lat,pos.lng]);
     const surf=bien.surface_m2||0;
-    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf,fin.prix_affiche)}).addTo(map);
+    const grade=s.grade||"?";
+    const suspect=d._ecart_marche!=null&&d._ecart_marche<-40;
+    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf,fin.prix_affiche,grade,suspect)}).addTo(map);
 
     const prixStr=fin.prix_affiche?(fin.prix_affiche/1e6).toFixed(2)+"M\u20AC":"—";
 
