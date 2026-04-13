@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_scrape": "2026-04-13T14:43:20.031892",
-    "total_deals": 22,
+    "last_scrape": "2026-04-13T15:01:47.164375",
+    "total_deals": 49,
     "par_statut": {
-      "nouveau": 22
+      "nouveau": 49
     }
   },
   "deals": {
@@ -1273,6 +1273,14 @@
         {
           "date": "2026-04-13",
           "prix": 1026064.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 790400.0
+        },
+        {
+          "date": "2026-04-13",
+          "prix": 1026064.0
         }
       ],
       "_sources": [
@@ -1401,6 +1409,1734 @@
         {
           "date": "2026-04-13",
           "prix": 1000000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "49114d01bcb0": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-versailles-78000--39409514",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "25  Rue Exelmans",
+        "code_postal": "78000",
+        "commune": "Versailles",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 380.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1650000.0,
+        "prix_m2": 4342.105263157895,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau Versailles 78000",
+        "description": "Immprove vous propose à Versailles, à seulement 1,3 km de la gare Rive Droite, un plateau de bureaux indépendant d'environ 379 m², situé dans un immeuble tertiaire. Lumineux, traversant et entièrement modulable grâce à ses cloisons amovibles, il accueille aujourd'hui 21 postes de travail. Il dispose également d'un ascenseur, de 10 stationnements privatifs et offre un fort potentiel d'aménagement pour professions libérales, médical, conseil ou coworking. Un bien rare permettant d'imaginer un espace sur mesure. Photos d'agencements possibles disponibles pour vous projeter.\n\n\nImmeuble ancien\n. Parties communes de qualité\n. Ascenseur\n. Fibre optique\n. Locaux en bon état et lumineux\n. Accueil\n. Bureaux cloisonnés\n. Local technique\n. Possibilité d'installer une cuisine\n. Sanitaires privatifs\n. Chauffage électrique\n. Cave en sous sol de 30 m²\n. 5 parkings extérieurs\n. 5 parkings en sous sol",
+        "photos": 10,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1650000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "451b431feb70": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/cabinet-medical-dans-pole-de-sante-pluridisciplina--39292706",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "87  Rue Du Maréchal Joffre",
+        "code_postal": "78700",
+        "commune": "Conflans-Sainte-Honorine",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 450.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2024",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 15000.0,
+        "prix_m2": 33.333333333333336,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Cabinet médical dans pôle de santé pluridisciplinaires",
+        "description": "Acteur immobilier disruptif engagé auprès des professionnels de santé, développe un nouveau centre médical & paramédical sur votre région ! ??\n\n\n??Une opportunité d’investissement clés en mains, pilotée de A à Z.\n\n??Une capacité d'acquérir son outil de travail en maîtrisant les risques et la réglementation.\n\n??Un montage flexible avec de nombreuses possibilités d’entrées et de sorties au capital.\n\n??Une possibilité offerte avec peu d’apport personnel.\n\n??Un financement facilité grâce à la force du collectif.\n\n??Conditions exclusives réservées aux premiers candidats sélectionnés : N'attendez pas !\n\n \n\n??Le Pôle Santé des Convergences, directement raccordé à la francilienne en double sens, se situe au 87 Rue du Maréchal Joffre à environ 1.5 km des 2 gares de Conflans-Sainte-Honorine [RER A, LIGNES J et L].\n\n \n\n?????????Bénéficiez de la synergie procurée par les nombreux praticiens du pôle de Santé, exerçant dans 11 bureaux de 12 à 25 m². 3 bureaux proposent une salle d'attente privative complémentaire.\n\n \n\n??Parmi les prestations Haut de gamme : Grandes baies vitrées, portes & cloisons phoniques, climatisations réversibles, Internet Très Haut Débit, entrées sécurisées par Contrôle d’accès, clés d'accès sur organigramme, espace détente avec cuisine aménagée, sanitaires mixtes aux normes handicapés PMR et WC privatifs pour les praticiens, …\n\nTous les bureaux sont équipés de points d'eau et une grande salle de réunion est disponible gratuitement.\n\n \n\nPossibilité de location à compter de septembre 2025.\n\nMedecins, practiciens de santé devenez acquéreurs de vos locaux neufs",
+        "photos": 2,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 15000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "d68fffc07b5e": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-investisseur-parc-claude-monet-78290--39290779",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "Allée De Giverny",
+        "code_postal": "78290",
+        "commune": "Croissy-sur-Seine",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 303.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2013",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 675000.0,
+        "prix_m2": 2227.7227722772277,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "- Vente investisseur Parc Claude Monet 78290",
+        "description": "- Actif de qualité sur un plateau aménagé, cloisonné avec 3 sociétés locataires au sein du Parc d'Activités Claude Monet de Croissy Sur Seine (78290) \n\n- Le Parc d'activités développe plus de 17.000m² comprenant plus de 45 sociétés en bord de seine : TPE, PME,  et quelques sociétés à dimension internationales.\n- Répartition homogène entre propriétaires et locataires présents sur le site.\n\n- Taux d'occupation de 95 % en tertiaire.\n\n- Accès à la Data Room ( Baux et diagnostics après lettre d'intérêt) \n\n- Loyer annuel HT/HC = 45.600€ ( 2025 , indexation loyer ILAT pour l'ensemble)\n\n- Locataires soumis aux baux commerciaux\n\n- Taux de rendement brut : 6.7 %\n\n- Indemnité d'immobilisation à la promesse de 10 %\n\n- Honoraires 3.5 % HT \n\n- Espace restauration dans le Parc, avec jardin extérieur et privatisation possible pour les sociétés\n\n- Espace relaxation Bien être Holistique \"WellFuz\" et services , cours d'anglais etc...\n  \"La Poste\" pro et la \"British School\" présentes au sein du parc également.\n\nAccès Secteur Boucle de Seine 78 - Croissy Sur Seine, Le Vésinet, Chatou\n   A 86 - RER A Chatou Croissy ou Gare Sncf Bougival et bus\n   Par route A86 Pont de Chatou ou Pont de Bougival et proximité A 12/ A13\n\n- Espace bureau de bon standing comprenant 3 locataires avec baux en cours",
+        "photos": 11,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 675000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "db7bce1e7a18": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-climatises-a-vendre-a-buc--39260612",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "184  Rue Tabuteau",
+        "code_postal": "78530",
+        "commune": "Buc",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 418.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2009",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 400000.0,
+        "prix_m2": 956.9377990430622,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux climatisés à vendre à Buc",
+        "description": "Ces bureaux spacieux et lumineux offrent un environnement de travail agréable et fonctionnel, parfaitement adapté aux besoins d'une équipe dynamique. Entièrement climatisés, ils garantissent un confort optimal en toutes saisons.\n\n\nLes espaces sont bien agencés et modulables, permettant une adaptation facile à l'organisation et aux exigences spécifiques de votre entreprise. Idéals pour des activités variées, ces bureaux bénéficient également d'une grande flexibilité d'aménagement.\n\n\nSitués dans une zone d'activité prisée, ces bureaux profitent d'une accessibilité optimale, avec un excellent réseau routier et de nombreux services à proximité (commerces, restaurants, transports).\n\n\nCette offre représente une véritable opportunité pour toute entreprise souhaitant se développer dans un cadre moderne et stratégique.\n\n\nNe laissez pas passer cette chance, contactez-nous pour plus d'informations ou organiser une visite !\n\n\nLino\nClimatisation réversible\nSanitaires privatifs\nDe nombreuses verrières\n2 compteurs pour le plateau\nFibre\n4 entrées possibles\nHauteur sous dalle : 2,78 m\n12 places de parking équipées en bornes électriques\nPortails électriques\nSurface RDC : 0 m²",
+        "photos": 15,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 400000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "50d280882b17": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-a-vendre-velizy-villacoublay--38347262",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "8  Rue Des Frères Caudron",
+        "code_postal": "78140",
+        "commune": "Vélizy-Villacoublay",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 454.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1980",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 149530.0,
+        "prix_m2": 329.3612334801762,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "BUREAUX A VENDRE  - VÉLIZY-VILLACOUBLAY",
+        "description": "Situé au cœur de Vélizy-Villacoublay, l’immeuble profite d’une localisation stratégique à proximité des grands axes routiers (A86, N118) et des transports en commun (tram T6, RER C, lignes de bus). Les parties communes sont soignées et l’ensemble immobilier propose des prestations de qualité, incluant ascenseur, sécurité renforcée et nombreux parkings souterrains. L’environnement tertiaire est établi, avec un accès rapide aux zones commerciales et aux services.",
+        "photos": 8,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 149530.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "8f2fb697e2e2": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-guyancourt-78280--37745051",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "2  Rue Hélène Boucher",
+        "code_postal": "78280",
+        "commune": "Guyancourt",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 375.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2010",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 236040.0,
+        "prix_m2": 629.44,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau Guyancourt 78280",
+        "description": "Situé au cœur du quartier d’affaires de Saint-Quentin-en-Yvelines, cet immeuble tertiaire bénéficie d’une excellente accessibilité grâce à la proximité des axes autoroutiers N12 et A86, ainsi qu’à la gare RER/SNCF à 15 minutes à pied. L’immeuble récent présente une façade mur rideau et des parties communes soignées, avec un accès sécurisé par interphone et digicode. Il est équipé d’ascenseurs et dispose de parkings sécurisés pour véhicules légers. L’environnement immédiat est dynamique, avec des services et commerces à proximité.",
+        "photos": 13,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 236040.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "bcc92f9e14e0": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-batiment-independant--37673895",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "9  Rue Saint Vincent",
+        "code_postal": "78100",
+        "commune": "Saint-Germain-en-Laye",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 415.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1245000.0,
+        "prix_m2": 3000.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE, BATIMENT INDEPENDANT",
+        "description": "Immprove vous propose à l'acquisition des bureaux de 415 m², dans un bâtiment indépendant proche de la sous préfecture et du Tram 13.\n\n\nBâtiment indépendant\n. Accès privatif sur rue\n. Digicode\n. Interphone\n. Locaux lumineux\n. Double exposition\n. Bureaux cloisonnés\n. Cloisonnement amovible\n. Accueil\n. Salle de réunion\n. Cuisine\n. Sanitaires privatifs\n. Faux plafonds\n. Moquette\n. Parquet\n. Câblage informatique et téléphonique\n. Alarme\n. Chauffage électrique\n. Fibre optique\nImmeuble indépendant\nSurface RDC : 42 m²",
+        "photos": 17,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1245000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "8f833e926c59": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/cabinet-medical-dans-pole-de-sante-pluridisciplina--37647649",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "87  Rue Du Maréchal Joffre",
+        "code_postal": "78700",
+        "commune": "Conflans-Sainte-Honorine",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 578.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2024",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 15000.0,
+        "prix_m2": 25.951557093425606,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Cabinet médical dans pôle de santé pluridisciplinaires",
+        "description": "Situé à Conflans-Sainte-Honorine, cet immeuble bénéficie d’une implantation stratégique dans un environnement urbain agréable et bien desservi. Sa structure fonctionnelle répartie sur plusieurs niveaux s’intègre harmonieusement dans un quartier résidentiel dynamique. L’adresse profite d’une excellente accessibilité grâce à la proximité de plusieurs gares, notamment Conflans-Fin-d’Oise (RER A et Transilien lignes J et L) et Conflans-Sainte-Honorine (ligne J), permettant de rejoindre rapidement Paris et les communes voisines. Le quartier dispose également de services de proximité, dont des établissements scolaires, offrant un cadre pratique et adapté au quotidien.",
+        "photos": 2,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 15000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "7b5f67ec5295": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-bureaux-za-sainte-apolline--36977405",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "Rue Des Poiriers",
+        "code_postal": "78370",
+        "commune": "Plaisir",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 455.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 82000.0,
+        "prix_m2": 180.21978021978023,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE - Bureaux - ZA Sainte Apolline",
+        "description": "CSI vous propose, à la vente, des surfaces de bureaux au sein d'un immeuble mixte indépendant en R+1 dans la Zone de Sainte Apolline à Plaisir.\nA proximité immédiate des grands axes routiers (N12/A12).\n\n\nDISPONIBILITES :\nLot 10 - 72 m² de surface utile - 2 parkings\nLot 6 - 143 m² de surface utile - 5 parkings\nLot 7 - 240 m² de surface utile - 8 parkings\nLes lots 6 et 7 peuvent être réunis.\nImmeuble de standing mixte en R+1, composé de locaux d'activité en RDC et de bureaux au 1er étage.\nBUREAUX :\nMoquette\nfaux plafond\nPlinthes techniques\nChauffages électriques\nbureaux partiellement cloisonnés\nSanitaires communs\nAccès sécurisé par interphone et digicode\nFaçade murs rideaux\nSanitaires en parties communes\nPlaces de parking extérieurs privatives attribuées par lot\nFibre optique\n\n\nLot 6 (143 m²) : 161 000 euros HD\n(4 emplacements de stationnement inclus)\n\n\nLot 7 Kb (240 m²) : 270 000 euros HD\n(8 emplacements de stationnement inclus)\n\n\nLot 10 (78 m²) : 82 000 euros HD\n\n\nConditions particulières à la vente : Lot 6 (143 m²) : 161 000 euros HD\n(4 emplacements de stationnement inclus)\n\nLot 7 Kb (240 m²) : 270 000 euros HD\n(8 emplacements de stationnement inclus)\n\nLot 10 (78 m²) : 82 000 euros HD",
+        "photos": 10,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 82000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "a3b4893d47b5": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-trappes-78190--35393838",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "1  Rue Blaise Pascal",
+        "code_postal": "78190",
+        "commune": "Trappes",
+        "departement": "78",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 499.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1990",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 600000.0,
+        "prix_m2": 1202.4048096192384,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau Trappes 78190",
+        "description": "A vendre, immeuble de 500 m², de \" plain-pied \" indépendant avec 20 parkings totalement accessible PMR.\nSurface idéale pour bureaux/labo/activités médicales ou paramédicale mais aussi idéal pour des activités industrielles ou artisanales propres et \"légères\", ne nécessitant pas de grande hauteur sous plafond.",
+        "photos": 6,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 600000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "21ca08f91156": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-a-vendre--39799328",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "1  Avenue Du Bois De L'Epine",
+        "code_postal": "91080",
+        "commune": "Évry-Courcouronnes",
+        "departement": "91",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 380.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 260000.0,
+        "prix_m2": 684.2105263157895,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre",
+        "description": "Opportunité exceptionnelle d'acquérir des bureaux modernes au cœur de la zone du Bois de l'Epine à Evry-Courcouronnes.",
+        "photos": 11,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 260000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "38c453ea0c69": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/500-m2-de-bureaux-divisibles-en-4060-ideal-centre--39260611",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "14  Avenue Du 1er Mai",
+        "code_postal": "91120",
+        "commune": "Palaiseau",
+        "departement": "91",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 496.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2000",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 750000.0,
+        "prix_m2": 1512.0967741935483,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "500 m² de bureaux divisibles en 40/60% - idéal centre médical, formation ou siège PME - 7 min RER",
+        "description": "Nous vous proposons à la vente un plateau de bureaux de 496 m², situé au premier étage d'un site clos et sécurisé, pouvant accueillir jusqu'à 35 postes de travail. Ces locaux bénéficient de prestations de qualité : climatisation réversible, ascenseur privatif, volets roulants métalliques télécommandés, fibre optique, salle de réunion, cuisine et espace détente. La distribution intérieure est pensée pour offrir à la fois confort et fonctionnalité, avec des sanitaires privatifs et une organisation facilement adaptable à vos besoins, y compris pour une mise aux normes ERP. Ce bien représente une opportunité rare à Palaiseau, alliant visibilité, proximité des transports (RER, Bus) et sécurité, dans un secteur en plein développement à proximité de la future ligne 18 du Grand Paris. Idéal pour une entreprise souhaitant acquérir ses locaux dans une logique de valorisation patrimoniale.\n\n\nSite clos et sécurisé\nAscenseur privatif\nSécurisé par porte blindé\nAccès PMR, facilement adaptable ERP\nSalle de réunion\nsanitaire privatifs\nEspace détente et cuisine\nLocaux fibrés\nClimatisation réversible\nVolets roulants métalliques télécommandés\nCapacitaire pour 35 poste de travail\nSurface RDC : 0 m²",
+        "photos": 11,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 750000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "74e006cb85df": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-ou-a-louer-a-proximite-de-la-gare-de-grig--39187494",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "87  Route De Grigny",
+        "code_postal": "91130",
+        "commune": "Ris-Orangis",
+        "departement": "91",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 600.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 800000.0,
+        "prix_m2": 1333.3333333333333,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE OU A LOUER, A proximité de la gare de Grigny-Centre",
+        "description": "Situé à proximité de l'A6, de la N7 et de la gare de Grigny-centre, Immprove vous propose un plateau complet de 600 m² de bureaux non divisible, à la vente ou à la location.\n\n\nPlateau sécurisé\n. Ascenseur\n. Cloisons amovibles\n. Baie de brassage\n. Prises RJ 45\n. Double vitrage\n. Moquette et carrelage\n. Faux plafond\n. Convecteurs électriques\n. Rangements / Placards\n. Cuisine indépendante\n. Sanitaires doubles privatifs",
+        "photos": 6,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 800000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "a55d2f7b5b47": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-a-vendre-a-longjumeau-centre-avec-acces-ga--38765269",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "2 Bis  Rue Des Coquelicots",
+        "code_postal": "91160",
+        "commune": "Longjumeau",
+        "departement": "91",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 592.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1320000.0,
+        "prix_m2": 2229.7297297297296,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre à Longjumeau centre avec accès gare immédiat",
+        "description": "Situés au centre de la commune de Longjumeau, à proximité immédiate de la gare de Chilly Mazarin (RER C et Tramway T12), nous vous proposons à la vente deux immeubles pour un total de 592 m² à usage de bureaux sur un terrain de 820 m².\nL'ensemble est en bon état d'usage (cloisonnement, câblage) et offre des possibilités de division pour mettre en location une partie des surfaces (145 m² fonctionnant de manière indépendante ou avec le solde de l'immeuble).\n\n\nCloisonnement\nCâblage\nSurface RDC : 242 m²\n\n\nSituation/Transports :\nAutoroute A10 - N20\nRER Chilly-Mazarin (Ligne C)\nTram Chilly-Mazarin (Ligne T12)\nBus Charles de Gaulle (Ligne 55), Général de Gaulle (Ligne 297, Ligne 199, Ligne G, Ligne Navette C, Ligne 197), Théâtre (Ligne M151)",
+        "photos": 9,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1320000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "2c9ac92a3bfc": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/exclusivite-cushman-bureaux-en-investissement-avec--38259417",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "6  Allée De Londres",
+        "code_postal": "91140",
+        "commune": "Villejust",
+        "departement": "91",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 387.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1991",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 598998.0,
+        "prix_m2": 1547.7984496124031,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Exclusivité Cushman : bureaux en investissement avec possibilité d'occupation partielle - Villejust",
+        "description": "Le site est implanté à Villejust, au cœur d’un environnement tertiaire dynamique situé aux portes de la zone d’activités de Courtabœuf, l’un des plus importants pôles économiques de l’Essonne. Le quartier bénéficie d’un écosystème attractif composé d’entreprises de services, PME innovantes ainsi que de grandes enseignes implantées à proximité, favorisant un environnement de travail structuré et pérenne.\n\nCe secteur se distingue par sa tranquillité, tout en offrant une excellente accessibilité grâce à la proximité immédiate de grands axes routiers, facilitant les déplacements quotidiens des collaborateurs et visiteurs. Les utilisateurs profitent également d’un large choix de services à proximité : restaurants, commerces du quotidien, zones commerciales et offre hôtelière à quelques minutes.\n\nFonctionnel, moderne et en pleine dynamique d’entreprise, le quartier représente un emplacement adapté aux sociétés recherchant un cadre professionnel, accessible et agréable.",
+        "photos": 13,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 598998.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "2b2dfbc2b38f": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-signature-en-centre-ville--37628365",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "2 Bis  Rue Des Coquelicots",
+        "code_postal": "91160",
+        "commune": "Longjumeau",
+        "departement": "91",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 676.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1320000.0,
+        "prix_m2": 1952.6627218934912,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "BUREAUX SIGNATURE EN CENTRE VILLE",
+        "description": "Pensé par un architecte, cet ensemble de bureaux se distingue par son architecture originale et unique. Composé de deux bâtiments reliés par une passerelle, il offre une répartition innovante sur plusieurs niveaux, parfaitement adapté à des organisations à la recherche d'un espace qui se démarque des formats traditionnels.\n\n\nL'ensemble bénéficie d'une cour entièrement dédiée, comprenant 14 places de parkings privatives pour un confort optimal de vos collaborateurs et visiteurs. De plus, un entrepôt de 100 m² est également inclus, offrant un espace supplémentaire pour vos activités de stockage ou logistique.\n\n\nCe bien allie modernité et fonctionnalité, avec un fort potentiel pour diverses activités professionnelles.\n\n\nNe manquez pas cette opportunité unique, contactez-nous pour plus d'informations ou pour organiser une visite.\n\n\nBâtiment sur une parcelle de 820m² de terrain\nSurface RDC : 360 m²",
+        "photos": 16,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1320000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "68bb94a2fbd1": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-proximite-du-tribunal--39261174",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "91000",
+        "commune": "Évry-Courcouronnes",
+        "departement": "91",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 320.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 500000.0,
+        "prix_m2": 1562.5,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE, Proximité du tribunal",
+        "description": "Idéalement situés à proximité immédiate du tribunal et de la gare d'Evry-Courcouronnes,  Immprove vous propose une surface de bureaux de 320m² disponible immédiatement à la vente.\nLes bureaux disposent d'un espace accueil, d'une salle de réunion, de sanitaires privatifs, d'une cuisine, d'une salle d'attente et d'archives. Vous disposerez également de 5 parkings en sous-sol.\n\n\nAccès hall immeuble sécurisé\n. Accès PMR\n. surface située au 1er étage avec ascenseur\n. Interphone\n. Chauffage collectif : Gaz de ville\n. Fibre optique\n. Accueil\n. Bureaux cloisonnés\n. Salle de réunion\n. Cuisine\n. Sanitaires privatifs\n. Salle d'attente\n. Locaux traversants\n. Faux plafonds\n. Parquet ou carrelage\n. Climatisation selon les pièces\n. Câblage informatique",
+        "photos": 16,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 500000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "98f6e8fe7de7": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-a-vendre-ou-a-louer-a-bezons-95870--39185737",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "10  Rue Marcel Paul",
+        "code_postal": "95870",
+        "commune": "Bezons",
+        "departement": "95",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 635.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2009",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1400000.0,
+        "prix_m2": 2204.7244094488187,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Bureaux à vendre ou à louer à BEZONS 95870",
+        "description": "EXCLUSIVITÉ ARTHUR LOYD\nNous vous proposons un immeuble indépendant composé d'activités légères en rez-de-chaussée et de bureaux en étage, édifié sur un terrain de 1 980 m². réserve foncière disponible.\n\n\nChauffage par convecteurs électriques\nClimatisation au 1er étage\nClimatisation\nCloisons amovibles\nCâblage RJ 45\nFaux plafond\nCloisonnement de qualité\nKitchenette\nPossibilité d'extension (réserve foncière disponible)\nSurface RDC : 201 m²\n\n\nSituation/Transports :\nTram Tramway T2 (La Défense) à 600 m\n\n\nAutoroute A15, RN192, A14, A86\n\n\nBus Lignes 161, 262, 272, 163, 363\n\n\nRER station \"Houilles-Carrières\"(A)",
+        "photos": 10,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1400000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "24a8ed604dfa": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/surface-de-bureaux-a-vendre-acces-pmr-erp-possible--38783360",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "Avenue Du Centaure",
+        "code_postal": "95800",
+        "commune": "Cergy",
+        "departement": "95",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 426.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 595000.0,
+        "prix_m2": 1396.7136150234742,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "SURFACE DE BUREAUX A VENDRE - ACCES PMR - ERP POSSIBLE",
+        "description": "ARTHUR LOYD vous propose une surface de bureaux à vendre à toute proximité de la gare RER A de Cergy Saint Christophe de de l'autoroute A15.\nIl s'agit d'une surface totale de 546 m² située en rez-de-chaussée avec 2 accès PMR et en sous-sol pour les archives.\n10 places de parking extérieures sont en jouissance privative.\nERP possible.\nNombreux parkings intérieurs.\nPossibilité de déjeuner à toute proximité.\n\n\nBureaux cloisonnés en bon état d'usage\nCloisonnement amovible\nSol PVC\nChauffage électrique\nArchives\nSurface RDC : 426,36 m²\n\n\nSituation/Transports :\nAutoroute A15\n\n\nRER Cergy Saint-Christophe (A)\n\n\nSNCF Cergy-St-Christophe (France)\n\n\nTransilien Cergy Saint-Christophe (L)\n\n\nBus Centaure Martelet (1206), Gare de Cergy Saint-Christophe (7808), Place Olympe de Gouges (1235)\n\nInclut des archives d’une surface totale de 119 m²",
+        "photos": 14,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 595000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "e2d8b20fbd47": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/locaux-tertiaire--39977653",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "95310",
+        "commune": "SAINT-OUEN-L'AUMONE",
+        "departement": "95",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 455.97,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "1985",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 595000.0,
+        "prix_m2": 1304.9104107726384,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "locaux tertiaire",
+        "description": "NVA Conseil vous propose un local d’activité / bureaux ou show room à la location ou la vente.\n\n\nStructure métallique\nToiture bac acier isolé\nSéparation parpaing toute hauteur entre les lots.\n\nPuissance électrique : Tarif bleu 36 kVA\n\nChauffage : Radiateurs eau chaude sur chaudière gaz (indépendant)\n\nPorte d’entrée vitrée double ventaux \nZone accueil\nBlocs sanitaires sur chaque niveau \nNombreux bureaux\nZone atelier ou stockage RDC\nFaux plafond \nCâblage RJ 45 –  Baie de brassage\nFibre optique\n\nExtérieur:\n7 Parking privatifs\nAire de manœuvre poids lourd",
+        "photos": 12,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 595000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "0b3c0ac077d7": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-batiment-independant--39089407",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "95650",
+        "commune": "BOISSY-L'AILLERIE",
+        "departement": "95",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 700.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 800000.0,
+        "prix_m2": 1142.857142857143,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE, BÂTIMENT INDÉPENDANT",
+        "description": "Immprove est ravi de vous proposer une occasion unique d'acquérir des bureaux situés à BOISSY L'AILLERIE (95650) d'une surface total de 700 m², parfaits pour le développement et la croissance de votre entreprise.\nSitué dans une zone industrielle dynamique, ce local est disponible dès maintenant avec 20 emplacements de stationnement.\nContactez-nous pour obtenir plus d'informations et organiser une visite au 01 34 41 40 40.\n\n\nImmeuble ancien\n. Façade en bardage\n. Accès véhicules légers\n. Accès privatif sur rue\n. PC sécurité\n. Site et clos sécurisé 24h/24h\n. Fibre optique\nLocaux en bon état lumineux aménagés en :\n. Accueil\n. Espace ouvert\n. Bureaux cloisonnés\n. Salle de réunion\n. Espace détente\n. Local technique\n. Sanitaires privatifs\n. Double exposition\n. Décloisonnement possible\n. Locaux rationnels et modulables\n. Archives\n. Faux plafonds\n. Sol PVC\n. Câblage informatique et téléphonique\n. Pré-câblage informatique et téléphonique\n. Prises RJ45\n. Alarme\n. Chauffage électrique\n. 20 places de parking\nSurface RDC : 350 m²",
+        "photos": 17,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 800000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "dae05983b6c4": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/bureaux-a-vendre-avec-terrasse-500-m2-divisible-a--39022334",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "95460",
+        "commune": "Ézanville",
+        "departement": "95",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 500.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2027",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1400000.0,
+        "prix_m2": 2800.0,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "BUREAUX A VENDRE AVEC TERRASSE - 500 M² DIVISIBLE A PARTIR DE 100 M²",
+        "description": "BUREAUX NEUFS EN VEFA – ÉZANVILLE (RD301 / GARE)\n\nSitué à Ézanville, à proximité immédiate de la gare et en bordure directe de la RD301, IBI ENTREPRISE vous propose à l’acquisition en VEFA un nouveau programme tertiaire neuf, au sein d’un parc d’activités paysager, clos et sécurisé.\n\nNous proposons 500 m² de bureaux aménagés, divisibles en 5 plateaux d’environ 100 m², offrant une grande flexibilité d’aménagement. Certains lots disposent de terrasses privatives, apportant confort et qualité d’usage aux futurs occupants.\n\nIdéalement situé et facilement accessible, ce programme s’inscrit dans un environnement dynamique associant bureaux, locaux d’activités, commerces, loisirs et restauration.\n\nIl constitue une opportunité idéale pour les entreprises comme pour les investisseurs, à la recherche de surfaces neuves, modulables et valorisantes.\n\nPrestations bureaux :\nDoublage périphérique en plaques de plâtre BA13\nPeinture sur doublage\nSols souples : moquette ou dalles PVC\nClimatisation réversible (système 2 tubes)\nVentilation\nÉclairage LED\nPrises de courants forts en périphérie\n\n?? Contactez IBI ENTREPRISE pour obtenir plus d’informations et découvrir ce programme.\n\nPROGRAMME NEUF",
+        "photos": 8,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1400000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "f773555c3fb9": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-301-m2-de-bureaux-a-champs-sur-marne--39260859",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "Rue Albert Einstein",
+        "code_postal": "77420",
+        "commune": "Champs-sur-Marne",
+        "departement": "77",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 301.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 400000.0,
+        "prix_m2": 1328.9036544850499,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE 301 m² DE BUREAUX A CHAMPS SUR MARNE",
+        "description": "L’immeuble se trouve au sein du Parc Espace Descartes, un environnement reconnu pour la qualité de son cadre paysager et la présence d’établissements académiques de haut niveau tels que l’École des Ponts, l’École d’architecture et l’ESIEE. Ce contexte contribue à un environnement dynamique et innovant particulièrement adapté aux entreprises tertiaires. La localisation bénéficie d’une desserte complète comprenant l’autoroute A4, le RER A ainsi que plusieurs lignes de bus. À terme, le Grand Paris Express renforcera encore l’accessibilité, notamment via la gare de Noisy-Champs.",
+        "photos": 4,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 400000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "0ab75d2bce2b": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-lognes-77185--39260149",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "Rue De La Maison Rouge",
+        "code_postal": "77185",
+        "commune": "Lognes",
+        "departement": "77",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 313.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 430000.0,
+        "prix_m2": 1373.8019169329073,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau Lognes 77185",
+        "description": "DATA IMMO vous propose à Lognes, 313 m² de bureaux au sein d'un parc d'activités tertiaires à 10 minutes à pied du RER A. \n\n\n                                Ensemble en copropriété situé à proximité de l'autoroute A4 et à 10 minutes du RER A de Lognes, dans un cadre verdoyant et sécurisé.\n\n\nRegroupement de 9 lots de copropriété formant un plateau à usage de bureaux d'une superficie de 313,56 m² (Loi Carrez), au 1er étage.\nSurface non divisible à l'acquisition\n9 droits de stationnement\n\n\nChauffage électrique\nBureaux cloisonnés (cloisons amovibles semi vitrées)\nSanitaires en parties communes\n\n\nCharges de copropriété (2025) : 9 056 €\nTF (2025) : 9 001 €\n\n\nPRESTATIONS TECHNIQUES/ QUALITATIVES :\n\n                                                            - Aire de stationnement\n\n                                                                                SERVICES :\n\n                                                            - Espaces verts\n\n                                                            - Espaces verts soignés\n\n                                                            - Tarif bleu 3 à 36 kva\n\n                                                                                SÉCURITÉ :\n\n                                                            - Site clos et sécurisé\n\n                                                            - Contrôle d'accès par badge électronique\n\n                                                                                CHAUFFAGE :\n\n                                                            - Chauffage individuel\n\n                                                            - Chauffage électrique\n\n                                                                                EXPOSITION :\n\n                                                            - Ecole à proximité\n\n                                                            - Hôtel et restaurant à proximité\n\n                                                            - Parking public à proximité\n\n                                                            - Proche collège\n\n                                                            - Proche gare / RER\n\n                                                            - Proche sortie autoroute",
+        "photos": 22,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 430000.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "57671689ea99": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/vente-bureau-ferrieres-en-brie-77164--37647064",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "1  Rue Charles Cordier",
+        "code_postal": "77164",
+        "commune": "Ferrières-en-Brie",
+        "departement": "77",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 375.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2013",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 195500.0,
+        "prix_m2": 521.3333333333334,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "Vente Bureau Ferrieres En Brie 77164",
+        "description": "DATA IMMO vous présente à Ferrières-en-brie, 375 m² de bureaux loués à 2 locataires. Opportunité à l'investissement\n\n\n                                Bureaux situés dans un parc d'entreprises récent\nAccès sécurisé par interphone digicode\nAscenseur\nSanitaires en parties communes\nSurface de bureau en espace ouvert\nMoquette, faux plafond et plinthes périphériques pour câblage informatique\nTerrasse accessible\nParkings privatifs\n\n\nLot B6 : locaux loués générant un revenu locatif de 34 725 € HT/HC/an - Bail commercial signé en 09/2019\nLot B7 : locaux loués générant un revenu locatif de 16 770 € HT/HC/an - Bail commercial signé en 05/2024\n\n\nSÉCURITÉ :\n\n                                                            - Accès sécurisés\n\n                                                            - Interphone\n\n                                                            - Digicode\n\n                                                                                PRESTATIONS TECHNIQUES/ QUALITATIVES :\n\n                                                            - Ascenseur\n\n                                                            - Faux plafonds\n\n                                                            - Plinthes périphériques\n\n                                                                                SERVICES :\n\n                                                            - Sanitaires\n\n                                                            - Câblage informatique\n\n                                                                                SOL-PLANCHER :\n\n                                                            - Moquette\n\n                                                                                TOITURE - COUVERTURE :\n\n                                                            - Bac acier multicouches\n\n                                                                                EXTÉRIEUR :\n\n                                                            - Terrasse\n\n                                                                                EXPOSITION :\n\n                                                            - Proche sortie autoroute\n\n                                                                                ETAT DES LOCAUX :\n\n                                                            - Immeuble récent\n\n                                                                                CHAUFFAGE :\n\n                                                            - Chauffage électrique",
+        "photos": 10,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 195500.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "3b53b32cf939": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-bureaux-neufs--39484837",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "4  Rue Galilée",
+        "code_postal": "77420",
+        "commune": "Champs-sur-Marne",
+        "departement": "77",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 542.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": "2021",
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 513238.0,
+        "prix_m2": 946.9335793357934,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE, BUREAUX NEUFS",
+        "description": "À quelques minutes à pied de la gare RER A de Noisy-Champs, EVOLIS vous propose à la vente un plateau lumineux de 542 m², divisible à partir de 271 m², au sein d'un immeuble neuf livré en septembre 2021.\nClassé ERP type W et certifié CERTIVEA pour sa qualité environnementale, l'immeuble est équipé d'une GTB (Gestion Technique du Bâtiment), offrant des performances techniques et énergétiques optimales.\n\n\n. Immeuble neuf\n. Ascenseur\n. Sas d'entrée\n. Air rafraichi\n. Fibre optique\n. Locaux aménagés en :\n. Espace ouvert\n. Locaux traversants\n. Locaux lumineux\n. Faux plafonds\n. Plinthes périphériques\n. Local technique\n. Sanitaires privatifs\n. Locaux E.R.P. de type W\n\n\nSituation/Transports :\nBus Bibliothèque (312), Bois de l'Etang - Université (213)\nRER RER A \"Noisy champs\"\nAutoroute A4 - A86\nRoute N104",
+        "photos": 12,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 513238.0
+        }
+      ],
+      "_sources": [
+        "bureauxlocaux"
+      ],
+      "_notes": "",
+      "scoring": {
+        "score_global": 50,
+        "grade": "?",
+        "alertes": [
+          "Pas de referentiel"
+        ]
+      }
+    },
+    "72b606c0cfd1": {
+      "source": "bureauxlocaux",
+      "url": "https://www.bureauxlocaux.com/annonce/a-vendre-plateau-de-bureaux-neufs-et-17-places-de--39260857",
+      "date_scrape": "2026-04-13",
+      "localisation": {
+        "adresse": "",
+        "code_postal": "77420",
+        "commune": "Champs-sur-Marne",
+        "departement": "77",
+        "code_insee": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "bien": {
+        "type": "bureaux",
+        "surface_m2": 466.0,
+        "dpe": "",
+        "ges": "",
+        "annee_construction": null,
+        "etat": "",
+        "parking": 0,
+        "ascenseur": null,
+        "climatisation": null
+      },
+      "financier": {
+        "prix_affiche": 1147680.0,
+        "prix_m2": 2462.832618025751,
+        "honoraires_pct": null,
+        "taxe_fonciere_an": null,
+        "charges_copro_an": null
+      },
+      "locatif": {
+        "occupation": "",
+        "loyer_actuel_an": 0,
+        "loyer_m2_an": 0
+      },
+      "annonce": {
+        "titre": "A VENDRE PLATEAU DE BUREAUX NEUFS et 17 PLACES DE PARKINGS A CHAMPS SUR MARNE",
+        "description": "L’immeuble, livré en 2021 puis aménagé en ERP en 2022, se situe au sein du Parc Espace Descartes, secteur phare du centre d’affaires de Marne-la-Vallée et du Grand Paris. Ce quartier accueille plusieurs écoles prestigieuses regroupées dans un cadre verdoyant, idéal pour les entreprises innovantes souhaitant bénéficier d’une visibilité forte. Le bâtiment propose des prestations contemporaines avec un câblage fibre, deux ascenseurs, des parties communes soignées ainsi qu’une organisation rationnelle sur plusieurs niveaux. Son accessibilité est excellente grâce à la proximité de l’autoroute A4, du RER A et d’un réseau dense de bus, renforcée par les futures lignes du Grand Paris Express attendues à la gare de Noisy-Champs.",
+        "photos": 24,
+        "date_publication": "",
+        "agent": ""
+      },
+      "_first_seen": "2026-04-13",
+      "_last_seen": "2026-04-13",
+      "_statut": "nouveau",
+      "_prix_historique": [
+        {
+          "date": "2026-04-13",
+          "prix": 1147680.0
         }
       ],
       "_sources": [
