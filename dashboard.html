@@ -765,9 +765,10 @@ function initMap(){
   }).addTo(map);
   L.control.zoom({position:'bottomleft'}).addTo(map);
   map.on('zoomend',function(){renderPOI()});
-  // Overlay lignes de transport (OPNVKarte — transports publics OSM)
+  // Overlay lignes de transport UNIQUEMENT (pas le fond)
+  // OPNVKarte en très faible opacité pour juste voir les lignes
   L.tileLayer("https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png",{
-    attribution:'&copy; OPNVKarte',maxZoom:18,opacity:0.6
+    attribution:'&copy; OPNVKarte',maxZoom:18,opacity:0.25
   }).addTo(map);
 }
 
