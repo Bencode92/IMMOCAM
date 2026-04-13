@@ -783,11 +783,31 @@ function initMap(){
     {n:"14",c:"#62259D",pts:[[48.9073,2.3592],[48.8968,2.3592],[48.8919,2.3540],[48.8809,2.3553],[48.8777,2.3530],[48.8700,2.3419],[48.8621,2.3467],[48.8571,2.3538],[48.8530,2.3610],[48.8443,2.3735],[48.8362,2.3727],[48.8300,2.3770],[48.8215,2.3772]]},
   ];
   var metroLayer=L.layerGroup().addTo(map);
+  var activeMetroLine=null;
+  function distToLine(lat,lng,pts){var min=Infinity;for(var i=0;i<pts.length-1;i++){var a=pts[i],b=pts[i+1];var dx=b[1]-a[1],dy=b[0]-a[0],t=Math.max(0,Math.min(1,((lng-a[1])*dx+(lat-a[0])*dy)/(dx*dx+dy*dy)));var px=a[1]+t*dx,py=a[0]+t*dy;var d=Math.sqrt(Math.pow((lng-px)*71,2)+Math.pow((lat-py)*111,2));if(d<min)min=d;}return min;}
+  function highlightLine(line){
+    activeMetroLine=line;
+    // Rendre les autres lignes transparentes
+    metroLayer.eachLayer(function(l){l.setStyle({opacity:l._metroId===line.n?1:0.15,weight:l._metroId===line.n?6:2})});
+    // Rendre les deals loin de la ligne transparents
+    markers.forEach(function(m){
+      var ll=m.getLatLng();
+      var dist=distToLine(ll.lat,ll.lng,line.pts);
+      m.setOpacity(dist<0.5?1:0.15); // 0.5km = 500m
+    });
+  }
+  function resetLines(){
+    activeMetroLine=null;
+    metroLayer.eachLayer(function(l){l.setStyle({opacity:0.8,weight:4})});
+    markers.forEach(function(m){m.setOpacity(1)});
+  }
   METRO.forEach(function(line){
     var polyline=L.polyline(line.pts,{color:line.c,weight:4,opacity:0.8}).addTo(metroLayer);
-    polyline.bindPopup('<div style="font-family:Inter,sans-serif;text-align:center"><b style="color:'+line.c+';font-size:1.1rem">M'+line.n+'</b><br><span style="font-size:.8rem;color:#666">Ligne '+line.n+'</span></div>');
+    polyline._metroId=line.n;
+    polyline.on('click',function(){if(activeMetroLine&&activeMetroLine.n===line.n){resetLines();}else{highlightLine(line);}});
     polyline.bindTooltip('M'+line.n,{sticky:true,direction:'top',className:''});
   });
+  map.on('click',function(e){if(activeMetroLine&&!e.originalEvent._fromPolyline)resetLines();});
 }
 
 function gradeColor(g){return g==="A"?"#16a34a":g==="B"?"#1e3a5f":g==="C"?"#b45309":"#6b7280";}
