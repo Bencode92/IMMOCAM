@@ -692,35 +692,65 @@ document.getElementById("btnImportGo").addEventListener("click",async function()
 // ===================================================================
 let map=null, markers=[], geocodeCache={};
 
-// POI — Gares principales IDF (pertinent pour bureaux)
+// POI — Luxe + Ecoles + Gares
 var POI=[
+// Maisons de luxe
+{n:"Dior",t:"luxe",a:"30 Av. Montaigne",lat:48.866847,lng:2.3063837},
+{n:"Chanel",t:"luxe",a:"31 Rue Cambon",lat:48.868201,lng:2.326632},
+{n:"Lanvin",t:"luxe",a:"22 Rue Fbg St-Honoré",lat:48.8688586,lng:2.3220432},
+{n:"Celine",t:"luxe",a:"16 Rue Vivienne",lat:48.8680033,lng:2.3398901},
+{n:"Hermès",t:"luxe",a:"24 Rue Fbg St-Honoré",lat:48.8690615,lng:2.3218392},
+{n:"Saint Laurent",t:"luxe",a:"7 Av. George V",lat:48.8657814,lng:2.30109},
+{n:"Louis Vuitton",t:"luxe",a:"2 Rue du Pont Neuf",lat:48.8589469,lng:2.3432021},
+{n:"Kering",t:"luxe",a:"40 Rue de Sèvres",lat:48.8499586,lng:2.3218197},
+{n:"Balenciaga",t:"luxe",a:"16-18 Rue Vaneau",lat:48.8539008,lng:2.3193066},
+{n:"Givenchy",t:"luxe",a:"3 Av. George V",lat:48.8653747,lng:2.3011364},
+{n:"Valentino",t:"luxe",a:"273 Rue St-Honoré",lat:48.8679085,lng:2.3243513},
+{n:"Balmain",t:"luxe",a:"44 Rue François 1er",lat:48.868562,lng:2.304094},
+{n:"Bottega Veneta",t:"luxe",a:"12 Av. Montaigne",lat:48.8658579,lng:2.3044883},
+{n:"Fendi",t:"luxe",a:"51 Av. Montaigne",lat:48.8680166,lng:2.3076168},
+{n:"Rick Owens",t:"luxe",a:"Galerie de Valois",lat:48.8651847,lng:2.3386044},
+{n:"Maison Margiela",t:"luxe",a:"163 Rue St-Maur",lat:48.8695035,lng:2.3736627},
+{n:"Jacquemus",t:"luxe",a:"58 Av. Montaigne",lat:48.8681537,lng:2.3090712},
+{n:"Coperni",t:"luxe",a:"21 Rue Fbg St-Antoine",lat:48.8525,lng:2.3725},
+{n:"Courrèges",t:"luxe",a:"40 Rue François 1er",lat:48.8684047,lng:2.3043746},
+{n:"The Row",t:"luxe",a:"1 Rue du Mont Thabor",lat:48.8653578,lng:2.3294541},
+{n:"Acne Studios",t:"luxe",a:"48 Rue Petites Écuries",lat:48.8742516,lng:2.3493247},
+// Ecoles de mode
+{n:"IFM",t:"ecole",a:"36 Quai d'Austerlitz",lat:48.8411104,lng:2.3692753},
+{n:"ESMOD",t:"ecole",a:"12 Rue C. de la Rochefoucauld",lat:48.8777278,lng:2.3345405},
+{n:"Studio Berçot",t:"ecole",a:"29 Rue Petites Écuries",lat:48.873648,lng:2.351196},
+{n:"Parsons Paris",t:"ecole",a:"45 Rue Saint-Roch",lat:48.8664937,lng:2.3329041},
+{n:"Chambre Syndicale",t:"ecole",a:"102 Rue Fbg St-Honoré",lat:48.871498,lng:2.3157028},
+{n:"LISAA Mode",t:"ecole",a:"5 Rue Laromiguière",lat:48.8441719,lng:2.3473691},
+{n:"Atelier Chardon Savard",t:"ecole",a:"15 Rue Gambey",lat:48.8652543,lng:2.3716567},
+// Gares principales
 {n:"Gare Saint-Lazare",t:"gare",a:"Rue d'Amsterdam",lat:48.8764,lng:2.3259},
 {n:"Gare du Nord",t:"gare",a:"Rue de Dunkerque",lat:48.8809,lng:2.3553},
 {n:"Gare de l'Est",t:"gare",a:"Place du 11 Novembre",lat:48.8768,lng:2.3591},
 {n:"Gare de Lyon",t:"gare",a:"Place Louis-Armand",lat:48.8443,lng:2.3735},
 {n:"Gare Montparnasse",t:"gare",a:"Bd de Vaugirard",lat:48.8414,lng:2.3210},
-{n:"Gare d'Austerlitz",t:"gare",a:"Quai d'Austerlitz",lat:48.8424,lng:2.3651},
 {n:"La Défense",t:"gare",a:"Parvis de la Défense",lat:48.8920,lng:2.2380},
-{n:"Châtelet-Les Halles",t:"gare",a:"Place Marguerite de Navarre",lat:48.8621,lng:2.3467},
-{n:"Nation",t:"gare",a:"Place de la Nation",lat:48.8483,lng:2.3959},
-{n:"Opéra",t:"gare",a:"Place de l'Opéra",lat:48.8714,lng:2.3316},
-{n:"République",t:"gare",a:"Place de la République",lat:48.8675,lng:2.3638},
-{n:"Bastille",t:"gare",a:"Place de la Bastille",lat:48.8533,lng:2.3692},
+{n:"Châtelet",t:"gare",a:"Les Halles",lat:48.8621,lng:2.3467},
 ];
 
 var poiMarkers=[];
 function renderPOI(){
   poiMarkers.forEach(function(m){map.removeLayer(m)});
   poiMarkers=[];
-  if(map.getZoom()<12) return; // POI seulement au zoom >=12
+  if(map.getZoom()<12) return;
   POI.forEach(function(p){
+    var color=p.t==="luxe"?"#e11d48":p.t==="ecole"?"#8b5cf6":"#1e3a5f";
+    var emoji=p.t==="luxe"?"\uD83D\uDC8E":p.t==="ecole"?"\uD83C\uDF93":"\uD83D\uDE89";
+    var sz=p.t==="gare"?18:20;
     var icon=L.divIcon({
       className:"",
-      html:'<div style="width:20px;height:20px;border-radius:50%;background:#1e3a5f;border:2px solid #fff;box-shadow:0 2px 4px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font-size:10px">\uD83D\uDE89</div>',
-      iconSize:[20,20],iconAnchor:[10,10],popupAnchor:[0,-12]
+      html:'<div style="width:'+sz+'px;height:'+sz+'px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 2px 4px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font-size:'+(sz-8)+'px">'+emoji+'</div>',
+      iconSize:[sz,sz],iconAnchor:[sz/2,sz/2],popupAnchor:[0,-sz/2-2]
     });
+    var label=p.t==="luxe"?"Maison de luxe":p.t==="ecole"?"École de mode":"Gare / RER";
     var m=L.marker([p.lat,p.lng],{icon:icon}).addTo(map);
-    m.bindPopup('<div style="font-family:Inter,sans-serif"><b style="color:#1e3a5f">'+p.n+'</b><br><span style="font-size:.75rem;color:#666">'+p.a+'</span></div>');
+    m.bindPopup('<div style="font-family:Inter,sans-serif"><b style="color:'+color+'">'+p.n+'</b><br><span style="font-size:.75rem;color:#666">'+p.a+'</span><br><span style="font-size:.7rem;color:#999">'+label+'</span></div>');
     poiMarkers.push(m);
   });
 }
@@ -735,6 +765,12 @@ function initMap(){
   }).addTo(map);
   L.control.zoom({position:'bottomleft'}).addTo(map);
   map.on('zoomend',function(){renderPOI()});
+  // Charger les lignes de metro RATP (GeoJSON open data)
+  fetch("https://data.ratp.fr/api/explore/v2.1/catalog/datasets/traces-du-reseau-ferre-idf/exports/geojson?limit=-1&refine=mode%3A%22Metro%22").then(function(r){return r.ok?r.json():null}).then(function(gj){
+    if(!gj)return;
+    var METRO_COLORS={"1":"#FFCD00","2":"#003CA6","3":"#837902","3bis":"#6EC4E8","4":"#CF009E","5":"#FF7E2E","6":"#6ECA97","7":"#FA9ABA","7bis":"#6ECA97","8":"#E19BDF","9":"#B6BD00","10":"#C9910D","11":"#704B1C","12":"#007852","13":"#6EC4E8","14":"#62259D"};
+    L.geoJSON(gj,{style:function(f){var line=f.properties.res_com||f.properties.indice_lig||"";var c=METRO_COLORS[line]||"#888";return{color:c,weight:3,opacity:0.5}},onEachFeature:function(f,layer){var name=f.properties.res_com||f.properties.indice_lig||"";if(name)layer.bindTooltip("M"+name,{sticky:true,className:"",direction:"top"});}}).addTo(map);
+  }).catch(function(){});
 }
 
 function gradeColor(g){return g==="A"?"#16a34a":g==="B"?"#1e3a5f":g==="C"?"#b45309":"#6b7280";}
