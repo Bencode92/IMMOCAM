@@ -1002,13 +1002,14 @@ function initMap(){
 
 function gradeColor(g){return g==="A"?"#16a34a":g==="B"?"#1e3a5f":g==="C"?"#b45309":"#6b7280";}
 
-function makeIcon(surf,prix,grade,suspect){
+function makeIcon(surf,prix,grade,suspect,approx){
   const c=suspect?"#b45309":gradeColor(grade);
-  const border=suspect?"2px dashed #dc2626":"3px solid #fff";
+  const border=approx?"2px dashed rgba(255,255,255,.6)":suspect?"2px dashed #dc2626":"3px solid #fff";
+  const opacity=approx?"opacity:.7;":"";
   const pLabel=prix?(prix/1e6).toFixed(1)+"M":"?";
   return L.divIcon({
     className:"",
-    html:`<div style="min-width:52px;padding:5px 10px;border-radius:20px;background:${c};border:${border};box-shadow:0 3px 12px rgba(0,0,0,.35);color:#fff;font-size:13px;font-weight:700;text-align:center;white-space:nowrap;cursor:pointer;line-height:1.2">${pLabel}<div style="font-size:9px;font-weight:500;opacity:.85">${Math.round(surf)}m\u00B2</div></div>`,
+    html:`<div style="min-width:52px;padding:5px 10px;border-radius:20px;background:${c};border:${border};box-shadow:0 3px 12px rgba(0,0,0,.35);color:#fff;font-size:13px;font-weight:700;text-align:center;white-space:nowrap;cursor:pointer;line-height:1.2;${opacity}">${pLabel}<div style="font-size:9px;font-weight:500;opacity:.85">${Math.round(surf)}m\u00B2</div></div>`,
     iconSize:[60,38],iconAnchor:[30,19],popupAnchor:[0,-22]
   });
 }
@@ -1067,25 +1068,26 @@ function renderMap(deals){
     const s=d.scoring||{};
 
     let pos=null;
-    if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};}
-    else if(loc.latitude&&loc.longitude){pos={lat:loc.latitude,lng:loc.longitude};d._lat=pos.lat;d._lng=pos.lng;}
+    let approx=false;
+    // Adresse precise = a une vraie adresse avec numero
+    const hasAddr=loc.adresse&&loc.adresse.match(/\d/);
+    if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};approx=!hasAddr;}
+    else if(loc.latitude&&loc.longitude){pos={lat:loc.latitude,lng:loc.longitude};d._lat=pos.lat;d._lng=pos.lng;approx=!hasAddr;}
     else{
+      approx=true;
       const ck=communeKey(loc.commune);
       if(ck&&COMMUNE_COORDS[ck]){
         pos=COMMUNE_COORDS[ck];
         d._lat=pos.lat;d._lng=pos.lng;
       }
-      // Fallback: code postal Paris
       if(!pos&&loc.code_postal&&loc.code_postal.startsWith("75")){
         var arr=parseInt(loc.code_postal.substring(3));
         var pk="Paris "+(arr||1)+"e";
         if(COMMUNE_COORDS[pk]){pos=COMMUNE_COORDS[pk];d._lat=pos.lat;d._lng=pos.lng;}
       }
-      // Fallback: code postal 92
       if(!pos&&loc.code_postal&&loc.code_postal.startsWith("92")){
         for(var cn in COMMUNE_COORDS){if(cn.toLowerCase().indexOf((loc.commune||"").toLowerCase())>-1){pos=COMMUNE_COORDS[cn];d._lat=pos.lat;d._lng=pos.lng;break;}}
       }
-      // Dernier fallback: centre Paris ou centre 92
       if(!pos){
         if(loc.departement==="75"||(!loc.departement&&loc.code_postal&&loc.code_postal.startsWith("75"))){pos={lat:48.86,lng:2.34};d._lat=pos.lat;d._lng=pos.lng;}
         else if(loc.departement==="92"||(!loc.departement&&loc.code_postal&&loc.code_postal.startsWith("92"))){pos={lat:48.87,lng:2.25};d._lat=pos.lat;d._lng=pos.lng;}
@@ -1096,7 +1098,7 @@ function renderMap(deals){
     const surf=bien.surface_m2||0;
     const grade=s.grade||"?";
     const suspect=d._ecart_marche!=null&&d._ecart_marche<-40;
-    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf,fin.prix_affiche,grade,suspect)}).addTo(map);
+    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf,fin.prix_affiche,grade,suspect,approx)}).addTo(map);
 
     const prixStr=fin.prix_affiche?(fin.prix_affiche/1e6).toFixed(2)+"M\u20AC":"—";
 
