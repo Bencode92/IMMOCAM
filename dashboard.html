@@ -771,29 +771,43 @@ function initMap(){
   // Charger les vrais tracés
   fetch(RAW+"/data/metro_lines.json").then(function(r){return r.ok?r.json():[]}).then(function(lines){METRO=lines;
     METRO.forEach(function(line){
-      var polyline=L.polyline(line.pts,{color:line.c,weight:4,opacity:0.8}).addTo(metroLayer);
+      var polyline=L.polyline(line.pts,{color:line.c,weight:5,opacity:0.8}).addTo(metroLayer);
+      // Zone de clic invisible plus large pour faciliter le clic
+      var hitArea=L.polyline(line.pts,{color:"transparent",weight:20,opacity:0}).addTo(metroLayer);
       polyline._metroId=line.n;
-      polyline.on('click',function(){if(activeMetroLine&&activeMetroLine.n===line.n){resetLines();}else{highlightLine(line);}});
+      hitArea._metroId=line.n+"_hit";
+      function toggle(){if(activeMetroLine&&activeMetroLine.n===line.n){resetLines();}else{highlightLine(line);}}
+      polyline.on('click',toggle);
+      hitArea.on('click',toggle);
       polyline.bindTooltip('M'+line.n,{sticky:true,direction:'top',className:''});
+      hitArea.bindTooltip('M'+line.n,{sticky:true,direction:'top',className:''});
     });
   }).catch(function(){});
   var activeMetroLine=null;
   function distToLine(lat,lng,pts){var min=Infinity;for(var i=0;i<pts.length-1;i++){var a=pts[i],b=pts[i+1];var dx=b[1]-a[1],dy=b[0]-a[0],t=Math.max(0,Math.min(1,((lng-a[1])*dx+(lat-a[0])*dy)/(dx*dx+dy*dy)));var px=a[1]+t*dx,py=a[0]+t*dy;var d=Math.sqrt(Math.pow((lng-px)*71,2)+Math.pow((lat-py)*111,2));if(d<min)min=d;}return min;}
   function highlightLine(line){
     activeMetroLine=line;
-    // Rendre les autres lignes transparentes
-    metroLayer.eachLayer(function(l){l.setStyle({opacity:l._metroId===line.n?1:0.15,weight:l._metroId===line.n?6:2})});
-    // Rendre les deals loin de la ligne transparents
+    // Ligne selectionnee: epaisse + opaque. Autres: quasi invisibles
+    metroLayer.eachLayer(function(l){
+      if(l._metroId===line.n) l.setStyle({opacity:1,weight:8});
+      else if(l._metroId&&!l._metroId.endsWith("_hit")) l.setStyle({opacity:0.1,weight:2});
+    });
+    // Deals: proches = opaques, loin = transparents
     markers.forEach(function(m){
       var ll=m.getLatLng();
       var dist=distToLine(ll.lat,ll.lng,line.pts);
-      m.setOpacity(dist<0.5?1:0.15); // 0.5km = 500m
+      m.setOpacity(dist<0.5?1:0.12);
     });
+    // POI: tous transparents
+    poiMarkers.forEach(function(m){m.setOpacity(0.15)});
   }
   function resetLines(){
     activeMetroLine=null;
-    metroLayer.eachLayer(function(l){l.setStyle({opacity:0.8,weight:4})});
+    metroLayer.eachLayer(function(l){
+      if(l._metroId&&!l._metroId.endsWith("_hit")) l.setStyle({opacity:0.8,weight:5});
+    });
     markers.forEach(function(m){m.setOpacity(1)});
+    poiMarkers.forEach(function(m){m.setOpacity(1)});
   }
   map.on('click',function(e){if(activeMetroLine)resetLines();});
 }
