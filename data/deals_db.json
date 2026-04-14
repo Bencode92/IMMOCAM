@@ -17,8 +17,8 @@
         "commune": "Paris",
         "departement": "75",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8800348,
+        "longitude": 2.3446395
       },
       "bien": {
         "type": "bureaux",
@@ -81,8 +81,8 @@
         "commune": "Paris",
         "departement": "75",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8733792,
+        "longitude": 2.3111527
       },
       "bien": {
         "type": "bureaux",
@@ -145,8 +145,8 @@
         "commune": "Paris",
         "departement": "75",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8847058,
+        "longitude": 2.3002324
       },
       "bien": {
         "type": "bureaux",
@@ -209,8 +209,8 @@
         "commune": "Paris",
         "departement": "75",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8387838,
+        "longitude": 2.3520123
       },
       "bien": {
         "type": "bureaux",
@@ -273,8 +273,8 @@
         "commune": "Paris",
         "departement": "75",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8829736,
+        "longitude": 2.3672586
       },
       "bien": {
         "type": "bureaux",
@@ -337,8 +337,8 @@
         "commune": "Paris",
         "departement": "75",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8402466,
+        "longitude": 2.3527416
       },
       "bien": {
         "type": "bureaux",
@@ -401,8 +401,8 @@
         "commune": "Clichy",
         "departement": "92",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.9015191,
+        "longitude": 2.2987146
       },
       "bien": {
         "type": "bureaux",
@@ -465,8 +465,8 @@
         "commune": "Levallois-Perret",
         "departement": "92",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8888268,
+        "longitude": 2.2876355
       },
       "bien": {
         "type": "bureaux",
@@ -529,8 +529,8 @@
         "commune": "Montrouge",
         "departement": "92",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8169554,
+        "longitude": 2.3286554
       },
       "bien": {
         "type": "bureaux",
@@ -593,8 +593,8 @@
         "commune": "Clichy",
         "departement": "92",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.9039119,
+        "longitude": 2.3043192
       },
       "bien": {
         "type": "bureaux",
@@ -657,8 +657,8 @@
         "commune": "Clichy",
         "departement": "92",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.912745,
+        "longitude": 2.31415
       },
       "bien": {
         "type": "bureaux",
@@ -721,8 +721,8 @@
         "commune": "Issy-les-Moulineaux",
         "departement": "92",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8205991,
+        "longitude": 2.2491773
       },
       "bien": {
         "type": "bureaux",
@@ -785,8 +785,8 @@
         "commune": "Nanterre",
         "departement": "92",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8865008,
+        "longitude": 2.2139146
       },
       "bien": {
         "type": "bureaux",
@@ -849,8 +849,8 @@
         "commune": "Noisy-le-Grand",
         "departement": "93",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.844766,
+        "longitude": 2.539057
       },
       "bien": {
         "type": "bureaux",
@@ -913,8 +913,8 @@
         "commune": "Saint-Ouen-sur-Seine",
         "departement": "93",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.9096049,
+        "longitude": 2.3334706
       },
       "bien": {
         "type": "bureaux",
@@ -977,8 +977,8 @@
         "commune": "Montreuil",
         "departement": "93",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8637053,
+        "longitude": 2.4557048
       },
       "bien": {
         "type": "bureaux",
@@ -1041,8 +1041,8 @@
         "commune": "Montreuil",
         "departement": "93",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8637053,
+        "longitude": 2.4557048
       },
       "bien": {
         "type": "bureaux",
@@ -1105,8 +1105,8 @@
         "commune": "Villepinte",
         "departement": "93",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.9596381,
+        "longitude": 2.5363038
       },
       "bien": {
         "type": "bureaux",
@@ -1169,8 +1169,8 @@
         "commune": "Charenton-le-Pont",
         "departement": "94",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8202975,
+        "longitude": 2.413172
       },
       "bien": {
         "type": "bureaux",
@@ -1233,8 +1233,8 @@
         "commune": "Le Kremlin-Bicêtre",
         "departement": "94",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.812171,
+        "longitude": 2.357485
       },
       "bien": {
         "type": "bureaux",
@@ -1873,8 +1873,8 @@
         "commune": "Cachan",
         "departement": "94",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8001307,
+        "longitude": 2.3265504
       },
       "bien": {
         "type": "bureaux",
@@ -1937,8 +1937,8 @@
         "commune": "Ivry-sur-Seine",
         "departement": "94",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8160934,
+        "longitude": 2.3656215
       },
       "bien": {
         "type": "bureaux",
@@ -2001,8 +2001,8 @@
         "commune": "Versailles",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8132681,
+        "longitude": 2.1253317
       },
       "bien": {
         "type": "bureaux",
@@ -2065,8 +2065,8 @@
         "commune": "Conflans-Sainte-Honorine",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.995389,
+        "longitude": 2.0842132
       },
       "bien": {
         "type": "bureaux",
@@ -2129,8 +2129,8 @@
         "commune": "Croissy-sur-Seine",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8762884,
+        "longitude": 2.1242915
       },
       "bien": {
         "type": "bureaux",
@@ -2193,8 +2193,8 @@
         "commune": "Buc",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.7625442,
+        "longitude": 2.1224222
       },
       "bien": {
         "type": "bureaux",
@@ -2257,8 +2257,8 @@
         "commune": "Vélizy-Villacoublay",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.7809848,
+        "longitude": 2.2142566
       },
       "bien": {
         "type": "bureaux",
@@ -2323,8 +2323,8 @@
         "commune": "Guyancourt",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.7868738,
+        "longitude": 2.0570997
       },
       "bien": {
         "type": "bureaux",
@@ -2389,8 +2389,8 @@
         "commune": "Saint-Germain-en-Laye",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.893828,
+        "longitude": 2.073413
       },
       "bien": {
         "type": "bureaux",
@@ -2455,8 +2455,8 @@
         "commune": "Conflans-Sainte-Honorine",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.995389,
+        "longitude": 2.0842132
       },
       "bien": {
         "type": "bureaux",
@@ -2521,8 +2521,8 @@
         "commune": "Plaisir",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.7989798,
+        "longitude": 1.9547718
       },
       "bien": {
         "type": "bureaux",
@@ -2587,8 +2587,8 @@
         "commune": "Trappes",
         "departement": "78",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.792716,
+        "longitude": 1.979976
       },
       "bien": {
         "type": "bureaux",
@@ -2653,8 +2653,8 @@
         "commune": "Évry-Courcouronnes",
         "departement": "91",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.6299549,
+        "longitude": 2.4073811
       },
       "bien": {
         "type": "bureaux",
@@ -2719,8 +2719,8 @@
         "commune": "Palaiseau",
         "departement": "91",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.7095896,
+        "longitude": 2.2564593
       },
       "bien": {
         "type": "bureaux",
@@ -2785,8 +2785,8 @@
         "commune": "Ris-Orangis",
         "departement": "91",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.6502603,
+        "longitude": 2.4069765
       },
       "bien": {
         "type": "bureaux",
@@ -2851,8 +2851,8 @@
         "commune": "Longjumeau",
         "departement": "91",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.6975824,
+        "longitude": 2.3009753
       },
       "bien": {
         "type": "bureaux",
@@ -2917,8 +2917,8 @@
         "commune": "Villejust",
         "departement": "91",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.6844893,
+        "longitude": 2.2036167
       },
       "bien": {
         "type": "bureaux",
@@ -2983,8 +2983,8 @@
         "commune": "Longjumeau",
         "departement": "91",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.6975824,
+        "longitude": 2.3009753
       },
       "bien": {
         "type": "bureaux",
@@ -3049,8 +3049,8 @@
         "commune": "Évry-Courcouronnes",
         "departement": "91",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.6296099,
+        "longitude": 2.4435959
       },
       "bien": {
         "type": "bureaux",
@@ -3115,8 +3115,8 @@
         "commune": "Bezons",
         "departement": "95",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.9190542,
+        "longitude": 2.210569
       },
       "bien": {
         "type": "bureaux",
@@ -3181,8 +3181,8 @@
         "commune": "Cergy",
         "departement": "95",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 49.0506684,
+        "longitude": 2.0415357
       },
       "bien": {
         "type": "bureaux",
@@ -3247,8 +3247,8 @@
         "commune": "SAINT-OUEN-L'AUMONE",
         "departement": "95",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 49.0450571,
+        "longitude": 2.1263007
       },
       "bien": {
         "type": "bureaux",
@@ -3313,8 +3313,8 @@
         "commune": "BOISSY-L'AILLERIE",
         "departement": "95",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 49.0831701,
+        "longitude": 2.0268915
       },
       "bien": {
         "type": "bureaux",
@@ -3379,8 +3379,8 @@
         "commune": "Ézanville",
         "departement": "95",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 49.0380632,
+        "longitude": 2.3581717
       },
       "bien": {
         "type": "bureaux",
@@ -3445,8 +3445,8 @@
         "commune": "Champs-sur-Marne",
         "departement": "77",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8361362,
+        "longitude": 2.5859435
       },
       "bien": {
         "type": "bureaux",
@@ -3511,8 +3511,8 @@
         "commune": "Lognes",
         "departement": "77",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8313431,
+        "longitude": 2.6299635
       },
       "bien": {
         "type": "bureaux",
@@ -3577,8 +3577,8 @@
         "commune": "Ferrières-en-Brie",
         "departement": "77",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8253213,
+        "longitude": 2.7170474
       },
       "bien": {
         "type": "bureaux",
@@ -3643,8 +3643,8 @@
         "commune": "Champs-sur-Marne",
         "departement": "77",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8397475,
+        "longitude": 2.5935384
       },
       "bien": {
         "type": "bureaux",
@@ -3709,8 +3709,8 @@
         "commune": "Champs-sur-Marne",
         "departement": "77",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.8486886,
+        "longitude": 2.5954263
       },
       "bien": {
         "type": "bureaux",
@@ -3775,8 +3775,8 @@
         "commune": "SAINT OUEN",
         "departement": "93",
         "code_insee": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 48.9096049,
+        "longitude": 2.3334706
       },
       "bien": {
         "type": "bureaux",
@@ -9214,7 +9214,9 @@
         "adresse": "Oakfield 51 Boulevard De Strasbourg",
         "code_postal": "75010",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8760081,
+        "longitude": 2.360445
       },
       "bien": {
         "surface_m2": 162
@@ -9244,7 +9246,9 @@
         "adresse": "152 Rue De Picpus",
         "code_postal": "75012",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.835138,
+        "longitude": 2.4035686
       },
       "bien": {
         "surface_m2": 190
@@ -9276,7 +9280,9 @@
         "adresse": "233 Rue Etienne Marcel La Grande Porte Centre d'Affaires",
         "code_postal": "93100",
         "commune": "Paris",
-        "departement": "93"
+        "departement": "93",
+        "latitude": 48.8544907,
+        "longitude": 2.4161968
       },
       "bien": {
         "surface_m2": 879
@@ -9306,7 +9312,9 @@
         "adresse": "66 Rue De Monceau",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8790655,
+        "longitude": 2.3136758
       },
       "bien": {
         "surface_m2": 527
@@ -9338,7 +9346,9 @@
         "adresse": "48 Rue De La Bienfaisance",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8766199,
+        "longitude": 2.3144492
       },
       "bien": {
         "surface_m2": 104
@@ -9370,7 +9380,9 @@
         "adresse": "90 Rue D'Amsterdam",
         "code_postal": "75009",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8820477,
+        "longitude": 2.3271958
       },
       "bien": {
         "surface_m2": 300
@@ -9402,7 +9414,9 @@
         "adresse": "76-78 Avenue Des Champs Elysées Arcades des Champs Elysées",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8733792,
+        "longitude": 2.3111527
       },
       "bien": {
         "surface_m2": 80
@@ -9432,7 +9446,9 @@
         "adresse": "205 Rue Du Faubourg Saint-Martin",
         "code_postal": "75010",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8801537,
+        "longitude": 2.3638024
       },
       "bien": {
         "surface_m2": 435
@@ -9464,7 +9480,9 @@
         "adresse": "14 Rue Rougemont",
         "code_postal": "75009",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8721443,
+        "longitude": 2.3462235
       },
       "bien": {
         "surface_m2": 231
@@ -9496,7 +9514,9 @@
         "adresse": "98 Rue De Miromesnil",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.879668,
+        "longitude": 2.3155363
       },
       "bien": {
         "surface_m2": 243
@@ -9528,7 +9548,9 @@
         "adresse": "28 Rue Pascal",
         "code_postal": "75005",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8375794,
+        "longitude": 2.3491314
       },
       "bien": {
         "surface_m2": 702
@@ -9560,7 +9582,9 @@
         "adresse": "7 Rue Des Petites Ecuries",
         "code_postal": "75010",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8730649,
+        "longitude": 2.3534395
       },
       "bien": {
         "surface_m2": 174
@@ -9592,7 +9616,9 @@
         "adresse": "141 Rue De Rennes",
         "code_postal": "75006",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8460439,
+        "longitude": 2.3261661
       },
       "bien": {
         "surface_m2": 297
@@ -9624,7 +9650,9 @@
         "adresse": "6 Rue Abel Truchet",
         "code_postal": "75017",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8833235,
+        "longitude": 2.3240199
       },
       "bien": {
         "surface_m2": 427
@@ -9656,7 +9684,9 @@
         "adresse": "36 Boulevard De La Bastille",
         "code_postal": "75012",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8503989,
+        "longitude": 2.3688938
       },
       "bien": {
         "surface_m2": 109
@@ -9688,7 +9718,9 @@
         "adresse": "46 Boulevard De Magenta",
         "code_postal": "75010",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8726185,
+        "longitude": 2.3595812
       },
       "bien": {
         "surface_m2": 207
@@ -9720,7 +9752,9 @@
         "adresse": "32 Boulevard Flandrin",
         "code_postal": "75016",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8669055,
+        "longitude": 2.2730684
       },
       "bien": {
         "surface_m2": 292
@@ -9752,7 +9786,9 @@
         "adresse": "Arrow Paris 10 Rue De La Pépinière",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8733792,
+        "longitude": 2.3111527
       },
       "bien": {
         "surface_m2": 437
@@ -9782,7 +9818,9 @@
         "adresse": "2-4 Rue Lord Byron",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8733001,
+        "longitude": 2.2999949
       },
       "bien": {
         "surface_m2": 479
@@ -9814,7 +9852,9 @@
         "adresse": "141 Rue De Rennes",
         "code_postal": "75006",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8460439,
+        "longitude": 2.3261661
       },
       "bien": {
         "surface_m2": 385
@@ -9846,7 +9886,9 @@
         "adresse": "42 Rue De L'Universite Le Brumaire 69007 Lyon 875 700 € 1 Lo",
         "code_postal": "69007",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.753574,
+        "longitude": 4.8465924
       },
       "bien": {
         "surface_m2": 208
@@ -9876,7 +9918,9 @@
         "adresse": "54 Rue De L'Eglise 75015 Paris 1 110 000 € 1 Lot 139 m²",
         "code_postal": "75015",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8414302,
+        "longitude": 2.2961649
       },
       "bien": {
         "surface_m2": 139
@@ -9906,7 +9950,9 @@
         "adresse": "42 Rue Barbès 92120 Montrouge 1 157 600 € – 2 044 000 € 2 Lo",
         "code_postal": "92120",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 511
@@ -9936,7 +9982,9 @@
         "adresse": "4 Rue De L'Atome 67800 Bischheim 127 125 € – 800 001 € 3 Lot",
         "code_postal": "67800",
         "commune": "Paris",
-        "departement": "67"
+        "departement": "67",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 867
@@ -9966,7 +10014,9 @@
         "adresse": "35 Rue Paul Duvivier Les Ateliers Du Faubourg 69007 Lyon 515",
         "code_postal": "69007",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.753574,
+        "longitude": 4.8465924
       },
       "bien": {
         "surface_m2": 350
@@ -9996,7 +10046,9 @@
         "adresse": "8 Rue Joseph Bosc 31000 Toulouse 2 200 000 € 520 m² | Bureau",
         "code_postal": "31000",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 520
@@ -10026,7 +10078,9 @@
         "adresse": "20 Chemin De La Cépière 31100 Toulouse 165 000 € 1 Lot 264 m",
         "code_postal": "31100",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 264
@@ -10056,7 +10110,9 @@
         "adresse": "54 Rue De Maubeuge 75009 Paris 370 000 € 1 Lot 49 m²",
         "code_postal": "75009",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8770673,
+        "longitude": 2.3379172
       },
       "bien": {
         "surface_m2": 49
@@ -10086,7 +10142,9 @@
         "adresse": "45 Rue Broca 75005 Paris 3 310 000 € 1 Lot 330 m²",
         "code_postal": "75005",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8454189,
+        "longitude": 2.3525824
       },
       "bien": {
         "surface_m2": 330
@@ -10116,7 +10174,9 @@
         "adresse": "157 Rue De La Minière 78530 Buc 3 500 000 € 3 633 m² | Burea",
         "code_postal": "78530",
         "commune": "Paris",
-        "departement": "78"
+        "departement": "78",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 633
@@ -10146,7 +10206,9 @@
         "adresse": "22 Boulevard De La Marquette TERRA NOVA 31000 Toulouse 3 588",
         "code_postal": "31000",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 508
@@ -10176,7 +10238,9 @@
         "adresse": "24-25 Quai Du President Carnot 92210 Saint-Cloud 296 251 € –",
         "code_postal": "92210",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.8363062,
+        "longitude": 2.2022537
       },
       "bien": {
         "surface_m2": 591
@@ -10206,7 +10270,9 @@
         "adresse": "Dôme Real Estate 92 Boulevard Victor Hugo Centre D'Affaires ",
         "code_postal": "92110",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.904631,
+        "longitude": 2.2929242
       },
       "bien": {
         "surface_m2": 270
@@ -10236,7 +10302,9 @@
         "adresse": "205 Rue Du Faubourg Saint-Martin 75010 Paris 3 499 997 € 1 L",
         "code_postal": "75010",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8722675,
+        "longitude": 2.3638231
       },
       "bien": {
         "surface_m2": 435
@@ -10266,7 +10334,9 @@
         "adresse": "14 Rue Rougemont 75009 Paris 3 180 000 € 1 Lot 231 m²",
         "code_postal": "75009",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8770673,
+        "longitude": 2.3379172
       },
       "bien": {
         "surface_m2": 231
@@ -10296,7 +10366,9 @@
         "adresse": "29 Boulevard Edgar Quinet 75014 Paris 899 999 € 1 Lot 109 m²",
         "code_postal": "75014",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.829226,
+        "longitude": 2.3265687
       },
       "bien": {
         "surface_m2": 109
@@ -10326,7 +10398,9 @@
         "adresse": "70 Rue Lamarck 75018 Paris 850 000 € 1 Lot 116 m²",
         "code_postal": "75018",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8925692,
+        "longitude": 2.3481578
       },
       "bien": {
         "surface_m2": 116
@@ -10356,7 +10430,9 @@
         "adresse": "122-124 Rue Marcadet 75018 Paris 4 680 000 € Immeuble d'appa",
         "code_postal": "75018",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8925692,
+        "longitude": 2.3481578
       },
       "bien": {
         "surface_m2": 266
@@ -10386,7 +10462,9 @@
         "adresse": "77 Rue Jean Bleuzen 77 BLEUZEN 92170 Vanves 631 300 € – 867 ",
         "code_postal": "92170",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 147
@@ -10416,7 +10494,9 @@
         "adresse": "98 Rue De Miromesnil 75008 Paris 1 900 000 € 1 Lot 243 m²",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8733792,
+        "longitude": 2.3111527
       },
       "bien": {
         "surface_m2": 243
@@ -10446,7 +10526,9 @@
         "adresse": "270 Chemin Du Vallon De Bagnols 13090 Aix-en-Provence 339 90",
         "code_postal": "13090",
         "commune": "Paris",
-        "departement": "13"
+        "departement": "13",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 94
@@ -10476,7 +10558,9 @@
         "adresse": "28 Rue Pascal 75005 Paris 7 500 000 € 702 m² | Bureau Constr",
         "code_postal": "75005",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8454189,
+        "longitude": 2.3525824
       },
       "bien": {
         "surface_m2": 702
@@ -10506,7 +10590,9 @@
         "adresse": "1-28 Villa De Lourcine Villa de Lourcine 75014 Paris 1 207 6",
         "code_postal": "75014",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.829226,
+        "longitude": 2.3265687
       },
       "bien": {
         "surface_m2": 327
@@ -10536,7 +10622,9 @@
         "adresse": "8 Chemin Des Joncs 69570 Dardilly 1 680 965 € 1 528 m² | Bur",
         "code_postal": "69570",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.7902684,
+        "longitude": 4.7435612
       },
       "bien": {
         "surface_m2": 528
@@ -10566,7 +10654,9 @@
         "adresse": "454 Chemin Du Champ De Lière 69140 Rillieux-la-Pape 1 260 00",
         "code_postal": "69140",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 158
@@ -10626,7 +10716,9 @@
         "adresse": "2 Place Des Palabres 69190 Saint-Fons 198 000 € 1 Lot 93 m²",
         "code_postal": "69190",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.7095933,
+        "longitude": 4.861785
       },
       "bien": {
         "surface_m2": 93
@@ -10656,7 +10748,9 @@
         "adresse": "50 Boulevard Ambroise Croizat 69200 Vénissieux 599 898 € – 9",
         "code_postal": "69200",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.7027477,
+        "longitude": 4.867912
       },
       "bien": {
         "surface_m2": 436
@@ -10686,7 +10780,9 @@
         "adresse": "Rue Corentin Quideau 95340 Persan 1 890 800 € – 2 146 000 € ",
         "code_postal": "95340",
         "commune": "Paris",
-        "departement": "95"
+        "departement": "95",
+        "latitude": 49.1648175,
+        "longitude": 2.3125362
       },
       "bien": {
         "surface_m2": 480
@@ -10716,7 +10812,9 @@
         "adresse": "235 Cours Lafayette Le Rhône Alpes 69006 Lyon 744 150 € – 2 ",
         "code_postal": "69006",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.768458,
+        "longitude": 4.8437255
       },
       "bien": {
         "surface_m2": 433
@@ -10746,7 +10844,9 @@
         "adresse": "Ps Conseil & Expertise 202 Quai De Clichy - Charles-De-Gaull",
         "code_postal": "92110",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.904631,
+        "longitude": 2.2929242
       },
       "bien": {
         "surface_m2": 411
@@ -10776,7 +10876,9 @@
         "adresse": "18 Allée Fenelon 33370 Tresses 245 000 € 2 Lots 138 – 141 m²",
         "code_postal": "33370",
         "commune": "Paris",
-        "departement": "33"
+        "departement": "33",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 141
@@ -10806,7 +10908,9 @@
         "adresse": "6 Rue Charles Arnoult 21700 Nuits-Saint-Georges 294 000 € 1 ",
         "code_postal": "21700",
         "commune": "Paris",
-        "departement": "21"
+        "departement": "21",
+        "latitude": 47.0870443,
+        "longitude": 4.9144085
       },
       "bien": {
         "surface_m2": 210
@@ -10836,7 +10940,9 @@
         "adresse": "1 C Boulevard De Champagne Tour Elithis 21000 Dijon 850 000 ",
         "code_postal": "21000",
         "commune": "Paris",
-        "departement": "21"
+        "departement": "21",
+        "latitude": 47.3159753,
+        "longitude": 5.0480396
       },
       "bien": {
         "surface_m2": 263
@@ -10866,7 +10972,9 @@
         "adresse": "13 Rue Dauphine Dauphine Dijon 21000 Dijon 800 000 € 1 Lot 2",
         "code_postal": "21000",
         "commune": "Paris",
-        "departement": "21"
+        "departement": "21",
+        "latitude": 47.3159753,
+        "longitude": 5.0480396
       },
       "bien": {
         "surface_m2": 205
@@ -10896,7 +11004,9 @@
         "adresse": "58 Avenue Du Général Leclerc 92100 Boulogne-Billancourt 2 12",
         "code_postal": "92100",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.8393659,
+        "longitude": 2.2490817
       },
       "bien": {
         "surface_m2": 299
@@ -10926,7 +11036,9 @@
         "adresse": "Stamina expertise comptable et conseil 96 Rue Montgolfier Le",
         "code_postal": "69006",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.768458,
+        "longitude": 4.8437255
       },
       "bien": {
         "surface_m2": 244
@@ -10956,7 +11068,9 @@
         "adresse": "2 Rue Odette Jasse Cité De La Cosmétique 13015 Marseille 490",
         "code_postal": "13015",
         "commune": "Paris",
-        "departement": "13"
+        "departement": "13",
+        "latitude": 48.8325882,
+        "longitude": 2.3712113
       },
       "bien": {
         "surface_m2": 234
@@ -10986,7 +11100,9 @@
         "adresse": "Avenue D'Haifa Hermes Park 13008 Marseille 650 000 € 1 Lot 3",
         "code_postal": "13008",
         "commune": "Paris",
-        "departement": "13"
+        "departement": "13",
+        "latitude": 48.8319509,
+        "longitude": 2.354717
       },
       "bien": {
         "surface_m2": 303
@@ -11016,7 +11132,9 @@
         "adresse": "Mg2I Miloyan 22 Rue John Maynard Keynes 13013 Marseille 845 ",
         "code_postal": "13013",
         "commune": "Paris",
-        "departement": "13"
+        "departement": "13",
+        "latitude": 48.8395379,
+        "longitude": 2.3608592
       },
       "bien": {
         "surface_m2": 430
@@ -11046,7 +11164,9 @@
         "adresse": "Arcade Immobilier 70 Rue Des Chantiers Du Beaujolais 69400 L",
         "code_postal": "69400",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 46.0069646,
+        "longitude": 4.7208079
       },
       "bien": {
         "surface_m2": 270
@@ -11076,7 +11196,9 @@
         "adresse": "7 Rue Marius Berliet 69380 Chazay-d'Azergues 560 000 € 1 Lot",
         "code_postal": "69380",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.8698999,
+        "longitude": 4.7462257
       },
       "bien": {
         "surface_m2": 250
@@ -11106,7 +11228,9 @@
         "adresse": "413 Rue Philippe Heron 69400 Villefranche-sur-Saône 490 000 ",
         "code_postal": "69400",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 46.0069646,
+        "longitude": 4.7208079
       },
       "bien": {
         "surface_m2": 370
@@ -11136,7 +11260,9 @@
         "adresse": "57 Rue De La Convention Résidence convention Saint Charles 7",
         "code_postal": "75015",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8414302,
+        "longitude": 2.2961649
       },
       "bien": {
         "surface_m2": 90
@@ -11166,7 +11292,9 @@
         "adresse": "Ucanss 91 Rue Titus Bartoli 71160 Digoin 360 000 € 1 Lot 447",
         "code_postal": "71160",
         "commune": "Paris",
-        "departement": "71"
+        "departement": "71",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 447
@@ -11196,7 +11324,9 @@
         "adresse": "WOLVERINVEST 15 Rue Du Bois Moussay 93240 Stains 775 000 € 1",
         "code_postal": "93240",
         "commune": "Paris",
-        "departement": "93"
+        "departement": "93",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 287
@@ -11226,7 +11356,9 @@
         "adresse": "30 Avenue Marceau 75008 Paris 7 500 000 € 1 Lot 280 m²",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8733792,
+        "longitude": 2.3111527
       },
       "bien": {
         "surface_m2": 280
@@ -11286,7 +11418,9 @@
         "adresse": "119 Rue De Montreuil 75011 Paris 1 635 000 € 1 Lot 303 m²",
         "code_postal": "75011",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8590576,
+        "longitude": 2.3800617
       },
       "bien": {
         "surface_m2": 303
@@ -11316,7 +11450,9 @@
         "adresse": "7 Rue Des Petites Ecuries 75010 Paris 15 267 200 € 1 174 m² ",
         "code_postal": "75010",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8760081,
+        "longitude": 2.360445
       },
       "bien": {
         "surface_m2": 174
@@ -11346,7 +11482,9 @@
         "adresse": "165 Avenue Du Marin Blanc Optimum 13400 Aubagne 1 039 870 € ",
         "code_postal": "13400",
         "commune": "Paris",
-        "departement": "13"
+        "departement": "13",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 421
@@ -11376,7 +11514,9 @@
         "adresse": "13 Rue Saint Charles 31000 Toulouse 1 200 000 € 1 Lot 350 m²",
         "code_postal": "31000",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 350
@@ -11406,7 +11546,9 @@
         "adresse": "66 Rue De La République 31300 Toulouse 220 000 € 1 Lot 45 m²",
         "code_postal": "31300",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 45
@@ -11436,7 +11578,9 @@
         "adresse": "7 Avenue De Villemur 31140 Saint-Alban 162 000 € 1 Lot 84 m²",
         "code_postal": "31140",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 43.6689261,
+        "longitude": 1.4110941
       },
       "bien": {
         "surface_m2": 84
@@ -11466,7 +11610,9 @@
         "adresse": "85 Avenue Des Pyrénées 31240 L'Union 400 000 € 1 Lot 123 m²",
         "code_postal": "31240",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 123
@@ -11496,7 +11642,9 @@
         "adresse": "102 Avenue Jean Rieux 31500 Toulouse 1 850 000 € 1 Lot 532 m",
         "code_postal": "31500",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 532
@@ -11526,7 +11674,9 @@
         "adresse": "86 Chemin Des Courses 31100 Toulouse 1 300 000 € 704 m² | Bu",
         "code_postal": "31100",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 704
@@ -11556,7 +11706,9 @@
         "adresse": "15 Avenue De Fondeyre 31200 Toulouse 3 350 000 € 1 294 m² | ",
         "code_postal": "31200",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 43.6407434,
+        "longitude": 1.42603
       },
       "bien": {
         "surface_m2": 294
@@ -11588,7 +11740,9 @@
         "adresse": "10 Place Alfonse Jourdain 31000 Toulouse 380 000 € 1 Lot 160",
         "code_postal": "31000",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 160
@@ -11618,7 +11772,9 @@
         "adresse": "6 Avenue Du Girou 31620 Villeneuve-lès-Bouloc 1 800 000 € 97",
         "code_postal": "31620",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 43.800946,
+        "longitude": 1.3297155
       },
       "bien": {
         "surface_m2": 970
@@ -11648,7 +11804,9 @@
         "adresse": "108 Bis Route De Grenade 31700 Blagnac 185 000 € 1 Lot 105 m",
         "code_postal": "31700",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 43.6313609,
+        "longitude": 1.3815828
       },
       "bien": {
         "surface_m2": 105
@@ -11708,7 +11866,9 @@
         "adresse": "45 Rue Jacques Gamelin 31100 Toulouse 1 350 000 € 580 m² | B",
         "code_postal": "31100",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 580
@@ -11738,7 +11898,9 @@
         "adresse": "4 Rue Des Artisans 31140 Pechbonnieu 790 000 € 700 m² | Loca",
         "code_postal": "31140",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 43.6689261,
+        "longitude": 1.4110941
       },
       "bien": {
         "surface_m2": 700
@@ -11768,7 +11930,9 @@
         "adresse": "20 Rue De Marclan 31600 Muret 1 550 000 € 2 641 m² | Industr",
         "code_postal": "31600",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 641
@@ -11798,7 +11962,9 @@
         "adresse": "20 Avenue Didier Daurat 31400 Toulouse 980 500 € 530 m² | Lo",
         "code_postal": "31400",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 530
@@ -11828,7 +11994,9 @@
         "adresse": "5 Avenue Albert Durand 31700 Blagnac 207 900 € – 406 810 € 2",
         "code_postal": "31700",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 43.6313609,
+        "longitude": 1.3815828
       },
       "bien": {
         "surface_m2": 239
@@ -11858,7 +12026,9 @@
         "adresse": "2 Impasse Nicéphore Niepce 31270 Cugnaux 1 350 000 € 1 270 m",
         "code_postal": "31270",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 270
@@ -11888,7 +12058,9 @@
         "adresse": "23 Avenue Léonard De Vinci 31880 La Salvetat-Saint-Gilles 16",
         "code_postal": "31880",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 96
@@ -11918,7 +12090,9 @@
         "adresse": "130 Rue Galilée 31670 Labège 220 000 € 3 Lots 32 – 110 m²",
         "code_postal": "31670",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 43.5492758,
+        "longitude": 1.5087661
       },
       "bien": {
         "surface_m2": 110
@@ -11948,7 +12122,9 @@
         "adresse": "100 Allée De Barcelone Autan 31000 Toulouse 840 000 € 1 Lot ",
         "code_postal": "31000",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 450
@@ -11978,7 +12154,9 @@
         "adresse": "3 Rue François Verdier 31830 Plaisance-du-Touch 620 000 € 1 ",
         "code_postal": "31830",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 490
@@ -12008,7 +12186,9 @@
         "adresse": "31 Chemin De La Violette 31240 L'Union 550 000 € 1 Lot 290 m",
         "code_postal": "31240",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 290
@@ -12038,7 +12218,9 @@
         "adresse": "3 Impasse François Verdier 31170 Tournefeuille 600 000 € 1 0",
         "code_postal": "31170",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 0
@@ -12068,7 +12250,9 @@
         "adresse": "3 Avenue Du Général De Monsabert 31100 Toulouse 3 100 000 € ",
         "code_postal": "31100",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 196
@@ -12098,7 +12282,9 @@
         "adresse": "22 Boulevard De La Marquette 31000 Toulouse 3 588 750 € – 6 ",
         "code_postal": "31000",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 508
@@ -12128,7 +12314,9 @@
         "adresse": "2 Rue Denis Papin 86100 Châtellerault 3 500 000 € 8 252 m² |",
         "code_postal": "86100",
         "commune": "Paris",
-        "departement": "86"
+        "departement": "86",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 252
@@ -12158,7 +12346,9 @@
         "adresse": "100 Chemin De L'Aumone-Vieille 13400 Aubagne 420 000 € 1 Lot",
         "code_postal": "13400",
         "commune": "Paris",
-        "departement": "13"
+        "departement": "13",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 216
@@ -12188,7 +12378,9 @@
         "adresse": "1-9 Boulevard Charles De Gaulle Le Noblet 92700 Colombes 800",
         "code_postal": "92700",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.9162775,
+        "longitude": 2.2526698
       },
       "bien": {
         "surface_m2": 252
@@ -12218,7 +12410,9 @@
         "adresse": "177 Avenue Georges Clemenceau Plein Ouest 92000 Nanterre 806",
         "code_postal": "92000",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.9042269,
+        "longitude": 2.2139518
       },
       "bien": {
         "surface_m2": 329
@@ -12248,7 +12442,9 @@
         "adresse": "36 Rue Ledru Rollin 21000 Dijon 683 000 € 1 Lot 383 m²",
         "code_postal": "21000",
         "commune": "Paris",
-        "departement": "21"
+        "departement": "21",
+        "latitude": 47.3159753,
+        "longitude": 5.0480396
       },
       "bien": {
         "surface_m2": 383
@@ -12278,7 +12474,9 @@
         "adresse": "45 Avenue Du Drapeau 21000 Dijon 675 000 € 1 Lot 277 m²",
         "code_postal": "21000",
         "commune": "Paris",
-        "departement": "21"
+        "departement": "21",
+        "latitude": 47.3159753,
+        "longitude": 5.0480396
       },
       "bien": {
         "surface_m2": 277
@@ -12308,7 +12506,9 @@
         "adresse": "141 Rue De Rennes 75006 Paris 6 500 000 € 1 Lot 297 m²",
         "code_postal": "75006",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8491669,
+        "longitude": 2.3329286
       },
       "bien": {
         "surface_m2": 297
@@ -12338,7 +12538,9 @@
         "adresse": "ASINVESTIMMO 29 Avenue De La Porte De Clichy 75017 Paris 2 1",
         "code_postal": "75017",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8873273,
+        "longitude": 2.3067755
       },
       "bien": {
         "surface_m2": 290
@@ -12368,7 +12570,9 @@
         "adresse": "42 Boulevard De La Bastille 75012 Paris 3 750 000 € 1 Lot 34",
         "code_postal": "75012",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8349737,
+        "longitude": 2.421318
       },
       "bien": {
         "surface_m2": 342
@@ -12398,7 +12602,9 @@
         "adresse": "6 Rue Abel Truchet 75017 Paris 6 000 000 € 1 Lot 427 m²",
         "code_postal": "75017",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8873273,
+        "longitude": 2.3067755
       },
       "bien": {
         "surface_m2": 427
@@ -12428,7 +12634,9 @@
         "adresse": "124 Bis Avenue De Villiers 75017 Paris 3 199 500 € 1 Lot 237",
         "code_postal": "75017",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8873273,
+        "longitude": 2.3067755
       },
       "bien": {
         "surface_m2": 237
@@ -12458,7 +12666,9 @@
         "adresse": "15 Rue Du Louvre 75001 Paris 1 700 000 € 1 Lot 109 m²",
         "code_postal": "75001",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8625842,
+        "longitude": 2.3364289
       },
       "bien": {
         "surface_m2": 109
@@ -12488,7 +12698,9 @@
         "adresse": "12 Avenue Parmentier 75011 Paris 2 310 000 € 1 Lot 220 m²",
         "code_postal": "75011",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8590576,
+        "longitude": 2.3800617
       },
       "bien": {
         "surface_m2": 220
@@ -12518,7 +12730,9 @@
         "adresse": "108 Avenue Des Minimes 31200 Toulouse 645 000 € 1 Lot 319 m²",
         "code_postal": "31200",
         "commune": "Paris",
-        "departement": "31"
+        "departement": "31",
+        "latitude": 43.6218031,
+        "longitude": 1.4352966
       },
       "bien": {
         "surface_m2": 319
@@ -12548,7 +12762,9 @@
         "adresse": "35 Boulevard Georges Clémenceau 92400 Courbevoie 1 100 000 €",
         "code_postal": "92400",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 240
@@ -12578,7 +12794,9 @@
         "adresse": "2 Rue Voltaire 82000 Montauban 350 000 € 14 183 m² | Local c",
         "code_postal": "82000",
         "commune": "Paris",
-        "departement": "82"
+        "departement": "82",
+        "latitude": 44.0336219,
+        "longitude": 1.3755711
       },
       "bien": {
         "surface_m2": 183
@@ -12608,7 +12826,9 @@
         "adresse": "36 Boulevard De La Bastille 75012 Paris 1 189 999 € 1 Lot 10",
         "code_postal": "75012",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8349737,
+        "longitude": 2.421318
       },
       "bien": {
         "surface_m2": 109
@@ -12638,7 +12858,9 @@
         "adresse": "36 Rue Meslay 75003 Paris 2 100 000 € 1 Lot 210 m²",
         "code_postal": "75003",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8628709,
+        "longitude": 2.3600012
       },
       "bien": {
         "surface_m2": 210
@@ -12668,7 +12890,9 @@
         "adresse": "20 Rue Croix Des Petits Champs 75001 Paris 5 238 000 € 1 Lot",
         "code_postal": "75001",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8625842,
+        "longitude": 2.3364289
       },
       "bien": {
         "surface_m2": 388
@@ -12698,7 +12922,9 @@
         "adresse": "8 Rue Pascal Europarc du chêne 69500 Bron 551 000 € 1 Lot 29",
         "code_postal": "69500",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 290
@@ -12728,7 +12954,9 @@
         "adresse": "202-204 Rue Marcel Mérieux 69007 Lyon 1 588 650 € 1 Lot 357 ",
         "code_postal": "69007",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.753574,
+        "longitude": 4.8465924
       },
       "bien": {
         "surface_m2": 357
@@ -12758,7 +12986,9 @@
         "adresse": "46 Boulevard De Magenta 75010 Paris 2 499 999 € 1 Lot 207 m²",
         "code_postal": "75010",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8760081,
+        "longitude": 2.360445
       },
       "bien": {
         "surface_m2": 207
@@ -12788,7 +13018,9 @@
         "adresse": "10 Rue De La Trémoille 75008 Paris 4 500 000 € 1 Lot 213 m²",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8733792,
+        "longitude": 2.3111527
       },
       "bien": {
         "surface_m2": 213
@@ -12818,7 +13050,9 @@
         "adresse": "32 Boulevard Flandrin 75016 Paris 3 654 750 € 1 Lot 292 m²",
         "code_postal": "75016",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.854928,
+        "longitude": 2.2553299
       },
       "bien": {
         "surface_m2": 292
@@ -12848,7 +13082,9 @@
         "adresse": "5-7 Chemin Du Tronchon 69570 Dardilly 1 050 000 € 1 Lot 382 ",
         "code_postal": "69570",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.7902684,
+        "longitude": 4.7435612
       },
       "bien": {
         "surface_m2": 382
@@ -12908,7 +13144,9 @@
         "adresse": "38 Rue Jules Verne 44700 Orvault 424 800 € 1 Lot 235 m²",
         "code_postal": "44700",
         "commune": "Paris",
-        "departement": "44"
+        "departement": "44",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 235
@@ -12938,7 +13176,9 @@
         "adresse": "40 Boulevard Henri Sellier 92150 Suresnes 1 444 500 € 1 Lot ",
         "code_postal": "92150",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.8715936,
+        "longitude": 2.2133582
       },
       "bien": {
         "surface_m2": 288
@@ -12968,7 +13208,9 @@
         "adresse": "44 Rue De Gigant 44100 Nantes 700 000 € 1 Lot 210 m²",
         "code_postal": "44100",
         "commune": "Paris",
-        "departement": "44"
+        "departement": "44",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 210
@@ -12998,7 +13240,9 @@
         "adresse": "3 Rue Jean Sapidus 67400 Illkirch-Graffenstaden 344 085 € 1 ",
         "code_postal": "67400",
         "commune": "Paris",
-        "departement": "67"
+        "departement": "67",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 328
@@ -13028,7 +13272,9 @@
         "adresse": "9 Allée Des Barbanniers 92230 Gennevilliers 1 084 200 € 2 Lo",
         "code_postal": "92230",
         "commune": "Paris",
-        "departement": "92"
+        "departement": "92",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 417
@@ -13058,7 +13304,9 @@
         "adresse": "6 Rue Du Docteur Schweitzer 38180 Seyssins 543 900 € 1 Lot 2",
         "code_postal": "38180",
         "commune": "Paris",
-        "departement": "38"
+        "departement": "38",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 280
@@ -13088,7 +13336,9 @@
         "adresse": "23 Cours De La Liberté 69003 Lyon 1 370 000 € 1 Lot 303 m²",
         "code_postal": "69003",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.7486462,
+        "longitude": 4.8742612
       },
       "bien": {
         "surface_m2": 303
@@ -13118,7 +13368,9 @@
         "adresse": "44 Route De Lyon 38300 Domarin 570 000 € 1 Lot 368 m²",
         "code_postal": "38300",
         "commune": "Paris",
-        "departement": "38"
+        "departement": "38",
+        "latitude": 45.5164043,
+        "longitude": 5.2978992
       },
       "bien": {
         "surface_m2": 368
@@ -13148,7 +13400,9 @@
         "adresse": "Arthur Loyd Aix-en-Provence 335 Rue Serpentine 13510 Éguille",
         "code_postal": "13510",
         "commune": "Paris",
-        "departement": "13"
+        "departement": "13",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 204
@@ -13178,7 +13432,9 @@
         "adresse": "Arrow Paris 10 Rue De La Pépinière 75008 Paris 6 555 000 € 1",
         "code_postal": "75008",
         "commune": "Paris",
-        "departement": "75"
+        "departement": "75",
+        "latitude": 48.8733792,
+        "longitude": 2.3111527
       },
       "bien": {
         "surface_m2": 437
@@ -13208,7 +13464,9 @@
         "adresse": "105 Boulevard De Chanzy 93100 Montreuil 680 000 € 1 Lot 257 ",
         "code_postal": "93100",
         "commune": "Paris",
-        "departement": "93"
+        "departement": "93",
+        "latitude": 48.8544907,
+        "longitude": 2.4161968
       },
       "bien": {
         "surface_m2": 257
@@ -13238,7 +13496,9 @@
         "adresse": "40-41 Quai Fulchiron Rive De Saône 69005 Lyon 1 339 999 € 1 ",
         "code_postal": "69005",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 48.8588897,
+        "longitude": 2.320041
       },
       "bien": {
         "surface_m2": 379
@@ -13268,7 +13528,9 @@
         "adresse": "5 Chemin Du Jubin 69570 Dardilly 452 800 € 1 Lot 283 m²",
         "code_postal": "69570",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.7902684,
+        "longitude": 4.7435612
       },
       "bien": {
         "surface_m2": 283
@@ -13298,7 +13560,9 @@
         "adresse": "7 Bis Rue Des Aulnes 69410 Champagne-au-Mont-d'Or 179 820 € ",
         "code_postal": "69410",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 48.8534951,
+        "longitude": 2.3483915
       },
       "bien": {
         "surface_m2": 218
@@ -13328,7 +13592,9 @@
         "adresse": "5 Quai Jayr Le Quai Jayr 69009 Lyon 710 000 € 1 Lot 214 m²",
         "code_postal": "69009",
         "commune": "Paris",
-        "departement": "69"
+        "departement": "69",
+        "latitude": 45.7794948,
+        "longitude": 4.804177
       },
       "bien": {
         "surface_m2": 214

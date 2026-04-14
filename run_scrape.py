@@ -26,6 +26,7 @@ from arthurloyd import ArthurLoydScraper
 from licitor import LicitorScraper
 from delta import compute_delta, merge_into_db, deal_key
 from scorer import load_referentiel, find_commune_ref, score_deal, get_segment
+from geocoder import geocode_all_deals
 
 DATA_DIR = Path(__file__).parent / "data"
 DB_PATH = DATA_DIR / "deals_db.json"
@@ -126,6 +127,11 @@ def main():
     # 5) Merge
     if not args.dry_run:
         merge_into_db(db, nouveaux, scorer_fn=scorer)
+
+        # 6) Geocoder les deals sans GPS
+        print(f"\n  Geocodage Nominatim...")
+        geocode_all_deals(db)
+
         save_db(db)
         print(f"\n  DB sauvegardee: {db['meta']['total_deals']} deals")
         print(f"  Statuts: {json.dumps(db['meta']['par_statut'])}")
