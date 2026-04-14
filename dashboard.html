@@ -172,6 +172,7 @@ a:hover{text-decoration:underline}
   </div>
   <button id="btnImportLP" style="padding:.4rem .9rem;background:var(--accent);color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ LoopNet</button>
   <button id="btnImportJLL" style="padding:.4rem .9rem;background:#0066cc;color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ JLL</button>
+  <button id="btnImportRef" style="padding:.4rem .9rem;background:#16a34a;color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500" title="Importer le referentiel DVF/CBRE/Cushman">Ref DVF</button>
   <button id="btnSaveGH" style="padding:.4rem .9rem;border:1px solid var(--accent);background:none;color:var(--accent);border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500" title="Sauvegarder les statuts sur GitHub">Sauver</button>
 </header>
 
@@ -267,6 +268,25 @@ a:hover{text-decoration:underline}
     <button style="background:#0066cc;color:#fff" id="btnImportJLLGo">Importer et sauver sur GitHub</button>
   </div>
   <div class="modal-status" id="importJLLStatus" style="display:none"></div>
+</div>
+</div>
+
+<!-- IMPORT REFERENTIEL MODAL -->
+<div class="modal-bg" id="importRefModal">
+<div class="modal">
+  <h2>Import R&eacute;f&eacute;rentiel DVF</h2>
+  <div class="step">
+    <span class="step-num">1</span><b>Colle le JSON du r&eacute;f&eacute;rentiel</b>
+    <p>Format attendu : <code style="display:inline;padding:.15rem .3rem;font-size:.7rem">{"meta":{...},"communes":{...},"transactions":[...]}</code></p>
+  </div>
+  <div class="step">
+    <textarea id="refJsonInput" placeholder='Colle le JSON referentiel ici (communes + transactions DVF/CBRE/Cushman)' style="height:200px"></textarea>
+  </div>
+  <div class="modal-btns">
+    <button style="background:var(--surface2);color:var(--text2)" onclick="document.getElementById('importRefModal').classList.remove('open')">Annuler</button>
+    <button style="background:#16a34a;color:#fff" id="btnImportRefGo">Importer et sauver sur GitHub</button>
+  </div>
+  <div class="modal-status" id="importRefStatus" style="display:none"></div>
 </div>
 </div>
 
@@ -848,6 +868,62 @@ document.getElementById("btnImportJLLGo").addEventListener("click",async functio
       st.textContent="OK! "+added+" nouveaux biens JLL importes. Total: "+Object.keys(D).length+" deals.";
       scoreAllDeals();render();
       setTimeout(function(){document.getElementById("importJLLModal").classList.remove("open")},3000);
+    }else{
+      var err=await r2.json().catch(function(){return{}});
+      throw new Error(err.message||"HTTP "+r2.status);
+    }
+  }catch(e){
+    st.style.background="#fee2e2";st.style.color="#b91c1c";
+    st.textContent="Erreur: "+e.message;
+  }
+});
+
+// ===================================================================
+// ===================================================================
+// IMPORT REFERENTIEL DVF
+// ===================================================================
+document.getElementById("btnImportRef").addEventListener("click",function(){document.getElementById("importRefModal").classList.add("open")});
+
+document.getElementById("btnImportRefGo").addEventListener("click",async function(){
+  var st=document.getElementById("importRefStatus");
+  st.style.display="block";st.style.background="#fef3c7";st.style.color="#92400e";st.textContent="Parsing JSON...";
+
+  var raw=document.getElementById("refJsonInput").value.trim();
+  if(!raw){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Colle le JSON d'abord";return}
+
+  try{
+    var refData=JSON.parse(raw);
+
+    // Valider la structure
+    if(!refData.communes&&!refData.transactions){
+      st.style.background="#fee2e2";st.style.color="#b91c1c";
+      st.textContent="JSON invalide: il faut 'communes' ou 'transactions'";return;
+    }
+
+    var nbCommunes=refData.communes?Object.keys(refData.communes).length:0;
+    var nbTx=refData.transactions?refData.transactions.length:0;
+    st.textContent=nbCommunes+" communes, "+nbTx+" transactions. Push GitHub...";
+
+    // Appliquer le referentiel localement
+    REF=refData;
+    scoreAllDeals();
+
+    // Sauver sur GitHub dans data/referentiel_bureaux.json
+    var sha=null;
+    try{var r=await fetch(WORKER+"/github/"+REPO+"/contents/data/referentiel_bureaux.json?ref=main");if(r.ok)sha=(await r.json()).sha}catch(e){}
+
+    var content=btoa(unescape(encodeURIComponent(JSON.stringify(refData,null,2))));
+    var today=new Date().toISOString().split("T")[0];
+    var body={message:"import referentiel "+today+" — "+nbCommunes+" communes, "+nbTx+" tx",content:content,branch:"main"};
+    if(sha)body.sha=sha;
+
+    var r2=await fetch(WORKER+"/github/"+REPO+"/contents/data/referentiel_bureaux.json",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+
+    if(r2.ok){
+      st.style.background="#dcfce7";st.style.color="#15803d";
+      st.textContent="OK! Referentiel importe: "+nbCommunes+" communes, "+nbTx+" transactions. Scoring mis a jour.";
+      render();
+      setTimeout(function(){document.getElementById("importRefModal").classList.remove("open")},3000);
     }else{
       var err=await r2.json().catch(function(){return{}});
       throw new Error(err.message||"HTTP "+r2.status);
