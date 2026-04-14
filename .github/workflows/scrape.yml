@@ -31,7 +31,7 @@ jobs:
         run: |
           python run_scrape.py \
             --sites bureauxlocaux geolocaux investisseur-immo bnppre arthurloyd \
-            --depts 75 92 93 94 \
+            --depts 75 92 \
             --surface 300 700 \
             --prix 5000000
 

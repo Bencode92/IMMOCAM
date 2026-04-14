@@ -27,7 +27,7 @@ class GeolocauxScraper(BaseScraper):
 
     def scrape(self, filters=None):
         filters = filters or {}
-        depts = filters.get("departements", ["75", "92", "93", "94"])
+        depts = filters.get("departements", ["75", "92"])
         surface_min = filters.get("surface_min", 300)
         surface_max = filters.get("surface_max", 700)
         prix_max = filters.get("prix_max", 5000000)

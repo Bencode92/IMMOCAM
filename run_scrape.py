@@ -55,7 +55,7 @@ def save_db(db):
 def main():
     parser = argparse.ArgumentParser(description="IMMOCAM — Scrape + Score pipeline")
     parser.add_argument("--sites", nargs="+", default=list(SCRAPERS.keys()), help="Sites a scraper")
-    parser.add_argument("--depts", nargs="+", default=["75", "92", "93", "94"], help="Departements")
+    parser.add_argument("--depts", nargs="+", default=["75", "92"], help="Departements")
     parser.add_argument("--surface", nargs=2, type=int, default=[300, 700], help="Surface min max")
     parser.add_argument("--prix", type=int, default=5000000, help="Prix max")
     parser.add_argument("--dry-run", action="store_true", help="Ne pas sauvegarder en DB")
