@@ -171,6 +171,7 @@ a:hover{text-decoration:underline}
     <span id="sLastScrape" style="color:var(--text3);font-size:.7rem"></span>
   </div>
   <button id="btnImportLP" style="padding:.4rem .9rem;background:var(--accent);color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ LoopNet</button>
+  <button id="btnImportJLL" style="padding:.4rem .9rem;background:#0066cc;color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ JLL</button>
   <button id="btnSaveGH" style="padding:.4rem .9rem;border:1px solid var(--accent);background:none;color:var(--accent);border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500" title="Sauvegarder les statuts sur GitHub">Sauver</button>
 </header>
 
@@ -234,6 +235,37 @@ a:hover{text-decoration:underline}
     <button style="background:var(--accent);color:#fff" id="btnImportGo">Importer et sauver sur GitHub</button>
   </div>
   <div class="modal-status" id="importStatus" style="display:none"></div>
+</div>
+</div>
+
+<!-- IMPORT JLL MODAL -->
+<div class="modal-bg" id="importJLLModal">
+<div class="modal">
+  <h2>Import JLL</h2>
+  <div class="step">
+    <span class="step-num">1</span><b>Ouvre JLL "bureaux a vendre"</b>
+    <p>Va sur <a href="https://immobilier.jll.fr/search?propertyTypes=office&tenureTypes=sale&regions=Ile-de-France" target="_blank" style="color:var(--accent)">immobilier.jll.fr — bureaux vente IDF</a></p>
+  </div>
+  <div class="step">
+    <span class="step-num">2</span><b>Copie le script depuis la page helper</b>
+    <p>Ouvre <a href="https://bencode92.github.io/IMMOCAM/scrapers/jll_intercept.html" target="_blank" style="color:var(--accent)">la page helper JLL</a>, clique "COPIER LE SCRIPT"</p>
+  </div>
+  <div class="step">
+    <span class="step-num">3</span><b>Colle le script dans la console JLL (F12)</b>
+    <p>Va sur l'onglet JLL, F12 Console, Ctrl+V, Entree. Attends "FINI!"</p>
+  </div>
+  <div class="step">
+    <span class="step-num">4</span><b>Tape <code style="display:inline;padding:.2rem .4rem">copy(JSON.stringify(window._JLL))</code></b>
+  </div>
+  <div class="step">
+    <span class="step-num">5</span><b>Colle le JSON ici :</b>
+    <textarea id="jllJsonInput" placeholder='Colle le JSON ici (commence par [{"source":"jll",...}])'></textarea>
+  </div>
+  <div class="modal-btns">
+    <button style="background:var(--surface2);color:var(--text2)" onclick="document.getElementById('importJLLModal').classList.remove('open')">Annuler</button>
+    <button style="background:#0066cc;color:#fff" id="btnImportJLLGo">Importer et sauver sur GitHub</button>
+  </div>
+  <div class="modal-status" id="importJLLStatus" style="display:none"></div>
 </div>
 </div>
 
@@ -677,6 +709,81 @@ document.getElementById("btnImportGo").addEventListener("click",async function()
       st.textContent="OK! "+added+" nouveaux biens importes. Total: "+Object.keys(D).length+" deals.";
       render();
       setTimeout(function(){document.getElementById("importModal").classList.remove("open")},3000);
+    }else{
+      var err=await r2.json().catch(function(){return{}});
+      throw new Error(err.message||"HTTP "+r2.status);
+    }
+  }catch(e){
+    st.style.background="#fee2e2";st.style.color="#b91c1c";
+    st.textContent="Erreur: "+e.message;
+  }
+});
+
+// ===================================================================
+// IMPORT JLL
+// ===================================================================
+document.getElementById("btnImportJLL").addEventListener("click",function(){document.getElementById("importJLLModal").classList.add("open")});
+
+document.getElementById("btnImportJLLGo").addEventListener("click",async function(){
+  var st=document.getElementById("importJLLStatus");
+  st.style.display="block";st.style.background="#fef3c7";st.style.color="#92400e";st.textContent="Parsing JSON...";
+
+  var raw=document.getElementById("jllJsonInput").value.trim();
+  if(!raw){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Colle le JSON d'abord";return}
+
+  try{
+    var deals=JSON.parse(raw);
+    if(!Array.isArray(deals)){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Le JSON doit etre un array [...]";return}
+
+    st.textContent=deals.length+" biens parses. Dedoublonnage...";
+
+    // Dedoublonnage par commune+surface+prix
+    var existingKeys=new Set();
+    for(var k in D){
+      var ex=D[k];
+      var ek=(ex.localisation?ex.localisation.commune:"")+"_"+(ex.bien?ex.bien.surface_m2:0)+"_"+(ex.financier?ex.financier.prix_affiche:0);
+      existingKeys.add(ek);
+    }
+
+    var added=0;
+    var today=new Date().toISOString().split("T")[0];
+    for(var i=0;i<deals.length;i++){
+      var deal=deals[i];
+      var dk=(deal.localisation?deal.localisation.commune:"")+"_"+(deal.bien?deal.bien.surface_m2:0)+"_"+(deal.financier?deal.financier.prix_affiche:0);
+      if(existingKeys.has(dk))continue;
+      existingKeys.add(dk);
+      var key="jll-"+Math.random().toString(36).substring(2,10);
+      deal._statut="nouveau";
+      deal._first_seen=today;
+      deal._last_seen=today;
+      deal._sources=["jll"];
+      deal._notes="";
+      deal._prix_historique=[{d:today,p:deal.financier?deal.financier.prix_affiche:0}];
+      if(!deal.annonce)deal.annonce={titre:"Bureaux "+(deal.bien?deal.bien.surface_m2:"")+String.fromCharCode(109,178)};
+      if(!deal.scoring)deal.scoring={score_global:50,grade:"?",alertes:[]};
+      D[key]=deal;
+      added++;
+    }
+
+    st.textContent=added+" nouveaux biens ajoutes ("+deals.length+" total, "+(deals.length-added)+" doublons ignores). Push GitHub...";
+
+    var db={meta:{last_scrape:new Date().toISOString(),total_deals:Object.keys(D).length,par_statut:{}},deals:D};
+    for(var k2 in D){var s2=D[k2]._statut||"nouveau";db.meta.par_statut[s2]=(db.meta.par_statut[s2]||0)+1}
+
+    var sha=null;
+    try{var r=await fetch(WORKER+"/github/"+REPO+"/contents/data/deals_db.json?ref=main");if(r.ok)sha=(await r.json()).sha}catch(e){}
+
+    var content=btoa(unescape(encodeURIComponent(JSON.stringify(db,null,2))));
+    var body={message:"import jll "+today+" — "+added+" nouveaux",content:content,branch:"main"};
+    if(sha)body.sha=sha;
+
+    var r2=await fetch(WORKER+"/github/"+REPO+"/contents/data/deals_db.json",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+
+    if(r2.ok){
+      st.style.background="#dcfce7";st.style.color="#15803d";
+      st.textContent="OK! "+added+" nouveaux biens JLL importes. Total: "+Object.keys(D).length+" deals.";
+      scoreAllDeals();render();
+      setTimeout(function(){document.getElementById("importJLLModal").classList.remove("open")},3000);
     }else{
       var err=await r2.json().catch(function(){return{}});
       throw new Error(err.message||"HTTP "+r2.status);
