@@ -391,6 +391,11 @@ document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()
 }));
 
 function goToMap(dealKey){
+  // Fermer le drawer d'abord
+  document.getElementById("dw").classList.remove("open");
+  document.getElementById("ov").classList.remove("open");
+  document.querySelector(".map-wrap")?.classList.remove("drawer-open");
+
   // Switch vers la vue Carte
   view="carte";
   document.querySelectorAll("nav button").forEach(function(b){
@@ -400,26 +405,30 @@ function goToMap(dealKey){
   document.getElementById("viewTableau").style.display="none";
   document.getElementById("viewCarte").style.display="block";
   renderMap(filtered());
-  // Trouver le marker du deal et centrer
-  var deal=D[dealKey];
-  if(!deal)return;
-  var loc=deal.localisation||{};
-  // Chercher dans les markers existants
-  var found=false;
-  markers.forEach(function(m){
-    if(m._dealKey===dealKey){
-      map.setView(m.getLatLng(),16,{animate:true});
-      m.openPopup();
-      found=true;
+
+  // Laisser le temps au DOM de se mettre à jour
+  setTimeout(function(){
+    if(map)map.invalidateSize();
+    var deal=D[dealKey];
+    if(!deal)return;
+    var loc=deal.localisation||{};
+    // Chercher dans les markers existants
+    var found=false;
+    markers.forEach(function(m){
+      if(m._dealKey===dealKey){
+        map.setView(m.getLatLng(),16,{animate:true});
+        setTimeout(function(){m.openPopup()},500);
+        found=true;
+      }
+    });
+    // Si pas de marker, centrer sur commune
+    if(!found){
+      var ck=communeKey(loc.commune);
+      var coords=COMMUNE_COORDS[ck];
+      if(loc.latitude&&loc.longitude)map.setView([loc.latitude,loc.longitude],16,{animate:true});
+      else if(coords)map.setView([coords.lat,coords.lng],15,{animate:true});
     }
-  });
-  // Si pas de marker (pas encore geocodé), centrer sur commune
-  if(!found){
-    var ck=communeKey(loc.commune);
-    var coords=COMMUNE_COORDS[ck];
-    if(coords)map.setView([coords.lat,coords.lng],15,{animate:true});
-    else if(loc.latitude&&loc.longitude)map.setView([loc.latitude,loc.longitude],16,{animate:true});
-  }
+  },300);
 }
 
 function render(){
@@ -1059,15 +1068,29 @@ function renderMap(deals){
 
     let pos=null;
     if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};}
+    else if(loc.latitude&&loc.longitude){pos={lat:loc.latitude,lng:loc.longitude};d._lat=pos.lat;d._lng=pos.lng;}
     else{
       // Cache commune rapide (pas de requete reseau)
       const ck=communeKey(loc.commune);
       if(ck&&COMMUNE_COORDS[ck]){
         pos=COMMUNE_COORDS[ck];
+        // Petit offset aléatoire pour ne pas empiler les markers au même point
+        pos={lat:pos.lat+(Math.random()-0.5)*0.005,lng:pos.lng+(Math.random()-0.5)*0.005};
         d._lat=pos.lat;d._lng=pos.lng;
       }
-      // PAS de geocoding Nominatim en live — trop lent
-      // Les coords sont pre-calculees dans deals_db.json
+      // Fallback: essayer avec le code postal pour Paris
+      if(!pos&&loc.code_postal&&loc.code_postal.startsWith("75")){
+        var arr=parseInt(loc.code_postal.substring(3));
+        var pk="Paris "+(arr||1)+"e";
+        if(COMMUNE_COORDS[pk]){
+          pos={lat:COMMUNE_COORDS[pk].lat+(Math.random()-0.5)*0.005,lng:COMMUNE_COORDS[pk].lng+(Math.random()-0.5)*0.005};
+          d._lat=pos.lat;d._lng=pos.lng;
+        }
+      }
+      // Fallback: code postal 92 → essayer commune connue
+      if(!pos&&loc.code_postal&&loc.code_postal.startsWith("92")){
+        for(var cn in COMMUNE_COORDS){if(cn.indexOf(loc.code_postal)>-1||cn.toLowerCase().indexOf((loc.commune||"").toLowerCase())>-1){pos={lat:COMMUNE_COORDS[cn].lat+(Math.random()-0.5)*0.004,lng:COMMUNE_COORDS[cn].lng+(Math.random()-0.5)*0.004};d._lat=pos.lat;d._lng=pos.lng;break;}}
+      }
     }
 
     if(!pos) continue;
