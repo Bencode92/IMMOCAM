@@ -93,13 +93,28 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 /* DRAWER */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.15);backdrop-filter:blur(2px);z-index:100;opacity:0;pointer-events:none;transition:opacity .3s}
 .overlay.open{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:0;right:-520px;width:500px;height:100%;background:var(--surface);border-left:1px solid var(--border);z-index:101;display:flex;flex-direction:column;transition:right .3s ease;box-shadow:-10px 0 40px rgba(0,0,0,.08)}
-.drawer.open{right:0}
-.drawer-head{padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
-.drawer-head h2{font-size:.95rem;font-weight:600}
+.drawer{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);width:720px;max-width:95vw;max-height:90vh;background:var(--surface);border-radius:16px;z-index:101;display:none;flex-direction:column;transition:transform .3s ease,opacity .3s ease;box-shadow:0 25px 60px rgba(0,0,0,.2);opacity:0;perspective:1200px}
+.drawer.open{display:flex;transform:translate(-50%,-50%) scale(1);opacity:1}
+.drawer-head{padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+.drawer-head h2{font-size:1rem;font-weight:700;color:var(--accent)}
 .drawer-head button{background:none;border:none;color:var(--text3);font-size:1.4rem;cursor:pointer;padding:.25rem;transition:color .15s}
 .drawer-head button:hover{color:var(--text)}
 .drawer-body{flex:1;overflow-y:auto;padding:1.5rem}
+.card-flip-container{position:relative;width:100%;min-height:400px}
+.card-face{width:100%;transition:opacity .4s ease}
+.card-face.hidden{display:none}
+.card-front-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.card-front-grid .card-left{display:flex;flex-direction:column;gap:.75rem}
+.card-front-grid .card-right{display:flex;flex-direction:column;gap:.75rem}
+.card-price{font-size:2rem;font-weight:800;color:var(--text)}
+.card-pm2{font-size:1.1rem;color:var(--text2);font-weight:600}
+.card-ecart{font-size:1rem;font-weight:700}
+.card-minimap{width:100%;height:200px;border-radius:var(--radius-sm);overflow:hidden;border:1px solid var(--border)}
+.card-grade{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;font-size:1.3rem;font-weight:800;color:#fff}
+.card-info-row{display:flex;justify-content:space-between;font-size:.85rem;padding:.3rem 0;border-bottom:1px solid var(--border)}
+.card-info-row .ck{color:var(--text3)}.card-info-row .cv{color:var(--text);font-weight:600}
+.flip-btn{padding:.5rem 1.2rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;font-size:.8rem;cursor:pointer;font-weight:500;transition:all .15s;color:var(--text2)}
+.flip-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
 .section{margin-bottom:1.75rem}
 .section h3{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:.65rem}
 .row{display:flex;justify-content:space-between;padding:.25rem 0;font-size:.8rem}
@@ -202,7 +217,7 @@ a:hover{text-decoration:underline}
 
 <div class="overlay" id="ov"></div>
 <div class="drawer" id="dw">
-  <div class="drawer-head"><h2 id="dwTitle">Detail</h2><button id="dwClose">&times;</button></div>
+  <div class="drawer-head"><h2 id="dwTitle">Detail</h2><div style="display:flex;gap:.5rem;align-items:center"><button class="flip-btn" id="dwFlip">Comparables &rarr;</button><button id="dwClose">&times;</button></div></div>
   <div class="drawer-body" id="dwBody"></div>
   <div class="drawer-foot">
     <button class="btn-ghost" id="dwTrash">Archiver</button>
@@ -531,56 +546,107 @@ function renderT(deals){
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
 
-// DRAWER
+// DRAWER — card modale flippable
+var dwFace="front";
 window.openDw=key=>{
-  curKey=key;const d=D[key];if(!d)return;
+  curKey=key;dwFace="front";const d=D[key];if(!d)return;
   document.getElementById("dw").classList.add("open");document.getElementById("ov").classList.add("open");
-  document.querySelector(".map-wrap")?.classList.add("drawer-open");
-  if(map)setTimeout(()=>map.invalidateSize(),350);
+  document.getElementById("dwFlip").textContent="Comparables \u2192";
   document.getElementById("dwTitle").textContent=d.annonce?.titre||"D\u00E9tail";
-  const s=d.scoring||{},f=d.financier||{},l=d.locatif||{},b=d.bien||{},hi=d._prix_historique||[];
+  const s=d.scoring||{},f=d.financier||{},l=d.locatif||{},b=d.bien||{},hi=d._prix_historique||[],loc=d.localisation||{};
   const det=s.scores_detail||{};
   const bFill=(v,c)=>`<div class="bar"><div class="bar-fill" style="width:${v}%;background:${c}"></div></div>`;
   const bCol=v=>v>=70?"var(--green)":v>=40?"var(--yellow)":"var(--red)";
+  const ecartCol=s.prix_vs_marche_pct!=null?(s.prix_vs_marche_pct<=0?"var(--green)":"var(--red)"):"";
+  const gradeCol={"A":"#16a34a","B":"#1e3a5f","C":"#b45309","D":"#dc2626"}[s.grade]||"#6b7280";
 
-  let h=`<div class="section"><h3>Localisation</h3>
-    <div class="row"><span class="k">Adresse</span><span class="v">${d.localisation?.adresse||"\u2014"}</span></div>
-    <div class="row"><span class="k">Commune</span><span class="v">${d.localisation?.commune||"\u2014"}</span></div>
-    <div class="row"><span class="k">Sources</span><span class="v">${(d._sources||[]).join(", ")}</span></div>
-    <div class="row"><span class="k">Premier vu</span><span class="v">${d._first_seen||"\u2014"}</span></div></div>
+  // === FACE AVANT ===
+  var front=`<div id="cardFront" class="card-face">
+    <div class="card-front-grid">
+      <div class="card-left">
+        <div style="display:flex;align-items:center;gap:1rem">
+          <div class="card-grade" style="background:${gradeCol}">${s.grade||"?"}</div>
+          <div>
+            <div class="card-price">${f.prix_affiche?(f.prix_affiche/1e6).toFixed(2)+"M\u20AC":"\u2014"}</div>
+            <div class="card-pm2">${f.prix_m2?f.prix_m2.toLocaleString("fr")+"\u20AC/m\u00B2":""}</div>
+          </div>
+        </div>
+        <div class="card-ecart" style="color:${ecartCol}">${s.prix_vs_marche_pct!=null?"vs march\u00E9 : "+(s.prix_vs_marche_pct>0?"+":"")+s.prix_vs_marche_pct.toFixed(1)+"%":""}</div>
 
-    <div class="section"><h3>Score \u2014 ${s.grade||"?"} (${s.score_global||0}/100)</h3>
-    ${Object.entries(det).map(([k,v])=>`<div class="row"><span class="k">${k}</span><span class="v">${Math.round(v)}</span></div>${bFill(v,bCol(v))}`).join("")}
-    ${(s.alertes||[]).map(a=>`<div class="alert-item">\u26A0 ${a}</div>`).join("")}</div>
+        <div style="margin-top:.5rem">
+          <div class="card-info-row"><span class="ck">Adresse</span><span class="cv">${loc.adresse||"\u2014"}</span></div>
+          <div class="card-info-row"><span class="ck">Commune</span><span class="cv">${loc.commune||"\u2014"} ${loc.code_postal||""}</span></div>
+          <div class="card-info-row"><span class="ck">Surface</span><span class="cv">${b.surface_m2||"\u2014"} m\u00B2</span></div>
+          <div class="card-info-row"><span class="ck">DPE</span><span class="cv">${b.dpe||"\u2014"}</span></div>
+          <div class="card-info-row"><span class="ck">Loyer/an</span><span class="cv">${l.loyer_actuel_an?l.loyer_actuel_an.toLocaleString("fr")+"\u20AC":"Vacant"}</span></div>
+          <div class="card-info-row"><span class="ck">Yield</span><span class="cv">${f.prix_affiche&&l.loyer_actuel_an?(l.loyer_actuel_an/f.prix_affiche*100).toFixed(2)+"%":(d._yield_zone?d._yield_zone.toFixed(1)+"% (zone)":"\u2014")}</span></div>
+          <div class="card-info-row"><span class="ck">Sources</span><span class="cv">${(d._sources||[]).join(", ")}</span></div>
+          <div class="card-info-row"><span class="ck">Premier vu</span><span class="cv">${d._first_seen||"\u2014"}</span></div>
+        </div>
 
-    <div class="section"><h3>Financier</h3>
-    <div class="row"><span class="k">Prix</span><span class="v">${f.prix_affiche?(f.prix_affiche/1e6).toFixed(2)+"M\u20AC":"\u2014"}</span></div>
-    <div class="row"><span class="k">\u20AC/m\u00B2</span><span class="v">${f.prix_m2?f.prix_m2.toLocaleString("fr"):"\u2014"}</span></div>
-    <div class="row"><span class="k">vs march\u00E9</span><span class="v" style="${s.prix_vs_marche_pct!=null?(s.prix_vs_marche_pct<=-20?"color:var(--green)":"color:var(--yellow)"):""}">
-      ${s.prix_vs_marche_pct!=null?s.prix_vs_marche_pct.toFixed(1)+"%":"\u2014"}</span></div></div>
+        <div style="display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap">
+          <a href="${d.url||"#"}" target="_blank" class="flip-btn" style="text-decoration:none">Voir l'annonce \u2192</a>
+          <a href="#" onclick="goToMap('${curKey}');return false" class="flip-btn" style="text-decoration:none">Voir sur carte \uD83D\uDCCD</a>
+        </div>
+      </div>
 
-    <div class="section"><h3>Bien</h3>
-    <div class="row"><span class="k">Surface</span><span class="v">${b.surface_m2||"\u2014"} m\u00B2</span></div>
-    <div class="row"><span class="k">DPE</span><span class="v">${b.dpe||"\u2014"}</span></div>
-    <div class="row"><span class="k">Parking</span><span class="v">${b.parking||"\u2014"}</span></div></div>
+      <div class="card-right">
+        <div class="card-minimap" id="dwMinimap"></div>
+        <div>
+          <div style="font-size:.75rem;font-weight:600;color:var(--text3);margin-bottom:.4rem">SCORE ${s.score_global||0}/100</div>
+          ${Object.entries(det).map(([k,v])=>`<div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;margin-bottom:.3rem"><span style="width:50px;color:var(--text3)">${k}</span><div style="flex:1">${bFill(v,bCol(v))}</div><span style="width:25px;text-align:right;font-weight:600">${Math.round(v)}</span></div>`).join("")}
+          ${(s.alertes||[]).map(a=>`<div class="alert-item">\u26A0 ${a}</div>`).join("")}
+        </div>
+      </div>
+    </div>
+    <div class="section" style="margin-top:1rem"><h3>Notes</h3><textarea class="notes" id="dwNotes">${d._notes||""}</textarea></div>
+  </div>`;
 
-    <div class="section"><h3>Locatif</h3>
-    <div class="row"><span class="k">Loyer/an</span><span class="v">${l.loyer_actuel_an?l.loyer_actuel_an.toLocaleString("fr")+"\u20AC":"Vacant"}</span></div>
-    <div class="row"><span class="k">Yield brut</span><span class="v">${f.prix_affiche&&l.loyer_actuel_an?(l.loyer_actuel_an/f.prix_affiche*100).toFixed(2)+"%":"\u2014"}</span></div></div>
-
+  // === FACE ARRIERE ===
+  var back=`<div id="cardBack" class="card-face hidden">
     ${mkComparables(d)}
 
     ${hi.length>1?`<div class="section"><h3>Historique prix</h3>${hi.map(x=>`<div class="row"><span class="k">${x.d||x.date}</span><span class="v">${((x.p||x.prix)/1e6).toFixed(2)}M\u20AC</span></div>`).join("")}</div>`:""}
 
-    <div class="section"><h3>Notes</h3><textarea class="notes" id="dwNotes">${d._notes||""}</textarea></div>
+    <div class="section"><h3>Donn\u00E9es zone</h3>
+    <div class="row"><span class="k">Prix march\u00E9 m\u00B2</span><span class="v">${d._prix_marche?d._prix_marche.toLocaleString("fr")+"\u20AC":"\u2014"}</span></div>
+    <div class="row"><span class="k">Source prix</span><span class="v">${d._prix_source||"dept"}</span></div>
+    <div class="row"><span class="k">Loyer estim\u00E9 m\u00B2/an</span><span class="v">${d._loyer_estime?d._loyer_estime+"\u20AC":"\u2014"}</span></div>
+    <div class="row"><span class="k">Yield zone</span><span class="v">${d._yield_zone?d._yield_zone.toFixed(1)+"%":"\u2014"}</span></div>
+    <div class="row"><span class="k">Vacance zone</span><span class="v">${d._vacance_zone?d._vacance_zone+"%":"\u2014"}</span></div>
+    <div class="row"><span class="k">Franchise</span><span class="v">${d._franchise_mois?d._franchise_mois+" mois":"\u2014"}</span></div>
+    <div class="row"><span class="k">Tx GPS proches</span><span class="v">${d._nearby_tx||0} comparables</span></div></div>
 
     ${d._statut==="simulation"?mkSim(d):""}
+  </div>`;
 
-    <a href="${d.url||"#"}" target="_blank" style="font-size:.82rem">Voir l'annonce \u2192</a>
-    <a href="#" onclick="goToMap('${curKey}');return false" style="font-size:.82rem;margin-left:1.2rem">Voir sur carte \u{1F4CD}</a>`;
+  document.getElementById("dwBody").innerHTML=front+back;
 
-  document.getElementById("dwBody").innerHTML=h;
+  // Mini map
+  setTimeout(function(){
+    var mc=document.getElementById("dwMinimap");
+    if(mc&&loc.latitude&&loc.longitude){
+      var mm=L.map(mc,{zoomControl:false,attributionControl:false,dragging:false,scrollWheelZoom:false}).setView([loc.latitude,loc.longitude],16);
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{maxZoom:19,subdomains:"abcd"}).addTo(mm);
+      L.circleMarker([loc.latitude,loc.longitude],{radius:8,fillColor:gradeCol,fillOpacity:1,color:"#fff",weight:3}).addTo(mm);
+    }else if(mc){
+      mc.innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text3);font-size:.8rem">Pas de GPS</div>';
+    }
+  },200);
 };
+
+document.getElementById("dwFlip").addEventListener("click",function(){
+  var frontEl=document.getElementById("cardFront");
+  var backEl=document.getElementById("cardBack");
+  if(!frontEl||!backEl)return;
+  if(dwFace==="front"){
+    frontEl.classList.add("hidden");backEl.classList.remove("hidden");
+    dwFace="back";this.textContent="\u2190 Fiche";
+  }else{
+    backEl.classList.add("hidden");frontEl.classList.remove("hidden");
+    dwFace="front";this.textContent="Comparables \u2192";
+  }
+});
 
 function mkComparables(d){
   if(!REF||!REF.transactions)return"";
@@ -669,8 +735,6 @@ function mkSim(d){
 function closeDw(){
   if(curKey&&D[curKey]){const n=document.getElementById("dwNotes");if(n)D[curKey]._notes=n.value;}
   document.getElementById("dw").classList.remove("open");document.getElementById("ov").classList.remove("open");
-  document.querySelector(".map-wrap")?.classList.remove("drawer-open");
-  if(map)setTimeout(()=>map.invalidateSize(),350);
   curKey=null;
 }
 document.getElementById("dwClose").addEventListener("click",closeDw);
