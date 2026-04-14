@@ -177,7 +177,7 @@ a:hover{text-decoration:underline}
 
 <div class="filter-bar">
   <select id="fSource"><option value="">Toutes sources</option></select>
-  <select id="fDept"><option value="">Tous depts</option></select>
+  <select id="fDept"><option value="75,92">75 + 92</option><option value="">Tous depts</option></select>
   <select id="fScore"><option value="">Score</option><option value="A">A</option><option value="B">B</option><option value="C">C</option></select>
   <input id="fSurfMin" type="number" placeholder="m² min" style="width:72px" />
   <input id="fSurfMax" type="number" placeholder="m² max" style="width:72px" />
@@ -353,7 +353,7 @@ function popFilters(){
   const ss=new Set,dd=new Set;
   for(const v of Object.values(D)){(v._sources||[]).forEach(s=>ss.add(s));const dp=v.localisation?.departement;if(dp)dd.add(dp);}
   const fS=document.getElementById("fSource");ss.forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;fS.appendChild(o);});
-  const fD=document.getElementById("fDept");[...dd].sort().forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;fD.appendChild(o);});
+  const fD=document.getElementById("fDept");[...dd].sort().forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent="Dept "+s;fD.appendChild(o);});
 }
 
 function filtered(){
@@ -365,7 +365,7 @@ function filtered(){
   return Object.entries(D).filter(([,d])=>{
     if(!fa&&d._statut==="poubelle")return false;
     if(fs&&!(d._sources||[]).includes(fs))return false;
-    if(fd&&d.localisation?.departement!==fd)return false;
+    if(fd){var fds=fd.split(",");if(!fds.includes(d.localisation?.departement))return false;}
     if(fg&&d.scoring?.grade!==fg)return false;
     const sf=d.bien?.surface_m2||0;if(sf<sn||sf>sx)return false;
     if((d.financier?.prix_affiche||0)>px)return false;
