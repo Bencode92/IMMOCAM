@@ -390,6 +390,38 @@ document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()
   if(view==="carte")renderMap(filtered());
 }));
 
+function goToMap(dealKey){
+  // Switch vers la vue Carte
+  view="carte";
+  document.querySelectorAll("nav button").forEach(function(b){
+    b.classList.toggle("active",b.dataset.view==="carte");
+  });
+  document.getElementById("viewKanban").style.display="none";
+  document.getElementById("viewTableau").style.display="none";
+  document.getElementById("viewCarte").style.display="block";
+  renderMap(filtered());
+  // Trouver le marker du deal et centrer
+  var deal=D[dealKey];
+  if(!deal)return;
+  var loc=deal.localisation||{};
+  // Chercher dans les markers existants
+  var found=false;
+  markers.forEach(function(m){
+    if(m._dealKey===dealKey){
+      map.setView(m.getLatLng(),16,{animate:true});
+      m.openPopup();
+      found=true;
+    }
+  });
+  // Si pas de marker (pas encore geocodé), centrer sur commune
+  if(!found){
+    var ck=communeKey(loc.commune);
+    var coords=COMMUNE_COORDS[ck];
+    if(coords)map.setView([coords.lat,coords.lng],15,{animate:true});
+    else if(loc.latitude&&loc.longitude)map.setView([loc.latitude,loc.longitude],16,{animate:true});
+  }
+}
+
 function render(){
   const deals=filtered();
   document.getElementById("sTotal").textContent=deals.length+" deals";
@@ -506,7 +538,8 @@ window.openDw=key=>{
 
     ${d._statut==="simulation"?mkSim(d):""}
 
-    <a href="${d.url||"#"}" target="_blank" style="font-size:.82rem">Voir l'annonce \u2192</a>`;
+    <a href="${d.url||"#"}" target="_blank" style="font-size:.82rem">Voir l'annonce \u2192</a>
+    <a href="#" onclick="goToMap('${curKey}');return false" style="font-size:.82rem;margin-left:1.2rem">Voir sur carte \u{1F4CD}</a>`;
 
   document.getElementById("dwBody").innerHTML=h;
 };
@@ -1055,6 +1088,7 @@ function renderMap(deals){
       </div>
     `);
 
+    marker._dealKey=k;
     markers.push(marker);
   }
 
