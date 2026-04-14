@@ -910,7 +910,11 @@ document.getElementById("btnImportRefGo").addEventListener("click",async functio
 
     // Sauver sur GitHub dans data/referentiel_bureaux.json
     var sha=null;
-    try{var r=await fetch(WORKER+"/github/"+REPO+"/contents/data/referentiel_bureaux.json?ref=main");if(r.ok)sha=(await r.json()).sha}catch(e){}
+    try{
+      var r=await fetch(WORKER+"/github/"+REPO+"/contents/data/referentiel_bureaux.json?ref=main");
+      if(r.ok){var rj=await r.json();sha=rj.sha;st.textContent+=" SHA OK.";}
+      else{st.textContent+=" Fichier nouveau.";}
+    }catch(e){st.textContent+=" SHA skip.";}
 
     var content=btoa(unescape(encodeURIComponent(JSON.stringify(refData,null,2))));
     var today=new Date().toISOString().split("T")[0];
