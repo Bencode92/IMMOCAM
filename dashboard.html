@@ -478,15 +478,17 @@ function mkCard(key,d){
 }
 
 function renderT(deals){
-  const cols=[{k:"_statut",l:"Statut"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"sources",l:"Src",n:1}];
+  const cols=[{k:"_statut",l:"Statut"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"carte",l:"\uD83D\uDDFA"},{k:"sources",l:"Src",n:1}];
   let rows=deals.map(([k,d])=>{
     var lo=d.locatif?.loyer_actuel_an||0;var px=d.financier?.prix_affiche||0;
-    return{k,_statut:d._statut,commune:d.localisation?.commune||"",surface:d.bien?.surface_m2||0,prix:px,prix_m2:d.financier?.prix_m2||0,
+    var loc=d.localisation||{};
+    var onMap=!!(d._lat||loc.latitude||(loc.code_postal&&loc.code_postal.length===5));
+    return{k,_statut:d._statut,commune:loc.commune||"",surface:d.bien?.surface_m2||0,prix:px,prix_m2:d.financier?.prix_m2||0,
     ecart:d._ecart_marche!=null?d._ecart_marche:d.scoring?.prix_vs_marche_pct,
     dpe:d.bien?.dpe||"",
     loyer:d._loyer_estime||lo||0,
     yield:lo>0&&px>0?(lo/px*100):(d._yield_zone||0),
-    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",sources:(d._sources||[]).length};
+    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",carte:onMap?1:0,sources:(d._sources||[]).length};
   });
   if(tCol)rows.sort((a,b)=>{let va=a[tCol],vb=b[tCol];if(va==null)return 1;if(vb==null)return -1;return typeof va==="string"?(tAsc?va.localeCompare(vb):vb.localeCompare(va)):(tAsc?va-vb:vb-va);});
   const ar=k=>tCol===k?(tAsc?" \u25B2":" \u25BC"):"";
@@ -499,7 +501,7 @@ function renderT(deals){
     <td class="num" style="${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"\u2014"}</td>
     <td>${r.dpe}</td><td class="num">${r.loyer>0?r.loyer+"\u20AC":"\u2014"}</td>
     <td class="num" style="${r.yield>=8?"color:#16a34a":r.yield>=6?"color:#b45309":"color:#dc2626"}">${r.yield>0?r.yield.toFixed(1)+"%":"\u2014"}</td>
-    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td class="num">${r.sources}</td>
+    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td style="text-align:center">${r.carte?"\uD83D\uDCCD":"\u2014"}</td><td class="num">${r.sources}</td>
   </tr>`).join("");
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
