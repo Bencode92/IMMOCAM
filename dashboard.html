@@ -666,16 +666,28 @@ document.getElementById("btnImportGo").addEventListener("click",async function()
 
     st.textContent=deals.length+" biens parses. Dedoublonnage...";
 
-    // Dedoublonnage par URL
+    // Dedoublonnage par URL + par commune/surface/prix (detecte aussi les archives)
     var existingUrls=new Set();
-    for(var k in D){if(D[k].url)existingUrls.add(D[k].url)}
+    var existingKeys=new Set();
+    for(var k in D){
+      var ex=D[k];
+      if(ex.url)existingUrls.add(ex.url);
+      var commune=(ex.localisation?ex.localisation.commune:"").toUpperCase().trim();
+      var surf=ex.bien?Math.round((ex.bien.surface_m2||0)/10)*10:0;
+      existingKeys.add(commune+"|"+surf);
+    }
 
-    var added=0;
+    var added=0,skippedArchive=0;
     var today=new Date().toISOString().split("T")[0];
     for(var i=0;i<deals.length;i++){
       var deal=deals[i];
-      if(existingUrls.has(deal.url))continue;
-      // Generer une cle unique
+      if(deal.url&&existingUrls.has(deal.url))continue;
+      // Verifier par commune+surface (meme methode que delta.py)
+      var dc=(deal.localisation?deal.localisation.commune:"").toUpperCase().trim();
+      var ds=deal.bien?Math.round((deal.bien.surface_m2||0)/10)*10:0;
+      var dk=dc+"|"+ds;
+      if(existingKeys.has(dk)){skippedArchive++;continue}
+      existingKeys.add(dk);
       var key="lp-"+Math.random().toString(36).substring(2,10);
       deal._statut="nouveau";
       deal._first_seen=today;
@@ -737,19 +749,22 @@ document.getElementById("btnImportJLLGo").addEventListener("click",async functio
 
     st.textContent=deals.length+" biens parses. Dedoublonnage...";
 
-    // Dedoublonnage par commune+surface+prix
+    // Dedoublonnage par commune+surface (arrondie 10m²) — detecte aussi les archives
     var existingKeys=new Set();
     for(var k in D){
       var ex=D[k];
-      var ek=(ex.localisation?ex.localisation.commune:"")+"_"+(ex.bien?ex.bien.surface_m2:0)+"_"+(ex.financier?ex.financier.prix_affiche:0);
-      existingKeys.add(ek);
+      var ec=(ex.localisation?ex.localisation.commune:"").toUpperCase().trim();
+      var es=ex.bien?Math.round((ex.bien.surface_m2||0)/10)*10:0;
+      existingKeys.add(ec+"|"+es);
     }
 
     var added=0;
     var today=new Date().toISOString().split("T")[0];
     for(var i=0;i<deals.length;i++){
       var deal=deals[i];
-      var dk=(deal.localisation?deal.localisation.commune:"")+"_"+(deal.bien?deal.bien.surface_m2:0)+"_"+(deal.financier?deal.financier.prix_affiche:0);
+      var dc=(deal.localisation?deal.localisation.commune:"").toUpperCase().trim();
+      var ds=deal.bien?Math.round((deal.bien.surface_m2||0)/10)*10:0;
+      var dk=dc+"|"+ds;
       if(existingKeys.has(dk))continue;
       existingKeys.add(dk);
       var key="jll-"+Math.random().toString(36).substring(2,10);
