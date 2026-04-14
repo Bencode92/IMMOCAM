@@ -1069,16 +1069,26 @@ function renderMap(deals){
 
     let pos=null;
     let approx=false;
-    // Adresse precise = a une vraie adresse avec numero
     const hasAddr=loc.adresse&&loc.adresse.match(/\d/);
     if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};approx=!hasAddr;}
     else if(loc.latitude&&loc.longitude){pos={lat:loc.latitude,lng:loc.longitude};d._lat=pos.lat;d._lng=pos.lng;approx=!hasAddr;}
     else{
       approx=true;
-      const ck=communeKey(loc.commune);
-      if(ck&&COMMUNE_COORDS[ck]){
-        pos=COMMUNE_COORDS[ck];
-        d._lat=pos.lat;d._lng=pos.lng;
+      // D'abord essayer le code postal pour Paris (plus precis que commune)
+      if(loc.code_postal&&loc.code_postal.startsWith("75")&&loc.code_postal.length===5){
+        var arr=parseInt(loc.code_postal.substring(3));
+        if(arr>=1&&arr<=20){
+          var pk="Paris "+arr+"e";
+          if(COMMUNE_COORDS[pk]){pos=COMMUNE_COORDS[pk];d._lat=pos.lat;d._lng=pos.lng;}
+        }
+      }
+      // Sinon essayer commune
+      if(!pos){
+        const ck=communeKey(loc.commune);
+        if(ck&&COMMUNE_COORDS[ck]){
+          pos=COMMUNE_COORDS[ck];
+          d._lat=pos.lat;d._lng=pos.lng;
+        }
       }
       if(!pos&&loc.code_postal&&loc.code_postal.startsWith("75")){
         var arr=parseInt(loc.code_postal.substring(3));
