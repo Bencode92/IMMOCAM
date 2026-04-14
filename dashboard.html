@@ -183,6 +183,7 @@ a:hover{text-decoration:underline}
   <input id="fSurfMax" type="number" placeholder="m² max" style="width:72px" />
   <input id="fPrixMax" type="number" placeholder="Prix max (M)" style="width:95px" />
   <button class="pill" id="fBaisse">Baisse prix</button>
+  <button class="pill" id="fHorsCarte">Hors carte</button>
   <label><input type="checkbox" id="fArchive"> Archives</label>
   <input id="fSearch" type="text" placeholder="Rechercher..." style="flex:1;min-width:140px" />
 </div>
@@ -370,6 +371,8 @@ function filtered(){
     const sf=d.bien?.surface_m2||0;if(sf<sn||sf>sx)return false;
     if((d.financier?.prix_affiche||0)>px)return false;
     if(fb&&(d._prix_historique||[]).length<2)return false;
+    var fhc=document.getElementById("fHorsCarte").classList.contains("active");
+    if(fhc){var loc2=d.localisation||{};var hasPos=!!(d._lat||loc2.latitude||(loc2.code_postal&&loc2.code_postal.length===5));if(hasPos)return false;}
     if(fq){const t=(d.localisation?.commune+" "+d.localisation?.adresse+" "+d.annonce?.titre).toLowerCase();if(!t.includes(fq))return false;}
     return true;
   });
@@ -379,6 +382,7 @@ function filtered(){
   const el=document.getElementById(id);el.addEventListener("input",()=>render());el.addEventListener("change",()=>render());
 });
 document.getElementById("fBaisse").addEventListener("click",function(){this.classList.toggle("active");render();});
+document.getElementById("fHorsCarte").addEventListener("click",function(){this.classList.toggle("active");render();});
 
 document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");
@@ -478,7 +482,7 @@ function mkCard(key,d){
 }
 
 function renderT(deals){
-  const cols=[{k:"_statut",l:"Statut"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"carte",l:"\uD83D\uDDFA"},{k:"sources",l:"Src",n:1}];
+  const cols=[{k:"_statut",l:"Statut"},{k:"carte",l:"\uD83D\uDDFA"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"sources",l:"Src",n:1}];
   let rows=deals.map(([k,d])=>{
     var lo=d.locatif?.loyer_actuel_an||0;var px=d.financier?.prix_affiche||0;
     var loc=d.localisation||{};
@@ -496,12 +500,12 @@ function renderT(deals){
   document.getElementById("tH").innerHTML="<tr>"+cols.map(c=>`<th class="${c.n?'num':''}" onclick="tSort('${c.k}')">${c.l}${ar(c.k)}</th>`).join("")+"</tr>";
   const eC=v=>v==null?"":(v<=-20?"color:var(--green)":v<=0?"color:var(--yellow)":"color:var(--red)");
   document.getElementById("tB").innerHTML=rows.map(r=>`<tr onclick="openDw('${r.k}')" style="cursor:pointer">
-    <td>${stI[r._statut]||r._statut}</td><td>${r.commune}</td><td class="num">${r.surface}m\u00B2</td>
+    <td>${stI[r._statut]||r._statut}</td><td style="text-align:center">${r.carte?"\uD83D\uDCCD":"\u274C"}</td><td>${r.commune}</td><td class="num">${r.surface}m\u00B2</td>
     <td class="num">${(r.prix/1e6).toFixed(2)}M\u20AC</td><td class="num">${r.prix_m2.toLocaleString("fr")}</td>
     <td class="num" style="${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"\u2014"}</td>
     <td>${r.dpe}</td><td class="num">${r.loyer>0?r.loyer+"\u20AC":"\u2014"}</td>
     <td class="num" style="${r.yield>=8?"color:#16a34a":r.yield>=6?"color:#b45309":"color:#dc2626"}">${r.yield>0?r.yield.toFixed(1)+"%":"\u2014"}</td>
-    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td style="text-align:center">${r.carte?"\uD83D\uDCCD":"\u2014"}</td><td class="num">${r.sources}</td>
+    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td class="num">${r.sources}</td>
   </tr>`).join("");
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
