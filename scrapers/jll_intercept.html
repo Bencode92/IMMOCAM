@@ -5,14 +5,74 @@
 <p>1. Ouvre <a href="https://immobilier.jll.fr/search?propertyTypes=office&tenureTypes=sale&regions=Ile-de-France" target="_blank" style="color:#4af">immobilier.jll.fr (bureaux vente IDF)</a></p>
 <p>2. Clique le bouton ci-dessous pour copier le script</p>
 <p>3. Va sur l'onglet JLL, F12 Console, Ctrl+V, Entree</p>
-<p>4. Le script scrape la page courante puis passe automatiquement aux pages suivantes</p>
+<p>4. Le script scrape la page courante puis passe aux pages suivantes</p>
 <br>
 <button onclick="copyCode()" style="padding:20px 40px;font-size:20px;background:#0066cc;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER LE SCRIPT</button>
 <br><br>
 <p id="status"></p>
 <textarea id="code" style="width:100%;height:200px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
 <script>
-var scrapeCode = 'var d=[],seen={},pg=1;function scrapePage(){var cards=document.querySelectorAll("[class*=PropertyCard],[class*=property-card],[data-testid*=property],article,a[href*=\'/vente-bureaux/\']");if(cards.length===0)cards=document.querySelectorAll("div[class*=card],div[class*=Card],div[class*=listing],div[class*=Listing]");console.log("Trouvé "+cards.length+" elements");var n=0;cards.forEach(function(c){var txt=c.innerText||"";var link=c.tagName==="A"?c:c.querySelector("a[href*=\\'bureaux\\']")||c.querySelector("a[href*=\\'vente\\']")||c.querySelector("a");var url=link?link.href:"";if(!url||seen[url])return;seen[url]=1;var surfM=txt.match(/(\\d[\\d\\s.,]+)\\s*m/i);var prixM=txt.match(/(\\d[\\d\\s.,]+)\\s*(?:EUR|\\u20ac)/i);if(!prixM)prixM=txt.match(/(\\d[\\d\\s.,]+)\\s*\\/\\s*m/i);var surf=surfM?parseFloat(surfM[1].replace(/[\\s.]/g,"").replace(",",".")):0;var prix=prixM?parseFloat(prixM[1].replace(/[\\s.]/g,"").replace(",",".")):0;if(prix>0&&prix<50000&&surf>0)prix=prix*surf;var cpM=txt.match(/(\\d{5})/);var cp=cpM?cpM[1]:"";var villeM=txt.match(/(?:Paris|Boulogne|Levallois|Neuilly|Issy|Courbevoie|Puteaux|Nanterre|Saint-Denis|Montreuil|Clichy|Montrouge|Rueil|Suresnes|Pantin|Ivry|Vincennes|Aubervilliers|Colombes|Asnieres|Clamart|Malakoff|Vanves|Fontenay|Nogent|Bagnolet|Saint-Ouen|Creteil)[\\w\\s-]*/i);var ville=villeM?villeM[0].trim():"";var titre=c.querySelector("h2,h3,[class*=title],[class*=Title]");titre=titre?titre.innerText.trim():txt.substring(0,80);n++;d.push({source:"jll",url:url,date_scrape:new Date().toISOString().split("T")[0],localisation:{adresse:"",code_postal:cp,commune:ville,departement:cp.substring(0,2)||"75"},bien:{type:"bureaux",surface_m2:surf},financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},annonce:{titre:titre,description:""}})});console.log("Page "+pg+": "+n+" nouveaux (total: "+d.length+")");return n}function clickNext(){var btns=document.querySelectorAll("button,a");for(var i=0;i<btns.length;i++){var t=btns[i].innerText||btns[i].textContent||"";var aria=btns[i].getAttribute("aria-label")||"";if(t.trim()===">"||t.trim()==="\\u203A"||t.trim()==="Next"||t.indexOf("Suivant")>-1||aria.indexOf("next")>-1||aria.indexOf("Next")>-1||aria.indexOf("suivant")>-1){btns[i].click();return true}}var pageLinks=document.querySelectorAll("a[href*=\\'page=\\']");for(var j=0;j<pageLinks.length;j++){if(pageLinks[j].textContent.trim()===""+(pg+1)){pageLinks[j].click();return true}}return false}async function run(){console.log("JLL scraper DOM...");scrapePage();for(var i=0;i<20;i++){pg++;var ok=clickNext();if(!ok){console.log("Pas de page suivante");break}await new Promise(function(r){setTimeout(r,3000)});scrapePage()}console.log("FINI! "+d.length+" biens");console.table(d.slice(0,15).map(function(x){return{surf:x.bien.surface_m2,prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":x.financier.prix_affiche,pm2:x.financier.prix_m2,cp:x.localisation.code_postal,ville:x.localisation.commune}}));window._JLL=d;console.log("Tape: copy(JSON.stringify(window._JLL))")}run();';
+var lines = [
+  'var d=[],seen={},pg=1;',
+  'function scrapePage(){',
+  '  var cards=document.querySelectorAll("a[href*=\'/vente-bureaux/\']");',
+  '  if(cards.length===0)cards=document.querySelectorAll("[class*=PropertyCard],[class*=property-card],article");',
+  '  if(cards.length===0)cards=document.querySelectorAll("div[class*=card],div[class*=Card]");',
+  '  console.log("Trouve "+cards.length+" elements");',
+  '  var n=0;',
+  '  cards.forEach(function(c){',
+  '    var txt=c.innerText||"";',
+  '    var link=c.tagName==="A"?c:c.querySelector("a");',
+  '    var url=link?link.href:"";',
+  '    if(!url||seen[url])return;',
+  '    seen[url]=1;',
+  '    var surfM=txt.match(/(\\d[\\d\\s.,]+)\\s*m/i);',
+  '    var prixM=txt.match(/(\\d[\\d\\s.,]+)\\s*(?:EUR|\\u20ac)/i);',
+  '    var surf=surfM?parseFloat(surfM[1].replace(/[\\s.]/g,"").replace(",",".")):0;',
+  '    var prix=prixM?parseFloat(prixM[1].replace(/[\\s.]/g,"").replace(",",".")):0;',
+  '    if(prix>0&&prix<50000&&surf>0)prix=prix*surf;',
+  '    var cpM=txt.match(/(\\d{5})/);',
+  '    var cp=cpM?cpM[1]:"";',
+  '    var titre=c.querySelector("h2,h3,[class*=title],[class*=Title]");',
+  '    titre=titre?titre.innerText.trim():txt.substring(0,80);',
+  '    n++;',
+  '    d.push({source:"jll",url:url,date_scrape:new Date().toISOString().split("T")[0],',
+  '      localisation:{adresse:"",code_postal:cp,commune:titre.split(",").pop().trim(),departement:cp.substring(0,2)||"75"},',
+  '      bien:{type:"bureaux",surface_m2:surf},',
+  '      financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},',
+  '      annonce:{titre:titre,description:""}});',
+  '  });',
+  '  console.log("Page "+pg+": "+n+" nouveaux (total: "+d.length+")");',
+  '  return n;',
+  '}',
+  'function clickNext(){',
+  '  var btns=document.querySelectorAll("button,a,[role=button]");',
+  '  for(var i=0;i<btns.length;i++){',
+  '    var t=(btns[i].innerText||"").trim();',
+  '    var aria=btns[i].getAttribute("aria-label")||"";',
+  '    if(t===">"||t==="\\u203A"||t==="Next"||t.indexOf("Suivant")>-1||aria.indexOf("next")>-1||aria.indexOf("Next")>-1){btns[i].click();return true}',
+  '  }',
+  '  var pageLinks=document.querySelectorAll("a[href*=\'page=\']");',
+  '  for(var j=0;j<pageLinks.length;j++){if(pageLinks[j].textContent.trim()===""+(pg+1)){pageLinks[j].click();return true}}',
+  '  return false;',
+  '}',
+  'async function run(){',
+  '  console.log("JLL scraper DOM...");',
+  '  scrapePage();',
+  '  for(var i=0;i<20;i++){',
+  '    pg++;var ok=clickNext();',
+  '    if(!ok){console.log("Pas de page suivante");break}',
+  '    await new Promise(function(r){setTimeout(r,3000)});',
+  '    scrapePage();',
+  '  }',
+  '  console.log("FINI! "+d.length+" biens");',
+  '  console.table(d.slice(0,15).map(function(x){return{surf:x.bien.surface_m2,prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":x.financier.prix_affiche,pm2:x.financier.prix_m2,cp:x.localisation.code_postal,ville:x.localisation.commune}}));',
+  '  window._JLL=d;',
+  '  console.log("Tape: copy(JSON.stringify(window._JLL))");',
+  '}',
+  'run();'
+];
+var scrapeCode = lines.join("");
 document.getElementById("code").value = scrapeCode;
 function copyCode(){
   navigator.clipboard.writeText(scrapeCode).then(function(){
