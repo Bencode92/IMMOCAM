@@ -1134,11 +1134,24 @@ function renderMap(deals){
     `);
 
     marker._dealKey=k;
+    marker._approx=approx;
     markers.push(marker);
   }
 
   if(bounds.length>0) map.fitBounds(bounds,{padding:[30,30]});
   renderPOI();
+
+  // Compteur honnete sur la carte
+  var gpsCount=0,approxCount=0;
+  markers.forEach(function(m){if(m._approx)approxCount++;else gpsCount++;});
+  var counterEl=document.getElementById("mapCounter");
+  if(!counterEl){
+    counterEl=document.createElement("div");
+    counterEl.id="mapCounter";
+    counterEl.style.cssText="position:absolute;top:12px;left:12px;z-index:1000;background:rgba(255,255,255,.95);padding:8px 14px;border-radius:8px;font-size:.8rem;font-family:Inter,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.15);line-height:1.6";
+    document.getElementById("mapView").appendChild(counterEl);
+  }
+  counterEl.innerHTML="<b>"+markers.length+"</b> / "+deals.length+" sur carte<br><span style='color:#16a34a'>\uD83D\uDCCD "+gpsCount+" GPS pr\u00E9cis</span><br><span style='color:#b45309'>\u25CB "+approxCount+" approximatifs</span>";
 }
 
 init();
