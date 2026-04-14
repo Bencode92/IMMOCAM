@@ -568,6 +568,8 @@ window.openDw=key=>{
     <div class="row"><span class="k">Loyer/an</span><span class="v">${l.loyer_actuel_an?l.loyer_actuel_an.toLocaleString("fr")+"\u20AC":"Vacant"}</span></div>
     <div class="row"><span class="k">Yield brut</span><span class="v">${f.prix_affiche&&l.loyer_actuel_an?(l.loyer_actuel_an/f.prix_affiche*100).toFixed(2)+"%":"\u2014"}</span></div></div>
 
+    ${mkComparables(d)}
+
     ${hi.length>1?`<div class="section"><h3>Historique prix</h3>${hi.map(x=>`<div class="row"><span class="k">${x.d||x.date}</span><span class="v">${((x.p||x.prix)/1e6).toFixed(2)}M\u20AC</span></div>`).join("")}</div>`:""}
 
     <div class="section"><h3>Notes</h3><textarea class="notes" id="dwNotes">${d._notes||""}</textarea></div>
@@ -579,6 +581,64 @@ window.openDw=key=>{
 
   document.getElementById("dwBody").innerHTML=h;
 };
+
+function mkComparables(d){
+  if(!REF||!REF.transactions)return"";
+  var loc=d.localisation||{};
+  var lat=loc.latitude,lng=loc.longitude;
+  if(!lat||!lng)return"";
+  var pm2=d.financier?.prix_m2||0;
+
+  // Chercher comparables : 100m, puis 300m, puis 500m, puis 1km
+  var comps=[];
+  var radii=[0.1,0.3,0.5,1.0];
+  for(var ri=0;ri<radii.length;ri++){
+    comps=[];
+    for(var i=0;i<REF.transactions.length;i++){
+      var tx=REF.transactions[i];
+      if(!tx.lat||!tx.lng)continue;
+      var dlat=(tx.lat-lat)*111;
+      var dlng=(tx.lng-lng)*71;
+      var dist=Math.sqrt(dlat*dlat+dlng*dlng);
+      if(dist<=radii[ri])comps.push({dist:Math.round(dist*1000),tx:tx});
+    }
+    if(comps.length>=2)break;
+  }
+
+  if(comps.length===0)return"";
+
+  // Trier par distance
+  comps.sort(function(a,b){return a.dist-b.dist});
+  var top=comps.slice(0,8);
+
+  // Stats
+  var prices=top.map(function(c){return c.tx.prix_m2}).filter(function(p){return p>0});
+  var medianP=prices.length?prices.sort(function(a,b){return a-b})[Math.floor(prices.length/2)]:0;
+
+  var html='<div class="section"><h3>Comparables DVF ('+top.length+' dans '+comps[comps.length-1].dist+'m)</h3>';
+  if(medianP>0&&pm2>0){
+    var ecartLocal=((pm2-medianP)/medianP*100).toFixed(1);
+    var col=ecartLocal<=0?"var(--green)":"var(--red)";
+    html+='<div class="row"><span class="k">M\u00E9diane locale</span><span class="v" style="font-weight:700">'+medianP.toLocaleString("fr")+'\u20AC/m\u00B2</span></div>';
+    html+='<div class="row"><span class="k">Ce deal vs local</span><span class="v" style="color:'+col+';font-weight:700">'+(ecartLocal>0?"+":"")+ecartLocal+'%</span></div>';
+  }
+  html+='<table style="width:100%;font-size:.75rem;margin-top:.5rem;border-collapse:collapse">';
+  html+='<tr style="color:var(--text3);border-bottom:1px solid var(--border)"><th style="text-align:left;padding:4px">Dist</th><th style="text-align:left">Rue</th><th style="text-align:right">Surf</th><th style="text-align:right">\u20AC/m\u00B2</th><th style="text-align:right">Loyer</th><th style="text-align:right">Date</th></tr>';
+  top.forEach(function(c){
+    var t=c.tx;
+    var pColor=pm2>0&&t.prix_m2>0?(t.prix_m2<pm2?"color:var(--green)":"color:var(--red)"):"";
+    html+='<tr style="border-bottom:1px solid var(--border)">';
+    html+='<td style="padding:3px">'+c.dist+'m</td>';
+    html+='<td style="padding:3px">'+(t.numero||"")+" "+(t.rue||"").substring(0,25)+'</td>';
+    html+='<td style="text-align:right;padding:3px">'+(t.surface_m2||"?")+'m\u00B2</td>';
+    html+='<td style="text-align:right;padding:3px;font-weight:600;'+pColor+'">'+(t.prix_m2||0).toLocaleString("fr")+'</td>';
+    html+='<td style="text-align:right;padding:3px">'+(t.loyer_eco_m2_an?t.loyer_eco_m2_an+"\u20AC":"—")+'</td>';
+    html+='<td style="text-align:right;padding:3px;color:var(--text3)">'+(t.date_vente||"").substring(0,7)+'</td>';
+    html+='</tr>';
+  });
+  html+='</table></div>';
+  return html;
+}
 
 function mkSim(d){
   const px=d.financier?.prix_affiche||0,sf=d.bien?.surface_m2||1,lo=d.locatif?.loyer_actuel_an||0;
