@@ -372,7 +372,7 @@ function filtered(){
     if((d.financier?.prix_affiche||0)>px)return false;
     if(fb&&(d._prix_historique||[]).length<2)return false;
     var fhc=document.getElementById("fHorsCarte").classList.contains("active");
-    if(fhc){var loc2=d.localisation||{};var hasPos=!!(d._lat||loc2.latitude||(loc2.code_postal&&loc2.code_postal.length===5));if(hasPos)return false;}
+    if(fhc){var loc2=d.localisation||{};var hasReal=!!((loc2.adresse&&loc2.adresse.match(/\d+\s*[\w,]/))||loc2.latitude);if(hasReal)return false;}
     if(fq){const t=(d.localisation?.commune+" "+d.localisation?.adresse+" "+d.annonce?.titre).toLowerCase();if(!t.includes(fq))return false;}
     return true;
   });
@@ -486,7 +486,9 @@ function renderT(deals){
   let rows=deals.map(([k,d])=>{
     var lo=d.locatif?.loyer_actuel_an||0;var px=d.financier?.prix_affiche||0;
     var loc=d.localisation||{};
-    var onMap=!!(d._lat||loc.latitude||(loc.code_postal&&loc.code_postal.length===5));
+    var hasRealAddr=loc.adresse&&loc.adresse.match(/\d+\s*[\w,]/);
+    var hasRealCoords=loc.latitude&&loc.longitude;
+    var onMap=!!(hasRealAddr||hasRealCoords);
     return{k,_statut:d._statut,commune:loc.commune||"",surface:d.bien?.surface_m2||0,prix:px,prix_m2:d.financier?.prix_m2||0,
     ecart:d._ecart_marche!=null?d._ecart_marche:d.scoring?.prix_vs_marche_pct,
     dpe:d.bien?.dpe||"",
