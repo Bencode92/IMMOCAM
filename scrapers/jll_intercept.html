@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head><title>JLL Interceptor</title></head>
+<body style="font-family:Arial;padding:20px;background:#111;color:#eee">
+<h2>JLL - Intercepteur GraphQL</h2>
+<p>1. Ouvre <a href="https://immobilier.jll.fr/search?propertyTypes=office&tenureTypes=sale&regions=Ile-de-France" target="_blank" style="color:#4af">immobilier.jll.fr (bureaux vente IDF)</a></p>
+<p>2. Clique le bouton ci-dessous</p>
+<p>3. Va sur l'onglet JLL, F12 Console</p>
+<p>4. Ctrl+V puis Entree</p>
+<p>5. Scroll vers le bas ou clique page 2</p>
+<br>
+<button onclick="copyCode()" style="padding:20px 40px;font-size:20px;background:#0066cc;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER INTERCEPTEUR</button>
+<br><br>
+<p id="status"></p>
+<textarea id="code" style="width:100%;height:150px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
+<script>
+var interceptCode = '(function(){var orig=window.fetch;window.fetch=function(){var url=arguments[0];var opts=arguments[1]||{};if(typeof url==="string"&&url.indexOf("graphql")>-1){console.log("=== INTERCEPTED GRAPHQL ===");console.log("URL:",url);console.log("BODY:",opts.body);if(opts.body)console.log("PARSED:",JSON.parse(opts.body))}return orig.apply(this,arguments)};console.log("Fetch interceptor ON")})();';
+document.getElementById("code").value = interceptCode;
+function copyCode(){
+  navigator.clipboard.writeText(interceptCode).then(function(){
+    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur JLL, F12 Console, Ctrl+V, Entree, puis scroll/page 2</b>";
+  }).catch(function(){
+    document.getElementById("status").innerHTML = "<b style='color:red'>Selectionne le texte ci-dessous et copie manuellement</b>";
+  });
+}
+</script>
+</body></html>
