@@ -46,7 +46,7 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 .main{padding:1rem 2.5rem;flex:1}
 
 /* KANBAN */
-.kanban{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;min-height:60vh}
+.kanban{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;min-height:60vh}
 .kanban-col{display:flex;flex-direction:column;min-height:200px}
 .col-label{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:.5rem 0 .75rem;display:flex;align-items:center;gap:.5rem}
 .col-label .cnt{background:var(--surface2);padding:.15rem .5rem;border-radius:10px;font-size:.65rem;font-weight:500;color:var(--text3)}
@@ -217,6 +217,7 @@ a:hover{text-decoration:underline}
     <div class="kanban-col col-averifier"><div class="col-label">A verifier <span class="cnt" id="cV">0</span></div><div id="colV"></div></div>
     <div class="kanban-col col-acontacter"><div class="col-label">A contacter <span class="cnt" id="cC">0</span></div><div id="colC"></div></div>
     <div class="kanban-col col-simulation"><div class="col-label">Simulation <span class="cnt" id="cS">0</span></div><div id="colS"></div></div>
+    <div class="kanban-col col-archive" id="colArchiveWrap" style="display:none"><div class="col-label" style="color:var(--text3)">Archive <span class="cnt" id="cA">0</span></div><div id="colA"></div></div>
   </div>
   <div class="tbl-wrap" id="viewTableau"><table><thead id="tH"></thead><tbody id="tB"></tbody></table></div>
   <div class="map-wrap" id="viewCarte"><div id="mapView"></div></div>
@@ -516,14 +517,18 @@ function render(){
 }
 
 function renderK(deals){
-  const cols={nouveau:[],a_verifier:[],a_contacter:[],simulation:[]};
+  const cols={nouveau:[],a_verifier:[],a_contacter:[],simulation:[],poubelle:[]};
   for(const[k,d]of deals){const s=d._statut||"nouveau";if(cols[s])cols[s].push([k,d]);}
-  const map={nouveau:"colN",a_verifier:"colV",a_contacter:"colC",simulation:"colS"};
-  const cnt={nouveau:"cN",a_verifier:"cV",a_contacter:"cC",simulation:"cS"};
+  const mp={nouveau:"colN",a_verifier:"colV",a_contacter:"colC",simulation:"colS",poubelle:"colA"};
+  const cnt={nouveau:"cN",a_verifier:"cV",a_contacter:"cC",simulation:"cS",poubelle:"cA"};
   for(const[s,items]of Object.entries(cols)){
+    if(!mp[s])continue;
     document.getElementById(cnt[s]).textContent=items.length;
-    document.getElementById(map[s]).innerHTML=items.length?items.map(([k,d])=>mkCard(k,d)).join(""):'<div class="empty">Aucun deal</div>';
+    document.getElementById(mp[s]).innerHTML=items.length?items.map(([k,d])=>mkCard(k,d)).join(""):'<div class="empty">Aucun deal</div>';
   }
+  // Afficher/masquer colonne archive
+  var archiveWrap=document.getElementById("colArchiveWrap");
+  if(archiveWrap)archiveWrap.style.display=cols.poubelle.length>0?"block":"none";
 }
 
 function mkCard(key,d){
