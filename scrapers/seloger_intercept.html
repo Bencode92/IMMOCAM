@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html><head><title>SeLoger Bureaux Scraper</title></head>
 <body style="font-family:Arial;padding:20px;background:#111;color:#eee">
-<h2>SeLoger Bureaux Commerces — Scraper</h2>
+<h2>SeLoger Bureaux Commerces — Scraper Auto</h2>
 
 <p>1. Ouvre <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/paris" target="_blank" style="color:#4af">SeLoger Bureaux — Paris</a> ou <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/hauts-de-seine" target="_blank" style="color:#4af">Hauts-de-Seine</a></p>
 <p>2. Copie le script ci-dessous (F12 Console, Ctrl+V, Entree)</p>
-<p>3. <b>Manuellement</b> clique page suivante, attends 5-8 sec, recolle le script</p>
-<p>4. Quand fini: <code>copy(JSON.stringify(window._SL))</code></p>
+<p>3. Attends — le script fait tout seul (6-8 sec entre chaque page)</p>
+<p>4. Quand "TERMINE": <code>copy(JSON.stringify(window._SL))</code></p>
 <br>
 
 <button onclick="copyScraper()" style="padding:20px 40px;font-size:18px;background:#e11d48;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER LE SCRIPT</button>
@@ -15,52 +15,84 @@
 
 <script>
 var lines = [
-'if(!window._SL)window._SL=[];',
-'if(!window._SL_seen)window._SL_seen={};',
-'(function(){',
-'var nd=document.getElementById("__NEXT_DATA__");',
-'if(!nd){console.log("Pas de __NEXT_DATA__ - recharge la page");return}',
-'var data=JSON.parse(nd.textContent);',
-'var sr=data.props.pageProps.searchResponse;',
-'if(!sr||!sr.classifieds){console.log("Pas de classifieds");return}',
-'var cls=sr.classifieds;',
-'var n=0;',
-'cls.forEach(function(c){',
-'  var id=c.idAnnonce||c.id||"";',
-'  if(window._SL_seen[id])return;',
-'  window._SL_seen[id]=1;',
-'  var prix=0;',
-'  if(c.price&&c.price.buy&&c.price.buy.price)prix=c.price.buy.price.value||0;',
-'  var pm2=0;',
-'  if(c.price&&c.price.buy&&c.price.buy.priceBySquareMeter)pm2=Math.round(c.price.buy.priceBySquareMeter.value||0);',
-'  var surf=c.space||0;',
-'  var loc=c.localisation||{};',
-'  var cp=loc.codePostal||"";',
-'  var ville=loc.nomVille||"";',
-'  var addr=loc.adresse||"";',
-'  var quartier=loc.nomQuartier||"";',
-'  var dept=loc.codeDepartement||cp.substring(0,2)||"";',
-'  var geo=loc.geoLocation||{};',
-'  var lat=geo.latitude||null;',
-'  var lng=geo.longitude||null;',
-'  var dpe="";',
-'  var url=c.detailUrl||"";',
-'  if(url&&!url.startsWith("http"))url="https://www.seloger-bureaux-commerces.com"+url;',
-'  var titre=c.cardTitle||"Bureau";',
-'  var desc=c.cardDescription||c.description||"";',
-'  var divisible=c.isDivisible||false;',
-'  n++;',
-'  window._SL.push({source:"seloger-bc",url:url,date_scrape:new Date().toISOString().split("T")[0],',
-'    localisation:{adresse:addr,code_postal:cp,commune:ville,departement:dept,latitude:lat,longitude:lng},',
-'    bien:{type:"bureaux",surface_m2:surf,dpe:dpe},',
-'    financier:{prix_affiche:prix,prix_m2:pm2||Math.round(prix/Math.max(surf,1))},',
-'    annonce:{titre:titre+" "+surf+"m2 "+ville+(quartier?" - "+quartier:""),description:desc.substring(0,300)}});',
-'});',
-'var pg=sr.pagination||{};',
-'console.log(n+" nouveaux (total: "+window._SL.length+"/"+((pg.totalCount||pg.total||"?")));',
-'console.table(window._SL.slice(-5).map(function(x){return{surf:x.bien.surface_m2+"m2",prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":(x.financier.prix_affiche/1e3).toFixed(0)+"K",pm2:x.financier.prix_m2,cp:x.localisation.code_postal,ville:x.localisation.commune}}));',
-'console.log("Page suivante -> attends 5-8 sec -> recolle ce script");',
-'console.log("Fini? copy(JSON.stringify(window._SL))");',
+'window._SL=[];window._SL_seen={};',
+'(async function(){',
+'function extractPage(){',
+'  var nd=document.getElementById("__NEXT_DATA__");',
+'  if(!nd)return 0;',
+'  var data=JSON.parse(nd.textContent);',
+'  var sr=data.props.pageProps.searchResponse;',
+'  if(!sr||!sr.classifieds)return 0;',
+'  var cls=sr.classifieds;',
+'  var n=0;',
+'  cls.forEach(function(c){',
+'    var id=c.idAnnonce||c.id||"";',
+'    if(window._SL_seen[id])return;',
+'    window._SL_seen[id]=1;',
+'    var prix=0;',
+'    if(c.price&&c.price.buy&&c.price.buy.price)prix=c.price.buy.price.value||0;',
+'    var pm2=0;',
+'    if(c.price&&c.price.buy&&c.price.buy.priceBySquareMeter)pm2=Math.round(c.price.buy.priceBySquareMeter.value||0);',
+'    var surf=c.space||0;',
+'    var loc=c.localisation||{};',
+'    var cp=loc.codePostal||"";',
+'    var ville=loc.nomVille||"";',
+'    var addr=loc.adresse||"";',
+'    var quartier=loc.nomQuartier||"";',
+'    var dept=loc.codeDepartement||cp.substring(0,2)||"";',
+'    var geo=loc.geoLocation||{};',
+'    var url=c.detailUrl||"";',
+'    if(url&&url.indexOf("http")<0)url="https://www.seloger-bureaux-commerces.com"+url;',
+'    var desc=c.cardDescription||c.description||"";',
+'    n++;',
+'    window._SL.push({source:"seloger-bc",url:url,date_scrape:new Date().toISOString().split("T")[0],',
+'      localisation:{adresse:addr,code_postal:cp,commune:ville,departement:dept,latitude:geo.latitude||null,longitude:geo.longitude||null},',
+'      bien:{type:"bureaux",surface_m2:surf},',
+'      financier:{prix_affiche:prix,prix_m2:pm2||Math.round(prix/Math.max(surf,1))},',
+'      annonce:{titre:(c.cardTitle||"Bureau")+" "+surf+"m2 "+ville+(quartier?" - "+quartier:""),description:desc.substring(0,300)}});',
+'  });',
+'  return n;',
+'}',
+'function getTotal(){',
+'  try{var nd=document.getElementById("__NEXT_DATA__");var d=JSON.parse(nd.textContent);var pg=d.props.pageProps.searchResponse.pagination;return pg.totalCount||pg.total||0}catch(e){return 0}',
+'}',
+'function clickNext(){',
+'  var links=document.querySelectorAll("a");',
+'  for(var i=0;i<links.length;i++){',
+'    var ar=links[i].getAttribute("aria-label")||"";',
+'    var rel=links[i].getAttribute("rel")||"";',
+'    if(ar.indexOf("uivant")>-1||ar.indexOf("ext")>-1||rel==="next"){links[i].click();return true}',
+'  }',
+'  var btns=document.querySelectorAll("button,[role=button]");',
+'  for(var j=0;j<btns.length;j++){',
+'    var t=(btns[j].innerText||"").trim();',
+'    var ar2=btns[j].getAttribute("aria-label")||"";',
+'    if(t===">"||t.indexOf("Suivant")>-1||ar2.indexOf("uivant")>-1||ar2.indexOf("ext page")>-1){btns[j].click();return true}',
+'  }',
+'  return false;',
+'}',
+'var total=getTotal();',
+'var pg=1;',
+'var n=extractPage();',
+'console.log("Page "+pg+": "+n+" biens ("+window._SL.length+"/"+total+")");',
+'var maxPages=Math.min(Math.ceil(total/60),50);',
+'for(var p=2;p<=maxPages;p++){',
+'  var delay=6000+Math.random()*4000;',
+'  console.log("Attente "+(delay/1000).toFixed(0)+"s avant page "+p+"...");',
+'  await new Promise(function(r){setTimeout(r,delay)});',
+'  var ok=clickNext();',
+'  if(!ok){console.log("Pas de bouton suivant");break}',
+'  await new Promise(function(r){setTimeout(r,3000)});',
+'  pg=p;',
+'  var nn=extractPage();',
+'  if(nn===0){console.log("0 nouveaux - page vide ou bloquee");break}',
+'  console.log("Page "+pg+": "+nn+" biens ("+window._SL.length+"/"+total+")");',
+'}',
+'console.log("========================================");',
+'console.log("TERMINE! "+window._SL.length+" biens extraits");',
+'console.log("========================================");',
+'console.table(window._SL.slice(0,10).map(function(x){return{surf:x.bien.surface_m2+"m2",prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":(x.financier.prix_affiche/1e3).toFixed(0)+"K",pm2:x.financier.prix_m2,cp:x.localisation.code_postal,ville:x.localisation.commune}}));',
+'console.log("Tape: copy(JSON.stringify(window._SL))");',
 '})();'
 ];
 var scrapeCode = lines.join("");
@@ -68,7 +100,7 @@ document.getElementById("code").value = scrapeCode;
 
 function copyScraper(){
   navigator.clipboard.writeText(scrapeCode).then(function(){
-    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur SeLoger, F12, Ctrl+V, Entree</b>";
+    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur SeLoger, F12, Ctrl+V, Entree puis attends.</b>";
   }).catch(function(){
     document.getElementById("status").innerHTML = "<b style='color:red'>Selectionne le texte et copie manuellement</b>";
   });
