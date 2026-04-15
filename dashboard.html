@@ -584,7 +584,7 @@ function renderT(deals){
     dpe:d.bien?.dpe||"",
     loyer:d._loyer_estime||lo||0,
     yield:lo>0&&px>0?(lo/px*100):(d._yield_zone||0),
-    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",carte:onMap?1:0,src:(d._sources||[]).join(", "),tags:(d._tags||[]),notes:d._notes||""};
+    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",carte:onMap?1:0,src:(d._sources||[]).join(", "),tags:(d._tags||[]),notes:d._notes||"",mail:d._mail_sent||""};
   });
   if(tCol)rows.sort((a,b)=>{let va=a[tCol],vb=b[tCol];if(va==null)return 1;if(vb==null)return -1;return typeof va==="string"?(tAsc?va.localeCompare(vb):vb.localeCompare(va)):(tAsc?va-vb:vb-va);});
   const ar=k=>tCol===k?(tAsc?" \u25B2":" \u25BC"):"";
@@ -666,9 +666,11 @@ window.openDw=key=>{
       ${(s.alertes||[]).map(a=>`<div class="alert-item">\u26A0 ${a}</div>`).join("")}
     </div>
 
-    <div style="display:flex;gap:.5rem;margin-top:.75rem" onclick="event.stopPropagation()">
+    <div style="display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap" onclick="event.stopPropagation()">
       <a href="${d.url||"#"}" target="_blank" class="flip-btn" style="text-decoration:none;flex:1;text-align:center">Voir l'annonce \u2192</a>
+      <a href="${mkMailto(d)}" class="flip-btn" style="text-decoration:none;flex:1;text-align:center;background:#0066cc;color:#fff;border-color:#0066cc" onclick="markMailSent('${curKey}')">Envoyer mail \u2709</a>
     </div>
+    ${d._mail_sent?'<div style="font-size:.7rem;color:var(--green);margin-top:.3rem">\u2705 Mail envoy\u00E9 le '+d._mail_sent+'</div>':''}
 
     <div class="section" style="margin-top:.6rem" onclick="event.stopPropagation()">
       <h3>Tags</h3>
@@ -841,6 +843,41 @@ document.getElementById("dwContact").addEventListener("click",()=>{if(curKey){se
 document.getElementById("dwSim").addEventListener("click",()=>{if(curKey){setSt(curKey,"simulation");closeDw();}});
 
 window.setSt=(k,s)=>{if(D[k]){D[k]._statut=s;render();}};
+
+function mkMailto(d){
+  var loc=d.localisation||{},fin=d.financier||{},bien=d.bien||{};
+  var addr=loc.adresse||"";
+  var commune=loc.commune||"";
+  var cp=loc.code_postal||"";
+  var surf=bien.surface_m2||"?";
+  var prix=fin.prix_affiche?(fin.prix_affiche/1e6).toFixed(2)+"M\u20AC":"?";
+  var pm2=fin.prix_m2?fin.prix_m2.toLocaleString("fr")+"\u20AC/m\u00B2":"?";
+  var url=d.url||"";
+
+  var subject=encodeURIComponent("Demande d'information - Bureaux "+surf+"m\u00B2 "+commune+" "+cp);
+  var body=encodeURIComponent(
+    "Bonjour,\n\n"+
+    "Je me permets de vous contacter au sujet du bien suivant :\n\n"+
+    "Adresse : "+addr+" "+cp+" "+commune+"\n"+
+    "Surface : "+surf+" m\u00B2\n"+
+    "Prix affich\u00E9 : "+prix+" ("+pm2+")\n"+
+    (url?"Annonce : "+url+"\n":"")+
+    "\nJe souhaiterais obtenir des informations compl\u00E9mentaires :\n"+
+    "- Disponibilit\u00E9 du bien\n"+
+    "- DPE / audit \u00E9nerg\u00E9tique\n"+
+    "- Montant des charges\n"+
+    "- Possibilit\u00E9 de visite\n\n"+
+    "Je suis investisseur et recherche des bureaux de 300 \u00E0 700m\u00B2 en Ile-de-France.\n\n"+
+    "Cordialement"
+  );
+  return"mailto:?subject="+subject+"&body="+body;
+}
+
+window.markMailSent=function(key){
+  if(!key||!D[key])return;
+  D[key]._mail_sent=new Date().toISOString().split("T")[0];
+  markDirty();
+};
 
 window.toggleTag=function(el,tag){
   if(!curKey||!D[curKey])return;
