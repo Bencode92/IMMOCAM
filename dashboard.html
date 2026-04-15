@@ -91,9 +91,9 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 .tbl-wrap .num{text-align:right;font-variant-numeric:tabular-nums}
 
 /* DRAWER */
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.15);backdrop-filter:blur(2px);z-index:100;opacity:0;pointer-events:none;transition:opacity .3s}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.15);backdrop-filter:blur(2px);z-index:9999;opacity:0;pointer-events:none;transition:opacity .3s}
 .overlay.open{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:2vh;right:-520px;width:480px;max-width:40vw;max-height:96vh;background:#f0f5fa;border-radius:16px;z-index:101;display:flex;flex-direction:column;transition:right .35s ease;box-shadow:-8px 0 40px rgba(0,0,0,.15)}
+.drawer{position:fixed;top:2vh;right:-520px;width:480px;max-width:40vw;max-height:96vh;background:#f0f5fa;border-radius:16px;z-index:10000;display:flex;flex-direction:column;transition:right .35s ease;box-shadow:-8px 0 40px rgba(0,0,0,.15)}
 .drawer.open{right:8px}
 .drawer-head{padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
 .drawer-head h2{font-size:1rem;font-weight:700;color:var(--accent)}
@@ -551,6 +551,7 @@ window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
 var dwFace="front";
 window.openDw=key=>{
   curKey=key;dwFace="front";const d=D[key];if(!d)return;
+  if(map)map.closePopup();
   document.getElementById("dw").classList.add("open");document.getElementById("ov").classList.add("open");
   document.getElementById("dwFlip").textContent="Comparables \u2192";
   document.getElementById("dwTitle").textContent=d.annonce?.titre||"D\u00E9tail";
