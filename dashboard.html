@@ -590,8 +590,10 @@ window.openDw=key=>{
       <div class="card-info-row"><span class="ck">Surface</span><span class="cv" style="font-size:.95rem;font-weight:700">${b.surface_m2||"\u2014"} m\u00B2</span></div>
       <div class="card-info-row"><span class="ck">DPE</span><span class="cv">${b.dpe||"\u2014"}</span></div>
       <div class="card-info-row"><span class="ck">Loyer actuel/an</span><span class="cv">${l.loyer_actuel_an?l.loyer_actuel_an.toLocaleString("fr")+"\u20AC":"Vacant"}</span></div>
-      <div class="card-info-row"><span class="ck">Loyer potentiel/an</span><span class="cv" style="color:var(--accent)">${loyerPotAn>0?Math.round(loyerPotAn).toLocaleString("fr")+"\u20AC ("+d._loyer_estime+"\u20AC/m\u00B2)":"\u2014"}</span></div>
-      <div class="card-info-row"><span class="ck">Yield</span><span class="cv">${f.prix_affiche&&l.loyer_actuel_an?(l.loyer_actuel_an/f.prix_affiche*100).toFixed(2)+"%":(d._yield_zone?d._yield_zone.toFixed(1)+"% (zone)":"\u2014")}</span></div>
+      <div class="card-info-row"><span class="ck">Loyer CBRE facial</span><span class="cv">${d._loyer_facial?d._loyer_facial+"\u20AC/m\u00B2"+(d._cbre_min?" ("+d._cbre_min+"\u2013"+d._cbre_max+")":""):"\u2014"} <span style="font-size:.6rem;color:var(--text3)">${d._loyer_source||""}</span></span></div>
+      <div class="card-info-row"><span class="ck">Loyer \u00E9co/an</span><span class="cv" style="color:var(--accent)">${d._loyer_eco&&surf?Math.round(d._loyer_eco*surf).toLocaleString("fr")+"\u20AC <span style='font-size:.7rem'>("+d._loyer_eco+"/m\u00B2)</span>":"\u2014"}</span></div>
+      <div class="card-info-row"><span class="ck">Loyer net PNR/an</span><span class="cv" style="font-weight:700">${d._loyer_net_pnr&&surf?Math.round(d._loyer_net_pnr*surf).toLocaleString("fr")+"\u20AC <span style='font-size:.7rem'>("+d._loyer_net_pnr+"/m\u00B2)</span>":"\u2014"}</span></div>
+      <div class="card-info-row"><span class="ck">Rdt net-net</span><span class="cv" style="font-weight:700;color:${(d._yield_net_net||0)>=(d._yield_zone||99)?"var(--green)":"var(--red)"}">${d._yield_net_net?d._yield_net_net.toFixed(2)+"%":"\u2014"} <span style="font-size:.65rem;color:var(--text3)">vs ${(d._yield_zone||0).toFixed(2)}% zone</span></span></div>
     </div>
 
     <div style="margin-top:.75rem">
@@ -834,18 +836,13 @@ function scoreAllDeals(){
     var prix=fin.prix_affiche||0;
     var dpe=bien.dpe||"";
 
-    // Trouver la commune dans le referentiel
     var ref=findCommuneRef(loc.commune,loc.code_postal);
 
-    // Prix marché : referentiel commune > transactions GPS > fallback dept
-    var prixMarche=0;
-    var prixSource="";
-    if(ref&&ref.stats&&ref.stats.prix_m2_median>0){
-      prixMarche=ref.stats.prix_m2_median;
-      prixSource="ref_commune";
-    }
+    // === PRIX MARCHE ===
+    var prixMarche=0,prixSource="dept";
+    if(ref&&ref.stats&&ref.stats.prix_m2_median>0){prixMarche=ref.stats.prix_m2_median;prixSource="commune";}
 
-    // Transactions GPS rayon 500m puis 1km
+    // GPS 500m puis 1km
     var nearbyTx=[];
     if(REF&&REF.transactions&&loc.latitude){
       nearbyTx=findNearbyTransactions(loc.latitude,loc.longitude,0.5);
@@ -853,54 +850,80 @@ function scoreAllDeals(){
     }
     if(nearbyTx.length>=3){
       var prices=nearbyTx.map(function(t){return t.prix_m2}).filter(function(p){return p>0}).sort(function(a,b){return a-b});
-      if(prices.length>=3){
-        prixMarche=prices[Math.floor(prices.length/2)];
-        prixSource="gps_"+nearbyTx.length+"tx";
-      }
+      if(prices.length>=3){prixMarche=prices[Math.floor(prices.length/2)];prixSource="gps_"+nearbyTx.length+"tx";}
     }
-
     if(prixMarche===0)prixMarche=PRIX_MARCHE[dept]||4000;
 
-    // Yield : referentiel > fallback dept
-    var yieldZone=YIELD_MAP[dept]||8.0;
-    if(ref&&ref.rendement&&ref.rendement.brut_median_pct>0)yieldZone=ref.rendement.brut_median_pct;
-
-    // Vacance : referentiel > fallback dept
-    var vacanceZone=VACANCE_MAP[dept]||10.0;
-    if(ref&&ref.risque&&ref.risque.vacance_bp_pct>0)vacanceZone=ref.risque.vacance_bp_pct;
-
-    // Loyer estimé : referentiel > cap rate
-    var loyerEstime=0;
-    if(ref&&ref.loyer&&ref.loyer.caprate_median_m2_an>0){
-      loyerEstime=Math.round(ref.loyer.caprate_median_m2_an);
-    }else{
-      loyerEstime=pm2>0?Math.round(pm2*yieldZone/100):0;
+    // === LOYERS (3 niveaux) ===
+    var loyerFacial=0,loyerEco=0,loyerNetPnr=0,loyerSource="";
+    if(ref&&ref.loyer){
+      loyerFacial=ref.loyer.facial_median_m2_an||ref.loyer.cbre_usage_mid_m2_an||0;
+      loyerEco=ref.loyer.eco_median_m2_an||0;
+      loyerNetPnr=ref.loyer.net_pnr_median_m2_an||0;
+      loyerSource="cbre";
+    }
+    if(!loyerFacial&&pm2>0){
+      var yz=YIELD_MAP[dept]||7.5;
+      loyerFacial=Math.round(pm2*yz/100);
+      loyerSource="caprate";
+    }
+    if(loyerFacial&&!loyerEco){
+      var vac=ref&&ref.risque?ref.risque.vacance_bp_pct:(VACANCE_MAP[dept]||10);
+      var fran=ref&&ref.risque?ref.risque.franchise_mois:6;
+      loyerEco=Math.round(loyerFacial*(1-vac/100)*(1-fran/72));
+    }
+    if(loyerEco&&!loyerNetPnr){
+      var pnr=ref&&ref.loyer&&ref.loyer.charges_pnr_pct?ref.loyer.charges_pnr_pct:9;
+      loyerNetPnr=Math.round(loyerEco*(1-pnr/100));
     }
 
-    // Franchise
-    var franchiseMois=6;
-    if(ref&&ref.risque&&ref.risque.franchise_mois)franchiseMois=ref.risque.franchise_mois;
+    // === RENDEMENTS ===
+    var yieldBrut=loyerFacial>0&&pm2>0?loyerFacial/pm2*100:0;
+    var yieldEco=loyerEco>0&&pm2>0?loyerEco/pm2*100:0;
+    var prixAcq=prix*1.065;
+    var yieldNetNet=loyerNetPnr>0&&surf>0&&prixAcq>0?(loyerNetPnr*surf/prixAcq*100):0;
+    var yieldZoneRef=ref&&ref.rendement&&ref.rendement.net_net_median_pct?ref.rendement.net_net_median_pct:0;
+    if(!yieldZoneRef)yieldZoneRef=ref&&ref.rendement&&ref.rendement.eco_median_pct?ref.rendement.eco_median_pct:(YIELD_MAP[dept]||7.5);
 
-    d._loyer_estime=loyerEstime;
-    d._yield_zone=yieldZone;
+    // === VACANCE + FRANCHISE ===
+    var vacanceZone=ref&&ref.risque?ref.risque.vacance_bp_pct:(VACANCE_MAP[dept]||10);
+    var franchiseMois=ref&&ref.risque&&ref.risque.franchise_mois?ref.risque.franchise_mois:6;
+    var pnrPct=ref&&ref.loyer&&ref.loyer.charges_pnr_pct?ref.loyer.charges_pnr_pct:9;
+
+    // CBRE fourchette
+    var cbreMin=ref&&ref.loyer?ref.loyer.cbre_usage_min_m2_an:0;
+    var cbreMid=ref&&ref.loyer?ref.loyer.cbre_usage_mid_m2_an:0;
+    var cbreMax=ref&&ref.loyer?ref.loyer.cbre_usage_max_m2_an:0;
+
+    // Stocker pour affichage
+    d._loyer_facial=loyerFacial;
+    d._loyer_eco=loyerEco;
+    d._loyer_net_pnr=loyerNetPnr;
+    d._loyer_estime=loyerEco; // compat
+    d._loyer_source=loyerSource;
+    d._yield_brut=yieldBrut;
+    d._yield_eco=yieldEco;
+    d._yield_net_net=yieldNetNet;
+    d._yield_zone=yieldZoneRef;
     d._vacance_zone=vacanceZone;
     d._franchise_mois=franchiseMois;
+    d._pnr_pct=pnrPct;
+    d._cbre_min=cbreMin;d._cbre_mid=cbreMid;d._cbre_max=cbreMax;
     d._prix_source=prixSource;
+    d._prix_marche=prixMarche;
     d._nearby_tx=nearbyTx.length;
-
-    // Cout travaux DPE
     d._cout_dpe=(DPE_COUT[dpe]||0)*surf;
 
     // Ecart vs marché
     var ecart=prixMarche>0&&pm2>0?Math.round((pm2-prixMarche)/prixMarche*1000)/10:null;
     d._ecart_marche=ecart;
-    d._prix_marche=prixMarche;
 
-    // --- SCORES ---
-    // 1) Prix vs marché (40%)
-    var scorePrix=50;
+    // === SCORES ===
     var q25=ref&&ref.stats?ref.stats.prix_m2_q25:prixMarche*0.7;
     var q75=ref&&ref.stats?ref.stats.prix_m2_q75:prixMarche*1.3;
+
+    // 1) Prix (40%)
+    var scorePrix=50;
     if(pm2>0&&prixMarche>0){
       if(pm2<=q25)scorePrix=95;
       else if(pm2<=prixMarche)scorePrix=60+35*(prixMarche-pm2)/Math.max(prixMarche-q25,1);
@@ -908,21 +931,19 @@ function scoreAllDeals(){
       else scorePrix=Math.max(0,30-(pm2-q75)/Math.max(q75,1)*100);
     }
 
-    // 2) Loyer / rendement (30%)
+    // 2) Rendement (30%) — basé sur net-net vs zone
     var scoreLoyer=50;
     var loyerActuel=d.locatif?.loyer_actuel_an||0;
-    var yieldActuel=0;
     if(loyerActuel>0&&prix>0){
-      yieldActuel=loyerActuel/prix*100;
-      if(yieldActuel>=yieldZone+2)scoreLoyer=90;
-      else if(yieldActuel>=yieldZone)scoreLoyer=70;
-      else if(yieldActuel>=yieldZone-2)scoreLoyer=50;
+      var yA=loyerActuel/prix*100;
+      if(yA>=yieldZoneRef+2)scoreLoyer=90;
+      else if(yA>=yieldZoneRef)scoreLoyer=70;
+      else if(yA>=yieldZoneRef-1.5)scoreLoyer=50;
       else scoreLoyer=30;
-    }else if(loyerEstime>0&&pm2>0){
-      // Estimer le rendement potentiel
-      var yieldPot=loyerEstime/pm2*100;
-      if(yieldPot>=yieldZone)scoreLoyer=65;
-      else scoreLoyer=45;
+    }else if(yieldNetNet>0){
+      if(yieldNetNet>=yieldZoneRef)scoreLoyer=65;
+      else if(yieldNetNet>=yieldZoneRef-1)scoreLoyer=50;
+      else scoreLoyer=35;
     }
 
     // 3) DPE (15%)
@@ -935,35 +956,33 @@ function scoreAllDeals(){
 
     // 4) Risque zone (15%)
     var scoreRisque=70;
-    if(vacanceZone>15){scoreRisque=30;}
-    else if(vacanceZone>10){scoreRisque=50;}
-    else if(vacanceZone>5){scoreRisque=70;}
-    else{scoreRisque=90;}
+    if(vacanceZone>15)scoreRisque=30;
+    else if(vacanceZone>10)scoreRisque=50;
+    else if(vacanceZone>5)scoreRisque=70;
+    else scoreRisque=90;
 
     var scoreGlobal=Math.round(scorePrix*0.40+scoreLoyer*0.30+scoreDPE*0.15+scoreRisque*0.15);
 
     var alertes=[];
     var suspect=false;
     var fiabilite="green";
-    if(ecart!==null&&ecart<-40){suspect=true;alertes.push("Prix suspect ("+ecart.toFixed(0)+"% vs marche) — verifier");fiabilite="red";}
-    else if(ecart!==null&&ecart<-20){alertes.push("Bonne affaire potentielle ("+ecart.toFixed(0)+"% vs marche)");}
-    if(ecart!==null&&ecart>20)alertes.push("Prix "+ecart.toFixed(0)+"% au-dessus du marche");
-    if(dpe>="E")alertes.push("DPE "+dpe+" — travaux "+Math.round(d._cout_dpe/1e3)+"K\u20AC");
-    if(vacanceZone>15)alertes.push("Zone vacance elevee: "+vacanceZone+"%");
-    if(franchiseMois>=9)alertes.push("Franchise longue: "+franchiseMois+" mois");
-    if(nearbyTx.length>=3)alertes.push("Score GPS: "+nearbyTx.length+" comparables rayon 1km");
-    if(!dpe&&!surf)fiabilite="yellow";
+    if(ecart!==null&&ecart<-40){suspect=true;alertes.push("Prix suspect ("+ecart.toFixed(0)+"% vs marche)");fiabilite="red";}
+    else if(ecart!==null&&ecart<-20){alertes.push("Bonne affaire ("+ecart.toFixed(0)+"% vs marche)");}
+    if(ecart!==null&&ecart>20)alertes.push("Cher: +"+ecart.toFixed(0)+"% vs marche");
+    if(dpe>="E")alertes.push("DPE "+dpe+" \u2192 travaux ~"+Math.round(d._cout_dpe/1e3)+"K\u20AC");
+    if(vacanceZone>15)alertes.push("Vacance elevee: "+vacanceZone+"%");
+    if(franchiseMois>=9)alertes.push("Franchise "+franchiseMois+" mois");
+    if(nearbyTx.length>=3)alertes.push(nearbyTx.length+" comparables GPS");
+    if(loyerSource==="caprate")alertes.push("Loyer estim\u00E9 par cap rate (pas CBRE)");
+    if(!dpe)fiabilite=fiabilite==="red"?"red":"yellow";
 
     if(suspect&&scoreGlobal>65)scoreGlobal=65;
     var grade=scoreGlobal>=75?"A":scoreGlobal>=55?"B":scoreGlobal>=35?"C":"D";
     if(suspect&&grade==="A")grade="B";
 
-    d.scoring={
-      score_global:scoreGlobal,grade:grade,
-      prix_vs_marche_pct:ecart,
+    d.scoring={score_global:scoreGlobal,grade:grade,prix_vs_marche_pct:ecart,
       scores_detail:{prix:Math.round(scorePrix),loyer:Math.round(scoreLoyer),dpe:Math.round(scoreDPE),risque:Math.round(scoreRisque)},
-      alertes:alertes,suspect:suspect,fiabilite:fiabilite
-    };
+      alertes:alertes,suspect:suspect,fiabilite:fiabilite};
   }
 }
 
