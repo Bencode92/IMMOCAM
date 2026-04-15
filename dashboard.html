@@ -74,6 +74,10 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 .tag-src{background:#e7e5e4;color:#78716c}
 .tag-drop{background:#fee2e2;color:#b91c1c}
 .tag-new{background:#dcfce7;color:#15803d}
+.deal-tag{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.65rem;font-weight:500;margin:2px;cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--text2);transition:all .15s}
+.deal-tag.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.deal-tag:hover{border-color:var(--accent)}
+.deal-tag-small{display:inline-block;padding:1px 6px;border-radius:10px;font-size:.6rem;font-weight:500;margin:1px;background:#e0e7ff;color:#3730a3}
 .card-btns{display:flex;gap:.35rem;margin-top:.6rem;opacity:0;transition:opacity .2s}
 .card:hover .card-btns{opacity:1}
 .card-btns button{flex:1;padding:.3rem;border:none;border-radius:6px;font-size:.6rem;cursor:pointer;background:var(--surface2);color:var(--text3);transition:all .15s}
@@ -201,6 +205,7 @@ a:hover{text-decoration:underline}
   <input id="fSurfMax" type="number" placeholder="m² max" style="width:72px" />
   <input id="fPrixMax" type="number" placeholder="Prix max (M)" style="width:95px" />
   <button class="pill" id="fBaisse">Baisse prix</button>
+  <select id="fTag"><option value="">Tous tags</option></select>
   <button class="pill" id="fHorsCarte">Hors carte</button>
   <label><input type="checkbox" id="fArchive"> Archives</label>
   <input id="fSearch" type="text" placeholder="Rechercher..." style="flex:1;min-width:140px" />
@@ -312,6 +317,7 @@ const REPO="Bencode92/IMMOCAM",DVFMAJ="Bencode92/DVFMAJ";
 const RAW="https://raw.githubusercontent.com/"+REPO+"/main";
 const RAW_D="https://raw.githubusercontent.com/"+DVFMAJ+"/main";
 let D={},REF=null,curKey=null,view="kanban",tCol=null,tAsc=true;
+const TAGS_PREDEF=["Rooftop","Terrasse","Neuf","Renov\u00E9","A r\u00E9nover","Travaux lourds","Espaces ouverts","Trop ferm\u00E9","Lumineux","Sombre","Parking","Ascenseur","Clim","Fibre","RDC","Dernier \u00E9tage","Bon emplacement","Bruyant","Immeuble haussmannien","Immeuble moderne"];
 
 let DB_META = {};
 const WORKER = "https://studyforge-proxy.benoit-comas.workers.dev";
@@ -408,6 +414,10 @@ function popFilters(){
   const fS=document.getElementById("fSource");ss.forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;fS.appendChild(o);});
   const fD=document.getElementById("fDept");[...dd].sort().forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent="Dept "+s;fD.appendChild(o);});
   const fV=document.getElementById("fVille");[...vv].sort().forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;fV.appendChild(o);});
+  // Tags
+  const tt=new Set;
+  for(const v of Object.values(D)){(v._tags||[]).forEach(t=>tt.add(t));}
+  const fT=document.getElementById("fTag");[...tt].sort().forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;fT.appendChild(o);});
 }
 
 function filtered(){
@@ -423,6 +433,8 @@ function filtered(){
     var fvl=document.getElementById("fVille").value;
     if(fvl){var cm=d.localisation?.commune||"";var cp2=d.localisation?.code_postal||"";if(cm==="Paris"&&cp2.startsWith("75")&&cp2.length===5){var ar2=parseInt(cp2.substring(3));if(ar2>=1&&ar2<=20)cm="Paris "+ar2+"e";}if(cm!==fvl)return false;}
     if(fg&&d.scoring?.grade!==fg)return false;
+    var ftg=document.getElementById("fTag").value;
+    if(ftg&&!(d._tags||[]).includes(ftg))return false;
     const sf=d.bien?.surface_m2||0;if(sf<sn||sf>sx)return false;
     if((d.financier?.prix_affiche||0)>px)return false;
     if(fb&&(d._prix_historique||[]).length<2)return false;
@@ -433,7 +445,7 @@ function filtered(){
   });
 }
 
-["fSource","fDept","fVille","fScore","fSurfMin","fSurfMax","fPrixMax","fSearch","fArchive"].forEach(id=>{
+["fSource","fDept","fVille","fScore","fTag","fSurfMin","fSurfMax","fPrixMax","fSearch","fArchive"].forEach(id=>{
   const el=document.getElementById(id);el.addEventListener("input",()=>render());el.addEventListener("change",()=>render());
 });
 document.getElementById("fBaisse").addEventListener("click",function(){this.classList.toggle("active");render();});
@@ -526,6 +538,7 @@ function mkCard(key,d){
       ${src.length>1?`<span class="tag tag-src">${src.length} sources</span>`:""}
       ${drop?`<span class="tag tag-drop">\u2193 ${dropK}K\u20AC</span>`:""}
       ${!drop&&hi.length<=1?'<span class="tag tag-new">NEW</span>':""}
+      ${(d._tags||[]).map(t=>'<span class="deal-tag-small">'+t+'</span>').join("")}
     </div>
     <div class="card-btns">
       <button onclick="event.stopPropagation();setSt('${key}','poubelle')">Archive</button>
@@ -537,7 +550,7 @@ function mkCard(key,d){
 }
 
 function renderT(deals){
-  const cols=[{k:"_statut",l:"Statut"},{k:"carte",l:"\uD83D\uDDFA"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"src",l:"Source"},{k:"notes",l:"Notes"}];
+  const cols=[{k:"_statut",l:"Statut"},{k:"carte",l:"\uD83D\uDDFA"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"tags",l:"Tags"},{k:"src",l:"Source"}];
   let rows=deals.map(([k,d])=>{
     var lo=d.locatif?.loyer_actuel_an||0;var px=d.financier?.prix_affiche||0;
     var loc=d.localisation||{};
@@ -548,7 +561,7 @@ function renderT(deals){
     dpe:d.bien?.dpe||"",
     loyer:d._loyer_estime||lo||0,
     yield:lo>0&&px>0?(lo/px*100):(d._yield_zone||0),
-    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",carte:onMap?1:0,src:(d._sources||[]).join(", "),notes:d._notes||""};
+    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",carte:onMap?1:0,src:(d._sources||[]).join(", "),tags:(d._tags||[]),notes:d._notes||""};
   });
   if(tCol)rows.sort((a,b)=>{let va=a[tCol],vb=b[tCol];if(va==null)return 1;if(vb==null)return -1;return typeof va==="string"?(tAsc?va.localeCompare(vb):vb.localeCompare(va)):(tAsc?va-vb:vb-va);});
   const ar=k=>tCol===k?(tAsc?" \u25B2":" \u25BC"):"";
@@ -561,7 +574,7 @@ function renderT(deals){
     <td class="num" style="${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"\u2014"}</td>
     <td>${r.dpe}</td><td class="num">${r.loyer>0?r.loyer+"\u20AC":"\u2014"}</td>
     <td class="num" style="${r.yield>=8?"color:#16a34a":r.yield>=6?"color:#b45309":"color:#dc2626"}">${r.yield>0?r.yield.toFixed(1)+"%":"\u2014"}</td>
-    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td style="font-size:.7rem">${r.src}</td><td style="font-size:.7rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${r.notes}">${r.notes||"\u2014"}</td>
+    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td>${r.tags.map(t=>'<span class="deal-tag-small">'+t+'</span>').join("")||"\u2014"}</td><td style="font-size:.7rem">${r.src}</td>
   </tr>`).join("");
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
@@ -634,6 +647,16 @@ window.openDw=key=>{
       <a href="${d.url||"#"}" target="_blank" class="flip-btn" style="text-decoration:none;flex:1;text-align:center">Voir l'annonce \u2192</a>
     </div>
 
+    <div class="section" style="margin-top:.6rem" onclick="event.stopPropagation()">
+      <h3>Tags</h3>
+      <div id="dwTags" style="display:flex;flex-wrap:wrap;gap:2px">
+        ${TAGS_PREDEF.map(t=>'<span class="deal-tag'+((d._tags||[]).includes(t)?' active':'')+'" onclick="toggleTag(this,\''+t.replace(/'/g,"\\'")+'\')">'+t+'</span>').join("")}
+      </div>
+      <div style="margin-top:6px;display:flex;gap:4px">
+        <input id="dwNewTag" placeholder="Nouveau tag..." style="flex:1;padding:3px 8px;border:1px solid var(--border);border-radius:8px;font-size:.7rem;outline:none">
+        <button onclick="addCustomTag()" style="padding:3px 10px;border:1px solid var(--accent);background:none;color:var(--accent);border-radius:8px;font-size:.7rem;cursor:pointer">+</button>
+      </div>
+    </div>
     <div class="section" style="margin-top:.6rem" onclick="event.stopPropagation()"><h3>Notes</h3><textarea class="notes" id="dwNotes">${d._notes||""}</textarea></div>
     <div style="text-align:center;color:var(--text3);font-size:.7rem;margin-top:.25rem">Cliquer sur la fiche pour voir les comparables</div>
   </div>`;
@@ -795,6 +818,32 @@ document.getElementById("dwContact").addEventListener("click",()=>{if(curKey){se
 document.getElementById("dwSim").addEventListener("click",()=>{if(curKey){setSt(curKey,"simulation");closeDw();}});
 
 window.setSt=(k,s)=>{if(D[k]){D[k]._statut=s;render();}};
+
+window.toggleTag=function(el,tag){
+  if(!curKey||!D[curKey])return;
+  var d=D[curKey];
+  if(!d._tags)d._tags=[];
+  var idx=d._tags.indexOf(tag);
+  if(idx>-1){d._tags.splice(idx,1);el.classList.remove("active");}
+  else{d._tags.push(tag);el.classList.add("active");}
+};
+window.addCustomTag=function(){
+  var inp=document.getElementById("dwNewTag");
+  var tag=inp.value.trim();
+  if(!tag||!curKey||!D[curKey])return;
+  var d=D[curKey];
+  if(!d._tags)d._tags=[];
+  if(!d._tags.includes(tag)){
+    d._tags.push(tag);
+    // Ajouter visuellement
+    var span=document.createElement("span");
+    span.className="deal-tag active";
+    span.textContent=tag;
+    span.onclick=function(){toggleTag(span,tag)};
+    document.getElementById("dwTags").appendChild(span);
+  }
+  inp.value="";
+};
 
 // ===================================================================
 // SCORING AUTO — utilise le referentiel DVF/CBRE/Cushman par commune
