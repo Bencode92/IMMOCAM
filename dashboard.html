@@ -371,8 +371,21 @@ document.getElementById("btnSaveGH").addEventListener("click", async ()=>{
     if(r.ok){btn.textContent="Sauve !";btn.style.color="var(--green)";btn.style.borderColor="var(--green)";}
     else{const e=await r.json().catch(()=>({}));throw new Error(e.message||"HTTP "+r.status);}
   }catch(e){btn.textContent="Erreur";btn.style.color="var(--red)";btn.style.borderColor="var(--red)";console.error(e);}
-  setTimeout(()=>{btn.textContent="Sauver";btn.disabled=false;btn.style.color="var(--accent)";btn.style.borderColor="var(--accent)";},3000);
+  setTimeout(()=>{btn.textContent="Sauver";btn.disabled=false;btn.style.color="var(--accent)";btn.style.borderColor="var(--accent)";_dirty=false;},3000);
 });
+
+// Auto-save: détecte les modifications et sauvegarde toutes les 30s si dirty
+var _dirty=false;
+function markDirty(){_dirty=true;document.getElementById("btnSaveGH").style.borderColor="var(--red)";document.getElementById("btnSaveGH").textContent="Sauver *";}
+// Intercepter les modifications
+var _origSetSt=window.setSt;
+window.setSt=function(k,s){_origSetSt(k,s);markDirty();};
+var _origToggleTag=window.toggleTag;
+window.toggleTag=function(el,tag){_origToggleTag(el,tag);markDirty();};
+// Notes: marquer dirty quand on tape
+document.addEventListener("input",function(e){if(e.target&&e.target.id==="dwNotes")markDirty();});
+// Alerte si on quitte avec des changements non sauvés
+window.addEventListener("beforeunload",function(e){if(_dirty){e.preventDefault();e.returnValue="";}});
 
 function loadDemo(){
   const ds=[
