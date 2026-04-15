@@ -550,7 +550,7 @@ function mkCard(key,d){
 }
 
 function renderT(deals){
-  const cols=[{k:"_statut",l:"Statut"},{k:"carte",l:"\uD83D\uDDFA"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"tags",l:"Tags"},{k:"src",l:"Source"}];
+  const cols=[{k:"_statut",l:"Statut"},{k:"carte",l:"\uD83D\uDDFA"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"tags",l:"Tags"},{k:"notes",l:"Notes"},{k:"src",l:"Source"}];
   let rows=deals.map(([k,d])=>{
     var lo=d.locatif?.loyer_actuel_an||0;var px=d.financier?.prix_affiche||0;
     var loc=d.localisation||{};
@@ -574,7 +574,7 @@ function renderT(deals){
     <td class="num" style="${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"\u2014"}</td>
     <td>${r.dpe}</td><td class="num">${r.loyer>0?r.loyer+"\u20AC":"\u2014"}</td>
     <td class="num" style="${r.yield>=8?"color:#16a34a":r.yield>=6?"color:#b45309":"color:#dc2626"}">${r.yield>0?r.yield.toFixed(1)+"%":"\u2014"}</td>
-    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td>${r.tags.map(t=>'<span class="deal-tag-small">'+t+'</span>').join("")||"\u2014"}</td><td style="font-size:.7rem">${r.src}</td>
+    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td>${r.tags.map(t=>'<span class="deal-tag-small">'+t+'</span>').join("")||"\u2014"}</td><td style="font-size:.7rem;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${r.notes}">${r.notes||"\u2014"}</td><td style="font-size:.7rem">${r.src}</td>
   </tr>`).join("");
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
