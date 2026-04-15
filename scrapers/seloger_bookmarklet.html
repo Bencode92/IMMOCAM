@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head><title>SeLoger Bookmarklet</title></head>
+<body style="font-family:Arial;padding:20px;background:#111;color:#eee">
+<h2>SeLoger — Bookmarklet (le plus rapide)</h2>
+
+<h3>Installation (1 seule fois)</h3>
+<p>Glisse le bouton ci-dessous dans ta <b>barre de favoris</b> :</p>
+<p style="padding:20px;background:#222;border-radius:10px;text-align:center">
+<a id="bookmarklet" href="#" style="padding:12px 24px;background:#e11d48;color:#fff;border-radius:8px;text-decoration:none;font-size:16px;font-weight:bold;cursor:grab">📥 Scrape SL</a>
+</p>
+
+<h3>Utilisation</h3>
+<ol style="line-height:2">
+<li>Va sur <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/paris" target="_blank" style="color:#4af">SeLoger Paris</a></li>
+<li>Clique le bookmarklet <b>📥 Scrape SL</b> dans tes favoris</li>
+<li>Un compteur apparait en haut de page</li>
+<li>Change de page (<code>?page=2</code>, <code>?page=3</code>...)</li>
+<li>Re-clique le bookmarklet sur chaque nouvelle page</li>
+<li>Quand fini, clique <b>COPIER</b> sur le compteur</li>
+<li>Colle dans le dashboard <b>+ SeLoger</b></li>
+</ol>
+
+<h3>Astuce rapide</h3>
+<p>Change juste le numero dans l'URL : <code>?page=2</code> → <code>?page=3</code> → etc. et clique le bookmarklet a chaque fois. ~5 sec par page.</p>
+
+<script>
+var code = `javascript:void(function(){var a=JSON.parse(sessionStorage.getItem('_SL')||'[]'),s=JSON.parse(sessionStorage.getItem('_SL_seen')||'{}'),nd=document.getElementById('__NEXT_DATA__');if(!nd){alert('Pas de donnees');return}var d=JSON.parse(nd.textContent),sr=d.props.pageProps.searchResponse;if(!sr||!sr.classifieds){alert('Pas de classifieds');return}var pg=sr.pagination||{},n=0;sr.classifieds.forEach(function(c){var id=''+c.idAnnonce;if(s[id])return;s[id]=1;var p=0;if(c.price&&c.price.buy&&c.price.buy.price)p=c.price.buy.price.value||0;var pm=0;if(c.price&&c.price.buy&&c.price.buy.priceBySquareMeter)pm=Math.round(c.price.buy.priceBySquareMeter.value||0);var sf=c.space||0,lo=c.localisation||{},cp=lo.codePostal||'',vi=lo.nomVille||'',ad=lo.adresse||'',qt=lo.nomQuartier||'',dp=lo.codeDepartement||'',ge=lo.geoLocation||{},u=c.detailUrl||'';if(u&&u.indexOf('http')<0)u='https://www.seloger-bureaux-commerces.com'+u;n++;a.push({source:'seloger-bc',url:u,date_scrape:new Date().toISOString().split('T')[0],localisation:{adresse:ad,code_postal:cp,commune:vi,departement:dp,latitude:ge.latitude||null,longitude:ge.longitude||null},bien:{type:'bureaux',surface_m2:sf},financier:{prix_affiche:p,prix_m2:pm||Math.round(p/Math.max(sf,1))},annonce:{titre:(c.cardTitle||'Bureau')+' '+sf+'m2 '+vi+(qt?' - '+qt:''),description:(c.cardDescription||'').substring(0,300)}})});sessionStorage.setItem('_SL',JSON.stringify(a));sessionStorage.setItem('_SL_seen',JSON.stringify(s));var b=document.getElementById('_sl_bar');if(!b){b=document.createElement('div');b.id='_sl_bar';b.style.cssText='position:fixed;top:0;left:0;right:0;z-index:99999;background:#1e3a5f;color:white;padding:10px 20px;display:flex;align-items:center;gap:15px;font-family:Arial;font-size:14px';document.body.appendChild(b)}b.innerHTML='<b>SeLoger:</b> +'+n+' | <b>Total: '+a.length+'/'+pg.classifiedCount+'</b> | Page '+pg.currentPage+' <button onclick=\\'navigator.clipboard.writeText(sessionStorage.getItem(\"_SL\")).then(function(){this.textContent=\"Copie!\"},function(){prompt(\"Copie:\",sessionStorage.getItem(\"_SL\"))})\\' style=\"margin-left:auto;padding:6px 16px;background:#e11d48;color:white;border:none;border-radius:6px;cursor:pointer;font-weight:bold\">COPIER JSON</button>'})()`;
+
+document.getElementById('bookmarklet').href = code;
+</script>
+</body></html>
