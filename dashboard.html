@@ -315,7 +315,7 @@ a:hover{text-decoration:underline}
   </div>
   <div class="step">
     <span class="step-num">5</span><b>Colle le JSON ici :</b>
-    <textarea id="slJsonInput" placeholder='Colle le JSON ici (commence par [{"source":"seloger-bc",...}])'></textarea>
+    <textarea id="slJsonInput" placeholder='Colle un ou plusieurs JSON ici. Tu peux coller plusieurs sessions a la suite — les doublons seront ignores.'></textarea>
   </div>
   <div class="modal-btns">
     <button style="background:var(--surface2);color:var(--text2)" onclick="document.getElementById('importSLModal').classList.remove('open')">Annuler</button>
@@ -1336,8 +1336,15 @@ document.getElementById("btnImportSLGo").addEventListener("click",async function
   if(!raw){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Colle le JSON d'abord";return}
 
   try{
-    var deals=JSON.parse(raw);
-    if(!Array.isArray(deals)){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Le JSON doit etre un array [...]";return}
+    // Accepter plusieurs JSON colles (separes par ] [ ou retour a la ligne)
+    var deals=[];
+    var chunks=raw.replace(/\]\s*\[/g,"],\u0000[").split("\u0000");
+    for(var ci=0;ci<chunks.length;ci++){
+      var chunk=chunks[ci].trim();
+      if(!chunk)continue;
+      try{var parsed=JSON.parse(chunk);if(Array.isArray(parsed))deals=deals.concat(parsed);else deals.push(parsed);}catch(e2){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Erreur JSON bloc "+(ci+1)+": "+e2.message;return}
+    }
+    if(!deals.length){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Aucun bien trouve dans le JSON";return}
 
     st.textContent=deals.length+" biens parses. Dedoublonnage...";
 
