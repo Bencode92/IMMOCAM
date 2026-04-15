@@ -93,8 +93,8 @@ header .meta .dot{width:6px;height:6px;border-radius:50%;display:inline-block;ma
 /* DRAWER */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.15);backdrop-filter:blur(2px);z-index:100;opacity:0;pointer-events:none;transition:opacity .3s}
 .overlay.open{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);width:720px;max-width:95vw;max-height:90vh;background:var(--surface);border-radius:16px;z-index:101;display:none;flex-direction:column;transition:transform .3s ease,opacity .3s ease;box-shadow:0 25px 60px rgba(0,0,0,.2);opacity:0;perspective:1200px}
-.drawer.open{display:flex;transform:translate(-50%,-50%) scale(1);opacity:1}
+.drawer{position:fixed;top:2vh;right:-720px;width:680px;max-width:45vw;max-height:96vh;background:#f0f5fa;border-radius:16px;z-index:101;display:flex;flex-direction:column;transition:right .35s ease;box-shadow:-8px 0 40px rgba(0,0,0,.15)}
+.drawer.open{right:1vw}
 .drawer-head{padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
 .drawer-head h2{font-size:1rem;font-weight:700;color:var(--accent)}
 .drawer-head button{background:none;border:none;color:var(--text3);font-size:1.4rem;cursor:pointer;padding:.25rem;transition:color .15s}
