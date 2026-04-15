@@ -557,6 +557,7 @@ window.openDw=key=>{
   document.getElementById("dwTitle").textContent=d.annonce?.titre||"D\u00E9tail";
   document.getElementById("dwFlip").textContent="\u21C4";
   const s=d.scoring||{},f=d.financier||{},l=d.locatif||{},b=d.bien||{},hi=d._prix_historique||[],loc=d.localisation||{};
+  const surf=b.surface_m2||0,pm2=f.prix_m2||0;
   const det=s.scores_detail||{};
   const bFill=(v,c)=>`<div class="bar"><div class="bar-fill" style="width:${v}%;background:${c}"></div></div>`;
   const bCol=v=>v>=70?"var(--green)":v>=40?"var(--yellow)":"var(--red)";
