@@ -320,7 +320,12 @@ async function init(){
     const r=await fetch(RAW+"/data/deals_db.json");
     if(r.ok){const j=await r.json();D=j.deals||{};DB_META=j.meta||{};}
   }catch(e){}
-  try{const r=await fetch(RAW_D+"/output/referentiel_bureaux.json");if(r.ok)REF=await r.json();}catch(e){}
+  try{
+    // D'abord IMMOCAM (nouveau format CBRE), sinon DVFMAJ (ancien)
+    var rr=await fetch(RAW+"/data/referentiel_bureaux.json");
+    if(rr.ok)REF=await rr.json();
+    if(!REF||!REF.communes){var rr2=await fetch(RAW_D+"/output/referentiel_bureaux.json");if(rr2.ok)REF=await rr2.json();}
+  }catch(e){}
   if(!Object.keys(D).length)loadDemo();
 
   // Auto-scoring avec referentiel intégré
