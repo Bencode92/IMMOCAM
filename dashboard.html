@@ -660,7 +660,7 @@ window.openDw=key=>{
     <div class="section" style="margin-top:.6rem" onclick="event.stopPropagation()">
       <h3>Tags</h3>
       <div id="dwTags" style="display:flex;flex-wrap:wrap;gap:2px">
-        ${TAGS_PREDEF.map(t=>'<span class="deal-tag'+((d._tags||[]).includes(t)?' active':'')+'" onclick="toggleTag(this,\''+t.replace(/'/g,"\\'")+'\')">'+t+'</span>').join("")}
+        ${(function(){var allT=TAGS_PREDEF.slice();(d._tags||[]).forEach(function(t){if(!allT.includes(t))allT.push(t)});return allT.map(function(t){return'<span class="deal-tag'+((d._tags||[]).includes(t)?' active':'')+'" onclick="toggleTag(this,\''+t.replace(/'/g,"\\'")+'\')">'+t+'</span>'}).join("")})()}
       </div>
       <div style="margin-top:6px;display:flex;gap:4px">
         <input id="dwNewTag" placeholder="Nouveau tag..." style="flex:1;padding:3px 8px;border:1px solid var(--border);border-radius:8px;font-size:.7rem;outline:none">
