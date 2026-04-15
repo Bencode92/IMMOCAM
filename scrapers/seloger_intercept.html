@@ -4,11 +4,11 @@
 <h2>SeLoger Bureaux Commerces — Scraper</h2>
 
 <p>1. Ouvre <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/paris" target="_blank" style="color:#4af">SeLoger — Paris</a> ou <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/hauts-de-seine" target="_blank" style="color:#4af">92</a></p>
-<p>2. F12 Console, colle le script, Entree → extrait ~60 biens</p>
-<p>3. Clique page suivante sur le site, attends le chargement</p>
-<p>4. <b>Fleche haut</b> dans la console (rappelle le script) + Entree</p>
-<p>5. Repete jusqu'a satisfaction</p>
-<p>6. <code>copy(JSON.stringify(window._SL))</code></p>
+<p>2. F12 Console, colle le script, Entree</p>
+<p>3. Clique page suivante, attends le chargement</p>
+<p>4. <b>Fleche haut</b> dans la console + Entree</p>
+<p>5. Repete. Les donnees s'accumulent entre les pages.</p>
+<p>6. <code>copy(sessionStorage.getItem("_SL"))</code></p>
 <br>
 
 <button onclick="copyScraper()" style="padding:20px 40px;font-size:18px;background:#e11d48;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER LE SCRIPT</button>
@@ -17,9 +17,9 @@
 
 <script>
 var lines = [
-'if(!window._SL)window._SL=[];',
-'if(!window._SL_seen)window._SL_seen={};',
 '(function(){',
+'var all=JSON.parse(sessionStorage.getItem("_SL")||"[]");',
+'var seen=JSON.parse(sessionStorage.getItem("_SL_seen")||"{}");',
 'var nd=document.getElementById("__NEXT_DATA__");',
 'if(!nd){console.log("Pas de __NEXT_DATA__");return}',
 'var data=JSON.parse(nd.textContent);',
@@ -29,9 +29,9 @@ var lines = [
 'var cls=sr.classifieds;',
 'var n=0;',
 'cls.forEach(function(c){',
-'  var id=c.idAnnonce||c.id||"";',
-'  if(window._SL_seen[id])return;',
-'  window._SL_seen[id]=1;',
+'  var id=""+(c.idAnnonce||c.id||"");',
+'  if(seen[id])return;',
+'  seen[id]=1;',
 '  var prix=0;',
 '  if(c.price&&c.price.buy&&c.price.buy.price)prix=c.price.buy.price.value||0;',
 '  var pm2=0;',
@@ -48,15 +48,17 @@ var lines = [
 '  if(url&&url.indexOf("http")<0)url="https://www.seloger-bureaux-commerces.com"+url;',
 '  var desc=c.cardDescription||c.description||"";',
 '  n++;',
-'  window._SL.push({source:"seloger-bc",url:url,date_scrape:new Date().toISOString().split("T")[0],',
+'  all.push({source:"seloger-bc",url:url,date_scrape:new Date().toISOString().split("T")[0],',
 '    localisation:{adresse:addr,code_postal:cp,commune:ville,departement:dept,latitude:geo.latitude||null,longitude:geo.longitude||null},',
 '    bien:{type:"bureaux",surface_m2:surf},',
 '    financier:{prix_affiche:prix,prix_m2:pm2||Math.round(prix/Math.max(surf,1))},',
 '    annonce:{titre:(c.cardTitle||"Bureau")+" "+surf+"m2 "+ville+(quartier?" - "+quartier:""),description:desc.substring(0,300)}});',
 '});',
-'console.log("+" +n+" nouveaux | Total: "+window._SL.length+"/"+pg.classifiedCount+" | Page "+pg.currentPage+"/"+Math.ceil((pg.classifiedCount||1)/60));',
-'console.log("-> Page suivante sur le site, puis fleche haut + Entree");',
-'console.log("-> Fini? copy(JSON.stringify(window._SL))");',
+'sessionStorage.setItem("_SL",JSON.stringify(all));',
+'sessionStorage.setItem("_SL_seen",JSON.stringify(seen));',
+'console.log("+"+n+" | Total: "+all.length+"/"+pg.classifiedCount+" | Page "+pg.currentPage);',
+'console.log("-> Page suivante, fleche haut, Entree");',
+'console.log("-> Fini? copy(sessionStorage.getItem(\\"_SL\\"))");',
 '})();'
 ];
 var scrapeCode = lines.join("");
