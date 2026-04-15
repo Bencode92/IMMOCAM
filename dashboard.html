@@ -300,18 +300,23 @@ a:hover{text-decoration:underline}
 <div class="modal">
   <h2>Import SeLoger Bureaux</h2>
   <div class="step">
-    <span class="step-num">1</span><b>Ouvre SeLoger Bureaux</b>
-    <p>Va sur <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/paris" target="_blank" style="color:var(--accent)">SeLoger — bureaux vente Paris</a> ou <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/hauts-de-seine" target="_blank" style="color:var(--accent)">Hauts-de-Seine</a></p>
+    <span class="step-num">1</span><b>Ouvre SeLoger Bureaux page 1</b>
+    <p>Va sur <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/paris" target="_blank" style="color:var(--accent)">SeLoger — Paris</a> ou <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/hauts-de-seine" target="_blank" style="color:var(--accent)">92</a></p>
   </div>
   <div class="step">
-    <span class="step-num">2</span><b>Copie le script depuis la page helper</b>
-    <p>Ouvre <a href="https://bencode92.github.io/IMMOCAM/scrapers/seloger_intercept.html" target="_blank" style="color:var(--accent)">la page helper SeLoger</a>, copie le scraper (bouton bleu)</p>
+    <span class="step-num">2</span><b>Copie le script</b>
+    <p>Ouvre <a href="https://bencode92.github.io/IMMOCAM/scrapers/seloger_intercept.html" target="_blank" style="color:var(--accent)">la page helper SeLoger</a>, copie le script (bouton rouge)</p>
   </div>
   <div class="step">
-    <span class="step-num">3</span><b>Colle dans la console SeLoger (F12), attends "FINI!"</b>
+    <span class="step-num">3</span><b>F12 Console, colle le script, Entree</b>
+    <p>Tu vois "+60 | Total: 60/2983 | Page 1"</p>
   </div>
   <div class="step">
-    <span class="step-num">4</span><b>Tape <code style="display:inline;padding:.2rem .4rem">copy(JSON.stringify(window._SL))</code></b>
+    <span class="step-num">4</span><b>Page suivante : change le numero dans l'URL</b>
+    <p>Dans la barre d'adresse, change <code style="display:inline;padding:.1rem .3rem">?page=2</code> puis <b>Entree</b> (rechargement complet). Recolle le script. Les donnees s'accumulent.</p>
+  </div>
+  <div class="step">
+    <span class="step-num">5</span><b>Quand fini, tape : <code style="display:inline;padding:.2rem .4rem">copy(sessionStorage.getItem("_SL"))</code></b>
   </div>
   <div class="step">
     <span class="step-num">5</span><b>Colle le JSON ici :</b>
