@@ -831,6 +831,7 @@ window.toggleTag=function(el,tag){
   var idx=d._tags.indexOf(tag);
   if(idx>-1){d._tags.splice(idx,1);el.classList.remove("active");}
   else{d._tags.push(tag);el.classList.add("active");}
+  refreshTagFilter();
 };
 window.addCustomTag=function(){
   var inp=document.getElementById("dwNewTag");
@@ -840,7 +841,6 @@ window.addCustomTag=function(){
   if(!d._tags)d._tags=[];
   if(!d._tags.includes(tag)){
     d._tags.push(tag);
-    // Ajouter visuellement
     var span=document.createElement("span");
     span.className="deal-tag active";
     span.textContent=tag;
@@ -848,7 +848,18 @@ window.addCustomTag=function(){
     document.getElementById("dwTags").appendChild(span);
   }
   inp.value="";
+  refreshTagFilter();
 };
+
+function refreshTagFilter(){
+  var fT=document.getElementById("fTag");
+  var cur=fT.value;
+  var tt=new Set;
+  for(var k in D){(D[k]._tags||[]).forEach(function(t){tt.add(t)})}
+  fT.innerHTML='<option value="">Tous tags</option>';
+  [...tt].sort().forEach(function(s){var o=document.createElement("option");o.value=s;o.textContent=s;fT.appendChild(o)});
+  fT.value=cur;
+}
 
 // ===================================================================
 // SCORING AUTO — utilise le referentiel DVF/CBRE/Cushman par commune
