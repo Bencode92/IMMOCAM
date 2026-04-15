@@ -24,6 +24,7 @@ from loopnet import LoopNetScraper
 from bnppre import BNPPREScraper
 from arthurloyd import ArthurLoydScraper
 from licitor import LicitorScraper
+from espaces_atypiques import EspacesAtypiquesScraper
 from delta import compute_delta, merge_into_db, deal_key
 from scorer import load_referentiel, find_commune_ref, score_deal, get_segment
 from geocoder import geocode_all_deals
@@ -40,6 +41,7 @@ SCRAPERS = {
     "bnppre": BNPPREScraper,
     "arthurloyd": ArthurLoydScraper,
     "licitor": LicitorScraper,
+    "espaces-atypiques": EspacesAtypiquesScraper,
 }
 
 

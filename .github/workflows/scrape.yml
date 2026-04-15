@@ -30,7 +30,7 @@ jobs:
       - name: Run scrape pipeline
         run: |
           python run_scrape.py \
-            --sites bureauxlocaux geolocaux investisseur-immo bnppre arthurloyd licitor \
+            --sites bureauxlocaux geolocaux investisseur-immo bnppre arthurloyd licitor espaces-atypiques \
             --depts 75 92 \
             --surface 300 700 \
             --prix 5000000
