@@ -790,12 +790,15 @@ function findCommuneRef(commune,cp){
   if(!REF||!REF.communes)return null;
   // Essayer différentes variantes du nom de commune
   var variants=[];
-  if(cp&&cp.startsWith("75")){
+  if(cp&&cp.startsWith("75")&&cp.length===5){
     var arr=parseInt(cp.substring(3));
     if(arr>=1&&arr<=20){
+      var suf=arr===1?"er":"e";
+      variants.push("Paris "+arr+suf+" Arrondissement");
+      variants.push("PARIS "+arr+(arr===1?"ER":"E")+" ARRONDISSEMENT");
       variants.push("Paris "+arr+"e Arrondissement");
       variants.push("Paris "+arr+"e");
-      variants.push("PARIS "+arr+"E ARRONDISSEMENT");
+      variants.push("Paris "+arr+suf);
     }
   }
   if(commune)variants.push(commune);
