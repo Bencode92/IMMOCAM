@@ -854,20 +854,20 @@ function mkMailto(d){
   var pm2=fin.prix_m2?fin.prix_m2.toLocaleString("fr")+"\u20AC/m\u00B2":"?";
   var url=d.url||"";
 
-  var subject=encodeURIComponent("Demande d'information - Bureaux "+surf+"m\u00B2 "+commune+" "+cp);
+  var subject=encodeURIComponent("Recherche de bureaux - "+surf+"m\u00B2 "+commune+" "+cp);
   var body=encodeURIComponent(
     "Bonjour,\n\n"+
-    "Je me permets de vous contacter au sujet du bien suivant :\n\n"+
+    "Notre entreprise est actuellement \u00E0 la recherche de locaux de bureaux \u00E0 l'achat en Ile-de-France, et votre annonce a retenu notre attention :\n\n"+
     "Adresse : "+addr+" "+cp+" "+commune+"\n"+
     "Surface : "+surf+" m\u00B2\n"+
-    "Prix affich\u00E9 : "+prix+" ("+pm2+")\n"+
-    (url?"Annonce : "+url+"\n":"")+
-    "\nJe souhaiterais obtenir des informations compl\u00E9mentaires :\n"+
-    "- Disponibilit\u00E9 du bien\n"+
-    "- DPE / audit \u00E9nerg\u00E9tique\n"+
-    "- Montant des charges\n"+
-    "- Possibilit\u00E9 de visite\n\n"+
-    "Je suis investisseur et recherche des bureaux de 300 \u00E0 700m\u00B2 en Ile-de-France.\n\n"+
+    (url?"R\u00E9f\u00E9rence : "+url+"\n":"")+
+    "\nSerait-il possible d'obtenir des informations compl\u00E9mentaires sur ce bien ?\n"+
+    "- Disponibilit\u00E9 et d\u00E9lai d'entr\u00E9e dans les lieux\n"+
+    "- Diagnostic \u00E9nerg\u00E9tique (DPE)\n"+
+    "- Montant des charges et taxe fonci\u00E8re\n"+
+    "- Organisation d'une visite\n\n"+
+    "Nous recherchons des bureaux entre 300 et 700m\u00B2 dans Paris et les Hauts-de-Seine. Si vous disposez d'\u00E9galement d'autres biens similaires, n'h\u00E9sitez pas \u00E0 nous les proposer.\n\n"+
+    "Je reste disponible pour \u00E9changer \u00E0 votre convenance.\n\n"+
     "Cordialement"
   );
   return"mailto:?subject="+subject+"&body="+body;
