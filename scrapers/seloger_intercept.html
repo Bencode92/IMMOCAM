@@ -3,144 +3,85 @@
 <body style="font-family:Arial;padding:20px;background:#111;color:#eee">
 <h2>SeLoger Bureaux Commerces — Scraper</h2>
 
-<h3>Etape 1 : Explorer la structure</h3>
-<p>Ouvre <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/paris" target="_blank" style="color:#4af">SeLoger Bureaux — Paris</a> ou <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/hauts-de-seine" target="_blank" style="color:#4af">Hauts-de-Seine</a></p>
-<p>Puis copie le script ci-dessous dans la console (F12) :</p>
+<p>1. Ouvre <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/paris" target="_blank" style="color:#4af">SeLoger Bureaux — Paris</a> ou <a href="https://www.seloger-bureaux-commerces.com/achat/bureau/ile-de-france/hauts-de-seine" target="_blank" style="color:#4af">Hauts-de-Seine</a></p>
+<p>2. Copie le script ci-dessous (F12 Console, Ctrl+V, Entree)</p>
+<p>3. Le script extrait les donnees de la page courante via __NEXT_DATA__</p>
+<p>4. <b>Manuellement</b>, clique page suivante, attends 5-8 sec, puis recolle le script</p>
+<p>5. Quand fini: <code>copy(JSON.stringify(window._SL))</code></p>
 <br>
 
-<button onclick="copyExplore()" style="padding:15px 30px;font-size:16px;background:#f60;color:#fff;border:none;border-radius:10px;cursor:pointer">1. COPIER EXPLORATEUR</button>
-<p id="status1"></p>
-<textarea id="code1" style="width:100%;height:120px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
-
-<br><br>
-<h3>Etape 2 : Scraper toutes les pages</h3>
-<p>Une fois que l'explorateur a marche, copie le scraper complet :</p>
-
-<button onclick="copyScraper()" style="padding:15px 30px;font-size:16px;background:#0066cc;color:#fff;border:none;border-radius:10px;cursor:pointer">2. COPIER SCRAPER</button>
-<p id="status2"></p>
-<textarea id="code2" style="width:100%;height:200px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
+<button onclick="copyScraper()" style="padding:20px 40px;font-size:18px;background:#e11d48;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER LE SCRIPT</button>
+<p id="status"></p>
+<textarea id="code" style="width:100%;height:250px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
 
 <script>
-// Script 1: Explorer la structure du DOM
-var exploreCode = [
-  'console.log("=== SELOGER EXPLORER ===");',
-  'console.log("Body text (500 chars):", document.body.innerText.substring(0,500));',
-  'console.log("---");',
-  'var cards=document.querySelectorAll("[data-test=\\"sl.card-container\\"],[data-testid=\\"listing-card\\"]");',
-  'console.log("Cards data-test:", cards.length);',
-  'if(cards.length===0){cards=document.querySelectorAll("article,[class*=Card],[class*=card],[class*=listing]");console.log("Cards fallback:", cards.length)}',
-  'if(cards.length>0){',
-  '  var c=cards[0];',
-  '  console.log("Card 0 HTML (500):", c.innerHTML.substring(0,500));',
-  '  console.log("Card 0 text:", c.innerText.substring(0,300));',
+var lines = [
+  'if(!window._SL)window._SL=[];',
+  'if(!window._SL_seen)window._SL_seen={};',
+  '(function(){',
+  'var nd=document.getElementById("__NEXT_DATA__");',
+  'if(!nd){console.log("Pas de __NEXT_DATA__");return}',
+  'var data=JSON.parse(nd.textContent);',
+  'var pp=data.props&&data.props.pageProps?data.props.pageProps:{};',
+  'var sr=pp.searchResponse||pp.initialData||{};',
+  'var listings=sr.listings||sr.items||sr.results||[];',
+  'if(!listings.length){',
+  '  for(var k in sr){if(Array.isArray(sr[k])&&sr[k].length>0){listings=sr[k];console.log("Found in key: "+k);break}}',
   '}',
-  'var prices=document.querySelectorAll("[data-test=\\"sl.price-label\\"],[class*=Price],[class*=price]");',
-  'console.log("Price elements:", prices.length);',
-  'if(prices.length>0)console.log("Price 0:", prices[0].innerText);',
-  'var nextData=document.getElementById("__NEXT_DATA__");',
-  'if(nextData){',
-  '  var nd=JSON.parse(nextData.textContent);',
-  '  console.log("NEXT_DATA keys:", Object.keys(nd));',
-  '  var pp=nd.props&&nd.props.pageProps?nd.props.pageProps:{};',
-  '  console.log("pageProps keys:", Object.keys(pp));',
-  '  if(pp.initialData)console.log("initialData keys:", Object.keys(pp.initialData));',
-  '  if(pp.listings)console.log("listings:", pp.listings.length);',
-  '}',
-  'var initData=null;',
-  'document.querySelectorAll("script").forEach(function(s){',
-  '  var t=s.textContent||"";',
-  '  if(t.indexOf("initialData")>-1||t.indexOf("window[\\"initialData\\"]")>-1){',
-  '    console.log("Found initialData script (200 chars):", t.substring(0,200));',
-  '    var m=t.match(/window\\["initialData"\\]\\s*=\\s*JSON\\.parse\\("(.+?)"\\)/);',
-  '    if(m){try{initData=JSON.parse(m[1].replace(/\\\\\\\\/g,"\\\\").replace(/\\\\"/g,"\\""));console.log("initialData parsed! Keys:",Object.keys(initData))}catch(e){console.log("Parse error:",e)}}',
-  '  }',
+  'if(!listings.length){console.log("searchResponse keys:",Object.keys(sr));console.log("Dump (500):",JSON.stringify(sr).substring(0,500));return}',
+  'var n=0;',
+  'listings.forEach(function(it){',
+  '  var id=it.id||it.listingId||it.classifiedId||"";',
+  '  if(window._SL_seen[id])return;',
+  '  window._SL_seen[id]=1;',
+  '  var prix=0;',
+  '  if(it.price&&it.price.value)prix=it.price.value;',
+  '  else if(it.price&&typeof it.price==="number")prix=it.price;',
+  '  else if(it.rawData&&it.rawData.price)prix=it.rawData.price;',
+  '  var surf=0;',
+  '  if(it.rawData&&it.rawData.surface)surf=it.rawData.surface;',
+  '  else if(it.surface)surf=it.surface;',
+  '  else if(it.livingArea)surf=it.livingArea;',
+  '  var cp="";',
+  '  if(it.location&&it.location.zipCode)cp=it.location.zipCode;',
+  '  else if(it.zipCode)cp=it.zipCode;',
+  '  var ville="";',
+  '  if(it.location&&it.location.city)ville=it.location.city;',
+  '  else if(it.city)ville=it.city;',
+  '  var addr="";',
+  '  if(it.location&&it.location.address)addr=it.location.address;',
+  '  var dpe="";',
+  '  if(it.energyClass)dpe=it.energyClass;',
+  '  else if(it.rawData&&it.rawData.energyClass)dpe=it.rawData.energyClass;',
+  '  var url="";',
+  '  if(it.permalink)url=it.permalink;',
+  '  else if(it.classifiedURL)url=it.classifiedURL;',
+  '  else if(it.url)url=it.url;',
+  '  var titre="";',
+  '  if(it.mainDescription&&it.mainDescription.headline)titre=it.mainDescription.headline;',
+  '  else if(it.title)titre=it.title;',
+  '  var dept=cp?cp.substring(0,2):"";',
+  '  n++;',
+  '  window._SL.push({source:"seloger-bc",url:url,date_scrape:new Date().toISOString().split("T")[0],',
+  '    localisation:{adresse:addr,code_postal:cp,commune:ville,departement:dept},',
+  '    bien:{type:"bureaux",surface_m2:surf,dpe:dpe},',
+  '    financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},',
+  '    annonce:{titre:titre||("Bureaux "+surf+"m2 "+ville),description:""}});',
   '});',
-  'console.log("=== FIN EXPLORER ===");'
-].join("");
+  'console.log(n+" nouveaux cette page (total: "+window._SL.length+")");',
+  'console.table(window._SL.slice(-5).map(function(x){return{surf:x.bien.surface_m2+"m2",prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":(x.financier.prix_affiche/1e3).toFixed(0)+"K",pm2:x.financier.prix_m2,cp:x.localisation.code_postal,ville:x.localisation.commune}}));',
+  'console.log("-> Clique page suivante, attends 5-8 sec, puis recolle ce script");',
+  'console.log("-> Quand fini: copy(JSON.stringify(window._SL))");',
+  '})();'
+];
+var scrapeCode = lines.join("");
+document.getElementById("code").value = scrapeCode;
 
-// Script 2: Scraper DOM
-var scraperCode = [
-  'var d=[],seen={},pg=1;',
-  'function scrapePage(){',
-  '  var txt=document.body.innerText;',
-  '  var blocks=txt.split(/(?=\\d+\\s*\\u20ac)/);',
-  '  console.log("Blocks bruts:", blocks.length);',
-  '  var cards=document.querySelectorAll("[data-test=\\"sl.card-container\\"],[data-testid=\\"listing-card\\"],article");',
-  '  if(cards.length===0)cards=document.querySelectorAll("a[href*=\\"/annonce/\\"],a[href*=\\"/achat/\\"]");',
-  '  var n=0;',
-  '  cards.forEach(function(c){',
-  '    var txt=c.innerText||"";',
-  '    var link=c.tagName==="A"?c:c.querySelector("a");',
-  '    var url=link?link.href:"";',
-  '    if(!url||seen[url])return;',
-  '    seen[url]=1;',
-  '    var surfM=txt.match(/(\\d[\\d\\s.,]+)\\s*m\\u00b2/i);',
-  '    var prixM=txt.match(/(\\d[\\d\\s.,]+)\\s*\\u20ac/i);',
-  '    var surf=surfM?parseFloat(surfM[1].replace(/[\\s.]/g,"").replace(",",".")):0;',
-  '    var prix=prixM?parseFloat(prixM[1].replace(/[\\s.]/g,"").replace(",",".")):0;',
-  '    if(prix>0&&prix<1000&&surf>0)prix=prix*surf;',
-  '    var cpM=txt.match(/(\\d{5})/);',
-  '    var cp=cpM?cpM[1]:"";',
-  '    var villeM=txt.match(/(?:Paris|Boulogne|Levallois|Neuilly|Issy|Courbevoie|Puteaux|Nanterre|Clichy|Montrouge|Rueil|Suresnes|Pantin|Colombes)[\\w\\s-]*/i);',
-  '    var ville=villeM?villeM[0].trim():"";',
-  '    if(surf<10&&prix<10000)return;',
-  '    n++;',
-  '    d.push({source:"seloger-bc",url:url,date_scrape:new Date().toISOString().split("T")[0],',
-  '      localisation:{adresse:"",code_postal:cp,commune:ville,departement:cp.substring(0,2)||"75"},',
-  '      bien:{type:"bureaux",surface_m2:surf},',
-  '      financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},',
-  '      annonce:{titre:txt.substring(0,80).trim(),description:""}});',
-  '  });',
-  '  console.log("Page "+pg+": "+n+" biens (total: "+d.length+")");',
-  '  return n;',
-  '}',
-  'function clickNext(){',
-  '  var btns=document.querySelectorAll("a[href*=\\"page\\"],button,[class*=aginat],[aria-label*=uivant],[aria-label*=ext]");',
-  '  for(var i=0;i<btns.length;i++){',
-  '    var t=(btns[i].innerText||"").trim();',
-  '    var ar=btns[i].getAttribute("aria-label")||"";',
-  '    if(t===""+(pg+1)||ar.toLowerCase().indexOf("next")>-1||ar.toLowerCase().indexOf("suivant")>-1||t==="Suivant"||t===">"){btns[i].click();return true}',
-  '  }',
-  '  return false;',
-  '}',
-  'async function run(){',
-  '  console.log("SeLoger Bureaux scraper...");',
-  '  scrapePage();',
-  '  for(var i=0;i<50;i++){',
-  '    pg++;',
-  '    var ok=clickNext();',
-  '    if(!ok){console.log("Pas de page suivante");break}',
-  '    await new Promise(function(r){setTimeout(r,3000)});',
-  '    scrapePage();',
-  '  }',
-  '  console.log("FINI! "+d.length+" biens");',
-  '  console.table(d.slice(0,20).map(function(x){return{',
-  '    surf:x.bien.surface_m2+"m2",',
-  '    prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":(x.financier.prix_affiche/1e3).toFixed(0)+"K",',
-  '    pm2:x.financier.prix_m2,',
-  '    cp:x.localisation.code_postal,',
-  '    ville:x.localisation.commune}}));',
-  '  window._SL=d;',
-  '  console.log("Tape: copy(JSON.stringify(window._SL))");',
-  '}',
-  'run();'
-].join("");
-
-document.getElementById("code1").value = exploreCode;
-document.getElementById("code2").value = scraperCode;
-
-function copyExplore(){
-  navigator.clipboard.writeText(exploreCode).then(function(){
-    document.getElementById("status1").innerHTML = "<b style='color:#0f0'>COPIE! Va sur SeLoger, F12, Ctrl+V, Entree</b>";
-  }).catch(function(){
-    document.getElementById("status1").innerHTML = "<b style='color:red'>Selectionne le texte et copie manuellement</b>";
-  });
-}
 function copyScraper(){
-  navigator.clipboard.writeText(scraperCode).then(function(){
-    document.getElementById("status2").innerHTML = "<b style='color:#0f0'>COPIE! Va sur SeLoger, F12, Ctrl+V, Entree</b>";
+  navigator.clipboard.writeText(scrapeCode).then(function(){
+    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur SeLoger, F12, Ctrl+V, Entree. Puis page suivante + recolle.</b>";
   }).catch(function(){
-    document.getElementById("status2").innerHTML = "<b style='color:red'>Selectionne le texte et copie manuellement</b>";
+    document.getElementById("status").innerHTML = "<b style='color:red'>Selectionne le texte et copie manuellement</b>";
   });
 }
 </script>
