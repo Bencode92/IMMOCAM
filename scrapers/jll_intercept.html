@@ -1,82 +1,57 @@
 <!DOCTYPE html>
 <html><head><title>JLL Scraper</title></head>
 <body style="font-family:Arial;padding:20px;background:#111;color:#eee">
-<h2>JLL Scraper - Bureaux IDF</h2>
+<h2>JLL Scraper - Bureaux IDF (Auto)</h2>
 <p>1. Ouvre <a href="https://immobilier.jll.fr/search?propertyTypes=office&tenureTypes=sale&regions=Ile-de-France" target="_blank" style="color:#4af">immobilier.jll.fr (bureaux vente IDF)</a></p>
-<p>2. Clique le bouton ci-dessous pour copier le script</p>
-<p>3. Va sur l'onglet JLL, F12 Console, Ctrl+V, Entree</p>
-<p>4. Le script scrape toutes les pages automatiquement</p>
+<p>2. Copie le script, F12 Console, Ctrl+V, Entree</p>
+<p>3. Attends "TERMINE" puis <code>copy(JSON.stringify(window._JLL))</code></p>
 <br>
-<button onclick="copyCode()" style="padding:20px 40px;font-size:20px;background:#0066cc;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER LE SCRIPT</button>
-<br><br>
+<button onclick="copyCode()" style="padding:20px 40px;font-size:18px;background:#0066cc;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER LE SCRIPT</button>
 <p id="status"></p>
 <textarea id="code" style="width:100%;height:200px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
 <script>
 var lines = [
-'var d=[],seen={},pg=1;',
-'function scrapePage(){',
-'var txt=document.body.innerText;',
-'var blocks=txt.split("BUREAUX");',
-'var n=0;',
-'for(var i=1;i<blocks.length;i++){',
-'var b=blocks[i];',
-'var surfM=b.match(/(\\d[\\d\\s]+)\\s*m/);',
-'var pxM=b.match(/(\\d[\\d\\s.,]+)\\s*\\u20ac\\s*\\/\\s*m/);',
-'var cpM=b.match(/([A-Z][A-Z\\s-]+),\\s*(\\d{5})/);',
-'var surf=surfM?parseFloat(surfM[1].replace(/\\s/g,"")):0;',
-'var pxm2=pxM?parseFloat(pxM[1].replace(/\\s/g,"").replace(",",".")):0;',
-'var prix=Math.round(pxm2*surf);',
-'var cp=cpM?cpM[2]:"";',
-'var ville=cpM?cpM[1].trim():"";',
-'var addrLines=b.trim().split("\\n");',
-'var addr="";',
-'for(var j=0;j<addrLines.length&&j<5;j++){',
-'var line=addrLines[j].trim();',
-'if(line.match(/^\\d+[\\s,-]/)&&!line.match(/\\u20ac/)&&!line.match(/m\\u00b2/)){addr=line;break}',
-'}',
-'if(surf<50)continue;',
-'var key=cp+"-"+surf+"-"+prix;',
-'if(seen[key])continue;',
-'seen[key]=1;n++;',
-'d.push({source:"jll",url:"",date_scrape:new Date().toISOString().split("T")[0],',
-'localisation:{adresse:addr,code_postal:cp,commune:ville,departement:cp.substring(0,2)||"75"},',
-'bien:{type:"bureaux",surface_m2:surf},',
-'financier:{prix_affiche:prix,prix_m2:Math.round(pxm2)},',
-'annonce:{titre:"Bureaux "+surf+"m2 "+ville,description:""}});',
-'}',
-'console.log("Page "+pg+": "+n+" biens (total: "+d.length+")");',
-'return n;',
+'var d=[],pg=0;',
+'var gql="query SearchResults($market:String!,$language:String!,$propertyTypes:[String!],$tenureTypes:[String!],$regions:[String!],$skip:Int,$take:IntString,$orderBy:PropertiesOrderInput){properties(market:$market,language:$language,propertyTypes:$propertyTypes,tenureTypes:$tenureTypes,regions:$regions,skip:$skip,take:$take,orderBy:$orderBy){count items{id title address city postcode latitude longitude salePrice{amount currency unit}surfaceAreas{value{min max}unit}pageUrl district}}}";',
+'async function go(skip){',
+'var resp=await fetch("/api/graphql",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({operationName:"SearchResults",variables:{market:"fr",language:"fr",propertyTypes:["office"],tenureTypes:["sale"],regions:["Ile-de-France"],skip:skip,take:"50",orderBy:{field:"isJLLExclusive",direction:"desc",imagePriority:true,label:"sale"}},query:gql})});',
+'var data=await resp.json();',
+'if(!data.data||!data.data.properties)return{items:[],count:0};',
+'return data.data.properties;',
 '}',
 'async function run(){',
-'console.log("JLL scraper — bureaux IDF...");',
-'scrapePage();',
-'var maxPage=1;',
-'var pageLinks=document.querySelectorAll("a[href*=page]");',
-'pageLinks.forEach(function(a){var m=a.href.match(/page=(\\d+)/);if(m){var p=parseInt(m[1]);if(p>maxPage)maxPage=p}});',
-'console.log("Pages detectees: "+maxPage);',
-'for(var p=2;p<=maxPage;p++){',
-'pg=p;',
-'window.history.pushState({},"",window.location.pathname+"?tenureTypes=sale&propertyTypes=office&orderBy=desc&regions=Ile-de-France&page="+p+"&sortBy=isJLLExclusive");',
-'window.dispatchEvent(new PopStateEvent("popstate"));',
-'await new Promise(function(r){setTimeout(r,4000)});',
-'scrapePage();',
+'console.log("JLL scraper GraphQL — bureaux vente IDF...");',
+'var first=await go(0);',
+'var total=first.count||0;',
+'console.log("Total: "+total+" biens");',
+'function parse(items){',
+'items.forEach(function(it){',
+'var surf=0;',
+'if(it.surfaceAreas&&it.surfaceAreas.length>0){var sa=it.surfaceAreas[0].value;surf=sa?(sa.max||sa.min||0):0}',
+'var prix=0;',
+'if(it.salePrice&&it.salePrice.amount)prix=it.salePrice.amount;',
+'if(prix>0&&prix<50000&&surf>0)prix=prix*surf;',
+'var cp=it.postcode||"";',
+'var dept=cp.substring(0,2)||"75";',
+'d.push({source:"jll",url:"https://immobilier.jll.fr"+(it.pageUrl||""),date_scrape:new Date().toISOString().split("T")[0],',
+'localisation:{adresse:it.address||"",code_postal:cp,commune:it.city||"",departement:dept,latitude:it.latitude||null,longitude:it.longitude||null},',
+'bien:{type:"bureaux",surface_m2:surf},',
+'financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},',
+'annonce:{titre:(it.title||"Bureaux")+" "+(it.district||""),description:""}});',
+'});',
 '}',
-'if(maxPage<=1){',
-'console.log("Essai scroll pour charger plus...");',
-'for(var s=0;s<10;s++){',
-'window.scrollTo(0,document.body.scrollHeight);',
-'await new Promise(function(r){setTimeout(r,2000)});',
-'var before=d.length;scrapePage();',
-'if(d.length===before)break;',
+'parse(first.items||[]);',
+'console.log("Page 1: "+d.length+"/"+total);',
+'for(var skip=50;skip<total;skip+=50){',
+'await new Promise(function(r){setTimeout(r,1500)});',
+'var page=await go(skip);',
+'parse(page.items||[]);',
+'console.log("Skip "+skip+": "+d.length+"/"+total);',
 '}',
-'}',
-'console.log("FINI! "+d.length+" biens");',
-'console.table(d.slice(0,20).map(function(x){return{',
-'surf:x.bien.surface_m2+"m2",',
-'prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":(x.financier.prix_affiche/1e3).toFixed(0)+"K",',
-'pm2:x.financier.prix_m2,',
-'cp:x.localisation.code_postal,',
-'ville:x.localisation.commune}}));',
+'console.log("========================================");',
+'console.log("TERMINE! "+d.length+" biens JLL");',
+'console.log("========================================");',
+'console.table(d.slice(0,10).map(function(x){return{surf:x.bien.surface_m2+"m2",prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":x.financier.prix_affiche,pm2:x.financier.prix_m2,cp:x.localisation.code_postal,ville:x.localisation.commune}}));',
 'window._JLL=d;',
 'console.log("Tape: copy(JSON.stringify(window._JLL))");',
 '}',
@@ -86,9 +61,9 @@ var scrapeCode = lines.join("");
 document.getElementById("code").value = scrapeCode;
 function copyCode(){
   navigator.clipboard.writeText(scrapeCode).then(function(){
-    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur JLL, F12 Console, Ctrl+V, Entree</b>";
+    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur JLL, F12, Ctrl+V, Entree puis attends</b>";
   }).catch(function(){
-    document.getElementById("status").innerHTML = "<b style='color:red'>Selectionne le texte ci-dessous et copie manuellement</b>";
+    document.getElementById("status").innerHTML = "<b style='color:red'>Selectionne et copie manuellement</b>";
   });
 }
 </script>
