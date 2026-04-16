@@ -547,8 +547,6 @@ function filtered(){
     const sf=d.bien?.surface_m2||0;if(sf<sn||sf>sx)return false;
     if((d.financier?.prix_affiche||0)>px)return false;
     if(fb&&(d._prix_historique||[]).length<2)return false;
-    var fhc=document.getElementById("fHorsCarte").classList.contains("active");
-    if(fhc){var loc2=d.localisation||{};if(loc2.latitude&&loc2.longitude)return false;}
     if(fq){const t=(d.localisation?.commune+" "+d.localisation?.adresse+" "+d.annonce?.titre).toLowerCase();if(!t.includes(fq))return false;}
     return true;
   });
