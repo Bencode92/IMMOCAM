@@ -78,6 +78,7 @@ class GeolocauxScraper(BaseScraper):
                 if not annonces:
                     break
 
+                import re
                 for a in annonces:
                     surf = a.get("surface", 0) or 0
                     prix_global = a.get("tarif_mensuel_ou_global", 0) or 0
@@ -87,23 +88,59 @@ class GeolocauxScraper(BaseScraper):
                     if prix_global > prix_max or prix_global <= 0:
                         continue
 
-                    # Extraire ville/CP du titre ou URL
                     titre = a.get("titre", "")
                     url_path = a.get("url", "")
+
+                    # Extraire ville depuis le titre: "Vente bureaux Paris 8 - ..."
                     commune = ""
                     cp = ""
+                    dept = ""
 
-                    # L'URL contient souvent la ville: /annonce/bureaux-paris-3-700264.html
-                    import re
-                    cp_match = re.search(r"-(\d{5})", url_path)
+                    # Pattern titre: "Vente bureaux VILLE - description"
+                    tm = re.match(r'(?:Vente|Location)\s+bureaux\s+(.+?)(?:\s*[-–]|$)', titre)
+                    if tm:
+                        commune = tm.group(1).strip()
+
+                    # Extraire CP depuis l'URL: /annonce/...-75008-... ou ...-paris-8-...
+                    cp_match = re.search(r'-(\d{5})[-.]', url_path)
                     if cp_match:
                         cp = cp_match.group(1)
+                        dept = cp[:2]
+
+                    # Paris depuis titre ou URL
+                    paris_match = re.search(r'paris[\s-]*(\d+)', titre, re.IGNORECASE) or re.search(r'-paris-(\d+)-', url_path)
+                    if paris_match:
+                        arr = int(paris_match.group(1))
+                        commune = f"Paris {arr}e"
+                        cp = f"75{arr:03d}"
+                        dept = "75"
+                    elif re.match(r'(?:Vente|Location|Bureaux)[^-]*\bParis\b(?!\s*(?:Nord|Sud|Est|Ouest))', titre, re.IGNORECASE):
+                        # "Vente bureaux Paris" mais pas "proche Paris"
+                        if "proche" not in titre.lower() and "a " not in titre.lower()[:30]:
+                            commune = "Paris"
+                            dept = "75"
+
+                    # Villes 92 connues dans le titre
+                    if not dept:
+                        for v92 in ["Boulogne-Billancourt","Boulogne Billancourt","Issy-les-Moulineaux","Issy les Moulineaux",
+                                    "Levallois-Perret","Levallois Perret","Neuilly-sur-Seine","Neuilly sur Seine",
+                                    "Clichy","Montrouge","Courbevoie","Puteaux","Nanterre","Rueil-Malmaison","Rueil Malmaison",
+                                    "Suresnes","Malakoff","Vanves","Clamart","Colombes","Saint-Cloud","Saint Cloud",
+                                    "Meudon","Sèvres","Sevres","Châtillon","Chatillon","Asnières","Asnieres","Gennevilliers"]:
+                            if v92.lower() in titre.lower() or v92.lower() in url_path.lower():
+                                commune = v92.replace(" ","-") if "-" not in v92 else v92
+                                dept = "92"
+                                break
+
+                    # Filtrer: garder seulement 75 + 92
+                    if dept not in ("75", "92"):
+                        continue
 
                     deal = self.to_standard({
                         "url": "https://www.geolocaux.com" + url_path if url_path else "",
-                        "commune": commune or titre,
+                        "commune": commune,
                         "code_postal": cp,
-                        "departement": cp[:2] if cp else "",
+                        "departement": dept,
                         "surface": surf,
                         "prix": prix_global,
                         "titre": titre,
