@@ -1785,9 +1785,11 @@ async function geocode(addr,commune){
   return null;
 }
 
+var markersLayer=null;
 function renderMap(deals){
   initMap();
-  markers.forEach(m=>map.removeLayer(m));
+  if(markersLayer){map.removeLayer(markersLayer);}
+  markersLayer=L.layerGroup();
   markers=[];
   const bounds=[];
 
@@ -1844,7 +1846,7 @@ function renderMap(deals){
     const surf=bien.surface_m2||0;
     const grade=s.grade||"?";
     const suspect=d._ecart_marche!=null&&d._ecart_marche<-40;
-    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf,fin.prix_affiche,grade,suspect,approx)}).addTo(map);
+    const marker=L.marker([pos.lat,pos.lng],{icon:makeIcon(surf,fin.prix_affiche,grade,suspect,approx)}).addTo(markersLayer);
 
     const prixStr=fin.prix_affiche?(fin.prix_affiche/1e6).toFixed(2)+"M\u20AC":"—";
 
@@ -1862,7 +1864,8 @@ function renderMap(deals){
     markers.push(marker);
   }
 
-  if(bounds.length>0) map.fitBounds(bounds,{padding:[30,30]});
+  markersLayer.addTo(map);
+  if(bounds.length>0&&!map._immocamInit){map.fitBounds(bounds,{padding:[30,30]});map._immocamInit=true;}
   renderPOI();
 
   // Compteur honnete sur la carte
