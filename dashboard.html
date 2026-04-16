@@ -600,7 +600,9 @@ function render(){
   document.getElementById("sTotal").textContent=deals.length+" deals";
   document.getElementById("sNew").textContent=deals.filter(([,d])=>d._statut==="nouveau").length;
   document.getElementById("sDrop").textContent=deals.filter(([,d])=>(d._prix_historique||[]).length>=2).length;
-  if(view==="kanban")renderK(deals);else renderT(deals);
+  if(view==="kanban")renderK(deals);
+  else if(view==="tableau")renderT(deals);
+  else if(view==="carte")renderMap(deals);
 }
 
 function renderK(deals){
