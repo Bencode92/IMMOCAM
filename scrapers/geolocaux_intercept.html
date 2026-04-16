@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html><head><title>Geolocaux Scraper</title></head>
 <body style="font-family:Arial;padding:20px;background:#111;color:#eee">
-<h2>Geolocaux — Scraper Console</h2>
+<h2>Geolocaux — Scraper Auto</h2>
 
-<p>1. Ouvre <a href="https://www.geolocaux.com/vente/bureau/paris-75/" target="_blank" style="color:#4af">Geolocaux — bureaux vente Paris</a> ou <a href="https://www.geolocaux.com/vente/bureau/hauts-de-seine-92/" target="_blank" style="color:#4af">92</a></p>
+<p>1. Ouvre <a href="https://www.geolocaux.com/vente/bureau/paris-75/" target="_blank" style="color:#4af">Geolocaux — Paris</a> ou <a href="https://www.geolocaux.com/vente/bureau/hauts-de-seine-92/" target="_blank" style="color:#4af">92</a></p>
 <p>2. F12 Console, colle le script, Entree</p>
-<p>3. Change le numero de page dans l'URL (<code>?page=2</code>) puis recolle</p>
-<p>4. <code>copy(sessionStorage.getItem("_GL"))</code></p>
+<p>3. Le script extrait la page puis redirige vers la suivante automatiquement</p>
+<p>4. Quand "TERMINE": <code>copy(sessionStorage.getItem("_GL"))</code></p>
 <br>
 
 <button onclick="copyScraper()" style="padding:20px 40px;font-size:18px;background:#1e3a5f;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER LE SCRIPT</button>
@@ -37,8 +37,8 @@ var lines = [
 'var ville=villeM?"Paris "+villeM[1]+"e":"";',
 'if(!ville){var v=txt.match(/(?:Boulogne|Levallois|Neuilly|Issy|Clichy|Montrouge|Courbevoie|Puteaux|Nanterre|Suresnes|Malakoff|Vanves|Colombes|Saint-Cloud|Meudon)[a-zA-Z\\s-]*/i);if(v)ville=v[0].trim();}',
 'if(!ville&&cp.startsWith("75")){var ar=parseInt(cp.substring(3));if(ar>=1&&ar<=20)ville="Paris "+ar+"e";}',
-'var lines2=txt.split("\\n");',
-'var titre=lines2.filter(function(l){return l.indexOf("Vente")>-1||l.indexOf("bureaux")>-1||l.indexOf("Bureau")>-1})[0]||lines2[1]||"";',
+'var li=txt.split("\\n");',
+'var titre=li.filter(function(l){return l.indexOf("Vente")>-1||l.indexOf("bureaux")>-1||l.indexOf("Bureau")>-1})[0]||li[1]||"";',
 'n++;',
 'all.push({source:"geolocaux",url:url,date_scrape:new Date().toISOString().split("T")[0],',
 'localisation:{adresse:"",code_postal:cp,commune:ville,departement:dept},',
@@ -49,8 +49,20 @@ var lines = [
 'sessionStorage.setItem("_GL",JSON.stringify(all));',
 'sessionStorage.setItem("_GL_seen",JSON.stringify(seen));',
 'console.log("+"+n+" | Total: "+all.length);',
-'console.log("-> Page suivante, recolle le script");',
-'console.log("-> Fini? copy(sessionStorage.getItem(\\"_GL\\"))");',
+'var nextLink=null;',
+'var pagLinks=document.querySelectorAll(".pagination a");',
+'var curPage=1;',
+'pagLinks.forEach(function(a){if(a.classList.contains("active"))curPage=parseInt(a.textContent)||1;});',
+'pagLinks.forEach(function(a){if(parseInt(a.textContent)===(curPage+1))nextLink=a.href;});',
+'if(nextLink&&n>0){',
+'console.log("-> Page "+(curPage+1)+" dans 3s...");',
+'setTimeout(function(){window.location.href=nextLink},3000);',
+'}else{',
+'console.log("========================================");',
+'console.log("TERMINE! "+all.length+" biens");',
+'console.log("========================================");',
+'console.log("copy(sessionStorage.getItem(\\"_GL\\"))");',
+'}',
 '})();'
 ];
 var scrapeCode = lines.join("");
@@ -58,7 +70,7 @@ document.getElementById("code").value = scrapeCode;
 
 function copyScraper(){
   navigator.clipboard.writeText(scrapeCode).then(function(){
-    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur Geolocaux, F12, Ctrl+V, Entree</b>";
+    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur Geolocaux, F12, Ctrl+V, Entree, et attends!</b>";
   }).catch(function(){
     document.getElementById("status").innerHTML = "<b style='color:red'>Selectionne le texte et copie manuellement</b>";
   });
