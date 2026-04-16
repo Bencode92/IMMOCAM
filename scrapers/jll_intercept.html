@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head><title>JLL Scraper</title></head>
 <body style="font-family:Arial;padding:20px;background:#111;color:#eee">
-<h2>JLL Scraper - Bureaux IDF (Auto)</h2>
+<h2>JLL Scraper - Bureaux IDF (Auto GraphQL)</h2>
 <p>1. Ouvre <a href="https://immobilier.jll.fr/search?propertyTypes=office&tenureTypes=sale&regions=Ile-de-France" target="_blank" style="color:#4af">immobilier.jll.fr (bureaux vente IDF)</a></p>
 <p>2. Copie le script, F12 Console, Ctrl+V, Entree</p>
 <p>3. Attends "TERMINE" puis <code>copy(JSON.stringify(window._JLL))</code></p>
@@ -11,18 +11,39 @@
 <textarea id="code" style="width:100%;height:200px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
 <script>
 var lines = [
-'var d=[],pg=0;',
-'var gql="query SearchResults($market:String!,$language:String!,$propertyTypes:[String!],$tenureTypes:[String!],$regions:[String!],$skip:Int,$take:IntString,$orderBy:PropertiesOrderInput){properties(market:$market,language:$language,propertyTypes:$propertyTypes,tenureTypes:$tenureTypes,regions:$regions,skip:$skip,take:$take,orderBy:$orderBy){count items{id title address city postcode latitude longitude salePrice{amount currency unit}surfaceAreas{value{min max}unit}pageUrl district}}}";',
+'var d=[];',
 'async function go(skip){',
-'var resp=await fetch("/api/graphql",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({operationName:"SearchResults",variables:{market:"fr",language:"fr",propertyTypes:["office"],tenureTypes:["sale"],regions:["Ile-de-France"],skip:skip,take:"50",orderBy:{field:"isJLLExclusive",direction:"desc",imagePriority:true,label:"sale"}},query:gql})});',
+'var body=JSON.stringify({operationName:"SearchResults",variables:{market:"fr",language:"fr",propertyTypes:["office"],tenureTypes:["sale"],regions:["Ile-de-France"],skip:skip,take:"50",orderBy:{field:"isJLLExclusive",direction:"desc",imagePriority:true,label:"sale"}},query:document._jllQ});',
+'var resp=await fetch("/api/graphql",{method:"POST",headers:{"Content-Type":"application/json"},body:body});',
 'var data=await resp.json();',
 'if(!data.data||!data.data.properties)return{items:[],count:0};',
 'return data.data.properties;',
 '}',
 'async function run(){',
-'console.log("JLL scraper GraphQL — bureaux vente IDF...");',
+'console.log("JLL scraper — extraction query depuis page...");',
+'var scripts=document.querySelectorAll("script");',
+'var q="";',
+'for(var i=0;i<scripts.length;i++){',
+'var t=scripts[i].textContent||"";',
+'if(t.indexOf("SearchResults")>-1&&t.indexOf("properties")>-1&&t.length>1000){',
+'var m=t.match(/query SearchResults[^}]+\\}[^}]+\\}[^}]+items\\s*\\{[^}]+(?:\\{[^}]*\\}[^}]*)*\\}\\s*\\}\\s*\\}/s);',
+'if(m){q=m[0];break}',
+'}',
+'}',
+'if(!q){',
+'console.log("Query non trouvee dans la page, utilisation query minimale...");',
+'q="query SearchResults($market:String!,$language:String!,$propertyTypes:[String!],$tenureTypes:[String!],$regions:[String!],$skip:Int,$take:IntString,$orderBy:PropertiesOrderInput){properties(market:$market language:$language propertyTypes:$propertyTypes tenureTypes:$tenureTypes regions:$regions skip:$skip take:$take orderBy:$orderBy){count items{id title address city postcode latitude longitude salePrice{amount currency unit}surfaceAreas{value{min max}unit}pageUrl district}}}";',
+'}',
+'document._jllQ=q;',
+'console.log("Query: "+q.length+" chars");',
 'var first=await go(0);',
 'var total=first.count||0;',
+'if(total===0){',
+'console.log("0 resultats — essai query alternative...");',
+'document._jllQ="query SearchResults($market:String!,$language:String!,$propertyTypes:[String!],$tenureTypes:[String!],$regions:[String!],$skip:Int,$take:IntString){properties(market:$market language:$language propertyTypes:$propertyTypes tenureTypes:$tenureTypes regions:$regions skip:$skip take:$take){count items{id title address city postcode latitude longitude salePrice{amount currency unit}surfaceAreas{value{min max}unit}pageUrl}}}";',
+'first=await go(0);',
+'total=first.count||0;',
+'}',
 'console.log("Total: "+total+" biens");',
 'function parse(items){',
 'items.forEach(function(it){',
@@ -37,15 +58,15 @@ var lines = [
 'localisation:{adresse:it.address||"",code_postal:cp,commune:it.city||"",departement:dept,latitude:it.latitude||null,longitude:it.longitude||null},',
 'bien:{type:"bureaux",surface_m2:surf},',
 'financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},',
-'annonce:{titre:(it.title||"Bureaux")+" "+(it.district||""),description:""}});',
-'});',
-'}',
+'annonce:{titre:(it.title||"Bureaux")+" "+(it.district||it.city||""),description:""}});',
+'});}',
 'parse(first.items||[]);',
 'console.log("Page 1: "+d.length+"/"+total);',
 'for(var skip=50;skip<total;skip+=50){',
 'await new Promise(function(r){setTimeout(r,1500)});',
 'var page=await go(skip);',
-'parse(page.items||[]);',
+'if(!page.items||page.items.length===0)break;',
+'parse(page.items);',
 'console.log("Skip "+skip+": "+d.length+"/"+total);',
 '}',
 'console.log("========================================");',
@@ -53,7 +74,7 @@ var lines = [
 'console.log("========================================");',
 'console.table(d.slice(0,10).map(function(x){return{surf:x.bien.surface_m2+"m2",prix:x.financier.prix_affiche>1e6?(x.financier.prix_affiche/1e6).toFixed(2)+"M":x.financier.prix_affiche,pm2:x.financier.prix_m2,cp:x.localisation.code_postal,ville:x.localisation.commune}}));',
 'window._JLL=d;',
-'console.log("Tape: copy(JSON.stringify(window._JLL))");',
+'console.log("copy(JSON.stringify(window._JLL))");',
 '}',
 'run();'
 ];
