@@ -4,10 +4,10 @@
     "total_deals": 1136,
     "par_statut": {
       "a_verifier": 2,
-      "nouveau": 1126,
+      "nouveau": 1125,
+      "simulation": 3,
       "a_contacter": 2,
-      "poubelle": 4,
-      "simulation": 2
+      "poubelle": 4
     }
   },
   "deals": {
@@ -13349,7 +13349,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "simulation",
       "_prix_historique": [
         {
           "date": "2026-04-13",
