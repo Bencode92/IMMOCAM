@@ -482,9 +482,9 @@ function loadDemo(){
 function popFilters(){
   const ss=new Set,vv=new Set;
   for(const v of Object.values(D)){
-    (v._sources||[]).forEach(s=>ss.add(s));
     var dept=v.localisation?.departement||"";
     if(dept!=="75"&&dept!=="92")continue; // Seulement 75+92
+    (v._sources||[]).forEach(s=>ss.add(s));
     var commune=v.localisation?.commune||"";
     var cp=v.localisation?.code_postal||"";
     // Paris: extraire arrondissement du CP
