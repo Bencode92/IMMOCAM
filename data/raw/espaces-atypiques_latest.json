@@ -1,0 +1,266 @@
+[
+  {
+    "source": "espaces-atypiques",
+    "url": "https://www.espaces-atypiques.com/ventes/75015-paris-bureaux-en-triplex-au-calme-dans-le-quartier-saint-lambert-15596/",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75015",
+      "commune": "Paris 15e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 183.07,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1135000,
+      "prix_m2": 6199.814278691211,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Bureaux en triplex au calme dans le quartier Saint-Lambert",
+      "description": "Bureaux en triplex au calme dans le quartier Saint-Lambert",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "espaces-atypiques",
+    "url": "https://www.espaces-atypiques.com/ventes/75020-paris-local-commercial-sur-rue-et-cour-11074/",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75020",
+      "commune": "Paris 20e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 59.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 450000,
+      "prix_m2": 7627.118644067797,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Local commercial à repenser sur rue et cour",
+      "description": "Local commercial à repenser sur rue et cour",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "espaces-atypiques",
+    "url": "https://www.espaces-atypiques.com/ventes/75010-paris-bureaux-au-calme-sur-cour-dans-un-batiment-au-style-industriel-15482/",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75010",
+      "commune": "Paris 10e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 106.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1100000,
+      "prix_m2": 10377.358490566037,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Bureaux au calme sur cour dans un bâtiment au style industriel",
+      "description": "Bureaux au calme sur cour dans un bâtiment au style industriel",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "espaces-atypiques",
+    "url": "https://www.espaces-atypiques.com/ventes/75017-paris-loft-de-bureaux-en-triplex-wagram-pereire-15695/",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75017",
+      "commune": "Paris 17e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 211.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2180000,
+      "prix_m2": 10331.75355450237,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Loft de bureaux en triplex &#8211; Wagram-Pereire",
+      "description": "Loft de bureaux en triplex &#8211; Wagram-Pereire",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "espaces-atypiques",
+    "url": "https://www.espaces-atypiques.com/ventes/75011-paris-boutique-avec-vitrine-sur-rue-a-la-lisiere-du-marais-13149/",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75011",
+      "commune": "Paris 11e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 52.69,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1306,
+      "prix_m2": 24.786486999430632,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Boutique avec vitrine sur rue à la lisière du Marais",
+      "description": "Boutique avec vitrine sur rue à la lisière du Marais",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "espaces-atypiques",
+    "url": "https://www.espaces-atypiques.com/ventes/75016-paris-bureaux-esprit-maison-avec-verrieres-et-exterieur-privatif-muette-sud-12622/",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75016",
+      "commune": "Paris 16e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 170.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2090000,
+      "prix_m2": 12294.117647058823,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Bureaux / esprit maison avec verrières et extérieur privatif &#8211; Muette Sud",
+      "description": "Bureaux / esprit maison avec verrières et extérieur privatif &#8211; Muette Sud",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  }
+]
