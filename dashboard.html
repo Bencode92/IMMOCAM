@@ -205,7 +205,7 @@ a:hover{text-decoration:underline}
   <select id="fScore"><option value="">Score</option><option value="A">A</option><option value="B">B</option><option value="C">C</option></select>
   <input id="fSurfMin" type="number" placeholder="m² min" style="width:72px" />
   <input id="fSurfMax" type="number" placeholder="m² max" style="width:72px" />
-  <input id="fPrixMax" type="number" placeholder="Prix max (M)" style="width:95px" />
+  <input id="fPrixMax" type="number" placeholder="Prix max (M)" value="5" style="width:95px" />
   <button class="pill" id="fBaisse">Baisse prix</button>
   <select id="fTag"><option value="">Tous tags</option></select>
   <button class="pill" id="fHorsCarte">Hors carte</button>
@@ -492,9 +492,16 @@ function popFilters(){
       var arr=parseInt(cp.substring(3));
       if(arr>=1&&arr<=20)commune="Paris "+arr+"e";
     }
-    // Filtrer les fausses communes (titres d'annonces, trop long, contient "bureaux")
-    if(commune&&commune.length<40&&!commune.toLowerCase().includes("vente")&&!commune.toLowerCase().includes("bureaux")&&!commune.toLowerCase().includes("proche")){
-      vv.add(commune);
+    // Normaliser: garder seulement les vraies villes
+    // Paris arrondissements
+    if(commune.match(/^Paris\s+\d+/i)){vv.add(commune);continue}
+    // Villes 92 connues
+    var villes92=["Boulogne-Billancourt","Issy-les-Moulineaux","Levallois-Perret","Neuilly-sur-Seine","Clichy","Montrouge","Courbevoie","Puteaux","Nanterre","Rueil-Malmaison","Saint-Denis","Suresnes","Malakoff","Vanves","Clamart","Colombes","Saint-Cloud","Meudon","Gennevilliers","Châtillon","Sèvres","Antony","Bagneux","Fontenay-aux-Roses","La Garenne-Colombes","Asnières-sur-Seine","Châtenay-Malabry"];
+    var matched=false;
+    for(var vi=0;vi<villes92.length;vi++){if(commune.toLowerCase()===villes92[vi].toLowerCase()){vv.add(villes92[vi]);matched=true;break}}
+    if(!matched&&commune.match(/^Paris$/i)){
+      // Paris sans arrondissement — essayer avec CP
+      if(cp.startsWith("75")&&cp.length===5){var a2=parseInt(cp.substring(3));if(a2>=1&&a2<=20)vv.add("Paris "+a2+"e")}
     }
   }
   const fS=document.getElementById("fSource");ss.forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;fS.appendChild(o);});
