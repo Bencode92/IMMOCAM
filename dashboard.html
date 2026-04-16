@@ -208,6 +208,16 @@ a:hover{text-decoration:underline}
   <input id="fPrixMax" type="number" placeholder="Prix max (M)" style="width:95px" />
   <button class="pill" id="fBaisse">Baisse prix</button>
   <select id="fTag"><option value="">Tous tags</option></select>
+  <select id="fSort" style="width:120px">
+    <option value="">Tri par...</option>
+    <option value="prix_asc">Prix croissant</option>
+    <option value="prix_desc">Prix decroissant</option>
+    <option value="pm2_asc">€/m² croissant</option>
+    <option value="pm2_desc">€/m² decroissant</option>
+    <option value="surf_desc">Surface decroissant</option>
+    <option value="surf_asc">Surface croissant</option>
+    <option value="ecart_asc">vs marche croissant</option>
+  </select>
   <button class="pill" id="fHorsCarte">Hors carte</button>
   <label><input type="checkbox" id="fArchive"> Archives</label>
   <input id="fSearch" type="text" placeholder="Rechercher..." style="flex:1;min-width:140px" />
@@ -519,7 +529,7 @@ function filtered(){
   const px=(parseFloat(document.getElementById("fPrixMax").value)||999)*1e6;
   const fb=document.getElementById("fBaisse").classList.contains("active"),fa=document.getElementById("fArchive").checked;
   const fq=document.getElementById("fSearch").value.toLowerCase();
-  return Object.entries(D).filter(([,d])=>{
+  var result=Object.entries(D).filter(([,d])=>{
     if(!fa&&d._statut==="poubelle")return false;
     if(fs&&!(d._sources||[]).includes(fs))return false;
     if(fd){var fds=fd.split(",");if(!fds.includes(d.localisation?.departement))return false;}
@@ -536,9 +546,27 @@ function filtered(){
     if(fq){const t=(d.localisation?.commune+" "+d.localisation?.adresse+" "+d.annonce?.titre).toLowerCase();if(!t.includes(fq))return false;}
     return true;
   });
+  // Tri
+  var sortVal=document.getElementById("fSort").value;
+  if(sortVal){
+    result.sort(function(a,b){
+      var da=a[1],db2=b[1];
+      switch(sortVal){
+        case"prix_asc":return(da.financier?.prix_affiche||0)-(db2.financier?.prix_affiche||0);
+        case"prix_desc":return(db2.financier?.prix_affiche||0)-(da.financier?.prix_affiche||0);
+        case"pm2_asc":return(da.financier?.prix_m2||0)-(db2.financier?.prix_m2||0);
+        case"pm2_desc":return(db2.financier?.prix_m2||0)-(da.financier?.prix_m2||0);
+        case"surf_desc":return(db2.bien?.surface_m2||0)-(da.bien?.surface_m2||0);
+        case"surf_asc":return(da.bien?.surface_m2||0)-(db2.bien?.surface_m2||0);
+        case"ecart_asc":return(da._ecart_marche||999)-(db2._ecart_marche||999);
+        default:return 0;
+      }
+    });
+  }
+  return result;
 }
 
-["fSource","fDept","fVille","fScore","fTag","fSurfMin","fSurfMax","fPrixMax","fSearch","fArchive"].forEach(id=>{
+["fSource","fDept","fVille","fScore","fTag","fSort","fSurfMin","fSurfMax","fPrixMax","fSearch","fArchive"].forEach(id=>{
   const el=document.getElementById(id);el.addEventListener("input",()=>render());el.addEventListener("change",()=>render());
 });
 document.getElementById("fBaisse").addEventListener("click",function(){this.classList.toggle("active");render();});
