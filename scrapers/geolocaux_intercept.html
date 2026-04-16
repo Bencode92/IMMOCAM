@@ -14,49 +14,8 @@
 <textarea id="code" style="width:100%;height:200px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
 
 <script>
-var lines = [
-'(function(){',
-'var all=JSON.parse(sessionStorage.getItem("_GL")||"[]");',
-'var seen=JSON.parse(sessionStorage.getItem("_GL_seen")||"{}");',
-'var cards=document.querySelectorAll(".card-annonce,article,.annonce-card,[class*=annonce]");',
-'if(cards.length===0)cards=document.querySelectorAll("a[href*=\'/annonce/\']");',
-'console.log("Cards trouvees: "+cards.length);',
-'var n=0;',
-'cards.forEach(function(c){',
-'  var link=c.tagName==="A"?c:c.querySelector("a[href*=\\'annonce\\']");',
-'  var url=link?link.href:"";',
-'  if(!url||seen[url])return;',
-'  seen[url]=1;',
-'  var txt=c.innerText||"";',
-'  var surfM=txt.match(/(\\d[\\d\\s.,]+)\\s*m/i);',
-'  var prixM=txt.match(/(\\d[\\d\\s.,]+)\\s*\\u20ac/i);',
-'  var surf=surfM?parseFloat(surfM[1].replace(/[\\s.]/g,"").replace(",",".")):0;',
-'  var prix=prixM?parseFloat(prixM[1].replace(/[\\s.]/g,"").replace(",",".")):0;',
-'  if(prix>0&&prix<1000&&surf>0)prix=prix*surf;',
-'  var cpM=txt.match(/(\\d{5})/);',
-'  var cp=cpM?cpM[1]:"";',
-'  var dept=cp.substring(0,2)||"75";',
-'  var villeM=txt.match(/Paris\\s*(\\d+)/i);',
-'  var ville=villeM?"Paris "+villeM[1]+"e":(txt.match(/(?:Boulogne|Levallois|Neuilly|Issy|Clichy|Montrouge|Courbevoie|Puteaux|Nanterre|Suresnes|Malakoff|Vanves|Colombes)[\\w\\s-]*/i)||[""])[0].trim();',
-'  if(!ville&&cp.startsWith("75")){var ar=parseInt(cp.substring(3));if(ar>=1&&ar<=20)ville="Paris "+ar+"e";}',
-'  var titreEl=c.querySelector("h2,h3,[class*=title],[class*=titre]");',
-'  var titre=titreEl?titreEl.innerText.trim():txt.substring(0,80).trim();',
-'  if(surf<10&&prix<10000)return;',
-'  n++;',
-'  all.push({source:"geolocaux",url:url,date_scrape:new Date().toISOString().split("T")[0],',
-'    localisation:{adresse:"",code_postal:cp,commune:ville,departement:dept},',
-'    bien:{type:"bureaux",surface_m2:surf},',
-'    financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},',
-'    annonce:{titre:titre,description:""}});',
-'});',
-'sessionStorage.setItem("_GL",JSON.stringify(all));',
-'sessionStorage.setItem("_GL_seen",JSON.stringify(seen));',
-'console.log("+"+n+" | Total: "+all.length);',
-'console.log("-> Page suivante (?page=2), recolle le script");',
-'console.log("-> Fini? copy(sessionStorage.getItem(\\"_GL\\"))");',
-'})();'
-];
-var scrapeCode = lines.join("");
+var scrapeCode = '(function(){var all=JSON.parse(sessionStorage.getItem("_GL")||"[]");var seen=JSON.parse(sessionStorage.getItem("_GL_seen")||"{}");var links=document.querySelectorAll("a[href*=\'/annonce/\']");var n=0;links.forEach(function(a){var url=a.href;if(!url||seen[url])return;seen[url]=1;var txt=a.innerText||"";var surfM=txt.match(/(\\d[\\d\\s.,]+)\\s*m/i);var prixM=txt.match(/(\\d[\\d\\s.,]+)\\s*\\u20ac/i);var surf=surfM?parseFloat(surfM[1].replace(/[\\s.]/g,"").replace(",",".")):0;var prix=prixM?parseFloat(prixM[1].replace(/[\\s.]/g,"").replace(",",".")):0;if(surf<10&&prix<10000)return;var cpM=txt.match(/(\\d{5})/);var cp=cpM?cpM[1]:"";var dept=cp.substring(0,2)||"75";var villeM=txt.match(/Paris\\s*(\\d+)/i);var ville=villeM?"Paris "+villeM[1]+"e":"";if(!ville){var v92=txt.match(/(?:Boulogne|Levallois|Neuilly|Issy|Clichy|Montrouge|Courbevoie|Puteaux|Nanterre|Suresnes|Malakoff|Vanves|Colombes|Saint-Cloud|Meudon)[\\w\\s-]*/i);if(v92)ville=v92[0].trim();}if(!ville&&cp.startsWith("75")){var ar=parseInt(cp.substring(3));if(ar>=1&&ar<=20)ville="Paris "+ar+"e";}n++;all.push({source:"geolocaux",url:url,date_scrape:new Date().toISOString().split("T")[0],localisation:{adresse:"",code_postal:cp,commune:ville,departement:dept},bien:{type:"bureaux",surface_m2:surf},financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},annonce:{titre:txt.replace(/VOIR TOUTES LES PHOTOS\\n/,"").split("\\n")[0]||"",description:""}});});sessionStorage.setItem("_GL",JSON.stringify(all));sessionStorage.setItem("_GL_seen",JSON.stringify(seen));console.log("+"+n+" | Total: "+all.length);console.log("-> Page suivante, recolle le script");console.log("-> Fini? copy(sessionStorage.getItem(\\"_GL\\"))");})();';
+
 document.getElementById("code").value = scrapeCode;
 
 function copyScraper(){
