@@ -39,6 +39,6 @@ jobs:
         run: |
           git config user.name "IMMOCAM Bot"
           git config user.email "bot@immocam.local"
-          git add data/deals_db.json data/geocode_cache.json
+          git add data/deals_db.json data/geocode_cache.json data/raw/
           git diff --staged --quiet || git commit -m "🔄 scrape $(date +%Y-%m-%d) — $(python3 -c "import json;d=json.load(open('data/deals_db.json'));s=d['meta']['par_statut'];print(f\"{s.get('nouveau',0)} nouveaux, {d['meta']['total_deals']} total\")")"
           git push

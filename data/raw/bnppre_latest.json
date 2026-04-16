@@ -1,0 +1,1586 @@
+[
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-18-75018/vente-bureau-308-m2-non-divisible-OVBUR2533179.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75018",
+      "commune": "Paris 18e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 308.84,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1850000.0,
+      "prix_m2": 5990.156715451367,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 308.84m² 75018 Paris",
+      "description": "Réf. OVBUR2533179",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-6-75006/vente-bureau-335-m2-non-divisible-OVBUR2536210.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75006",
+      "commune": "Paris 6e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 335.93,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3480000.0,
+      "prix_m2": 10359.301044860536,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 335.93m² 75006 Paris",
+      "description": "Réf. OVBUR2536210",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-18-75018/vente-bureau-344-m2-non-divisible-OVBUR2533357.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75018",
+      "commune": "Paris 18e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 344.46,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3200000.0,
+      "prix_m2": 9289.903036637055,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 344.46m² 75018 Paris",
+      "description": "Réf. OVBUR2533357",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-10-75010/vente-bureau-435-m2-non-divisible-OVBUR2639086.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75010",
+      "commune": "Paris 10e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 435.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3500000.0,
+      "prix_m2": 8045.977011494253,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 435m² 75010 Paris",
+      "description": "Réf. OVBUR2639086",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-5-75005/vente-bureau-484-m2-non-divisible-OVBUR2533790.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75005",
+      "commune": "Paris 5e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 484.3,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 4200000.0,
+      "prix_m2": 8672.310551311171,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 484.3m² 75005 Paris",
+      "description": "Réf. OVBUR2533790",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-5-75005/vente-bureau-320-m2-non-divisible-OVBUR2536082.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75005",
+      "commune": "Paris 5e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 320.08,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3300000.0,
+      "prix_m2": 10309.922519370159,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 320.08m² 75005 Paris",
+      "description": "Réf. OVBUR2536082",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-18-75018/vente-bureau-432-m2-non-divisible-OVBUR2529218.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75018",
+      "commune": "Paris 18e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 432.65,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3000000.0,
+      "prix_m2": 6934.011325551832,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 432.65m² 75018 Paris",
+      "description": "Réf. OVBUR2529218",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-15-75015/vente-bureau-380-m2-non-divisible-OVBUR2310164.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75015",
+      "commune": "Paris 15e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 380.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2000000.0,
+      "prix_m2": 5263.1578947368425,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 380m² 75015 Paris",
+      "description": "Réf. OVBUR2310164",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-12-75012/vente-bureau-515-m2-non-divisible-OVBUR2534776.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75012",
+      "commune": "Paris 12e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 515.33,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3950000.0,
+      "prix_m2": 7664.991364756564,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 515.33m² 75012 Paris",
+      "description": "Réf. OVBUR2534776",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-13-75013/vente-bureau-313-m2-non-divisible-OVBUR2535842.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75013",
+      "commune": "Paris 13e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 313.35,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2150000.0,
+      "prix_m2": 6861.337162916866,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 313.35m² 75013 Paris",
+      "description": "Réf. OVBUR2535842",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-14-75014/vente-bureau-306-m2-non-divisible-OVBUR2424989.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75014",
+      "commune": "Paris 14e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 306.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1333167.0,
+      "prix_m2": 4356.754901960784,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 306m² 75014 Paris",
+      "description": "Réf. OVBUR2424989",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-13-75013/vente-bureau-699-m2-divisible-OVBUR2533585.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75013",
+      "commune": "Paris 13e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 699.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3775000.0,
+      "prix_m2": 5400.572246065808,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 699m² 75013 Paris",
+      "description": "Réf. OVBUR2533585 — Divisible",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-14-75014/vente-bureau-530-m2-non-divisible-OVBUR2309551.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75014",
+      "commune": "Paris 14e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 530.32,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 4505000.0,
+      "prix_m2": 8494.871021270175,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 530.32m² 75014 Paris",
+      "description": "Réf. OVBUR2309551",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-15-75015/vente-bureau-325-m2-non-divisible-OVBUR2530622.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75015",
+      "commune": "Paris 15e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 325.42,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3200000.0,
+      "prix_m2": 9833.44600823551,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 325.42m² 75015 Paris",
+      "description": "Réf. OVBUR2530622",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-16-75016/vente-bureau-362-m2-non-divisible-OVBUR2536101.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75116",
+      "commune": "Paris 16e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 362.08,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 4900000.0,
+      "prix_m2": 13532.920901458241,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 362.08m² 75116 Paris",
+      "description": "Réf. OVBUR2536101",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/paris-75/paris-17-75017/vente-bureau-360-m2-non-divisible-OVBUR2535453.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "75017",
+      "commune": "Paris 17e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 360.73,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 4000000.0,
+      "prix_m2": 11088.625842042524,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Paris 360.73m² 75017 Paris",
+      "description": "Réf. OVBUR2535453",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/clichy-92110/vente-bureau-470-m2-non-divisible-OVBUR2638381.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92110",
+      "commune": "Clichy",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 470.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1400000.0,
+      "prix_m2": 2978.723404255319,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Clichy 470m² 92110 Clichy",
+      "description": "Réf. OVBUR2638381",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/seine-saint-denis-93/montreuil-93100/vente-bureau-690-m2-divisible-OVBUR2426328.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "93100",
+      "commune": "Montreuil",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 690.6,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1356600.0,
+      "prix_m2": 1964.3788010425717,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Montreuil 690.6m² 93100 Montreuil",
+      "description": "Réf. OVBUR2426328 — Divisible",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/seine-saint-denis-93/montreuil-93100/vente-bureau-623-m2-divisible-OVBUR2118104.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "93100",
+      "commune": "Montreuil",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 623.1,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 4000000.0,
+      "prix_m2": 6419.515326592842,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Montreuil 623.1m² 93100 Montreuil",
+      "description": "Réf. OVBUR2118104 — Divisible",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/seine-saint-denis-93/lilas-93260/vente-bureau-423-m2-non-divisible-OVBUR2315644.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "93260",
+      "commune": "Lilas",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 423.77,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1750000.0,
+      "prix_m2": 4129.598603015787,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Lilas 423.77m² 93260 Lilas",
+      "description": "Réf. OVBUR2315644",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/val-de-marne-94/vincennes-94300/vente-bureau-360-m2-non-divisible-OVBUR2640181.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "94300",
+      "commune": "Vincennes",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 360.15,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3000000.0,
+      "prix_m2": 8329.862557267805,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Vincennes 360.15m² 94300 Vincennes",
+      "description": "Réf. OVBUR2640181",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/seine-saint-denis-93/neuilly-plaisance-93360/vente-bureau-700-m2-non-divisible-OVBUR2533494.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "93360",
+      "commune": "Neuilly Plaisance",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 700.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1050000.0,
+      "prix_m2": 1500.0,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Neuilly-plaisance 700m² 93360 Neuilly-Plaisance",
+      "description": "Réf. OVBUR2533494",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/boulogne-billancourt-92100/vente-bureau-600-m2-non-divisible-OVBUR2532473.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92100",
+      "commune": "Boulogne Billancourt",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 600.07,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3500000.0,
+      "prix_m2": 5832.652857166663,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Boulogne-billancourt 600.07m² 92100 Boulogne-Billancourt",
+      "description": "Réf. OVBUR2532473",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/boulogne-billancourt-92100/vente-bureau-300-m2-non-divisible-OVBUR2535382.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92100",
+      "commune": "Boulogne Billancourt",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 300.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2160000.0,
+      "prix_m2": 7200.0,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Boulogne-billancourt 300m² 92100 Boulogne-Billancourt",
+      "description": "Réf. OVBUR2535382",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/suresnes-92150/vente-bureau-380-m2-non-divisible-OVBUR2422544.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92150",
+      "commune": "Suresnes",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 380.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1539000.0,
+      "prix_m2": 4050.0,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Suresnes 380m² 92150 Suresnes",
+      "description": "Réf. OVBUR2422544",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/saint-cloud-92210/vente-bureau-634-m2-divisible-OVBUR2426945.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92210",
+      "commune": "Saint Cloud",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 634.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1077800.0,
+      "prix_m2": 1700.0,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Saint-cloud 634m² 92210 Saint-Cloud",
+      "description": "Réf. OVBUR2426945 — Divisible",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/boulogne-billancourt-92100/vente-bureau-401-m2-non-divisible-OVBUR2529614.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92100",
+      "commune": "Boulogne Billancourt",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 401.3,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2750000.0,
+      "prix_m2": 6852.728631946175,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Boulogne-billancourt 401.3m² 92100 Boulogne-Billancourt",
+      "description": "Réf. OVBUR2529614",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/suresnes-92150/vente-bureau-499-m2-non-divisible-OVBUR2535918.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92150",
+      "commune": "Suresnes",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 499.6,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1900000.0,
+      "prix_m2": 3803.0424339471574,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Suresnes 499.6m² 92150 Suresnes",
+      "description": "Réf. OVBUR2535918",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/levallois-perret-92300/vente-bureau-321-m2-non-divisible-OVBUR2529646.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92300",
+      "commune": "Levallois Perret",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 321.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1800000.0,
+      "prix_m2": 5607.476635514019,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Levallois-perret 321m² 92300 Levallois-Perret",
+      "description": "Réf. OVBUR2529646",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/levallois-perret-92300/vente-bureau-572-m2-non-divisible-OVBUR2315739.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92300",
+      "commune": "Levallois Perret",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 572.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 4500000.0,
+      "prix_m2": 7867.132867132867,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Levallois-perret 572m² 92300 Levallois-Perret",
+      "description": "Réf. OVBUR2315739",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/levallois-perret-92300/vente-bureau-374-m2-non-divisible-OVBUR2535102.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92300",
+      "commune": "Levallois Perret",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 374.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2450000.0,
+      "prix_m2": 6550.802139037433,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Levallois-perret 374m² 92300 Levallois-Perret",
+      "description": "Réf. OVBUR2535102",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/clichy-92110/vente-bureau-530-m2-non-divisible-OVBUR2533949.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92110",
+      "commune": "Clichy",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 530.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1800000.0,
+      "prix_m2": 3396.2264150943397,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Clichy 530m² 92110 Clichy",
+      "description": "Réf. OVBUR2533949",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/clichy-92110/vente-bureau-408-m2-non-divisible-OVBUR2534962.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92110",
+      "commune": "Clichy",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 408.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 1490000.0,
+      "prix_m2": 3651.9607843137255,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Clichy 408m² 92110 Clichy",
+      "description": "Réf. OVBUR2534962",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/levallois-perret-92300/vente-bureau-306-m2-non-divisible-OVBUR2534058.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92300",
+      "commune": "Levallois Perret",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 306.5,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2000000.0,
+      "prix_m2": 6525.2854812398045,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Levallois-perret 306.5m² 92300 Levallois-Perret",
+      "description": "Réf. OVBUR2534058",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/antony-92160/vente-bureau-543-m2-divisible-OVBUR2420197.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92160",
+      "commune": "Antony",
+      "departement": "92",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 543.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 665563.25,
+      "prix_m2": 1225.715009208103,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Antony 543m² 92160 Antony",
+      "description": "Réf. OVBUR2420197 — Divisible",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "bnppre",
+    "url": "https://www.bnppre.fr/a-vendre/bureau/hauts-de-seine-92/courbevoie-92400/vente-bureau-529-m2-non-divisible-OVBUR2639717.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "92400",
+      "commune": "Courbevoie",
+      "departement": "92",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 529.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 2300000.0,
+      "prix_m2": 4347.826086956522,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Vente bureau Courbevoie 529m² 92400 Courbevoie",
+      "description": "Réf. OVBUR2639717",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  }
+]

@@ -81,7 +81,10 @@ def main():
     print(f"  Departements: {', '.join(args.depts)}")
     print("=" * 60)
 
-    # 1) Scrape
+    # 1) Scrape par source — chaque source a son fichier raw
+    RAW_DIR = DATA_DIR / "raw"
+    RAW_DIR.mkdir(exist_ok=True)
+
     all_scraped = []
     for site_name in args.sites:
         if site_name not in SCRAPERS:
@@ -91,6 +94,39 @@ def main():
         scraper = SCRAPERS[site_name]()
         try:
             results = scraper.scrape(filters)
+
+            # Sauver le scrape brut dans data/raw/{source}_latest.json
+            raw_path = RAW_DIR / f"{site_name}_latest.json"
+            old_path = RAW_DIR / f"{site_name}_previous.json"
+
+            # Charger l'ancien fichier pour comparer
+            old_keys = set()
+            if raw_path.exists():
+                with open(raw_path) as f:
+                    old_data = json.load(f)
+                old_keys = set(
+                    (d.get("localisation", {}).get("commune", "").upper() + "|" +
+                     str(round(d.get("bien", {}).get("surface_m2", 0) / 10) * 10))
+                    for d in old_data
+                )
+
+            # Identifier les nouveaux vs ancien fichier de cette source
+            new_in_source = []
+            for d in results:
+                key = (d.get("localisation", {}).get("commune", "").upper() + "|" +
+                       str(round(d.get("bien", {}).get("surface_m2", 0) / 10) * 10))
+                if key not in old_keys:
+                    new_in_source.append(d)
+
+            print(f"    {len(results)} total, {len(new_in_source)} nouveaux vs precedent")
+
+            # Archiver ancien → previous, sauver nouveau → latest
+            if raw_path.exists():
+                import shutil
+                shutil.copy2(raw_path, old_path)
+            with open(raw_path, "w", encoding="utf-8") as f:
+                json.dump(results, f, ensure_ascii=False, indent=2)
+
             all_scraped.extend(results)
         except Exception as e:
             print(f"  ERREUR: {e}")
@@ -111,9 +147,9 @@ def main():
     else:
         print("  Referentiel non trouve — scoring desactive")
 
-    # 3) Delta
+    # 3) Delta global (vs DB complète)
     nouveaux, mis_a_jour, disparus = compute_delta(all_scraped, db)
-    print(f"\n  Delta:")
+    print(f"\n  Delta vs DB:")
     print(f"    Nouveaux:    {len(nouveaux)}")
     print(f"    Mis a jour:  {len(mis_a_jour)}")
     print(f"    Disparus:    {len(disparus)}")
