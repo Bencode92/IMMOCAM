@@ -45,6 +45,23 @@ SCRAPERS = {
 }
 
 
+def backup_db():
+    """Sauvegarde la DB avant chaque scrape — preservé les notes/tags/statuts."""
+    if DB_PATH.exists():
+        import shutil
+        backup_dir = DATA_DIR / "backups"
+        backup_dir.mkdir(exist_ok=True)
+        today = datetime.now().strftime("%Y-%m-%d")
+        backup_path = backup_dir / f"deals_db_{today}.json"
+        if not backup_path.exists():
+            shutil.copy2(DB_PATH, backup_path)
+            print(f"  Backup: {backup_path.name}")
+        # Garder les 7 derniers backups
+        backups = sorted(backup_dir.glob("deals_db_*.json"))
+        for old in backups[:-7]:
+            old.unlink()
+
+
 def load_db():
     if DB_PATH.exists():
         with open(DB_PATH) as f:
@@ -80,6 +97,9 @@ def main():
     print(f"  Filtres: {args.surface[0]}-{args.surface[1]}m², max {args.prix/1e6:.1f}M EUR")
     print(f"  Departements: {', '.join(args.depts)}")
     print("=" * 60)
+
+    # 0) Backup DB avant scrape (preserve notes/tags/statuts)
+    backup_db()
 
     # 1) Scrape par source — chaque source a son fichier raw
     RAW_DIR = DATA_DIR / "raw"
