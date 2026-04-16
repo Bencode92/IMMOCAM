@@ -676,31 +676,39 @@ function mkCard(key,d){
 }
 
 function renderT(deals){
-  const cols=[{k:"_statut",l:"Statut"},{k:"carte",l:"\uD83D\uDDFA"},{k:"commune",l:"Commune"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"dpe",l:"DPE"},{k:"loyer",l:"Loyer",n:1},{k:"yield",l:"Yield",n:1},{k:"grade",l:"Score"},{k:"tags",l:"Tags"},{k:"notes",l:"Notes"},{k:"src",l:"Source"}];
+  const cols=[{k:"grade",l:""},{k:"ville",l:"Localisation"},{k:"surface",l:"Surface",n:1},{k:"prix",l:"Prix",n:1},{k:"prix_m2",l:"\u20AC/m\u00B2",n:1},{k:"ecart",l:"vs March\u00E9",n:1},{k:"loyer",l:"Loyer \u00E9co",n:1},{k:"yield",l:"Rdt",n:1},{k:"tags",l:"Tags"},{k:"src",l:"Src"}];
   let rows=deals.map(([k,d])=>{
     var lo=d.locatif?.loyer_actuel_an||0;var px=d.financier?.prix_affiche||0;
     var loc=d.localisation||{};
-    var hasRealCoords=!!(loc.latitude&&loc.longitude);
-    var onMap=hasRealCoords;
-    return{k,_statut:d._statut,commune:loc.commune||"",surface:d.bien?.surface_m2||0,prix:px,prix_m2:d.financier?.prix_m2||0,
+    // Ville avec arrondissement
+    var ville=loc.commune||"";
+    var cp=loc.code_postal||"";
+    if((ville==="Paris"||!ville)&&cp.startsWith("75")&&cp.length===5){var ar2=parseInt(cp.substring(3));if(ar2>=1&&ar2<=20)ville="Paris "+ar2+"e";}
+    var addr=loc.adresse||"";
+    if(addr.length>30)addr=addr.substring(0,28)+"...";
+    return{k,_statut:d._statut,ville:ville,addr:addr,surface:d.bien?.surface_m2||0,prix:px,prix_m2:d.financier?.prix_m2||0,
     ecart:d._ecart_marche!=null?d._ecart_marche:d.scoring?.prix_vs_marche_pct,
-    dpe:d.bien?.dpe||"",
-    loyer:d._loyer_estime||lo||0,
-    yield:lo>0&&px>0?(lo/px*100):(d._yield_zone||0),
-    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",carte:onMap?1:0,src:(d._sources||[]).join(", "),tags:(d._tags||[]),notes:d._notes||"",mail:d._mail_sent||""};
+    loyer:d._loyer_eco?Math.round(d._loyer_eco*(d.bien?.surface_m2||0)):0,
+    yield:d._yield_net_net||0,
+    grade:d.scoring?.grade||"?",fiab:d.scoring?.fiabilite||"green",src:(d._sources||[]).join(", "),tags:(d._tags||[])};
   });
   if(tCol)rows.sort((a,b)=>{let va=a[tCol],vb=b[tCol];if(va==null)return 1;if(vb==null)return -1;return typeof va==="string"?(tAsc?va.localeCompare(vb):vb.localeCompare(va)):(tAsc?va-vb:vb-va);});
   const ar=k=>tCol===k?(tAsc?" \u25B2":" \u25BC"):"";
-  const stI={nouveau:"\uD83C\uDD95",a_verifier:"\uD83D\uDD0D",a_contacter:"\uD83D\uDCDE",simulation:"\uD83D\uDCB0",poubelle:"\uD83D\uDDD1"};
-  document.getElementById("tH").innerHTML="<tr>"+cols.map(c=>`<th class="${c.n?'num':''}" onclick="tSort('${c.k}')">${c.l}${ar(c.k)}</th>`).join("")+"</tr>";
-  const eC=v=>v==null?"":(v<=-20?"color:var(--green)":v<=0?"color:var(--yellow)":"color:var(--red)");
-  document.getElementById("tB").innerHTML=rows.map(r=>`<tr onclick="openDw('${r.k}')" style="cursor:pointer">
-    <td>${stI[r._statut]||r._statut}</td><td style="text-align:center">${r.carte?"\uD83D\uDCCD":"\u274C"}</td><td>${r.commune}</td><td class="num">${r.surface}m\u00B2</td>
-    <td class="num">${(r.prix/1e6).toFixed(2)}M\u20AC</td><td class="num">${r.prix_m2.toLocaleString("fr")}</td>
-    <td class="num" style="${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"\u2014"}</td>
-    <td>${r.dpe}</td><td class="num">${r.loyer>0?r.loyer+"\u20AC":"\u2014"}</td>
-    <td class="num" style="${r.yield>=8?"color:#16a34a":r.yield>=6?"color:#b45309":"color:#dc2626"}">${r.yield>0?r.yield.toFixed(1)+"%":"\u2014"}</td>
-    <td><span class="grade grade-${r.grade}">${r.grade}</span> ${r.fiab==="red"?"\u26A0":r.fiab==="yellow"?"\u26A0":""}</td><td>${r.tags.map(t=>'<span class="deal-tag-small">'+t+'</span>').join("")||"\u2014"}</td><td style="font-size:.7rem;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${r.notes}">${r.notes||"\u2014"}</td><td style="font-size:.7rem">${r.src}</td>
+  const stI={nouveau:"",a_verifier:"\uD83D\uDD0D",a_contacter:"\uD83D\uDCDE",simulation:"\uD83D\uDCB0",poubelle:"\uD83D\uDDD1"};
+  document.getElementById("tH").innerHTML="<tr>"+cols.map(c=>`<th class="${c.n?'num':''}" onclick="tSort('${c.k}')" style="cursor:pointer;padding:8px 6px;font-size:.72rem">${c.l}${ar(c.k)}</th>`).join("")+"</tr>";
+  const eC=v=>v==null?"":(v<=-20?"color:var(--green)":v<=0?"color:#b45309":"color:var(--red)");
+  const pxC=v=>v>=8?"color:#16a34a;font-weight:600":v>=5?"color:#b45309":"color:#dc2626";
+  document.getElementById("tB").innerHTML=rows.map(r=>`<tr onclick="openDw('${r.k}')" style="cursor:pointer;border-bottom:1px solid var(--border)">
+    <td style="padding:6px 4px"><span class="grade grade-${r.grade}" style="font-size:.7rem;padding:2px 6px">${r.grade}</span>${stI[r._statut]?" "+stI[r._statut]:""}</td>
+    <td style="padding:6px"><div style="font-weight:600;font-size:.82rem">${r.ville}</div><div style="font-size:.7rem;color:var(--text3)">${r.addr}</div></td>
+    <td class="num" style="padding:6px;font-weight:600">${Math.round(r.surface)} m\u00B2</td>
+    <td class="num" style="padding:6px;font-weight:700;font-size:.9rem">${(r.prix/1e6).toFixed(2)}M\u20AC</td>
+    <td class="num" style="padding:6px">${r.prix_m2.toLocaleString("fr")}</td>
+    <td class="num" style="padding:6px;font-weight:600;${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":""}</td>
+    <td class="num" style="padding:6px">${r.loyer>0?(r.loyer/1e3).toFixed(0)+"K\u20AC":""}</td>
+    <td class="num" style="padding:6px;${pxC(r.yield)}">${r.yield>0?r.yield.toFixed(1)+"%":""}</td>
+    <td style="padding:4px">${r.tags.map(t=>'<span class="deal-tag-small">'+t+'</span>').join("")}</td>
+    <td style="padding:4px;font-size:.65rem;color:var(--text3)">${r.src}</td>
   </tr>`).join("");
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
