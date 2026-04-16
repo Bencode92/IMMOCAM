@@ -193,6 +193,7 @@ a:hover{text-decoration:underline}
   <button id="btnImportLP" style="padding:.4rem .9rem;background:var(--accent);color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ LoopNet</button>
   <button id="btnImportJLL" style="padding:.4rem .9rem;background:#0066cc;color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ JLL</button>
   <button id="btnImportSL" style="padding:.4rem .9rem;background:#e11d48;color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ SeLoger</button>
+  <button id="btnImportGL" style="padding:.4rem .9rem;background:#1e3a5f;color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500">+ Geolocaux</button>
   <button id="btnImportRef" style="padding:.4rem .9rem;background:#16a34a;color:#fff;border:none;border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500" title="Importer le referentiel DVF/CBRE/Cushman">Ref DVF</button>
   <button id="btnSaveGH" style="padding:.4rem .9rem;border:1px solid var(--accent);background:none;color:var(--accent);border-radius:6px;font-size:.75rem;cursor:pointer;font-weight:500" title="Sauvegarder les statuts sur GitHub">Sauver</button>
 </header>
@@ -292,6 +293,36 @@ a:hover{text-decoration:underline}
     <button style="background:#0066cc;color:#fff" id="btnImportJLLGo">Importer et sauver sur GitHub</button>
   </div>
   <div class="modal-status" id="importJLLStatus" style="display:none"></div>
+</div>
+</div>
+
+<!-- IMPORT GEOLOCAUX MODAL -->
+<div class="modal-bg" id="importGLModal">
+<div class="modal">
+  <h2>Import Geolocaux</h2>
+  <div class="step">
+    <span class="step-num">1</span><b>Ouvre Geolocaux</b>
+    <p>Va sur <a href="https://www.geolocaux.com/vente/bureau/paris-75/" target="_blank" style="color:var(--accent)">Geolocaux — bureaux vente Paris</a> ou <a href="https://www.geolocaux.com/vente/bureau/hauts-de-seine-92/" target="_blank" style="color:var(--accent)">92</a></p>
+  </div>
+  <div class="step">
+    <span class="step-num">2</span><b>Copie le script</b>
+    <p>Ouvre <a href="https://bencode92.github.io/IMMOCAM/scrapers/geolocaux_intercept.html" target="_blank" style="color:var(--accent)">la page helper Geolocaux</a>, copie le script</p>
+  </div>
+  <div class="step">
+    <span class="step-num">3</span><b>F12 Console, colle, Entree. Change ?page=2, recolle.</b>
+  </div>
+  <div class="step">
+    <span class="step-num">4</span><b><code style="display:inline;padding:.2rem .4rem">copy(sessionStorage.getItem("_GL"))</code></b>
+  </div>
+  <div class="step">
+    <span class="step-num">5</span><b>Colle le JSON ici :</b>
+    <textarea id="glJsonInput" placeholder='Colle le JSON ici'></textarea>
+  </div>
+  <div class="modal-btns">
+    <button style="background:var(--surface2);color:var(--text2)" onclick="document.getElementById('importGLModal').classList.remove('open')">Annuler</button>
+    <button style="background:#1e3a5f;color:#fff" id="btnImportGLGo">Importer et sauver sur GitHub</button>
+  </div>
+  <div class="modal-status" id="importGLStatus" style="display:none"></div>
 </div>
 </div>
 
@@ -1328,6 +1359,48 @@ document.getElementById("btnImportJLLGo").addEventListener("click",async functio
 
 // ===================================================================
 // ===================================================================
+// ===================================================================
+// ===================================================================
+// IMPORT GEOLOCAUX
+// ===================================================================
+document.getElementById("btnImportGL").addEventListener("click",function(){document.getElementById("importGLModal").classList.add("open")});
+document.getElementById("btnImportGLGo").addEventListener("click",async function(){
+  var st=document.getElementById("importGLStatus");
+  st.style.display="block";st.style.background="#fef3c7";st.style.color="#92400e";st.textContent="Parsing...";
+  var raw=document.getElementById("glJsonInput").value.trim();
+  if(!raw){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Colle le JSON";return}
+  try{
+    var deals=[];
+    var chunks=raw.replace(/\]\s*\[/g,"],\u0000[").split("\u0000");
+    for(var ci=0;ci<chunks.length;ci++){try{var p=JSON.parse(chunks[ci].trim());if(Array.isArray(p))deals=deals.concat(p);else deals.push(p)}catch(e2){}}
+    if(!deals.length){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Aucun bien";return}
+    var existingKeys=new Set();
+    for(var k in D){var ex=D[k];existingKeys.add((ex.localisation?ex.localisation.commune:"").toUpperCase().trim()+"|"+Math.round((ex.bien?ex.bien.surface_m2||0:0)/10)*10)}
+    var added=0,today=new Date().toISOString().split("T")[0];
+    for(var i=0;i<deals.length;i++){
+      var deal=deals[i];
+      var dk=(deal.localisation?deal.localisation.commune:"").toUpperCase().trim()+"|"+Math.round((deal.bien?deal.bien.surface_m2||0:0)/10)*10;
+      if(existingKeys.has(dk))continue;existingKeys.add(dk);
+      var key="gl-"+Math.random().toString(36).substring(2,10);
+      deal._statut="nouveau";deal._first_seen=today;deal._last_seen=today;deal._sources=["geolocaux"];deal._notes="";
+      deal._prix_historique=[{d:today,p:deal.financier?deal.financier.prix_affiche:0}];
+      if(!deal.scoring)deal.scoring={score_global:50,grade:"?",alertes:[]};
+      D[key]=deal;added++;
+    }
+    st.textContent=added+" nouveaux. Push GitHub...";
+    var db={meta:{last_scrape:new Date().toISOString(),total_deals:Object.keys(D).length,par_statut:{}},deals:D};
+    for(var k2 in D){var s2=D[k2]._statut||"nouveau";db.meta.par_statut[s2]=(db.meta.par_statut[s2]||0)+1}
+    var sha=null;
+    try{var r=await fetch(WORKER+"/github/"+REPO+"/contents/data/deals_db.json?ref=main");if(r.ok)sha=(await r.json()).sha}catch(e){}
+    var content=btoa(unescape(encodeURIComponent(JSON.stringify(db,null,2))));
+    var body={message:"import geolocaux "+today+" — "+added+" nouveaux",content:content,branch:"main"};
+    if(sha)body.sha=sha;
+    var r2=await fetch(WORKER+"/github/"+REPO+"/contents/data/deals_db.json",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+    if(r2.ok){st.style.background="#dcfce7";st.style.color="#15803d";st.textContent="OK! "+added+" nouveaux Geolocaux. Total: "+Object.keys(D).length;scoreAllDeals();render();setTimeout(function(){document.getElementById("importGLModal").classList.remove("open")},3000)}
+    else{var err=await r2.json().catch(function(){return{}});throw new Error(err.message||"HTTP "+r2.status)}
+  }catch(e){st.style.background="#fee2e2";st.style.color="#b91c1c";st.textContent="Erreur: "+e.message}
+});
+
 // ===================================================================
 // IMPORT SELOGER
 // ===================================================================

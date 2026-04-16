@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html><head><title>Geolocaux Scraper</title></head>
+<body style="font-family:Arial;padding:20px;background:#111;color:#eee">
+<h2>Geolocaux — Scraper Console</h2>
+
+<p>1. Ouvre <a href="https://www.geolocaux.com/vente/bureau/paris-75/" target="_blank" style="color:#4af">Geolocaux — bureaux vente Paris</a> ou <a href="https://www.geolocaux.com/vente/bureau/hauts-de-seine-92/" target="_blank" style="color:#4af">92</a></p>
+<p>2. F12 Console, colle le script, Entree</p>
+<p>3. Change le numero de page dans l'URL (<code>?page=2</code>) puis recolle</p>
+<p>4. <code>copy(sessionStorage.getItem("_GL"))</code></p>
+<br>
+
+<button onclick="copyScraper()" style="padding:20px 40px;font-size:18px;background:#1e3a5f;color:#fff;border:none;border-radius:10px;cursor:pointer">COPIER LE SCRIPT</button>
+<p id="status"></p>
+<textarea id="code" style="width:100%;height:200px;background:#222;color:#0f0;font-family:monospace;font-size:11px" readonly></textarea>
+
+<script>
+var lines = [
+'(function(){',
+'var all=JSON.parse(sessionStorage.getItem("_GL")||"[]");',
+'var seen=JSON.parse(sessionStorage.getItem("_GL_seen")||"{}");',
+'var cards=document.querySelectorAll(".card-annonce,article,.annonce-card,[class*=annonce]");',
+'if(cards.length===0)cards=document.querySelectorAll("a[href*=\'/annonce/\']");',
+'console.log("Cards trouvees: "+cards.length);',
+'var n=0;',
+'cards.forEach(function(c){',
+'  var link=c.tagName==="A"?c:c.querySelector("a[href*=\\'annonce\\']");',
+'  var url=link?link.href:"";',
+'  if(!url||seen[url])return;',
+'  seen[url]=1;',
+'  var txt=c.innerText||"";',
+'  var surfM=txt.match(/(\\d[\\d\\s.,]+)\\s*m/i);',
+'  var prixM=txt.match(/(\\d[\\d\\s.,]+)\\s*\\u20ac/i);',
+'  var surf=surfM?parseFloat(surfM[1].replace(/[\\s.]/g,"").replace(",",".")):0;',
+'  var prix=prixM?parseFloat(prixM[1].replace(/[\\s.]/g,"").replace(",",".")):0;',
+'  if(prix>0&&prix<1000&&surf>0)prix=prix*surf;',
+'  var cpM=txt.match(/(\\d{5})/);',
+'  var cp=cpM?cpM[1]:"";',
+'  var dept=cp.substring(0,2)||"75";',
+'  var villeM=txt.match(/Paris\\s*(\\d+)/i);',
+'  var ville=villeM?"Paris "+villeM[1]+"e":(txt.match(/(?:Boulogne|Levallois|Neuilly|Issy|Clichy|Montrouge|Courbevoie|Puteaux|Nanterre|Suresnes|Malakoff|Vanves|Colombes)[\\w\\s-]*/i)||[""])[0].trim();',
+'  if(!ville&&cp.startsWith("75")){var ar=parseInt(cp.substring(3));if(ar>=1&&ar<=20)ville="Paris "+ar+"e";}',
+'  var titreEl=c.querySelector("h2,h3,[class*=title],[class*=titre]");',
+'  var titre=titreEl?titreEl.innerText.trim():txt.substring(0,80).trim();',
+'  if(surf<10&&prix<10000)return;',
+'  n++;',
+'  all.push({source:"geolocaux",url:url,date_scrape:new Date().toISOString().split("T")[0],',
+'    localisation:{adresse:"",code_postal:cp,commune:ville,departement:dept},',
+'    bien:{type:"bureaux",surface_m2:surf},',
+'    financier:{prix_affiche:prix,prix_m2:surf>0?Math.round(prix/surf):0},',
+'    annonce:{titre:titre,description:""}});',
+'});',
+'sessionStorage.setItem("_GL",JSON.stringify(all));',
+'sessionStorage.setItem("_GL_seen",JSON.stringify(seen));',
+'console.log("+"+n+" | Total: "+all.length);',
+'console.log("-> Page suivante (?page=2), recolle le script");',
+'console.log("-> Fini? copy(sessionStorage.getItem(\\"_GL\\"))");',
+'})();'
+];
+var scrapeCode = lines.join("");
+document.getElementById("code").value = scrapeCode;
+
+function copyScraper(){
+  navigator.clipboard.writeText(scrapeCode).then(function(){
+    document.getElementById("status").innerHTML = "<b style='color:#0f0'>COPIE! Va sur Geolocaux, F12, Ctrl+V, Entree</b>";
+  }).catch(function(){
+    document.getElementById("status").innerHTML = "<b style='color:red'>Selectionne le texte et copie manuellement</b>";
+  });
+}
+</script>
+</body></html>
