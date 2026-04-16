@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IMMOCAM</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 :root{
@@ -15,8 +18,12 @@
   --radius:12px;--radius-sm:8px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
 ::selection{background:var(--accent);color:#fff}
+.marker-cluster{background:rgba(30,58,95,.2);border-radius:50%}
+.marker-cluster div{background:var(--accent);color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:Inter,sans-serif;margin:4px}
+.marker-cluster-medium div{width:38px;height:38px;font-size:14px}
+.marker-cluster-large div{width:44px;height:44px;font-size:15px;background:#b45309}
 
 /* TOPBAR */
 header{padding:1.25rem 2.5rem;display:flex;align-items:center;gap:1rem;border-bottom:1px solid var(--border);background:var(--surface);flex-wrap:wrap}
@@ -658,7 +665,7 @@ function mkCard(key,d){
     <div class="card-head"><h4>${sf}m\u00B2 \u2014 ${c}</h4><span class="grade grade-${g}">${g}</span></div>
     <div class="card-metric"><span class="k">Prix</span><span class="v">${(px/1e6).toFixed(2)}M\u20AC</span></div>
     <div class="card-metric"><span class="k">\u20AC/m\u00B2</span><span class="v">${pm.toLocaleString("fr")}</span></div>
-    <div class="card-metric"><span class="k">vs march\u00E9</span><span class="v ${ecCls}">${ec!=null?(ec>0?"+":"")+ec.toFixed(1)+"%":"\u2014"}</span></div>
+    ${ec!=null?`<div style="margin:4px 0 2px;padding:4px 10px;border-radius:6px;font-size:.8rem;font-weight:700;text-align:center;background:${ec<=-20?"#dcfce7":ec<=0?"#fef3c7":"#fee2e2"};color:${ec<=-20?"#15803d":ec<=0?"#92400e":"#b91c1c"}">${ec>0?"+":""}${ec.toFixed(1)}% vs march\u00E9</div>`:""}
     ${d.bien?.dpe?`<div class="card-metric"><span class="k">DPE</span><span class="v">${d.bien.dpe}</span></div>`:""}
     <div class="card-tags">
       ${src.length>1?`<span class="tag tag-src">${src.length} sources</span>`:""}
@@ -1797,7 +1804,7 @@ var markersLayer=null;
 function renderMap(deals){
   initMap();
   if(markersLayer){map.removeLayer(markersLayer);}
-  markersLayer=L.layerGroup();
+  markersLayer=L.markerClusterGroup({maxClusterRadius:40,spiderfyOnMaxZoom:true,showCoverageOnHover:false,zoomToBoundsOnClick:true,iconCreateFunction:function(cluster){var count=cluster.getChildCount();var size=count<10?"small":count<50?"medium":"large";return L.divIcon({html:"<div><span>"+count+"</span></div>",className:"marker-cluster marker-cluster-"+size,iconSize:L.point(40,40)})}});
   markers=[];
   const bounds=[];
 
