@@ -891,7 +891,7 @@ function mkComparables(d){
     html+='<div class="row"><span class="k">Ce deal vs local</span><span class="v" style="color:'+col+';font-weight:700">'+(ecartLocal>0?"+":"")+ecartLocal+'%</span></div>';
   }
   html+='<table style="width:100%;font-size:.75rem;margin-top:.5rem;border-collapse:collapse">';
-  html+='<tr style="color:var(--text3);border-bottom:1px solid var(--border)"><th style="text-align:left;padding:4px">Dist</th><th style="text-align:left">Rue</th><th style="text-align:right">Surf</th><th style="text-align:right">\u20AC/m\u00B2</th><th style="text-align:right">Loyer</th><th style="text-align:right">Date</th></tr>';
+  html+='<tr style="color:var(--text3);border-bottom:1px solid var(--border)"><th style="text-align:left;padding:4px">Dist</th><th style="text-align:left">Rue</th><th style="text-align:right">Surf</th><th style="text-align:right">Prix</th><th style="text-align:right">\u20AC/m\u00B2</th><th style="text-align:right">Loyer</th><th style="text-align:right">Date</th></tr>';
   top.forEach(function(c){
     var t=c.tx;
     var pColor=pm2>0&&t.prix_m2>0?(t.prix_m2<pm2?"color:var(--green)":"color:var(--red)"):"";
@@ -899,6 +899,8 @@ function mkComparables(d){
     html+='<td style="padding:3px">'+c.dist+'m</td>';
     html+='<td style="padding:3px">'+(t.numero||"")+" "+(t.rue||"").substring(0,25)+'</td>';
     html+='<td style="text-align:right;padding:3px">'+(t.surface_m2||"?")+'m\u00B2</td>';
+    var prixTotal=t.prix_total||(t.prix_m2&&t.surface_m2?t.prix_m2*t.surface_m2:0);
+    html+='<td style="text-align:right;padding:3px">'+(prixTotal>1e6?(prixTotal/1e6).toFixed(2)+"M":prixTotal>0?Math.round(prixTotal/1e3)+"K":"\u2014")+'</td>';
     html+='<td style="text-align:right;padding:3px;font-weight:600;'+pColor+'">'+(t.prix_m2||0).toLocaleString("fr")+'</td>';
     html+='<td style="text-align:right;padding:3px">'+(t.loyer_eco_m2_an?t.loyer_eco_m2_an+"\u20AC":"—")+'</td>';
     html+='<td style="text-align:right;padding:3px;color:var(--text3)">'+(t.date_vente||"").substring(0,7)+'</td>';
