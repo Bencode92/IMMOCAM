@@ -1,0 +1,310 @@
+[
+  {
+    "source": "licitor",
+    "url": "https://www.licitor.com/annonce/10/82/78/vente-aux-encheres/quatre-espaces-de-bureaux-contigus/ris-orangis/essonne/108278.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "",
+      "commune": "",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 76.4,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 20000.0,
+      "prix_m2": 261.78010471204186,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Enchère — Quatre Espaces De Bureaux Contigus 76m²",
+      "description": "Mise à prix: 20,000€. . 91 | Ris-Orangis | Quatre espaces de bureaux contigus | de 76,4 m², au rez-de-chaussée, au fond du couloir de droite, quatre dernières [...] | Mise à prix : | 20 000 €",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "licitor",
+    "url": "https://www.licitor.com/annonce/10/82/39/vente-aux-encheres/un-local-commercial/paris-10eme/paris/108239.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "",
+      "commune": "",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 111.03,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 500000.0,
+      "prix_m2": 4503.287399801855,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Enchère — Un Local Commercial 111m²",
+      "description": "Mise à prix: 500,000€. . 75 | Paris 10ème | Un local commercial | de 111,03 m², au 4ème étage, comprenant : hall d'accueil, deux bureaux, salle de réunion Loué | Mise à prix : | 500 000 €",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "licitor",
+    "url": "https://www.licitor.com/annonce/10/83/35/vente-aux-encheres/un-local-commercial/paris-11eme/paris/108335.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "",
+      "commune": "",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 56.78,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 50000.0,
+      "prix_m2": 880.5917576611482,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Enchère — Un Local Commercial 56m²",
+      "description": "Mise à prix: 50,000€. . 75 | Paris 11ème | Un local commercial | de 56,78 m², au rez-de-chaussée Cadastré section BV n°21 pour 3a 85ca Un contrat de location [...] | Mise à prix : | 50 000 €",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "licitor",
+    "url": "https://www.licitor.com/annonce/10/79/56/vente-aux-encheres/un-local-commercial/paris-13eme/paris/107956.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "",
+      "commune": "",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 75.77,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 440000.0,
+      "prix_m2": 5807.047644186354,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Enchère — Un Local Commercial 75m²",
+      "description": "Mise à prix: 440,000€. . 75 | Paris 13ème | Un local commercial | de 75,77 m², au rez-de-chaussée, escalier A, comprenant : trois pièces, couloir avec placard, [...] | Mise à prix : | 440 000 €",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "licitor",
+    "url": "https://www.licitor.com/annonce/10/82/40/vente-aux-encheres/un-local-commercial-et-professionnel/paris-14eme/paris/108240.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "",
+      "commune": "",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 218.04,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 500000.0,
+      "prix_m2": 2293.1572188589253,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Enchère — Un Local Commercial Et Professionnel 218m²",
+      "description": "Mise à prix: 500,000€. . 75 | Paris 14ème | Un local commercial et professionnel | de 218,04 m², bâtiment B, comprenant : Au rez-de-chaussée : entrée accueil, [...] | Mise à prix : | 500 000 €",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "licitor",
+    "url": "https://www.licitor.com/annonce/10/82/27/vente-aux-encheres/un-local-commercial/grigny/essonne/108227.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "",
+      "commune": "",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 300000.0,
+      "prix_m2": 300000.0,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Enchère — Un Local Commercial 0m²",
+      "description": "Mise à prix: 300,000€. . 91 | Grigny | Un local commercial | - avec dix emplacements de stationnement Le bien serait peut-être occupé par une église | Mise à prix : | 300 000 €",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "licitor",
+    "url": "https://www.licitor.com/annonce/10/79/99/vente-aux-encheres/un-local-commercial-avec-trois-boxes/rambouillet/yvelines/107999.html",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
+      "code_postal": "",
+      "commune": "",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 61.69,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 32000.0,
+      "prix_m2": 518.722645485492,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Enchère — Un Local Commercial Avec Trois Boxes 61m²",
+      "description": "Mise à prix: 32,000€. . 78 | Rambouillet | Un local commercial avec trois boxes | Surface Loi Carrez : 61,69 m² Les lieux sont occupés | Mise à prix : | 32 000 €",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  }
+]

@@ -89,50 +89,6 @@
   },
   {
     "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-8-75008/hotel-particulier-a-vendre-ref-1343761-0V",
-    "date_scrape": "2026-04-16",
-    "localisation": {
-      "adresse": "1343761_Principale.jpeg.webp\" alt=\"Bureaux - Vente - PARIS -",
-      "code_postal": "75008",
-      "commune": "Paris 8e",
-      "departement": "75",
-      "code_insee": "",
-      "latitude": null,
-      "longitude": null
-    },
-    "bien": {
-      "type": "bureaux",
-      "surface_m2": 700.0,
-      "dpe": "",
-      "ges": "",
-      "annee_construction": null,
-      "etat": "",
-      "parking": 0,
-      "ascenseur": null,
-      "climatisation": null
-    },
-    "financier": {
-      "prix_affiche": 0,
-      "prix_m2": 0.0,
-      "honoraires_pct": null,
-      "taxe_fonciere_an": null,
-      "charges_copro_an": null
-    },
-    "locatif": {
-      "occupation": "",
-      "loyer_actuel_an": 0,
-      "loyer_m2_an": 0
-    },
-    "annonce": {
-      "titre": "HOTEL PARTICULIER A VENDRE",
-      "description": "Réf. 1343761-0V",
-      "photos": 0,
-      "date_publication": "",
-      "agent": ""
-    }
-  },
-  {
-    "source": "arthurloyd",
     "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-14-75014/bureaux-224-vendre-paris-14-390-m-178-en-rdc-et-sous-sol-avec-patio-privatif-excellente-accessibilit-233-ref-1390526-0V",
     "date_scrape": "2026-04-16",
     "localisation": {
@@ -177,12 +133,12 @@
   },
   {
     "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-10-75010/bureaux-224-vendre-224-paris-75010-ref-1454216-0V",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-8-75008/hotel-particulier-a-vendre-ref-1343761-0V",
     "date_scrape": "2026-04-16",
     "localisation": {
-      "adresse": "1454216_Principale.jpeg.webp\" alt=\"Bureaux - Vente - PARIS -",
-      "code_postal": "75010",
-      "commune": "Paris 10e",
+      "adresse": "1343761_Principale.jpeg.webp\" alt=\"Bureaux - Vente - PARIS -",
+      "code_postal": "75008",
+      "commune": "Paris 8e",
       "departement": "75",
       "code_insee": "",
       "latitude": null,
@@ -190,7 +146,7 @@
     },
     "bien": {
       "type": "bureaux",
-      "surface_m2": 0,
+      "surface_m2": 700.0,
       "dpe": "",
       "ges": "",
       "annee_construction": null,
@@ -200,8 +156,8 @@
       "climatisation": null
     },
     "financier": {
-      "prix_affiche": 480000.0,
-      "prix_m2": 480000.0,
+      "prix_affiche": 0,
+      "prix_m2": 0.0,
       "honoraires_pct": null,
       "taxe_fonciere_an": null,
       "charges_copro_an": null
@@ -212,8 +168,8 @@
       "loyer_m2_an": 0
     },
     "annonce": {
-      "titre": "Bureaux &#224; vendre &#224; PARIS 75010",
-      "description": "Réf. 1454216-0V",
+      "titre": "HOTEL PARTICULIER A VENDRE",
+      "description": "Réf. 1343761-0V",
       "photos": 0,
       "date_publication": "",
       "agent": ""
@@ -265,10 +221,54 @@
   },
   {
     "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-16-75016/bureaux-224-vendre-224-paris-75016-ref-1454172-0V",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-10-75010/bureaux-224-vendre-224-paris-75010-ref-1454216-0V",
     "date_scrape": "2026-04-16",
     "localisation": {
-      "adresse": "1454172_Principale.jpeg.webp\" alt=\"Bureaux - Vente - PARIS -",
+      "adresse": "1454216_Principale.jpeg.webp\" alt=\"Bureaux - Vente - PARIS -",
+      "code_postal": "75010",
+      "commune": "Paris 10e",
+      "departement": "75",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 480000.0,
+      "prix_m2": 480000.0,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Bureaux &#224; vendre &#224; PARIS 75010",
+      "description": "Réf. 1454216-0V",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "arthurloyd",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-16-75016/hotel-particulier-a-destination-mixte-bureaux-habitation-a-paris-75016-ref-xxbv122",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "",
       "code_postal": "75016",
       "commune": "Paris 16e",
       "departement": "75",
@@ -278,7 +278,7 @@
     },
     "bien": {
       "type": "bureaux",
-      "surface_m2": 435.0,
+      "surface_m2": 626.0,
       "dpe": "",
       "ges": "",
       "annee_construction": null,
@@ -300,8 +300,8 @@
       "loyer_m2_an": 0
     },
     "annonce": {
-      "titre": "Bureaux &#224; vendre &#224; PARIS 75016",
-      "description": "Réf. 1454172-0V",
+      "titre": "Hôtel particulier à destination mixte bureaux/habitation à Paris 75016",
+      "description": "Réf. xxbv122",
       "photos": 0,
       "date_publication": "",
       "agent": ""
@@ -353,10 +353,10 @@
   },
   {
     "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-16-75016/hotel-particulier-a-destination-mixte-bureaux-habitation-a-paris-75016-ref-xxbv122",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/paris/paris-16-75016/bureaux-224-vendre-224-paris-75016-ref-1454172-0V",
     "date_scrape": "2026-04-16",
     "localisation": {
-      "adresse": "",
+      "adresse": "1454172_Principale.jpeg.webp\" alt=\"Bureaux - Vente - PARIS -",
       "code_postal": "75016",
       "commune": "Paris 16e",
       "departement": "75",
@@ -366,7 +366,7 @@
     },
     "bien": {
       "type": "bureaux",
-      "surface_m2": 626.0,
+      "surface_m2": 435.0,
       "dpe": "",
       "ges": "",
       "annee_construction": null,
@@ -388,8 +388,8 @@
       "loyer_m2_an": 0
     },
     "annonce": {
-      "titre": "Hôtel particulier à destination mixte bureaux/habitation à Paris 75016",
-      "description": "Réf. xxbv122",
+      "titre": "Bureaux &#224; vendre &#224; PARIS 75016",
+      "description": "Réf. 1454172-0V",
       "photos": 0,
       "date_publication": "",
       "agent": ""
@@ -573,12 +573,12 @@
   },
   {
     "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/levallois-perret/bureaux-de-standing-224-vendre-avec-terrasse-224-levallois-perret-ref-2156017-0V",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/boulogne-billancourt/immeuble-a-boulogne-billancourt-ref-INV-6",
     "date_scrape": "2026-04-16",
     "localisation": {
-      "adresse": "31_134612.jpeg.webp\" alt=\"Bureaux - Vente - LEVALLOIS PERRET -",
-      "code_postal": "92300",
-      "commune": "-",
+      "adresse": "",
+      "code_postal": "75002",
+      "commune": "Paris 2e",
       "departement": "92",
       "code_insee": "",
       "latitude": null,
@@ -586,7 +586,7 @@
     },
     "bien": {
       "type": "bureaux",
-      "surface_m2": 670.0,
+      "surface_m2": 0,
       "dpe": "",
       "ges": "",
       "annee_construction": null,
@@ -596,8 +596,8 @@
       "climatisation": null
     },
     "financier": {
-      "prix_affiche": 0,
-      "prix_m2": 0.0,
+      "prix_affiche": 4000000.0,
+      "prix_m2": 4000000.0,
       "honoraires_pct": null,
       "taxe_fonciere_an": null,
       "charges_copro_an": null
@@ -608,8 +608,8 @@
       "loyer_m2_an": 0
     },
     "annonce": {
-      "titre": "Bureaux de standing &#224; vendre, avec terrasse &#224; Levallois-Perret",
-      "description": "Réf. 2156017-0V",
+      "titre": "Immeuble à Boulogne-Billancourt",
+      "description": "Réf. INV-6",
       "photos": 0,
       "date_publication": "",
       "agent": ""
@@ -617,11 +617,11 @@
   },
   {
     "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/clichy/bureaux-224-vendre-224-clichy-92110-ref-2143355-0V",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/saint-cloud-92210/a-vendre-proche-gare-et-domaine-de-st-cloud-les-bureaux-de-la-colline-ref-838138-0V",
     "date_scrape": "2026-04-16",
     "localisation": {
-      "adresse": "2143355_Principale.jpeg.webp\" alt=\"Bureaux - Vente - CLICHY -",
-      "code_postal": "92110",
+      "adresse": "838138_Principale.jpeg.webp\" alt=\"Bureaux - Vente - SAINT CLOUD -",
+      "code_postal": "92210",
       "commune": "-",
       "departement": "92",
       "code_insee": "",
@@ -630,7 +630,7 @@
     },
     "bien": {
       "type": "bureaux",
-      "surface_m2": 485.0,
+      "surface_m2": 580.0,
       "dpe": "",
       "ges": "",
       "annee_construction": null,
@@ -640,8 +640,8 @@
       "climatisation": null
     },
     "financier": {
-      "prix_affiche": 0,
-      "prix_m2": 0.0,
+      "prix_affiche": 1110000.0,
+      "prix_m2": 1913.7931034482758,
       "honoraires_pct": null,
       "taxe_fonciere_an": null,
       "charges_copro_an": null
@@ -652,8 +652,52 @@
       "loyer_m2_an": 0
     },
     "annonce": {
-      "titre": "Bureaux &#224; vendre &#224; CLICHY 92110",
-      "description": "Réf. 2143355-0V",
+      "titre": "A vendre, proche gare et Domaine de St Cloud, les bureaux de la Colline",
+      "description": "Réf. 838138-0V",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "arthurloyd",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/la-defense/loft-industriel-224-vendre-avec-terrasse-privative-224-courbevoie-ref-1434536-0V",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "1434536_Principale.jpeg.webp\" alt=\"Bureaux - Vente - COURBEVOIE -",
+      "code_postal": "92400",
+      "commune": "-",
+      "departement": "92",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 577.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 3690000.0,
+      "prix_m2": 6395.147313691507,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Loft industriel &#224; vendre avec terrasse privative &#224; Courbevoie",
+      "description": "Réf. 1434536-0V",
       "photos": 0,
       "date_publication": "",
       "agent": ""
@@ -698,6 +742,50 @@
     "annonce": {
       "titre": "Bureaux &#224; vendre &#8211; Bord de Seine, cadre verdoyant, jardin privatif &#224; Rueil-Malmaison",
       "description": "Réf. 1077552-0V",
+      "photos": 0,
+      "date_publication": "",
+      "agent": ""
+    }
+  },
+  {
+    "source": "arthurloyd",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/levallois-perret/bureaux-de-standing-224-vendre-avec-terrasse-224-levallois-perret-ref-2156017-0V",
+    "date_scrape": "2026-04-16",
+    "localisation": {
+      "adresse": "31_134612.jpeg.webp\" alt=\"Bureaux - Vente - LEVALLOIS PERRET -",
+      "code_postal": "92300",
+      "commune": "-",
+      "departement": "92",
+      "code_insee": "",
+      "latitude": null,
+      "longitude": null
+    },
+    "bien": {
+      "type": "bureaux",
+      "surface_m2": 670.0,
+      "dpe": "",
+      "ges": "",
+      "annee_construction": null,
+      "etat": "",
+      "parking": 0,
+      "ascenseur": null,
+      "climatisation": null
+    },
+    "financier": {
+      "prix_affiche": 0,
+      "prix_m2": 0.0,
+      "honoraires_pct": null,
+      "taxe_fonciere_an": null,
+      "charges_copro_an": null
+    },
+    "locatif": {
+      "occupation": "",
+      "loyer_actuel_an": 0,
+      "loyer_m2_an": 0
+    },
+    "annonce": {
+      "titre": "Bureaux de standing &#224; vendre, avec terrasse &#224; Levallois-Perret",
+      "description": "Réf. 2156017-0V",
       "photos": 0,
       "date_publication": "",
       "agent": ""
@@ -793,11 +881,11 @@
   },
   {
     "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/la-defense/loft-industriel-224-vendre-avec-terrasse-privative-224-courbevoie-ref-1434536-0V",
+    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/clichy/bureaux-224-vendre-224-clichy-92110-ref-2143355-0V",
     "date_scrape": "2026-04-16",
     "localisation": {
-      "adresse": "1434536_Principale.jpeg.webp\" alt=\"Bureaux - Vente - COURBEVOIE -",
-      "code_postal": "92400",
+      "adresse": "2143355_Principale.jpeg.webp\" alt=\"Bureaux - Vente - CLICHY -",
+      "code_postal": "92110",
       "commune": "-",
       "departement": "92",
       "code_insee": "",
@@ -806,7 +894,7 @@
     },
     "bien": {
       "type": "bureaux",
-      "surface_m2": 577.0,
+      "surface_m2": 485.0,
       "dpe": "",
       "ges": "",
       "annee_construction": null,
@@ -816,8 +904,8 @@
       "climatisation": null
     },
     "financier": {
-      "prix_affiche": 3690000.0,
-      "prix_m2": 6395.147313691507,
+      "prix_affiche": 0,
+      "prix_m2": 0.0,
       "honoraires_pct": null,
       "taxe_fonciere_an": null,
       "charges_copro_an": null
@@ -828,96 +916,8 @@
       "loyer_m2_an": 0
     },
     "annonce": {
-      "titre": "Loft industriel &#224; vendre avec terrasse privative &#224; Courbevoie",
-      "description": "Réf. 1434536-0V",
-      "photos": 0,
-      "date_publication": "",
-      "agent": ""
-    }
-  },
-  {
-    "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/boulogne-billancourt/immeuble-a-boulogne-billancourt-ref-INV-6",
-    "date_scrape": "2026-04-16",
-    "localisation": {
-      "adresse": "",
-      "code_postal": "75002",
-      "commune": "Paris 2e",
-      "departement": "92",
-      "code_insee": "",
-      "latitude": null,
-      "longitude": null
-    },
-    "bien": {
-      "type": "bureaux",
-      "surface_m2": 0,
-      "dpe": "",
-      "ges": "",
-      "annee_construction": null,
-      "etat": "",
-      "parking": 0,
-      "ascenseur": null,
-      "climatisation": null
-    },
-    "financier": {
-      "prix_affiche": 4000000.0,
-      "prix_m2": 4000000.0,
-      "honoraires_pct": null,
-      "taxe_fonciere_an": null,
-      "charges_copro_an": null
-    },
-    "locatif": {
-      "occupation": "",
-      "loyer_actuel_an": 0,
-      "loyer_m2_an": 0
-    },
-    "annonce": {
-      "titre": "Immeuble à Boulogne-Billancourt",
-      "description": "Réf. INV-6",
-      "photos": 0,
-      "date_publication": "",
-      "agent": ""
-    }
-  },
-  {
-    "source": "arthurloyd",
-    "url": "https://www.arthur-loyd.com/bureau-vente/ile-de-france/hauts-de-seine/saint-cloud-92210/a-vendre-proche-gare-et-domaine-de-st-cloud-les-bureaux-de-la-colline-ref-838138-0V",
-    "date_scrape": "2026-04-16",
-    "localisation": {
-      "adresse": "838138_Principale.jpeg.webp\" alt=\"Bureaux - Vente - SAINT CLOUD -",
-      "code_postal": "92210",
-      "commune": "-",
-      "departement": "92",
-      "code_insee": "",
-      "latitude": null,
-      "longitude": null
-    },
-    "bien": {
-      "type": "bureaux",
-      "surface_m2": 580.0,
-      "dpe": "",
-      "ges": "",
-      "annee_construction": null,
-      "etat": "",
-      "parking": 0,
-      "ascenseur": null,
-      "climatisation": null
-    },
-    "financier": {
-      "prix_affiche": 1110000.0,
-      "prix_m2": 1913.7931034482758,
-      "honoraires_pct": null,
-      "taxe_fonciere_an": null,
-      "charges_copro_an": null
-    },
-    "locatif": {
-      "occupation": "",
-      "loyer_actuel_an": 0,
-      "loyer_m2_an": 0
-    },
-    "annonce": {
-      "titre": "A vendre, proche gare et Domaine de St Cloud, les bureaux de la Colline",
-      "description": "Réf. 838138-0V",
+      "titre": "Bureaux &#224; vendre &#224; CLICHY 92110",
+      "description": "Réf. 2143355-0V",
       "photos": 0,
       "date_publication": "",
       "agent": ""
