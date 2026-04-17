@@ -714,7 +714,7 @@ function renderT(deals){
     <td style="padding:4px">${r.tags.map(t=>'<span class="deal-tag-small">'+t+'</span>').join("")}</td>
     <td style="padding:4px;font-size:.7rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${r.notes}">${r.notes}</td>
     <td style="padding:4px;font-size:.65rem;color:var(--text3)">${r.src}</td>
-  </tr>`).join("");
+  </tr>`}).join("");
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
 
