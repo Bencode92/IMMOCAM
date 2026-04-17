@@ -702,19 +702,23 @@ function renderT(deals){
   document.getElementById("tH").innerHTML="<tr>"+cols.map(c=>`<th class="${c.n?'num':''}" onclick="tSort('${c.k}')" style="cursor:pointer;padding:8px 6px;font-size:.72rem">${c.l}${ar(c.k)}</th>`).join("")+"</tr>";
   const eC=v=>v==null?"":(v<=-20?"color:var(--green)":v<=0?"color:#b45309":"color:var(--red)");
   const pxC=v=>v>=8?"color:#16a34a;font-weight:600":v>=5?"color:#b45309":"color:#dc2626";
-  document.getElementById("tB").innerHTML=rows.map(r=>{var rowBg=r.ecart!=null&&r.ecart<=-20?"background:#dcfce7":r.ecart!=null&&r.ecart>=30?"background:#fee2e2":"";return`<tr onclick="openDw('${r.k}')" style="cursor:pointer;border-bottom:1px solid var(--border);${rowBg}">
-    <td style="padding:6px 4px"><span class="grade grade-${r.grade}" style="font-size:.7rem;padding:2px 6px">${r.grade}</span>${stI[r._statut]?" "+stI[r._statut]:""}</td>
-    <td style="padding:6px"><div style="font-weight:600;font-size:.82rem">${r.ville}</div><div style="font-size:.7rem;color:var(--text3)">${r.addr}</div></td>
-    <td class="num" style="padding:6px;font-weight:600">${Math.round(r.surface)} m\u00B2</td>
-    <td class="num" style="padding:6px;font-weight:700;font-size:.9rem">${(r.prix/1e6).toFixed(2)}M\u20AC</td>
-    <td class="num" style="padding:6px">${r.prix_m2.toLocaleString("fr")}</td>
-    <td class="num" style="padding:6px;font-weight:600;${eC(r.ecart)}">${r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":""}</td>
-    <td class="num" style="padding:6px">${r.loyer>0?(r.loyer/1e3).toFixed(0)+"K\u20AC":""}</td>
-    <td class="num" style="padding:6px;${pxC(r.yield)}">${r.yield>0?r.yield.toFixed(1)+"%":""}</td>
-    <td style="padding:4px">${r.tags.map(t=>'<span class="deal-tag-small">'+t+'</span>').join("")}</td>
-    <td style="padding:4px;font-size:.7rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${r.notes}">${r.notes}</td>
-    <td style="padding:4px;font-size:.65rem;color:var(--text3)">${r.src}</td>
-  </tr>`}).join("");
+  document.getElementById("tB").innerHTML=rows.map(function(r){
+    var rowBg=r.ecart!=null&&r.ecart<=-20?"background:#dcfce7":r.ecart!=null&&r.ecart>=30?"background:#fee2e2":"";
+    var tagHtml=r.tags.map(function(t){return'<span class="deal-tag-small">'+t+'</span>'}).join("");
+    return '<tr onclick="openDw(\''+r.k+'\')" style="cursor:pointer;border-bottom:1px solid var(--border);'+rowBg+'">'
+    +'<td style="padding:6px 4px"><span class="grade grade-'+r.grade+'" style="font-size:.7rem;padding:2px 6px">'+r.grade+'</span>'+(stI[r._statut]?" "+stI[r._statut]:"")+'</td>'
+    +'<td style="padding:6px"><div style="font-weight:600;font-size:.82rem">'+r.ville+'</div><div style="font-size:.7rem;color:var(--text3)">'+r.addr+'</div></td>'
+    +'<td class="num" style="padding:6px;font-weight:600">'+Math.round(r.surface)+' m\u00B2</td>'
+    +'<td class="num" style="padding:6px;font-weight:700;font-size:.9rem">'+(r.prix/1e6).toFixed(2)+'M\u20AC</td>'
+    +'<td class="num" style="padding:6px">'+r.prix_m2.toLocaleString("fr")+'</td>'
+    +'<td class="num" style="padding:6px;font-weight:600;'+eC(r.ecart)+'">'+(r.ecart!=null?(r.ecart>0?"+":"")+r.ecart.toFixed(1)+"%":"")+'</td>'
+    +'<td class="num" style="padding:6px">'+(r.loyer>0?(r.loyer/1e3).toFixed(0)+"K\u20AC":"")+'</td>'
+    +'<td class="num" style="padding:6px;'+pxC(r.yield)+'">'+(r.yield>0?r.yield.toFixed(1)+"%":"")+'</td>'
+    +'<td style="padding:4px">'+tagHtml+'</td>'
+    +'<td style="padding:4px;font-size:.7rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="'+r.notes+'">'+r.notes+'</td>'
+    +'<td style="padding:4px;font-size:.65rem;color:var(--text3)">'+r.src+'</td>'
+    +'</tr>';
+  }).join("");
 }
 window.tSort=k=>{if(tCol===k)tAsc=!tAsc;else{tCol=k;tAsc=true;}render();};
 
