@@ -419,6 +419,16 @@ async function init(){
   }catch(e){}
   if(!Object.keys(D).length)loadDemo();
 
+  // Corriger dept basé sur CP si incohérent, puis exclure hors périmètre
+  for(var dk of Object.keys(D)){
+    var loc=D[dk].localisation||{};
+    var cp=(loc.code_postal||"").trim();
+    if(cp.length===5){var cpDept=cp.substring(0,2);if(loc.departement!==cpDept)loc.departement=cpDept;}
+    var dept=loc.departement||"";
+    if(dept!=="75"&&dept!=="92"){delete D[dk];continue;}
+    if(dept==="92"){var cmn=(loc.commune||"").toLowerCase();if(cmn.indexOf("boulogne")<0&&cmn.indexOf("neuilly")<0&&cmn.indexOf("levallois")<0){delete D[dk];}}
+  }
+
   // Auto-scoring avec referentiel intégré
   scoreAllDeals();
 
