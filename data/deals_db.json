@@ -3,10 +3,8 @@
     "last_scrape": "2026-04-16T13:44:28.226Z",
     "total_deals": 891,
     "par_statut": {
-      "a_verifier": 2,
+      "a_verifier": 5,
       "nouveau": 882,
-      "simulation": 1,
-      "a_contacter": 2,
       "poubelle": 4
     }
   },
@@ -7844,7 +7842,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "simulation",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -12566,7 +12564,7 @@
         "titre": "Bureau 392m2 Paris 8ème - Parc Monceau",
         "description": "À VENDRE : Bureaux haussmanniens à proximité du Parc Monceau et du Boulevard Haussmann\r\nSitués dans une élégante copropriété, ces bureaux de 339 m² au 3ème étage offrent un charme authentique avec leur..."
       },
-      "_statut": "a_contacter",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -46832,7 +46830,7 @@
         "titre": "Bureaux 1266m2 RUE CHARCOT\nPARIS",
         "description": ""
       },
-      "_statut": "a_contacter",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
