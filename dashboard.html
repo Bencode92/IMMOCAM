@@ -470,36 +470,15 @@ document.addEventListener("input",function(e){if(e.target&&e.target.id==="dwNote
 // Alerte si on quitte avec des changements non sauvés
 window.addEventListener("beforeunload",function(e){if(_dirty){e.preventDefault();e.returnValue="";}});
 
-function loadDemo(){
-  const ds=[
-    {k:"d1",s:"nouveau",c:"Paris 8e Arrondissement",d:"75",a:"45 rue de Courcelles",sf:485,px:3200000,dpe:"D",lo:185000,sc:78,g:"A",ec:-40.3,src:["bureauxlocaux","geolocaux"],hi:[]},
-    {k:"d2",s:"nouveau",c:"Boulogne-Billancourt",d:"92",a:"12 rue du Chateau",sf:320,px:1800000,dpe:"C",lo:95000,sc:65,g:"B",ec:-15.2,src:["bureauxlocaux"],hi:[]},
-    {k:"d3",s:"a_verifier",c:"Paris 11e Arrondissement",d:"75",a:"89 avenue Parmentier",sf:380,px:2500000,dpe:"E",lo:0,sc:52,g:"C",ec:-8.1,src:["loopnet"],hi:[{d:"2026-04-01",p:2800000},{d:"2026-04-10",p:2500000}]},
-    {k:"d4",s:"a_contacter",c:"Issy-les-Moulineaux",d:"92",a:"5 rue Ernest Renan",sf:600,px:3100000,dpe:"B",lo:210000,sc:82,g:"A",ec:-25,src:["geolocaux","investisseur-immo"],hi:[]},
-    {k:"d5",s:"simulation",c:"Paris 15e Arrondissement",d:"75",a:"120 rue de Vaugirard",sf:450,px:4200000,dpe:"C",lo:280000,sc:71,g:"B",ec:-8.5,src:["bureauxlocaux"],hi:[]},
-    {k:"d6",s:"nouveau",c:"Paris 17e Arrondissement",d:"75",a:"30 rue de Levis",sf:700,px:4500000,dpe:"D",lo:0,sc:68,g:"B",ec:-22,src:["bnp-pre"],hi:[]},
-    {k:"d7",s:"nouveau",c:"Levallois-Perret",d:"92",a:"18 rue Rivay",sf:350,px:2600000,dpe:"C",lo:165000,sc:73,g:"B",ec:-18.7,src:["bureauxlocaux","loopnet","geolocaux"],hi:[{d:"2026-04-01",p:2900000},{d:"2026-04-08",p:2600000}]},
-    {k:"d8",s:"nouveau",c:"Nanterre",d:"92",a:"4 rue des Trois Fontanot",sf:520,px:2200000,dpe:"D",lo:140000,sc:75,g:"B",ec:-28,src:["loopnet"],hi:[]},
-  ];
-  for(const x of ds){
-    D[x.k]={_statut:x.s,_first_seen:"2026-04-13",_last_seen:"2026-04-13",_sources:x.src,_notes:"",
-      _prix_historique:x.hi.length?x.hi:[{d:"2026-04-13",p:x.px}],
-      source:x.src[0],url:"#",
-      localisation:{adresse:x.a,commune:x.c,departement:x.d},
-      bien:{surface_m2:x.sf,dpe:x.dpe},
-      financier:{prix_affiche:x.px,prix_m2:Math.round(x.px/x.sf)},
-      locatif:{loyer_actuel_an:x.lo,loyer_m2_an:x.lo?Math.round(x.lo/x.sf):0},
-      annonce:{titre:`Bureaux ${x.sf}m\u00B2 \u2014 ${x.c}`},
-      scoring:{score_global:x.sc,grade:x.g,prix_vs_marche_pct:x.ec,scores_detail:{prix:x.sc,loyer:60,rendement:55,risque:50},alertes:x.dpe>="D"?[`DPE ${x.dpe}`]:[]},
-    };
-  }
-}
+function loadDemo(){}
 
 function popFilters(){
   const ss=new Set,vv=new Set;
   for(const v of Object.values(D)){
     var dept=v.localisation?.departement||"";
     if(dept!=="75"&&dept!=="92")continue; // Seulement 75+92
+    // 92: seulement Boulogne, Neuilly, Levallois
+    if(dept==="92"){var cm92f=(v.localisation?.commune||"").toLowerCase();if(cm92f!=="boulogne-billancourt"&&cm92f!=="neuilly-sur-seine"&&cm92f!=="levallois-perret")continue;}
     (v._sources||[]).forEach(s=>ss.add(s));
     var commune=v.localisation?.commune||"";
     var cp=v.localisation?.code_postal||"";
@@ -512,7 +491,7 @@ function popFilters(){
     // Paris arrondissements
     if(commune.match(/^Paris\s+\d+/i)){vv.add(commune);continue}
     // Villes 92 connues
-    var villes92=["Boulogne-Billancourt","Issy-les-Moulineaux","Levallois-Perret","Neuilly-sur-Seine","Clichy","Montrouge","Courbevoie","Puteaux","Nanterre","Rueil-Malmaison","Saint-Denis","Suresnes","Malakoff","Vanves","Clamart","Colombes","Saint-Cloud","Meudon","Gennevilliers","Châtillon","Sèvres","Antony","Bagneux","Fontenay-aux-Roses","La Garenne-Colombes","Asnières-sur-Seine","Châtenay-Malabry"];
+    var villes92=["Boulogne-Billancourt","Neuilly-sur-Seine","Levallois-Perret"];
     var matched=false;
     for(var vi=0;vi<villes92.length;vi++){if(commune.toLowerCase()===villes92[vi].toLowerCase()){vv.add(villes92[vi]);matched=true;break}}
     if(!matched&&commune.match(/^Paris$/i)){
@@ -539,6 +518,8 @@ function filtered(){
     if(!fa&&d._statut==="poubelle")return false;
     if(fs&&!(d._sources||[]).includes(fs))return false;
     if(fd){var fds=fd.split(",");if(!fds.includes(d.localisation?.departement))return false;}
+    // 92: seulement Boulogne, Neuilly, Levallois
+    if(d.localisation?.departement==="92"){var cm92=(d.localisation?.commune||"").toLowerCase();if(cm92!=="boulogne-billancourt"&&cm92!=="neuilly-sur-seine"&&cm92!=="levallois-perret")return false;}
     var fvl=document.getElementById("fVille").value;
     if(fvl){var cm=d.localisation?.commune||"";var cp2=d.localisation?.code_postal||"";if(cm==="Paris"&&cp2.startsWith("75")&&cp2.length===5){var ar2=parseInt(cp2.substring(3));if(ar2>=1&&ar2<=20)cm="Paris "+ar2+"e";}if(cm!==fvl)return false;}
     if(fg&&d.scoring?.grade!==fg)return false;
