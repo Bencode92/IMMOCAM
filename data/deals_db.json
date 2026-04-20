@@ -4,8 +4,9 @@
     "total_deals": 891,
     "par_statut": {
       "a_verifier": 5,
-      "nouveau": 882,
-      "poubelle": 4
+      "nouveau": 880,
+      "poubelle": 5,
+      "a_contacter": 1
     }
   },
   "deals": {
@@ -43219,7 +43220,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -68443,7 +68444,7 @@
         "titre": "Bureau 180m2 Neuilly-sur-Seine - La Plaine des Sablons",
         "description": "Ce que l'on aime : \r\nLa proximité immédiate des transports en commun et des commerces.\r\nA 20 mètres de la ligne 1 (Porte Maillot)\r\nLe bel immeuble haussmannien sécurisé avec gardien\r\nLes deux entrées..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_contacter",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
