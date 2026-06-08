@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 685,
+      "poubelle": 686,
       "a_verifier": 20,
-      "nouveau": 400
+      "nouveau": 399
     }
   },
   "deals": {
@@ -7924,7 +7924,7 @@
         "titre": "Bureau 561m2 Paris 9ème - Clichy-Trinité",
         "description": "En plein coeur de Saint-Lazare, IMMPROVE vous propose une surface de bureau d'environ 561 m² répartie sur deux niveaux, entre rez-de-chaussée et rez-de-patio. L'ensemble bénéficie d'une grande terrasse..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
