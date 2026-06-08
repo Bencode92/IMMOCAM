@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 937,
+      "poubelle": 954,
       "a_verifier": 54,
-      "nouveau": 114
+      "nouveau": 97
     }
   },
   "deals": {
@@ -50467,7 +50467,7 @@
         "titre": "Bureaux 515m2 EGLISE\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -50612,7 +50612,7 @@
         "titre": "Bureaux 334m2 RUE ROSENWALD\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -50829,7 +50829,7 @@
         "titre": "Bureaux 702m2 RUE PASCAL\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51123,7 +51123,7 @@
         "titre": "Bureaux 640m2 QUAI DE GRENELLE\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51197,7 +51197,7 @@
         "titre": "Bureaux 207m2 BOULEVARD DE MAGENTA\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51416,7 +51416,7 @@
         "titre": "Bureaux 330m2 AVENUE VICTOR HUGO\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51490,7 +51490,7 @@
         "titre": "Bureaux 288m2 RUE DE RENNES\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51564,7 +51564,7 @@
         "titre": "Bureaux 435m2 AVENUE VICTOR HUGO\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51714,7 +51714,7 @@
         "titre": "Bureau 618m2 Paris 13ème - Buttes Aux Cailles-Glacière",
         "description": "Engel & Völkers vous présente à la vente des locaux à usage commercial et à usage de bureaux d'une surface totale de 618,66 m². A 7 minutes à pied du métro Corvisart, ces locaux sont situés au cœur de..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51790,7 +51790,7 @@
         "titre": "Bureau 423m2 Paris 6ème - Odéon",
         "description": "Engel & Völkers vous présente à la vente deux locaux commerciaux et bureaux, situés dans le 6ème arrondissement. Une adresse de prestige au cœur de Paris : le Jardin du Luxembourg est à seulement deux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -53069,7 +53069,7 @@
         "titre": "Bureau 436m2 Paris 17ème",
         "description": "A deux pas du métro, au cœur du 17ème arrondissement, à vendre bureaux entièrement rénovés d'une surface de 436m² dont 234m² de réserve avec accès indépendant sur rue répartis sur 4 niveaux.\r\n\r\nCARACTERISTIQUES..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -53221,7 +53221,7 @@
         "titre": "Bureau 439m2 Paris 18ème - Amiraux-Simplon-Poissonniers",
         "description": "75018 Paris. Au pied du métro Max Dormoy.  Rue de la Chapelle. Dans un Très Bel immeuble haussmannien avec Gardienne et très bien tenu. Bureaux de 440m²  au premier étage. Les locaux sont en parfait état,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -53826,7 +53826,7 @@
         "titre": "Bureau 255m2 Paris 17ème - Courcelles-Wagram",
         "description": "BUREAUX HAUSSMANNIEN A LOUER\r\nSitués au 6eme étage d'un immeuble haussmannien de très bon standing avec ascenseur, ces bureaux de 255 m2 à la vente offrent un plan rationnel, de beaux volumes et une luminosité..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -54200,7 +54200,7 @@
         "titre": "Bureau 1039m2 Paris 2ème - Sentier-Bonne Nouvelle",
         "description": "Au cœur du quartier du Sentier, cet élégant immeuble haussmannien en pierre de taille conjugue patrimoine architectural et rénovation contemporaine. L'ensemble du bâtiment a été entièrement restructuré..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -56365,7 +56365,7 @@
         "titre": "Bureau 457m2 Paris 9ème",
         "description": "Lorette martyrs trudaine 75009 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose à proximité du métro Anvers :\r\n\r\n  un bureaux d'une surface totale de 456 m² disposant d'une terrasse privative.\r\n\r\nBelle..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -56669,7 +56669,7 @@
         "titre": "Bureau 261m2 Paris 7ème",
         "description": "Bac - solferino 75007 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose à Paris 7ème, à proximité du métro Rue du Bac:\r\nUn grand local à usage commercial, actuellement aménagé en bureaux de 8 pièces climatisées,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -57260,7 +57260,7 @@
         "prix_affiche": 2000000,
         "prix_m2": 7722
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
