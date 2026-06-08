@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 836,
-      "a_verifier": 37,
-      "nouveau": 232
+      "poubelle": 855,
+      "a_verifier": 40,
+      "nouveau": 210
     }
   },
   "deals": {
@@ -30877,7 +30877,7 @@
         "titre": "Bureau 700m2 Paris 10ème - Faubourg du Temple-Hôpital Saint Louis",
         "description": "Situé à proximité du canal Saint-Martin, Wellstone vous propose un immeuble indépendant qui vous séduira par ses plateaux atypiques, baignés de lumière et adaptables à vos besoins. \r\nUn espace extérieur..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -31032,7 +31032,7 @@
         "titre": "Bureau 372m2 Paris 11ème - République-Saint Ambroise",
         "description": "SAVILLS vous propose à la vente un espace de bureaux exceptionnel de 380 m², idéalement situé au coeur de Paris, dans un quartier dynamique et prisé. Ces locaux, non divisibles, ont été récemment rénovés..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -31414,7 +31414,7 @@
         "titre": "Bureau 563m2 Paris 16ème",
         "description": "A proximité de la Porte Maillot, nous vous proposons d'acquérir un bel Hotel Particulier édifié en R+2 sur un niveaux de sous-sol.\r\nBNP Paribas Real Estate vous propose d'acquérir un Hotel particulier..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -31568,7 +31568,7 @@
         "titre": "Bureau 260m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "Dans un immeuble de bon standing, nous vous proposons des bureaux à la vente ou à la location en plein coeur du 10ème arrondissement."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -31722,7 +31722,7 @@
         "titre": "Bureau 285m2 Paris 8ème",
         "description": "Sur une rue discrète, entre le parc Monceau et la rue du Faubourg-Saint-Honoré, comme une maison des Années folles aux décors d’époque. 18m² de commercialité. \nLes boiseries de chêne des Années folles..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -31952,7 +31952,7 @@
         "titre": "Bureau 280m2 Paris 6ème",
         "description": "Au deuxième étage d'un immeuble d'angle de bon standing, Cushman & Wakefield vous propose deux lots à usage d'habitation. Bénéficiant d'une bonne souplesse d'aménagement, l'actif dispose de 10 bureaux,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -32029,7 +32029,7 @@
         "titre": "Bureau 381.28m2 Paris 17ème",
         "description": "Cushman & Wakefield vous propose des bureaux à vendre situés entre la Porte Maillot et la Place des Ternes. Surface lumineuses en bon état et bénéficiant de prestations de qualité. Peu de contraintes..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -32105,7 +32105,7 @@
         "titre": "Bureau 650m2 Paris 10ème",
         "description": "Nous vous proposons à la vente un bel immeuble de bureaux indépendant au cour du 10e arrondissement de Paris\r\n\r\nIl développe une surface utile totale de 650 mètres carrés sur 3 niveaux \r\n\r\nPlateaux calmes..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -32183,7 +32183,7 @@
         "titre": "Bureau 500m2 Paris 17ème",
         "description": "Paris bon 17e. Bel hôtel particulier de bureaux.\nCachet de l'ancien.\nBel extérieur. Travaux à prévoir.\nBeau potentiel.\nDossier complet sur demande."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -32260,7 +32260,7 @@
         "titre": "Bureau 610m2 Paris 17ème",
         "description": "Paris 17e.Idéalement situé.\nBel hôtel particulier de bureaux avec le charme de l'ancien.\nTerrasse.\n\nDossier complet sur demande"
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -32456,7 +32456,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -32551,7 +32551,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -32648,7 +32648,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -32744,7 +32744,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -32840,7 +32840,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -32936,7 +32936,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -33033,7 +33033,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -33128,7 +33128,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -33223,7 +33223,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -33414,7 +33414,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -33510,7 +33510,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -33606,7 +33606,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-15",
