@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 954,
-      "a_verifier": 54,
-      "nouveau": 97
+      "poubelle": 963,
+      "a_verifier": 55,
+      "nouveau": 87
     }
   },
   "deals": {
@@ -57400,7 +57400,7 @@
         "prix_affiche": 3465000,
         "prix_m2": 6638
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -57471,7 +57471,7 @@
         "prix_affiche": 4000000,
         "prix_m2": 5571
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -57686,7 +57686,7 @@
         "prix_affiche": 2500000,
         "prix_m2": 10000
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -57758,7 +57758,7 @@
         "prix_affiche": 6300000,
         "prix_m2": 7309
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -58044,7 +58044,7 @@
         "prix_affiche": 4790000,
         "prix_m2": 5675
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -58468,7 +58468,7 @@
         "prix_affiche": 3550000,
         "prix_m2": 4043
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -58612,7 +58612,7 @@
         "prix_affiche": 5450000,
         "prix_m2": 14495
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -59193,7 +59193,7 @@
         "titre": "Bureaux 434m2 RUE DE LA PEPINIERE\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -59410,7 +59410,7 @@
         "titre": "Bureaux 489m2 RUE DES BOULETS\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -59559,7 +59559,7 @@
         "titre": "Bureaux 536m2 RUE YVES TOUDIC\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
