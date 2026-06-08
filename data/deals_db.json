@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 762,
-      "a_verifier": 27,
-      "nouveau": 316
+      "poubelle": 767,
+      "a_verifier": 28,
+      "nouveau": 310
     }
   },
   "deals": {
@@ -15777,7 +15777,7 @@
         "titre": "Bureau 435m2 Paris 16ème - Chaillot",
         "description": "A proximité du métro Victor Hugo, nous vous proposons d'acquérir une surface rare dans un tres bel immeuble haussmannien aux parties communes de grand standing. Possibilité d'acquérir les locaux dans..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -16319,7 +16319,7 @@
         "titre": "Bureau 215m2 Paris 17ème - Pereire-Malesherbes",
         "description": "CBRE vous propose à la vente un Immeuble indépendant atypique de 215 m² environ, développé sur trois niveaux, offrant des volumes uniques et une grande flexibilité d'aménagement. Un bien rare à la vente,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -16395,7 +16395,7 @@
         "titre": "Bureau 300m2 Paris 10ème",
         "description": "M° Strasbourg Saint-Denis, dans un immeuble de standing, à vendre un local commercial de 300 m².\r\n\r\nCARACTERISTIQUES DE L'OFFRE \r\n\r\nFaçade, toit et plancher rénové\r\n\r\n300m2 au RDC avec 3 accès indépendants\r\n\r\n3..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -16473,7 +16473,7 @@
         "titre": "Bureau 391m2 Paris 13ème - Patay-Masséna",
         "description": "Au coeur du secteur de BNF, à 3 minutes à pied du métro, dans un immeuble mixte et récent de 2007, LEASEO vous propose à l'acquisition une surface de bureaux en rez-de-chaussée lumineuse et traversante\r\nAMENAGEMENT..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -16549,7 +16549,7 @@
         "titre": "Bureau 570m2 Paris 17ème - La Fourche-Guy Môquet",
         "description": "Découvrez une opportunité exceptionnelle d'acquérir des bureaux spacieux au coeur de Paris, proposés exclusivement par CW. Nichés dans un immeuble mixte au charme unique, ces bureaux de 570 m² offrent..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17240,7 +17240,7 @@
         "titre": "Bureau 1266m2 Paris 13ème - Dunois-Bibliothèque-Jeanne-d'Arc",
         "description": "A proximité de la bibliothèque nationale de France, JLL vous propose à la vente des locaux ERP d'une superficie de 1 266 m². Ces locaux ERP pourront s'adapter à une activité de bureaux comme de formation...."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
