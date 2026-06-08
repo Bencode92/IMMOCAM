@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 798,
-      "a_verifier": 32,
-      "nouveau": 275
+      "poubelle": 812,
+      "a_verifier": 34,
+      "nouveau": 259
     }
   },
   "deals": {
@@ -22791,7 +22791,7 @@
         "titre": "Bureau 335m2 Paris 6ème - Odéon",
         "description": "Vente de locaux professionnels / Bureaux de standing.\nAvenue de l'Observatoire – 75006 Paris.\nAu cœur du prestigieux quartier du Jardin du Luxembourg, dans un bel immeuble datant de 1890, nous vous proposons..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -23021,7 +23021,7 @@
         "titre": "Bureau 573m2 Paris 4ème - Saint Gervais",
         "description": "Idéalement situé au cœur des quartiers historiques de Saint-Paul et du Marais, à quelques pas de la Place des Vosges et de l'Île Saint-Louis, venez découvrir cet exceptionnel immeuble mixte du XVIIe siècle.\r\n\r\nL'ensemble..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -23408,7 +23408,7 @@
         "titre": "Bureau 240m2 Paris 8ème - Saint Philippe du Roule",
         "description": "Au pied du métro Miromesnil, au deuxième étage d'un immeuble haussmannien, JLL vous propose à la vente un plateau de bureaux de 240 m² entièrement rénové. Plateau de standing aux belles prestations :..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -23485,7 +23485,7 @@
         "titre": "Bureau 518m2 Paris 18ème - Amiraux-Simplon-Poissonniers",
         "description": "Produit rare sur le secteur \r\nA proximité des métros « Simplon » L4 et « Jules Joffrin » L12, Immprove vous propose à l'acquisition un bâtiment indépendant en R+2 de 518 m².\r\nLes 3 plateaux sont climatisés,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -23793,7 +23793,7 @@
         "titre": "Bureau 454m2 Paris 17ème - La Fourche-Guy Môquet",
         "description": "Immprove vous présente un triplex au fort potentiel, entièrement curé et bénéficiant d'une entrée privative depuis la rue. Possibilité de créer une seconde ouverture sur rue, avec tous les accords déjà..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -23870,7 +23870,7 @@
         "titre": "Bureau 585m2 Paris 18ème - Clignancourt-Jules Joffrin",
         "description": "Venez découvrir un plateau d'un seul tenant à vendre. Locaux rénovés, climatisés, prêt à l'emploi. Belle hauteur sous plafond, Jardin privatif A proximité immédiate du métro Lamarck Caulaincourt à 200..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -23948,7 +23948,7 @@
         "titre": "Bureau 269m2 Paris 11ème - Belleville-Saint Maur",
         "description": "OBERKAMPF, Groupe BABYLONE vous propose à l'acquisition une surface type industriel avec accès indépendant sur rue et sur cour BIEN RARE ET ATYPIQUE SUR LE SECTEUR. volume belle hauteur baies vitrées..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -24103,7 +24103,7 @@
         "titre": "Bureau 401m2 Paris 6ème - Odéon",
         "description": "Dans un immeuble ancien de standing, Knight Frank vous propose à la location ou à l'acquisition deux lots indépendants à proximité directe du Jardin du Luxembourg, du Panthéon et de la Sorbonne. Situés..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -24180,7 +24180,7 @@
         "titre": "Bureau 506m2 Paris 17ème - Pereire-Malesherbes",
         "description": "15 CITE PUSY\r\nADVENIS vous propose à la vente un ensemble commercial d'une surface totale de 506 m², répartis entre rez-de-chaussée et sous-sol, idéalement situés au calme d'une voie privée du 17e arrondissement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -24486,7 +24486,7 @@
         "titre": "Bureau 1372m2 Paris 6ème - Saint Placide",
         "description": "A toute proximité de la gare Montparnasse et de la rue de Rennes, nous vous proposons d'acquérir des locaux situés dans un immeuble moderne de bon standing. Les locaux sont organisés en RDC et R+1 autour..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -24640,7 +24640,7 @@
         "titre": "Bureau 238m2 Paris 17ème - Ternes-Maillot",
         "description": "Alex Bolton vous propose à la vente, dans un immeuble moderne situé entre la Porte Maillot et la place de l'Etoile, une surface de bureaux entièrement rénovée, ainsi qu'une place de parking. La surface..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -24716,7 +24716,7 @@
         "titre": "Bureau 385m2 Paris 6ème - Saint Placide",
         "description": "Knight Frank vous offre la possibilité d'acquérir un bâtiment indépendant de 269,27 m² (loi Carrez) - 385,24m² au sol sous le régime de la copropriété, destiné à un usage de bureau et entièrement rénové..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25100,7 +25100,7 @@
         "titre": "Bureau 534m2 Paris 17ème - Champerret-Berthier",
         "description": "Nous vous proposons à la vente une surface de 533,7 m² (carrez) / 569,1 m² (utile) de bureaux avec accès indépendant sur cour au sein d'une copropriété de très bon standing. Locaux en excellent état avec..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25407,7 +25407,7 @@
         "titre": "Bureau 458m2 Paris 17ème - Epinettes-Bessières",
         "description": "Au pied de la ligne 14 et du RER C, à proximité immédiate de la porte de Clichy, CBRE vous propose une surface de bureaux de 458 m² loi Carrez à la vente disponible immédiatement disposée en RDC, sous-sol..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25483,7 +25483,7 @@
         "titre": "Bureau 313m2 Paris 13ème - Dunois-Bibliothèque-Jeanne-d'Arc",
         "description": "A proximité du métro et du RER BNF, nous vous proposons d'acquérir un batiment sur cour au fonctionnement indépendant.\r\nA proximité du métro et du RER BNF, nous vous proposons d'acquérir un batiment sur..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25636,7 +25636,7 @@
         "titre": "Bureau 615m2 Paris 11ème - Léon-Blum Folie-Regnault",
         "description": "A proximité immédiate de la mairie du 11ème arrondissement, JLL vous propose à la vente, un immeuble de bureau en pleine propriété en R+5 sur sous-sol. Les bureaux rationnels et lumineux sont en très..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
