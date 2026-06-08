@@ -3,8 +3,8 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 996,
-      "a_verifier": 56,
+      "poubelle": 1006,
+      "a_verifier": 46,
       "nouveau": 53
     }
   },
@@ -2628,7 +2628,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3550,7 +3550,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -4087,7 +4087,7 @@
         "titre": "Bureau 502m2 Paris 4ème - Saint Merri",
         "description": "RARE DANS LE MARAIS à 200 du BHV, dans une cours d'immeuble, à vendre un bel espace de showroom/bureaux sur cour d'immeuble.\r\nLocaux atypiques avec un espace de 373m² au RDC sous verrières, accompagné..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -10619,7 +10619,7 @@
         "titre": "Bureau 269m2 Paris 6ème - Saint Placide",
         "description": "Situés au 141, rue de Rennes dans le 6 € arrondissement de Paris, ces bureaux offrent un cadre de travail agréable et fonctionnel. Ils bénéficient d'un emplacement central, de beaux volumes et de prestations..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -12620,7 +12620,7 @@
         "titre": "Bureau 430m2 Paris 10ème - Louis Blanc-Aqueduc",
         "description": "Dans un immeuble indépendant en R+1 situé à toute proximité de la Gare de l'Est, LEASEO vous propose à la location ou à l'acquisition des bureaux lumineux et atypiques avec verrière et accès PMR. Cet..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -24716,7 +24716,7 @@
         "titre": "Bureau 385m2 Paris 6ème - Saint Placide",
         "description": "Knight Frank vous offre la possibilité d'acquérir un bâtiment indépendant de 269,27 m² (loi Carrez) - 385,24m² au sol sous le régime de la copropriété, destiné à un usage de bureau et entièrement rénové..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -35150,7 +35150,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -39017,7 +39017,7 @@
         "titre": "Vente immeuble indépendant Paris 14 - Proche Porte d'Orléans, métro, tram et bus",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -44626,7 +44626,7 @@
         "titre": "Bureaux à vendre Paris 12 - Proche métro Reuilly-Diderot et place de la Nation",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -46798,7 +46798,7 @@
         "prix_affiche": 6300000,
         "prix_m2": 6969
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
