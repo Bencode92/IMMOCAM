@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 686,
-      "a_verifier": 20,
-      "nouveau": 399
+      "poubelle": 687,
+      "a_verifier": 21,
+      "nouveau": 397
     }
   },
   "deals": {
@@ -8151,7 +8151,7 @@
         "titre": "Bureau 435m2 Paris 10ème",
         "description": "Magenta lafayette 75010 Paris\r\n\r\nLe groupe Point de Vente vous propose à la vente un ensemble de bureaux de 435 m² idéalement situé à proximité immédiate de la Gare de l'Est. Ce bien bénéficie d'un emplacement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -8229,7 +8229,7 @@
         "titre": "Bureau 1031m2 Paris 18ème - Goutte d'Or-Château Rouge",
         "description": "Située en plein coeur de la Goutte d'Or, cette ancienne fabrique de cycles puis de boutons, conçue par les Ateliers Eiffel au début du XXème siècle se caractérise par son style épuré d'une élégance rare...."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
