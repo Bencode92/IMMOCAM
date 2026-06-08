@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 876,
-      "a_verifier": 46,
-      "nouveau": 183
+      "poubelle": 880,
+      "a_verifier": 47,
+      "nouveau": 178
     }
   },
   "deals": {
@@ -39605,7 +39605,7 @@
         "titre": "Vente bureaux Paris 5 - Proche métro Les Gobelins et RER Port Royal",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -39899,7 +39899,7 @@
         "titre": "Bureaux à vendre Paris 5 - Immeuble ancien, triplex lumineux",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -40121,7 +40121,7 @@
         "titre": "Bureaux à vendre Paris 1 - Proche Louvre et Palais-Royal",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -40195,7 +40195,7 @@
         "titre": "Vente triplex Paris 17, proche métro Guy Moquet et Brochant",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -40344,7 +40344,7 @@
         "titre": "Vente bureaux Saint-Lazare, Paris 9, proche gare et métro, terrasse privative",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
