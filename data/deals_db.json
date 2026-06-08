@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 795,
+      "poubelle": 798,
       "a_verifier": 32,
-      "nouveau": 278
+      "nouveau": 275
     }
   },
   "deals": {
@@ -22096,7 +22096,7 @@
         "titre": "Bureau 344m2 Paris 18ème - Grandes Carrières-Clichy",
         "description": "A proximité du métro La Fourche, nous vous proposons d'acquérir une surface atypique offrant de beaux volumes lumineux.\r\nBNP Paribas Real Estate vous propose d'acquérir des locaux d'une surface totale..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -22560,7 +22560,7 @@
         "titre": "Bureau 225m2 Paris 8ème - Elysées-Madeleine",
         "description": "Cushman & Wakefield vous propose une opportunité rare au coeur de Paris : une surface de prestige de 225 m², idéalement située Rue du Faubourg Saint-Honoré, dans le très convoité 8ème arrondissement.\r\n\r\nCe..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -22637,7 +22637,7 @@
         "titre": "Bureau 212.9m2 Paris 8ème - Triangle d'Or",
         "description": "Triangle d'or - rue de la Trémoille\r\nCushman & Wakefield vous propose, au sein d'un immeuble haussmannien d'excellent standing, une surface à usage de bureaux de 213 m² en double exposition (rue et cour)...."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
