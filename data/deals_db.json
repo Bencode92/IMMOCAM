@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 771,
+      "poubelle": 782,
       "a_verifier": 30,
-      "nouveau": 304
+      "nouveau": 293
     }
   },
   "deals": {
@@ -18320,7 +18320,7 @@
         "titre": "Bureau 223m2 Paris 1er - Saint Germain l'Auxerrois",
         "description": "A proximité des métros Pont Neuf et Chatelet, nous vous proposons d'acquérir une surface avec double acces dans un ensemble ancien de bon standing.\r\nBNP Paribas Real Estate vous propose d'acquérir des..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -18474,7 +18474,7 @@
         "titre": "Bureau 515m2 Paris 12ème - Aligre-Gare de Lyon",
         "description": "A proximité des transports en commun et de la gare de Lyon, nous vous proposons d'acquérir un batiment au fonctionnement indépendant situé dans un immeuble détenu en copropriété.\r\nBNP Paribas Real Estate..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -18550,7 +18550,7 @@
         "titre": "Bureau 1013.82m2 Paris 10ème - Grange Aux Belles-Terrage",
         "description": "Dans le 10ème arrondissement de Paris, à la vente un ensemble immobilier composé de 2 bâtiments occupés par un locataire de 1er ordre\r\n \r\nConstruction : \r\nPrestations : \r\nChauffage au gaz pour le lot..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -18935,7 +18935,7 @@
         "titre": "Bureau 1299m2 Paris 14ème - Montsouris Dareau",
         "description": "VILLA DE LOURCINE\r\nADVENIS vous propose une surface de bureaux à la vente de 1 299 m² au sein d'un ensemble immobilier situé à proximité du métro Saint-Jacques.\r\nLes locaux sont sécurisés par badge, digicode..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19012,7 +19012,7 @@
         "titre": "Bureau 484m2 Paris 5ème - Jardin des Plantes",
         "description": "A proximité du métro Censier-Daubenton, nous vous proposons d'acquérir une surface livrée curée dans un ensemble de bon standing. Cinq emplacements de parking en sous-sol completent l'actif.\r\nBNP Paribas..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19167,7 +19167,7 @@
         "titre": "Bureau 699m2 Paris 13ème - Olympiades-Choisy",
         "description": "A proximité du métro Olympiades, nous vous proposons d'acquérir une surface divisible avec entrée indépendante sur rue. Plusieurs emplacements de parking disponibles.\r\nBNP Paribas Real Estate vous propose..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19320,7 +19320,7 @@
         "titre": "Bureau 525m2 Paris 5ème - Saint Victor",
         "description": "VENTE PARIS 5e - Idéalement situé, à proximité de Jussieu la Sorbonne et de l'Ile Saint Louis, CBRE vous propose à la vente un immeuble indépendant développant une surface commerciale d'environ 525 m²...."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19630,7 +19630,7 @@
         "titre": "Bureau 303m2 Paris 16ème - Muette Nord",
         "description": "Groupe Babylone vous propose à la vente des locaux professionnels d'une surface totale de 300 m², dont 225 m² en rez-de-chaussée et 75 m² en sous-sol, reliés par un escalier intérieur. Situés au coeur..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19784,7 +19784,7 @@
         "titre": "Bureau 530m2 Paris 14ème - Montsouris Dareau",
         "description": "A proximité du parc Montsouris et de la Cité Universitaire, nous vous proposons d'acquérir une surface entierement rénovée avec entrée indépendante sur rue. L'ensemble en R+1 fonctionne de maniere indépendante..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19937,7 +19937,7 @@
         "titre": "Bureau 421.1m2 Paris 9ème - Lorette-Martyrs",
         "description": "Découvrez une opportunité exceptionnelle pour votre entreprise au coeur de Paris avec cette offre exclusive proposée par CW. \r\n\r\nNous vous présentons des bureaux de 421 m², non divisibles, situés au premier..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -20014,7 +20014,7 @@
         "titre": "Bureau 317m2 Paris 10ème - Louis Blanc-Aqueduc",
         "description": "Nous vous proposons en exclusivité des bureaux lumineux de 317 m² à la vente, idéalement situés au dernier étage d'un immeuble moderne au 251-253 boulevard Saint-Martin, dans le 10ème arrondissement de..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
