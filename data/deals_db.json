@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 673,
-      "a_verifier": 18,
-      "nouveau": 414
+      "poubelle": 683,
+      "a_verifier": 19,
+      "nouveau": 403
     }
   },
   "deals": {
@@ -6161,7 +6161,7 @@
         "titre": "Bureau 341m2 Paris 17ème - Champerret-Berthier",
         "description": "PS CONSEIL et EXPERTISE  vous propose à la VENTE au cœur du 17e , à proximité immédiate de la place du maréchal JUIN, un très bel hôtel particulier COMMERCIAL édifié à la fin du XIXé siècle, d'une surface..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6469,7 +6469,7 @@
         "titre": "Bureau 702m2 Paris 5ème - Val de Grace",
         "description": "BPCE Solutions Immobilières vous  propose un immeuble totalement restructuré à la vente. Entre le Jardin du Luxembourg et le Jardin des Plantes.\r\nCour privative (jouissance exclusive) de 62 m²\r\nTerrasse..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6546,7 +6546,7 @@
         "titre": "Bureau 300m2 Paris 9ème - Clichy-Trinité",
         "description": "Knight Frank France vous présente à l'acquisition, en exclusivité, une surface de bureaux dans un immeuble haussmannien situé à proximité directe de la Gare Saint Lazare. Au 3ème étage, ces bureaux traversants..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6623,7 +6623,7 @@
         "titre": "Bureau 309m2 Paris 16ème - Muette Nord",
         "description": "A VENDRE PARIS : CBRE vous propose à la vente un immeuble indépendant en pleine propriété situé au 46 rue Decamps à Paris en plein coeur du  16ème arrondissement.  Ce petit immeuble en R+2 développe une..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6699,7 +6699,7 @@
         "titre": "Bureau 198m2 Paris 8ème - Parc Monceau",
         "description": "Au sein d'un immeuble mixte, de type haussmannien et à proximité immédiate de l'avenue de Messine et du Boulevard Haussmann, Knight Frank vous propose une surface de bureaux atypique sous verrière en..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6851,7 +6851,7 @@
         "titre": "Bureau 736.7m2 Paris 6ème - Saint Placide",
         "description": "Dans le 6ème arrondissement, à proximité immédiate de Montparnasse, IMMPROVE vous propose à l'achat plusieurs surfaces de bureau au sein d'une copropriété récente. Donnant sur une cour arborée, ces bureaux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6928,7 +6928,7 @@
         "titre": "Bureau 220m2 Paris 10ème - Faubourg du Temple-Hôpital Saint Louis",
         "description": "GROUPE BABYLONE vous propose à l'acquisition un bâtiment indépendant en très bon état.\r\nLes bureaux sont lumineux avec plusieurs accès en rdc.\r\nLes espaces sont fonctionnels et modulables avec actuellement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7005,7 +7005,7 @@
         "titre": "Bureau 357.52m2 Paris 5ème - Jardin des Plantes",
         "description": "IMMPROVE vous propose à la vente un bureau idéalement situé au coeur du 5eme arrondissement de Paris, à proximité immédiate du métro Censier-Daubenton et des rues Monge et Mouffetard.\r\nCe bureau se compose..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7158,7 +7158,7 @@
         "titre": "Bureau 191.54m2 Paris 9ème - Clichy-Trinité",
         "description": "Au coeur du QCA et à toute proximité de la gare de Saint-Lazare ALTIM vous propose une surface de bureaux d'environ 191, 54 m2 non divisible, répartie en un 2ème étage d'environ 134,5 m2 et en un 3ème..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7310,7 +7310,7 @@
         "titre": "Bureau 1300m2 Paris 18ème - Goutte d'Or-Château Rouge",
         "description": "OPPORTUNITE - AU COEUR DE PARIS 75018 - \r\nPLATEAU DE BUREAU 1 300 m²\r\n40 EMPLACEMENTS DE STATIONNEMENT\r\nAUCUN TRAVAUX A PREVOIR\r\nIDEAL UTILISATEURS \r\n\r\nContact : / \r\n \r\nINVESTISSEUR IMMO, spécialiste..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7464,7 +7464,7 @@
         "titre": "Bureau 250m2 Paris 13ème - Salpêtrière-Austerlitz",
         "description": "INVESTISSEUR IMMO, cabinet expert en immobilier d'entreprise, vous propose à la location un plateau de bureaux entièrement rénové de 250 m², situé Place d'Italie, dans le 13 arrondissement de Paris.\r\nUne..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
