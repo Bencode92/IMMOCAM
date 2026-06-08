@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 662,
-      "a_verifier": 13,
-      "nouveau": 430
+      "poubelle": 666,
+      "a_verifier": 15,
+      "nouveau": 424
     }
   },
   "deals": {
@@ -3194,7 +3194,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3265,7 +3265,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3336,7 +3336,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3856,7 +3856,7 @@
         "titre": "Bureau 467.19m2 Paris 9ème - Lafayette-Richer",
         "description": "A proximité immédiate de RICHELIEU DROUOT,  dans un immeuble mixte  du 19ème siècle de bon  standing, 467,19 M2 au sol de bureaux ( dont 44,50 M2 Hors Carrez) en duplex et répartis comme suit : R+5 :..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -3933,7 +3933,7 @@
         "titre": "Bureau 188m2 Paris 6ème - Saint Placide",
         "description": "MONTPARNASSE - RUE DE RENNES\n\nImmeuble en pierre de taille\nContrôle d'accès\nAscenseur\nMoulures et cheminées\nBeaux volumes - Belle hauteur sous plafond\n\nConfiguration :\n- 1 vaste entrée de 10 m² environ\n-..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -4087,7 +4087,7 @@
         "titre": "Bureau 502m2 Paris 4ème - Saint Merri",
         "description": "RARE DANS LE MARAIS à 200 du BHV, dans une cours d'immeuble, à vendre un bel espace de showroom/bureaux sur cour d'immeuble.\r\nLocaux atypiques avec un espace de 373m² au RDC sous verrières, accompagné..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
