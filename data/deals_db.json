@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 862,
+      "poubelle": 868,
       "a_verifier": 45,
-      "nouveau": 198
+      "nouveau": 192
     }
   },
   "deals": {
@@ -37020,7 +37020,7 @@
         "titre": "Bureaux à vendre Paris 18 - Proche métros Jules Joffrin et Lamarck",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -37169,7 +37169,7 @@
         "titre": "Vente bureaux Paris 8 - Parc Monceau et Métro Miromesnil",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -37390,7 +37390,7 @@
         "titre": "Vente bureaux Paris 19 - Proche Parc des Buttes-Chaumont",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -37685,7 +37685,7 @@
         "titre": "Vente bureaux Paris 6 - Rue de Sèvres, accès direct cour arborée",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -37831,7 +37831,7 @@
         "titre": "Vente bureaux Paris 14 - Proximité métro Pernety",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -37980,7 +37980,7 @@
         "titre": "Vente bureaux Paris 16 - Etoile / Victor Hugo - Proximité transports",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
