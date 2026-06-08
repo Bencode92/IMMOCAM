@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 732,
-      "a_verifier": 21,
-      "nouveau": 352
+      "poubelle": 749,
+      "a_verifier": 23,
+      "nouveau": 333
     }
   },
   "deals": {
@@ -8923,7 +8923,7 @@
         "titre": "Bureau 376m2 Paris 10ème",
         "description": "Magenta lafayette 75010 Paris\r\n\r\nLe groupe MICKAEL KURTIS vous propose dans le quartier de Magenta Lafayette à proximité de la Gare du Nord et de la Gare de l'Est dans un immeuble ravalé récemment :\r\n\r\nDes..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9001,7 +9001,7 @@
         "titre": "Bureau 834m2 Paris 14ème",
         "description": "Maine pernety 75014 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose dans le quartier de Maine Pernety :\r\nDes murs libres (bureaux) sur 2 étages au coeur du 14ème arrondissement parisien. Les bureaux sont..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9231,7 +9231,7 @@
         "titre": "Bureau 543m2 Paris 17ème - Champerret-Berthier",
         "description": "Dans une agréable copropriété arborée, nous vous proposons cette surface de Bureau bénéficiant d'un PLAN EFFICIENT.\n\nIdéal activités de conseil - Architecture - Fédération - Organismes - Ligues etc.\n\nCe..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9308,7 +9308,7 @@
         "titre": "Bureau 203m2 Paris 16ème",
         "description": "Kleber 75116 Paris\r\n\r\nLe groupe Pointdevente vous propose à proximité immédiate de la place d'Iéna :\r\n\r\n Un plateau de bureaux (profession libérale) de 202 m² situé au 1er étage d'un immeuble haussmannien,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9463,7 +9463,7 @@
         "titre": "Bureau 222m2 Paris 2ème",
         "description": "Sentier bonne nouvelle 75002 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose à procximité des Grzands Boulevards et de la Bourse un local d'une surface de 222 m² disposant d'une très belle hauteur sous..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9618,7 +9618,7 @@
         "titre": "Bureau 309m2 Paris 18ème",
         "description": "Montmartre 75018 Paris\r\n\r\nLe groupe MICKAEL KURTIS vous propose dans le quartier de montmartre un bureaux d'une surface totale de 309 m² :\r\n\r\nAu rez-de-chaussée, une surface de 219 m². Au sous-sol, une..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -10390,7 +10390,7 @@
         "titre": "Bureau 430m2 Paris 17ème",
         "description": "À proximité immédiate du parc Monceau.\r\n\r\nDans un immeuble en pierre de taille, ce bureau développe une surface totale de 430m² aux volumes spectaculaires et aux prestations contemporaines haut de gamme.\r\n\r\nCe..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -10543,7 +10543,7 @@
         "titre": "Bureau 202.69m2 Paris 17ème - Champerret-Berthier",
         "description": "À deux pas de la Porte de Champerret, dans une impasse privée calme et arborée, des bureaux lumineux et climatisés avec commercialité de 205 €m² (au sol) sont à vendre.\nLes locaux, atypiques et en excellent..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -10619,7 +10619,7 @@
         "titre": "Bureau 269m2 Paris 6ème - Saint Placide",
         "description": "Situés au 141, rue de Rennes dans le 6 € arrondissement de Paris, ces bureaux offrent un cadre de travail agréable et fonctionnel. Ils bénéficient d'un emplacement central, de beaux volumes et de prestations..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -10696,7 +10696,7 @@
         "titre": "Bureau 221m2 Paris 8ème - Mairie",
         "description": "Situés dans un superbe immeuble haussmannien en excellent état, ces bureaux allient charme classique et fonctionnalité. Ils bénéficient d’une très belle hauteur sous plafond et de prestations élégantes..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -10927,7 +10927,7 @@
         "titre": "Bureau 416m2 Paris 18ème - Clignancourt-Jules Joffrin",
         "description": "QUARTIER LAMARCK - CAULAINCOURT - Au sein d'un immeuble mixte en copropriété des années 1970, situé à toute proximité des transports en commun, LEASEO vous propose à l'acquisition des locaux traversants..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -11081,7 +11081,7 @@
         "titre": "Bureau 364.2m2 Paris 8ème - Parc Monceau",
         "description": "En plein coeur du 8e arrondissement, dans un bel immeuble haussmannien de standing, IMMPROVE vous propose des bureaux de 340 m² à vendre. La surface de bureaux est située au 3ème étage, avec une hauteur..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -11234,7 +11234,7 @@
         "titre": "Bureau 859.89m2 Paris 11ème - Bastille-Popincourt",
         "description": "À deux pas de la place de la Bastille, au sein d’un ensemble immobilier moderne, découvrez un espace de bureaux rénové avec soin sur trois niveaux, offrant un cadre de travail exceptionnel.\r\nCe bien unique,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -11387,7 +11387,7 @@
         "titre": "Bureau 250m2 Paris 16ème - Muette Sud",
         "description": "Alex Bolton vous propose, dans un ensemble immobilier mixte, une surface entièrement rénovée. Au coeur du 16ème arrondissement, ce bien dispose de grands volumes, avec de belles hauteurs sous plafond...."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -11464,7 +11464,7 @@
         "titre": "Bureau 243m2 Paris 7ème - Invalides",
         "description": "PLACE DU PALAIS BOURBON - À proximité immédiate de l'Assemblée Nationale, Immprove vous propose à l'acquisition une surface de bureaux en R+2, bénéficiant d'un accès indépendant depuis la rue.\r\nLes locaux,..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -11541,7 +11541,7 @@
         "titre": "Bureau 250m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "LEASEO vous propose à l'acquisition un immeuble indépendant en copropriété, livré en 2012, au calme sur une agréable cour et à deux pas de Nation. Cette adresse offre un cadre de travail fonctionnel et..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -11695,7 +11695,7 @@
         "titre": "Bureau 904.95m2 Paris 10ème - Louis Blanc-Aqueduc",
         "description": "IMMPROVE vous propose à la vente, à proximité du canal Saint-Martin, une surface de bureaux rénovée au sein d'un immeuble de caractère. L'intérieur, au style industriel affirmé, offre un environnement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -11850,7 +11850,7 @@
         "titre": "Bureau 454m2 Paris 16ème",
         "description": "Passy muette 75016 Paris\r\n\r\nLe CABINET POINT DE VENTE vous propose un Immeuble en pleine propriété – Quartier Passy/Muette, Paris 16ème.\r\n\r\nCet immeuble d'angle, en pleine propriété, offre une surface..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -12082,7 +12082,7 @@
         "titre": "Bureau 206m2 Paris 2ème",
         "description": "Sentier bonne nouvelle 75002 Paris\r\n\r\nLe Groupe POINT DE VENTE vous propose, en plein cœur du 2 € arrondissement, un plateau de bureaux occupé d'une surface d'environ 213 m², situé au 1er étage d'un immeuble..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
