@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 767,
-      "a_verifier": 28,
-      "nouveau": 310
+      "poubelle": 771,
+      "a_verifier": 30,
+      "nouveau": 304
     }
   },
   "deals": {
@@ -17317,7 +17317,7 @@
         "titre": "Bureau 437m2 Paris 8ème - Mairie",
         "description": "A vendre, superbe surface de bureaux, située au pied de la gare Saint Lazare. Très bel immeuble haussmannien en pierre de taille Belles parties communes de standing Plateau modulable et lumineux Double..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17548,7 +17548,7 @@
         "titre": "Bureau 354m2 Paris 8ème - Hoche-Friedland",
         "description": "BNP Paribas Real Estate vous propose d'acquérir des locaux d'une surface de 353,9 m² dans le 8eme arrondissement de Paris.\r\nLes locaux se situent aux rez-de-chaussée et sous-sol d'un bel immeuble d'angle.\r\nVous..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17703,7 +17703,7 @@
         "titre": "Bureau 388m2 Paris 1er - Les Halles",
         "description": "ENTRE LA RUE ST HONORE ET LA PLACE DES VICTOIRES - Dans un bel immeuble ancien, LEASEO vous propose à l'acquisition des bureaux dans un quartier prestigieux offrant de beaux volumes\r\nAMENAGEMENT ET PRESTATIONS..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -18009,7 +18009,7 @@
         "titre": "Bureau 685m2 Paris 14ème - Montsouris Dareau",
         "description": "Bureaux occupés - Vente Investisseurs\r\nEnsemble immobilier des années 90 de bon standing à usage mixte, bureaux, activités et habitation, en R+5.\r\nAutres prestations-équipements:\r\nDouble accès (rue Dareau..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -18086,7 +18086,7 @@
         "titre": "Bureau 397m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "LEASEO vous propose à l'acquisition un local commercial atypique au sein d'un immeuble indépendant en copropriété, baigné de lumière grâce à ses verrières. Cet actif est doté d'une courette privative..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -18164,7 +18164,7 @@
         "titre": "Bureau 600m2 Paris 10ème",
         "description": "M° Strasbourg Saint-Denis, dans un immeuble de standing, à vendre un local commercial de 600 m².\r\n\r\nCARACTERISTIQUES DE L'OFFRE \r\n\r\nFaçade, toit, plancher rénové\r\n\r\nTravaux à prévoir pour rénové l'intérieur\r\n\r\n300m2..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
