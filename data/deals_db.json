@@ -3,10 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "a_verifier": 1,
-      "nouveau": 545,
-      "poubelle": 557,
-      "a_contacter": 2
+      "poubelle": 646,
+      "a_verifier": 5,
+      "nouveau": 454
     }
   },
   "deals": {
@@ -55,7 +54,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-16",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -155,7 +154,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -851,7 +850,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1633,7 +1632,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1775,7 +1774,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -2486,7 +2485,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3409,7 +3408,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3480,7 +3479,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3551,7 +3550,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3626,13 +3625,13 @@
         "titre": "Bureau 392m2 Paris 8ème - Parc Monceau",
         "description": "À VENDRE : Bureaux haussmanniens à proximité du Parc Monceau et du Boulevard Haussmann\r\nSitués dans une élégante copropriété, ces bureaux de 339 m² au 3ème étage offrent un charme authentique avec leur..."
       },
-      "_statut": "a_contacter",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
         "seloger-bc"
       ],
-      "_notes": "CCC CCC",
+      "_notes": "",
       "_prix_historique": [
         {
           "d": "2026-04-15",
@@ -3676,10 +3675,7 @@
       "_nearby_tx": 24,
       "_cout_dpe": 0,
       "_ecart_marche": 49.6,
-      "_tags": [
-        "A rénover",
-        "Travaux lourds"
-      ],
+      "_tags": [],
       "_lat": 48.875536,
       "_lng": 2.312026
     },
@@ -4014,7 +4010,7 @@
         "titre": "Bureau 261m2 Paris 16ème - Porte Dauphine",
         "description": "MMPROVE vous propose à l'acquisition un espace de bureaux de 261 m² en rez-de-chaussée d'un bel immeuble moderne, situé à proximité de l'avenue Victor Hugo. Implantée dans une impasse calme, cette surface..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6779,7 +6775,7 @@
         "titre": "Bureau 234m2 Paris 16ème - Muette Nord",
         "description": "Knight Frank vous propose à la vente des locaux professionnels d'une surface de 234 m² idéalement situés sur l'avenue Georges Mandel, au c?ur du 16ème arrondissement de Paris, à proximité immédiate des..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7391,7 +7387,7 @@
         "titre": "Bureau 925m2 Paris 5ème - Val de Grace",
         "description": "Quartier Mouffetard, Immprove vous propose en exclusivité un immeuble indépendant bénéficiant d'un accès direct sur rue. Les locaux sont en parfait état et disposent d'un espace extérieur. La configuration..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9159,7 +9155,7 @@
         "titre": "Bureau 282.08m2 Paris 16ème - Porte Dauphine",
         "description": "Immobilier Rives de Seine vous propose en exclusivité un élégant appartement familial situé Avenue Victor Hugo, au cœur du très prisé 16 € arrondissement de Paris, à deux pas de la Rue de la Pompe.\r\n\r\nInstallé..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -11008,7 +11004,7 @@
         "titre": "Bureau 155.31m2 Paris 16ème - Auteuil Nord",
         "description": "Idéalement situé à deux pas de la rue du Ranelagh, des commerces de proximité et des transports (métro Jasmin, RER C, bus), ce bâtiment indépendant à usage de bureaux développe une surface totale de 190m²..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13239,7 +13235,7 @@
         "titre": "Bureau 592m2 Paris 17ème - Pereire-Malesherbes",
         "description": "Au sein d'un magnifique hôtel particulier indépendant en R+3 et idéalement situé à deux pas de la station Pereire, LEASEO vous propose à la vente ce bien d'exception bénéficiant d'un jardin privatif,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -15010,7 +15006,7 @@
         "titre": "Bureau 479m2 Paris 8ème - Hoche-Friedland",
         "description": "A proximité de la place de l'Etoile, nous vous proposons d'acquérir une surface située au 2eme étage d'un bel immeuble d'angle des années 30. Beaux volumes lumineux organisés en bureaux cloisonnés avec..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -15472,7 +15468,7 @@
         "titre": "Bureau 390m2 Paris 16ème",
         "description": "Dans un immeuble ancien de bon standing, Cushman & Wakefield vous propose à la vente des locaux à usage de bureau lumineux et traversants d'une superficie de 390 m² environ."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -16937,7 +16933,7 @@
         "titre": "Bureau 422m2 Paris 16ème - Muette Nord",
         "description": "Un Hôtel Particulier au cœur du 16ème arrondissement de Paris, à proximité de la rue de Passy et du jardin du Ranelagh. Une très bonne accessibilité avec le métro la Muette (M9) à 100met RER C à 350m...."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17167,7 +17163,7 @@
         "titre": "Bureau 530m2 Paris 8ème - Parc Monceau",
         "description": "Au sein d’un très bel immeuble haussmannien, nous proposons un ensemble\nde bureaux développant environ 530 m² en R+2.\n\nL’actif bénéficie de tous les attributs de l’ancien : parquet, moulures,\ncheminées,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17629,7 +17625,7 @@
         "titre": "Bureau 240m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "LOCAL COMMERCIAL - RUE OBERKAMPF - OPPORTUNITÉ À SAISIR\n\nVenez découvrir ce grand local commercial idéalement situé à la lisière entre le 11ème et le haut marais.\n\nIl est organisé sur deux étages avec..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -18632,7 +18628,7 @@
         "titre": "Bureau 512m2 Paris 8ème - Elysées-Madeleine",
         "description": "BUREAUX A VENDRE A PARIS DANS LE 8E ARRONDISSEMENT : En plein coeur du QCA, CBRE VENTE BUREAUX VIDES vous propose à la vente un plateau  de bureaux de 512 m² situé au 8ème étage.\r\nVous bénéficierez de..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19479,7 +19475,7 @@
         "titre": "Bureau 1090m2 Paris 18ème - Clignancourt-Jules Joffrin",
         "description": "Au coeur du quartier Jules Joffrin, au pied d'un immeuble neuf, nous vous proposons à vendre une surface de bureaux indépendante avec accès direct sur rue. Ces locaux ERP à fort capacitaire (198 personnes)..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -20482,7 +20478,7 @@
         "titre": "Bureau 850m2 Paris 1er - Les Halles",
         "description": "En plein coeur du 1er arrondissement de Paris, SIZE Real Estate vous propose un immeuble à la vente. Situé dans une zone historique, au sein d'une rue piétonne et passante, l'immeuble bénéficie d'un emplacement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -22256,7 +22252,7 @@
         "titre": "Bureau 465m2 Paris 8ème - Hoche-Friedland",
         "description": "Groupe Babylone vous propose à la vente un plateau de bureaux haut de gamme situé au coeur du 8e arrondissement de Paris. D'une surface totale de 465 m². Ces bureaux se trouvent au 2e étage d'un immeuble..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -23180,7 +23176,7 @@
         "titre": "Bureau 1338m2 Paris 18ème",
         "description": "A toute proximité de ROSA PARKS, à vendre une surface de bureaux  de 1338m², livrée en très bon état\r\n\r\nCARACTERISTIQUES DE L'OFFRE \r\n\r\n2 accès sur rue et sécurisés\r\n\r\nEspaces ouverts et bureaux cloisonnés \r\n\r\nPLUG..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25257,7 +25253,7 @@
         "titre": "Bureau 555m2 Paris 8ème - Hoche-Friedland",
         "description": "À deux pas de la place de l'Étoile et de la place des Ternes, Knight Frank vous propose à la location et à la vente un immeuble indépendant à usage de bureaux qui a fait l'objet d'une entièrement restructuration..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -26567,7 +26563,7 @@
         "titre": "Bureau 553m2 Paris 8ème - Hoche-Friedland",
         "description": "A proximité immédiate de la Place des Ternes, de l'Av de Wagram et de l'Av du Fbg Saint-Honoré, axes importants du QCA, JLL, vous propose, A LA VENTE, un immeuble de bureaux indépendant de 553,4 m² en..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -27265,7 +27261,7 @@
         "titre": "Bureau 292.38m2 Paris 16ème - Porte Dauphine",
         "description": "Devenez propriétaire de vos bureaux au coeur du très recherché 16 € arrondissement, sur le boulevard Flandrin.\r\n\r\nAu sein d'un immeuble moderne et sécurisé, Cushman & Wakefield vous propose une surface..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -27802,7 +27798,7 @@
         "titre": "Bureau 1315m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "Colliers vous propose à la vente une adresse stratégique, visibilité maximale et bureaux prêts à l'emploi : au 25 boulevard de Strasbourg, installez-vous sans attendre dans des espaces modernes, aménagés..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -27956,7 +27952,7 @@
         "titre": "Bureau 587m2 Paris 8ème - Parc Monceau",
         "description": "Découvrez une opportunité exceptionnelle avec EVOLIS : des bureaux à vendre au coeur de Paris, une adresse prestigieuse pour votre entreprise. Profitez d'un espace professionnel conçu pour inspirer et..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28728,7 +28724,7 @@
         "titre": "Bureau 581.36m2 Paris 8ème - Parc Monceau",
         "description": "Savills vous propose à la vente 581 m² de bureaux à Paris 8ème. \r\nSitué à proximité du Parc Monceau, cet immeuble mixte des années 60 à destination de bureaux comporte une entrée indépendante, un escalier..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29113,7 +29109,7 @@
         "titre": "Bureau 786m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "Realty'z vous propose ces bureaux libres au sein d'un quartier dynamique du 11e arrondissement de Paris. L'actif développe une surface indépendante de 786m2 située dans une copropriété mixte (habitation..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29499,7 +29495,7 @@
         "titre": "Bureau 1150m2 Paris 10ème - Grange Aux Belles-Terrage",
         "description": "Bâtiment indépendant R+2 donnant sur cour pavée \nJouissance de la cour (90 m2)\nLocaux climatisés en excellent état \nVolumes atypiques, grande verrière, plafonds bruts\nMatériaux de qualité\nCloisonnement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -31191,7 +31187,7 @@
         "titre": "Bureau 362m2 Paris 16ème",
         "description": "A proximité de la Porte Dauphine, nous vous proposons d'acquérir une surface située au 3eme étage d'un tres bel immeuble ancien.\r\nBNP Paribas Real Estate vous propose d'acquérir des locaux d'une surface..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -31344,7 +31340,7 @@
         "titre": "Bureau 206m2 Paris 16ème",
         "description": "Cabinet médical / Radiologie / Ophtalmologie – Opportunité unique\r\nÀ vendre, un local médical spacieux et lumineux, idéal pour une activité de radiologie, ophtalmologie ou toute profession médicale et..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -33706,7 +33702,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -34962,7 +34958,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -35633,7 +35629,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -35992,7 +35988,7 @@
         "titre": "Bureaux 1266m2 RUE CHARCOT\nPARIS",
         "description": ""
       },
-      "_statut": "a_contacter",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -36288,7 +36284,7 @@
         "titre": "Bureaux 464m2 BIS RUE LORD BYRON\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -36362,7 +36358,7 @@
         "titre": "Bureaux 564m2 AVENUE DE VILLIERS\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -37247,7 +37243,7 @@
         "titre": "Vente bureaux Paris 15 - Tour Montparnasse - Proche métro et gare",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -37469,7 +37465,7 @@
         "titre": "Immeuble mixte à vendre Paris 1 - Proche transports et sites touristiques",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -38503,7 +38499,7 @@
         "titre": "Bureaux à vendre Paris 18 - Quartier Jules Joffrin et métro Jaurès",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -38801,7 +38797,7 @@
         "titre": "Vente bureaux Paris 5 - Quartier Latin, Rue Mouffetard",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -39241,7 +39237,7 @@
         "titre": "Bureaux à vendre Paris 8 - Quartier Central des Affaires",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -40568,7 +40564,7 @@
         "titre": "Vente bureaux Paris 8 - Proche Parc Monceau, Métro Villiers et Miromesnil",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -40941,7 +40937,7 @@
         "titre": "Vente bureaux Paris 8 - Proche métro Villiers et gare Saint-Lazare",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -42494,7 +42490,7 @@
         "titre": "Vente bureaux Paris 18 - Proche Rosa Parks",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -43889,7 +43885,7 @@
         "titre": "Vente bureaux Paris 16 - Proche transports",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -44482,7 +44478,7 @@
         "titre": "Bureaux à vendre Paris 20 - Proche Métro Gambetta",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -44926,7 +44922,7 @@
         "titre": "Vente bureaux Paris 8 - Vue Tour Eiffel, proche métro et RER",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -46165,7 +46161,7 @@
         "prix_affiche": 9000000,
         "prix_m2": 9375
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -46660,7 +46656,7 @@
         "prix_affiche": 9500000,
         "prix_m2": 10270
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -48627,7 +48623,7 @@
         "titre": "Bureaux 1090m2 RUE VERSIGNY\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -50030,7 +50026,7 @@
         "titre": "Bureaux 553m2 VILLA WAGRAM SAINT HONORE\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -57546,7 +57542,7 @@
         "prix_affiche": 20000000,
         "prix_m2": 37313
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -57905,7 +57901,7 @@
         "prix_affiche": 25000000,
         "prix_m2": 30979
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -57977,7 +57973,7 @@
         "prix_affiche": 9900000,
         "prix_m2": 16723
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -58330,7 +58326,7 @@
         "prix_affiche": 13923000,
         "prix_m2": 17000
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -58401,7 +58397,7 @@
         "prix_affiche": 12000000,
         "prix_m2": 18462
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -58687,7 +58683,7 @@
         "prix_affiche": 24000000,
         "prix_m2": 53097
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -59051,7 +59047,7 @@
         "titre": "Bureaux 1962m2 RUE DES RECULETTES\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -60438,7 +60434,7 @@
         "titre": "Bureaux 1160m2 RUE DE LILLE\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -60731,7 +60727,7 @@
         "titre": "Bureaux 4534m2 RUE DE VAUGIRARD\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -60805,7 +60801,7 @@
         "titre": "Bureaux 1039m2 RUE DES JEUNEURS\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -60879,7 +60875,7 @@
         "titre": "Bureaux 2747m2 RUE DE LA BRECHE AUX LOUPS\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -61095,7 +61091,7 @@
         "titre": "Bureaux 1292m2 RUE LOUIS LE GRAND\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -61533,7 +61529,7 @@
         "titre": "Bureaux 1083m2 RUE DES ENTREPRENEURS\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -61680,7 +61676,7 @@
         "titre": "Bureaux 1305m2 RUE ROMAINVILLE\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -62121,7 +62117,7 @@
         "titre": "Bureaux 4574m2 RUE LOUIS LE GRAND\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -62414,7 +62410,7 @@
         "titre": "Bureaux 1537m2 RUE LA FAYETTE\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -63509,7 +63505,7 @@
         "titre": "Vente bureaux Paris 15 - Proche métro Félix Faure et Emile-Zola",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -64248,7 +64244,7 @@
         "titre": "Bureaux à vendre Paris 15 - Proche Métro Félix Faure et Emile-Zola",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -66020,7 +66016,7 @@
         "titre": "Bureaux Paris 10 face mairie - Cours végétalisées et accès indépendant",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -66462,7 +66458,7 @@
         "titre": "Vente bureaux Paris 6, proche gare Montparnasse et rue de Rennes",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -67052,7 +67048,7 @@
         "titre": "Bureaux industriels à vendre Paris 10 - Proche Gare de l'Est",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -71753,7 +71749,7 @@
         "titre": "Bureau 700m2 Paris 8ème",
         "description": "Hotel Particulier de bureaux 100% commercial au coeur du QCA (Quartier Central des Affaires)\nEnviron 700 m2. Travaux de rafraichissement à prévoir\nPour utilisateur avec un besoin de bureaux de standing..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -71830,7 +71826,7 @@
         "titre": "Bureau 1996m2 Paris 11ème - République-Saint Ambroise",
         "description": "Situé au c?ur du 11ème arrondissement de Paris, entre République et Bastille, découvrez à l'acquisition avec LEASEO un vaste plateau de bureaux en rez-de-chaussée d'une superficie d'environ 2 000m². Implanté..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -74958,7 +74954,7 @@
         "titre": "Bureau 1962m2 Paris 13ème - Croulebarbe",
         "description": "Découvrez cette offre au sein d'un immeuble indépendant situé à 3 minutes de la Place d'Italie, des plateaux lumineux offrant un plan efficace facilement modulable.\r\nImmeuble d'excellent standing\r\nDeux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -75035,7 +75031,7 @@
         "titre": "Bureau 670m2 Paris 16ème - Auteuil Sud",
         "description": "PRESTATIONS IMMEUBLE : À proximité immédiate des transports. Cafétéria / snacking. Grand jardin de 245 m². Locaux en bon état. PRESTATIONS SURFACE : Surface(s) calme(s) sur cour. Accès PMR au RDC. Surface(s)..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -77486,7 +77482,7 @@
         "titre": "Bureau 1094m2 Paris 11ème - République-Saint Ambroise",
         "description": "LA TOUR IMMO vous propose Rue Saint-Sébastien - 75011 PARIS, un immeuble de bureaux comprenant : une surface totale d'environ 1094 m², un Rez-de-chaussée d'environ 354 m², un 1er étage d'environ 317 m²,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -77872,7 +77868,7 @@
         "titre": "Bureau 597m2 Paris 8ème - Elysées-Madeleine",
         "description": "En plein coeur du Quartier Central des Affaires (QCA), nous vous proposons à la vente un plateau de bureaux de 512 m² situé au 8ème étage. Vous bénéficierez de vues exceptionnelles sur la Tour Eiffel,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -78181,7 +78177,7 @@
         "titre": "Bureau 938m2 Paris 17ème - Courcelles-Wagram",
         "description": "Ensemble historique d’exception aux éléments architecturaux et ornementaux remarquablement préservés, repensé avec élégance pour offrir des espaces de travail fonctionnels et haut de gamme, au cœur d’un..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -79098,7 +79094,7 @@
         "titre": "Bureau 722m2 Paris 8ème - Parc Monceau",
         "description": "Au coeur du très recherché 8 € arrondissement de Paris, à proximité immédiate du parc Monceau, cet hôtel particulier indépendant bénéficie d'une adresse prestigieuse, au sein d'un environnement à la fois..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -80167,7 +80163,7 @@
         "titre": "Bureau 1972.3m2 Paris 10ème - Chateau d'Eau-Lancry",
         "description": "À proximité immédiate du Canal Saint-Martin.\r\nDans un immeuble indépendant entièrement restructuré, ce bâtiment indépendant développe une surface totale de 1 972 m² aux volumes spectaculaires et aux prestations..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -80632,7 +80628,7 @@
         "titre": "Bureau 1174m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "Au sein du Quartier Porte Saint-Denis, a proximité des Gares du Nord et de l'Est, BNP Paribas Real Estate vous propose a la vente un tres beau plateau traversant a usage commercial détenu en copropriété.\r\nSituée..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -81780,7 +81776,7 @@
         "titre": "Bureau 1300m2 Paris 8ème - Triangle d'Or",
         "description": "Hôtel particulier – Off Market | QCA Paris Ouest\n\nDans un secteur regroupant de nombreux hôtels particuliers de bureaux, occupés par des acteurs de la finance, des cabinets d'avocats internationaux et..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -82701,7 +82697,7 @@
         "titre": "Bureau 800m2 Paris 8ème",
         "description": "Paris 8e. Idéalement situé.Rare.\nSuperbe hôtel particulier  des bureaux avec le cachet de l'ancien et extérieurs.\nParkings possibles.\nBon état général.\nTrés grand standing. Idéal siège social, boutique..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -82778,7 +82774,7 @@
         "titre": "Bureau 680m2 Paris 16ème",
         "description": "Paris 16eN.Quartier recherché.\nBel hôtel particulier de bureaux avec extérieur.\nParking possible en sus.\nBon état général.\nDossier complet sur demande après vérification de solvabilité."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -82855,7 +82851,7 @@
         "titre": "Bureau 460m2 Paris 16ème",
         "description": "Paris 16eNord.Situation idéale.\nBel hôtel particulier en parfait état avec extérieurs et parking possible.\nDossier complet sur demande après vérification de solvabilité.\nBeaux volumes."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -83164,7 +83160,7 @@
         "titre": "Bureau 894m2 Paris 8ème",
         "description": "Immeuble de caractère mixte bureaux / habitation – Paris 8 €\r\n\r\nAu coeur du 8 € arrondissement de Paris, dans le secteur très recherché Saint?Augustin / Miromesnil, cet immeuble de caractère bénéficie..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -83390,7 +83386,7 @@
         "titre": "Bureau 724m2 Paris 16ème - Chaillot",
         "description": "Secteur Paris Étoile x Knight Frank vous propose une opportunité rare d'acquisition de bureaux, idéalement situés à proximité immédiate du Pont de l'Alma et du Triangle d'Or.\r\nL'immeuble, situé au 1-3..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
