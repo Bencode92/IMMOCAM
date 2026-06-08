@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 731,
-      "a_verifier": 20,
-      "nouveau": 354
+      "poubelle": 732,
+      "a_verifier": 21,
+      "nouveau": 352
     }
   },
   "deals": {
@@ -8537,7 +8537,7 @@
         "titre": "Bureau 514m2 Paris 4ème - Saint Merri",
         "description": "LEASEO vous propose à la location ou à l'acquisition une surface de bureaux lumineuse sous verrière avec belle hauteur sous plafond, au c?ur du Marais. Idéal pour une entreprise créative recherchant un..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -8768,7 +8768,7 @@
         "titre": "Bureau 226m2 Paris 17ème - La Fourche-Guy Môquet",
         "description": "Niel wagram villiers 75017 Paris\r\n\r\nLe Cabinet POINT DE VENTE vous propose un Immeuble en pleine propriété à vendre – Quartier Niel/Wagram, Paris 17ème :\r\n\r\nÀ vendre, immeuble commercial en pleine propriété,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
