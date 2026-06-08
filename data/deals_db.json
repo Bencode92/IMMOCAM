@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 880,
-      "a_verifier": 47,
-      "nouveau": 178
+      "poubelle": 886,
+      "a_verifier": 48,
+      "nouveau": 171
     }
   },
   "deals": {
@@ -41011,7 +41011,7 @@
         "titre": "Vente bureaux Paris 18 - Quartier de la Chapelle - Métro Marx Dormoy",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41086,7 +41086,7 @@
         "titre": "Bureaux à vendre Paris 17 - Proche place Pereire et métro",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41308,7 +41308,7 @@
         "titre": "Bureaux à vendre Paris 3 - Proche République et métro",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41529,7 +41529,7 @@
         "titre": "Vente bureaux Paris 18 - Quartier des Grandes Carrières, proche métro La Fourche",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41678,7 +41678,7 @@
         "titre": "Bureaux à vendre Paris 4 - Marais, proche BHV et métros",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41752,7 +41752,7 @@
         "titre": "Vente bureaux Paris 15 - Quais de Seine, proche métro Bir-Hakeim",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41898,7 +41898,7 @@
         "titre": "Bureaux à vendre Paris 8 - Proche métro Courcelles",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
