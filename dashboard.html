@@ -1813,7 +1813,8 @@ function renderMap(deals){
     let pos=null;
     let approx=false;
     const hasAddr=loc.adresse&&loc.adresse.match(/\d/);
-    if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};approx=!hasAddr;}
+    if(loc._ban_lat&&loc._ban_lng){pos={lat:loc._ban_lat,lng:loc._ban_lng};d._lat=pos.lat;d._lng=pos.lng;approx=loc._geo_type!=="housenumber";}
+    else if(d._lat&&d._lng){pos={lat:d._lat,lng:d._lng};approx=!hasAddr;}
     else if(loc.latitude&&loc.longitude){pos={lat:loc.latitude,lng:loc.longitude};d._lat=pos.lat;d._lng=pos.lng;approx=!hasAddr;}
     else{
       approx=true;
@@ -1864,7 +1865,8 @@ function renderMap(deals){
       <div style="font-family:Inter,sans-serif;min-width:180px">
         <div style="font-size:1rem;font-weight:700;margin-bottom:.3rem">${prixStr}</div>
         <div style="font-size:.8rem;color:#57534e;margin-bottom:.15rem">${surf}m\u00B2 \u2014 ${loc.commune||"?"}</div>
-        <div style="font-size:.75rem;color:#a8a29e;margin-bottom:.5rem">${loc.adresse||""}</div>
+        <div style="font-size:.75rem;color:#a8a29e;margin-bottom:.25rem">${loc.adresse||""}</div>
+        <div style="font-size:.68rem;margin-bottom:.5rem">${loc._geo_type==="housenumber"?`<span style="color:#16a34a">📍 Adresse vérifiée${loc._geo_score?" ("+Math.round(loc._geo_score*100)+"%)":""}</span>`:`<span style="color:#b45309">≈ position approximative</span>`}</div>
         <button onclick="openDw('${k}')" style="width:100%;padding:.45rem;background:#1e3a5f;color:#fff;border:none;border-radius:6px;font-size:.78rem;font-weight:600;cursor:pointer">Voir le d\u00E9tail</button>
         ${d.url?`<a href="${d.url}" target="_blank" rel="noopener" style="display:block;margin-top:.35rem;width:100%;box-sizing:border-box;padding:.45rem;background:#fff;color:#1e3a5f;border:1px solid #1e3a5f;border-radius:6px;font-size:.78rem;font-weight:600;cursor:pointer;text-align:center;text-decoration:none">Voir l'annonce \u2192</a>`:""}
       </div>
