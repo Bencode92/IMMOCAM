@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 683,
-      "a_verifier": 19,
-      "nouveau": 403
+      "poubelle": 685,
+      "a_verifier": 20,
+      "nouveau": 400
     }
   },
   "deals": {
@@ -7541,7 +7541,7 @@
         "titre": "Bureau 286.7m2 Paris 17ème - Champerret-Berthier",
         "description": "Entre Porte Maillot et Pereire, Immprove vous propose à la vente une surface de bureaux indépendante au rez-de-chaussée sous verrière d'environ 286.7 m² ."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7693,7 +7693,7 @@
         "titre": "Bureau 198.02m2 Paris 6ème",
         "description": "À la lisière des 5 € et 6 € arrondissements, à proximité immédiate du jardin du Luxembourg, cet appartement de 198,02 m² loi Carrez, situé en rez-de-chaussée d'un bel immeuble ancien parfaitement entretenu,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7846,7 +7846,7 @@
         "titre": "Bureau 608m2 Paris 10ème - Louis Blanc-Aqueduc",
         "description": "PARIS 10ème. Découvrez un bien rare, au coeur d'une copropriété bien tenue, place de Stalingrad. Ce bâtiment indépendant, entièrement réhabilité par un architecte, séduit par son style fin XIXème siècle,..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
