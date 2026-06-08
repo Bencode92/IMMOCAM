@@ -690,7 +690,7 @@ function renderT(deals){
   if(tCol)rows.sort((a,b)=>{let va=a[tCol],vb=b[tCol];if(va==null)return 1;if(vb==null)return -1;return typeof va==="string"?(tAsc?va.localeCompare(vb):vb.localeCompare(va)):(tAsc?va-vb:vb-va);});
   const ar=k=>tCol===k?(tAsc?" \u25B2":" \u25BC"):"";
   const stI={nouveau:"",a_verifier:"\uD83D\uDD0D",a_contacter:"\uD83D\uDCDE",simulation:"\uD83D\uDCB0",poubelle:"\uD83D\uDDD1"};
-  document.getElementById("tH").innerHTML="<tr>"+cols.map(c=>`<th class="${c.n?'num':''}" onclick="tSort('${c.k}')" style="cursor:pointer;padding:8px 6px;font-size:.72rem">${c.l}${ar(c.k)}</th>`).join("")+"</tr>";
+  document.getElementById("tH").innerHTML="<tr>"+cols.map(c=>`<th class="${c.n?'num':''}" onclick="tSort('${c.k}')" style="cursor:pointer;padding:8px 6px;font-size:.72rem">${c.l}${ar(c.k)}</th>`).join("")+'<th style="padding:8px 6px"></th></tr>';
   const eC=v=>v==null?"":(v<=-20?"color:var(--green)":v<=0?"color:#b45309":"color:var(--red)");
   const pxC=v=>v>=8?"color:#16a34a;font-weight:600":v>=5?"color:#b45309":"color:#dc2626";
   document.getElementById("tB").innerHTML=rows.map(function(r){
@@ -708,6 +708,9 @@ function renderT(deals){
     +'<td style="padding:4px">'+tagHtml+'</td>'
     +'<td style="padding:4px;font-size:.7rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="'+r.notes+'">'+r.notes+'</td>'
     +'<td style="padding:4px;font-size:.65rem;color:var(--text3)">'+r.src+'</td>'
+    +'<td style="padding:4px;text-align:center">'+(r._statut==="poubelle"
+      ?'<button onclick="event.stopPropagation();setSt(\''+r.k+'\',\'nouveau\')" title="Désarchiver" style="border:none;background:none;cursor:pointer;font-size:.95rem;opacity:.7">↩️</button>'
+      :'<button onclick="event.stopPropagation();setSt(\''+r.k+'\',\'poubelle\')" title="Archiver" style="border:none;background:none;cursor:pointer;font-size:.95rem;opacity:.55">🗑️</button>')+'</td>'
     +'</tr>';
   }).join("");
 }
