@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 963,
-      "a_verifier": 55,
-      "nouveau": 87
+      "poubelle": 987,
+      "a_verifier": 56,
+      "nouveau": 62
     }
   },
   "deals": {
@@ -63287,7 +63287,7 @@
         "titre": "Vente immeuble bureaux Paris 17 - Proche métro Porte de Champerret",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -63433,7 +63433,7 @@
         "titre": "Bureaux à vendre Paris 12 - Coulée Verte et transports en commun",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -64170,7 +64170,7 @@
         "titre": "Vente bureaux Paris 11 - Proche Bréguet Sabin et Voltaire",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -64534,7 +64534,7 @@
         "titre": "Vente bureaux Paris 11 - Proche Nation et Voltaire",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -64608,7 +64608,7 @@
         "titre": "Vente bureaux Paris 10 - Proche métro et gares",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -64978,7 +64978,7 @@
         "titre": "Vente bureaux Paris 6 proche gare Montparnasse",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -65126,7 +65126,7 @@
         "titre": "Vente/location bureaux Paris 18 - Proche métro Simplon & Jules Joffrin",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -65424,7 +65424,7 @@
         "titre": "Vente bureau Paris 13 proche métro Nationale et commerces",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -65793,7 +65793,7 @@
         "titre": "Bureaux à vendre Paris 8 avenue Hoche Parc Monceau",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -66163,7 +66163,7 @@
         "titre": "Bureaux à vendre Paris 10 - Boulevard Magenta, proche République",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -66752,7 +66752,7 @@
         "titre": "Vente bureaux Paris 4 - Proche métro Pont Marie et Gare St-Michel",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -67345,7 +67345,7 @@
         "titre": "Vente bureaux Paris 16 - Proche métro Victor Hugo",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -67787,7 +67787,7 @@
         "titre": "Bureaux à vendre Paris 15 - Proche transports en commun",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -67859,7 +67859,7 @@
         "titre": "Bureaux à vendre Paris 8, proche métro, RER et bus",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -68239,7 +68239,7 @@
         "titre": "Bureau 1246m2 Paris 12ème - Jardin de Reuilly",
         "description": "LEASEO vous propose à l'acquisition un ensemble immobilier rare de grande superficie à proximité immédiate de la Gare de Lyon et du Boulevard Diderot. Répartis entre rez-de-chaussée, entresol et sous-sol,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -68698,7 +68698,7 @@
         "titre": "Bureau 410m2 Paris 8ème - Hoche-Friedland",
         "description": "Cushman & Wakefield vous propose des bureaux de 410 m² à vendre avenue Hoche, au pied du Parc Monceau, dans l'un des secteurs les plus recherchés du 8e arrondissement de Paris.\r\n\r\nLes bureaux sont situés..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -68852,7 +68852,7 @@
         "titre": "Bureau 494m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "LEASEO vous propose à l'acquisition une surface de bureaux climatisée en rez-de-chaussée sur rue, bénéficiant d'une classification ERP 5 et d'un accès PMR. Offrant une grande flexibilité d'aménagement,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -69609,7 +69609,7 @@
         "titre": "Bureau 385m2 Paris 5ème - Jardin des Plantes",
         "description": "Alex Bolton a le plaisir de proposer à la vente un espace de bureaux exceptionnellement bien situé au coeur du 5ème arrondissement de Paris. Idéalement positionné à proximité immédiate de la station de..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -69686,7 +69686,7 @@
         "titre": "Bureau 284.9m2 Paris 11ème - Bastille-Popincourt",
         "description": "ROQUETTE / VOLTAIRE Groupe BABYLONE vous propose à l'acquisition une surface commerciale dans un ensemble immobilier neuf donnant sur une jolie cour pavée et arborée. Locaux livrés brut de béton et fluide..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -70148,7 +70148,7 @@
         "titre": "Bureau 259m2 Paris 13ème - Salpêtrière-Austerlitz",
         "description": "Ensemble immobilier comprenant un local commercial en rez-de-chaussée et un appartement situé au 1er étage.Le local commercial bénéficie de deux conduits d'extraction, offrant de nombreuses possibilités..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -70985,7 +70985,7 @@
         "titre": "Bureau 475m2 Paris 10ème - Grange Aux Belles-Terrage",
         "description": "CANAL SAINT MARTIN GROUPE BABYLONE vous propose une surface de bureaux de 475m² à la vente dans une jolie cour pavée. immeuble mixte de bon standing proche des gares de l'Est et du Nord Le plateau est..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -71213,7 +71213,7 @@
         "titre": "Bureau 536m2 Paris 10ème - Chateau d'Eau-Lancry",
         "description": "Nous vous proposons un local commercial à vendre bénéficiant d'un accès indépendant sur rue et au sein d'un bel immeuble en pierre de taille.\r\nLes locaux bénéficient d'une localisation exceptionnelle..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -74645,7 +74645,7 @@
         "titre": "Bureau 445m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "A proximité du métro Bonne Nouvelle et des Grands Boulevards, nous vous proposons d'acquérir des locaux situés dans un immeuble ancien de bon standing.\r\nCes locaux bénéficient d'un double acces via deux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -75108,7 +75108,7 @@
         "titre": "Bureau 266m2 Paris 7ème - Invalides",
         "description": "FIU vous propose, à deux pas des Invalides, un élégant Hôtel particulier rénové en fond de cour\r\nDigicode\r\nGardien\r\nAccès indépendant\r\nAccès PMR au RDC\r\nEspaces ouverts / cloisonnés \r\nClimatisation partielle\r\nCuisine..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -75493,7 +75493,7 @@
         "titre": "Bureau 290m2 Paris 9ème - Trudaine-Maubeuge",
         "description": "Dunkerque - Rochechouart. Ancien atelier aménagé en LOFT, sur cour arborée, avec un usage mixte (lots d'habitation et commerciaux de 352 m2 au sol pondéré par notre agence à 290 m2 en raison d'un sous..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
