@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 812,
-      "a_verifier": 34,
-      "nouveau": 259
+      "poubelle": 829,
+      "a_verifier": 37,
+      "nouveau": 239
     }
   },
   "deals": {
@@ -25870,7 +25870,7 @@
         "titre": "Bureau 328m2 Paris 10ème - Chateau d'Eau-Lancry",
         "description": "Au sein d'un bel immeuble en pierre de taille, nous vous proposons à l'acquisition une belle surface commerciale atypique avec verrière et piscine intérieure dans un esprit loft/industriel. En configuration..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25948,7 +25948,7 @@
         "titre": "Bureau 433m2 Paris 18ème - Clignancourt-Jules Joffrin",
         "description": "A proximité du métro Jules Joffrin, nous vous proposons d'acquérir une surface entierement rénovée et climatisée dans un ensemble immobilier des années 70. Les locaux sont organisés en espaces ouverts..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -26025,7 +26025,7 @@
         "titre": "Bureau 291.73m2 Paris 2ème - Sentier-Bonne Nouvelle",
         "description": "Alex Bolton vous propose à la vente un actif indépendant bénéficiant d'une localisation centrale, au coeur du quartier du Sentier, a` proximite´ immédiate des transports et commerces.\r\nBureaux atypiques..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -26101,7 +26101,7 @@
         "titre": "Bureau 263m2 Paris 8ème - Mairie",
         "description": "A proximité du Métro Villiers, nous vous proposons d'acquérir des locaux professionnels situés dans un immeuble haussmannien de tres bon standing.\r\nLes locaux sont répartis comme suit : 229,78 m² (surface..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -26407,7 +26407,7 @@
         "titre": "Bureau 240m2 Paris 3ème - Archives",
         "description": "CBRE vous propose à la vente, et en exclusivité, un actif commercial situé dans le 3 -ème arrondissement de Paris. Le bien est idéalement situé entre la place des Vosges et la place de la Bastille. Se..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -26485,7 +26485,7 @@
         "titre": "Bureau 348m2 Paris 18ème - Grandes Carrières-Clichy",
         "description": "A VENDRE - OPPORTUNITE - Paris 18e - CBRE vous propose des bureaux à vendre  d'une superficie de 348 m². Locaux en excellent état bénéficiant de tout le confort : Accueil, Cuisine et Salle de repos. Quartier..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -26951,7 +26951,7 @@
         "titre": "Bureau 276m2 Paris 14ème - Pernety",
         "description": "A proximité du métro Pernety, nous vous proposons d'acquérir une surface avec entrée indépendante dans un bel immeuble haussmannien. Les locaux sont composés d'espaces cloisonnés avec salle de réunion..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -27338,7 +27338,7 @@
         "titre": "Bureau 339m2 Paris 16ème - Chaillot",
         "description": "Le Groupe Babylone vous propose à la vente une surface de bureaux d'environ 339 m² en triplex, située entre la place de l'Étoile et la porte Maillot, au sein d'un bel immeuble en pierre de taille. Les..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -27492,7 +27492,7 @@
         "titre": "Bureau 1018m2 Paris 18ème - Goutte d'Or-Château Rouge",
         "description": "A quelques pas de la mythique Halle Saint Pierre et de la Gare du Nord, cette ancienne fabrique de cycles et de boutons, conçue par les Ateliers Eiffel au début du XXème siècle, vous séduira par son architecture..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -27722,7 +27722,7 @@
         "titre": "Bureau 1082m2 Paris 14ème - Jean Moulin-Porte d'Orléans",
         "description": "Immeuble indépendant sur 2 niveaux A proximité immédiate de la Porte d'Orléans\r\nERP 5. Accès PMR avec ascenseurs privatif Accès sécurisé par badge. Accueil. Monte personnes extérieur et intérieur. Salle..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28183,7 +28183,7 @@
         "titre": "Bureau 273m2 Paris 16ème - Chaillot",
         "description": "Nous vous proposons à la vente un lot de copropriété privatif de 273 m² avec emplacement exceptionnel avenue Pierre 1er de Serbie, bénéficiant de prestations de grand standing et d'une entrée indépendante..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28259,7 +28259,7 @@
         "titre": "Bureau 311m2 Paris 10ème - Grange Aux Belles-Terrage",
         "description": "Au pied du Canal Saint Martin, et à deux pas de la Gare de l'Est, Wellstone vous propose de venir découvrir un magnifique espace de bureaux atypique.\r\nLes locaux ont bénéficié d'une rénovation très récente..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28337,7 +28337,7 @@
         "titre": "Bureau 325m2 Paris 8ème - Triangle d'Or",
         "description": "ALEX BOLTON vous propose d'acquérir ou de louer des bureaux premium dans le coeur de Paris! Situés dans un emplacement stratégique, ces 325 m² non divisibles offrent un espace de travail moderne et spacieux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28878,7 +28878,7 @@
         "titre": "Bureau 558m2 Paris 18ème - Grandes Carrières-Clichy",
         "description": "Cimetiere de Montmartre Groupe BABYLONE vous propose à la location ou à l'acquisition une surface commerciale atypique jouissant de beaux volumes type loft. ( 3.5 m hsp) Entrée indépendante sur rue et..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28955,7 +28955,7 @@
         "titre": "Bureau 549.6m2 Paris 6ème - Saint Placide",
         "description": "En plein coeur de la rue de Sèvres et de ses nombreux commerces, Alex Bolton vous propose une surface de bureaux à la location en RDC/sous-sol, au sein d'un immeuble Haussmannien de très bon standing...."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29187,7 +29187,7 @@
         "titre": "Bureau 400m2 Paris 17ème - Ternes-Maillot",
         "description": "Realty'z vous propose à la vente des bureaux occupés situé en plein coeur de l'Avenue des Ternes dans le 17e arrondissement de Paris. Ces bureaux développent une superficie totale de 400 m2 comprenant..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29263,7 +29263,7 @@
         "titre": "Bureau 1270m2 Paris 14ème - Montsouris Dareau",
         "description": "Knight Frank vous propose à proximité de la place Denfert Rochereau et de toutes ses commodités une surface de bureaux dans une coproprieté. Les locaux, situés au 1er étage, ont très peu de contraintes..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29572,7 +29572,7 @@
         "titre": "Bureau 575m2 Paris 9ème - Clichy-Trinité",
         "description": "Idéalement situé au coeur du 9ème arrondissement de Paris, EVOLIS vous propose des bureaux A VENDRE organisés sur trois niveaux, reliés par un escalier intérieur et bénéficiant d'une terrasse. \r\n\r\nContactez..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29802,7 +29802,7 @@
         "titre": "Bureau 500m2 Paris 13ème - Bièvres Sud Tolbiac",
         "description": "** Idéal Profession libérale **\r\nSitué au pied de la célèbre Butte aux Cailles, ce quartier ne manque pas de charme. Paisible et résidentiel, il est l'un des rares quartiers pavillonnaires de Paris aux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29956,7 +29956,7 @@
         "titre": "Bureau 419.77m2 Paris 2ème - Montorgueil-Saint Denis",
         "description": "Au coeur de Paris, dans le quartier Montorgueil / Sentier, nous vous proposons un espace commercial avec bureaux d'accompagnements à vendre.\r\nCette surface bénéficie d'une entrée principale au 2bis, rue..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
