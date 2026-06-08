@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 886,
+      "poubelle": 892,
       "a_verifier": 48,
-      "nouveau": 171
+      "nouveau": 165
     }
   },
   "deals": {
@@ -41972,7 +41972,7 @@
         "titre": "Bureaux à vendre Paris 20 - Quartier Porte des Lilas, métro Saint-Fargeau",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -43441,7 +43441,7 @@
         "titre": "Vente bureaux Paris 19 proche canal de l'Ourcq et RER Rosa Parks",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -46870,7 +46870,7 @@
         "prix_affiche": 3540000,
         "prix_m2": 5000
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -57829,7 +57829,7 @@
         "prix_affiche": 7900000,
         "prix_m2": 21237
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -58540,7 +58540,7 @@
         "prix_affiche": 2400000,
         "prix_m2": 3000
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -64755,7 +64755,7 @@
         "titre": "Vente bureaux Paris 19 - Proximité transports",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
