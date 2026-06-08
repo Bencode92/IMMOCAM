@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 646,
-      "a_verifier": 5,
-      "nouveau": 454
+      "poubelle": 659,
+      "a_verifier": 11,
+      "nouveau": 435
     }
   },
   "deals": {
@@ -250,7 +250,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -346,7 +346,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -441,7 +441,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -538,7 +538,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -921,7 +921,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1063,7 +1063,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1135,7 +1135,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1277,7 +1277,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1348,7 +1348,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1419,7 +1419,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1561,7 +1561,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1703,7 +1703,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1845,7 +1845,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1987,7 +1987,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -2058,7 +2058,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -2129,7 +2129,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -2200,7 +2200,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -2343,7 +2343,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -2628,7 +2628,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-13",
