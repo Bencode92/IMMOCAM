@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 758,
+      "poubelle": 759,
       "a_verifier": 25,
-      "nouveau": 322
+      "nouveau": 321
     }
   },
   "deals": {
@@ -14698,7 +14698,7 @@
         "titre": "Bureau 445m2 Paris 14ème - Pernety",
         "description": "Quartier Montparnasse Paris 14ème, Immo Atypique vous propose à la vente un immeuble indépendant en pleine propriété, anciennement des ateliers d'imprimerie et d'artiste, constitués par des locaux mixtes..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
