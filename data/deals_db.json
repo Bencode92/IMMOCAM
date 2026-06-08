@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 753,
-      "a_verifier": 24,
-      "nouveau": 328
+      "poubelle": 758,
+      "a_verifier": 25,
+      "nouveau": 322
     }
   },
   "deals": {
@@ -13544,7 +13544,7 @@
         "titre": "Bureau 216m2 Paris 13ème",
         "description": "Place d'italie 75013 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose dans le quartier de Place d'Italie un plateau de bureaux refait à neuf d'une surface totale de 215 m² au 8ème étage d'un immeuble rénové..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13621,7 +13621,7 @@
         "titre": "Bureau 242m2 Paris 13ème",
         "description": "Place d'italie 75013 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose dans le quartier de Place d'Italie un plateau de bureaux refait à neuf d'une surface totale de 241m² au 3ème étage d'un immeuble rénové..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13852,7 +13852,7 @@
         "titre": "Bureau 213m2 Paris 13ème",
         "description": "Place d'italie 75013 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose dans le quartier de Place d'Italie un plateau de bureaux refait à neuf d'une surface totale de 212 m² au 7ème étage d'un immeuble rénové..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13929,7 +13929,7 @@
         "titre": "Bureau 456m2 Paris 18ème - Grandes Carrières-Clichy",
         "description": "À proximité immédiate du métro La Fourche, au coeur d'un quartier parisien très animé, OFFICE IMMO propose à la vente un local commercial de 456 m², de style loft, bénéficiant d'un accès direct sur rue...."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -14160,7 +14160,7 @@
         "titre": "Bureau 303m2 Paris 11ème - Belleville-Saint Maur",
         "description": "Au cœur de Paris dans le 11e arrondissement, à proximité des commerces et des transports, Breteuil propose à la vente en exclusivité une belle surface de bureaux occupée pour investissement.\n\nIMMEUBLE..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -14467,7 +14467,7 @@
         "titre": "Bureau 297m2 Paris 2ème - Vivienne-Gaillon",
         "description": "A proximité du métro Quatre-Septembre, nous vous proposons d'acquérir un actif entierement rénové en R+1.\r\nBNP Paribas Real Estate vous propose d'acquérir des locaux atypiques d'une surface totale de..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
