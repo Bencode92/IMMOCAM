@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 759,
-      "a_verifier": 25,
-      "nouveau": 321
+      "poubelle": 762,
+      "a_verifier": 27,
+      "nouveau": 316
     }
   },
   "deals": {
@@ -14774,7 +14774,7 @@
         "titre": "Bureau 245m2 Paris 10ème - Chateau d'Eau-Lancry",
         "description": "Dans un immeuble idéalement situé au coeur du 10e arrondissement, ces bureaux en très bon état offrent une organisation modulable, parfaitement adaptée à une activité médicale, paramédicale ou à des bureaux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -15314,7 +15314,7 @@
         "titre": "Bureau 567m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "Coeur 10ème - Dans un bel immeuble de bureaux, IMMPROVE vous propose à la location une surface de bureaux de 548 m² répartie en 299 m² au RDC et 251 m² au sous-sol."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -15391,7 +15391,7 @@
         "titre": "Bureau 286m2 Paris 11ème",
         "description": "Opportunité d'investissement au cœur de l'Est Parisien.\nCBRE, leader mondial en immobilier d'entreprise, vous présente une occasion rare d'acquérir un lot de copropriété au 1er étage d'un immeuble mixte..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -15622,7 +15622,7 @@
         "titre": "Bureau 330m2 Paris 16ème - Chaillot",
         "description": "Le cabinet REALTY'Z vous propose à la vente, des bureaux situés au premier étage d'un immeuble commercial.\r\nIdéalement situé sur l'avenue Victor Hugo à Paris 16ème. Ces bureaux développent une superficie..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -15699,7 +15699,7 @@
         "titre": "Bureau 862m2 Paris 10ème - Louis Blanc-Aqueduc",
         "description": "Bienvenue dans l'élégance de l'immobilier au c?ur du dynamique secteur du 10ème arrondissement ! Découvrez avec LEASEO une opportunité unique à l'acquisition : des espaces de bureaux flexibles au style..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
