@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 829,
+      "poubelle": 836,
       "a_verifier": 37,
-      "nouveau": 239
+      "nouveau": 232
     }
   },
   "deals": {
@@ -30033,7 +30033,7 @@
         "titre": "Bureau 302m2 Paris 4ème - Seine et Berges",
         "description": "Bien d'exception - Au coeur du 4ème arrondissement, Immprove vous propose un loft commercial de 302 m² en R+2 situé dans un immeuble indépendant donnant sur une jolie cour arborée ( immeuble en copropriété..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30111,7 +30111,7 @@
         "titre": "Bureau 348.25m2 Paris 9ème - Provence Opéra",
         "description": "A VENDRE OU A LOUER - Groupe Babylone vous propose à la vente ou à la location, un local commercial bénéficiant d'un beau linéaire de façade.\r\n\r\nCes locaux idéalement situés au coeur du 9ème arrondissement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30187,7 +30187,7 @@
         "titre": "Bureau 462m2 Paris 12ème",
         "description": "Surface de bureaux à vendre, à proximité de la Place de la Nation.\r\n\r\nCARACTERISTIQUES DE L'OFFRE \r\n\r\nRéception\r\n\r\nOpen-spaces\r\n\r\nBureaux cloisonnés\r\n\r\nSalles de réunion\r\n\r\nSanitaires\r\n\r\nCuisine\r\n\r\nArchives\r\n\r\nParking\r\n\r\nCour..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30338,7 +30338,7 @@
         "titre": "Bureau 230m2 Paris 2ème - Montorgueil-Saint Denis",
         "description": "LA TOUR IMMO vous propose un plateau de bureau sous verrière d'une surface d'environ 230 m² de plain pied en vente. Les locaux disposent d'une verrière d'un emprise de 60 m², ainsi que d'une hauteur sous..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30491,7 +30491,7 @@
         "titre": "Bureau 465m2 Paris 13ème - Croulebarbe",
         "description": "À proximité immédiate de la Place d'Italie et de son hub de transports (métro lignes 5, 6 et 7), GROUPE BABYLONE vous propose à l'acquisition plusieurs surfaces de bureaux renovés et très flexibles."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30568,7 +30568,7 @@
         "titre": "Bureau 220m2 Paris 11ème - Léon-Blum Folie-Regnault",
         "description": "Dans un immeuble ancien de bon standing, nous vous proposons des bureaux à la vente à proximité de la place Voltaire."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30646,7 +30646,7 @@
         "titre": "Bureau 717m2 Paris 13ème - Croulebarbe",
         "description": "À proximité immédiate de la Place d'Italie et de son hub de transports (métro lignes 5, 6 et 7), GROUPE BABYLONE vous propose à l'acquisition plusieurs surfaces de bureaux renovés et très flexibles."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
