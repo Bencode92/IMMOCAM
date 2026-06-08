@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 987,
+      "poubelle": 996,
       "a_verifier": 56,
-      "nouveau": 62
+      "nouveau": 53
     }
   },
   "deals": {
@@ -75569,7 +75569,7 @@
         "titre": "Bureau 414.8m2 Paris 7ème - Invalides",
         "description": "Opportunité rare dans le 7 ème arrondissement. \nBosquet / Rapp / Saint-Dominique.\nBureaux récemment rénové dans un immeuble de très bon standing. \nBureaux de 414,8 m² sur 3 niveaux. \nAccès indépendant..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -75645,7 +75645,7 @@
         "titre": "Bureau 434m2 Paris 8ème - Mairie",
         "description": "Bureaux à vendre en plein cœur du QCA ! Dans un bel immeuble haussmannien, plateau de 434 m² lumineux, équipé de parquet, moulures et cheminées.\r\nLe charme de l'ancien au pied de la gare Saint-Lazare..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -76787,7 +76787,7 @@
         "titre": "Bureau 1000m2 Paris 18ème - Amiraux-Simplon-Poissonniers",
         "description": "Immeuble entier à la vente. Environ 1000 m2. 3 bâtiments, dont un bâtiment d'angle.\r\n\r\nCet immeuble est 100% commercial et entièrement loué.\r\n\r\nBien présenté par Agences de France par délégation.\r\nAgences..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -77175,7 +77175,7 @@
         "titre": "Bureau 427m2 Paris 2ème - Sentier-Bonne Nouvelle",
         "description": "Alex Bolton vous propose à la vente, en exclusivité, une surface de bureaux d'environ 427 m² située au coeur du Sentier, au sein d'un immeuble de très bon standing. Entièrement rénovés et climatisés,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -77405,7 +77405,7 @@
         "titre": "Bureau 267m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "Locaux de type loft refaits à neuf en rez-de-chaussée au fond d'une cour pavée et arborée \nUn seul niveau (pas de sous-sol)\nQuartier \"Petites Écuries\" \nGrande verrière centrale, pierres apparentes, piliers..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -79324,7 +79324,7 @@
         "titre": "Bureau 959m2 Paris 17ème - Pereire-Malesherbes",
         "description": "Savills vous propose à la vente ou à la location un espace de bureaux/local commercial de 959 m², idéalement situé à Paris 17. Doté d'un accès direct et d'une visibilité sur rue, cet espace offre une..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -80087,7 +80087,7 @@
         "titre": "Bureau 334m2 Paris 12ème - Bel-Air Nord",
         "description": "Le cabinet REALTY'Z vous propose des murs libres de bureaux de 344 m² situé à proximité immédiate de la place de la Nation. Ce plateau non divisible se compose de 11 bureaux, offrant des espaces de travail..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -80241,7 +80241,7 @@
         "titre": "Bureau 535m2 Paris 11ème - Bastille-Popincourt",
         "description": "Situé a 5 minutes a pieds de la station Bastille et de ses nombreux transports (lignes 1, 5 et 8), nous vous proposons a la vente cet actif indépendant en fond de cour d'environ 535m².\r\nDoté d'un agencement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -82315,7 +82315,7 @@
         "titre": "Bureau 400.17m2 Paris 5ème - Jardin des Plantes",
         "description": "IMMPROVE vous propose à la vente ou à la location un bureau idéalement situé au coeur du 5eme arrondissement de Paris, à proximité immédiate du métro Censier-Daubenton et des rues Monge et Mouffetard.\r\nCe..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
