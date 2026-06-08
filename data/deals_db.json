@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 859,
-      "a_verifier": 43,
-      "nouveau": 203
+      "poubelle": 862,
+      "a_verifier": 45,
+      "nouveau": 198
     }
   },
   "deals": {
@@ -36064,7 +36064,7 @@
         "titre": "Bureaux 565m2 RUE DE JAVEL\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -36210,7 +36210,7 @@
         "titre": "Bureaux 1220m2 RUE ERARD\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -36654,7 +36654,7 @@
         "titre": "Vente bureaux Paris 16 - Proche transports et université Dauphine",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -36800,7 +36800,7 @@
         "titre": "Vente bureaux Paris 17 - Proche métro, RER et bus",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -36872,7 +36872,7 @@
         "titre": "Bureaux à vendre Paris 10 - Proche métro et bus",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
