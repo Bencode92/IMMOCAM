@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 749,
-      "a_verifier": 23,
-      "nouveau": 333
+      "poubelle": 750,
+      "a_verifier": 24,
+      "nouveau": 331
     }
   },
   "deals": {
@@ -12237,7 +12237,7 @@
         "titre": "Bureau 345m2 Paris 12ème - Bel-Air Nord",
         "description": "Proche de Nation et de son hub de transports, BAIL BUY vous propose de venir visiter cette surface de bureaux atypique et au fort potentiel. Ces bureaux au dernier étage d'un immeuble à taille humaine,..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -12620,7 +12620,7 @@
         "titre": "Bureau 430m2 Paris 10ème - Louis Blanc-Aqueduc",
         "description": "Dans un immeuble indépendant en R+1 situé à toute proximité de la Gare de l'Est, LEASEO vous propose à la location ou à l'acquisition des bureaux lumineux et atypiques avec verrière et accès PMR. Cet..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
