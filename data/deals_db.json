@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 855,
-      "a_verifier": 40,
-      "nouveau": 210
+      "poubelle": 859,
+      "a_verifier": 43,
+      "nouveau": 203
     }
   },
   "deals": {
@@ -33797,7 +33797,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -34767,7 +34767,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -34862,7 +34862,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -35150,7 +35150,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -35245,7 +35245,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -35724,7 +35724,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -35820,7 +35820,7 @@
       },
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-16",
