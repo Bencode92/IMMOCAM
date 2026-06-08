@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 687,
-      "a_verifier": 21,
-      "nouveau": 397
+      "poubelle": 731,
+      "a_verifier": 20,
+      "nouveau": 354
     }
   },
   "deals": {
@@ -6699,7 +6699,7 @@
         "titre": "Bureau 198m2 Paris 8ème - Parc Monceau",
         "description": "Au sein d'un immeuble mixte, de type haussmannien et à proximité immédiate de l'avenue de Messine et du Boulevard Haussmann, Knight Frank vous propose une surface de bureaux atypique sous verrière en..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -8306,7 +8306,7 @@
         "titre": "Bureau 213m2 Paris 17ème - La Fourche-Guy Môquet",
         "description": "Niel wagram villiers 75017 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose à proximité du métro Ternes :\r\n\r\nAu sein d'un bel immeuble, un local commercial en rez-de-chaussée développant une surface totale..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9078,7 +9078,7 @@
         "titre": "Bureau 200m2 Paris 9ème - Lorette-Martyrs",
         "description": "Exclusivité - A vendre BUREAUX avec COMMERCIALITE 198 m2 PARIS 9ème rue Taitbout Métro Trinité / St Georges, dans un bel immeuble pierre de taille ravalé, gardienne, interphonie, vigik, partie communes..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9773,7 +9773,7 @@
         "titre": "Bureau 170m2 Paris 8ème",
         "description": "Franklin Roosvelt - St-Philippe-du-Roule en plein cœur du QCA, Consult'im vous propose à la vente une surface de bureaux de 169,80m² Carrez et entièrement climatisée. \r\n\r\nCARACTERISTIQUES DE L'OFFRE \r\n\r\nImmeuble..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -10003,7 +10003,7 @@
         "titre": "Bureau 200m2 Paris 11ème - Belleville-Saint Maur",
         "description": "Un bureau industriel situé au cœur du 11e arrondissement, ce superbe espace de travail de 200 m² en rez-de-chaussée offre un cadre calme et lumineux.\r\n\r\nAménagé dans un esprit loft sous verrière, il bénéficie..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13312,7 +13312,7 @@
         "titre": "Bureau 178m2 Paris 9ème",
         "description": "Paradis hauteville 75009 Paris\r\n\r\nLe Groupe Pointdevente vous propose à la vente une surface de bureaux de 177 m², idéalement située dans le quartier Madeleine, à seulement quelques pas du Printemps et..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -14084,7 +14084,7 @@
         "titre": "Bureau 169m2 Paris 9ème - Clichy-Trinité",
         "description": "A proximité de la gare Saint-Lazare, à la location, une surface de bureaux sur rue et sur cour.\r\n \r\nConstruction : \r\nPrestations : Ascenseur PMR\r\nÉtat des locaux : Etat d'usage\r\nGrande souplesse d'aménagement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -15931,7 +15931,7 @@
         "titre": "Bureau 160m2 Paris 4ème - Île de la Cité",
         "description": "CBRE numéro 1 mondial en immobilier d'entreprise vous propose d'acquérir une surface commerciale indépendante au sein d'un immeuble mixte de très bon standing. Ce bien est PMR et ERP, il jouit de beaux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -16779,7 +16779,7 @@
         "titre": "Bureau 193m2 Paris 2ème - Vivienne-Gaillon",
         "description": "Situés au 30 avenue de l'Opéra, ces bureaux rénovés à vendre bénéficient d'un emplacement exceptionnel au c?ur du 2ème arrondissement de Paris. À proximité immédiate de l'Opéra Garnier, des Grands Boulevards..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19243,7 +19243,7 @@
         "titre": "Bureau 193m2 Paris 8ème - Triangle d'Or",
         "description": "CBRE vous propose à la vente, un actif de très haut standing, Découvrez l'excellence au coeur de Paris ! il s'agit d'un actif de bureaux haut de gamme dans le prestigieux 8ème arrondissement, à deux pas..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -23562,7 +23562,7 @@
         "titre": "Bureau 107.15m2 Paris 7ème - Saint Thomas d'Aquin",
         "description": "Dans le prestigieux quartier de Saint-Thomas-d'Aquin, nous vous proposons ce plateau d'une surface de 107,15 m² Carrez, à proximité immédiate de la rue du Bac. Bureaux traversants, situés au 1er étage..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -24256,7 +24256,7 @@
         "titre": "Bureau 179m2 Paris 2ème - Sentier-Bonne Nouvelle",
         "description": "Au pied du métro \"\"Réaumur Sébastopol\"\" (lignes 3 et 4), nous vous proposons a la vente un plateau de bureaux d'environ 176m² au sein d'un bel immeuble de standing de style haussmannien. Situé au 3eme..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -24793,7 +24793,7 @@
         "titre": "Bureau 198m2 Paris 7ème - Gros Caillou",
         "description": "INVALIDES - UNIVERSITÉ. Quartier des Ambassades. Avenue Robert Schuman. Dans un immeuble en Pierre de Taille des années 30. Surface pour profession libérale uniquement de 197 m2 Carrez  en rez-de-chaussée..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25177,7 +25177,7 @@
         "titre": "Bureau 178m2 Paris 8ème - Parc Monceau",
         "description": "Groupe Babylone vous propose à la vente des bureaux en duplex d'une superficie de 178 m² Carrez (204 m² au sol), situés en rez-de-chaussée et au premier étage, reliés par un escalier intérieur. Ces bureaux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25559,7 +25559,7 @@
         "titre": "Bureau 168m2 Paris 1er - Palais Royal",
         "description": "Dans un bel immeuble haussmannien, situé à proxmité immédiate de Pyramides et d'Opéra, LEASEO vous propose à la vente une surface en très bon état et bénéficiant de beaux volumes\r\nAMENAGEMENT ET PRESTATIONS..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -27875,7 +27875,7 @@
         "titre": "Bureau 174m2 Paris 16ème - Muette Sud",
         "description": "En plein coeur du 16ème arrondissement, au pied du métro Ranelagh, Wellstone vous propose à la vente une magnifique petite maison d'architecte sur 3 niveaux de 174m² en excellent état, offrant de beaux..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28106,7 +28106,7 @@
         "titre": "Bureau 150m2 Paris 9ème - Lafayette-Richer",
         "description": "Dans un très bel immeuble de standing, Groupe Babylone vous propose à l'achat des bureaux de bon standing bénéficiant d'une grande luminosité et de beaucoup de calme. La surface profite de tous les charmes..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28414,7 +28414,7 @@
         "titre": "Bureau 157.19m2 Paris 5ème - Sorbonne",
         "description": "Groupe Babylone vous propose à la vente une très belle surface de bureaux de 157 m² au coeur du 5ème arrondissement de Paris.\r\n\r\nCes bureaux traversant sont entièrement rénovés et bénéficient d'un emplacement..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28801,7 +28801,7 @@
         "titre": "Bureau 143m2 Paris 8ème - Hoche-Friedland",
         "description": "Groupe Babylone vous présente une opportunité exceptionnelle à proximité de la station Charles de Gaulle-Étoile. Dans un bel immeuble, une surface de bureaux lumineuse et traversante de 143 m² est disponible..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29340,7 +29340,7 @@
         "titre": "Bureau 188m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "Situé au coeur du 11e arrondissement de Paris, dans le quartier prisé de Faidherbe, Groupe VLB vous propose à la vente des bureaux de caractère au sein d'un immeuble industriel. Entièrement rénovés, ces..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29879,7 +29879,7 @@
         "titre": "Bureau 125m2 Paris 7ème - Saint Thomas d'Aquin",
         "description": "A proximité du musée d'Orsay, au coeur du VIIe arrondissement, quartier très touristique, Alex Bolton vous propose à la vente en exclusivité, un hébergement hôtelier d'une surface de 125 m² répartie en..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30414,7 +30414,7 @@
         "titre": "Bureau 153m2 Paris 6ème - Odéon",
         "description": "IMMPROVE vous propose des murs libres à vendre sur cour, d'une surface totale de 153m² environ. Au Rez-de-Chaussée le local dispose d'une superficie de 88m² et au sous-sol de 65m².\r\nLe local se situe..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -31799,7 +31799,7 @@
         "titre": "Bureau 160m2 Paris 7ème",
         "description": "Breteuil\nImmeuble ancien de grand standing, élégant appartement au rez-de-chaussée surélevé, exposé sud, en parfait état, bénéficiant du charme des éléments anciens (parquet, moulures, cheminées) ainsi..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -37611,7 +37611,7 @@
         "titre": "Vente bureaux Paris 1 - Avenue de l'Opéra, proche métro Palais Royal et Pyramides",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -38574,7 +38574,7 @@
         "titre": "Vente bureaux Paris 17 - Proche Métro Argentine et RER Charles de Gaulle",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41234,7 +41234,7 @@
         "titre": "Vente bureaux Paris 6 - Quartier Odéon, proche métro",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41604,7 +41604,7 @@
         "titre": "Vente bureaux Paris 9 proche gare Saint-Lazare et métro Cadet",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -42785,7 +42785,7 @@
         "titre": "Vente bureaux Paris 8 - Quartier Central des Affaires, proche Champs-Élysées",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -43515,7 +43515,7 @@
         "titre": "Bureaux à vendre Paris 8, proche métro Liège, immeuble de standing",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -43663,7 +43663,7 @@
         "titre": "Vente bureaux Paris 2 - Proche métro Réaumur Sébastopol",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -44330,7 +44330,7 @@
         "titre": "Vente bureaux Paris 8 - Proche Métro, RER et bus",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -44848,7 +44848,7 @@
         "titre": "Vente bureaux Paris 16 - Proche bus, métro et RER",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -45364,7 +45364,7 @@
         "titre": "Vente bureaux Paris 8 - Proche métro Franklin Roosevelt",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -47526,7 +47526,7 @@
         "titre": "Bureaux 143m2 RUE WASHINGTON\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51272,7 +51272,7 @@
         "titre": "Bureaux 174m2 RUE DAVIOUD\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -51638,7 +51638,7 @@
         "titre": "Bureaux 115m2 QUAI VOLTAIRE\nPARIS",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -52015,7 +52015,7 @@
         "titre": "Bureau 180m2 Paris 16ème - Muette Sud",
         "description": "Accès indépendant\r\nDigicode\n4 bureaux cloisonnés\r\n1 open space\r\n1 salle de conférence/formation d'une vingtaine de personnes\r\n1 cuisine et un réfectoire donnant sur le jardin de la résidence"
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -53748,7 +53748,7 @@
         "titre": "Bureau 194m2 Paris 18ème - Grandes Carrières-Clichy",
         "description": "Situé à deux pas du métro Guy Môquet (Ligne 13), cet ancien espace de danse transformé par un architecte en loft totalisant 194 m² (189 m² Carrez) offre un cadre de travail inspirant. \n\nAlliant structure..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -58186,7 +58186,7 @@
         "prix_affiche": 2500000,
         "prix_m2": 12500
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -65052,7 +65052,7 @@
         "titre": "Vente bureaux Paris 7 - Rue de l'Université, proche RER Pont-de-l'Alma",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -65867,7 +65867,7 @@
         "titre": "Vente bureaux Paris 8 - Triangle d'Or, proche métro",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -66091,7 +66091,7 @@
         "titre": "Vente bureaux Paris 8 - Proximité Métro Saint-Augustin et Saint-Lazare",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -75795,7 +75795,7 @@
         "titre": "Bureau 190m2 Paris 3ème - Archives",
         "description": "A proximité du métro Chemin Vert, nous vous proposons d'acquérir une surface ERP PMR avec quatre entrées indépendantes.\r\nBNP Paribas Real Estate vous propose d'acquérir une surface ERP PMR avec quatre..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -77020,7 +77020,7 @@
         "titre": "Bureau 183m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "Situé au coeur du 11e arrondissement de Paris, dans le quartier prisé de Faidherbe, Groupe VLB vous propose à la vente des bureaux de caractère au sein d'un immeuble industriel. Entièrement rénovés, ces..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
