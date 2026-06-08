@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 868,
+      "poubelle": 871,
       "a_verifier": 45,
-      "nouveau": 192
+      "nouveau": 189
     }
   },
   "deals": {
@@ -38129,7 +38129,7 @@
         "titre": "Vente bureaux Paris 19 - Proche Quais de la Marne, Métro Corentin-Cariou",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -38203,7 +38203,7 @@
         "titre": "Bureaux à vendre Paris 8 - Triangle d'or, proche métro",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -38648,7 +38648,7 @@
         "titre": "Bureaux à vendre Paris 1 - Proche Métro Pont Neuf et Châtelet",
         "description": ""
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
