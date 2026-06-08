@@ -3,10 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "a_verifier": 2,
+      "poubelle": 467,
       "nouveau": 637,
-      "poubelle": 464,
-      "a_contacter": 2
+      "a_verifier": 1
     }
   },
   "deals": {
@@ -55,7 +54,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-16",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -705,7 +704,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3626,7 +3625,7 @@
         "titre": "Bureau 392m2 Paris 8ème - Parc Monceau",
         "description": "À VENDRE : Bureaux haussmanniens à proximité du Parc Monceau et du Boulevard Haussmann\r\nSitués dans une élégante copropriété, ces bureaux de 339 m² au 3ème étage offrent un charme authentique avec leur..."
       },
-      "_statut": "a_contacter",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -35992,7 +35991,7 @@
         "titre": "Bureaux 1266m2 RUE CHARCOT\nPARIS",
         "description": ""
       },
-      "_statut": "a_contacter",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
