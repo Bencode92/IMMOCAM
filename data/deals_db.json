@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 750,
+      "poubelle": 753,
       "a_verifier": 24,
-      "nouveau": 331
+      "nouveau": 328
     }
   },
   "deals": {
@@ -12852,7 +12852,7 @@
         "titre": "Bureau 522m2 Paris 17ème - Champerret-Berthier",
         "description": "Surface totale : 522 m² de plain pied \r\n5 parkings\r\nDisponibilité : Immédiate\r\nDescription du bien :\r\nLocal commercial pouvant accueillir différents types d'activités :\r\nBureaux, salle de sport, supermarché..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13389,7 +13389,7 @@
         "titre": "Bureau 492m2 Paris 10ème",
         "description": "Chateau d'eau-lancry 75010 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose dans le quartier de Château d'eau-Lancry un commerce d'une surface totale de 492 m²:\r\n\r\nAu rez-de-chaussée une surface de 492..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13467,7 +13467,7 @@
         "titre": "Bureau 225m2 Paris 13ème",
         "description": "Place d'italie 75013 Paris\r\n\r\nLe groupe POINT DE VENTE vous propose dans le quartier de Place d'Italie un plateau de bureaux refait à neuf d'une surface totale de 224m² au 4ème étage d'un immeuble rénové..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
