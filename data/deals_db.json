@@ -3,9 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 666,
-      "a_verifier": 15,
-      "nouveau": 424
+      "poubelle": 673,
+      "a_verifier": 18,
+      "nouveau": 414
     }
   },
   "deals": {
@@ -4394,7 +4394,7 @@
         "titre": "Bureau 471m2 Paris 12ème - Bel-Air Sud",
         "description": "Au pied de la Coulée Verte (12ème), dans un cadre calme et verdoyant, IMMPROVE vous propose une surface de bureaux d'environ 470 m² à la vente. Accès privatif sur rue. Aire de chargement au 1er sous-sol...."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -4471,7 +4471,7 @@
         "titre": "Bureau 342.7m2 Paris 12ème - Aligre-Gare de Lyon",
         "description": "IMMPROVE vous propose à la vente une surface de 342,8 m², située dans un immeuble haussmannien au coeur du 12eme arrondissement, à proximité immédiate de la Place de la Bastille. Cet actif se compose..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -4625,7 +4625,7 @@
         "titre": "Bureau 752m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "IMMPROVE vous propose une opportunité rare en plein coeur de Paris : 752 m² de bureaux disponibles à l'acquisition, en un seul lot (non divisibles) Un hall d'accueil des bureaux individuels, ainsi que..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -4702,7 +4702,7 @@
         "titre": "Bureau 610.25m2 Paris 12ème - Nation-Picpus",
         "description": "Bureaux à Vendre - Paris 12e\r\nIMMPROVE, votre conseil en immobilier d'entreprise, vous propose un bien d'exception en fond de cour, calme et lumineux. Bureaux style loft avec verrière et 5 m de hauteur..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -4933,7 +4933,7 @@
         "titre": "Bureau 210m2 Paris 3ème - Arts et Métiers",
         "description": "IMMPROVE vous propose des bureaux à vendre situés à proximité immédiate de la place de la République, dans un environnement central. Cette surface de bureaux de 210 m² se trouve au sein d'un immeuble..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -5163,7 +5163,7 @@
         "titre": "Bureau 504m2 Paris 9ème - Lafayette-Richer",
         "description": "Proche des Grands Boulevards et de plusieurs lignes de transports en commun, Knight Frank vous propose dans un bel immeuble ancien rénové, une surface de bureaux climatisée à vendre répartie en plusieurs..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -5317,7 +5317,7 @@
         "titre": "Bureau 226m2 Paris 7ème - Saint Thomas d'Aquin",
         "description": "A toute proximité du boulevard Saint Germain, nous vous proposons à la vente une surface de bureaux en duplex dans un bel immeuble haussmannien..\r\n \r\nConstruction : \r\nPrestations : \r\nÉtat des locaux :..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -5700,7 +5700,7 @@
         "titre": "Bureau 480.71m2 Paris 17ème - La Fourche-Guy Môquet",
         "description": "Lots de copropriété indépendants entièrement curés offrants des volumes et un beau caractère atypique. Locaux indépendants, accessibles directement sur la rue. \r\n \r\nConstruction : Immeuble mixte en pierre..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -5854,7 +5854,7 @@
         "titre": "Bureau 266m2 Paris 9ème - Lafayette-Richer",
         "description": "A la vente des bureaux indépendants de style loft en RDC et sur 2 niveaux de sous-sol, dans le 9ème arrondissement de Paris\r\n \r\nConstruction : immeuble en pierre de taille\r\nPrestations : Ascenseur PMR..."
       },
-      "_statut": "nouveau",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6006,7 +6006,7 @@
         "titre": "Bureau 260m2 Paris 6ème - Notre Dame des Champs",
         "description": "MONTPARNASSE - VAVIN - JARDIN DU LUXEMBOURG, LOCAL ATYPIQUE bénéficiant de GRANDS VOLUMES\n\nExcellente desserte en transports en communs\nNombreux commerces de proximité\n\nPrestations :\n- Accès indépendant..."
       },
-      "_statut": "nouveau",
+      "_statut": "a_verifier",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
