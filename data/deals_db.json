@@ -3,8 +3,9 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 905,
-      "a_verifier": 147,
+      "poubelle": 971,
+      "a_verifier": 79,
+      "a_contacter": 2,
       "nouveau": 53
     }
   },
@@ -1506,7 +1507,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1810,7 +1811,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1885,7 +1886,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -1896,8 +1897,8 @@
         "loopnet"
       ],
       "_notes": "",
-      "_lat": 48.8733001,
-      "_lng": 2.2999949,
+      "_lat": 48.873073,
+      "_lng": 2.300917,
       "_loyer_facial": 675,
       "_loyer_eco": 590,
       "_loyer_net_pnr": 543,
@@ -2945,7 +2946,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3020,7 +3021,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3400,7 +3401,7 @@
       },
       "_first_seen": "2026-04-13",
       "_last_seen": "2026-04-13",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-13",
@@ -3855,7 +3856,7 @@
         "titre": "Bureau 392m2 Paris 8ème - Parc Monceau",
         "description": "À VENDRE : Bureaux haussmanniens à proximité du Parc Monceau et du Boulevard Haussmann\r\nSitués dans une élégante copropriété, ces bureaux de 339 m² au 3ème étage offrent un charme authentique avec leur..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -4998,7 +4999,7 @@
         "titre": "Bureau 610.25m2 Paris 12ème - Nation-Picpus",
         "description": "Bureaux à Vendre - Paris 12e\r\nIMMPROVE, votre conseil en immobilier d'entreprise, vous propose un bien d'exception en fond de cour, calme et lumineux. Bureaux style loft avec verrière et 5 m de hauteur..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -5487,7 +5488,7 @@
         "titre": "Bureau 504m2 Paris 9ème - Lafayette-Richer",
         "description": "Proche des Grands Boulevards et de plusieurs lignes de transports en commun, Knight Frank vous propose dans un bel immeuble ancien rénové, une surface de bureaux climatisée à vendre répartie en plusieurs..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -6360,7 +6361,7 @@
         "titre": "Bureau 260m2 Paris 6ème - Notre Dame des Champs",
         "description": "MONTPARNASSE - VAVIN - JARDIN DU LUXEMBOURG, LOCAL ATYPIQUE bénéficiant de GRANDS VOLUMES\n\nExcellente desserte en transports en communs\nNombreux commerces de proximité\n\nPrestations :\n- Accès indépendant..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7827,7 +7828,7 @@
         "titre": "Bureau 925m2 Paris 5ème - Val de Grace",
         "description": "Quartier Mouffetard, Immprove vous propose en exclusivité un immeuble indépendant bénéficiant d'un accès direct sur rue. Les locaux sont en parfait état et disposent d'un espace extérieur. La configuration..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -7877,8 +7878,8 @@
       "_nearby_tx": 8,
       "_cout_dpe": 0,
       "_ecart_marche": 31.8,
-      "_lat": 48.83764,
-      "_lng": 2.34868
+      "_lat": 48.838785,
+      "_lng": 2.349006
     },
     "sl-gxazuwgj": {
       "source": "seloger-bc",
@@ -8301,7 +8302,7 @@
         "titre": "Bureau 608m2 Paris 10ème - Louis Blanc-Aqueduc",
         "description": "PARIS 10ème. Découvrez un bien rare, au coeur d'une copropriété bien tenue, place de Stalingrad. Ce bâtiment indépendant, entièrement réhabilité par un architecte, séduit par son style fin XIXème siècle,..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -8698,7 +8699,7 @@
         "titre": "Bureau 1031m2 Paris 18ème - Goutte d'Or-Château Rouge",
         "description": "Située en plein coeur de la Goutte d'Or, cette ancienne fabrique de cycles puis de boutons, conçue par les Ateliers Eiffel au début du XXème siècle se caractérise par son style épuré d'une élégance rare...."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9011,7 +9012,7 @@
         "titre": "Bureau 514m2 Paris 4ème - Saint Merri",
         "description": "LEASEO vous propose à la location ou à l'acquisition une surface de bureaux lumineuse sous verrière avec belle hauteur sous plafond, au c?ur du Marais. Idéal pour une entreprise créative recherchant un..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -9242,7 +9243,7 @@
         "titre": "Bureau 226m2 Paris 17ème - La Fourche-Guy Môquet",
         "description": "Niel wagram villiers 75017 Paris\r\n\r\nLe Cabinet POINT DE VENTE vous propose un Immeuble en pleine propriété à vendre – Quartier Niel/Wagram, Paris 17ème :\r\n\r\nÀ vendre, immeuble commercial en pleine propriété,..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -12014,7 +12015,7 @@
         "titre": "Bureau 243m2 Paris 7ème - Invalides",
         "description": "PLACE DU PALAIS BOURBON - À proximité immédiate de l'Assemblée Nationale, Immprove vous propose à l'acquisition une surface de bureaux en R+2, bénéficiant d'un accès indépendant depuis la rue.\r\nLes locaux,..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -12422,7 +12423,7 @@
         "titre": "Bureau 454m2 Paris 16ème",
         "description": "Passy muette 75016 Paris\r\n\r\nLe CABINET POINT DE VENTE vous propose un Immeuble en pleine propriété – Quartier Passy/Muette, Paris 16ème.\r\n\r\nCet immeuble d'angle, en pleine propriété, offre une surface..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13852,7 +13853,7 @@
         "titre": "Bureau 592m2 Paris 17ème - Pereire-Malesherbes",
         "description": "Au sein d'un magnifique hôtel particulier indépendant en R+3 et idéalement situé à deux pas de la station Pereire, LEASEO vous propose à la vente ce bien d'exception bénéficiant d'un jardin privatif,..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -13902,8 +13903,8 @@
       "_nearby_tx": 20,
       "_cout_dpe": 0,
       "_ecart_marche": 53.6,
-      "_lat": 48.8858109822866,
-      "_lng": 2.29954277672119
+      "_lat": 48.885801,
+      "_lng": 2.29954
     },
     "sl-pv3l4fnd": {
       "source": "seloger-bc",
@@ -15097,7 +15098,7 @@
         "titre": "Bureau 297m2 Paris 2ème - Vivienne-Gaillon",
         "description": "A proximité du métro Quatre-Septembre, nous vous proposons d'acquérir un actif entierement rénové en R+1.\r\nBNP Paribas Real Estate vous propose d'acquérir des locaux atypiques d'une surface totale de..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -15705,8 +15706,8 @@
       "_nearby_tx": 33,
       "_cout_dpe": 0,
       "_ecart_marche": 71.4,
-      "_lat": 48.87457,
-      "_lng": 2.30435
+      "_lat": 48.873094,
+      "_lng": 2.301132
     },
     "sl-kpbqkjm7": {
       "source": "seloger-bc",
@@ -15978,7 +15979,7 @@
         "titre": "Bureau 567m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "Coeur 10ème - Dans un bel immeuble de bureaux, IMMPROVE vous propose à la location une surface de bureaux de 548 m² répartie en 299 m² au RDC et 251 m² au sous-sol."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -16368,7 +16369,7 @@
         "titre": "Bureau 862m2 Paris 10ème - Louis Blanc-Aqueduc",
         "description": "Bienvenue dans l'élégance de l'immobilier au c?ur du dynamique secteur du 10ème arrondissement ! Découvrez avec LEASEO une opportunité unique à l'acquisition : des espaces de bureaux flexibles au style..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -16451,7 +16452,7 @@
         "titre": "Bureau 435m2 Paris 16ème - Chaillot",
         "description": "A proximité du métro Victor Hugo, nous vous proposons d'acquérir une surface rare dans un tres bel immeuble haussmannien aux parties communes de grand standing. Possibilité d'acquérir les locaux dans..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17649,7 +17650,7 @@
         "titre": "Bureau 422m2 Paris 16ème - Muette Nord",
         "description": "Un Hôtel Particulier au cœur du 16ème arrondissement de Paris, à proximité de la rue de Passy et du jardin du Ranelagh. Une très bonne accessibilité avec le métro la Muette (M9) à 100met RER C à 350m...."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17862,8 +17863,8 @@
       "_nearby_tx": 3,
       "_cout_dpe": 0,
       "_ecart_marche": 13.9,
-      "_lat": 48.8913471,
-      "_lng": 2.3827953
+      "_lat": 48.891395,
+      "_lng": 2.382786
     },
     "sl-3n48j3bo": {
       "source": "seloger-bc",
@@ -17944,7 +17945,7 @@
       "_nearby_tx": 19,
       "_cout_dpe": 0,
       "_ecart_marche": 40.9,
-      "_lat": 48.8790649999863,
+      "_lat": 48.879054,
       "_lng": 2.313675
     },
     "sl-drafhn0x": {
@@ -18058,7 +18059,7 @@
         "titre": "Bureau 437m2 Paris 8ème - Mairie",
         "description": "A vendre, superbe surface de bureaux, située au pied de la gare Saint Lazare. Très bel immeuble haussmannien en pierre de taille Belles parties communes de standing Plateau modulable et lumineux Double..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -18863,7 +18864,7 @@
         "titre": "Bureau 397m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "LEASEO vous propose à l'acquisition un local commercial atypique au sein d'un immeuble indépendant en copropriété, baigné de lumière grâce à ses verrières. Cet actif est doté d'une courette privative..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -20417,8 +20418,8 @@
       "_nearby_tx": 15,
       "_cout_dpe": 0,
       "_ecart_marche": -39.1,
-      "_lat": 48.84205,
-      "_lng": 2.32259
+      "_lat": 48.842274,
+      "_lng": 2.32124
     },
     "sl-j9480rb7": {
       "source": "seloger-bc",
@@ -21632,7 +21633,7 @@
         "titre": "Bureau 306m2 Paris 11ème - Bastille-Popincourt",
         "description": "Quartier Bastille/Charonne, à vendre un local commercial/bureaux en fond de cour pavée végétalisée\r\n \r\nConstruction : Copropriété ancienne composée d'anciens ateliers dont les façades viennent d'être..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -22790,8 +22791,8 @@
       "_nearby_tx": 10,
       "_cout_dpe": 0,
       "_ecart_marche": 16.4,
-      "_lat": 48.84495,
-      "_lng": 2.2882
+      "_lat": 48.843401,
+      "_lng": 2.292305
     },
     "sl-9kq6jdb4": {
       "source": "seloger-bc",
@@ -23147,7 +23148,7 @@
         "titre": "Bureau 465m2 Paris 8ème - Hoche-Friedland",
         "description": "Groupe Babylone vous propose à la vente un plateau de bureaux haut de gamme situé au coeur du 8e arrondissement de Paris. D'une surface totale de 465 m². Ces bureaux se trouvent au 2e étage d'un immeuble..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -25634,7 +25635,7 @@
         "titre": "Bureau 238m2 Paris 17ème - Ternes-Maillot",
         "description": "Alex Bolton vous propose à la vente, dans un immeuble moderne situé entre la Porte Maillot et la place de l'Etoile, une surface de bureaux entièrement rénovée, ainsi qu'une place de parking. La surface..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -26333,8 +26334,8 @@
       "_nearby_tx": 28,
       "_cout_dpe": 0,
       "_ecart_marche": 46.8,
-      "_lat": 48.8773672,
-      "_lng": 2.298957
+      "_lat": 48.877324,
+      "_lng": 2.299247
     },
     "sl-4rx2ppcr": {
       "source": "seloger-bc",
@@ -26934,7 +26935,7 @@
         "titre": "Bureau 328m2 Paris 10ème - Chateau d'Eau-Lancry",
         "description": "Au sein d'un bel immeuble en pierre de taille, nous vous proposons à l'acquisition une belle surface commerciale atypique avec verrière et piscine intérieure dans un esprit loft/industriel. En configuration..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29010,8 +29011,8 @@
       "_nearby_tx": 38,
       "_cout_dpe": 0,
       "_ecart_marche": -22.2,
-      "_lat": 48.87043,
-      "_lng": 2.35385
+      "_lat": 48.870963,
+      "_lng": 2.354945
     },
     "sl-4r6tthxc": {
       "source": "seloger-bc",
@@ -29174,8 +29175,8 @@
       "_nearby_tx": 19,
       "_cout_dpe": 0,
       "_ecart_marche": 38,
-      "_lat": 48.87962,
-      "_lng": 2.31223
+      "_lat": 48.879054,
+      "_lng": 2.313675
     },
     "sl-tg1fxcvj": {
       "source": "seloger-bc",
@@ -29364,7 +29365,7 @@
         "titre": "Bureau 273m2 Paris 16ème - Chaillot",
         "description": "Nous vous proposons à la vente un lot de copropriété privatif de 273 m² avec emplacement exceptionnel avenue Pierre 1er de Serbie, bénéficiant de prestations de grand standing et d'une entrée indépendante..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29987,8 +29988,8 @@
       "_nearby_tx": 24,
       "_cout_dpe": 0,
       "_ecart_marche": 21.5,
-      "_lat": 48.8784,
-      "_lng": 2.30634
+      "_lat": 48.877752,
+      "_lng": 2.313899
     },
     "sl-fz8hwisz": {
       "source": "seloger-bc",
@@ -30551,8 +30552,8 @@
       "_nearby_tx": 4,
       "_cout_dpe": 0,
       "_ecart_marche": -46.4,
-      "_lat": 48.8316999,
-      "_lng": 2.3390914
+      "_lat": 48.831597,
+      "_lng": 2.338719
     },
     "sl-hlvp663h": {
       "source": "seloger-bc",
@@ -30788,8 +30789,8 @@
       "_nearby_tx": 6,
       "_cout_dpe": 0,
       "_ecart_marche": -18.1,
-      "_lat": 48.8788764547971,
-      "_lng": 2.36586999846865
+      "_lat": 48.878893,
+      "_lng": 2.365931
     },
     "sl-7jy4s05z": {
       "source": "seloger-bc",
@@ -31229,7 +31230,7 @@
         "titre": "Bureau 419.77m2 Paris 2ème - Montorgueil-Saint Denis",
         "description": "Au coeur de Paris, dans le quartier Montorgueil / Sentier, nous vous proposons un espace commercial avec bureaux d'accompagnements à vendre.\r\nCette surface bénéficie d'une entrée principale au 2bis, rue..."
       },
-      "_statut": "a_verifier",
+      "_statut": "a_contacter",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -33061,7 +33062,7 @@
         "titre": "Bureau 285m2 Paris 8ème",
         "description": "Sur une rue discrète, entre le parc Monceau et la rue du Faubourg-Saint-Honoré, comme une maison des Années folles aux décors d’époque. 18m² de commercialité. \nLes boiseries de chêne des Années folles..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -33986,7 +33987,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -34943,7 +34944,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -36289,7 +36290,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -36581,7 +36582,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -37066,7 +37067,7 @@
       },
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-16",
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_prix_historique": [
         {
           "date": "2026-04-15",
@@ -37664,7 +37665,7 @@
         "titre": "Bureaux 464m2 BIS RUE LORD BYRON\nPARIS",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -37792,8 +37793,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 81.3,
-      "_lat": 48.887,
-      "_lng": 2.31
+      "_lat": 48.885411,
+      "_lng": 2.294705
     },
     "jll-0yqbr6x1": {
       "source": "jll",
@@ -38054,7 +38055,7 @@
         "titre": "Vente bureaux Paris 16 - Proche transports et université Dauphine",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -38272,7 +38273,7 @@
         "titre": "Bureaux à vendre Paris 10 - Proche métro et bus",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -41293,7 +41294,7 @@
         "titre": "Bureaux à vendre Paris 5 - Immeuble ancien, triplex lumineux",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -43286,7 +43287,7 @@
         "titre": "Bureaux à vendre Paris 8 - Proche métro Courcelles",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -45268,7 +45269,7 @@
         "titre": "Vente bureaux Paris 16 - Proche transports",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -45935,7 +45936,7 @@
         "titre": "Vente bureaux Paris 10 - Rue des Petites Écuries, proche transports",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -47039,7 +47040,7 @@
         "titre": "Vente bureaux Paris 8 - Proche Gare Saint-Lazare et métro",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -47333,7 +47334,7 @@
         "titre": "Bureaux à vendre Paris 10 - Proche Gare de l'Est et métro",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -47602,8 +47603,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 6.5,
-      "_lat": 48.887,
-      "_lng": 2.31
+      "_lat": 48.885411,
+      "_lng": 2.294705
     },
     "lp-uhrxsq6m": {
       "source": "loopnet",
@@ -47626,7 +47627,7 @@
         "prix_affiche": 5590000,
         "prix_m2": 9164
       },
-      "_statut": "a_verifier",
+      "_statut": "a_contacter",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -47679,7 +47680,10 @@
       "_cout_dpe": 0,
       "_ecart_marche": 31.5,
       "_lat": 48.845479,
-      "_lng": 2.388927
+      "_lng": 2.388927,
+      "_tags": [
+        "template"
+      ]
     },
     "lp-ct9fzjcj": {
       "source": "loopnet",
@@ -48134,8 +48138,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 55,
-      "_lat": 48.846,
-      "_lng": 2.35
+      "_lat": 48.838785,
+      "_lng": 2.349006
     },
     "lp-t8otosyk": {
       "source": "loopnet",
@@ -50207,8 +50211,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 47.5,
-      "_lat": 48.892,
-      "_lng": 2.35
+      "_lat": 48.894845,
+      "_lng": 2.343649
     },
     "jll-giq4iphy": {
       "source": "jll",
@@ -52534,8 +52538,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 82.8,
-      "_lat": 48.846,
-      "_lng": 2.35
+      "_lat": 48.837584,
+      "_lng": 2.349119
     },
     "jll-e9os478q": {
       "source": "jll",
@@ -52848,8 +52852,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 66.6,
-      "_lat": 48.84,
-      "_lng": 2.3
+      "_lat": 48.852577,
+      "_lng": 2.286641
     },
     "jll-vp2eb5ta": {
       "source": "jll",
@@ -53270,7 +53274,7 @@
         "titre": "Bureaux 435m2 AVENUE VICTOR HUGO\nPARIS",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -54074,7 +54078,7 @@
         "titre": "Bureau 254.06m2 Neuilly-sur-Seine - Ile de la Jatte-Parc d'Orléans",
         "description": "Cushman & Wakefield vous propose à la vente un immeuble atypique situé sur l'île de la Jatte, un des secteurs les plus recherchés pour son cadre naturel et sa proximité immédiate avec Paris. Cet immeuble..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -55805,7 +55809,7 @@
         "titre": "Bureau 791m2 Neuilly-sur-Seine - La Plaine des Sablons",
         "description": "Nous vous proposons une belle surface de bureaux climatisée de 791 m² en très bon état avec entrée privative. \r\n \r\nConstruction : \r\nÉtat de l'immeuble: Très bon état\r\nPrestations : \r\nÉtat des locaux :..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -55853,7 +55857,9 @@
       "_prix_marche": 9200,
       "_nearby_tx": 7,
       "_cout_dpe": 0,
-      "_ecart_marche": 6.4
+      "_ecart_marche": 6.4,
+      "_lat": 48.886107,
+      "_lng": 2.258949
     },
     "sl-42nbh2j7": {
       "source": "seloger-bc",
@@ -56083,8 +56089,8 @@
       "_nearby_tx": 51,
       "_cout_dpe": 0,
       "_ecart_marche": 122.7,
-      "_lat": 48.86863,
-      "_lng": 2.34508
+      "_lat": 48.869346,
+      "_lng": 2.345039
     },
     "sl-q8m1q60s": {
       "source": "seloger-bc",
@@ -56184,7 +56190,7 @@
         "titre": "Bureau 285m2 Neuilly-sur-Seine - Ile de la Jatte-Parc d'Orléans",
         "description": "Dans un immeuble mixte à usage d'habitation et de bureaux, situé dans un environnement verdoyant et calme sur l'Ile de la Jatte à Neuilly-sur-Seine, nous vous proposons un plateau de 285 m². Entièrement..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -56492,7 +56498,7 @@
         "titre": "Bureau 375m2 Neuilly-sur-Seine - Ile de la Jatte-Parc d'Orléans",
         "description": "A Neuilly-sur-Seine, nous vous proposons une surface de bureaux à acquérir avant ou après rénovation au sein d'un bel immeuble mixte s'articulant autour d'un belle cour pavée. Situés à proximité du métro..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -58133,7 +58139,7 @@
         "titre": "Bureau 394m2 Neuilly-sur-Seine - Ile de la Jatte-Parc d'Orléans",
         "description": "En plein coeur de l'île de la jatte à Neuilly-sur-Seine, Immprove vous propose à la vente un bel hôtel particulier en R+2 d'environ 394 m², comprenant un grand jardin d'hiver et une terrasse de 138 m².\r\nActif..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -59549,8 +59555,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 287.6,
-      "_lat": 48.876,
-      "_lng": 2.36
+      "_lat": 48.878354,
+      "_lng": 2.352993
     },
     "lp-tvofroad": {
       "source": "loopnet",
@@ -59727,7 +59733,7 @@
         "prix_affiche": 6300000,
         "prix_m2": 7309
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -59934,8 +59940,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 221.8,
-      "_lat": 48.876,
-      "_lng": 2.36
+      "_lat": 48.873227,
+      "_lng": 2.360799
     },
     "lp-md8f9lpb": {
       "source": "loopnet",
@@ -60010,8 +60016,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 90,
-      "_lat": 48.887,
-      "_lng": 2.31
+      "_lat": 48.885801,
+      "_lng": 2.29954
     },
     "lp-ncoh0rza": {
       "source": "loopnet",
@@ -60684,7 +60690,7 @@
         "prix_affiche": 24000000,
         "prix_m2": 53097
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -61112,8 +61118,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 75.4,
-      "_lat": 48.83,
-      "_lng": 2.36
+      "_lat": 48.832015,
+      "_lng": 2.351152
     },
     "jll-fl0bof9r": {
       "source": "jll",
@@ -62588,8 +62594,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 103.9,
-      "_lat": 48.858,
-      "_lng": 2.315
+      "_lat": 48.858692,
+      "_lng": 2.329334
     },
     "jll-4r19k71l": {
       "source": "jll",
@@ -62901,8 +62907,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 24.9,
-      "_lat": 48.84,
-      "_lng": 2.3
+      "_lat": 48.840274,
+      "_lng": 2.303393
     },
     "jll-6bnv9qfj": {
       "source": "jll",
@@ -62980,8 +62986,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 128.3,
-      "_lat": 48.87,
-      "_lng": 2.34
+      "_lat": 48.869346,
+      "_lng": 2.345039
     },
     "jll-o7uo1k60": {
       "source": "jll",
@@ -63059,8 +63065,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 109,
-      "_lat": 48.84,
-      "_lng": 2.39
+      "_lat": 48.838574,
+      "_lng": 2.395776
     },
     "jll-kyvdp38m": {
       "source": "jll",
@@ -63285,8 +63291,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 200.9,
-      "_lat": 48.87,
-      "_lng": 2.34
+      "_lat": 48.868113,
+      "_lng": 2.331789
     },
     "jll-g8rhjw7p": {
       "source": "jll",
@@ -63748,8 +63754,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 53.8,
-      "_lat": 48.84,
-      "_lng": 2.3
+      "_lat": 48.843879,
+      "_lng": 2.292316
     },
     "jll-xv7lg6y4": {
       "source": "jll",
@@ -63906,8 +63912,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 61.4,
-      "_lat": 48.884,
-      "_lng": 2.38
+      "_lat": 48.876207,
+      "_lng": 2.399449
     },
     "jll-lsvp7xzo": {
       "source": "jll",
@@ -64371,8 +64377,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 211.3,
-      "_lat": 48.87,
-      "_lng": 2.34
+      "_lat": 48.868453,
+      "_lng": 2.332102
     },
     "jll-vqk9s6so": {
       "source": "jll",
@@ -64685,8 +64691,8 @@
       "_nearby_tx": 0,
       "_cout_dpe": 0,
       "_ecart_marche": 35.3,
-      "_lat": 48.876,
-      "_lng": 2.36
+      "_lat": 48.878354,
+      "_lng": 2.352993
     },
     "jll-ub6qkpgm": {
       "source": "jll",
@@ -71321,7 +71327,7 @@
         "titre": "Bureau 2692.1m2 Boulogne-Billancourt - Vaillant-Sembat",
         "description": "IMMPROVE vous propose à la vente plusieurs plateaux qui ont bénéficiés d'une rénovation complète des ouvrages non structurels et disposant de deux accès indépendants sur rue. Ils se situent dans le quartier..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -71369,7 +71375,9 @@
       "_prix_marche": 5536,
       "_nearby_tx": 12,
       "_cout_dpe": 0,
-      "_ecart_marche": -19.5
+      "_ecart_marche": -19.5,
+      "_lat": 48.830518,
+      "_lng": 2.237192
     },
     "sl-0486mcky": {
       "source": "seloger-bc",
@@ -71561,7 +71569,7 @@
         "titre": "Bureau 2717m2 Levallois-Perret - Front de Seine",
         "description": "IMMPROVE vous propose un immeuble indépendant moderne, à la vente, bénéficiant de plusieurs terrasses, jardin et d'une cafétéria. Bureaux cloisonnés et climatisés. Parkings en sous-sol . ERP Envisageable"
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -71610,7 +71618,9 @@
       "_prix_marche": 7614,
       "_nearby_tx": 4,
       "_cout_dpe": 0,
-      "_ecart_marche": -21.7
+      "_ecart_marche": -21.7,
+      "_lat": 48.898156,
+      "_lng": 2.287331
     },
     "sl-vws7wlnp": {
       "source": "seloger-bc",
@@ -72371,7 +72381,7 @@
         "titre": "Bureau 347.42m2 Neuilly-sur-Seine - Ile de la Jatte-Parc d'Orléans",
         "description": "À proximité immédiate de la station Pont de Levallois-Bécon, Immprove vous présente une opportunité rare d'acquisition : une surface de bureaux de 347 m², non divisibles, située dans un édifice baigné..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -73981,7 +73991,7 @@
         "titre": "Bureau 416m2 Neuilly-sur-Seine - Ile de la Jatte-Parc d'Orléans",
         "description": "À Neuilly-sur-Seine, découvrez cet immeuble indépendant à usage de bureaux, datant de 1970, proposé à la vente. Il bénéficie d'un rooftop offrant une vue exceptionnelle sur la ville, idéal pour vos moments..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -74347,8 +74357,8 @@
       "_nearby_tx": 15,
       "_cout_dpe": 0,
       "_ecart_marche": -4.4,
-      "_lat": 48.8615952016215,
-      "_lng": 2.37106662023773
+      "_lat": 48.861732,
+      "_lng": 2.371153
     },
     "sl-5p3ot17z": {
       "source": "seloger-bc",
@@ -77613,8 +77623,8 @@
       "_nearby_tx": 4,
       "_cout_dpe": 0,
       "_ecart_marche": 24.7,
-      "_lat": 48.83315,
-      "_lng": 2.35211
+      "_lat": 48.832172,
+      "_lng": 2.351613
     },
     "sl-swoud7c4": {
       "source": "seloger-bc",
@@ -77640,7 +77650,7 @@
         "titre": "Bureau 670m2 Paris 16ème - Auteuil Sud",
         "description": "PRESTATIONS IMMEUBLE : À proximité immédiate des transports. Cafétéria / snacking. Grand jardin de 245 m². Locaux en bon état. PRESTATIONS SURFACE : Surface(s) calme(s) sur cour. Accès PMR au RDC. Surface(s)..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -77721,7 +77731,7 @@
         "titre": "Bureau 266m2 Paris 7ème - Invalides",
         "description": "FIU vous propose, à deux pas des Invalides, un élégant Hôtel particulier rénové en fond de cour\r\nDigicode\r\nGardien\r\nAccès indépendant\r\nAccès PMR au RDC\r\nEspaces ouverts / cloisonnés \r\nClimatisation partielle\r\nCuisine..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -78094,8 +78104,8 @@
       "_nearby_tx": 15,
       "_cout_dpe": 0,
       "_ecart_marche": -32.7,
-      "_lat": 48.84205,
-      "_lng": 2.32259
+      "_lat": 48.842274,
+      "_lng": 2.32124
     },
     "sl-57bajnsh": {
       "source": "seloger-bc",
@@ -78602,7 +78612,7 @@
         "titre": "Bureau 735m2 Neuilly-sur-Seine - Saint James-Général Koenig",
         "description": "BNP Paribas Real Estate vous propose d'acquérir des locaux d'une surface totale d'environ 734 m² a Neuilly-sur-Seine.\r\nLes locaux se situent au sous-sol et au rez-de-chaussée avec mezzanine dans un immeuble..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -78651,7 +78661,9 @@
       "_prix_marche": 9534,
       "_nearby_tx": 6,
       "_cout_dpe": 0,
-      "_ecart_marche": -48.5
+      "_ecart_marche": -48.5,
+      "_lat": 48.88442,
+      "_lng": 2.256687
     },
     "sl-6jlljsxx": {
       "source": "seloger-bc",
@@ -80649,8 +80661,8 @@
       "_nearby_tx": 23,
       "_cout_dpe": 0,
       "_ecart_marche": 26.3,
-      "_lat": 48.86993,
-      "_lng": 2.31464
+      "_lat": 48.871981,
+      "_lng": 2.313036
     },
     "sl-xh1dvz8d": {
       "source": "seloger-bc",
@@ -80972,8 +80984,8 @@
       "_nearby_tx": 24,
       "_cout_dpe": 0,
       "_ecart_marche": 157.4,
-      "_lat": 48.880565,
-      "_lng": 2.302706
+      "_lat": 48.880567,
+      "_lng": 2.30271
     },
     "sl-yek9khh7": {
       "source": "seloger-bc",
@@ -82166,8 +82178,8 @@
       "_nearby_tx": 8,
       "_cout_dpe": 0,
       "_ecart_marche": 3,
-      "_lat": 48.88899,
-      "_lng": 2.30575
+      "_lat": 48.889598,
+      "_lng": 2.306009
     },
     "sl-v0hqyd3j": {
       "source": "seloger-bc",
@@ -82835,7 +82847,7 @@
         "titre": "Bureau 1372m2 Boulogne-Billancourt - Vaillant-Sembat",
         "description": "BNP Paribas Real Estate vous propose d'acquérir un immeuble indépendant neuf situé a proximité de la Porte de Saint-Cloud.\r\nImmeuble entierement restructuré avec rénovation de la facade, surélévation..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -82884,7 +82896,9 @@
       "_prix_marche": 3898,
       "_nearby_tx": 7,
       "_cout_dpe": 0,
-      "_ecart_marche": 171.1
+      "_ecart_marche": 171.1,
+      "_lat": 48.835842,
+      "_lng": 2.253539
     },
     "sl-mzqnbz1y": {
       "source": "seloger-bc",
@@ -83529,8 +83543,8 @@
       "_nearby_tx": 38,
       "_cout_dpe": 0,
       "_ecart_marche": 17.5,
-      "_lat": 48.87302,
-      "_lng": 2.35176
+      "_lat": 48.873099,
+      "_lng": 2.35331
     },
     "sl-760ko508": {
       "source": "seloger-bc",
@@ -83632,7 +83646,7 @@
         "titre": "Bureau 2279m2 Boulogne-Billancourt - Reine-Mairie",
         "description": "92100 Boulogne-Billancourt\r\n\r\nLe groupe POINT DE VENTE vous propose à Boulogne LA VENTE d'une partie d'un  immeuble de bureau d'une surface totale de 2279m2:\r\n\r\n- au rez-de-chaussée une surface de 244m2..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -83680,7 +83694,9 @@
       "_prix_marche": 5363,
       "_nearby_tx": 9,
       "_cout_dpe": 0,
-      "_ecart_marche": -10
+      "_ecart_marche": -10,
+      "_lat": 48.8368474,
+      "_lng": 2.2416808
     },
     "sl-3xej7c42": {
       "source": "seloger-bc",
@@ -85771,7 +85787,7 @@
         "titre": "Bureau 460m2 Paris 16ème",
         "description": "Paris 16eNord.Situation idéale.\nBel hôtel particulier en parfait état avec extérieurs et parking possible.\nDossier complet sur demande après vérification de solvabilité.\nBeaux volumes."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -86067,8 +86083,8 @@
       "_nearby_tx": 12,
       "_cout_dpe": 0,
       "_ecart_marche": 39.7,
-      "_lat": 48.8438859999863,
-      "_lng": 2.29232
+      "_lat": 48.843879,
+      "_lng": 2.292316
     },
     "sl-2lij3ipn": {
       "source": "seloger-bc",
@@ -86175,7 +86191,7 @@
         "titre": "Bureau 1657m2 Levallois-Perret - Wilson-Rivay",
         "description": "UN IMMEUBLE SIEGE AUX EXCELLENTS FONDAMENTAUX\r\nAux Portes de Paris, a Levallois-Perret, commune prisée pour sa qualité de vie et de travail, BNP Paribas Real Estate vous propose a la vente un bel immeuble..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -86224,7 +86240,9 @@
       "_prix_marche": 6250,
       "_nearby_tx": 8,
       "_cout_dpe": 0,
-      "_ecart_marche": 44.8
+      "_ecart_marche": 44.8,
+      "_lat": 48.893363,
+      "_lng": 2.291428
     },
     "sl-1i2ph5yz": {
       "source": "seloger-bc",
@@ -86384,8 +86402,8 @@
       "_nearby_tx": 11,
       "_cout_dpe": 0,
       "_ecart_marche": 17.4,
-      "_lat": 48.8652261,
-      "_lng": 2.2991223
+      "_lat": 48.865516,
+      "_lng": 2.299552
     },
     "sl-gtvs2hz2": {
       "source": "seloger-bc",
@@ -86811,7 +86829,7 @@
         "titre": "Bureau 200m2 Neuilly-sur-Seine - La Plaine des Sablons",
         "description": "Nous proposons à la vente des bureaux situés à Neuilly-sur-Seine, offrant une surface totale de 200 m², divisible à partir de 50 m². Ce bien comprend des caractéristiques avantageuses telles qu'un parking..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -86885,7 +86903,7 @@
         "titre": "Bureau 2052m2 Boulogne-Billancourt - Reine-Mairie",
         "description": "92100 Boulogne-Billancourt\r\n\r\nLe groupe POINT DE VENTE vous propose à vendre un immeuble de bureaux à Boulogne-Billancourt, métro Billancourt d'une superficie totale : 3 044 m² :\r\n\r\nSous-sols : 985 m²..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-06-08",
       "_last_seen": "2026-06-08",
       "_sources": [
@@ -86934,7 +86952,9 @@
       "_prix_marche": 5363,
       "_nearby_tx": 9,
       "_cout_dpe": 0,
-      "_ecart_marche": 27.2
+      "_ecart_marche": 27.2,
+      "_lat": 48.8368474,
+      "_lng": 2.2416808
     },
     "sl-xxguyxxc": {
       "source": "seloger-bc",
