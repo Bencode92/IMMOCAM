@@ -3,8 +3,8 @@
     "last_scrape": "2026-06-08T13:01:30.481Z",
     "total_deals": 1105,
     "par_statut": {
-      "poubelle": 971,
-      "a_verifier": 79,
+      "poubelle": 992,
+      "a_verifier": 58,
       "a_contacter": 2,
       "nouveau": 53
     }
@@ -15656,7 +15656,7 @@
         "titre": "Bureau 479m2 Paris 8ème - Hoche-Friedland",
         "description": "A proximité de la place de l'Etoile, nous vous proposons d'acquérir une surface située au 2eme étage d'un bel immeuble d'angle des années 30. Beaux volumes lumineux organisés en bureaux cloisonnés avec..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17813,7 +17813,7 @@
         "titre": "Bureau 1245m2 Paris 19ème - Pont de Flandre",
         "description": "Immeuble construit sur une parcelle de 569 m² en coeur d'Ilot du 7 rue de Nantes dans le 19ème arrondissement de Paris, situé en toute proximité du Canal de l'Ourcq et du Parc de la Villette. Le projet..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -17895,7 +17895,7 @@
         "titre": "Bureau 530m2 Paris 8ème - Parc Monceau",
         "description": "Au sein d’un très bel immeuble haussmannien, nous proposons un ensemble\nde bureaux développant environ 530 m² en R+2.\n\nL’actif bénéficie de tous les attributs de l’ancien : parquet, moulures,\ncheminées,..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19179,7 +19179,7 @@
         "titre": "Bureau 1372m2 Paris 20ème - Gambetta",
         "description": "A toute proximité de la place Gambetta, CBRE vous propose à la vente un bâtiment indépendant d'environ 1400 m² carrez. L'immeuble offre des plateaux lumineux et fonctionnels en termes d'aménagement. Il..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19414,7 +19414,7 @@
         "titre": "Bureau 512m2 Paris 8ème - Elysées-Madeleine",
         "description": "BUREAUX A VENDRE A PARIS DANS LE 8E ARRONDISSEMENT : En plein coeur du QCA, CBRE VENTE BUREAUX VIDES vous propose à la vente un plateau  de bureaux de 512 m² situé au 8ème étage.\r\nVous bénéficierez de..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -19735,7 +19735,7 @@
         "titre": "Bureau 1299m2 Paris 14ème - Montsouris Dareau",
         "description": "VILLA DE LOURCINE\r\nADVENIS vous propose une surface de bureaux à la vente de 1 299 m² au sein d'un ensemble immobilier situé à proximité du métro Saint-Jacques.\r\nLes locaux sont sécurisés par badge, digicode..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -20368,7 +20368,7 @@
         "titre": "Bureau 1755m2 Paris 15ème - Pasteur Montparnasse",
         "description": "Savills vous propose à la location ou à la vente , un plateau de 1 600 m² entièrement décloisonné et climatisé au 2ème étage de la Tour Montparnasse en bail dérogatoire de courte durée. \r\nL'immeuble bénéficie..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -21321,7 +21321,7 @@
         "titre": "Bureau 850m2 Paris 1er - Les Halles",
         "description": "En plein coeur du 1er arrondissement de Paris, SIZE Real Estate vous propose un immeuble à la vente. Situé dans une zone historique, au sein d'une rue piétonne et passante, l'immeuble bénéficie d'un emplacement..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -21479,7 +21479,7 @@
         "titre": "Bureau 1089.85m2 Paris 14ème - Jean Moulin-Porte d'Orléans",
         "description": "À proximité immédiate de la porte d'Orléans, ALEX BOLTON propose un immeuble indépendant d'environ 1082 m² offrant deux grands plateaux d'environ 500 m² chacun, entièrement modulables et équipés de climatisation...."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -26284,7 +26284,7 @@
         "titre": "Bureau 555m2 Paris 8ème - Hoche-Friedland",
         "description": "À deux pas de la place de l'Étoile et de la place des Ternes, Knight Frank vous propose à la location et à la vente un immeuble indépendant à usage de bureaux qui a fait l'objet d'une entièrement restructuration..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -27647,7 +27647,7 @@
         "titre": "Bureau 553m2 Paris 8ème - Hoche-Friedland",
         "description": "A proximité immédiate de la Place des Ternes, de l'Av de Wagram et de l'Av du Fbg Saint-Honoré, axes importants du QCA, JLL, vous propose, A LA VENTE, un immeuble de bureaux indépendant de 553,4 m² en..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -28960,7 +28960,7 @@
         "titre": "Bureau 1315m2 Paris 10ème - Porte Saint Denis-Paradis",
         "description": "Colliers vous propose à la vente une adresse stratégique, visibilité maximale et bureaux prêts à l'emploi : au 25 boulevard de Strasbourg, installez-vous sans attendre dans des espaces modernes, aménagés..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29125,7 +29125,7 @@
         "titre": "Bureau 587m2 Paris 8ème - Parc Monceau",
         "description": "Découvrez une opportunité exceptionnelle avec EVOLIS : des bureaux à vendre au coeur de Paris, une adresse prestigieuse pour votre entreprise. Profitez d'un espace professionnel conçu pour inspirer et..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -29938,7 +29938,7 @@
         "titre": "Bureau 581.36m2 Paris 8ème - Parc Monceau",
         "description": "Savills vous propose à la vente 581 m² de bureaux à Paris 8ème. \r\nSitué à proximité du Parc Monceau, cet immeuble mixte des années 60 à destination de bureaux comporte une entrée indépendante, un escalier..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30343,7 +30343,7 @@
         "titre": "Bureau 786m2 Paris 11ème - Nation-Alexandre Dumas",
         "description": "Realty'z vous propose ces bureaux libres au sein d'un quartier dynamique du 11e arrondissement de Paris. L'actif développe une surface indépendante de 786m2 située dans une copropriété mixte (habitation..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -30502,7 +30502,7 @@
         "titre": "Bureau 1270m2 Paris 14ème - Montsouris Dareau",
         "description": "Knight Frank vous propose à proximité de la place Denfert Rochereau et de toutes ses commodités une surface de bureaux dans une coproprieté. Les locaux, situés au 1er étage, ont très peu de contraintes..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -33444,7 +33444,7 @@
         "titre": "Bureau 650m2 Paris 10ème",
         "description": "Nous vous proposons à la vente un bel immeuble de bureaux indépendant au cour du 10e arrondissement de Paris\r\n\r\nIl développe une surface utile totale de 650 mètres carrés sur 3 niveaux \r\n\r\nPlateaux calmes..."
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -33599,7 +33599,7 @@
         "titre": "Bureau 610m2 Paris 17ème",
         "description": "Paris 17e.Idéalement situé.\nBel hôtel particulier de bureaux avec le charme de l'ancien.\nTerrasse.\n\nDossier complet sur demande"
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-15",
       "_last_seen": "2026-04-15",
       "_sources": [
@@ -37744,7 +37744,7 @@
         "titre": "Bureaux 564m2 AVENUE DE VILLIERS\nPARIS",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -39525,7 +39525,7 @@
         "titre": "Vente bureaux Paris 19 - Proche Quais de la Marne, Métro Corentin-Cariou",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
@@ -45862,7 +45862,7 @@
         "titre": "Bureaux à vendre Paris 20 - Proche Métro Gambetta",
         "description": ""
       },
-      "_statut": "a_verifier",
+      "_statut": "poubelle",
       "_first_seen": "2026-04-16",
       "_last_seen": "2026-04-16",
       "_sources": [
