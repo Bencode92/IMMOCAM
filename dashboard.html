@@ -709,7 +709,7 @@ function renderT(deals){
     +'<td style="padding:4px;font-size:.7rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="'+r.notes+'">'+r.notes+'</td>'
     +'<td style="padding:4px;font-size:.65rem;color:var(--text3)">'+r.src+'</td>'
     +'<td style="padding:4px;text-align:center">'+(r._statut==="poubelle"
-      ?'<button onclick="event.stopPropagation();setSt(\''+r.k+'\',\'nouveau\')" title="Désarchiver" style="border:none;background:none;cursor:pointer;font-size:.95rem;opacity:.7">↩️</button>'
+      ?'<button onclick="event.stopPropagation();setSt(\''+r.k+'\',\'a_verifier\')" title="Remettre à vérifier" style="border:none;background:none;cursor:pointer;font-size:.95rem;opacity:.7">↩️</button>'
       :'<button onclick="event.stopPropagation();setSt(\''+r.k+'\',\'poubelle\')" title="Archiver" style="border:none;background:none;cursor:pointer;font-size:.95rem;opacity:.55">🗑️</button>')+'</td>'
     +'</tr>';
   }).join("");
