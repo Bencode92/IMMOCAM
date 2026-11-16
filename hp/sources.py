@@ -33,15 +33,26 @@ def cp_from_ville(ville):
     return f"750{int(m.group(1)):02d}" if m else ""
 
 
+BARNES = "https://www.barnes-international.com/fr/vente/france/"
+
+
 class Barnes:
     name = "barnes"
-    LISTES = ["https://www.barnes-international.com/fr/vente/france/paris/hotel-particulier.html"]
+    # Hôtels particuliers (Paris, 92, 78) + grandes maisons des communes de l'ouest
+    LISTES = [BARNES + p + ".html" for p in (
+        "paris/hotel-particulier", "hauts-de-seine/hotel-particulier", "yvelines/hotel-particulier",
+        "paris-16eme/maison", "paris-17eme/maison", "paris-7eme/maison", "paris-8eme/maison",
+        "neuilly-sur-seine/maison", "boulogne-billancourt/maison", "saint-cloud/maison", "le-vesinet/maison",
+        "rueil-malmaison/maison", "garches/maison", "saint-germain-en-laye/maison", "levallois-perret/maison")]
+    SURFACE_MIN = 250
 
     def collect(self, known_ids=frozenset()):
-        out = []
+        out, ids = [], set()
         for url in self.LISTES:
             r = requests.get(url, headers=UA, timeout=40)
-            r.raise_for_status()
+            if r.status_code != 200:
+                continue
+            time.sleep(1.0)
             soup = BeautifulSoup(r.text, "html.parser")
             for art in soup.select("article[id^=property-]"):
                 a = art.select_one("a.bc-015-content-link")
@@ -53,8 +64,11 @@ class Barnes:
                 crit = [s.get_text(strip=True) for s in a.select(".bc-015-criteria span")]
                 surface = next((num(c) for c in crit if "m²" in c), 0.0)
                 prix = num((a.select_one(".bc-015-prix strong") or a).get_text())
+                if ref in ids or (surface and surface < self.SURFACE_MIN):
+                    continue
+                ids.add(ref)
                 out.append({"id": f"barnes-{ref}", "source": self.name, "url": a["href"], "titre": titre,
-                            "type": "hotel particulier", "commune": ville, "code_postal": cp_from_ville(ville),
+                            "type": "hotel particulier" if "particulier" in titre.lower() else "maison", "commune": ville, "code_postal": cp_from_ville(ville),
                             "adresse": "", "surface": surface, "prix": prix, "description": "", "dpe": "",
                             "extra": {"criteres": crit}})
         # Fiche détaillée uniquement pour les nouvelles annonces (description, DPE)

@@ -39,6 +39,17 @@ ALERTES = {
 USAGE_PRO = r"commercialite|(a )?usage (de |a usage de )?bureaux?|usage mixte|usage professionnel|usage commercial|local commercial|locaux commerciaux|immeuble de bureaux|siege social|etablissement recevant du public|\berp\b|ambassade|consulat"
 
 
+PARIS_OUEST = {"75107", "75108", "75115", "75116", "75117"}
+BANLIEUE_OUEST = {"92051", "92012", "92044", "92040", "92064", "92073", "92063", "92033", "92076", "92047", "92077",
+                  "92072", "92048", "92022", "92062", "92026", "92035", "92009", "92004", "92024", "92050",
+                  "78146", "78190", "78650", "78481", "78551", "78358", "78350", "78372", "78092", "78126", "78646", "78158"}
+
+
+def secteur(insee):
+    return "Paris ouest" if insee in PARIS_OUEST else "Banlieue ouest" if insee in BANLIEUE_OUEST else \
+        "Paris (autre)" if insee.startswith("75") else "Hors secteur"
+
+
 def load_ref():
     p = DATA / "dvf_ref_hp.json"
     return json.loads(p.read_text())["communes"] if p.exists() else {}
@@ -110,6 +121,7 @@ def geocode_adresse(adr, cache):
 def enrich(x, ref, cache, zonages=None):
     texte = norm(" ".join([x.get("titre", ""), x.get("description", ""), " ".join(x.get("extra", {}).get("criteres", []))]))
     e = {"insee": insee_of(x, cache)}
+    e["secteur"] = secteur(e["insee"])
     r = ref.get(e["insee"]) or {}
     e["commune_ref"] = r.get("nom", "")
     s, p = x.get("surface") or 0, x.get("prix") or 0

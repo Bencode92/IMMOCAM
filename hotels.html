@@ -53,6 +53,13 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
 .foot select,.foot input{font:.75rem Inter,sans-serif;border:1px solid var(--border);border-radius:6px;padding:.35rem .5rem;background:var(--surface);color:var(--text)}
 .foot input{flex:1;min-width:0}
 .pos{color:var(--green)}.neg{color:var(--red)}
+.links summary{cursor:pointer}
+.lk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:.8rem}
+.lk-grid h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text3);margin-bottom:.4rem}
+.lk-grid a{display:block;color:var(--accent2);text-decoration:none;padding:.18rem 0}
+.lk-grid a:hover{text-decoration:underline}
+.lk-grid span{display:block;font-size:.72rem;color:var(--text3);margin:-.1rem 0 .35rem}
+@media(max-width:800px){.lk-grid{grid-template-columns:1fr}}
 .empty{text-align:center;color:var(--text3);padding:3rem 1rem;font-size:.9rem}
 @media(max-width:640px){header,.filter-bar,.wrap{padding-left:16px;padding-right:16px}.grid{grid-template-columns:1fr}.figs{grid-template-columns:1fr 1fr}}
 </style>
@@ -75,7 +82,7 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
   <button class="pill on" id="fNew">Nouveaux seulement</button>
   <select id="fStatut"><option value="">Tous statuts</option></select>
   <select id="fSource"><option value="">Toutes sources</option></select>
-  <select id="fZone"><option value="">Toutes zones</option><option value="75">Paris</option><option value="92">Hauts-de-Seine</option><option value="autre">Autres</option></select>
+  <select id="fZone"><option value="ouest">Ouest : Paris + banlieue</option><option value="Paris ouest">Paris ouest (7, 8, 15, 16, 17)</option><option value="Banlieue ouest">Banlieue ouest (92, 78)</option><option value="">Toutes zones</option></select>
   <select id="fUsage"><option value="">Tout usage</option><option value="pro">Déjà bureaux / commercial</option><option value="hab">Habitation</option></select>
   <input id="fSurf" type="number" placeholder="m² min" style="width:85px">
   <input id="fPrix" type="number" placeholder="Prix max (M€)" style="width:110px">
@@ -84,6 +91,33 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
 </div>
 <div class="wrap">
   <div class="info" id="info">Chargement…</div>
+  <details class="info links"><summary><b>Liens de recherche à surveiller</b> — Paris ouest et banlieue ouest</summary>
+    <div class="lk-grid">
+      <div><h4>Collectés automatiquement chaque matin</h4>
+        <a href="https://www.barnes-international.com/fr/vente/france/paris/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers Paris</a>
+        <a href="https://www.barnes-international.com/fr/vente/france/hauts-de-seine/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers Hauts-de-Seine</a>
+        <a href="https://www.barnes-international.com/fr/vente/france/yvelines/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers Yvelines</a>
+        <a href="https://www.barnes-international.com/fr/vente/france/paris-16eme/maison.html" target="_blank">Barnes · Maisons Paris 16e</a>
+        <a href="https://www.barnes-international.com/fr/vente/france/neuilly-sur-seine/maison.html" target="_blank">Barnes · Maisons Neuilly</a>
+        <a href="https://www.barnes-international.com/fr/vente/france/saint-cloud/maison.html" target="_blank">Barnes · Maisons Saint-Cloud</a>
+        <a href="https://www.barnes-international.com/fr/vente/france/le-vesinet/maison.html" target="_blank">Barnes · Maisons Le Vésinet</a>
+        <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/maison-pavillon-propriete.html" target="_blank">Licitor · Enchères maisons / propriétés</a>
+        <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/immeuble-residentiel.html" target="_blank">Licitor · Enchères immeubles</a>
+        <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/local-a-usage-de-commerce.html" target="_blank">Licitor · Enchères locaux commerciaux</a></div>
+      <div><h4>À regarder toi-même (pas encore collectés)</h4>
+        <a href="https://www.emilegarcin.com/vente/paris" target="_blank">Émile Garcin · Paris</a>
+        <a href="https://www.bnppre.fr/a-vendre/bureau/" target="_blank">BNP Paribas Real Estate · Bureaux à vendre</a>
+        <a href="https://www.espaces-atypiques.com/" target="_blank">Espaces Atypiques · lofts, ateliers</a>
+        <a href="https://www.kretzfamily.com/" target="_blank">Kretz Family Real Estate</a>
+        <a href="https://www.junot.fr/" target="_blank">Junot</a>
+        <a href="https://www.feau-immobilier.fr/" target="_blank">Daniel Féau</a></div>
+      <div><h4>Bloqués aux robots : crée une alerte e-mail</h4>
+        <a href="https://www.bellesdemeures.com/" target="_blank">Belles Demeures</a><span>Type « Hôtel particulier », Paris + 92 + 78, alerte quotidienne</span>
+        <a href="https://proprietes.lefigaro.fr/" target="_blank">Propriétés Le Figaro</a><span>Catégorie « Hôtel particulier », mêmes zones</span>
+        <a href="https://www.cbre.fr/" target="_blank">CBRE</a><span>Investissement : « immeuble indépendant », « hôtel particulier »</span>
+        <a href="https://www.leboncoin.fr/" target="_blank">Leboncoin</a><span>Ventes immobilières, mot-clé « hôtel particulier », ≥ 300 m²</span></div>
+    </div>
+  </details>
   <div class="grid" id="grid"></div>
 </div>
 <script>
@@ -123,8 +157,8 @@ function render() {
     if (!off && (!x.actif || st === 'ecarte')) return false;
     if (g('fStatut') && st !== g('fStatut')) return false;
     if (g('fSource') && x.source !== g('fSource')) return false;
-    const d = (e.insee || '').slice(0, 2);
-    if (g('fZone') && (g('fZone') === 'autre' ? ['75', '92'].includes(d) : d !== g('fZone'))) return false;
+    const z = g('fZone'), sec = e.secteur || '';
+    if (z === 'ouest' ? !sec.endsWith('ouest') : z && sec !== z) return false;
     const pro = (e.usage || '').startsWith('bureaux');
     if (g('fUsage') === 'pro' && !pro) return false;
     if (g('fUsage') === 'hab' && pro) return false;
@@ -156,12 +190,12 @@ function card(x) {
   return `<div class="card ${isNew(x) ? 'new' : ''} ${st === 'ecarte' ? 'ecarte' : ''}">
     <div class="top"><div class="score" style="background:${col}" title="Note événementiel / bureaux">${sc}</div>
       <div><a class="title" href="${esc(x.url)}" target="_blank" rel="noopener" data-open="${esc(x.id)}">${isNew(x) ? '<span class="badge b-new">Nouveau</span>' : ''}${!x.actif ? '<span class="badge b-off">Retirée</span>' : ''}${drop ? '<span class="badge b-drop">Baisse de prix</span>' : ''}${esc(x.titre)}</a>
-      <div class="sub">${esc(x.commune)} · ${esc(x.source)} · vue le ${new Date(x.first_seen).toLocaleDateString('fr-FR')}${x.dpe ? ' · DPE ' + x.dpe : ''}${x.extra?.audience ? ' · audience ' + esc(x.extra.audience) : ''}</div></div></div>
+      <div class="sub">${esc(x.commune)}${e.secteur ? ' · <b>' + esc(e.secteur) + '</b>' : ''} · ${esc(x.source)} · vue le ${new Date(x.first_seen).toLocaleDateString('fr-FR')}${x.dpe ? ' · DPE ' + x.dpe : ''}${x.extra?.audience ? ' · audience ' + esc(x.extra.audience) : ''}</div></div></div>
     <div class="figs"><div>${x.extra?.mise_a_prix ? 'Mise à prix' : 'Prix'}<b>${meur(x.prix)}</b></div><div>Surface<b>${x.surface ? fmt.format(x.surface) + ' m²' : '—'}</b></div>
       <div>€/m²<b>${e.prix_m2 ? fmt.format(e.prix_m2) : '—'}</b></div><div title="Écart avec la médiane DVF ${pro ? 'des immeubles commerciaux' : 'des grandes maisons'} de la commune (${e.dvf_n || 0} ventes)">vs DVF<b>${ecTxt}</b></div></div>
     <div class="chips"><span class="chip ${pro ? 'usage-pro' : 'usage-hab'}">${esc(e.usage || '')}</span>${(e.alertes || []).map(a => `<span class="chip alert">⚠ ${esc(a)}</span>`).join('')}${(e.atouts || []).map(a => `<span class="chip">${esc(a)}</span>`).join('')}</div>
     ${x.description ? `<div class="desc">${esc(x.description)}</div>` : ''}
-    <div class="foot"><select data-st="${esc(x.id)}">${STATUTS.map(([k, l]) => `<option value="${k}" ${k === st ? 'selected' : ''}>${l}</option>`).join('')}</select>
+    <div class="foot"><a class="btn primary" href="${esc(x.url)}" target="_blank" rel="noopener" data-open="${esc(x.id)}" style="text-decoration:none;white-space:nowrap">Voir l'annonce ↗</a><select data-st="${esc(x.id)}">${STATUTS.map(([k, l]) => `<option value="${k}" ${k === st ? 'selected' : ''}>${l}</option>`).join('')}</select>
       <input data-note="${esc(x.id)}" value="${esc(U.notes[x.id] || '')}" placeholder="Note perso (reste dans ce navigateur)"></div>
   </div>`;
 }
