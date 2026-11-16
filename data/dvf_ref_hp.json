@@ -1,0 +1,3442 @@
+{
+ "meta": {
+  "source": "DVF (geo-dvf, data.gouv.fr)",
+  "annees": [
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "genere_le": "2026-11-16",
+  "maisons": "maisons >= 200 m², ventes sans appartement ni local",
+  "commerces": "locaux commerciaux / immeubles entiers >= 300 m²"
+ },
+ "communes": {
+  "75101": {
+   "nom": "Paris 1er Arrondissement",
+   "maisons": null,
+   "commerces": {
+    "n": 50,
+    "med": 12722,
+    "q1": 7066,
+    "q3": 17322
+   }
+  },
+  "75102": {
+   "nom": "Paris 2e Arrondissement",
+   "maisons": null,
+   "commerces": {
+    "n": 80,
+    "med": 9330,
+    "q1": 5640,
+    "q3": 15559
+   }
+  },
+  "75103": {
+   "nom": "Paris 3e Arrondissement",
+   "maisons": null,
+   "commerces": {
+    "n": 41,
+    "med": 7305,
+    "q1": 3727,
+    "q3": 12209
+   }
+  },
+  "75104": {
+   "nom": "Paris 4e Arrondissement",
+   "maisons": null,
+   "commerces": {
+    "n": 28,
+    "med": 6796,
+    "q1": 4325,
+    "q3": 11270
+   }
+  },
+  "75105": {
+   "nom": "Paris 5e Arrondissement",
+   "maisons": {
+    "n": 3,
+    "med": 16764,
+    "q1": 8850,
+    "q3": 43377
+   },
+   "commerces": {
+    "n": 17,
+    "med": 5199,
+    "q1": 3854,
+    "q3": 7398
+   }
+  },
+  "75106": {
+   "nom": "Paris 6e Arrondissement",
+   "maisons": {
+    "n": 3,
+    "med": 23464,
+    "q1": 17235,
+    "q3": 69930
+   },
+   "commerces": {
+    "n": 45,
+    "med": 9540,
+    "q1": 5946,
+    "q3": 17580
+   }
+  },
+  "75107": {
+   "nom": "Paris 7e Arrondissement",
+   "maisons": {
+    "n": 12,
+    "med": 30154,
+    "q1": 24065,
+    "q3": 32530
+   },
+   "commerces": {
+    "n": 46,
+    "med": 13821,
+    "q1": 7451,
+    "q3": 18493
+   }
+  },
+  "75108": {
+   "nom": "Paris 8e Arrondissement",
+   "maisons": {
+    "n": 3,
+    "med": 20614,
+    "q1": 16667,
+    "q3": 30774
+   },
+   "commerces": {
+    "n": 195,
+    "med": 13645,
+    "q1": 8467,
+    "q3": 19526
+   }
+  },
+  "75109": {
+   "nom": "Paris 9e Arrondissement",
+   "maisons": null,
+   "commerces": {
+    "n": 94,
+    "med": 9827,
+    "q1": 6233,
+    "q3": 16395
+   }
+  },
+  "75110": {
+   "nom": "Paris 10e Arrondissement",
+   "maisons": null,
+   "commerces": {
+    "n": 80,
+    "med": 6558,
+    "q1": 4708,
+    "q3": 10169
+   }
+  },
+  "75111": {
+   "nom": "Paris 11e Arrondissement",
+   "maisons": null,
+   "commerces": {
+    "n": 98,
+    "med": 6749,
+    "q1": 4147,
+    "q3": 10500
+   }
+  },
+  "75112": {
+   "nom": "Paris 12e Arrondissement",
+   "maisons": {
+    "n": 1,
+    "med": 16320,
+    "q1": 16320,
+    "q3": 16320
+   },
+   "commerces": {
+    "n": 55,
+    "med": 6713,
+    "q1": 3711,
+    "q3": 9349
+   }
+  },
+  "75113": {
+   "nom": "Paris 13e Arrondissement",
+   "maisons": {
+    "n": 4,
+    "med": 7705,
+    "q1": 5102,
+    "q3": 8441
+   },
+   "commerces": {
+    "n": 57,
+    "med": 4987,
+    "q1": 3459,
+    "q3": 7032
+   }
+  },
+  "75114": {
+   "nom": "Paris 14e Arrondissement",
+   "maisons": {
+    "n": 15,
+    "med": 11400,
+    "q1": 9587,
+    "q3": 18204
+   },
+   "commerces": {
+    "n": 56,
+    "med": 6283,
+    "q1": 4192,
+    "q3": 9319
+   }
+  },
+  "75115": {
+   "nom": "Paris 15e Arrondissement",
+   "maisons": {
+    "n": 12,
+    "med": 9557,
+    "q1": 5980,
+    "q3": 14193
+   },
+   "commerces": {
+    "n": 100,
+    "med": 6091,
+    "q1": 3776,
+    "q3": 8479
+   }
+  },
+  "75116": {
+   "nom": "Paris 16e Arrondissement",
+   "maisons": {
+    "n": 93,
+    "med": 17867,
+    "q1": 14258,
+    "q3": 23794
+   },
+   "commerces": {
+    "n": 134,
+    "med": 11104,
+    "q1": 7600,
+    "q3": 15632
+   }
+  },
+  "75117": {
+   "nom": "Paris 17e Arrondissement",
+   "maisons": {
+    "n": 10,
+    "med": 15977,
+    "q1": 12674,
+    "q3": 21126
+   },
+   "commerces": {
+    "n": 125,
+    "med": 8889,
+    "q1": 5408,
+    "q3": 12544
+   }
+  },
+  "75118": {
+   "nom": "Paris 18e Arrondissement",
+   "maisons": {
+    "n": 5,
+    "med": 7456,
+    "q1": 4845,
+    "q3": 18584
+   },
+   "commerces": {
+    "n": 61,
+    "med": 6332,
+    "q1": 3207,
+    "q3": 8213
+   }
+  },
+  "75119": {
+   "nom": "Paris 19e Arrondissement",
+   "maisons": {
+    "n": 4,
+    "med": 8190,
+    "q1": 5892,
+    "q3": 13573
+   },
+   "commerces": {
+    "n": 46,
+    "med": 4809,
+    "q1": 3822,
+    "q3": 6702
+   }
+  },
+  "75120": {
+   "nom": "Paris 20e Arrondissement",
+   "maisons": {
+    "n": 4,
+    "med": 8962,
+    "q1": 4040,
+    "q3": 12846
+   },
+   "commerces": {
+    "n": 42,
+    "med": 4984,
+    "q1": 3680,
+    "q3": 6173
+   }
+  },
+  "78003": {
+   "nom": "Ablis",
+   "maisons": {
+    "n": 3,
+    "med": 2843,
+    "q1": 2512,
+    "q3": 4245
+   },
+   "commerces": {
+    "n": 3,
+    "med": 685,
+    "q1": 171,
+    "q3": 709
+   }
+  },
+  "78005": {
+   "nom": "Achères",
+   "maisons": {
+    "n": 1,
+    "med": 3524,
+    "q1": 3524,
+    "q3": 3524
+   },
+   "commerces": {
+    "n": 7,
+    "med": 1634,
+    "q1": 785,
+    "q3": 2150
+   }
+  },
+  "78006": {
+   "nom": "Adainville",
+   "maisons": {
+    "n": 9,
+    "med": 3005,
+    "q1": 2465,
+    "q3": 4462
+   },
+   "commerces": null
+  },
+  "78007": {
+   "nom": "Aigremont",
+   "maisons": {
+    "n": 9,
+    "med": 4455,
+    "q1": 3947,
+    "q3": 5749
+   },
+   "commerces": null
+  },
+  "78010": {
+   "nom": "Les Alluets-le-Roi",
+   "maisons": {
+    "n": 4,
+    "med": 4099,
+    "q1": 4076,
+    "q3": 4440
+   },
+   "commerces": {
+    "n": 2,
+    "med": 984,
+    "q1": 735,
+    "q3": 1233
+   }
+  },
+  "78013": {
+   "nom": "Andelu",
+   "maisons": {
+    "n": 1,
+    "med": 2825,
+    "q1": 2825,
+    "q3": 2825
+   },
+   "commerces": null
+  },
+  "78015": {
+   "nom": "Andrésy",
+   "maisons": {
+    "n": 14,
+    "med": 3273,
+    "q1": 2744,
+    "q3": 3762
+   },
+   "commerces": {
+    "n": 3,
+    "med": 1415,
+    "q1": 1180,
+    "q3": 57231
+   }
+  },
+  "78020": {
+   "nom": "Arnouville-lès-Mantes",
+   "maisons": {
+    "n": 2,
+    "med": 2357,
+    "q1": 1393,
+    "q3": 3321
+   },
+   "commerces": null
+  },
+  "78029": {
+   "nom": "Aubergenville",
+   "maisons": null,
+   "commerces": {
+    "n": 9,
+    "med": 811,
+    "q1": 488,
+    "q3": 1439
+   }
+  },
+  "78030": {
+   "nom": "Auffargis",
+   "maisons": {
+    "n": 5,
+    "med": 3093,
+    "q1": 2324,
+    "q3": 3853
+   },
+   "commerces": {
+    "n": 1,
+    "med": 215,
+    "q1": 215,
+    "q3": 215
+   }
+  },
+  "78031": {
+   "nom": "Auffreville-Brasseuil",
+   "maisons": {
+    "n": 5,
+    "med": 2632,
+    "q1": 2451,
+    "q3": 3245
+   },
+   "commerces": null
+  },
+  "78033": {
+   "nom": "Aulnay-sur-Mauldre",
+   "maisons": {
+    "n": 3,
+    "med": 2640,
+    "q1": 2481,
+    "q3": 3516
+   },
+   "commerces": null
+  },
+  "78034": {
+   "nom": "Auteuil",
+   "maisons": {
+    "n": 1,
+    "med": 3929,
+    "q1": 3929,
+    "q3": 3929
+   },
+   "commerces": null
+  },
+  "78036": {
+   "nom": "Autouillet",
+   "maisons": {
+    "n": 2,
+    "med": 3418,
+    "q1": 3054,
+    "q3": 3782
+   },
+   "commerces": null
+  },
+  "78043": {
+   "nom": "Bailly",
+   "maisons": {
+    "n": 5,
+    "med": 4656,
+    "q1": 4145,
+    "q3": 5526
+   },
+   "commerces": {
+    "n": 2,
+    "med": 1599,
+    "q1": 1386,
+    "q3": 1811
+   }
+  },
+  "78048": {
+   "nom": "Bazainville",
+   "maisons": {
+    "n": 4,
+    "med": 2735,
+    "q1": 1742,
+    "q3": 4311
+   },
+   "commerces": {
+    "n": 1,
+    "med": 511,
+    "q1": 511,
+    "q3": 511
+   }
+  },
+  "78049": {
+   "nom": "Bazemont",
+   "maisons": {
+    "n": 9,
+    "med": 4095,
+    "q1": 2562,
+    "q3": 4808
+   },
+   "commerces": null
+  },
+  "78050": {
+   "nom": "Bazoches-sur-Guyonne",
+   "maisons": {
+    "n": 11,
+    "med": 3680,
+    "q1": 2772,
+    "q3": 5690
+   },
+   "commerces": null
+  },
+  "78053": {
+   "nom": "Béhoust",
+   "maisons": {
+    "n": 2,
+    "med": 3092,
+    "q1": 2429,
+    "q3": 3755
+   },
+   "commerces": null
+  },
+  "78057": {
+   "nom": "Bennecourt",
+   "maisons": {
+    "n": 1,
+    "med": 2522,
+    "q1": 2522,
+    "q3": 2522
+   },
+   "commerces": null
+  },
+  "78062": {
+   "nom": "Beynes",
+   "maisons": {
+    "n": 5,
+    "med": 2850,
+    "q1": 1938,
+    "q3": 3686
+   },
+   "commerces": null
+  },
+  "78068": {
+   "nom": "Blaru",
+   "maisons": {
+    "n": 2,
+    "med": 2755,
+    "q1": 1562,
+    "q3": 3948
+   },
+   "commerces": null
+  },
+  "78073": {
+   "nom": "Bois-d'Arcy",
+   "maisons": {
+    "n": 2,
+    "med": 2812,
+    "q1": 2649,
+    "q3": 2975
+   },
+   "commerces": {
+    "n": 6,
+    "med": 1371,
+    "q1": 1118,
+    "q3": 1724
+   }
+  },
+  "78076": {
+   "nom": "Boissets",
+   "maisons": {
+    "n": 1,
+    "med": 2090,
+    "q1": 2090,
+    "q3": 2090
+   },
+   "commerces": null
+  },
+  "78077": {
+   "nom": "La Boissière-École",
+   "maisons": {
+    "n": 5,
+    "med": 2330,
+    "q1": 1997,
+    "q3": 3767
+   },
+   "commerces": null
+  },
+  "78082": {
+   "nom": "Boissy-Mauvoisin",
+   "maisons": {
+    "n": 1,
+    "med": 2284,
+    "q1": 2284,
+    "q3": 2284
+   },
+   "commerces": null
+  },
+  "78084": {
+   "nom": "Boissy-sans-Avoir",
+   "maisons": {
+    "n": 5,
+    "med": 2518,
+    "q1": 2399,
+    "q3": 2829
+   },
+   "commerces": null
+  },
+  "78087": {
+   "nom": "Bonnelles",
+   "maisons": {
+    "n": 1,
+    "med": 2955,
+    "q1": 2955,
+    "q3": 2955
+   },
+   "commerces": null
+  },
+  "78089": {
+   "nom": "Bonnières-sur-Seine",
+   "maisons": {
+    "n": 1,
+    "med": 2015,
+    "q1": 2015,
+    "q3": 2015
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1017,
+    "q1": 1017,
+    "q3": 1017
+   }
+  },
+  "78090": {
+   "nom": "Bouafle",
+   "maisons": {
+    "n": 2,
+    "med": 2131,
+    "q1": 2095,
+    "q3": 2166
+   },
+   "commerces": {
+    "n": 4,
+    "med": 766,
+    "q1": 236,
+    "q3": 1939
+   }
+  },
+  "78092": {
+   "nom": "Bougival",
+   "maisons": {
+    "n": 31,
+    "med": 5662,
+    "q1": 4884,
+    "q3": 6735
+   },
+   "commerces": {
+    "n": 2,
+    "med": 1812,
+    "q1": 780,
+    "q3": 2844
+   }
+  },
+  "78096": {
+   "nom": "Bourdonné",
+   "maisons": {
+    "n": 10,
+    "med": 3028,
+    "q1": 2144,
+    "q3": 4227
+   },
+   "commerces": null
+  },
+  "78104": {
+   "nom": "Breuil-Bois-Robert",
+   "maisons": {
+    "n": 4,
+    "med": 2372,
+    "q1": 1955,
+    "q3": 2625
+   },
+   "commerces": null
+  },
+  "78107": {
+   "nom": "Bréval",
+   "maisons": {
+    "n": 3,
+    "med": 2674,
+    "q1": 1304,
+    "q3": 2836
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1485,
+    "q1": 1485,
+    "q3": 1485
+   }
+  },
+  "78108": {
+   "nom": "Les Bréviaires",
+   "maisons": {
+    "n": 9,
+    "med": 3084,
+    "q1": 2643,
+    "q3": 3830
+   },
+   "commerces": null
+  },
+  "78113": {
+   "nom": "Brueil-en-Vexin",
+   "maisons": {
+    "n": 1,
+    "med": 2579,
+    "q1": 2579,
+    "q3": 2579
+   },
+   "commerces": null
+  },
+  "78117": {
+   "nom": "Buc",
+   "maisons": {
+    "n": 3,
+    "med": 5238,
+    "q1": 4184,
+    "q3": 6128
+   },
+   "commerces": {
+    "n": 23,
+    "med": 1129,
+    "q1": 736,
+    "q3": 1638
+   }
+  },
+  "78118": {
+   "nom": "Buchelay",
+   "maisons": null,
+   "commerces": {
+    "n": 8,
+    "med": 1031,
+    "q1": 801,
+    "q3": 1344
+   }
+  },
+  "78120": {
+   "nom": "Bullion",
+   "maisons": {
+    "n": 6,
+    "med": 3171,
+    "q1": 2698,
+    "q3": 4175
+   },
+   "commerces": null
+  },
+  "78123": {
+   "nom": "Carrières-sous-Poissy",
+   "maisons": {
+    "n": 1,
+    "med": 2516,
+    "q1": 2516,
+    "q3": 2516
+   },
+   "commerces": {
+    "n": 5,
+    "med": 2052,
+    "q1": 931,
+    "q3": 3487
+   }
+  },
+  "78124": {
+   "nom": "Carrières-sur-Seine",
+   "maisons": {
+    "n": 12,
+    "med": 5401,
+    "q1": 4449,
+    "q3": 6727
+   },
+   "commerces": {
+    "n": 10,
+    "med": 1651,
+    "q1": 880,
+    "q3": 2948
+   }
+  },
+  "78125": {
+   "nom": "La Celle-les-Bordes",
+   "maisons": {
+    "n": 4,
+    "med": 3108,
+    "q1": 1834,
+    "q3": 4361
+   },
+   "commerces": null
+  },
+  "78126": {
+   "nom": "La Celle-Saint-Cloud",
+   "maisons": {
+    "n": 50,
+    "med": 6088,
+    "q1": 5050,
+    "q3": 7112
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1464,
+    "q1": 1464,
+    "q3": 1464
+   }
+  },
+  "78133": {
+   "nom": "Chambourcy",
+   "maisons": {
+    "n": 25,
+    "med": 5030,
+    "q1": 4253,
+    "q3": 6473
+   },
+   "commerces": {
+    "n": 4,
+    "med": 925,
+    "q1": 335,
+    "q3": 1926
+   }
+  },
+  "78138": {
+   "nom": "Chanteloup-les-Vignes",
+   "maisons": {
+    "n": 4,
+    "med": 3096,
+    "q1": 2818,
+    "q3": 4086
+   },
+   "commerces": {
+    "n": 3,
+    "med": 661,
+    "q1": 652,
+    "q3": 849
+   }
+  },
+  "78140": {
+   "nom": "Chapet",
+   "maisons": {
+    "n": 3,
+    "med": 2731,
+    "q1": 1783,
+    "q3": 2918
+   },
+   "commerces": null
+  },
+  "78143": {
+   "nom": "Châteaufort",
+   "maisons": {
+    "n": 4,
+    "med": 4293,
+    "q1": 3884,
+    "q3": 4364
+   },
+   "commerces": null
+  },
+  "78146": {
+   "nom": "Chatou",
+   "maisons": {
+    "n": 44,
+    "med": 6608,
+    "q1": 4705,
+    "q3": 8219
+   },
+   "commerces": {
+    "n": 4,
+    "med": 2017,
+    "q1": 1180,
+    "q3": 2941
+   }
+  },
+  "78152": {
+   "nom": "Chavenay",
+   "maisons": {
+    "n": 28,
+    "med": 3870,
+    "q1": 3305,
+    "q3": 4277
+   },
+   "commerces": null
+  },
+  "78158": {
+   "nom": "Le Chesnay-Rocquencourt",
+   "maisons": {
+    "n": 27,
+    "med": 7953,
+    "q1": 6968,
+    "q3": 9157
+   },
+   "commerces": {
+    "n": 5,
+    "med": 3570,
+    "q1": 1658,
+    "q3": 4484
+   }
+  },
+  "78160": {
+   "nom": "Chevreuse",
+   "maisons": {
+    "n": 17,
+    "med": 3587,
+    "q1": 2866,
+    "q3": 4011
+   },
+   "commerces": null
+  },
+  "78162": {
+   "nom": "Choisel",
+   "maisons": {
+    "n": 4,
+    "med": 4319,
+    "q1": 3943,
+    "q3": 5704
+   },
+   "commerces": null
+  },
+  "78163": {
+   "nom": "Civry-la-Forêt",
+   "maisons": {
+    "n": 2,
+    "med": 2148,
+    "q1": 1186,
+    "q3": 3111
+   },
+   "commerces": null
+  },
+  "78164": {
+   "nom": "Clairefontaine-en-Yvelines",
+   "maisons": {
+    "n": 7,
+    "med": 3548,
+    "q1": 2801,
+    "q3": 4583
+   },
+   "commerces": null
+  },
+  "78165": {
+   "nom": "Les Clayes-sous-Bois",
+   "maisons": {
+    "n": 10,
+    "med": 3650,
+    "q1": 2307,
+    "q3": 4988
+   },
+   "commerces": {
+    "n": 3,
+    "med": 1931,
+    "q1": 709,
+    "q3": 3894
+   }
+  },
+  "78168": {
+   "nom": "Coignières",
+   "maisons": {
+    "n": 1,
+    "med": 4943,
+    "q1": 4943,
+    "q3": 4943
+   },
+   "commerces": {
+    "n": 20,
+    "med": 1423,
+    "q1": 862,
+    "q3": 2002
+   }
+  },
+  "78171": {
+   "nom": "Condé-sur-Vesgre",
+   "maisons": {
+    "n": 9,
+    "med": 2755,
+    "q1": 2150,
+    "q3": 4311
+   },
+   "commerces": null
+  },
+  "78172": {
+   "nom": "Conflans-Sainte-Honorine",
+   "maisons": {
+    "n": 7,
+    "med": 3157,
+    "q1": 2932,
+    "q3": 3407
+   },
+   "commerces": {
+    "n": 11,
+    "med": 1213,
+    "q1": 694,
+    "q3": 1784
+   }
+  },
+  "78185": {
+   "nom": "Courgent",
+   "maisons": {
+    "n": 5,
+    "med": 2549,
+    "q1": 2209,
+    "q3": 3229
+   },
+   "commerces": null
+  },
+  "78188": {
+   "nom": "Cravent",
+   "maisons": {
+    "n": 3,
+    "med": 2158,
+    "q1": 2045,
+    "q3": 3027
+   },
+   "commerces": null
+  },
+  "78189": {
+   "nom": "Crespières",
+   "maisons": {
+    "n": 18,
+    "med": 3605,
+    "q1": 2608,
+    "q3": 5878
+   },
+   "commerces": null
+  },
+  "78190": {
+   "nom": "Croissy-sur-Seine",
+   "maisons": {
+    "n": 26,
+    "med": 6552,
+    "q1": 5914,
+    "q3": 7542
+   },
+   "commerces": {
+    "n": 4,
+    "med": 2044,
+    "q1": 1993,
+    "q3": 2116
+   }
+  },
+  "78192": {
+   "nom": "Dammartin-en-Serve",
+   "maisons": {
+    "n": 5,
+    "med": 2168,
+    "q1": 2056,
+    "q3": 3833
+   },
+   "commerces": null
+  },
+  "78193": {
+   "nom": "Dampierre-en-Yvelines",
+   "maisons": {
+    "n": 10,
+    "med": 3699,
+    "q1": 2947,
+    "q3": 4099
+   },
+   "commerces": null
+  },
+  "78196": {
+   "nom": "Davron",
+   "maisons": {
+    "n": 10,
+    "med": 3906,
+    "q1": 2966,
+    "q3": 4928
+   },
+   "commerces": null
+  },
+  "78202": {
+   "nom": "Drocourt",
+   "maisons": {
+    "n": 1,
+    "med": 2769,
+    "q1": 2769,
+    "q3": 2769
+   },
+   "commerces": null
+  },
+  "78206": {
+   "nom": "Ecquevilly",
+   "maisons": null,
+   "commerces": {
+    "n": 5,
+    "med": 745,
+    "q1": 369,
+    "q3": 1527
+   }
+  },
+  "78208": {
+   "nom": "Élancourt",
+   "maisons": null,
+   "commerces": {
+    "n": 8,
+    "med": 1340,
+    "q1": 984,
+    "q3": 3353
+   }
+  },
+  "78209": {
+   "nom": "Émancé",
+   "maisons": {
+    "n": 5,
+    "med": 2812,
+    "q1": 2518,
+    "q3": 3847
+   },
+   "commerces": null
+  },
+  "78217": {
+   "nom": "Épône",
+   "maisons": {
+    "n": 1,
+    "med": 2954,
+    "q1": 2954,
+    "q3": 2954
+   },
+   "commerces": {
+    "n": 11,
+    "med": 711,
+    "q1": 287,
+    "q3": 871
+   }
+  },
+  "78220": {
+   "nom": "Les Essarts-le-Roi",
+   "maisons": {
+    "n": 15,
+    "med": 2740,
+    "q1": 2583,
+    "q3": 2955
+   },
+   "commerces": {
+    "n": 2,
+    "med": 394,
+    "q1": 250,
+    "q3": 539
+   }
+  },
+  "78224": {
+   "nom": "L'Étang-la-Ville",
+   "maisons": {
+    "n": 37,
+    "med": 5194,
+    "q1": 4225,
+    "q3": 6185
+   },
+   "commerces": null
+  },
+  "78230": {
+   "nom": "La Falaise",
+   "maisons": {
+    "n": 1,
+    "med": 2355,
+    "q1": 2355,
+    "q3": 2355
+   },
+   "commerces": null
+  },
+  "78233": {
+   "nom": "Feucherolles",
+   "maisons": {
+    "n": 32,
+    "med": 4253,
+    "q1": 3656,
+    "q3": 4866
+   },
+   "commerces": null
+  },
+  "78238": {
+   "nom": "Flins-sur-Seine",
+   "maisons": {
+    "n": 1,
+    "med": 3162,
+    "q1": 3162,
+    "q3": 3162
+   },
+   "commerces": {
+    "n": 1,
+    "med": 774,
+    "q1": 774,
+    "q3": 774
+   }
+  },
+  "78242": {
+   "nom": "Fontenay-le-Fleury",
+   "maisons": {
+    "n": 2,
+    "med": 3201,
+    "q1": 2907,
+    "q3": 3495
+   },
+   "commerces": {
+    "n": 1,
+    "med": 2284,
+    "q1": 2284,
+    "q3": 2284
+   }
+  },
+  "78246": {
+   "nom": "Fontenay-Saint-Père",
+   "maisons": {
+    "n": 5,
+    "med": 2951,
+    "q1": 2657,
+    "q3": 3307
+   },
+   "commerces": null
+  },
+  "78255": {
+   "nom": "Freneuse",
+   "maisons": {
+    "n": 2,
+    "med": 2356,
+    "q1": 1711,
+    "q3": 3000
+   },
+   "commerces": null
+  },
+  "78261": {
+   "nom": "Gaillon-sur-Montcient",
+   "maisons": {
+    "n": 2,
+    "med": 2587,
+    "q1": 2251,
+    "q3": 2922
+   },
+   "commerces": null
+  },
+  "78262": {
+   "nom": "Galluis",
+   "maisons": {
+    "n": 2,
+    "med": 2798,
+    "q1": 2139,
+    "q3": 3457
+   },
+   "commerces": null
+  },
+  "78263": {
+   "nom": "Gambais",
+   "maisons": {
+    "n": 23,
+    "med": 3274,
+    "q1": 2615,
+    "q3": 4433
+   },
+   "commerces": null
+  },
+  "78265": {
+   "nom": "Garancières",
+   "maisons": {
+    "n": 6,
+    "med": 3014,
+    "q1": 2655,
+    "q3": 4974
+   },
+   "commerces": null
+  },
+  "78267": {
+   "nom": "Gargenville",
+   "maisons": {
+    "n": 1,
+    "med": 2625,
+    "q1": 2625,
+    "q3": 2625
+   },
+   "commerces": {
+    "n": 2,
+    "med": 736,
+    "q1": 653,
+    "q3": 819
+   }
+  },
+  "78269": {
+   "nom": "Gazeran",
+   "maisons": {
+    "n": 2,
+    "med": 2622,
+    "q1": 2546,
+    "q3": 2697
+   },
+   "commerces": {
+    "n": 3,
+    "med": 1718,
+    "q1": 953,
+    "q3": 1887
+   }
+  },
+  "78276": {
+   "nom": "Gommecourt",
+   "maisons": {
+    "n": 1,
+    "med": 1986,
+    "q1": 1986,
+    "q3": 1986
+   },
+   "commerces": null
+  },
+  "78278": {
+   "nom": "Goupillières",
+   "maisons": {
+    "n": 5,
+    "med": 3939,
+    "q1": 2572,
+    "q3": 6592
+   },
+   "commerces": null
+  },
+  "78283": {
+   "nom": "Grandchamp",
+   "maisons": {
+    "n": 2,
+    "med": 4966,
+    "q1": 1720,
+    "q3": 8213
+   },
+   "commerces": null
+  },
+  "78285": {
+   "nom": "Gressey",
+   "maisons": {
+    "n": 3,
+    "med": 2265,
+    "q1": 2174,
+    "q3": 3978
+   },
+   "commerces": null
+  },
+  "78289": {
+   "nom": "Grosrouvre",
+   "maisons": {
+    "n": 31,
+    "med": 4553,
+    "q1": 3443,
+    "q3": 5102
+   },
+   "commerces": null
+  },
+  "78291": {
+   "nom": "Guerville",
+   "maisons": {
+    "n": 2,
+    "med": 2025,
+    "q1": 1500,
+    "q3": 2550
+   },
+   "commerces": null
+  },
+  "78296": {
+   "nom": "Guitrancourt",
+   "maisons": null,
+   "commerces": {
+    "n": 1,
+    "med": 540,
+    "q1": 540,
+    "q3": 540
+   }
+  },
+  "78297": {
+   "nom": "Guyancourt",
+   "maisons": {
+    "n": 5,
+    "med": 3053,
+    "q1": 1688,
+    "q3": 13171
+   },
+   "commerces": {
+    "n": 14,
+    "med": 1547,
+    "q1": 1185,
+    "q3": 1887
+   }
+  },
+  "78299": {
+   "nom": "Hardricourt",
+   "maisons": {
+    "n": 2,
+    "med": 2739,
+    "q1": 2121,
+    "q3": 3357
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1078,
+    "q1": 1078,
+    "q3": 1078
+   }
+  },
+  "78302": {
+   "nom": "La Hauteville",
+   "maisons": {
+    "n": 7,
+    "med": 4240,
+    "q1": 3043,
+    "q3": 4681
+   },
+   "commerces": null
+  },
+  "78305": {
+   "nom": "Herbeville",
+   "maisons": {
+    "n": 2,
+    "med": 4726,
+    "q1": 4387,
+    "q3": 5065
+   },
+   "commerces": null
+  },
+  "78307": {
+   "nom": "Hermeray",
+   "maisons": {
+    "n": 6,
+    "med": 3549,
+    "q1": 3097,
+    "q3": 4016
+   },
+   "commerces": null
+  },
+  "78310": {
+   "nom": "Houdan",
+   "maisons": {
+    "n": 6,
+    "med": 3065,
+    "q1": 2332,
+    "q3": 3710
+   },
+   "commerces": {
+    "n": 6,
+    "med": 679,
+    "q1": 250,
+    "q3": 911
+   }
+  },
+  "78311": {
+   "nom": "Houilles",
+   "maisons": {
+    "n": 12,
+    "med": 4410,
+    "q1": 3452,
+    "q3": 5020
+   },
+   "commerces": {
+    "n": 9,
+    "med": 1527,
+    "q1": 1250,
+    "q3": 2897
+   }
+  },
+  "78314": {
+   "nom": "Issou",
+   "maisons": {
+    "n": 1,
+    "med": 5810,
+    "q1": 5810,
+    "q3": 5810
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1309,
+    "q1": 1309,
+    "q3": 1309
+   }
+  },
+  "78317": {
+   "nom": "Jambville",
+   "maisons": {
+    "n": 1,
+    "med": 1985,
+    "q1": 1985,
+    "q3": 1985
+   },
+   "commerces": null
+  },
+  "78321": {
+   "nom": "Jouars-Pontchartrain",
+   "maisons": {
+    "n": 18,
+    "med": 3383,
+    "q1": 2875,
+    "q3": 3914
+   },
+   "commerces": {
+    "n": 2,
+    "med": 2104,
+    "q1": -381,
+    "q3": 4589
+   }
+  },
+  "78322": {
+   "nom": "Jouy-en-Josas",
+   "maisons": {
+    "n": 9,
+    "med": 4853,
+    "q1": 2985,
+    "q3": 6970
+   },
+   "commerces": {
+    "n": 3,
+    "med": 1853,
+    "q1": 1362,
+    "q3": 2056
+   }
+  },
+  "78324": {
+   "nom": "Jouy-Mauvoisin",
+   "maisons": {
+    "n": 1,
+    "med": 2917,
+    "q1": 2917,
+    "q3": 2917
+   },
+   "commerces": null
+  },
+  "78325": {
+   "nom": "Jumeauville",
+   "maisons": {
+    "n": 1,
+    "med": 2455,
+    "q1": 2455,
+    "q3": 2455
+   },
+   "commerces": null
+  },
+  "78327": {
+   "nom": "Juziers",
+   "maisons": {
+    "n": 3,
+    "med": 2783,
+    "q1": 2610,
+    "q3": 3213
+   },
+   "commerces": {
+    "n": 2,
+    "med": 467,
+    "q1": 450,
+    "q3": 484
+   }
+  },
+  "78329": {
+   "nom": "Lainville-en-Vexin",
+   "maisons": {
+    "n": 1,
+    "med": 5590,
+    "q1": 5590,
+    "q3": 5590
+   },
+   "commerces": null
+  },
+  "78334": {
+   "nom": "Lévis-Saint-Nom",
+   "maisons": {
+    "n": 3,
+    "med": 2489,
+    "q1": 2295,
+    "q3": 3190
+   },
+   "commerces": null
+  },
+  "78335": {
+   "nom": "Limay",
+   "maisons": {
+    "n": 1,
+    "med": 11497,
+    "q1": 11497,
+    "q3": 11497
+   },
+   "commerces": {
+    "n": 9,
+    "med": 749,
+    "q1": 148,
+    "q3": 1251
+   }
+  },
+  "78337": {
+   "nom": "Limetz-Villez",
+   "maisons": {
+    "n": 1,
+    "med": 2675,
+    "q1": 2675,
+    "q3": 2675
+   },
+   "commerces": null
+  },
+  "78343": {
+   "nom": "Les Loges-en-Josas",
+   "maisons": {
+    "n": 10,
+    "med": 4506,
+    "q1": 3666,
+    "q3": 5789
+   },
+   "commerces": {
+    "n": 1,
+    "med": 514,
+    "q1": 514,
+    "q3": 514
+   }
+  },
+  "78346": {
+   "nom": "Longnes",
+   "maisons": {
+    "n": 3,
+    "med": 2848,
+    "q1": 2330,
+    "q3": 2897
+   },
+   "commerces": null
+  },
+  "78349": {
+   "nom": "Longvilliers",
+   "maisons": {
+    "n": 2,
+    "med": 3627,
+    "q1": 3104,
+    "q3": 4150
+   },
+   "commerces": null
+  },
+  "78350": {
+   "nom": "Louveciennes",
+   "maisons": {
+    "n": 24,
+    "med": 5877,
+    "q1": 4346,
+    "q3": 6333
+   },
+   "commerces": {
+    "n": 2,
+    "med": 2802,
+    "q1": 1377,
+    "q3": 4227
+   }
+  },
+  "78354": {
+   "nom": "Magnanville",
+   "maisons": null,
+   "commerces": {
+    "n": 1,
+    "med": 7930,
+    "q1": 7930,
+    "q3": 7930
+   }
+  },
+  "78356": {
+   "nom": "Magny-les-Hameaux",
+   "maisons": {
+    "n": 4,
+    "med": 2876,
+    "q1": 2350,
+    "q3": 3123
+   },
+   "commerces": null
+  },
+  "78358": {
+   "nom": "Maisons-Laffitte",
+   "maisons": {
+    "n": 54,
+    "med": 7819,
+    "q1": 6595,
+    "q3": 8940
+   },
+   "commerces": {
+    "n": 2,
+    "med": 6865,
+    "q1": 1856,
+    "q3": 11874
+   }
+  },
+  "78361": {
+   "nom": "Mantes-la-Jolie",
+   "maisons": {
+    "n": 3,
+    "med": 2765,
+    "q1": 1879,
+    "q3": 3900
+   },
+   "commerces": {
+    "n": 12,
+    "med": 956,
+    "q1": 579,
+    "q3": 1957
+   }
+  },
+  "78362": {
+   "nom": "Mantes-la-Ville",
+   "maisons": {
+    "n": 2,
+    "med": 3178,
+    "q1": 2026,
+    "q3": 4331
+   },
+   "commerces": {
+    "n": 5,
+    "med": 946,
+    "q1": 316,
+    "q3": 1632
+   }
+  },
+  "78364": {
+   "nom": "Marcq",
+   "maisons": {
+    "n": 7,
+    "med": 2770,
+    "q1": 2120,
+    "q3": 3230
+   },
+   "commerces": null
+  },
+  "78366": {
+   "nom": "Mareil-le-Guyon",
+   "maisons": {
+    "n": 2,
+    "med": 3454,
+    "q1": 3174,
+    "q3": 3733
+   },
+   "commerces": null
+  },
+  "78367": {
+   "nom": "Mareil-Marly",
+   "maisons": {
+    "n": 22,
+    "med": 5536,
+    "q1": 4728,
+    "q3": 5876
+   },
+   "commerces": null
+  },
+  "78368": {
+   "nom": "Mareil-sur-Mauldre",
+   "maisons": {
+    "n": 4,
+    "med": 3272,
+    "q1": 2171,
+    "q3": 4303
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1595,
+    "q1": 1595,
+    "q3": 1595
+   }
+  },
+  "78372": {
+   "nom": "Marly-le-Roi",
+   "maisons": {
+    "n": 23,
+    "med": 5158,
+    "q1": 3777,
+    "q3": 5970
+   },
+   "commerces": null
+  },
+  "78380": {
+   "nom": "Maule",
+   "maisons": {
+    "n": 14,
+    "med": 3123,
+    "q1": 2689,
+    "q3": 3744
+   },
+   "commerces": null
+  },
+  "78382": {
+   "nom": "Maurecourt",
+   "maisons": {
+    "n": 3,
+    "med": 2465,
+    "q1": 2373,
+    "q3": 2723
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1897,
+    "q1": 1897,
+    "q3": 1897
+   }
+  },
+  "78383": {
+   "nom": "Maurepas",
+   "maisons": {
+    "n": 9,
+    "med": 2695,
+    "q1": 2095,
+    "q3": 2820
+   },
+   "commerces": {
+    "n": 10,
+    "med": 1292,
+    "q1": 988,
+    "q3": 2633
+   }
+  },
+  "78384": {
+   "nom": "Médan",
+   "maisons": {
+    "n": 16,
+    "med": 4186,
+    "q1": 3749,
+    "q3": 4394
+   },
+   "commerces": null
+  },
+  "78389": {
+   "nom": "Méré",
+   "maisons": {
+    "n": 15,
+    "med": 3465,
+    "q1": 2736,
+    "q3": 5050
+   },
+   "commerces": {
+    "n": 2,
+    "med": 1135,
+    "q1": 863,
+    "q3": 1406
+   }
+  },
+  "78396": {
+   "nom": "Le Mesnil-le-Roi",
+   "maisons": {
+    "n": 20,
+    "med": 4927,
+    "q1": 4173,
+    "q3": 5757
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1231,
+    "q1": 1231,
+    "q3": 1231
+   }
+  },
+  "78397": {
+   "nom": "Le Mesnil-Saint-Denis",
+   "maisons": {
+    "n": 4,
+    "med": 3266,
+    "q1": 2859,
+    "q3": 3549
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1611,
+    "q1": 1611,
+    "q3": 1611
+   }
+  },
+  "78398": {
+   "nom": "Les Mesnuls",
+   "maisons": {
+    "n": 11,
+    "med": 3764,
+    "q1": 3047,
+    "q3": 4120
+   },
+   "commerces": null
+  },
+  "78401": {
+   "nom": "Meulan-en-Yvelines",
+   "maisons": {
+    "n": 2,
+    "med": 2683,
+    "q1": 1864,
+    "q3": 3503
+   },
+   "commerces": {
+    "n": 4,
+    "med": 1962,
+    "q1": 1178,
+    "q3": 3859
+   }
+  },
+  "78402": {
+   "nom": "Mézières-sur-Seine",
+   "maisons": {
+    "n": 3,
+    "med": 3450,
+    "q1": 2287,
+    "q3": 4299
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1935,
+    "q1": 1935,
+    "q3": 1935
+   }
+  },
+  "78403": {
+   "nom": "Mézy-sur-Seine",
+   "maisons": {
+    "n": 6,
+    "med": 2910,
+    "q1": 2762,
+    "q3": 3484
+   },
+   "commerces": null
+  },
+  "78404": {
+   "nom": "Millemont",
+   "maisons": {
+    "n": 3,
+    "med": 4202,
+    "q1": 2245,
+    "q3": 4879
+   },
+   "commerces": null
+  },
+  "78406": {
+   "nom": "Milon-la-Chapelle",
+   "maisons": {
+    "n": 3,
+    "med": 3145,
+    "q1": 2417,
+    "q3": 7000
+   },
+   "commerces": null
+  },
+  "78407": {
+   "nom": "Mittainville",
+   "maisons": {
+    "n": 7,
+    "med": 2451,
+    "q1": 2239,
+    "q3": 3183
+   },
+   "commerces": null
+  },
+  "78410": {
+   "nom": "Moisson",
+   "maisons": {
+    "n": 1,
+    "med": 2810,
+    "q1": 2810,
+    "q3": 2810
+   },
+   "commerces": null
+  },
+  "78413": {
+   "nom": "Mondreville",
+   "maisons": {
+    "n": 2,
+    "med": 2059,
+    "q1": 1286,
+    "q3": 2832
+   },
+   "commerces": null
+  },
+  "78415": {
+   "nom": "Montainville",
+   "maisons": {
+    "n": 6,
+    "med": 2610,
+    "q1": 2229,
+    "q3": 4490
+   },
+   "commerces": null
+  },
+  "78416": {
+   "nom": "Montalet-le-Bois",
+   "maisons": {
+    "n": 1,
+    "med": 2683,
+    "q1": 2683,
+    "q3": 2683
+   },
+   "commerces": null
+  },
+  "78417": {
+   "nom": "Montchauvet",
+   "maisons": {
+    "n": 3,
+    "med": 2627,
+    "q1": 2409,
+    "q3": 3509
+   },
+   "commerces": null
+  },
+  "78418": {
+   "nom": "Montesson",
+   "maisons": {
+    "n": 13,
+    "med": 4225,
+    "q1": 3256,
+    "q3": 5255
+   },
+   "commerces": {
+    "n": 3,
+    "med": 2628,
+    "q1": 1162,
+    "q3": 4499
+   }
+  },
+  "78420": {
+   "nom": "Montfort-l'Amaury",
+   "maisons": {
+    "n": 24,
+    "med": 4996,
+    "q1": 3878,
+    "q3": 6671
+   },
+   "commerces": null
+  },
+  "78423": {
+   "nom": "Montigny-le-Bretonneux",
+   "maisons": {
+    "n": 3,
+    "med": 2953,
+    "q1": 2902,
+    "q3": 5335
+   },
+   "commerces": {
+    "n": 25,
+    "med": 979,
+    "q1": 748,
+    "q3": 1204
+   }
+  },
+  "78431": {
+   "nom": "Morainvilliers",
+   "maisons": {
+    "n": 10,
+    "med": 3199,
+    "q1": 2640,
+    "q3": 4318
+   },
+   "commerces": null
+  },
+  "78437": {
+   "nom": "Mousseaux-sur-Seine",
+   "maisons": {
+    "n": 1,
+    "med": 2799,
+    "q1": 2799,
+    "q3": 2799
+   },
+   "commerces": null
+  },
+  "78440": {
+   "nom": "Les Mureaux",
+   "maisons": {
+    "n": 3,
+    "med": 2248,
+    "q1": 1763,
+    "q3": 2675
+   },
+   "commerces": {
+    "n": 10,
+    "med": 945,
+    "q1": 624,
+    "q3": 1293
+   }
+  },
+  "78442": {
+   "nom": "Neauphle-le-Château",
+   "maisons": {
+    "n": 11,
+    "med": 3276,
+    "q1": 2727,
+    "q3": 4200
+   },
+   "commerces": null
+  },
+  "78443": {
+   "nom": "Neauphle-le-Vieux",
+   "maisons": {
+    "n": 4,
+    "med": 2825,
+    "q1": 2633,
+    "q3": 3184
+   },
+   "commerces": null
+  },
+  "78444": {
+   "nom": "Neauphlette",
+   "maisons": {
+    "n": 3,
+    "med": 2276,
+    "q1": 2187,
+    "q3": 2292
+   },
+   "commerces": null
+  },
+  "78451": {
+   "nom": "Nézel",
+   "maisons": {
+    "n": 1,
+    "med": 3041,
+    "q1": 3041,
+    "q3": 3041
+   },
+   "commerces": null
+  },
+  "78455": {
+   "nom": "Noisy-le-Roi",
+   "maisons": {
+    "n": 22,
+    "med": 4977,
+    "q1": 4215,
+    "q3": 5356
+   },
+   "commerces": null
+  },
+  "78460": {
+   "nom": "Oinville-sur-Montcient",
+   "maisons": {
+    "n": 2,
+    "med": 4577,
+    "q1": 2451,
+    "q3": 6704
+   },
+   "commerces": null
+  },
+  "78464": {
+   "nom": "Orcemont",
+   "maisons": {
+    "n": 2,
+    "med": 2877,
+    "q1": 2796,
+    "q3": 2958
+   },
+   "commerces": null
+  },
+  "78465": {
+   "nom": "Orgerus",
+   "maisons": {
+    "n": 3,
+    "med": 2941,
+    "q1": 2705,
+    "q3": 4167
+   },
+   "commerces": null
+  },
+  "78466": {
+   "nom": "Orgeval",
+   "maisons": {
+    "n": 47,
+    "med": 4254,
+    "q1": 3698,
+    "q3": 6364
+   },
+   "commerces": {
+    "n": 8,
+    "med": 2002,
+    "q1": 1286,
+    "q3": 3102
+   }
+  },
+  "78470": {
+   "nom": "Orphin",
+   "maisons": {
+    "n": 5,
+    "med": 2618,
+    "q1": 2363,
+    "q3": 4163
+   },
+   "commerces": null
+  },
+  "78475": {
+   "nom": "Osmoy",
+   "maisons": {
+    "n": 1,
+    "med": 4068,
+    "q1": 4068,
+    "q3": 4068
+   },
+   "commerces": null
+  },
+  "78481": {
+   "nom": "Le Pecq",
+   "maisons": {
+    "n": 14,
+    "med": 5542,
+    "q1": 4329,
+    "q3": 7247
+   },
+   "commerces": {
+    "n": 7,
+    "med": 1177,
+    "q1": 935,
+    "q3": 1753
+   }
+  },
+  "78486": {
+   "nom": "Le Perray-en-Yvelines",
+   "maisons": {
+    "n": 6,
+    "med": 2567,
+    "q1": 2209,
+    "q3": 3920
+   },
+   "commerces": {
+    "n": 3,
+    "med": 780,
+    "q1": 530,
+    "q3": 1276
+   }
+  },
+  "78490": {
+   "nom": "Plaisir",
+   "maisons": {
+    "n": 11,
+    "med": 3284,
+    "q1": 2849,
+    "q3": 3813
+   },
+   "commerces": {
+    "n": 9,
+    "med": 1736,
+    "q1": 1159,
+    "q3": 4294
+   }
+  },
+  "78497": {
+   "nom": "Poigny-la-Forêt",
+   "maisons": {
+    "n": 13,
+    "med": 3482,
+    "q1": 2648,
+    "q3": 4701
+   },
+   "commerces": null
+  },
+  "78498": {
+   "nom": "Poissy",
+   "maisons": {
+    "n": 7,
+    "med": 3858,
+    "q1": 3493,
+    "q3": 4585
+   },
+   "commerces": {
+    "n": 12,
+    "med": 1196,
+    "q1": 972,
+    "q3": 2508
+   }
+  },
+  "78501": {
+   "nom": "Porcheville",
+   "maisons": null,
+   "commerces": {
+    "n": 2,
+    "med": 803,
+    "q1": 93,
+    "q3": 1512
+   }
+  },
+  "78502": {
+   "nom": "Le Port-Marly",
+   "maisons": {
+    "n": 1,
+    "med": 5879,
+    "q1": 5879,
+    "q3": 5879
+   },
+   "commerces": {
+    "n": 3,
+    "med": 3149,
+    "q1": 1215,
+    "q3": 3945
+   }
+  },
+  "78505": {
+   "nom": "Prunay-le-Temple",
+   "maisons": {
+    "n": 2,
+    "med": 2810,
+    "q1": 2106,
+    "q3": 3515
+   },
+   "commerces": null
+  },
+  "78506": {
+   "nom": "Prunay-en-Yvelines",
+   "maisons": {
+    "n": 1,
+    "med": 3897,
+    "q1": 3897,
+    "q3": 3897
+   },
+   "commerces": null
+  },
+  "78513": {
+   "nom": "La Queue-les-Yvelines",
+   "maisons": {
+    "n": 7,
+    "med": 3045,
+    "q1": 2795,
+    "q3": 4198
+   },
+   "commerces": null
+  },
+  "78516": {
+   "nom": "Raizeux",
+   "maisons": {
+    "n": 4,
+    "med": 2434,
+    "q1": 2058,
+    "q3": 2990
+   },
+   "commerces": null
+  },
+  "78517": {
+   "nom": "Rambouillet",
+   "maisons": {
+    "n": 30,
+    "med": 3478,
+    "q1": 2873,
+    "q3": 4129
+   },
+   "commerces": {
+    "n": 14,
+    "med": 1306,
+    "q1": 972,
+    "q3": 2143
+   }
+  },
+  "78518": {
+   "nom": "Rennemoulin",
+   "maisons": {
+    "n": 2,
+    "med": 3857,
+    "q1": 3256,
+    "q3": 4458
+   },
+   "commerces": null
+  },
+  "78520": {
+   "nom": "Richebourg",
+   "maisons": {
+    "n": 10,
+    "med": 2556,
+    "q1": 2240,
+    "q3": 3345
+   },
+   "commerces": null
+  },
+  "78522": {
+   "nom": "Rochefort-en-Yvelines",
+   "maisons": {
+    "n": 9,
+    "med": 2754,
+    "q1": 2589,
+    "q3": 3211
+   },
+   "commerces": null
+  },
+  "78528": {
+   "nom": "Rolleboise",
+   "maisons": {
+    "n": 1,
+    "med": 2167,
+    "q1": 2167,
+    "q3": 2167
+   },
+   "commerces": null
+  },
+  "78530": {
+   "nom": "Rosay",
+   "maisons": {
+    "n": 1,
+    "med": 3616,
+    "q1": 3616,
+    "q3": 3616
+   },
+   "commerces": null
+  },
+  "78531": {
+   "nom": "Rosny-sur-Seine",
+   "maisons": {
+    "n": 2,
+    "med": 2950,
+    "q1": 1431,
+    "q3": 4468
+   },
+   "commerces": {
+    "n": 2,
+    "med": 477,
+    "q1": 271,
+    "q3": 684
+   }
+  },
+  "78537": {
+   "nom": "Saint-Arnoult-en-Yvelines",
+   "maisons": {
+    "n": 5,
+    "med": 2556,
+    "q1": 2465,
+    "q3": 3772
+   },
+   "commerces": null
+  },
+  "78545": {
+   "nom": "Saint-Cyr-l'École",
+   "maisons": null,
+   "commerces": {
+    "n": 7,
+    "med": 2394,
+    "q1": 1554,
+    "q3": 3322
+   }
+  },
+  "78548": {
+   "nom": "Saint-Forget",
+   "maisons": {
+    "n": 4,
+    "med": 3193,
+    "q1": 3024,
+    "q3": 4613
+   },
+   "commerces": null
+  },
+  "78550": {
+   "nom": "Saint-Germain-de-la-Grange",
+   "maisons": {
+    "n": 2,
+    "med": 3177,
+    "q1": 3066,
+    "q3": 3287
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1159,
+    "q1": 1159,
+    "q3": 1159
+   }
+  },
+  "78551": {
+   "nom": "Saint-Germain-en-Laye",
+   "maisons": {
+    "n": 64,
+    "med": 6828,
+    "q1": 5640,
+    "q3": 9957
+   },
+   "commerces": {
+    "n": 17,
+    "med": 2191,
+    "q1": 1307,
+    "q3": 3572
+   }
+  },
+  "78557": {
+   "nom": "Saint-Hilarion",
+   "maisons": {
+    "n": 5,
+    "med": 2876,
+    "q1": 2248,
+    "q3": 4020
+   },
+   "commerces": null
+  },
+  "78558": {
+   "nom": "Saint-Illiers-la-Ville",
+   "maisons": {
+    "n": 3,
+    "med": 1966,
+    "q1": 1323,
+    "q3": 2208
+   },
+   "commerces": null
+  },
+  "78561": {
+   "nom": "Saint-Lambert",
+   "maisons": {
+    "n": 1,
+    "med": 3794,
+    "q1": 3794,
+    "q3": 3794
+   },
+   "commerces": null
+  },
+  "78562": {
+   "nom": "Saint-Léger-en-Yvelines",
+   "maisons": {
+    "n": 14,
+    "med": 3642,
+    "q1": 3164,
+    "q3": 4369
+   },
+   "commerces": null
+  },
+  "78564": {
+   "nom": "Saint-Martin-de-Bréthencourt",
+   "maisons": {
+    "n": 3,
+    "med": 2939,
+    "q1": 2758,
+    "q3": 3111
+   },
+   "commerces": null
+  },
+  "78565": {
+   "nom": "Saint-Martin-des-Champs",
+   "maisons": {
+    "n": 3,
+    "med": 3865,
+    "q1": 3067,
+    "q3": 4421
+   },
+   "commerces": null
+  },
+  "78567": {
+   "nom": "Saint-Martin-la-Garenne",
+   "maisons": {
+    "n": 3,
+    "med": 2385,
+    "q1": 2358,
+    "q3": 3119
+   },
+   "commerces": null
+  },
+  "78569": {
+   "nom": "Sainte-Mesme",
+   "maisons": {
+    "n": 2,
+    "med": 2353,
+    "q1": 2337,
+    "q3": 2368
+   },
+   "commerces": null
+  },
+  "78571": {
+   "nom": "Saint-Nom-la-Bretèche",
+   "maisons": {
+    "n": 50,
+    "med": 4409,
+    "q1": 3732,
+    "q3": 5091
+   },
+   "commerces": null
+  },
+  "78575": {
+   "nom": "Saint-Rémy-lès-Chevreuse",
+   "maisons": {
+    "n": 21,
+    "med": 3901,
+    "q1": 3117,
+    "q3": 4656
+   },
+   "commerces": null
+  },
+  "78576": {
+   "nom": "Saint-Rémy-l'Honoré",
+   "maisons": {
+    "n": 23,
+    "med": 3146,
+    "q1": 2727,
+    "q3": 4200
+   },
+   "commerces": null
+  },
+  "78586": {
+   "nom": "Sartrouville",
+   "maisons": {
+    "n": 9,
+    "med": 3613,
+    "q1": 3289,
+    "q3": 4115
+   },
+   "commerces": {
+    "n": 21,
+    "med": 1773,
+    "q1": 1234,
+    "q3": 2588
+   }
+  },
+  "78588": {
+   "nom": "Saulx-Marchais",
+   "maisons": {
+    "n": 2,
+    "med": 3097,
+    "q1": 3031,
+    "q3": 3163
+   },
+   "commerces": null
+  },
+  "78590": {
+   "nom": "Senlisse",
+   "maisons": {
+    "n": 6,
+    "med": 3569,
+    "q1": 3354,
+    "q3": 3688
+   },
+   "commerces": null
+  },
+  "78591": {
+   "nom": "Septeuil",
+   "maisons": {
+    "n": 4,
+    "med": 3080,
+    "q1": 2518,
+    "q3": 4163
+   },
+   "commerces": null
+  },
+  "78597": {
+   "nom": "Soindres",
+   "maisons": {
+    "n": 3,
+    "med": 2782,
+    "q1": 2249,
+    "q3": 3675
+   },
+   "commerces": null
+  },
+  "78601": {
+   "nom": "Sonchamp",
+   "maisons": {
+    "n": 6,
+    "med": 2592,
+    "q1": 2441,
+    "q3": 3245
+   },
+   "commerces": null
+  },
+  "78605": {
+   "nom": "Tacoignières",
+   "maisons": {
+    "n": 3,
+    "med": 2238,
+    "q1": 2217,
+    "q3": 2995
+   },
+   "commerces": null
+  },
+  "78609": {
+   "nom": "Tessancourt-sur-Aubette",
+   "maisons": {
+    "n": 2,
+    "med": 3276,
+    "q1": 2968,
+    "q3": 3584
+   },
+   "commerces": null
+  },
+  "78615": {
+   "nom": "Thiverval-Grignon",
+   "maisons": {
+    "n": 2,
+    "med": 3821,
+    "q1": 1069,
+    "q3": 6573
+   },
+   "commerces": null
+  },
+  "78616": {
+   "nom": "Thoiry",
+   "maisons": {
+    "n": 4,
+    "med": 2928,
+    "q1": 2609,
+    "q3": 4445
+   },
+   "commerces": null
+  },
+  "78618": {
+   "nom": "Tilly",
+   "maisons": {
+    "n": 4,
+    "med": 3343,
+    "q1": 2342,
+    "q3": 4942
+   },
+   "commerces": null
+  },
+  "78620": {
+   "nom": "Toussus-le-Noble",
+   "maisons": {
+    "n": 1,
+    "med": 4292,
+    "q1": 4292,
+    "q3": 4292
+   },
+   "commerces": null
+  },
+  "78621": {
+   "nom": "Trappes",
+   "maisons": null,
+   "commerces": {
+    "n": 31,
+    "med": 1011,
+    "q1": 623,
+    "q3": 1390
+   }
+  },
+  "78623": {
+   "nom": "Le Tremblay-sur-Mauldre",
+   "maisons": {
+    "n": 1,
+    "med": 5332,
+    "q1": 5332,
+    "q3": 5332
+   },
+   "commerces": null
+  },
+  "78624": {
+   "nom": "Triel-sur-Seine",
+   "maisons": {
+    "n": 18,
+    "med": 2796,
+    "q1": 2589,
+    "q3": 3487
+   },
+   "commerces": {
+    "n": 1,
+    "med": 88,
+    "q1": 88,
+    "q3": 88
+   }
+  },
+  "78638": {
+   "nom": "Vaux-sur-Seine",
+   "maisons": {
+    "n": 4,
+    "med": 3183,
+    "q1": 2419,
+    "q3": 3955
+   },
+   "commerces": null
+  },
+  "78640": {
+   "nom": "Vélizy-Villacoublay",
+   "maisons": {
+    "n": 4,
+    "med": 4882,
+    "q1": 3869,
+    "q3": 8193
+   },
+   "commerces": {
+    "n": 29,
+    "med": 1618,
+    "q1": 727,
+    "q3": 2935
+   }
+  },
+  "78642": {
+   "nom": "Verneuil-sur-Seine",
+   "maisons": {
+    "n": 7,
+    "med": 3276,
+    "q1": 2836,
+    "q3": 3879
+   },
+   "commerces": {
+    "n": 1,
+    "med": 1367,
+    "q1": 1367,
+    "q3": 1367
+   }
+  },
+  "78643": {
+   "nom": "Vernouillet",
+   "maisons": {
+    "n": 11,
+    "med": 3567,
+    "q1": 3036,
+    "q3": 4238
+   },
+   "commerces": {
+    "n": 2,
+    "med": 447,
+    "q1": 379,
+    "q3": 516
+   }
+  },
+  "78644": {
+   "nom": "La Verrière",
+   "maisons": null,
+   "commerces": {
+    "n": 2,
+    "med": 627,
+    "q1": 126,
+    "q3": 1128
+   }
+  },
+  "78646": {
+   "nom": "Versailles",
+   "maisons": {
+    "n": 84,
+    "med": 8313,
+    "q1": 7258,
+    "q3": 10061
+   },
+   "commerces": {
+    "n": 36,
+    "med": 2810,
+    "q1": 1578,
+    "q3": 4970
+   }
+  },
+  "78647": {
+   "nom": "Vert",
+   "maisons": {
+    "n": 4,
+    "med": 3859,
+    "q1": 2396,
+    "q3": 5487
+   },
+   "commerces": null
+  },
+  "78650": {
+   "nom": "Le Vésinet",
+   "maisons": {
+    "n": 128,
+    "med": 7947,
+    "q1": 6384,
+    "q3": 9289
+   },
+   "commerces": {
+    "n": 2,
+    "med": 4847,
+    "q1": 3333,
+    "q3": 6360
+   }
+  },
+  "78653": {
+   "nom": "Vicq",
+   "maisons": {
+    "n": 2,
+    "med": 2382,
+    "q1": 1809,
+    "q3": 2954
+   },
+   "commerces": null
+  },
+  "78668": {
+   "nom": "La Villeneuve-en-Chevrie",
+   "maisons": {
+    "n": 1,
+    "med": 2374,
+    "q1": 2374,
+    "q3": 2374
+   },
+   "commerces": null
+  },
+  "78672": {
+   "nom": "Villennes-sur-Seine",
+   "maisons": {
+    "n": 35,
+    "med": 4505,
+    "q1": 3791,
+    "q3": 5771
+   },
+   "commerces": {
+    "n": 2,
+    "med": 1636,
+    "q1": 682,
+    "q3": 2589
+   }
+  },
+  "78674": {
+   "nom": "Villepreux",
+   "maisons": {
+    "n": 6,
+    "med": 6047,
+    "q1": 4913,
+    "q3": 6746
+   },
+   "commerces": {
+    "n": 2,
+    "med": 1095,
+    "q1": 920,
+    "q3": 1270
+   }
+  },
+  "78677": {
+   "nom": "Villette",
+   "maisons": {
+    "n": 1,
+    "med": 3653,
+    "q1": 3653,
+    "q3": 3653
+   },
+   "commerces": null
+  },
+  "78681": {
+   "nom": "Villiers-le-Mahieu",
+   "maisons": {
+    "n": 3,
+    "med": 2457,
+    "q1": 2442,
+    "q3": 3837
+   },
+   "commerces": null
+  },
+  "78683": {
+   "nom": "Villiers-Saint-Frédéric",
+   "maisons": {
+    "n": 5,
+    "med": 2990,
+    "q1": 2635,
+    "q3": 3590
+   },
+   "commerces": null
+  },
+  "78686": {
+   "nom": "Viroflay",
+   "maisons": {
+    "n": 9,
+    "med": 6609,
+    "q1": 5089,
+    "q3": 7767
+   },
+   "commerces": {
+    "n": 6,
+    "med": 1713,
+    "q1": 1187,
+    "q3": 4990
+   }
+  },
+  "78688": {
+   "nom": "Voisins-le-Bretonneux",
+   "maisons": {
+    "n": 6,
+    "med": 3893,
+    "q1": 3665,
+    "q3": 4402
+   },
+   "commerces": {
+    "n": 9,
+    "med": 1818,
+    "q1": 1171,
+    "q3": 2629
+   }
+  },
+  "92002": {
+   "nom": "Antony",
+   "maisons": {
+    "n": 38,
+    "med": 5684,
+    "q1": 3670,
+    "q3": 7030
+   },
+   "commerces": {
+    "n": 16,
+    "med": 1907,
+    "q1": 863,
+    "q3": 3049
+   }
+  },
+  "92004": {
+   "nom": "Asnières-sur-Seine",
+   "maisons": {
+    "n": 39,
+    "med": 7254,
+    "q1": 5035,
+    "q3": 9044
+   },
+   "commerces": {
+    "n": 37,
+    "med": 2879,
+    "q1": 2103,
+    "q3": 4327
+   }
+  },
+  "92007": {
+   "nom": "Bagneux",
+   "maisons": {
+    "n": 1,
+    "med": 9068,
+    "q1": 9068,
+    "q3": 9068
+   },
+   "commerces": {
+    "n": 13,
+    "med": 1759,
+    "q1": 1225,
+    "q3": 3275
+   }
+  },
+  "92009": {
+   "nom": "Bois-Colombes",
+   "maisons": {
+    "n": 15,
+    "med": 7618,
+    "q1": 5517,
+    "q3": 9245
+   },
+   "commerces": {
+    "n": 4,
+    "med": 4232,
+    "q1": 3466,
+    "q3": 5152
+   }
+  },
+  "92012": {
+   "nom": "Boulogne-Billancourt",
+   "maisons": {
+    "n": 52,
+    "med": 12212,
+    "q1": 8834,
+    "q3": 16850
+   },
+   "commerces": {
+    "n": 83,
+    "med": 5631,
+    "q1": 3676,
+    "q3": 6574
+   }
+  },
+  "92014": {
+   "nom": "Bourg-la-Reine",
+   "maisons": {
+    "n": 11,
+    "med": 6993,
+    "q1": 6535,
+    "q3": 7751
+   },
+   "commerces": {
+    "n": 7,
+    "med": 2877,
+    "q1": 2399,
+    "q3": 3513
+   }
+  },
+  "92019": {
+   "nom": "Châtenay-Malabry",
+   "maisons": {
+    "n": 7,
+    "med": 6097,
+    "q1": 5577,
+    "q3": 8979
+   },
+   "commerces": {
+    "n": 8,
+    "med": 2748,
+    "q1": 1726,
+    "q3": 5537
+   }
+  },
+  "92020": {
+   "nom": "Châtillon",
+   "maisons": {
+    "n": 10,
+    "med": 5151,
+    "q1": 4872,
+    "q3": 6107
+   },
+   "commerces": {
+    "n": 9,
+    "med": 2423,
+    "q1": 1372,
+    "q3": 3807
+   }
+  },
+  "92022": {
+   "nom": "Chaville",
+   "maisons": {
+    "n": 11,
+    "med": 6298,
+    "q1": 5172,
+    "q3": 7379
+   },
+   "commerces": {
+    "n": 3,
+    "med": 3191,
+    "q1": 3132,
+    "q3": 4084
+   }
+  },
+  "92023": {
+   "nom": "Clamart",
+   "maisons": {
+    "n": 39,
+    "med": 6300,
+    "q1": 5387,
+    "q3": 7184
+   },
+   "commerces": {
+    "n": 18,
+    "med": 2887,
+    "q1": 1660,
+    "q3": 4713
+   }
+  },
+  "92024": {
+   "nom": "Clichy",
+   "maisons": {
+    "n": 1,
+    "med": 10909,
+    "q1": 10909,
+    "q3": 10909
+   },
+   "commerces": {
+    "n": 61,
+    "med": 3956,
+    "q1": 2284,
+    "q3": 5726
+   }
+  },
+  "92025": {
+   "nom": "Colombes",
+   "maisons": {
+    "n": 29,
+    "med": 6707,
+    "q1": 5503,
+    "q3": 7980
+   },
+   "commerces": {
+    "n": 22,
+    "med": 2430,
+    "q1": 1755,
+    "q3": 4075
+   }
+  },
+  "92026": {
+   "nom": "Courbevoie",
+   "maisons": {
+    "n": 7,
+    "med": 8282,
+    "q1": 7177,
+    "q3": 9092
+   },
+   "commerces": {
+    "n": 54,
+    "med": 3696,
+    "q1": 2698,
+    "q3": 5196
+   }
+  },
+  "92032": {
+   "nom": "Fontenay-aux-Roses",
+   "maisons": {
+    "n": 12,
+    "med": 4940,
+    "q1": 4052,
+    "q3": 6298
+   },
+   "commerces": {
+    "n": 3,
+    "med": 2288,
+    "q1": 1984,
+    "q3": 3390
+   }
+  },
+  "92033": {
+   "nom": "Garches",
+   "maisons": {
+    "n": 53,
+    "med": 7800,
+    "q1": 6205,
+    "q3": 9209
+   },
+   "commerces": {
+    "n": 1,
+    "med": 2740,
+    "q1": 2740,
+    "q3": 2740
+   }
+  },
+  "92035": {
+   "nom": "La Garenne-Colombes",
+   "maisons": {
+    "n": 22,
+    "med": 7693,
+    "q1": 5837,
+    "q3": 9665
+   },
+   "commerces": {
+    "n": 8,
+    "med": 3844,
+    "q1": 2908,
+    "q3": 5854
+   }
+  },
+  "92036": {
+   "nom": "Gennevilliers",
+   "maisons": null,
+   "commerces": {
+    "n": 47,
+    "med": 1691,
+    "q1": 1335,
+    "q3": 2582
+   }
+  },
+  "92040": {
+   "nom": "Issy-les-Moulineaux",
+   "maisons": {
+    "n": 12,
+    "med": 8630,
+    "q1": 7222,
+    "q3": 9227
+   },
+   "commerces": {
+    "n": 18,
+    "med": 4057,
+    "q1": 3254,
+    "q3": 6871
+   }
+  },
+  "92044": {
+   "nom": "Levallois-Perret",
+   "maisons": {
+    "n": 6,
+    "med": 9943,
+    "q1": 8658,
+    "q3": 11406
+   },
+   "commerces": {
+    "n": 63,
+    "med": 4611,
+    "q1": 3425,
+    "q3": 7419
+   }
+  },
+  "92046": {
+   "nom": "Malakoff",
+   "maisons": {
+    "n": 4,
+    "med": 6211,
+    "q1": 2734,
+    "q3": 7028
+   },
+   "commerces": {
+    "n": 21,
+    "med": 2626,
+    "q1": 1446,
+    "q3": 3603
+   }
+  },
+  "92047": {
+   "nom": "Marnes-la-Coquette",
+   "maisons": {
+    "n": 9,
+    "med": 9443,
+    "q1": 5967,
+    "q3": 11713
+   },
+   "commerces": null
+  },
+  "92048": {
+   "nom": "Meudon",
+   "maisons": {
+    "n": 32,
+    "med": 7499,
+    "q1": 6685,
+    "q3": 9038
+   },
+   "commerces": {
+    "n": 2,
+    "med": 3754,
+    "q1": 2354,
+    "q3": 5155
+   }
+  },
+  "92049": {
+   "nom": "Montrouge",
+   "maisons": {
+    "n": 4,
+    "med": 6440,
+    "q1": 4797,
+    "q3": 7263
+   },
+   "commerces": {
+    "n": 32,
+    "med": 3844,
+    "q1": 2921,
+    "q3": 4800
+   }
+  },
+  "92050": {
+   "nom": "Nanterre",
+   "maisons": {
+    "n": 19,
+    "med": 5027,
+    "q1": 3930,
+    "q3": 5750
+   },
+   "commerces": {
+    "n": 51,
+    "med": 2086,
+    "q1": 1394,
+    "q3": 3488
+   }
+  },
+  "92051": {
+   "nom": "Neuilly-sur-Seine",
+   "maisons": {
+    "n": 63,
+    "med": 15959,
+    "q1": 12273,
+    "q3": 18571
+   },
+   "commerces": {
+    "n": 31,
+    "med": 8428,
+    "q1": 6865,
+    "q3": 11821
+   }
+  },
+  "92060": {
+   "nom": "Le Plessis-Robinson",
+   "maisons": {
+    "n": 7,
+    "med": 5342,
+    "q1": 4270,
+    "q3": 8500
+   },
+   "commerces": {
+    "n": 16,
+    "med": 3519,
+    "q1": 2023,
+    "q3": 6121
+   }
+  },
+  "92062": {
+   "nom": "Puteaux",
+   "maisons": {
+    "n": 7,
+    "med": 5695,
+    "q1": 4187,
+    "q3": 5886
+   },
+   "commerces": {
+    "n": 38,
+    "med": 3850,
+    "q1": 2828,
+    "q3": 4957
+   }
+  },
+  "92063": {
+   "nom": "Rueil-Malmaison",
+   "maisons": {
+    "n": 97,
+    "med": 7231,
+    "q1": 6000,
+    "q3": 9139
+   },
+   "commerces": {
+    "n": 38,
+    "med": 2906,
+    "q1": 1701,
+    "q3": 4218
+   }
+  },
+  "92064": {
+   "nom": "Saint-Cloud",
+   "maisons": {
+    "n": 57,
+    "med": 8901,
+    "q1": 7915,
+    "q3": 11196
+   },
+   "commerces": {
+    "n": 18,
+    "med": 2402,
+    "q1": 1798,
+    "q3": 3851
+   }
+  },
+  "92071": {
+   "nom": "Sceaux",
+   "maisons": {
+    "n": 33,
+    "med": 7707,
+    "q1": 5702,
+    "q3": 9561
+   },
+   "commerces": {
+    "n": 5,
+    "med": 2048,
+    "q1": 1006,
+    "q3": 3153
+   }
+  },
+  "92072": {
+   "nom": "Sèvres",
+   "maisons": {
+    "n": 37,
+    "med": 8176,
+    "q1": 6146,
+    "q3": 9673
+   },
+   "commerces": {
+    "n": 5,
+    "med": 2699,
+    "q1": 1792,
+    "q3": 3266
+   }
+  },
+  "92073": {
+   "nom": "Suresnes",
+   "maisons": {
+    "n": 19,
+    "med": 7518,
+    "q1": 7008,
+    "q3": 8602
+   },
+   "commerces": {
+    "n": 25,
+    "med": 2992,
+    "q1": 2252,
+    "q3": 3747
+   }
+  },
+  "92075": {
+   "nom": "Vanves",
+   "maisons": {
+    "n": 11,
+    "med": 8634,
+    "q1": 6382,
+    "q3": 10502
+   },
+   "commerces": {
+    "n": 11,
+    "med": 4340,
+    "q1": 2699,
+    "q3": 7611
+   }
+  },
+  "92076": {
+   "nom": "Vaucresson",
+   "maisons": {
+    "n": 52,
+    "med": 7836,
+    "q1": 6556,
+    "q3": 9434
+   },
+   "commerces": {
+    "n": 1,
+    "med": 2750,
+    "q1": 2750,
+    "q3": 2750
+   }
+  },
+  "92077": {
+   "nom": "Ville-d'Avray",
+   "maisons": {
+    "n": 18,
+    "med": 7539,
+    "q1": 5041,
+    "q3": 8662
+   },
+   "commerces": {
+    "n": 1,
+    "med": 6259,
+    "q1": 6259,
+    "q3": 6259
+   }
+  },
+  "92078": {
+   "nom": "Villeneuve-la-Garenne",
+   "maisons": {
+    "n": 4,
+    "med": 7491,
+    "q1": 5615,
+    "q3": 8782
+   },
+   "commerces": {
+    "n": 16,
+    "med": 1771,
+    "q1": 942,
+    "q3": 2663
+   }
+  }
+ }
+}

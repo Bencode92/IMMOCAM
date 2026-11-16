@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMMOCAM · Hôtels particuliers</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root{
+  --bg:#fafaf9;--surface:#ffffff;--surface2:#f5f5f4;--border:#e7e5e4;
+  --text:#1c1917;--text2:#57534e;--text3:#a8a29e;
+  --accent:#1e3a5f;--accent2:#2d5a8e;--green:#16a34a;--red:#dc2626;--yellow:#b45309;
+  --radius:12px;--radius-sm:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+header{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;padding:1rem 1.5rem;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+.logo{font-weight:700;font-size:1.15rem;letter-spacing:-.02em;color:var(--accent)}.logo span{color:var(--text3)}
+.page{font-weight:600;color:var(--text2)}
+header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:1px solid var(--border);padding:.35rem .7rem;border-radius:6px}
+.meta{margin-left:auto;display:flex;gap:1rem;font-size:.78rem;color:var(--text2);align-items:center;flex-wrap:wrap}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:.35rem;vertical-align:middle}
+.btn{padding:.42rem .85rem;border-radius:6px;font:500 .75rem Inter,sans-serif;cursor:pointer;border:1px solid var(--accent);background:none;color:var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+.filter-bar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;padding:.8rem 1.5rem;background:var(--surface);border-bottom:1px solid var(--border)}
+.filter-bar select,.filter-bar input{background:var(--surface);border:1px solid var(--border);color:var(--text);padding:.45rem .75rem;border-radius:var(--radius-sm);font:.78rem Inter,sans-serif;outline:none}
+.pill{padding:.42rem .8rem;border-radius:999px;border:1px solid var(--border);background:var(--surface);font:500 .75rem Inter,sans-serif;cursor:pointer;color:var(--text2)}
+.pill.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.wrap{max-width:1250px;margin:0 auto;padding:1.2rem 1.5rem 3rem}
+.info{font-size:.8rem;color:var(--text2);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.8rem 1rem;margin-bottom:1rem;line-height:1.5}
+.info b{color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.55rem;position:relative}
+.card.new{border-color:var(--green);box-shadow:0 0 0 1px var(--green) inset}
+.card.ecarte{opacity:.55}
+.top{display:flex;gap:.8rem;align-items:flex-start}
+.score{flex:0 0 46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:1rem;color:#fff}
+.title{font-weight:600;font-size:.9rem;line-height:1.3;color:var(--text);text-decoration:none}
+.title:hover{color:var(--accent2);text-decoration:underline}
+.sub{font-size:.75rem;color:var(--text3);margin-top:.15rem}
+.badge{font-size:.62rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.15rem .45rem;border-radius:4px;margin-right:.3rem;vertical-align:middle}
+.b-new{background:#dcfce7;color:var(--green)}.b-off{background:var(--surface2);color:var(--text3)}.b-drop{background:#fee2e2;color:var(--red)}
+.figs{display:grid;grid-template-columns:repeat(4,1fr);gap:.4rem;background:var(--surface2);border-radius:var(--radius-sm);padding:.55rem .6rem}
+.figs div{font-size:.66rem;color:var(--text3);text-transform:uppercase;letter-spacing:.04em}
+.figs b{display:block;font-size:.86rem;color:var(--text);text-transform:none;letter-spacing:0;margin-top:.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.3rem}
+.chip{font-size:.7rem;padding:.18rem .5rem;border-radius:999px;background:var(--surface2);color:var(--text2);border:1px solid var(--border)}
+.chip.usage-pro{background:#dcfce7;color:var(--green);border-color:#bbf7d0}
+.chip.usage-hab{background:#fef3c7;color:var(--yellow);border-color:#fde68a}
+.chip.alert{background:#fee2e2;color:var(--red);border-color:#fecaca}
+.desc{font-size:.76rem;color:var(--text2);line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.foot{display:flex;gap:.5rem;align-items:center;margin-top:auto}
+.foot select,.foot input{font:.75rem Inter,sans-serif;border:1px solid var(--border);border-radius:6px;padding:.35rem .5rem;background:var(--surface);color:var(--text)}
+.foot input{flex:1;min-width:0}
+.pos{color:var(--green)}.neg{color:var(--red)}
+.empty{text-align:center;color:var(--text3);padding:3rem 1rem;font-size:.9rem}
+@media(max-width:640px){header,.filter-bar,.wrap{padding-left:16px;padding-right:16px}.grid{grid-template-columns:1fr}.figs{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">IMMO<span>CAM</span></div>
+  <div class="page">Hôtels particuliers · événementiel / bureaux</div>
+  <a class="back" href="dashboard.html">← Bureaux</a>
+  <div class="meta">
+    <span><span class="dot" style="background:var(--green)"></span><b id="sNew">0</b> nouveaux pour toi</span>
+    <span id="sTotal">0 annonces</span>
+    <span id="sMaj" style="color:var(--text3)"></span>
+    <button class="btn" id="bVu">Tout marquer comme vu</button>
+    <button class="btn" id="bExp" title="Sauvegarder tes statuts et notes (fichier)">Exporter</button>
+    <button class="btn" id="bImp">Importer</button><input type="file" id="fImp" accept=".json" hidden>
+  </div>
+</header>
+<div class="filter-bar">
+  <button class="pill on" id="fNew">Nouveaux seulement</button>
+  <select id="fStatut"><option value="">Tous statuts</option></select>
+  <select id="fSource"><option value="">Toutes sources</option></select>
+  <select id="fZone"><option value="">Toutes zones</option><option value="75">Paris</option><option value="92">Hauts-de-Seine</option><option value="autre">Autres</option></select>
+  <select id="fUsage"><option value="">Tout usage</option><option value="pro">Déjà bureaux / commercial</option><option value="hab">Habitation</option></select>
+  <input id="fSurf" type="number" placeholder="m² min" style="width:85px">
+  <input id="fPrix" type="number" placeholder="Prix max (M€)" style="width:110px">
+  <select id="fSort"><option value="score">Tri : note</option><option value="ecart">Tri : prix vs DVF</option><option value="date">Tri : plus récentes</option><option value="surf">Tri : surface</option><option value="prix">Tri : prix</option></select>
+  <label style="font-size:.78rem;color:var(--text2)"><input type="checkbox" id="fOff"> Retirées / écartées</label>
+</div>
+<div class="wrap">
+  <div class="info" id="info">Chargement…</div>
+  <div class="grid" id="grid"></div>
+</div>
+<script>
+const LS = 'immocam.hp.v1';
+const STATUTS = [['nouveau','Nouveau'],['avoir','À regarder'],['visiter','À visiter'],['visite','Visité'],['offre','Offre'],['ecarte','Écarté']];
+const fmt = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 0 });
+const meur = v => v ? (v / 1e6).toLocaleString('fr-FR', { maximumFractionDigits: 2 }) + ' M€' : '—';
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+let DB = { meta: {}, annonces: {} }, U = load(), onlyNew = true;
+function load() { try { return JSON.parse(localStorage.getItem(LS)) || { vus: {}, st: {}, notes: {} }; } catch (e) { return { vus: {}, st: {}, notes: {} }; } }
+function save() { try { localStorage.setItem(LS, JSON.stringify(U)); } catch (e) {} }
+const isNew = x => !U.vus[x.id];
+
+async function init() {
+  try {
+    const r = await fetch('data/hp_db.json?t=' + Date.now());
+    DB = await r.json();
+  } catch (e) {
+    document.getElementById('info').textContent = 'Impossible de charger data/hp_db.json.';
+    return;
+  }
+  const srcs = [...new Set(Object.values(DB.annonces).map(x => x.source))].sort();
+  document.getElementById('fSource').innerHTML += srcs.map(s => `<option>${s}</option>`).join('');
+  document.getElementById('fStatut').innerHTML += STATUTS.map(([k, l]) => `<option value="${k}">${l}</option>`).join('');
+  if (!Object.values(DB.annonces).some(isNew)) setNew(false);
+  render();
+}
+function setNew(v) { onlyNew = v; document.getElementById('fNew').classList.toggle('on', v); }
+
+function render() {
+  const A = Object.values(DB.annonces);
+  const g = id => document.getElementById(id).value;
+  const off = document.getElementById('fOff').checked;
+  let L = A.filter(x => {
+    const st = U.st[x.id] || 'nouveau', e = x.eval || {};
+    if (onlyNew && !isNew(x)) return false;
+    if (!off && (!x.actif || st === 'ecarte')) return false;
+    if (g('fStatut') && st !== g('fStatut')) return false;
+    if (g('fSource') && x.source !== g('fSource')) return false;
+    const d = (e.insee || '').slice(0, 2);
+    if (g('fZone') && (g('fZone') === 'autre' ? ['75', '92'].includes(d) : d !== g('fZone'))) return false;
+    const pro = (e.usage || '').startsWith('bureaux');
+    if (g('fUsage') === 'pro' && !pro) return false;
+    if (g('fUsage') === 'hab' && pro) return false;
+    if (+g('fSurf') && (x.surface || 0) < +g('fSurf')) return false;
+    if (+g('fPrix') && (x.prix || 0) > +g('fPrix') * 1e6) return false;
+    return true;
+  });
+  const so = g('fSort');
+  const key = { score: x => -(x.eval?.score || 0), ecart: x => x.eval?.ecart_dvf ?? 9, date: x => -Date.parse(x.first_seen), surf: x => -(x.surface || 0), prix: x => x.prix || 9e12 }[so];
+  L.sort((a, b) => key(a) - key(b));
+  const nNew = A.filter(x => x.actif && isNew(x)).length;
+  document.getElementById('sNew').textContent = nNew;
+  document.getElementById('sTotal').textContent = A.filter(x => x.actif).length + ' annonces actives';
+  document.getElementById('sMaj').textContent = DB.meta.maj ? 'mise à jour ' + new Date(DB.meta.maj).toLocaleDateString('fr-FR') : '';
+  const err = Object.keys(DB.meta.erreurs || {});
+  document.getElementById('info').innerHTML = `<b>${L.length}</b> annonce${L.length > 1 ? 's' : ''} affichée${L.length > 1 ? 's' : ''}${onlyNew ? ' (nouvelles pour toi)' : ''}.
+    Collecte automatique chaque matin : Barnes, enchères Licitor. Belles Demeures, Figaro, CBRE et Leboncoin bloquent les robots : ils arriveront via tes alertes e-mail.
+    La note (sur 100) favorise la surface, un prix sous la référence DVF de la commune, un usage déjà bureaux ou commercial et les atouts événementiels ; elle retire des points pour voie privée, copropriété, DPE F/G.${err.length ? ' <span class="neg">Source en panne au dernier passage : ' + err.join(', ') + '.</span>' : ''}`;
+  document.getElementById('grid').innerHTML = L.length ? L.map(card).join('') : `<div class="empty">${onlyNew ? 'Rien de nouveau depuis ta dernière visite.' : 'Aucune annonce pour ces filtres.'}</div>`;
+}
+
+function card(x) {
+  const e = x.eval || {}, st = U.st[x.id] || 'nouveau', sc = e.score || 0;
+  const col = sc >= 65 ? 'var(--green)' : sc >= 45 ? 'var(--accent2)' : sc >= 30 ? 'var(--yellow)' : 'var(--text3)';
+  const ec = e.ecart_dvf;
+  const ecTxt = ec == null ? (x.extra?.mise_a_prix ? '<span title="Mise à prix d\'enchère : non comparable">n/a</span>' : '—') : `<span class="${ec <= 0 ? 'pos' : 'neg'}">${ec > 0 ? '+' : ''}${Math.round(ec * 100)} %</span>`;
+  const pro = (e.usage || '').startsWith('bureaux');
+  const drop = (x.historique_prix || []).length && x.historique_prix.at(-1).avant > x.prix;
+  return `<div class="card ${isNew(x) ? 'new' : ''} ${st === 'ecarte' ? 'ecarte' : ''}">
+    <div class="top"><div class="score" style="background:${col}" title="Note événementiel / bureaux">${sc}</div>
+      <div><a class="title" href="${esc(x.url)}" target="_blank" rel="noopener" data-open="${esc(x.id)}">${isNew(x) ? '<span class="badge b-new">Nouveau</span>' : ''}${!x.actif ? '<span class="badge b-off">Retirée</span>' : ''}${drop ? '<span class="badge b-drop">Baisse de prix</span>' : ''}${esc(x.titre)}</a>
+      <div class="sub">${esc(x.commune)} · ${esc(x.source)} · vue le ${new Date(x.first_seen).toLocaleDateString('fr-FR')}${x.dpe ? ' · DPE ' + x.dpe : ''}${x.extra?.audience ? ' · audience ' + esc(x.extra.audience) : ''}</div></div></div>
+    <div class="figs"><div>${x.extra?.mise_a_prix ? 'Mise à prix' : 'Prix'}<b>${meur(x.prix)}</b></div><div>Surface<b>${x.surface ? fmt.format(x.surface) + ' m²' : '—'}</b></div>
+      <div>€/m²<b>${e.prix_m2 ? fmt.format(e.prix_m2) : '—'}</b></div><div title="Écart avec la médiane DVF ${pro ? 'des immeubles commerciaux' : 'des grandes maisons'} de la commune (${e.dvf_n || 0} ventes)">vs DVF<b>${ecTxt}</b></div></div>
+    <div class="chips"><span class="chip ${pro ? 'usage-pro' : 'usage-hab'}">${esc(e.usage || '')}</span>${(e.alertes || []).map(a => `<span class="chip alert">⚠ ${esc(a)}</span>`).join('')}${(e.atouts || []).map(a => `<span class="chip">${esc(a)}</span>`).join('')}</div>
+    ${x.description ? `<div class="desc">${esc(x.description)}</div>` : ''}
+    <div class="foot"><select data-st="${esc(x.id)}">${STATUTS.map(([k, l]) => `<option value="${k}" ${k === st ? 'selected' : ''}>${l}</option>`).join('')}</select>
+      <input data-note="${esc(x.id)}" value="${esc(U.notes[x.id] || '')}" placeholder="Note perso (reste dans ce navigateur)"></div>
+  </div>`;
+}
+
+document.getElementById('grid').addEventListener('change', e => {
+  const t = e.target;
+  if (t.dataset.st) { U.st[t.dataset.st] = t.value; U.vus[t.dataset.st] = 1; save(); render(); }
+});
+document.getElementById('grid').addEventListener('input', e => { const t = e.target; if (t.dataset.note) { U.notes[t.dataset.note] = t.value; save(); } });
+document.getElementById('grid').addEventListener('click', e => { const a = e.target.closest('[data-open]'); if (a) { U.vus[a.dataset.open] = 1; save(); setTimeout(render, 300); } });
+document.getElementById('fNew').addEventListener('click', () => { setNew(!onlyNew); render(); });
+['fStatut', 'fSource', 'fZone', 'fUsage', 'fSort', 'fOff'].forEach(id => document.getElementById(id).addEventListener('change', render));
+['fSurf', 'fPrix'].forEach(id => document.getElementById(id).addEventListener('input', render));
+document.getElementById('bVu').addEventListener('click', () => { Object.keys(DB.annonces).forEach(k => U.vus[k] = 1); save(); setNew(false); render(); });
+document.getElementById('bExp').addEventListener('click', () => {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(U, null, 1)], { type: 'application/json' }));
+  a.download = 'immocam-hotels-statuts-' + new Date().toISOString().slice(0, 10) + '.json'; a.click();
+});
+document.getElementById('bImp').addEventListener('click', () => document.getElementById('fImp').click());
+document.getElementById('fImp').addEventListener('change', async e => {
+  try { const j = JSON.parse(await e.target.files[0].text()); U = { vus: j.vus || {}, st: j.st || {}, notes: j.notes || {} }; save(); render(); } catch (err) { alert('Fichier invalide'); }
+});
+init();
+</script>
+</body>
+</html>

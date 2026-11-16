@@ -1,0 +1,43 @@
+name: Hotels particuliers
+
+on:
+  schedule:
+    - cron: '30 4 * * *'   # chaque matin ~6h30 heure de Paris
+    - cron: '0 3 2 * *'    # le 2 de chaque mois : référentiel DVF
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hotels
+  cancel-in-progress: false
+
+jobs:
+  hotels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Dépendances
+        run: pip install requests beautifulsoup4
+
+      - name: Référentiel DVF (mensuel)
+        if: github.event.schedule == '0 3 2 * *'
+        run: python scripts/build_dvf_ref_hp.py --cache /tmp/dvf
+
+      - name: Collecte des annonces
+        run: python run_hp.py
+
+      - name: Commit
+        run: |
+          git config user.name "IMMOCAM Bot"
+          git config user.email "bot@immocam.local"
+          git add data/hp_db.json data/hp_geocache.json data/dvf_ref_hp.json
+          git diff --staged --quiet && exit 0
+          git commit -m "hotels $(date +%Y-%m-%d) — $(python3 -c "import json;m=json.load(open('data/hp_db.json'))['meta'];print(f\"{m['nouveaux_du_jour']} nouveaux, {m['actives']} actives\")")"
+          git pull --rebase -X theirs origin main && git push
