@@ -370,7 +370,9 @@ function extraire() {
     R.push({ id: host + ':' + u, source: host, url: u, titre: t.slice(0, 140), commune: v, surface: surf, prix, description: t.slice(0, 800) });
   });
   const txt = JSON.stringify(R);
-  (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert(R.length + ' annonces copiées. Va sur IMMOCAM et clique « Coller des annonces ».'),
+  const msg = R.length + ' annonces copiées. Va sur IMMOCAM et clique « Coller des annonces ».';
+  if (typeof copy === 'function') { copy(txt); alert(msg); return; } // console Chrome/Safari : copie sans passer par le presse-papiers web
+  (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert(msg),
     () => prompt('Copie ce texte (Cmd+C) puis colle-le dans IMMOCAM :', txt));
 }
 const CODE = '(' + extraire.toString() + ')()';
