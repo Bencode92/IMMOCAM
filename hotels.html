@@ -118,7 +118,7 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
   <select id="fStatut"><option value="">Tous statuts</option></select>
   <select id="fSource"><option value="">Toutes sources</option></select>
   <select id="fZone"><option value="">Paris + Neuilly</option><option value="Paris ouest">Paris ouest (7, 8, 15, 16, 17)</option><option value="Paris (autre)">Paris autres arrondissements</option><option value="Neuilly">Neuilly</option></select>
-  <select id="fUsage"><option value="">Tout usage</option><option value="pro">Déjà bureaux / commercial</option><option value="hab">Habitation</option></select>
+  <select id="fUsage"><option value="">Tous types de biens</option><option value="hab">Hôtels particuliers, maisons (habitation)</option><option value="pro">Bureaux, immeubles (déjà commercial)</option></select>
   <input id="fSurf" type="number" placeholder="m² min" style="width:85px">
   <input id="fPrix" type="number" placeholder="Prix max (M€)" style="width:110px">
   <select id="fSort"><option value="score">Tri : note</option><option value="ecart">Tri : prix vs DVF</option><option value="date">Tri : plus récentes</option><option value="surf">Tri : surface</option><option value="prix">Tri : prix</option></select>
@@ -126,14 +126,15 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
 </div>
 <div class="wrap">
   <div class="info" id="info">Chargement…</div>
-  <details class="info links"><summary><b>Sites bloqués : récupérer les annonces en 2 clics</b> (Belles Demeures, Figaro, Sotheby's, Kretz…)</summary>
-    <ol style="margin:.7rem 0 0 1.1rem;line-height:1.7">
-      <li>Fais glisser ce bouton dans ta barre de favoris (une seule fois) : <a id="bkm" class="btn primary" style="text-decoration:none;cursor:grab">Copier les annonces</a>
-        — ou <button class="btn" id="bCode">copier le code console</button> (à coller dans la console du site, Cmd+Option+J).</li>
-      <li>Sur le site, fais ta recherche (Paris / Neuilly) et clique le favori : il copie toutes les annonces visibles.</li>
-      <li>Reviens ici et clique <b>Coller des annonces</b> : seuls Paris + Neuilly ≥ 500 m² sont gardés, les doublons ignorés.</li>
+  <details class="info links"><summary><b>Sites bloqués : récupérer les annonces</b> — un lien de recherche direct et le code pour chaque site</summary>
+    <table class="sites"><thead><tr><th>Site</th><th>1. Ouvrir la recherche</th><th>2. Code à coller dans la console du site</th></tr></thead><tbody id="bloques"></tbody></table>
+    <div style="font-size:.76rem;color:var(--text3);margin-top:.3rem">Ces sites me bloquent : je n'ai pas pu ouvrir ces liens moi-même. Si l'un tombe sur une page vide, fais la recherche à la main sur le site.</div>
+    <ol style="margin:.7rem 0 0 1.1rem;line-height:1.7;font-size:.8rem">
+      <li>Clique <b>Ouvrir la recherche</b> (Paris, achat, hôtel particulier). Ajuste au besoin : 500 m² minimum, Neuilly.</li>
+      <li>Clique <b>Copier le code</b>, puis sur le site : Cmd+Option+J → onglet <b>Console</b> → efface (Cmd+K) → colle (Cmd+V) → Entrée. La 1<sup>re</sup> ligne collée doit commencer par <code>(function extraire</code>. S'il refuse le collage : tape <code>allow pasting</code>, Entrée, recolle.</li>
+      <li>Un message « X annonces copiées » s'affiche. Reviens ici et clique <b>Coller des annonces</b> (en haut). Recommence pour chaque page de résultats.</li>
     </ol>
-    <div style="font-size:.78rem;color:var(--text3);margin-top:.4rem">Ces annonces restent dans ce navigateur (comme tes avis), pas dans le dépôt. Elles ne sont pas mises à jour automatiquement : recolle la recherche de temps en temps.</div>
+    <div style="font-size:.78rem;color:var(--text3);margin-top:.4rem">Plus simple encore : fais glisser <a id="bkm" class="btn primary" style="text-decoration:none;cursor:grab;padding:.2rem .6rem">Copier les annonces</a> dans ta barre de favoris et clique-le sur le site, sans console. Ces annonces restent dans ce navigateur, pas dans le dépôt.</div>
   </details>
   <details class="info links"><summary><b>Les sites</b> — <span id="sitesRes"></span> (clique pour le détail)</summary>
     <table class="sites"><thead><tr><th>Site</th><th>Comment</th><th style="text-align:right">Biens</th><th>Lien</th></tr></thead><tbody id="sites"></tbody></table>
@@ -175,21 +176,26 @@ function setNew(v) { onlyNew = v; document.getElementById('fNew').classList.togg
 const SITES = [
   ["Sotheby's (France, Paris Ouest, Propriétés Parisiennes)", 'sothebys', 'auto', 'https://www.sothebysrealty-france.com/fr/vente-proprietes-de-luxe/'],
   ['Daniel Féau', 'feau', 'auto', 'https://danielfeau.com/fr/listing/france/vente/maisons/paris'],
+  ["Christie's (Paris = Daniel Féau)", 'christies', 'auto', 'https://www.christiesrealestate.com/homes-for-sale/france/paris/'],
   ['Barnes', 'barnes', 'auto', 'https://www.barnes-international.com/fr/vente/france/paris/hotel-particulier.html'],
   ['Kretz', 'kretz', 'auto', 'https://kretzrealestate.com/fr/acheter/'],
   ['Junot', 'junot', 'auto', 'https://www.junot.fr/fr/biens-immobiliers/acheter/'],
   ['Coldwell Banker', 'coldwell', 'auto', 'https://www.coldwellbanker.fr/vente-immobilier?by_min_area=500'],
   ['Émile Garcin', 'emile-garcin', 'auto', 'https://www.emilegarcin.com/fr/annonces/vente-immobilier'],
   ['Vaneau', 'vaneau', 'auto', 'https://www.vaneau.fr/fr/'],
+  ['Espaces Atypiques', 'espaces-atypiques', 'auto', 'https://www.espaces-atypiques.com/ventes/?pl=511&smin=500'],
+  ['BNP Paribas Real Estate · bureaux', 'bnppre', 'auto', 'https://www.bnppre.fr/a-vendre/bureau/paris-75/', 'Prix rarement affichés (sur demande)'],
+  ['CBRE · bureaux et commerces', 'cbre', 'auto', 'https://immobilier.cbre.fr/vente-bureaux/ile-de-france/paris.aspx'],
+  ['Knight Frank · bureaux', 'knight-frank', 'auto', 'https://www.knightfrank.fr/resultat?nature=2&typeOffre=1&localisation=75%7C&order=surfDiv_DESC'],
+  ['Cushman & Wakefield · bureaux', 'cushman', 'auto', 'https://immobilier.cushmanwakefield.fr/achat-bureaux/bureaux-a-vendre-paris-75000'],
+  ['Arthur Loyd · bureaux (dont hôtels particuliers)', 'arthur-loyd', 'auto', 'https://www.arthur-loyd.com/'],
   ['Engel & Völkers', 'engel-voelkers', 'part', 'https://www.engelvoelkers.com/fr/fr/propriete/res/vendre/maison/ile-de-france/paris', 'Automatique, mais le site ne montre que 35 annonces par page : un bien peut manquer'],
   ['Licitor (enchères judiciaires)', 'licitor', 'part', 'https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/maison-pavillon-propriete.html', 'Automatique, 5 pages par catégorie (largement suffisant pour Paris)'],
-  ['Belles Demeures', 'bellesdemeures.com', 'bloq', 'https://www.bellesdemeures.com/'],
-  ['Propriétés Le Figaro', 'proprietes.lefigaro.fr', 'bloq', 'https://proprietes.lefigaro.fr/'],
-  ['Leboncoin', 'leboncoin.fr', 'bloq', 'https://www.leboncoin.fr/'],
-  ['CBRE (investissement)', 'cbre.fr', 'bloq', 'https://www.cbre.fr/'],
-  ["Christie's International Real Estate", 'christiesrealestate.com', 'bloq', 'https://www.christiesrealestate.com/', 'Site en JavaScript : favori « Copier les annonces »'],
-  ['BNP Paribas Real Estate (bureaux)', 'bnppre.fr', 'main', 'https://www.bnppre.fr/a-vendre/bureau/'],
-  ['Espaces Atypiques', 'espaces-atypiques.com', 'main', 'https://www.espaces-atypiques.com/'],
+  ['Belles Demeures', 'bellesdemeures.com', 'bloq', 'https://www.bellesdemeures.com/vente/france/ile-de-france/paris/hotel-particulier-luxe/tt-2-tb-14-pl-311/'],
+  ['Propriétés Le Figaro / Figaro Immobilier', 'proprietes.lefigaro.fr', 'bloq', 'https://proprietes.lefigaro.fr/annonces/hotel-particulier-paris/'],
+  ['Leboncoin', 'leboncoin.fr', 'bloq', 'https://www.leboncoin.fr/recherche?category=9&locations=Paris&real_estate_type=1&square=500-max'],
+  ['Lux-Residence', 'lux-residence.com', 'bloq', 'https://www.lux-residence.com/fr/ventes/hotel-particulier/paris.htm'],
+  ['JLL · bureaux', 'jll.fr', 'bloq', 'https://immobilier.jll.fr/'],
 ];
 const ETATS = { auto: ['auto', '✓ Automatique chaque matin — tout le catalogue'], part: ['part', 'Automatique, partiel'],
   bloq: ['bloq', '⛔ Bloque les robots → favori « Copier les annonces »'], main: ['main', 'Pas encore lu → à ouvrir toi-même'] };
@@ -378,7 +384,21 @@ function extraire() {
 const CODE = '(' + extraire.toString() + ')()';
 document.getElementById('bkm').href = 'javascript:' + encodeURIComponent(CODE);
 document.getElementById('bkm').addEventListener('click', e => { e.preventDefault(); alert('Fais glisser ce bouton dans ta barre de favoris, puis clique-le sur le site d\'annonces.'); });
-document.getElementById('bCode').addEventListener('click', () => navigator.clipboard.writeText(CODE).then(() => alert('Code copié : colle-le dans la console du site (Cmd+Option+J), puis Entrée.')));
+const RECH = [
+  ['Belles Demeures · hôtels particuliers Paris', 'https://www.bellesdemeures.com/vente/france/ile-de-france/paris/hotel-particulier-luxe/tt-2-tb-14-pl-311/'],
+  ['Belles Demeures · hôtels particuliers Neuilly', 'https://www.bellesdemeures.com/vente/france/ile-de-france/neuilly-sur-seine/hotel-particulier-luxe/tt-2-tb-14-pl-38331/'],
+  ['Belles Demeures · maisons Paris', 'https://www.bellesdemeures.com/vente/france/ile-de-france/paris/maison-luxe/tt-2-tb-2-pl-311/'],
+  ['Propriétés Le Figaro · hôtels particuliers Paris', 'https://proprietes.lefigaro.fr/annonces/hotel-particulier-paris/'],
+  ['Figaro Immobilier · ventes Paris', 'https://immobilier.lefigaro.fr/annonces/immobilier-vente-bien-paris+75000.html'],
+  ['Leboncoin · maisons ≥ 500 m² Paris', 'https://www.leboncoin.fr/recherche?category=9&locations=Paris&real_estate_type=1&square=500-max'],
+  ['Leboncoin · maisons ≥ 500 m² Neuilly', 'https://www.leboncoin.fr/recherche?category=9&locations=Neuilly-sur-Seine_92200&real_estate_type=1&square=500-max'],
+  ['Lux-Residence · hôtels particuliers Paris', 'https://www.lux-residence.com/fr/ventes/hotel-particulier/paris.htm'],
+];
+document.getElementById('bloques').innerHTML = RECH.map(([n, u]) => `<tr><td><b>${esc(n)}</b></td><td><a class="btn" href="${u}" target="_blank" rel="noopener" style="text-decoration:none">Ouvrir la recherche ↗</a></td><td><button class="btn primary" data-code>Copier le code</button></td></tr>`).join('');
+document.getElementById('bloques').addEventListener('click', e => {
+  const b = e.target.closest('[data-code]'); if (!b) return;
+  navigator.clipboard.writeText(CODE).then(() => { b.textContent = '✓ Copié'; setTimeout(() => b.textContent = 'Copier le code', 2500); }, () => prompt('Copie ce code (Cmd+C) :', CODE));
+});
 
 const PARIS_OUEST = ['75007', '75008', '75015', '75016', '75116', '75017'];
 function cpDe(v) { const m = String(v).match(/750(\d\d)/) || String(v).match(/Paris\s*\(?(\d{1,2})/i); return m ? '750' + String(+m[1]).padStart(2, '0') : ''; }

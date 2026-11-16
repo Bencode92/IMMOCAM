@@ -32,7 +32,7 @@ ATOUTS = {  # mot-clé (sans accent) -> (libellé, points)
 ALERTES = {
     r"hameau|villa privee|voie privee|impasse privee|allee privee": "Voie privée / hameau : règlement à lire",
     r"copropriete": "Copropriété : activités autorisées ?",
-    r"\bappartement|\bduplex\b|\btriplex\b|dernier etage": "Appartement : copropriété, activités autorisées ?",
+    r"\bappartement|\bapartment\b|\bduplex\b|\btriplex\b|dernier etage": "Appartement : copropriété, activités autorisées ?",
     r"dpe\W*[fg]\b|\(f\)|\(g\)": "DPE F ou G",
     r"travaux a prevoir|a renover|a restaurer|rehabiliter": "Travaux importants",
     r"monument historique|classe mh|inscrit (a l'inventaire|mh)": "Monument historique",
@@ -127,7 +127,7 @@ def enrich(x, ref, cache, zonages=None):
     e["commune_ref"] = r.get("nom", "")
     s, p = x.get("surface") or 0, x.get("prix") or 0
     e["prix_m2"] = round(p / s) if s and p else None
-    usage_pro = bool(re.search(USAGE_PRO, texte)) or x["source"] in ("bnppre", "cbre", "jll") or "commerc" in norm(x.get("type"))
+    usage_pro = bool(re.search(USAGE_PRO, texte)) or x["source"] in ("bnppre", "cbre", "jll") or "commerc" in norm(x.get("type")) or norm(x.get("type")).startswith("bureau")
     paris = e["insee"].startswith("75")
     e["usage"] = "bureaux / commercial (à vérifier)" if usage_pro else ("habitation : compensation à Paris" if paris else "habitation")
     base = (r.get("commerces") if usage_pro else r.get("maisons")) or r.get("maisons")

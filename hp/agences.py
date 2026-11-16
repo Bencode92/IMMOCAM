@@ -254,3 +254,230 @@ class EngelVoelkers:
 
 AGENCES = {"sothebys": Sothebys, "feau": Feau, "kretz": Kretz, "junot": Junot,
            "coldwell": Coldwell, "vaneau": Vaneau, "engel-voelkers": EngelVoelkers}
+
+
+# ---------- Immeubles, bureaux, lieux atypiques (repérage du 16/11/2026) ----------
+
+def pro(x):
+    x["type"] = "bureaux"
+    return x
+
+
+class EspacesAtypiques:
+    name = "espaces-atypiques"
+    URL = "https://www.espaces-atypiques.com/wp-json/wp/v2/ventes"
+
+    def collect(self, known_ids=frozenset()):
+        out = []
+        for p in range(1, 10):
+            r = requests.get(self.URL, headers=UA, timeout=60, params={"localisations": "511,433", "statuts-offre": 9,
+                             "per_page": 100, "page": p, "_fields": "id,link,title,acf"})
+            if r.status_code != 200:
+                break
+            for d in r.json():
+                a = d.get("acf") or {}
+                cp = str(a.get("bien_code_postal") or "")
+                titre = BeautifulSoup((d.get("title") or {}).get("rendered", ""), "html.parser").get_text()
+                out.append(annonce(self.name, d["id"], d["link"], titre, cp, num(str(a.get("bien_surface_habitable") or "")),
+                                   num(str(a.get("vente_prix") or "")), commune=lieu(norm_cp(cp)) or a.get("bien_ville", "")))
+            if p >= int(r.headers.get("X-WP-TotalPages") or 1):
+                break
+            time.sleep(1.0)
+        return decrire([x for x in out if dans_perimetre(x)], known_ids)
+
+
+class Christies:
+    name = "christies"
+    URL = "https://www.christiesrealestate.com/pf/api/v3/content/fetch/queryly-find-listings-service"
+
+    def collect(self, known_ids=frozenset()):
+        out = []
+        for ville in ("Paris", "Neuilly-sur-Seine"):
+            for start in range(0, 2000, 100):
+                q = {"query": "*", "endIndex": start, "batchSize": 100, "showFaceted": True, "extendedDataFields": "$._",
+                     "facetedKey": "country|city|type", "facetedValue": f"France|{ville}|properties"}
+                d = requests.get(self.URL, headers=UA, timeout=60, params={"query": json.dumps(q, separators=(",", ":")),
+                                                                         "d": 181, "_website": "christies"}).json()
+                items = d.get("data") or []
+                for it in items:
+                    b, loc = it.get("basicDetails") or {}, it.get("location") or {}
+                    unit = ((it.get("additionalDetails") or {}).get("livingAreaUnits") or "")
+                    surf = num(str(b.get("livingArea") or ""))
+                    if surf and "metre" not in unit.lower():
+                        surf = round(surf * 0.0929, 1)
+                    out.append(annonce(self.name, it.get("id"), "https://www.christiesrealestate.com" + (it.get("propertySlug") or ""),
+                                       loc.get("displayName") or f"{b.get('propertyType') or 'Bien'} – {ville}", str(loc.get("zip") or ""),
+                                       surf, num(str((it.get("listingDetails") or {}).get("price") or "")),
+                                       commune=lieu(norm_cp(str(loc.get("zip") or ""))) or loc.get("city", ""),
+                                       extra={"agence": it.get("affiliateName", "")}))
+                if len(items) < 100:
+                    break
+                time.sleep(1.0)
+        return decrire([x for x in out if dans_perimetre(x)], known_ids)
+
+
+class CbreVente:
+    name = "cbre"
+    BASE = "https://immobilier.cbre.fr"
+    PAGES = ([f"/vente-bureaux/ile-de-france/paris/paris-{i}.aspx" for i in range(1, 21)] +
+             ["/vente-locaux-commerciaux/ile-de-france/paris.aspx", "/vente-bureaux/ile-de-france/hauts-de-seine/neuilly-sur-seine.aspx"])
+
+    def collect(self, known_ids=frozenset()):
+        import html as H
+        out, ids = [], set()
+        for path in self.PAGES:
+            r = requests.get(self.BASE + path, headers=UA, timeout=40)
+            if r.status_code != 200:
+                continue
+            for href, v in re.findall(r'<a id="[^"]*" class="card property-item"[^>]*href="([^"]+)".*?dataLayerItemObject_\d+" value="([^"]+)"', r.text, re.S):
+                d = json.loads(H.unescape(v))["ecommerce"]["items"][0]
+                if d["item_id"] in ids:
+                    continue
+                ids.add(d["item_id"])
+                m = re.search(r"/(\d{5})/", href)
+                surf, prix = num(str(d.get("item_surface") or "")), num(str(d.get("price") or ""))
+                if prix and surf and prix < 50000:  # prix au m²
+                    prix = prix * surf
+                out.append(pro(annonce(self.name, d["item_id"], href if href.startswith("http") else self.BASE + href,
+                                       d.get("item_name", "Bureaux"), m.group(1) if m else "", surf, prix)))
+            time.sleep(1.0)
+        return decrire([x for x in out if dans_perimetre(x)], known_ids)
+
+
+class Bnppre:
+    name = "bnppre"
+    BASE = "https://www.bnppre.fr"
+    LISTES = ["/a-vendre/bureau/paris-75/", "/a-vendre/bureau/hauts-de-seine-92/neuilly-sur-seine-92200/"]
+
+    def collect(self, known_ids=frozenset()):
+        out, ids = [], set()
+        for path in self.LISTES:
+            for p in range(1, 15):
+                h = requests.get(self.BASE + path + (f"?page={p}" if p > 1 else ""), headers=UA, timeout=40).text
+                fresh = 0
+                for blob in re.findall(r'<script type="application/ld\+json">(.*?)</script>', h, re.S):
+                    try:
+                        j = json.loads(blob, strict=False)
+                    except ValueError:
+                        continue
+                    if not isinstance(j, dict) or j.get("@type") != "SellAction":
+                        continue
+                    o, loc = j.get("object") or {}, j.get("location") or {}
+                    url, nom = o.get("url") or "", o.get("name") or ""
+                    m = re.search(r"OVBUR(\d+)", url)
+                    if not m or m.group(1) in ids:
+                        continue
+                    ids.add(m.group(1))
+                    fresh += 1
+                    ms = re.search(r"([\d\s.]+)\s*m²", nom)
+                    out.append(pro(annonce(self.name, m.group(1), url, nom, str(loc.get("postalCode") or ""),
+                                           num(ms.group(1)) if ms else 0.0, 0.0,
+                                           commune="Neuilly-sur-Seine" if "neuilly" in url else "")))
+                if not fresh:
+                    break
+                time.sleep(1.0)
+        return decrire([x for x in out if dans_perimetre(x)], known_ids)
+
+
+class KnightFrank:
+    name = "knight-frank"
+    BASE = "https://www.knightfrank.fr"
+
+    def collect(self, known_ids=frozenset()):
+        import html as H
+        out, ids = [], set()
+        for loc in ("75%7C", "92200%7C"):
+            for p in range(1, 15):
+                s = requests.get(f"{self.BASE}/resultat?nature=2&typeOffre=1&localisation={loc}&order=surfDiv_DESC&page={p}",
+                                 headers=UA, timeout=40).text
+                s = re.sub(r"<script.*?</script>", "", s, flags=re.S)
+                fresh = 0
+                for blk in s.split("cardOffreListe")[1:]:
+                    h = re.search(r'class="infosCard" href="([^"]+)"', blk)
+                    if not h or h.group(1) in ids:
+                        continue
+                    ids.add(h.group(1))
+                    fresh += 1
+                    pc = re.search(r'class="card-secteur".*?<span>([^<]+)', blk, re.S)
+                    pr = re.search(r'class="valeur-offre">([^<]+)', blk)
+                    sf = re.search(r'bloc-surface">\s*<p class="valeur">([^<]+)', blk)
+                    ad = re.search(r'class="card-adresse">([^<]*)', blk)
+                    cp = re.search(r"\d{5}", pc.group(1)) if pc else None
+                    rid = re.search(r"-(\d+)-v/?$", h.group(1))
+                    out.append(pro(annonce(self.name, rid.group(1) if rid else h.group(1), self.BASE + h.group(1),
+                                           "Bureaux – " + (H.unescape(ad.group(1)).strip() if ad else ""), cp.group(0) if cp else "",
+                                           num(sf.group(1)) if sf else 0.0, num(H.unescape(pr.group(1))) if pr else 0.0)))
+                if not fresh:
+                    break
+                time.sleep(1.0)
+        return decrire([x for x in out if dans_perimetre(x)], known_ids)
+
+
+class Cushman:
+    name = "cushman"
+    BASE = "https://immobilier.cushmanwakefield.fr"
+
+    def collect(self, known_ids=frozenset()):
+        import html as H
+        out, ids = [], set()
+        for p in range(1, 10):
+            s = requests.get(f"{self.BASE}/achat-bureaux/bureaux-a-vendre-paris-75000?page={p}", headers=UA, timeout=40).text
+            s = re.sub(r"<script.*?</script>", "", s, flags=re.S)
+            fresh = 0
+            for b in s.split("data-highlighted-property=")[1:]:
+                pid = b.split('"')[1]
+                if pid in ids:
+                    continue
+                ids.add(pid)
+                fresh += 1
+                href = re.search(r'href="(/achat-[^"]+)"', b)
+                t = H.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "|", b)))
+                sf, pr = re.search(r"Surface :\s*\|\s*([\d  .]+)", t), re.search(r"Prix de vente :\s*\|\s*([^|]+)", t)
+                ad = re.search(r"A Vendre \|([^|]+)", t)
+                cp = re.search(r"750\d\d", (href.group(1) if href else "") + t)
+                out.append(pro(annonce(self.name, pid, self.BASE + (href.group(1) if href else ""), "Bureaux – " + (ad.group(1).strip() if ad else ""),
+                                       cp.group(0) if cp else "75000", num(sf.group(1)) if sf else 0.0, num(pr.group(1)) if pr else 0.0)))
+            if not fresh:
+                break
+            time.sleep(1.0)
+        return decrire([x for x in out if dans_perimetre(x)], known_ids)
+
+
+class ArthurLoyd:
+    name = "arthur-loyd"
+    SITEMAP = "https://www.arthur-loyd.com/sitemap-offer.xml"
+
+    def collect(self, known_ids=frozenset(), db_prev=None):
+        import html as H
+        xml = requests.get(self.SITEMAP, headers=UA, timeout=60).text
+        urls = [u for u in re.findall(r"<loc>([^<]+)</loc>", xml)
+                if re.search(r"(bureau|locaux-commerciaux|locaux-activite-entrepots|logistique)-vente", u)
+                and re.search(r"paris-\d+-750\d\d|neuilly-sur-seine", u) and re.search(r"ref-\d", u)]
+        out = []
+        for u in urls:
+            rid = re.search(r"ref-([\w-]+?)/?$", u)
+            rid = rid.group(1) if rid else u
+            try:
+                s = requests.get(u, headers=UA, timeout=40).text
+            except requests.RequestException:
+                continue
+            time.sleep(1.0)
+            s = re.sub(r"<script.*?</script>|<style.*?</style>", "", s, flags=re.S)
+            t = H.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "|", s)))
+            t = re.sub(r"(\|\s*)+", "|", t)
+            m = re.search(r"Référence : \|([^|]+)\|([^|]+)\|([^|]+)\|([^|]+)\|(.*?)Disponibilit", t)
+            if not m:
+                continue
+            ref, titre, loc, prix, rest = m.groups()
+            sv = [num(x) for x in re.findall(r"([\d  ]+) m²", rest)]
+            cp = re.search(r"750\d\d", u) or re.search(r"750\d\d", loc)
+            x = pro(annonce(self.name, rid, u, titre.strip(), cp.group(0) if cp else ("92200" if "neuilly" in u else ""),
+                            max(sv) if sv else 0.0, num(prix), commune="" if cp else ("Neuilly-sur-Seine" if "neuilly" in u else "")))
+            if "particulier" in titre.lower():
+                x["type"] = "bureaux (hôtel particulier)"
+            out.append(x)
+        return decrire([x for x in out if dans_perimetre(x)], known_ids)
+
+
+AGENCES.update({"espaces-atypiques": EspacesAtypiques, "christies": Christies, "cbre": CbreVente, "bnppre": Bnppre,
+                "knight-frank": KnightFrank, "cushman": Cushman, "arthur-loyd": ArthurLoyd})
