@@ -77,6 +77,7 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
     <span id="sMaj" style="color:var(--text3)"></span>
     <button class="btn" id="bVu">Tout marquer comme vu</button>
     <button class="btn" id="bExp" title="Sauvegarder tes statuts et notes (fichier)">Exporter</button>
+    <button class="btn primary" id="bColle" title="Coller les annonces copiées avec le bouton « Copier les annonces » sur un site bloqué">Coller des annonces</button>
     <button class="btn" id="bImp">Importer</button><input type="file" id="fImp" accept=".json" hidden>
   </div>
 </header>
@@ -93,6 +94,15 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
 </div>
 <div class="wrap">
   <div class="info" id="info">Chargement…</div>
+  <details class="info links"><summary><b>Sites bloqués : récupérer les annonces en 2 clics</b> (Belles Demeures, Figaro, Sotheby's, Kretz…)</summary>
+    <ol style="margin:.7rem 0 0 1.1rem;line-height:1.7">
+      <li>Fais glisser ce bouton dans ta barre de favoris (une seule fois) : <a id="bkm" class="btn primary" style="text-decoration:none;cursor:grab">Copier les annonces</a>
+        — ou <button class="btn" id="bCode">copier le code console</button> (à coller dans la console du site, Cmd+Option+J).</li>
+      <li>Sur le site, fais ta recherche (Paris / Neuilly) et clique le favori : il copie toutes les annonces visibles.</li>
+      <li>Reviens ici et clique <b>Coller des annonces</b> : seuls Paris + Neuilly ≥ 500 m² sont gardés, les doublons ignorés.</li>
+    </ol>
+    <div style="font-size:.78rem;color:var(--text3);margin-top:.4rem">Ces annonces restent dans ce navigateur (comme tes avis), pas dans le dépôt. Elles ne sont pas mises à jour automatiquement : recolle la recherche de temps en temps.</div>
+  </details>
   <details class="info links"><summary><b>Liens de recherche à surveiller</b> — Paris et Neuilly, 500 m² minimum</summary>
     <div class="lk-grid">
       <div><h4>Collectés automatiquement chaque matin</h4>
@@ -127,7 +137,7 @@ const meur = v => v ? (v / 1e6).toLocaleString('fr-FR', { maximumFractionDigits:
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 let DB = { meta: {}, annonces: {} }, U = load(), onlyNew = true;
 const ouvertes = new Set(); // traitées pendant cette visite : restent affichées jusqu'au rechargement
-function load() { try { return JSON.parse(localStorage.getItem(LS)) || { vus: {}, st: {}, notes: {} }; } catch (e) { return { vus: {}, st: {}, notes: {} }; } }
+function load() { let u; try { u = JSON.parse(localStorage.getItem(LS)); } catch (e) {} u = u || {}; return { vus: u.vus || {}, st: u.st || {}, notes: u.notes || {}, manuel: u.manuel || {} }; }
 function save() { try { localStorage.setItem(LS, JSON.stringify(U)); } catch (e) {} }
 const isNew = x => !U.vus[x.id];
 
@@ -135,6 +145,7 @@ async function init() {
   try {
     const r = await fetch('data/hp_db.json?t=' + Date.now());
     DB = await r.json();
+    Object.assign(DB.annonces, U.manuel);
   } catch (e) {
     document.getElementById('info').textContent = 'Impossible de charger data/hp_db.json.';
     return;
@@ -218,7 +229,60 @@ document.getElementById('bExp').addEventListener('click', () => {
 });
 document.getElementById('bImp').addEventListener('click', () => document.getElementById('fImp').click());
 document.getElementById('fImp').addEventListener('change', async e => {
-  try { const j = JSON.parse(await e.target.files[0].text()); U = { vus: j.vus || {}, st: j.st || {}, notes: j.notes || {} }; save(); render(); } catch (err) { alert('Fichier invalide'); }
+  try { const j = JSON.parse(await e.target.files[0].text()); U = { vus: j.vus || {}, st: j.st || {}, notes: j.notes || {}, manuel: j.manuel || {} }; save(); render(); } catch (err) { alert('Fichier invalide'); }
+});
+
+// Extracteur exécuté SUR le site d'annonces (favori ou console) : repère les cartes contenant m² et €
+function extraire() {
+  const R = [], vus = new Set(), cartes = new Set(), host = location.hostname.replace(/^www\./, '');
+  const nb = s => parseFloat(String(s).replace(/[\s\u00a0\u202f.]/g, '').replace(',', '.')) || 0;
+  document.querySelectorAll('a[href]').forEach(a => {
+    let el = a;
+    for (let i = 0; i < 7 && el; i++) { const t = el.innerText || ''; if (/m²|m2\b/.test(t) && /€/.test(t)) break; el = el.parentElement; }
+    if (!el) return;
+    const t = (el.innerText || '').replace(/\s+/g, ' ').trim(), u = a.href.split('#')[0];
+    if (!/m²|m2\b/.test(t) || !/€/.test(t) || t.length > 2000 || vus.has(u) || u === location.href || /^javascript/.test(u)) return;
+    if (cartes.has(el)) return;
+    cartes.add(el); vus.add(u);
+    const surf = Math.max(0, ...[...t.matchAll(/(\d[\d\s\u00a0\u202f.,]*)\s*m(?:²|2\b)/g)].map(m => nb(m[1])).filter(v => v < 50000));
+    const prix = Math.max(0, ...[...t.matchAll(/(\d[\d\s\u00a0\u202f.]{4,})\s*€/g)].map(m => nb(m[1])));
+    const v = (t.match(/Paris\s*\(?\d{1,2}|750\d\d|Neuilly[- ]sur[- ]Seine|Paris/i) || [''])[0];
+    if (!surf || !prix) return; // menus, bandeaux : pas une annonce
+    R.push({ id: host + ':' + u, source: host, url: u, titre: t.slice(0, 140), commune: v, surface: surf, prix, description: t.slice(0, 800) });
+  });
+  const txt = JSON.stringify(R);
+  (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert(R.length + ' annonces copiées. Va sur IMMOCAM et clique « Coller des annonces ».'),
+    () => prompt('Copie ce texte (Cmd+C) puis colle-le dans IMMOCAM :', txt));
+}
+const CODE = '(' + extraire.toString() + ')()';
+document.getElementById('bkm').href = 'javascript:' + encodeURIComponent(CODE);
+document.getElementById('bkm').addEventListener('click', e => { e.preventDefault(); alert('Fais glisser ce bouton dans ta barre de favoris, puis clique-le sur le site d\'annonces.'); });
+document.getElementById('bCode').addEventListener('click', () => navigator.clipboard.writeText(CODE).then(() => alert('Code copié : colle-le dans la console du site (Cmd+Option+J), puis Entrée.')));
+
+const PARIS_OUEST = ['75007', '75008', '75015', '75016', '75116', '75017'];
+function cpDe(v) { const m = String(v).match(/750(\d\d)/) || String(v).match(/Paris\s*\(?(\d{1,2})/i); return m ? '750' + String(+m[1]).padStart(2, '0') : ''; }
+document.getElementById('bColle').addEventListener('click', async () => {
+  let txt = '';
+  try { txt = await navigator.clipboard.readText(); } catch (e) {}
+  if (!/^\s*\[/.test(txt)) txt = prompt('Colle ici le texte copié depuis le site :') || '';
+  let L; try { L = JSON.parse(txt); } catch (e) { return alert('Rien de reconnu : utilise d\'abord le bouton « Copier les annonces » sur le site.'); }
+  const today = new Date().toISOString().slice(0, 10);
+  let ok = 0, hors = 0, deja = 0;
+  for (const x of L) {
+    const cp = cpDe(x.commune + ' ' + x.titre), neuilly = /neuilly/i.test(x.commune + x.titre);
+    if (!(cp || neuilly || /^paris$/i.test(x.commune)) || (x.surface && x.surface < 500)) { hors++; continue; }
+    if (DB.annonces[x.id]) { deja++; DB.annonces[x.id].last_seen = today; continue; }
+    const sect = neuilly ? 'Neuilly' : PARIS_OUEST.includes(cp) ? 'Paris ouest' : 'Paris (autre)';
+    const y = { ...x, code_postal: cp, commune: neuilly ? 'Neuilly-sur-Seine' : cp ? 'Paris ' + (+cp.slice(3)) + 'e' : 'Paris', dpe: '', extra: { manuel: true },
+      first_seen: today, last_seen: today, actif: true, historique_prix: [],
+      eval: { secteur: sect, prix_m2: x.surface && x.prix ? x.prix / x.surface : 0, usage: 'à vérifier (collé à la main)', alertes: [], atouts: [], score: 0 } };
+    U.manuel[x.id] = y; DB.annonces[x.id] = y; ok++;
+  }
+  save();
+  const src = document.getElementById('fSource'), have = [...src.options].map(o => o.value);
+  [...new Set(Object.values(U.manuel).map(x => x.source))].filter(s => !have.includes(s)).forEach(s => src.add(new Option(s, s)));
+  alert(`${ok} annonce(s) ajoutée(s), ${deja} déjà présente(s), ${hors} hors périmètre (hors Paris/Neuilly ou < 500 m²).`);
+  render();
 });
 init();
 </script>
