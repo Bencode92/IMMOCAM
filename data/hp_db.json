@@ -1,9 +1,9 @@
 {
  "meta": {
   "maj": "2026-11-16",
-  "total": 6,
-  "actives": 6,
-  "nouveaux_du_jour": 6,
+  "total": 7,
+  "actives": 7,
+  "nouveaux_du_jour": 7,
   "erreurs": {}
  },
  "annonces": {
@@ -275,6 +275,49 @@
     ],
     "scr": null,
     "score": 45
+   }
+  },
+  "emile-garcin-NEU-12963-ND-EL": {
+   "id": "emile-garcin-NEU-12963-ND-EL",
+   "source": "emile-garcin",
+   "url": "https://www.emilegarcin.com/fr/annonce/a-vendre-neuilly-sur-seine-92200-hotel-particulier-jardin-roof-top-644m2",
+   "titre": "A vendre - Neuilly-sur-Seine 92200- hôtel particulier- jardin- Roof-Top- 644m²",
+   "type": "hotel particulier",
+   "commune": "Neuilly-sur-Seine",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 644.0,
+   "prix": 12630000.0,
+   "description": "Dans une voie privée confidentielle de Neuilly-sur-Seine, cet hôtel particulier d'environ 644 m² s'élève sur cinq niveaux. A l'abri des regards, il déploie des espaces généreux et harmonieux, sublimés par un jardin paysager et un roof-top panoramique. Dès l'entrée, le ton est donné : volumes, élégance et lumière rythment l'ensemble. Le rez-de-chaussée surélevé accueille une vaste entrée menant à une cuisine contemporaine et  salle à manger conviviale, toutes deux ouvertes sur un jardin paysager , véritable prolongement naturel de la maison à l'intimité préservée. Le premier étage est dédié à la réception : de belles pièces de vie, lumineuses et raffinées, où se succèdent salons et salle à manger idéal pour recevoir. Le deuxième étage abrite une suite parentale aux proportions généreuses: Chambre principale, double dressing, salle de bains avec baignoire et douche, ainsi qu'un bureau privatif composent un espace à part, propice au calme et à la sérénité. Le troisième étage propose quatre chambres et trois salles de bains, conçues pour accueillir famille et invités dans un confort absolu. Au dernier niveau, un roof-top de 40 m² avec une vue à 360 degrés sur les toits de Neuilly et les environs, invitant à la détente ou aux soirées d'été en toute intimité. Un ascenseur et un escalier majestueux desservent l'ensemble des étages. Le sous-sol révèle un univers entièrement dédié au bien-être : bibliothèque, atelier, salle de sport, jacuzzi avec nage à contre-courant, sauna, ainsi qu'un garage fermé pour deux voitures. Trois stationnements supplémentaires possibles devant la maison complètent ce bien d'exception. Une adresse exclusive (sectorisée Pasteur), une atmosphère confidentielle et un art de vivre exceptionnel, à seulement quelques minutes  de Paris.",
+   "dpe": "",
+   "extra": {
+    "ref": "NEU-12963-ND-EL"
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92051",
+    "secteur": "Neuilly",
+    "commune_ref": "Neuilly-sur-Seine",
+    "prix_m2": 19612,
+    "usage": "habitation",
+    "dvf_med": 15959,
+    "dvf_n": 63,
+    "ecart_dvf": 0.229,
+    "atouts": [
+     "Jardin",
+     "Verrière / atelier",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Ascenseur"
+    ],
+    "alertes": [
+     "Voie privée / hameau : règlement à lire"
+    ],
+    "scr": null,
+    "score": 42
    }
   }
  }

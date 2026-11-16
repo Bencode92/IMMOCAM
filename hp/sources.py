@@ -143,4 +143,51 @@ class LicitorHP:
         return out
 
 
-SOURCES = {"barnes": Barnes, "licitor": LicitorHP}
+class EmileGarcin:
+    """Recherche « 500 m² minimum » (toute la France, le filtre ville du site ne marche pas sans JS) puis tri Paris / Neuilly."""
+    name = "emile-garcin"
+    BASE = "https://www.emilegarcin.com"
+
+    def collect(self, known_ids=frozenset()):
+        S = requests.Session()
+        S.headers.update(UA)
+        data = {"search_result[surfaceMin]": str(SURFACE_MIN), "search_result[_token]": "csrf-token"}
+        out, ids = [], set()
+        for page in range(1, 40):
+            r = S.post(self.BASE + "/fr/annonces/vente-immobilier" + (f"?page={page}" if page > 1 else ""), data=data, timeout=40)
+            cards = BeautifulSoup(r.text, "html.parser").select("article.property-card") if r.status_code == 200 else []
+            fresh = 0
+            for c in cards:
+                a, ref = c.select_one("a.property-card-link"), c.select_one(".property-card-reference")
+                if not a or not ref:
+                    continue
+                rid = ref.get_text(strip=True).replace("Réf :", "").strip()
+                if rid in ids:
+                    continue
+                ids.add(rid)
+                fresh += 1
+                ville = c.select_one(".property-card-city").get_text(" ", strip=True)
+                info = c.select_one(".property-card-info").get_text(" ", strip=True)
+                ms, mp = re.search(r"Superficie\s*([\d\s.,]+)\s*m", info), re.search(r"Prix\s*([\d\s]+)\s*€", info)
+                titre = c.select_one(".property-card-title").get_text(" ", strip=True)
+                out.append({"id": f"emile-garcin-{rid}", "source": self.name, "url": self.BASE + a["href"], "titre": titre,
+                            "type": "hotel particulier" if "particulier" in titre.lower() else "maison", "commune": ville,
+                            "code_postal": cp_from_ville(ville), "adresse": "", "surface": num(ms.group(1)) if ms else 0.0,
+                            "prix": num(mp.group(1)) if mp else 0.0, "description": "", "dpe": "", "extra": {"ref": rid}})
+            if not fresh:
+                break
+            time.sleep(1.0)
+        out = [x for x in out if dans_perimetre(x)]
+        for x in out:
+            if x["id"] in known_ids:
+                continue
+            try:
+                d = BeautifulSoup(S.get(x["url"], timeout=40).text, "html.parser").select_one(".property-description-text")
+                x["description"] = d.get_text(" ", strip=True)[:4000] if d else ""
+                time.sleep(1.0)
+            except requests.RequestException:
+                pass
+        return out
+
+
+SOURCES = {"barnes": Barnes, "emile-garcin": EmileGarcin, "licitor": LicitorHP}

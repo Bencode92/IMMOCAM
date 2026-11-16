@@ -62,6 +62,8 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
 @media(max-width:800px){.lk-grid{grid-template-columns:1fr}}
 .empty{text-align:center;color:var(--text3);padding:3rem 1rem;font-size:.9rem}
 @media(max-width:640px){header,.filter-bar,.wrap{padding-left:16px;padding-right:16px}.grid{grid-template-columns:1fr}.figs{grid-template-columns:1fr 1fr}}
+.avis{width:100%;box-sizing:border-box;margin-top:.6rem;border:1px solid var(--border);border-radius:8px;padding:.55rem .65rem;font:inherit;font-size:.82rem;resize:vertical;min-height:64px;background:#fff;color:inherit}
+.avis:focus{outline:none;border-color:var(--accent2)}
 </style>
 </head>
 <body>
@@ -124,6 +126,7 @@ const fmt = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 0 });
 const meur = v => v ? (v / 1e6).toLocaleString('fr-FR', { maximumFractionDigits: 2 }) + ' M€' : '—';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 let DB = { meta: {}, annonces: {} }, U = load(), onlyNew = true;
+const ouvertes = new Set(); // traitées pendant cette visite : restent affichées jusqu'au rechargement
 function load() { try { return JSON.parse(localStorage.getItem(LS)) || { vus: {}, st: {}, notes: {} }; } catch (e) { return { vus: {}, st: {}, notes: {} }; } }
 function save() { try { localStorage.setItem(LS, JSON.stringify(U)); } catch (e) {} }
 const isNew = x => !U.vus[x.id];
@@ -150,7 +153,7 @@ function render() {
   const off = document.getElementById('fOff').checked;
   let L = A.filter(x => {
     const st = U.st[x.id] || 'nouveau', e = x.eval || {};
-    if (onlyNew && !isNew(x)) return false;
+    if (onlyNew && !isNew(x) && !ouvertes.has(x.id)) return false;
     if (!off && (!x.actif || st === 'ecarte')) return false;
     if (g('fStatut') && st !== g('fStatut')) return false;
     if (g('fSource') && x.source !== g('fSource')) return false;
@@ -193,20 +196,21 @@ function card(x) {
     <div class="chips"><span class="chip ${pro ? 'usage-pro' : 'usage-hab'}">${esc(e.usage || '')}</span>${(e.alertes || []).map(a => `<span class="chip alert">⚠ ${esc(a)}</span>`).join('')}${(e.atouts || []).map(a => `<span class="chip">${esc(a)}</span>`).join('')}</div>
     ${x.description ? `<div class="desc">${esc(x.description)}</div>` : ''}
     <div class="foot"><a class="btn primary" href="${esc(x.url)}" target="_blank" rel="noopener" data-open="${esc(x.id)}" style="text-decoration:none;white-space:nowrap">Voir l'annonce ↗</a><select data-st="${esc(x.id)}">${STATUTS.map(([k, l]) => `<option value="${k}" ${k === st ? 'selected' : ''}>${l}</option>`).join('')}</select>
-      <input data-note="${esc(x.id)}" value="${esc(U.notes[x.id] || '')}" placeholder="Note perso (reste dans ce navigateur)"></div>
+</div>
+    <textarea class="avis" data-note="${esc(x.id)}" rows="3" placeholder="Mon avis : points forts, doutes, questions pour la visite… (enregistré automatiquement dans ce navigateur)">${esc(U.notes[x.id] || '')}</textarea>
   </div>`;
 }
 
 document.getElementById('grid').addEventListener('change', e => {
   const t = e.target;
-  if (t.dataset.st) { U.st[t.dataset.st] = t.value; U.vus[t.dataset.st] = 1; save(); render(); }
+  if (t.dataset.st) { ouvertes.add(t.dataset.st); U.st[t.dataset.st] = t.value; U.vus[t.dataset.st] = 1; save(); render(); }
 });
-document.getElementById('grid').addEventListener('input', e => { const t = e.target; if (t.dataset.note) { U.notes[t.dataset.note] = t.value; save(); } });
-document.getElementById('grid').addEventListener('click', e => { const a = e.target.closest('[data-open]'); if (a) { U.vus[a.dataset.open] = 1; save(); setTimeout(render, 300); } });
+document.getElementById('grid').addEventListener('input', e => { const t = e.target; if (t.dataset.note) { ouvertes.add(t.dataset.note); U.notes[t.dataset.note] = t.value; U.vus[t.dataset.note] = 1; save(); } });
+document.getElementById('grid').addEventListener('click', e => { const a = e.target.closest('[data-open]'); if (a) { ouvertes.add(a.dataset.open); U.vus[a.dataset.open] = 1; save(); setTimeout(render, 300); } });
 document.getElementById('fNew').addEventListener('click', () => { setNew(!onlyNew); render(); });
 ['fStatut', 'fSource', 'fZone', 'fUsage', 'fSort', 'fOff'].forEach(id => document.getElementById(id).addEventListener('change', render));
 ['fSurf', 'fPrix'].forEach(id => document.getElementById(id).addEventListener('input', render));
-document.getElementById('bVu').addEventListener('click', () => { Object.keys(DB.annonces).forEach(k => U.vus[k] = 1); save(); setNew(false); render(); });
+document.getElementById('bVu').addEventListener('click', () => { Object.keys(DB.annonces).forEach(k => { U.vus[k] = 1; ouvertes.add(k); }); save(); render(); });
 document.getElementById('bExp').addEventListener('click', () => {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([JSON.stringify(U, null, 1)], { type: 'application/json' }));
