@@ -64,6 +64,37 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
 @media(max-width:640px){header,.filter-bar,.wrap{padding-left:16px;padding-right:16px}.grid{grid-template-columns:1fr}.figs{grid-template-columns:1fr 1fr}}
 .avis{width:100%;box-sizing:border-box;margin-top:.6rem;border:1px solid var(--border);border-radius:8px;padding:.55rem .65rem;font:inherit;font-size:.82rem;resize:vertical;min-height:64px;background:#fff;color:inherit}
 .avis:focus{outline:none;border-color:var(--accent2)}
+.views{display:inline-flex;border:1px solid var(--border);border-radius:999px;overflow:hidden;margin-right:.3rem}
+.views button{border:0;background:var(--surface);padding:.42rem .9rem;font:500 .75rem Inter,sans-serif;color:var(--text2);cursor:pointer}
+.views button.on{background:var(--accent);color:#fff}
+.kanban{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.9rem;align-items:start}
+.kcol{min-height:240px;border-radius:var(--radius);padding:.2rem .1rem 1rem;transition:background .15s}
+.kcol.over{background:#e0ecf8}
+.kcol h3{font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;margin:0 .2rem .6rem;display:flex;gap:.45rem;align-items:center}
+.kcol h3 .cnt{font-size:.68rem;color:var(--text3);background:var(--surface2);border-radius:999px;padding:.05rem .45rem;font-weight:500}
+.kcol .vide{font-size:.78rem;color:var(--text3);text-align:center;padding:1.5rem 0}
+.kc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem .8rem;margin-bottom:.6rem;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.kc:hover{border-color:var(--accent2)}
+.kc.drag{opacity:.4}
+.kc .h{display:flex;justify-content:space-between;gap:.4rem;font-weight:600;font-size:.84rem;line-height:1.3}
+.kc .sc{flex:0 0 auto;font-size:.7rem;font-weight:700;border-radius:6px;padding:.1rem .4rem;color:#fff}
+.kc .l{display:flex;justify-content:space-between;font-size:.76rem;color:var(--text3);margin-top:.3rem}
+.kc .l b{color:var(--text);font-weight:500}
+.kc .band{margin-top:.45rem;text-align:center;font-size:.74rem;font-weight:600;border-radius:6px;padding:.25rem}
+.kc .band.pos{background:#dcfce7}.kc .band.neg{background:#fee2e2}.kc .band.na{background:var(--surface2);color:var(--text3)}
+.kc .t{font-size:.72rem;color:var(--text2);margin-top:.4rem;line-height:1.35}
+.kc .bt{margin-top:.4rem;display:flex;gap:.3rem;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:rgba(28,25,23,.45);display:none;align-items:flex-start;justify-content:center;padding:4vh 1rem;z-index:50;overflow:auto}
+.modal.on{display:flex}
+.modal .card{max-width:640px;width:100%}
+.modal .x{position:absolute;top:.5rem;right:.7rem;border:0;background:none;font-size:1.3rem;color:var(--text3);cursor:pointer}
+.sites{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.7rem}
+.sites th{text-align:left;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text3);font-weight:600;padding:.35rem .5rem;border-bottom:1px solid var(--border)}
+.sites td{padding:.45rem .5rem;border-bottom:1px solid var(--surface2);vertical-align:top}
+.sites td.n{text-align:right;font-weight:600}
+.etat{font-size:.7rem;font-weight:600;border-radius:999px;padding:.12rem .55rem;white-space:nowrap}
+.etat.auto{background:#dcfce7;color:var(--green)}.etat.part{background:#fef3c7;color:var(--yellow)}.etat.bloq{background:#fee2e2;color:var(--red)}.etat.main{background:var(--surface2);color:var(--text2)}
+@media (max-width:900px){.kanban{grid-template-columns:1fr}.lk-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -82,6 +113,7 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
   </div>
 </header>
 <div class="filter-bar">
+  <span class="views"><button id="vK" class="on">Pipeline</button><button id="vL">Liste</button></span>
   <button class="pill on" id="fNew">Nouveaux seulement</button>
   <select id="fStatut"><option value="">Tous statuts</option></select>
   <select id="fSource"><option value="">Toutes sources</option></select>
@@ -103,36 +135,13 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
     </ol>
     <div style="font-size:.78rem;color:var(--text3);margin-top:.4rem">Ces annonces restent dans ce navigateur (comme tes avis), pas dans le dépôt. Elles ne sont pas mises à jour automatiquement : recolle la recherche de temps en temps.</div>
   </details>
-  <details class="info links"><summary><b>Liens de recherche à surveiller</b> — Paris et Neuilly, 500 m² minimum</summary>
-    <div class="lk-grid">
-      <div><h4>Collectés automatiquement chaque matin</h4>
-        <a href="https://www.barnes-international.com/fr/vente/france/paris/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers Paris</a>
-        <a href="https://www.barnes-international.com/fr/vente/france/paris/maison.html" target="_blank">Barnes · Maisons Paris</a>
-        <a href="https://www.barnes-international.com/fr/vente/france/neuilly-sur-seine/maison.html" target="_blank">Barnes · Maisons Neuilly</a>
-        <a href="https://www.barnes-international.com/fr/vente/france/hauts-de-seine/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers 92 (Neuilly gardé)</a>
-        <a href="https://www.emilegarcin.com/fr/annonces/vente-immobilier" target="_blank">Émile Garcin · tous biens ≥ 500 m² (Paris + Neuilly gardés)</a>
-        <a href="https://www.sothebysrealty-france.com/fr/vente-proprietes-de-luxe/" target="_blank">Sotheby's France (+ Paris Ouest, Propriétés Parisiennes)</a>
-        <a href="https://danielfeau.com/fr/listing/france/vente/maisons/paris" target="_blank">Daniel Féau · maisons Paris / Neuilly</a>
-        <a href="https://kretzrealestate.com/fr/acheter/" target="_blank">Kretz Real Estate</a>
-        <a href="https://www.junot.fr/fr/biens-immobiliers/acheter/" target="_blank">Junot · maisons / hôtels particuliers</a>
-        <a href="https://www.coldwellbanker.fr/vente-immobilier?by_min_area=500" target="_blank">Coldwell Banker · ≥ 500 m²</a>
-        <a href="https://www.vaneau.fr/fr/" target="_blank">Vaneau</a>
-        <a href="https://www.engelvoelkers.com/fr/fr/propriete/res/vendre/maison/ile-de-france/paris" target="_blank">Engel &amp; Völkers · maisons Paris / Neuilly</a>
-        <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/maison-pavillon-propriete.html" target="_blank">Licitor · Enchères maisons / propriétés</a>
-        <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/immeuble-residentiel.html" target="_blank">Licitor · Enchères immeubles</a>
-        <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/local-a-usage-de-commerce.html" target="_blank">Licitor · Enchères locaux commerciaux</a></div>
-      <div><h4>À regarder toi-même (pas encore collectés)</h4>
-        <a href="https://www.bnppre.fr/a-vendre/bureau/" target="_blank">BNP Paribas Real Estate · Bureaux à vendre</a>
-        <a href="https://www.espaces-atypiques.com/" target="_blank">Espaces Atypiques · lofts, ateliers</a>
-        <a href="https://www.christiesrealestate.com/" target="_blank">Christie's International Real Estate</a><span>Site en JavaScript : utilise le favori « Copier les annonces »</span></div>
-      <div><h4>Bloqués aux robots : crée une alerte e-mail</h4>
-        <a href="https://www.bellesdemeures.com/" target="_blank">Belles Demeures</a><span>Type « Hôtel particulier », Paris + Neuilly, ≥ 500 m², alerte quotidienne</span>
-        <a href="https://proprietes.lefigaro.fr/" target="_blank">Propriétés Le Figaro</a><span>Catégorie « Hôtel particulier », mêmes zones</span>
-        <a href="https://www.cbre.fr/" target="_blank">CBRE</a><span>Investissement : « immeuble indépendant », « hôtel particulier »</span>
-        <a href="https://www.leboncoin.fr/" target="_blank">Leboncoin</a><span>Ventes immobilières, mot-clé « hôtel particulier », Paris + Neuilly, ≥ 500 m²</span></div>
-    </div>
+  <details class="info links"><summary><b>Les sites</b> — <span id="sitesRes"></span> (clique pour le détail)</summary>
+    <table class="sites"><thead><tr><th>Site</th><th>Comment</th><th style="text-align:right">Biens</th><th>Lien</th></tr></thead><tbody id="sites"></tbody></table>
+    <div style="font-size:.76rem;color:var(--text3);margin-top:.5rem">« Biens » = biens actifs dans ton périmètre trouvés sur ce site (un même bien peut être chez plusieurs agences). Hors marché : aucun site ne les montre, seules les agences les proposent en direct.</div>
   </details>
-  <div class="grid" id="grid"></div>
+  <div class="kanban" id="kanban"></div>
+  <div class="grid" id="grid" style="display:none"></div>
+  <div class="modal" id="modal"><div class="card" id="mcard"></div></div>
 </div>
 <script>
 const LS = 'immocam.hp.v1';
@@ -159,9 +168,95 @@ async function init() {
   document.getElementById('fSource').innerHTML += srcs.map(s => `<option>${s}</option>`).join('');
   document.getElementById('fStatut').innerHTML += STATUTS.map(([k, l]) => `<option value="${k}">${l}</option>`).join('');
   if (!Object.values(DB.annonces).some(isNew)) setNew(false);
-  render();
+  setVue(vue);
 }
 function setNew(v) { onlyNew = v; document.getElementById('fNew').classList.toggle('on', v); }
+
+const SITES = [
+  ["Sotheby's (France, Paris Ouest, Propriétés Parisiennes)", 'sothebys', 'auto', 'https://www.sothebysrealty-france.com/fr/vente-proprietes-de-luxe/'],
+  ['Daniel Féau', 'feau', 'auto', 'https://danielfeau.com/fr/listing/france/vente/maisons/paris'],
+  ['Barnes', 'barnes', 'auto', 'https://www.barnes-international.com/fr/vente/france/paris/hotel-particulier.html'],
+  ['Kretz', 'kretz', 'auto', 'https://kretzrealestate.com/fr/acheter/'],
+  ['Junot', 'junot', 'auto', 'https://www.junot.fr/fr/biens-immobiliers/acheter/'],
+  ['Coldwell Banker', 'coldwell', 'auto', 'https://www.coldwellbanker.fr/vente-immobilier?by_min_area=500'],
+  ['Émile Garcin', 'emile-garcin', 'auto', 'https://www.emilegarcin.com/fr/annonces/vente-immobilier'],
+  ['Vaneau', 'vaneau', 'auto', 'https://www.vaneau.fr/fr/'],
+  ['Engel & Völkers', 'engel-voelkers', 'part', 'https://www.engelvoelkers.com/fr/fr/propriete/res/vendre/maison/ile-de-france/paris', 'Automatique, mais le site ne montre que 35 annonces par page : un bien peut manquer'],
+  ['Licitor (enchères judiciaires)', 'licitor', 'part', 'https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/maison-pavillon-propriete.html', 'Automatique, 5 pages par catégorie (largement suffisant pour Paris)'],
+  ['Belles Demeures', 'bellesdemeures.com', 'bloq', 'https://www.bellesdemeures.com/'],
+  ['Propriétés Le Figaro', 'proprietes.lefigaro.fr', 'bloq', 'https://proprietes.lefigaro.fr/'],
+  ['Leboncoin', 'leboncoin.fr', 'bloq', 'https://www.leboncoin.fr/'],
+  ['CBRE (investissement)', 'cbre.fr', 'bloq', 'https://www.cbre.fr/'],
+  ["Christie's International Real Estate", 'christiesrealestate.com', 'bloq', 'https://www.christiesrealestate.com/', 'Site en JavaScript : favori « Copier les annonces »'],
+  ['BNP Paribas Real Estate (bureaux)', 'bnppre.fr', 'main', 'https://www.bnppre.fr/a-vendre/bureau/'],
+  ['Espaces Atypiques', 'espaces-atypiques.com', 'main', 'https://www.espaces-atypiques.com/'],
+];
+const ETATS = { auto: ['auto', '✓ Automatique chaque matin — tout le catalogue'], part: ['part', 'Automatique, partiel'],
+  bloq: ['bloq', '⛔ Bloque les robots → favori « Copier les annonces »'], main: ['main', 'Pas encore lu → à ouvrir toi-même'] };
+function renderSites() {
+  const n = src => Object.values(DB.annonces).filter(x => x.actif && x.source === src).length;
+  const c = k => SITES.filter(z => z[2] === k).length;
+  document.getElementById('sitesRes').innerHTML = `<span class="etat auto">${c('auto') + c('part')} lus automatiquement chaque matin</span> <span class="etat bloq">${c('bloq')} bloqués → favori</span> <span class="etat main">${c('main')} à ouvrir toi-même</span>`;
+  document.getElementById('sites').innerHTML = SITES.map(([nom, src, et, url, note]) => {
+    const k = n(src);
+    return `<tr><td><b>${esc(nom)}</b>${note ? `<div class="sub">${esc(note)}</div>` : ''}</td><td><span class="etat ${ETATS[et][0]}">${et === 'part' ? 'Automatique, partiel' : ETATS[et][1]}</span></td>
+      <td class="n">${k || (et === 'auto' || et === 'part' ? '0' : '—')}</td><td><a href="${url}" target="_blank" rel="noopener" style="color:var(--accent2)">ouvrir ↗</a></td></tr>`;
+  }).join('');
+}
+
+const COLS = [['nouveau', 'Nouveau', 'var(--green)'], ['avoir', 'À regarder', 'var(--yellow)'], ['visiter', 'À visiter', 'var(--accent2)'], ['visite', 'Visité', 'var(--accent)'], ['offre', 'Offre', '#7c3aed']];
+let vue = 'pipeline';
+try { vue = localStorage.getItem(LS + '.vue') || 'pipeline'; } catch (e) {}
+function kcard(x) {
+  const e = x.eval || {}, sc = e.score || 0, ec = e.ecart_dvf;
+  const col = sc >= 65 ? 'var(--green)' : sc >= 45 ? 'var(--accent2)' : sc >= 30 ? 'var(--yellow)' : 'var(--text3)';
+  const band = ec == null ? '<div class="band na">vs DVF : n/a</div>' : `<div class="band ${ec <= 0 ? 'pos' : 'neg'}">${ec > 0 ? '+' : ''}${(ec * 100).toFixed(1)} % vs DVF</div>`;
+  const aussi = AUSSI[x.id] ? `<span class="chip">+${AUSSI[x.id].length} agence${AUSSI[x.id].length > 1 ? 's' : ''}</span>` : '';
+  const al = (e.alertes || []).length ? `<span class="chip alert">⚠ ${e.alertes.length}</span>` : '';
+  return `<div class="kc" draggable="true" data-k="${esc(x.id)}">
+    <div class="h"><span>${x.surface ? fmt.format(x.surface) + ' m²' : '? m²'} — ${esc(x.commune.split(',')[0])}</span><span class="sc" style="background:${col}" title="Note événementiel / bureaux">${sc}</span></div>
+    <div class="l">Prix<b>${meur(x.prix)}</b></div><div class="l">€/m²<b>${e.prix_m2 ? fmt.format(e.prix_m2) : '—'}</b></div>
+    ${band}
+    <div class="t">${esc(x.titre.slice(0, 70))}</div>
+    <div class="bt">${isNew(x) ? '<span class="badge b-new">New</span>' : ''}${(x.historique_prix || []).length && x.historique_prix.at(-1).avant > x.prix ? '<span class="badge b-drop">Baisse</span>' : ''}<span class="chip">${esc(x.source)}</span>${aussi}${al}${U.notes[x.id] ? '<span class="chip">✎ avis</span>' : ''}</div>
+  </div>`;
+}
+function renderKanban(L) {
+  document.getElementById('kanban').innerHTML = COLS.map(([k, lab, c]) => {
+    const C = L.filter(x => (U.st[x.id] || 'nouveau') === k);
+    return `<div class="kcol" data-col="${k}"><h3 style="color:${c}">${lab} <span class="cnt">${C.length}</span></h3>${C.length ? C.map(kcard).join('') : '<div class="vide">Aucun bien</div>'}</div>`;
+  }).join('');
+}
+function ouvrir(id) {
+  const x = DB.annonces[id]; if (!x) return;
+  U.vus[id] = 1; save();
+  document.getElementById('mcard').innerHTML = '<button class="x" id="mx" title="Fermer">×</button>' + card(x).replace(/^\s*<div class="card[^"]*">/, '').replace(/<\/div>\s*$/, '');
+  document.getElementById('modal').classList.add('on');
+}
+function fermer() { document.getElementById('modal').classList.remove('on'); render(); }
+document.getElementById('modal').addEventListener('click', e => { if (e.target.id === 'modal' || e.target.id === 'mx') fermer(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && document.getElementById('modal').classList.contains('on')) fermer(); });
+const KB = document.getElementById('kanban');
+KB.addEventListener('click', e => { const c = e.target.closest('.kc'); if (c) ouvrir(c.dataset.k); });
+KB.addEventListener('dragstart', e => { const c = e.target.closest('.kc'); if (c) { e.dataTransfer.setData('text/plain', c.dataset.k); c.classList.add('drag'); } });
+KB.addEventListener('dragend', e => { const c = e.target.closest('.kc'); if (c) c.classList.remove('drag'); });
+KB.addEventListener('dragover', e => { const col = e.target.closest('.kcol'); if (col) { e.preventDefault(); KB.querySelectorAll('.kcol.over').forEach(k => k !== col && k.classList.remove('over')); col.classList.add('over'); } });
+KB.addEventListener('dragleave', e => { const col = e.target.closest('.kcol'); if (col && !col.contains(e.relatedTarget)) col.classList.remove('over'); });
+KB.addEventListener('drop', e => {
+  const col = e.target.closest('.kcol'), id = e.dataTransfer.getData('text/plain');
+  if (!col || !id) return;
+  e.preventDefault(); U.st[id] = col.dataset.col; U.vus[id] = 1; save(); render();
+});
+function setVue(v) {
+  vue = v; try { localStorage.setItem(LS + '.vue', v); } catch (e) {}
+  document.getElementById('vK').classList.toggle('on', v === 'pipeline'); document.getElementById('vL').classList.toggle('on', v === 'liste');
+  ['fNew', 'fStatut', 'fSort'].forEach(id => document.getElementById(id).style.display = v === 'pipeline' ? 'none' : '');
+  document.getElementById('kanban').style.display = v === 'pipeline' ? '' : 'none';
+  document.getElementById('grid').style.display = v === 'pipeline' ? 'none' : '';
+  render();
+}
+document.getElementById('vK').addEventListener('click', () => setVue('pipeline'));
+document.getElementById('vL').addEventListener('click', () => setVue('liste'));
 
 // Même bien chez plusieurs agences : même lieu, surface à ±6 %, prix à ±3 % (ou prix caché et surface à ±2 %)
 let AUSSI = {}, CACHE = new Set();
@@ -184,9 +279,10 @@ function render() {
   const off = document.getElementById('fOff').checked;
   let L = A.filter(x => {
     const st = U.st[x.id] || 'nouveau', e = x.eval || {};
-    if (onlyNew && !isNew(x) && !ouvertes.has(x.id)) return false;
+    const pipe = vue === 'pipeline';
+    if (!pipe && onlyNew && !isNew(x) && !ouvertes.has(x.id)) return false;
     if (!off && (!x.actif || st === 'ecarte')) return false;
-    if (g('fStatut') && st !== g('fStatut')) return false;
+    if (!pipe && g('fStatut') && st !== g('fStatut')) return false;
     if (g('fSource') && x.source !== g('fSource')) return false;
     const z = g('fZone'), sec = e.secteur || '';
     if (z && sec !== z) return false;
@@ -205,9 +301,11 @@ function render() {
   document.getElementById('sTotal').textContent = A.filter(x => x.actif).length + ' annonces actives';
   document.getElementById('sMaj').textContent = DB.meta.maj ? 'mise à jour ' + new Date(DB.meta.maj).toLocaleDateString('fr-FR') : '';
   const err = Object.keys(DB.meta.erreurs || {});
-  document.getElementById('info').innerHTML = `<b>${L.length}</b> annonce${L.length > 1 ? 's' : ''} affichée${L.length > 1 ? 's' : ''}${onlyNew ? ' (nouvelles pour toi)' : ''}.
-    Collecte automatique chaque matin : Barnes, Sotheby's, Féau, Kretz, Junot, Émile Garcin, Coldwell, Vaneau, Engel &amp; Völkers, enchères Licitor. Un même bien chez plusieurs agences n'apparaît qu'une fois (« Aussi chez »). Belles Demeures, Figaro, CBRE et Leboncoin bloquent les robots : utilise le favori « Copier les annonces ».
+  document.getElementById('info').innerHTML = `<b>${L.length}</b> bien${L.length > 1 ? 's' : ''} affiché${L.length > 1 ? 's' : ''}${vue === 'pipeline' ? ' — fais glisser une carte d\'une colonne à l\'autre, clique pour ouvrir la fiche et donner ton avis' : onlyNew ? ' (nouveaux pour toi)' : ''}.
+    Un même bien chez plusieurs agences n'apparaît qu'une fois (« Aussi chez »). La liste des sites lus est juste en dessous.
     La note (sur 100) favorise la surface, un prix sous la référence DVF de la commune, un usage déjà bureaux ou commercial et les atouts événementiels ; elle retire des points pour voie privée, copropriété, DPE F/G.${err.length ? ' <span class="neg">Source en panne au dernier passage : ' + err.join(', ') + '.</span>' : ''}`;
+  renderSites();
+  if (vue === 'pipeline') return renderKanban(L);
   document.getElementById('grid').innerHTML = L.length ? L.map(card).join('') : `<div class="empty">${onlyNew ? 'Rien de nouveau depuis ta dernière visite.' : 'Aucune annonce pour ces filtres.'}</div>`;
 }
 
@@ -233,12 +331,12 @@ function card(x) {
   </div>`;
 }
 
-document.getElementById('grid').addEventListener('change', e => {
+document.addEventListener('change', e => {
   const t = e.target;
-  if (t.dataset.st) { ouvertes.add(t.dataset.st); U.st[t.dataset.st] = t.value; U.vus[t.dataset.st] = 1; save(); render(); }
+  if (t.dataset.st) { ouvertes.add(t.dataset.st); U.st[t.dataset.st] = t.value; U.vus[t.dataset.st] = 1; save(); if (!document.getElementById('modal').classList.contains('on')) render(); }
 });
-document.getElementById('grid').addEventListener('input', e => { const t = e.target; if (t.dataset.note) { ouvertes.add(t.dataset.note); U.notes[t.dataset.note] = t.value; U.vus[t.dataset.note] = 1; save(); } });
-document.getElementById('grid').addEventListener('click', e => { const a = e.target.closest('[data-open]'); if (a) { ouvertes.add(a.dataset.open); U.vus[a.dataset.open] = 1; save(); setTimeout(render, 300); } });
+document.addEventListener('input', e => { const t = e.target; if (t.dataset.note) { ouvertes.add(t.dataset.note); U.notes[t.dataset.note] = t.value; U.vus[t.dataset.note] = 1; save(); } });
+document.addEventListener('click', e => { const a = e.target.closest('[data-open]'); if (a) { ouvertes.add(a.dataset.open); U.vus[a.dataset.open] = 1; save(); if (!document.getElementById('modal').classList.contains('on')) setTimeout(render, 300); } });
 document.getElementById('fNew').addEventListener('click', () => { setNew(!onlyNew); render(); });
 ['fStatut', 'fSource', 'fZone', 'fUsage', 'fSort', 'fOff'].forEach(id => document.getElementById(id).addEventListener('change', render));
 ['fSurf', 'fPrix'].forEach(id => document.getElementById(id).addEventListener('input', render));
