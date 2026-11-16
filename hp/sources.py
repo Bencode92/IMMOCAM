@@ -36,21 +36,21 @@ def cp_from_ville(ville):
 BARNES = "https://www.barnes-international.com/fr/vente/france/"
 
 
+SURFACE_MIN = 500
+
+
+def dans_perimetre(x):
+    """Paris ou Neuilly-sur-Seine, et au moins 500 m² (surface inconnue gardée : à vérifier)."""
+    lieu = (x.get("code_postal") or "").startswith("75") or "neuilly" in (x.get("commune") or "").lower()
+    return lieu and not (x.get("surface") and x["surface"] < SURFACE_MIN)
+
+
 class Barnes:
     name = "barnes"
-    # Hôtels particuliers (Paris, 92, 78) + grandes maisons des communes de l'ouest
+    # Périmètre : Paris intra-muros + Neuilly (filtré ensuite par dans_perimetre)
     LISTES = [BARNES + p + ".html" for p in (
-        "paris/hotel-particulier", "hauts-de-seine/hotel-particulier", "yvelines/hotel-particulier",
-        "paris-16eme/maison", "paris-17eme/maison", "paris-7eme/maison", "paris-8eme/maison",
-        "neuilly-sur-seine/maison", "boulogne-billancourt/maison", "saint-cloud/maison", "le-vesinet/maison",
-        "rueil-malmaison/maison", "garches/maison", "saint-germain-en-laye/maison", "levallois-perret/maison",
-        "paris-15eme/maison", "ville-davray/maison", "bougival/maison", "la-celle-saint-cloud/maison", "chatou/maison",
-        "le-chesnay-rocquencourt/maison", "croissy-sur-seine/maison", "louveciennes/maison", "maisons-laffitte/maison",
-        "marly-le-roi/maison", "le-pecq/maison", "versailles/maison", "asnieres-sur-seine/maison", "bois-colombes/maison",
-        "chaville/maison", "courbevoie/maison", "la-garenne-colombes/maison", "issy-les-moulineaux/maison",
-        "marnes-la-coquette/maison", "meudon/maison", "puteaux/maison", "sevres/maison", "suresnes/maison",
-        "vaucresson/maison")]
-    SURFACE_MIN = 250
+        "paris/hotel-particulier", "paris/maison", "hauts-de-seine/hotel-particulier", "neuilly-sur-seine/maison")]
+    SURFACE_MIN = 500
 
     def collect(self, known_ids=frozenset()):
         out, ids = [], set()
@@ -77,6 +77,7 @@ class Barnes:
                             "type": "hotel particulier" if "particulier" in titre.lower() else "maison", "commune": ville, "code_postal": cp_from_ville(ville),
                             "adresse": "", "surface": surface, "prix": prix, "description": "", "dpe": "",
                             "extra": {"criteres": crit}})
+        out = [x for x in out if dans_perimetre(x)]
         # Fiche détaillée uniquement pour les nouvelles annonces (description, DPE)
         for x in out:
             if x["id"] in known_ids:
@@ -100,7 +101,7 @@ class Barnes:
 
 
 class LicitorHP:
-    """Enchères judiciaires : maisons / propriétés, immeubles, locaux commerciaux (75, 92, 78)."""
+    """Enchères judiciaires : maisons / propriétés, immeubles, locaux commerciaux (Paris, Neuilly)."""
     name = "licitor"
     PAGES = ["/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/maison-pavillon-propriete.html",
              "/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/immeuble-residentiel.html",
@@ -124,7 +125,7 @@ class LicitorHP:
                 for it in items:
                     parts = [p.strip() for p in it.get("description", "").split("|")]
                     dept = parts[0] if parts and parts[0].isdigit() else it.get("_dept_code")
-                    if it["_id"] in seen or dept not in ("75", "92", "78"):
+                    if it["_id"] in seen or dept not in ("75", "92"):
                         continue
                     seen.add(it["_id"])
                     fresh += 1

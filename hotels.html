@@ -82,7 +82,7 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
   <button class="pill on" id="fNew">Nouveaux seulement</button>
   <select id="fStatut"><option value="">Tous statuts</option></select>
   <select id="fSource"><option value="">Toutes sources</option></select>
-  <select id="fZone"><option value="ouest">Ouest : Paris + banlieue</option><option value="Paris ouest">Paris ouest (7, 8, 15, 16, 17)</option><option value="Banlieue ouest">Banlieue ouest (92, 78)</option><option value="">Toutes zones</option></select>
+  <select id="fZone"><option value="">Paris + Neuilly</option><option value="Paris ouest">Paris ouest (7, 8, 15, 16, 17)</option><option value="Paris (autre)">Paris autres arrondissements</option><option value="Neuilly">Neuilly</option></select>
   <select id="fUsage"><option value="">Tout usage</option><option value="pro">Déjà bureaux / commercial</option><option value="hab">Habitation</option></select>
   <input id="fSurf" type="number" placeholder="m² min" style="width:85px">
   <input id="fPrix" type="number" placeholder="Prix max (M€)" style="width:110px">
@@ -91,16 +91,13 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
 </div>
 <div class="wrap">
   <div class="info" id="info">Chargement…</div>
-  <details class="info links"><summary><b>Liens de recherche à surveiller</b> — Paris ouest et banlieue ouest</summary>
+  <details class="info links"><summary><b>Liens de recherche à surveiller</b> — Paris et Neuilly, 500 m² minimum</summary>
     <div class="lk-grid">
       <div><h4>Collectés automatiquement chaque matin</h4>
         <a href="https://www.barnes-international.com/fr/vente/france/paris/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers Paris</a>
-        <a href="https://www.barnes-international.com/fr/vente/france/hauts-de-seine/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers Hauts-de-Seine</a>
-        <a href="https://www.barnes-international.com/fr/vente/france/yvelines/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers Yvelines</a>
-        <a href="https://www.barnes-international.com/fr/vente/france/paris-16eme/maison.html" target="_blank">Barnes · Maisons Paris 16e</a>
+        <a href="https://www.barnes-international.com/fr/vente/france/paris/maison.html" target="_blank">Barnes · Maisons Paris</a>
         <a href="https://www.barnes-international.com/fr/vente/france/neuilly-sur-seine/maison.html" target="_blank">Barnes · Maisons Neuilly</a>
-        <a href="https://www.barnes-international.com/fr/vente/france/saint-cloud/maison.html" target="_blank">Barnes · Maisons Saint-Cloud</a>
-        <a href="https://www.barnes-international.com/fr/vente/france/le-vesinet/maison.html" target="_blank">Barnes · Maisons Le Vésinet</a>
+        <a href="https://www.barnes-international.com/fr/vente/france/hauts-de-seine/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers 92 (Neuilly gardé)</a>
         <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/maison-pavillon-propriete.html" target="_blank">Licitor · Enchères maisons / propriétés</a>
         <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/immeuble-residentiel.html" target="_blank">Licitor · Enchères immeubles</a>
         <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/local-a-usage-de-commerce.html" target="_blank">Licitor · Enchères locaux commerciaux</a></div>
@@ -112,10 +109,10 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
         <a href="https://www.junot.fr/" target="_blank">Junot</a>
         <a href="https://www.feau-immobilier.fr/" target="_blank">Daniel Féau</a></div>
       <div><h4>Bloqués aux robots : crée une alerte e-mail</h4>
-        <a href="https://www.bellesdemeures.com/" target="_blank">Belles Demeures</a><span>Type « Hôtel particulier », Paris + 92 + 78, alerte quotidienne</span>
+        <a href="https://www.bellesdemeures.com/" target="_blank">Belles Demeures</a><span>Type « Hôtel particulier », Paris + Neuilly, ≥ 500 m², alerte quotidienne</span>
         <a href="https://proprietes.lefigaro.fr/" target="_blank">Propriétés Le Figaro</a><span>Catégorie « Hôtel particulier », mêmes zones</span>
         <a href="https://www.cbre.fr/" target="_blank">CBRE</a><span>Investissement : « immeuble indépendant », « hôtel particulier »</span>
-        <a href="https://www.leboncoin.fr/" target="_blank">Leboncoin</a><span>Ventes immobilières, mot-clé « hôtel particulier », ≥ 300 m²</span></div>
+        <a href="https://www.leboncoin.fr/" target="_blank">Leboncoin</a><span>Ventes immobilières, mot-clé « hôtel particulier », Paris + Neuilly, ≥ 500 m²</span></div>
     </div>
   </details>
   <div class="grid" id="grid"></div>
@@ -158,7 +155,7 @@ function render() {
     if (g('fStatut') && st !== g('fStatut')) return false;
     if (g('fSource') && x.source !== g('fSource')) return false;
     const z = g('fZone'), sec = e.secteur || '';
-    if (z === 'ouest' ? !sec.endsWith('ouest') : z && sec !== z) return false;
+    if (z && sec !== z) return false;
     const pro = (e.usage || '').startsWith('bureaux');
     if (g('fUsage') === 'pro' && !pro) return false;
     if (g('fUsage') === 'hab' && pro) return false;

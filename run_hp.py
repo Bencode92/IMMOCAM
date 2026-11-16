@@ -15,7 +15,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
-from hp.sources import SOURCES  # noqa: E402
+from hp.sources import SOURCES, dans_perimetre  # noqa: E402
 from hp.enrich import enrich, load_ref, load_cache, GEOCACHE  # noqa: E402
 
 DB = ROOT / "data" / "hp_db.json"
@@ -43,7 +43,8 @@ def main():
             erreurs[name] = str(ex)[:200]
             print(f"  {name}: ERREUR {ex}")
             continue
-        print(f"  {name}: {len(items)} annonces")
+        items = [x for x in items if dans_perimetre(x)]
+        print(f"  {name}: {len(items)} annonces dans le périmètre")
         for x in items:
             vus.add(x["id"])
             old = ann.get(x["id"])
@@ -60,6 +61,8 @@ def main():
             x["last_seen"], x["actif"] = today, True
             x["eval"] = enrich(x, ref, cache, zonages)
             ann[x["id"]] = x
+    for k in [k for k, x in ann.items() if not dans_perimetre(x)]:  # hors Paris/Neuilly ou < 500 m²
+        del ann[k]
     for k, x in ann.items():  # disparues des sources collectées ce jour
         if x["source"] in a.sources and k not in vus and x["source"] not in erreurs:
             x["actif"] = False

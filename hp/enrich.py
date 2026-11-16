@@ -46,7 +46,7 @@ BANLIEUE_OUEST = {"92051", "92012", "92044", "92040", "92064", "92073", "92063",
 
 
 def secteur(insee):
-    return "Paris ouest" if insee in PARIS_OUEST else "Banlieue ouest" if insee in BANLIEUE_OUEST else \
+    return "Paris ouest" if insee in PARIS_OUEST else "Neuilly" if insee == "92051" else "Banlieue ouest" if insee in BANLIEUE_OUEST else \
         "Paris (autre)" if insee.startswith("75") else "Hors secteur"
 
 
