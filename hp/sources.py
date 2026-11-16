@@ -43,7 +43,13 @@ class Barnes:
         "paris/hotel-particulier", "hauts-de-seine/hotel-particulier", "yvelines/hotel-particulier",
         "paris-16eme/maison", "paris-17eme/maison", "paris-7eme/maison", "paris-8eme/maison",
         "neuilly-sur-seine/maison", "boulogne-billancourt/maison", "saint-cloud/maison", "le-vesinet/maison",
-        "rueil-malmaison/maison", "garches/maison", "saint-germain-en-laye/maison", "levallois-perret/maison")]
+        "rueil-malmaison/maison", "garches/maison", "saint-germain-en-laye/maison", "levallois-perret/maison",
+        "paris-15eme/maison", "ville-davray/maison", "bougival/maison", "la-celle-saint-cloud/maison", "chatou/maison",
+        "le-chesnay-rocquencourt/maison", "croissy-sur-seine/maison", "louveciennes/maison", "maisons-laffitte/maison",
+        "marly-le-roi/maison", "le-pecq/maison", "versailles/maison", "asnieres-sur-seine/maison", "bois-colombes/maison",
+        "chaville/maison", "courbevoie/maison", "la-garenne-colombes/maison", "issy-les-moulineaux/maison",
+        "marnes-la-coquette/maison", "meudon/maison", "puteaux/maison", "sevres/maison", "suresnes/maison",
+        "vaucresson/maison")]
     SURFACE_MIN = 250
 
     def collect(self, known_ids=frozenset()):
@@ -94,7 +100,7 @@ class Barnes:
 
 
 class LicitorHP:
-    """Enchères judiciaires : maisons / propriétés, immeubles, locaux commerciaux (75, 92)."""
+    """Enchères judiciaires : maisons / propriétés, immeubles, locaux commerciaux (75, 92, 78)."""
     name = "licitor"
     PAGES = ["/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/maison-pavillon-propriete.html",
              "/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/immeuble-residentiel.html",
@@ -118,7 +124,7 @@ class LicitorHP:
                 for it in items:
                     parts = [p.strip() for p in it.get("description", "").split("|")]
                     dept = parts[0] if parts and parts[0].isdigit() else it.get("_dept_code")
-                    if it["_id"] in seen or dept not in ("75", "92"):
+                    if it["_id"] in seen or dept not in ("75", "92", "78"):
                         continue
                     seen.add(it["_id"])
                     fresh += 1

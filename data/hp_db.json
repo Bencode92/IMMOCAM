@@ -1,9 +1,9 @@
 {
  "meta": {
   "maj": "2026-11-16",
-  "total": 81,
-  "actives": 81,
-  "nouveaux_du_jour": 81,
+  "total": 131,
+  "actives": 131,
+  "nouveaux_du_jour": 131,
   "erreurs": {}
  },
  "annonces": {
@@ -3693,6 +3693,2234 @@
     "alertes": [],
     "scr": null,
     "score": 13
+   }
+  },
+  "barnes-APM-87056562": {
+   "id": "barnes-APM-87056562",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/montrouge/ref-APM-87056562.html",
+   "titre": "Maison - Art Déco des années 30",
+   "type": "maison",
+   "commune": "Montrouge",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 296.0,
+   "prix": 2300000.0,
+   "description": "À quelques minutes de Paris, dans l'un des secteurs les plus recherchés de Montrouge, découvrez cette élégante demeure de caractère de 296 m² habitables, offrant un potentiel de rénovation exceptionnel. Derrière une superbe façade des années 1930, cette propriété séduit par ses volumes généreux, son charme authentique et son jardin privatif exposé plein Ouest, un véritable écrin de verdure. Elle se compose comme suit : - Au rez-de-chaussée : une entrée, un vaste salon de 42 m², une cuisine indépendante et de belles pièces de réception. - Au premier étage : Quatre chambres, une salle de bain et deux salles d'eau, des toilettes - Au deuxième étage : trois chambres, deux salles d'eau, des toilettes, un petit salon avec espace cuisine. - À l'extérieur : un jardin arboré exposé plein Ouest ainsi que deux stationnements intérieurs. Des travaux de rénovation permettront de révéler tout le potentiel de cette demeure et d'en faire une résidence familiale de prestige, alliant le charme de l'ancien au confort contemporain. À proximité immédiate des commerces, des écoles et des transports, cette propriété rare constitue une opportunité unique sur le marché de Montrouge. Contact Barnes : + (33)6 50 78 86 97",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "7 Chambres",
+     "296 m²",
+     "5 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92049",
+    "secteur": "Hors secteur",
+    "commune_ref": "Montrouge",
+    "prix_m2": 7770,
+    "usage": "habitation",
+    "dvf_med": 6440,
+    "dvf_n": 4,
+    "ecart_dvf": 0.207,
+    "atouts": [
+     "Jardin",
+     "Réception",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 24
+   }
+  },
+  "barnes-APM-86080101": {
+   "id": "barnes-APM-86080101",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/ville-davray/ref-APM-86080101.html",
+   "titre": "Ville-d'Avray, maison classée remarquable",
+   "type": "maison",
+   "commune": "Ville-d'Avray",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 285.0,
+   "prix": 2500000.0,
+   "description": "Cette superbe demeure de 1860, édifiée sur une belle parcelle de 1060 m², idéalement orientée au sud, a été rénovée récemment avec goût. D'une superficie totale de 385 m² environ y compris locaux techniques et annexes, et de 250 m² habitables. Le RDC dédié aux espaces de réception se compose d'un salon avec cheminée, d'une salle à manger, d'une grande cuisine équipée sous véranda, d'un salon TV avec billard. Une chambre avec salle d'eau et toilettes, des toilettes-invités, un vestiaire complètent l'agencement de ce niveau d'accueil. L'espace privé aux étages, abrite cinq chambres, dont une master sur bow-window dotée d'un espace bureau, d'un dressing et d'une salle de bains et douches. On trouvera au sous-sol, une buanderie, une cave à vins, un atelier et une serre, ainsi qu'un espace de stockage. L'extérieur constitué de terrasses sur un jardin clos et végétalisé accueille des bassins d'agrément. Un garage, une ancienne écurie et un studio indépendant sont au rang des prestations de qualité de cette maison presque à la campagne à une encablure de Paris et Versailles. Contact Barnes: +33 (0)6 60 03 78 44",
+   "dpe": "C",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "285 m²",
+     "3 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92077",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Ville-d'Avray",
+    "prix_m2": 8772,
+    "usage": "habitation",
+    "dvf_med": 7539,
+    "dvf_n": 18,
+    "ecart_dvf": 0.164,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Verrière / atelier",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 42
+   }
+  },
+  "barnes-APM-84763798": {
+   "id": "barnes-APM-84763798",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/marnes-la-coquette/ref-APM-84763798.html",
+   "titre": "Maison de charme",
+   "type": "maison",
+   "commune": "Marnes-la-Coquette",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 330.0,
+   "prix": 1950000.0,
+   "description": "Sur les hauteurs du bourg de Marnes-la-Coquette, au calme et à l'abri des regards, propriété de 380 m² édifiée sur une parcelle de 1380 m². Cette maison construite dans les années quatre-vingt se compose d'une entrée distribuant le salon avec sa cheminée, la salle à manger, une chambre avec cheminée, dotée d'une salle d'eau, l'ensemble de ces pièces donnant de plain-pied sur la terrasse et la piscine orientée au sud et à l'ouest; un bureau et une cuisine indépendante complètent l'agencement de cet espace de convivialité. Une pièce de loisirs pourrait constituée une chambre supplémentaire donnant de plain-pied sur la terrasse côté ouest. L'étage abrite un vaste espace parental qui se compose d'une suite lumineuse aux beaux volumes sous charpente, d'un dressing et d'une salle d'eau avec toilettes, l'ensemble développant une surface de plus de 60 m²; un couloir garni de placards, dessert une autre chambre, une salle de bains et des toilettes séparées. Le rez-de-jardin dispose d'une partie habitation indépendante, constituée d'une pièce de vie intégrant une cuisine, de deux chambres, d'une salle d'eau et de toilettes. La partie technique abrite un grand garage pour trois véhicules, un grand atelier, une buanderie, un local chaufferie et une cave à vins. Cette propriété au calme absolue, entourée de verdure, constituerait avec quelques travaux de modernisation un cadre idéal à un projet de vie familiale. Contact Barnes: 06 60 03 78 44",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "330 m²",
+     "4 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92047",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Marnes-la-Coquette",
+    "prix_m2": 5909,
+    "usage": "habitation",
+    "dvf_med": 9443,
+    "dvf_n": 9,
+    "ecart_dvf": -0.374,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Verrière / atelier",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 60
+   }
+  },
+  "barnes-APM-86937353": {
+   "id": "barnes-APM-86937353",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/marnes-la-coquette/ref-APM-86937353.html",
+   "titre": "Maison de village",
+   "type": "maison",
+   "commune": "Marnes-la-Coquette",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 345.0,
+   "prix": 1650000.0,
+   "description": "Au cœur du bourg historique de Marnes-la-Coquette, cette charmante maison de ville de 340 m², édifiée à la fin du 18e siècle puis agrandie successivement en 1951 et 1968, dispose d'un jardin clos de 250 m² environ à l'abri des regards. Cette demeure historique après des travaux de rénovation offrira à ses futurs résidants des espaces de vie multiples parfaitement adaptés à un environnement familial, avec ses six chambres et ses espaces de convivialité. Ce bien propose en outre un logement disposant d'un accès indépendant, idéal pour accueillir des amis ou pour en faire un espace de loisirs. Contact Barnes : +33 (0)6 60 03 78 44 Au cœur de l'Ouest parisien, ce village des Hauts-de-Seine offre sécurité, discrétion, et environnement verdoyant à seulement dix kilomètres de Paris. Le centre-bourg historique, classé aux Sites patrimoniaux remarquables, s'organise autour d'une place charmante, de son église Sainte-Eugénie, de commerces de bouche raffinés et de tables réputées comme La Tête Noire. Marnes-la-Coquette offre un art de vivre unique. Les amateurs de loisirs en plein air profitent de la proximité de la forêt de Fausses-Reposes, du parc de Saint-Cloud (classé site naturel protégé depuis 1923, qui s’étend sur 460 hectares), et du célèbre Haras de Jardy (premier centre équestre de France par le nombre de ses cavaliers licenciés, il accueille des manifestations sportives hippiques de premier plan). Un parcours de golf de 9 trous et 20 courts de tennis s’ajoutent aux atouts du secteur. Ce cadre de vie, extrêmement prisé des familles, bénéficie d'écoles réputées et d'un accès rapide aux établissements internationaux de premier plan. L'accessibilité est idéale : la gare de Garches - Marnes-la-Coquette relie Paris-Saint-Lazare et le quartier d'affaires de La Défense en moins de vingt minutes. Le pôle de transports du Pont de Sèvres facilite également les déplacements quotidiens vers la capitale. Nous possédons une large sélection de biens dans les Hauts-de-Seine qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas à contacter BARNES.",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "6 Chambres",
+     "345 m²",
+     "4 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92047",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Marnes-la-Coquette",
+    "prix_m2": 4783,
+    "usage": "habitation",
+    "dvf_med": 9443,
+    "dvf_n": 9,
+    "ecart_dvf": -0.493,
+    "atouts": [
+     "Jardin",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 45
+   }
+  },
+  "barnes-APM-85724271": {
+   "id": "barnes-APM-85724271",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-85724271.html",
+   "titre": "Versailles Glatigny – Demeure Mansart familiale sur parcelle de 1 338 m² - Garage double - 7 chambres",
+   "type": "maison",
+   "commune": "Versailles, Clagny-Glatigny",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 272.0,
+   "prix": 1995000.0,
+   "description": "Barnes Versailles vous propose,une maison familiale de 272 m² au sol (256 m² habitables) rare à Versailles, offrant 7 chambres, un magnifique jardin exposé sud-ouest sans vis-à-vis et un potentiel de rénovation remarquable. Un sous-sol et un garage double complètent ce bien. Nichée dans un environnement calme et familial, à proximité des établissements scolaires de renom (Saint-Jean Hulst, Blanche de Castille, Les Châtaigniers…), cette maison séduit par sa luminosité et son ambiance chaleureuse. elle se découvre ainsi : Rez de jardin : entrée, toilettes, cuisine et buanderie, bureau, une salle à manger et un vaste séjour baignée de lumière avec cheminée. Une chambre avec salle de bains et WC accessible également par une entrée indépendante pouvant accueillir une étudiante ou jeune fille au pair. Étage : suite parentale avec salle de bains et toilettes, cinq chambres supplémentaires, salle de bains avec toilettes et salle de douche. Dépendances : grenier, sous-sol et garage double. À l’extérieur, vous profiterez d’un jardin paysager exposé sud-ouest, sans vis-à-vis, offrant un cadre de vie paisible. Des travaux intérieurs sont à prévoir pour révéler tout le potentiel de la propriété. L'ensemble offre aujourd'hui une base particulièrement intéressante pour un projet de rénovation et de personnalisation. Les volumes, la surface du terrain et la configuration permettent d'imaginer une demeure familiale élégante et contemporaine, tout en conservant le caractère de cette architecture Mansart. LES ATOUTS • Quartier résidentiel recherché de Glatigny • Parcelle rare de 1 338 m² • Jardin sud-ouest et sans vis-à-vis • 256 m² habitables • 7 chambres • Vaste réception d'environ 49 m² • Garage double • Maison familiale aux volumes généreux • Fort potentiel de rénovation et de personnalisation • Proximité des établissements scolaires et des commodités Atouts supplémentaires : accès rapide à l’A13, golf et tennis du Haras de Jardy, à proximité des écoles Saint Jean Hulst ( 15 mn à pied) et les Châtaigniers ( 9 mn à pied). DPE : E/E. Honoraires charges acquéreurs de 4% (1 918 000 € net vendeur) Votre contact BARNES: Frédérique Meinnier 07 82 80 15 21 f.meinnier@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr »",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "7 Chambres",
+     "272 m²",
+     "4 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 7335,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": -0.118,
+    "atouts": [
+     "Jardin",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant",
+     "Entrées séparées"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 45
+   }
+  },
+  "barnes-APM-86464182": {
+   "id": "barnes-APM-86464182",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/viroflay/ref-APM-86464182.html",
+   "titre": "Viroflay Rive-Droite – Villa historique XVIIIème à rénover - Jardin - Garage - Localisation idéale pour les familles..",
+   "type": "maison",
+   "commune": "Viroflay",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 364.0,
+   "prix": 1995000.0,
+   "description": "Sous promesse. Exclusivité. Votre consultant BARNES - Damien Portail - a le privilège de vous présenter cette incroyable demeure historique de charme et de caractère – baptisée villa «Les Ormes» - dans le quartier Rive-Droite de Viroflay, à proximité immédiate de Versailles. Venez découvrir ce joyau de 1753 agrandie en 1880 puis 1910, absolument unique et parfaitement placé qui fut, entre autres, la maison de campagne de Marat puis demeure principale de l’écrivain académicien français romancier, poète et directeur de la Comédie Française Jules Clarétie. Un vrai voyage dans le temps, l'histoire, le théâtre et la littérature ! Sise sur un terrain de plus de 1000m², d’une superficie de plus de 350m², elle se situe à proximité immédiate de la gare (ligne L pour La Défense et Paris Saint-Lazare), des commerces, des écoles maternelles et primaires, du tram pour relier le RER C ainsi que de la forêt de Fausses Reposes. Au calme, cette demeure sans mitoyenneté demandera à ses futurs propriétaires des travaux de rénovation qui pourront être échelonnés entre les étages pour lui redonner tout son lustre d’antan. Aujourd’hui, elle offre 3 plateaux de 120m² environ qui se découvrent de la manière suivante : - le rez-de-jardin se copmpose d'une entrée avec escalier, d'un grand triple séjour avec salle de billard, le tout sur parquet chevrons, avec plus de 3m de hauteur sous plafond et bénéficiant d’une cheminée monumentale historique venant du château d’Anne de Bretagne, d'une chambres, d'une antichambre, d'un bureau, d'une cuisine, d'une salle de bains avec poutres en bois peintes et de 2 toilettes. - le 1er étage est divisé en 2 appartements qui peuvent être facilement reliés comme à l’origine avec chacun une cuisine, un séjour dont l’un est l’ancienne bibliothèque de la maison tout en boiseries d’époque, de 3 chambres, d’une salle d’eau et de sanitaires. Au 2nd étage sous combles : un grand salon, une salle à manger, 3 chambres, un bureau, une salle de douche et un toilettes. Par son origine et l’organisation de ses espaces aujourd’hui, cette demeure pourrait s’envisager aussi en 3 ou 4 appartements de grand standing à l’emplacement parfait, pour plusieurs familles voulant habiter ensemble dans de grands espaces. En complément, un sous-sol semi-complet, un garage et 4 stationnements sur le terrain complètent cette villa réellement exceptionnelle à plus d’un titre, à l’architecture noble et pleine de charme, et destinée à une ou plusieurs familles recherchant les volumes, le calme, la verdure et la localisation au sein d’un quartier très privilégié. La campagne chic à la ville. Vraiment rarissime à la vente. Travaux de rénovation à prévoir, possibles à échelonner suivant les étages. Chauffage au gaz de ville et eau chaude par chauffe-eau récent. DPE : F / F. Honoraires charges acquéreurs 4 % (1 918 300€ net vendeurs). Votre contact BARNES: Damien PORTAIL 06 60 42 72 23 d.portail@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr »",
+   "dpe": "F",
+   "extra": {
+    "criteres": [
+     "7 Chambres",
+     "364 m²",
+     "5 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78686",
+    "secteur": "Hors secteur",
+    "commune_ref": "Viroflay",
+    "prix_m2": 5481,
+    "usage": "habitation",
+    "dvf_med": 6609,
+    "dvf_n": 9,
+    "ecart_dvf": -0.171,
+    "atouts": [
+     "Jardin",
+     "Volumes",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [
+     "DPE F ou G",
+     "Travaux importants"
+    ],
+    "scr": null,
+    "score": 39
+   }
+  },
+  "barnes-APM-86876275": {
+   "id": "barnes-APM-86876275",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/vaucresson/ref-APM-86876275.html",
+   "titre": "Vaucresson Plateau Théry Élégante meulière de caractère avec jardin paysager",
+   "type": "maison",
+   "commune": "Vaucresson",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 320.0,
+   "prix": 1950000.0,
+   "description": "Au cœur du très recherché quartier résidentiel du Plateau Théry à Vaucresson, cette élégante maison en pierre meulière et brique, édifiée en 1920, vit naître les oeuvres d'un peintre renommé et a depuis lors fait l’objet d’importants travaux au fil du temps tout en conservant le charme de l’architecture de l’époque. Elle est implantée sur une belle parcelle arborée d'environ 900 m². La propriété développe une surface de 320 m² et bénéficie d’un jardin entourant la maison avec des expositions principalement Sud et Ouest, offrant une luminosité remarquable tout au long de la journée. Le rez-de-chaussée s’ouvre sur une entrée desservant de belles pièces de réception : un salon avec cheminée et une salle à manger ouvrant de plain-pied sur la terrasse et le jardin exposés plein Sud. Une vaste cuisine dinatoire équipée, particulièrement lumineuse, complète cet espace de vie convivial. Quelques marches mènent à des toilettes invités avec lave-mains. Le premier étage, accessible par un bel escalier baigné de lumière, propose un palier avec de nombreux rangements, une vaste suite parentale traversante Nord-Sud composée d’une belle chambre, d’un grand dressing et d’une salle de bains avec baignoire, douche et toilettes. Une seconde chambre exposée Est-Sud dispose d’un dressing et d’une lingerie attenante pouvant être aménagée en seconde salle d’eau. Le deuxième étage accueille trois chambres dont une avec dressing et salle de bains privative, une salle de bain supplémentaire ainsi que des toilettes indépendantes. Le troisième étage, plein de charme, offre un bureau, un bel atelier traversant Nord-Sud ainsi qu’une salle de bains avec baignoire et toilettes. Le sous-sol, accessible depuis l’intérieur de la maison ou par une entrée indépendante, comprend une cave à vins, une salle de jeux éclairée par deux fenêtres en cour anglaise, une pièce de bricolage ainsi qu’une chaufferie. Un grand garage complète ce bien et plusieurs places de stationnement sont possibles à l’intérieur de la propriété. Une demeure familiale de caractère, rare à la vente, séduisant par ses volumes, sa luminosité et son environnement résidentiel privilégié, à proximité des écoles internationales, des commerces et des transports. Contact Barnes: Clarissa Blanchet: (+33)6 22 27 75 78",
+   "dpe": "F",
+   "extra": {
+    "criteres": [
+     "320 m²",
+     "Surfaces extérieures 900 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92076",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Vaucresson",
+    "prix_m2": 6094,
+    "usage": "habitation",
+    "dvf_med": 7836,
+    "dvf_n": 52,
+    "ecart_dvf": -0.222,
+    "atouts": [
+     "Jardin",
+     "Cour",
+     "Terrasse",
+     "Verrière / atelier",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant",
+     "Entrées séparées"
+    ],
+    "alertes": [
+     "DPE F ou G"
+    ],
+    "scr": null,
+    "score": 62
+   }
+  },
+  "barnes-APM-87046032": {
+   "id": "barnes-APM-87046032",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/bougival/ref-APM-87046032.html",
+   "titre": "Sté BARNES - Bougival - Calme - 5 Chambres",
+   "type": "maison",
+   "commune": "Bougival",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 333.0,
+   "prix": 1740000.0,
+   "description": "BARNES vous propose, dans les hauteurs de Bougival, à deux pas de Louveciennes, cette maison de caractère construite en 1989 et joliment redécorée en 2022 séduit par son calme, sa lumière et ses généreux volumes. Les belles hauteurs sous plafond, les nombreux rangements et la qualité des équipements en font une résidence principale parfaitement adaptée à une grande famille. Le rez-de-chaussée s'articule autour d'une belle entrée, d'un salon bibliothèque et d'un salon TV, puis d'un grand séjour avec cheminée ouvrant sur la salle à manger. La cuisine entièrement équipée Gaggenau, ouverte sur le séjour, donne accès à la terrasse et au jardin, idéale pour profiter des beaux jours en famille ou entre amis. L'ensemble du rez-de-chaussée bénéficie de belles hauteurs sous plafond qui renforcent la sensation d'espace. À l'étage, trois chambres spacieuses partagent une salle de bain dédiée. La suite parentale de 30 m², lumineuse et indépendante, dispose de sa propre salle de bain et douche de 14 m², pour un confort de vie optimal. Chaque niveau est doté de nombreux rangements intégrés. Le sous-sol, véritable point fort de cette propriété, accueille une chambre d'invités parfaitement adaptée à une jeune fille au pair, une salle de jeux et de sport avec espace projection TV, une buanderie bien équipée et un garage double avec bornes de recharge pour véhicules électriques. L'ensemble est doté d'une pompe à chaleur, de volets intérieurs, d'un système de domotique, d'un réseau RJ45 et d'une vidéosurveillance avec portails électriques. La maison affiche un DPE C et un certificat d'assainissement conforme depuis 2020. Accès rapide aux autoroutes A86 et A13. À 8 min de l'École Internationale Bilingue de la Jonchère (78170), à 14 min de Blanche de Castille au Chesnay et de l'école anglaise de Croissy-sur-Seine, à 17 min de Daniélou Rueil-Malmaison et de Passy Buzenval, à 15 min du Lycée international de Saint-Germain-en-Laye. Honoraires à la charge acquéreurs: soit 1 690 000 euros net vendeur et 50 000 euros TTc d'honoraires. Votre contact BARNES : Alexandre CHARLET 06 68 08 88 99 a.charlet@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr Nous possédons une large sélection de biens off market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas me contacter.",
+   "dpe": "C",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "333 m²",
+     "3 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78092",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Bougival",
+    "prix_m2": 5225,
+    "usage": "habitation",
+    "dvf_med": 5662,
+    "dvf_n": 31,
+    "ecart_dvf": -0.077,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Volumes",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 52
+   }
+  },
+  "barnes-APM-85974967": {
+   "id": "barnes-APM-85974967",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/bougival/ref-APM-85974967.html",
+   "titre": "BARNES - Bougival Limite Louveciennes - Maison D'architecte Piscine en Rooftop 10 Pièces 4-5 Chambres",
+   "type": "maison",
+   "commune": "Bougival",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 305.0,
+   "prix": 1600000.0,
+   "description": "BARNES vous propose à la limite de Louveciennes (78430) au calme, lumineuse \\\" solaire \\\", sans vis à vis avec son superbe jardin paysagé (2025) sur une parcelle de 1 496 m², une piscine en Rooftop, vue à 360 degrés (10m x 5m chauffée PAC, 1,90 mètres de profondeur, liner neuf, avec sa superbe terrasse en teck (2025), à 400 mètres de la gare (Ligne \\\"L\\\" : La Défense Saint-Lazare), une maison rénovée d'architecte en béton, d'environ 305 m²pour 347,96 m² au sol. DPE \\\"D\\\". Vous trouverez : une entrée avec ses placards, une salle à manger, un séjour avec accès terrasse (exposition SUD), un salon, un espace bureau, une cuisine indépendante avec accès terrasse OUEST, cinq chambres dont une suite parentale de 48 m² et un studio avec son accès indépendant / et rattaché à la maison. Pour compléter le bien : une salle de vie / Salle se Sports/ Musique, Bureau(x) de 48 m². une cave, une buanderie. Portes accès maison (neuves). Proche de la forêt, proche de la gare de Louveciennes (Sans les nuisances), à 5 minutes à pied et proche des ramassages scolaires pour les établissements : écoles allemande, américaine, British School, Lycée International, A 8 minutes de l'EIB de la Jonchère (78170 La Celle-St-Cloud et à 11 minutes de Blanche de Castille au Chesnay (78150), à 15 minutes du Lycée international de Saint-Germain-en-Laye (78100), et à 11 minutes de l'école Anglaise de Croissy (78290). Certificat d'assainissement \\\"en cours\\\".(Avril 2026) (Conforme en 2022) Honoraires à la charge acquéreurs : 4,68% TTC sur le prix de vente : 1 525 000 euros net vendeurs. soit 75 000 euros TTC d'honoraires Votre contact BARNES : Alexandre CHARLET 06 68 08 88 99 a.charlet@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "305 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 100 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78092",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Bougival",
+    "prix_m2": 5246,
+    "usage": "habitation",
+    "dvf_med": 5662,
+    "dvf_n": 31,
+    "ecart_dvf": -0.073,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 44
+   }
+  },
+  "barnes-APM-85842667": {
+   "id": "barnes-APM-85842667",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/louveciennes/ref-APM-85842667.html",
+   "titre": "Louveciennes - Maison 4 Chambres Piscine 1 200 m² de parcelle",
+   "type": "maison",
+   "commune": "Louveciennes",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 250.0,
+   "prix": 1850000.0,
+   "description": "BARNES vous propose cette maison de plus de 200 m² habitables à Louveciennes, dans un secteur calme. Elle bénéficie d'une belle exposition et s'étend sur une parcelle de 1 200 m². La piscine chauffée (3,5 m x 9 m) et le jacuzzi composent des extérieurs agréables, avec une terrasse accessible depuis la véranda. Le bassin chauffé prolonge la saison de baignade, et le jacuzzi s'utilise en toute saison. Les pièces de vie s'organisent autour d'un séjour avec salle à manger, prolongé par la véranda qui ouvre sur la terrasse. Cette continuité de réception se complète d'une cuisine ouverte. Un espace bureau permet de travailler à domicile. Le chauffage est électrique par le sol. L'ensemble offre une organisation fonctionnelle, adaptée à une vie de famille comme à la réception d'invités. La maison compte quatre chambres. Le sous-sol total accueille une pièce de vie ou de musique, des rangements, une buanderie et une cave à vins. Un garage permet de stationner deux véhicules. Le sous-sol couvre toute l'emprise de la maison et offre des volumes de rangement appréciables. La maison est proche de la forêt. La gare de Louveciennes se situe à 5 minutes à pied, sans nuisances. Cet emplacement convient à une famille qui recherche le calme, la nature et un accès à la gare à pied. Les ramassages scolaires desservent plusieurs établissements : école allemande, école américaine, British School, Lycée International, EIB de La Celle-Saint-Cloud et Blanche de Castille. Les commerces sont à proximité (Gare de Louveciennes) Performance énergétique : DPE classe C, selon la nouvelle étiquette de janvier 2026. Honoraires à la charge acquéreurs : 3,5% TTC sur le prix de vente : 1 787 500 euros net vendeurs. soit 62 500 euros TTC d'honoraires Contact BARNES : Alexandre CHARLET - 06 68 08 88 99 - a.charlet@barnes-international.com Informations sur les risques auxquels ce bien est exposé disponibles sur : www.georisques.gouv.fr Nous possédons une large sélection de biens off Market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas me contacter.",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "4 Chambres",
+     "250 m²",
+     "5 salles de bains/douche",
+     "Surfaces extérieures 65 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78350",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Louveciennes",
+    "prix_m2": 7400,
+    "usage": "habitation",
+    "dvf_med": 5877,
+    "dvf_n": 24,
+    "ecart_dvf": 0.259,
+    "atouts": [
+     "Terrasse",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 20
+   }
+  },
+  "barnes-APM-86413887": {
+   "id": "barnes-APM-86413887",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/louveciennes/ref-APM-86413887.html",
+   "titre": "Sté Barnes - EXCLUSIVITÉ - Propriété Louveciennes Piscine Tennis - 2 700 m² terrain",
+   "type": "maison",
+   "commune": "Louveciennes",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 480.0,
+   "prix": 2500000.0,
+   "description": "BARNES vous présente en exclusivité cette propriété en forme de L, située à Louveciennes. Elle s'étend sur une parcelle de 2 700 m² et développe 480 m² habitables, pour 756,60 m² au sol. Le bien est à rénover entièrement. Il offre de grands volumes, sur un terrain exposé ouest. L'entrée donne directement sur la galerie, qui distribue les pièces de réception. Le séjour, de plus de 70 m², constitue la pièce principale. Un autre salon de 28 m² et une salle à manger de 25 m² complètent les espaces de réception. Une cuisine et une buanderie répondent aux besoins du quotidien. Au premier étage, les nombreuses chambres mesurent de 16 m² à 53 m². La suite parentale dépasse 50 m². Ces surfaces offrent une vraie base de projet pour la rénovation. Le volume bâti, le terrain et l'emplacement permettent de concevoir une transformation complète de la propriété. Une piscine et un tennis agrémentent la parcelle. La gare et les commerces de Louveciennes sont à 350 mètres, sans les nuisances, ce qui simplifie les déplacements du quotidien. La place de l'église est à 550 mètres. Les autoroutes A86 et A13, le Château de Versailles et Saint-Germain-en-Laye sont rapidement accessibles. Côté scolarité, l'EIB de la Jonchère (78170), école internationale bilingue, est à 14 minutes en voiture. Blanche de Castille au Chesnay (78150) et l'école anglaise de Croissy (78290) sont à 11 minutes. Daniélou à Rueil-Malmaison (92500) et Passy Buzenval sont à 20 minutes. Le Lycée international de Saint-Germain-en-Laye (78100) est à 18 minutes. Le bien se situe en zone UAa et en zone ABF (zone de protection des espaces verts : espaces interstitiels végétalisés). Le DPE est classé E et l'audit énergétique est en cours. Le certificat d'assainissement est disponible. Tout projet est soumis aux règles d'urbanisme et à l'avis de l'Architecte des Bâtiments de France. La vente est conclue sans condition suspensive de division, de construction ou de travaux. Honoraires à la charge des acquéreurs 5% : soit 2 381 000 euros net vendeur et 119 000 euros TTC d'honoraires agence. Votre contact BARNES : Alexandre CHARLET 06 68 08 88 99 a.charlet@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr Nous possédons une large sélection de biens off market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas me contacter.",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "8 Chambres",
+     "480 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78350",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Louveciennes",
+    "prix_m2": 5208,
+    "usage": "habitation",
+    "dvf_med": 5877,
+    "dvf_n": 24,
+    "ecart_dvf": -0.114,
+    "atouts": [
+     "Volumes",
+     "Réception"
+    ],
+    "alertes": [
+     "Travaux importants"
+    ],
+    "scr": null,
+    "score": 41
+   }
+  },
+  "barnes-APM-87563434": {
+   "id": "barnes-APM-87563434",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/la-celle-saint-cloud/ref-APM-87563434.html",
+   "titre": "Maison à La Celle-Saint-Cloud (78170) La Feuillaume CALME - Sans vis-à-vis - DPE B",
+   "type": "maison",
+   "commune": "La Celle-Saint-Cloud",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 335.0,
+   "prix": 2490000.0,
+   "description": "Au grand calme et très lumineuse : belle maison d’architecte contemporaine au bout d'une allée privée, située dans le quartier tranquille, arboré et résidentiel de La Celle-Saint-Cloud La Feuillaume sur le plateau de Vaucresson (92420), proche de la place du marché et de la Forêt domaniale de Fausses-Reposes. Construite en 2008 sur une parcelle de 1 000 m². DPE \\\" B \\\". Certificat assainissement Conforme (Nov 2026). Piscine envisageable. Très claire, grâce à ses nombreuses baies vitrées, exposée Sud en deuxième ligne, sans aucun vis-à-vis, ni aucune vue direct sur la rue. Elle vous propose sur 3 niveaux de 338 m² avec un sous-sol total aménagé dont une salle de jeu et cinéma, Sauna et salle de sport, complétée d’un grand garage de 71 m² pour trois voitures. 249,98 m² habitables, plus 88,57 m² de sous-sol aménagé. Bénéficiant d’un plan très fonctionnel et modulable garce à ses portes à galandage, vous découvrirez : Au rez de chaussée : 155 m² qui s’articulent autour d’un hall d'entrée, un triple séjour de 75 m² qui jouxte une grande cuisine dinatoire de 26 m² avec ilot central, donnant sur une belle terrasse exposée SUD, ainsi qu’un salon TV-Bureau avec sa terrasse. Une suite parentale de plain-pied (38 m²) avec son dressing et sa salle de bain avec baignoire et une grande douche, complètent ce 1er niveau. A l’étage : vous trouverez trois chambres toutes de 16 m² avec leurs salles de douches qui donnent sur une longue terrasse coursive exposée SUD, une 4ème chambre avec sa terrasse et une salle de bain attenante. Toutes les chambres bénéficient d’une Climatisation/réversible. Sous-Sol Total : une belle salle de jeux-cinéma de 49 m², buanderie et salle de douche, ainsi qu’une salle de sport avec son sauna et sa douche. Un grand garage pour trois voitures de 71 m², une cave, une chaufferie, et un atelier de bricolage. Équipée d’un plancher chauffant à tous les étages, via une PAC (Stiebel, réversible pour la future piscine), et d’une chaudière Gaz pour l'eau chaude et sèches serviettes. Volets électriques Centralisés. Récupérateur d'eaux de pluie (10 000 litres) avec son arrosage automatique. Un aspirateur centralisé à tous les étages et une chute pour le linge y améliorent encore le confort… A 12 minutes à pied de la gare de Vaucresson ou de La Celle-Saint-Cloud, et avec un accès rapide à l'autoroute A86 et A13. Établissements scolaires : Carte Scolaire école Pasteur à la Celle-Saint-Cloud : 500 mètres.Lycée Toulouse Lautrec, du Lycée International de Saint-Germain-en-Laye, de Blanche de Castille au Chesnay et de Saint-Jean et Hulst (Versailles) ou du Lycée Hoche(Versailles) ainsi que celui de Passy Buzenval (Rueil-Malmaison 92500) et à 5 km de l'école Anglaise de Croissy-Sur-Seine et de L’American School of Paris (Saint-Cloud). Sports : Proche du Haras de Jardy, du Golf de Saint-Cloud, Golf de Vaucresson et du Stade Français. Honoraires à la charge acquéreurs : 116 000 euros TTC : 4,89% TTC sur le prix de vente : 2 374 000 euros net vendeurs. Votre contact BARNES : Alexandre CHARLET 06 68 08 88 99 a.charlet@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr » Nous possédons une large sélection de biens Off Market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas me contacter.",
+   "dpe": "B",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "335 m²",
+     "7 salles de bains/douche",
+     "Surfaces extérieures 98 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78126",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "La Celle-Saint-Cloud",
+    "prix_m2": 7433,
+    "usage": "habitation",
+    "dvf_med": 6088,
+    "dvf_n": 50,
+    "ecart_dvf": 0.221,
+    "atouts": [
+     "Terrasse",
+     "Verrière / atelier",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [
+     "Voie privée / hameau : règlement à lire"
+    ],
+    "scr": null,
+    "score": 18
+   }
+  },
+  "barnes-APM-84379220": {
+   "id": "barnes-APM-84379220",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/la-celle-saint-cloud/ref-APM-84379220.html",
+   "titre": "Exclusivité - La Celle-Saint-Cloud - Maison de 330 m² - 5 chambres et un bureau - Appartement indépendant - Salle de sport",
+   "type": "maison",
+   "commune": "La Celle-Saint-Cloud",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 331.0,
+   "prix": 1590000.0,
+   "description": "Superbe maison ancienne avec agrandissements à La Celle-Saint-Cloud. sans vis-à-vis. au calme. lumineuse. exposition Sud. de 330 m² habitables dont 290 m² de plain-pied. salle de sport. grand jacuzzi - hammam - douche. sur un terrain plat de 863 m². proche (350 mètres) de la gare de Bougival (78380) : sans nuisance - (SNCF ligne L : La Défense - Saint Lazare) et de la forêt. 100 m² de terrasses. Vous trouverez au rez-de-chaussée de plain-pied (environ 290 m²) : une belle entrée. un superbe salon avec ses baies vitrées (stores électriques) - salle à manger. une cuisine. une chambre parentale avec accès à sa salle de sport / petite piscine jacuzzi - hammam douche et toilettes. terrasse exposition Sud sans vis à vis; un bureau / salle TV. une chambre avec sa salle de douche. un appartement indépendant de 2 pièces avec sa salle de douche. une chambre de service avec accès indépendant (avec toilettes - douche - petite cuisine). toujours de plain pied. A l’étage : deux chambres avec une salle de douche. Arrosage automatique. éclairage jardin. Cave. cave à vin et buanderie. DPE : D. Certificat d'assainissement non conforme. Accès rapide pour les autoroutes A13 et A 86. facile d'accès pour Paris et Saint-Germain-en-Laye. Rueil-Malmaison. A 7 minutes de L'EIB à la Celle-Saint-Cloud - Bougival. à 7 minutes de Blanche de Castille au Chesnay (78150) et à 18 minutes du Lycée international de Saint-Germain-en-Laye (78100). Honoraires à la charge des acquéreurs 4% : soit 61 154 euros TTC et 1 528 846 euros net vendeur. Votre contact BARNES : Alexandre CHARLET 06 68 08 88 99 a.charlet@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr. Nous possédons une large sélection de biens off market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas me contacter.",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "331 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 964 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78126",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "La Celle-Saint-Cloud",
+    "prix_m2": 4804,
+    "usage": "habitation",
+    "dvf_med": 6088,
+    "dvf_n": 50,
+    "ecart_dvf": -0.211,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 51
+   }
+  },
+  "barnes-APM-87332703": {
+   "id": "barnes-APM-87332703",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/la-celle-saint-cloud/ref-APM-87332703.html",
+   "titre": "BARNES - Exclusivité - Maison d'architecte 2025 - DPE A - La Celle-Saint-Cloud (78170)",
+   "type": "maison",
+   "commune": "La Celle-Saint-Cloud",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 270.0,
+   "prix": 2850000.0,
+   "description": "EXCLUSIVITÉ. Dans le quartier résidentiel et calme de la Châtaigneraie, à La Celle-Saint-Cloud, BARNES présente cette maison d'architecte achevée en avril 2025, au DPE classe \\\"A\\\". L'architecture contemporaine joue sur la hauteur sous plafond et la transparence. La maison comporte trois niveaux de planchers chauffants, climatisation au rez-de-chaussée et étage. Le séjour, sous une belle hauteur sous plafond, s'ouvre sur la terrasse par une baie vitrée (Technal) et s'organise autour d'une cheminée à vapeur d'eau de même hauteur; des rideaux motorisés se pilotent par télécommande. L'espace repas, coiffé d'un dôme à éclairage encastré, jouxte la cuisine, séparée du séjour par deux portes à galandage. La cuisine s'articule autour d'un îlot central en pierre biseautée, avec banc, complété par un espace de rangement supplémentaire et un accès direct sur l'extérieur; elle est équipée Miele et Gaggenau, avec plaque à induction aspirante et réfrigérateur encastré. L'entrée, desservie par une porte pivotante grand format, dessert un escalier aux garde-corps en verre extra-clair aux bords arrondis et une bibliothèque sur mesure de 7 mètres de hauteur et une chambre parentale dispose d'un dressing et d'une salle de bains douches sous 2,85 mètres de hauteur, avec deux fenêtres côté jardin. L'éclairage, signé Wever & Ducré, associe spots tube et spots encastrés; les interrupteurs et prises, de la marque Rond, sont finis bronze. À l'étage, une chambre avec une salle de douche; une autre chambre est équipée d'armoires, d'une salle de bains avec baignoire et d'un accès balcon. Les chambres suivantes disposent chacune de placards ou dressing intégrés et d'un parquet. Le sous-sol accueille un garage double avec borne de recharge électrique, une cuve récupérateur d'eau de pluie (3 000L), une salle de sport avec fenêtre ouvrante, une salle de cinéma équipée d'un vidéoprojecteur et d'un écran fixe, ainsi qu'un local technique et une buanderie. Le jardin est équipé d'un arrosage automatique, d'un éclairage extérieur, d'une prise électrique et d'un point d'eau ; un récupérateur d'eau de pluie. La terrasse et la cour anglaise, sous 2,70 mètres de hauteur, complètent les extérieurs, dans un environnement calme et piscinable (projet à valider en mairie). L'accès voiture est aisé, avec stationnement possible hors garage. La maison bénéficie d'un chauffage au sol sur tous les niveaux et d'une climatisation (dans toute la maison, hors sous-sol), pilotée par une pompe à chaleur. Un système d'alarme et de vidéosurveillance sécurise le bien. Une assurance dommages-ouvrage est en vigueur. Le bien se situe à 9 minutes à pied de la gare de La Celle-Saint-Cloud (ligne L Transilien), avec des trains directs vers Paris Saint-Lazare en 28 minutes. Un arrêt de bus (ligne 460) se trouve à moins de 100 mètres; la ligne 426 relie également la gare au Pont de Sèvres. Prix : 2 850 000 € FAI (honoraires charge acquéreur inclus). Prix net vendeur : 2 725 000 €. Honoraires TTC : 125 000 €, soit environ 4,59 % TTC calculé sur le prix net vendeur. DPE : classe A (62 kWh/m²/an). GES : classe A (2 kg CO2/m²/an). Certificat d'assainissement en cours. Contact BARNES : Alexandre Charlet 06 68 08 88 99 a.charlet@barnes-international.com Les informations sur les risques auxquels ce bien est exposé sont disponibles sur georisques.gouv.fr Nous possédons une large sélection de biens off market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas à me contacter.",
+   "dpe": "A",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "270 m²",
+     "4 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78126",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "La Celle-Saint-Cloud",
+    "prix_m2": 10556,
+    "usage": "habitation",
+    "dvf_med": 6088,
+    "dvf_n": 50,
+    "ecart_dvf": 0.734,
+    "atouts": [
+     "Jardin",
+     "Cour",
+     "Terrasse",
+     "Volumes",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 31
+   }
+  },
+  "barnes-APM-85839886": {
+   "id": "barnes-APM-85839886",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/la-celle-saint-cloud/ref-APM-85839886.html",
+   "titre": "Maison à La Celle-Saint-Cloud La Feuillaume CALME - Sans vis-à-vis",
+   "type": "maison",
+   "commune": "La Celle-Saint-Cloud",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 265.0,
+   "prix": 1890000.0,
+   "description": "Barnes Yvelines vous propose cette magnifique maison contemporaine de plus de 265 m² habitables pour 465 m² au sol, lumineuse et sans vis-à-vis, exposition SUD, parfaitement entretenue, au calme, à La Celle-Saint-Cloud quartier la Feuillaume, proche des commerces (place du marché Docteur Berthet), de la forêt domaniale de Fausses-Reposeset, de Vaucresson et la gare de la Celle-St-Cloud. DPE : \\\"C\\\". Ravalement (été 2024), Certificat d'assainissement sans anomalie. (01/2025) Vous trouverez au rez-de-chaussée : une belle entrée, une cuisine de 26 m², un séjour - salle à manger de 60 m² avec sa cheminée, totalement ouverte sur l’extérieur, avec accès terrasse d'environ 50 m², un bureau/Possible chambre et une salle de douche. A l'étage : Une belle chambre parentale avec accès à sa terrasse, sa grande salle de bain de 9 m², puis trois chambres, une salle de bains douche et des combles aménagées de 92 m² au sol. Un sous-sol total avec une grande salle (sport/jeux/cinéma) de 60 m² et une buanderie de 23 m², cave, nombreux rangements. Double vitrage alu, éclairage extérieur... Un superbe jardin au calme avec belles expositions SUD, un garage pour deux voitures de 32 m². Plancher chauffant en RDJ Piscine envisageable (PLU en Zone UGb/ABF) Avec un accès rapide à l'autoroute A86 et A13. Établissements scolaires : Carte Scolaire école Pasteur à la Celle-Saint-Cloud : 10 minutes à pied. EIB à 9 minutes en voiture. Écoles: Lycée Toulouse Lautrec, du Lycée International de Saint-Germain-en-Laye, de Blanche de Castille au Chesnay et de Saint-Jean et Hulst (Versailles) ou du Lycée Hoche(Versailles) ainsi que celui de Passy Buzenval (Rueil-Malmaison 92500) et à 5 km de l'école Anglaise de Croissy-Sur-Seine et de L’American School of Paris (Saint-Cloud). Sports : Proche du Haras de Jardy, du Golf de Saint-Cloud, Golf de Vaucresson et du Stade Français. Honoraires à la charge acquéreurs : 5% TTC sur le prix de vente : 1 800 000 euros net vendeurs et 90 000 euros d'honoraires Barnes Votre contact BARNES : Alexandre CHARLET 06 68 08 88 99 a.charlet@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr Nous possédons une large sélection de biens off market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas me contacter.",
+   "dpe": "C",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "265 m²",
+     "3 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78126",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "La Celle-Saint-Cloud",
+    "prix_m2": 7132,
+    "usage": "habitation",
+    "dvf_med": 6088,
+    "dvf_n": 50,
+    "ecart_dvf": 0.171,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 29
+   }
+  },
+  "barnes-APM-87046044": {
+   "id": "barnes-APM-87046044",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/la-celle-saint-cloud/ref-APM-87046044.html",
+   "titre": "BARNES - LA CELLE-SAINT-CLOUD (78170) - Maison - Piscine - Terrain de 915 m² - 5 chambres",
+   "type": "maison",
+   "commune": "La Celle-Saint-Cloud",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 250.0,
+   "prix": 1750000.0,
+   "description": "BARNES vous propose sur une parcelle plate et close de 915 m², dans un secteur résidentiel prisé de La Celle-Saint-Cloud. Le jardin, entièrement privé et sans vis-à-vis depuis la terrasse, s'organise autour d'un bassin de nage de 14 m sur 3 m et bénéficie d'une exposition très favorable sur l'ensemble de la journée et à 650 mètres de la place du Marché de l'Etang Sec et à 600 mètres de la Boulangerie. Les espaces de réception s'articulent autour d'un séjour au parquet et aux larges baies vitrées, prolongé par une salle à manger ouverte sur la terrasse. La cuisine, indépendante, est entièrement équipée. La maison distribue cinq chambres, dont une suite parentale et une chambre de plain-pied, ainsi qu'une salle de bains et trois salles de douches. Le rez-de-jardin, aménagé dans son intégralité, comprend une chambre à l'accès indépendant, idéale pour l'exercice d'une profession libérale, un espace bien-être avec une salle de douches hammam, une lingerie, une chaufferie et une cave. Cette organisation offre une réelle autonomie entre les espaces de vie, de réception et de bien-être. La maison s'adresse à une clientèle familiale à proximité immédiate de Paris. La gare de Vaucresson (ligne L) se trouve à environ 9 minutes à pied, celle de La Celle-Saint-Cloud à environ 18 minutes ; la ligne L relie Paris Saint-Lazare en 30 minutes environ et La Défense en 20 minutes. Le bus 426 dessert également le secteur. DPE : D. GES : D . Certificat d'assainissement en cours. Prix : 1 750 000 € HAI, honoraires à la charge de l'acquéreur, soit 1 675 000 € net vendeur et 75 000 € TTC d'honoraires BARNES. Votre contact BARNES : Alexandre CHARLET 06 68 08 88 99 a.charlet@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr Nous possédons une large sélection de biens off market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas me contacter.",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "250 m²",
+     "3 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78126",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "La Celle-Saint-Cloud",
+    "prix_m2": 7000,
+    "usage": "habitation",
+    "dvf_med": 6088,
+    "dvf_n": 50,
+    "ecart_dvf": 0.15,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Réception",
+     "Sous-sol",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 33
+   }
+  },
+  "barnes-APM-87129641": {
+   "id": "barnes-APM-87129641",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/vaucresson/ref-APM-87129641.html",
+   "titre": "Vaucresson, Plateau Théry, maison familiale, 6 chambres sur parcelle de 1076 m²",
+   "type": "maison",
+   "commune": "Vaucresson",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 267.0,
+   "prix": 2060000.0,
+   "description": "Nichée au cœur du plateau de Vaucresson, dans le prestigieux secteur de la division Théry, cette propriété de caractère vous séduira par son cachet exceptionnel et ses volumes généreux. Déployée sur une parcelle de 1 076 m², la maison développe 267 m² habitables (308 m² au sol hors sous-sol) répartis en 10 pièces principales. Dès l'entrée, vous serez conquis par l'élégance des espaces de réception : une triple pièce baignée de lumière d'environ 60 m², à la triple exposition, réunit une salle à manger dotée d'une verrière zénithale et un vaste salon agrémenté d'une cheminée en pierre fonctionnelle. Les généreuses hauteurs sous plafond renforcent la sensation de grandeur de cet espace ouvert sur les différents extérieurs de la propriété. Une cuisine indépendante, entièrement aménagée et équipée, complète ce niveau. Deux espaces de vie supplémentaires viennent enrichir le rez-de-chaussée : un salon TV d'environ 20 m² avec cheminée, en communication avec un grand bureau orné d'une élégante cheminée Art Déco. À l'étage, quatre chambres offrent calme et confort, parmi lesquelles une suite parentale de 30 m² dotée de sa salle de bains, de dressings et d'un balcon. Les trois autres chambres bénéficient d'une salle de bains et de toilettes dédiés. Le second étage accueille deux chambres supplémentaires ainsi qu'un espace sous combles isolé et aménagé, idéal pour une salle de jeux ou des bureaux. En complément, un sous-sol entièrement aménagé de 80 m² ouvre un champ de possibilités infini : salle de cinéma, salle de jeux, salle de réception. Parkings couverts pour deux voitures et possibilité de stationner plusieurs véhicules à l'intérieur de la parcelle. Tout au long de la visite, le charme de l'ancien opère — parquet en chêne massif, cheminées d'époque et hauteurs sous plafond remarquables — faisant de cette demeure un bien rare, alliant authenticité et élégance intemporelle. Contact Barnes Clarissa Blanchet:(+33)6 22 27 75 78",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "267 m²",
+     "Surfaces extérieures 1 076 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92076",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Vaucresson",
+    "prix_m2": 7715,
+    "usage": "habitation",
+    "dvf_med": 7836,
+    "dvf_n": 52,
+    "ecart_dvf": -0.015,
+    "atouts": [
+     "Verrière / atelier",
+     "Volumes",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 45
+   }
+  },
+  "barnes-APM-87317083": {
+   "id": "barnes-APM-87317083",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/chatou/ref-APM-87317083.html",
+   "titre": "Chatou, vaste ensemble immobilier (maison + appartement 3 pièces + studio) de 502 m² habitables.",
+   "type": "maison",
+   "commune": "Chatou",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 502.0,
+   "prix": 2490000.0,
+   "description": "Barnes vous présente cette propriété à l’architecture ultra contemporaine aménagée en un vaste ensemble immobilier à l’issue d’importants travaux dans une ancienne coopérative agricole datant de 1961. Elle est édifiée sur 643 m² de terrain. Elle se compose de la façon suivante : ▸ MAISON PRINCIPALE (407 m² hab.) : • Au rez-de-chaussée surélevé : une entrée avec vestiaires à manteaux et chaussures, un immense séjour de plus de 100 m² avec 8 m de hauteur sous plafond, une cheminée à insert et un jardin intérieur, une salle à manger ou bar, une cuisine avec îlot meublée, équipée et dinatoire, un cellier / buanderie, une salle de cinéma (climatisée), deux chambres se partageant une salle de bains. • Au 1er étage : un espace bureau avec placards, une suite parentale composée d’une chambre avec rangements et d’une salle de bains avec douche, une autre chambre climatisée avec sa salle de douche. Une terrasse de 15 m² avec pergola motorisée (lames orientables) orientée ouest. • En rez-de-jardin : grande pièce de 150 m² pouvant faire office de pièce à vivre supplémentaire, d’atelier d’artiste ou d’espace professionnel / bureaux (accès indépendant), espace bricolage / de rangement, chaufferie / local technique, cave à vin, salle de sport, sauna avec douche, débarras (où l’installation d’un hammam est possible). • A l’extérieur : Jardin paysager avec de belles espèces végétales (palmier, olivier, figuier, bambous), des éclairages, un bassin (filtration UV). Possibilité de plusieurs parkings dans l’allée (au moins 4), local à vélos, portail électrique. ▸ STUDIO (26 m² hab.) : séjour/kitchenette, salle de douche avec WC. Chauffage électrique. Accès indépendant ou par le rez-de-jardin. ▸ APPARTEMENT (69 m² hab.) : entrée avec placards, séjour avec cuisine américaine, 2 chambres, salle de douche avec WC, jardin intime de 80 m² avec terrasse et 2 abris. Accès indépendant ou par le rez-de-jardin. Les deux appartements peuvent constituer un rendement locatif (saisonnier ou à l'année). Contact Barnes : Marie-Sophie NIELLY : +33.(0)7.82.52.82.91 ou ms.nielly@barnes-international.com. Honoraires (4%) de 95769€ inclus à la charge de l'acquéreur soit hors honoraires : 2394231€. Les risques auxquels ce bien est exposé sont disponibles sur https://www.georisques.gouv.fr",
+   "dpe": "B",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "502 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 643 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78146",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Chatou",
+    "prix_m2": 4960,
+    "usage": "habitation",
+    "dvf_med": 6608,
+    "dvf_n": 44,
+    "ecart_dvf": -0.249,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Verrière / atelier",
+     "Volumes",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 72
+   }
+  },
+  "barnes-APM-85416626": {
+   "id": "barnes-APM-85416626",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/chatou/ref-APM-85416626.html",
+   "titre": "Bas de Chatou, villa contemporaine aux normes RT 2012 de 350 m² hab. (485 m² au total).",
+   "type": "maison",
+   "commune": "Chatou",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 350.0,
+   "prix": 1995000.0,
+   "description": "Barnes International vous propose, au calme et à proximité du centre-ville de Chatou, du RER et des écoles, villa de 2017 avec un DPE \\\"A\\\", en parfait état et offrant des prestations de grande qualité dont un ascenseur intérieur. Elle comprend 11 pièces et 7 chambres (toutes dotées de grands placards intégrés) et permet de scinder les espaces de vie en 2 ou 3 logements différents si on le souhaite : - Au rez-de-chaussée : entrée, cuisine équipée, séjour en L de 45 m² avec cheminée à insert et portes-fenêtres donnant sur le jardin, chambre avec salle de douche attenante, 2e entrée, autre chambre. - Au 1er étage : 4 chambres avec chacune leur salle de douche ou bains et un balcon pour 3 d'entre elles, un séjour-kitchenette sur balcon, une autre salle de douche. - Au 2nd étage : séjour avec cuisine américaine donnant sur une terrasse, chambre avec salle de bains (+ douche) attenante. - En sous-sol : 135 m² environ d'espaces buanderie/ chaufferie / stockage. - À l’extérieur : joli jardin intime sans vis-à-vis et avec de beaux végétaux, parking pour 2 voitures. Visionnez la vidéo disponible avec l'extérieur et les pièces principales. Les prestations et éléments de confort sont innombrables : chauffage au sol par pompe à chaleur, climatisation réversible, ballons thermodynamiques, huisseries double vitrage en aluminium, volets électriques, ascenseur PMR, portes isophoniques, carrelages et robinetteries haut de gamme, 2 aspirateurs centralisés, alarme, portail électrique, visiophone, arrosage automatique, éclairages extérieurs. Les consultantes Barnes connaissent parfaitement leurs secteurs puisqu’elles y habitent. Elles se tiennent à votre disposition pour vous conseiller sur la vie locale, les écoles, les activités, les transports, commerces et vous accompagner au mieux dans vos projets. Votre contact BARNES : Marie-Sophie NIELLY : 07 82 52 82 91 - ms.nielly@barnes-international.com . « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr » . Honoraires charge vendeurs",
+   "dpe": "A",
+   "extra": {
+    "criteres": [
+     "7 Chambres",
+     "350 m²",
+     "7 salles de bains/douche",
+     "Surfaces extérieures 358 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78146",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Chatou",
+    "prix_m2": 5700,
+    "usage": "habitation",
+    "dvf_med": 6608,
+    "dvf_n": 44,
+    "ecart_dvf": -0.137,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking",
+     "Ascenseur"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 46
+   }
+  },
+  "barnes-APM-87008206": {
+   "id": "barnes-APM-87008206",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/chatou/ref-APM-87008206.html",
+   "titre": "MAISON ANCIENNE DE 285 M² SUR UNE PARCELLE DE 1416 M² - 5 CHAMBRES - SOUS-SOL - GARAGE DOUBLE",
+   "type": "maison",
+   "commune": "Chatou",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 285.0,
+   "prix": 1800000.0,
+   "description": "CHATOU - BARNES international vous propose cette magnifique propriété ancienne de 285 m² (plus sous-sol), située sur une parcelle de 1416 m² avec un garage double. La maison comprend : Au rez-de-chaussée : une vaste entrée dessert une grande pièce de réception ouverte vers le jardin avec une cheminée, une pièce pouvant servir de salle à manger ou de bureau, une cuisine et des toilettes invitées. Au 1er étage comprend une suite avec chambre, dressing ou bureau, salle d’eau avec toilettes. Une autre chambre et une salle de bains avec douche et baignoire balnéo. Toilettes indépendantes. Au 2nd étage : palier desservant une suite chambre, dressing ou bureau, une salle d’eau avec toilettes. Trois autres chambres et une salle d’eau avec toilettes complètent cet étage. Au sous-sol : quatre pièces dont une chaufferie. A l’extérieur, beau jardin arboré avec pelouses, orienté sud. Garage double et stationnement sur la parcelle. A 20 min de la gare RER A Chatou-Croissy, la maison est à proximité des commerces et écoles (école maternelle Les Champagnes à 10 min, école primaire Jules Ferry 2 min, collège à 14 min). Charme de l’ancien avec de nombreux éléments d’époque : bel escalier, parquet, moulure, cheminées, belle hauteur sous plafond et cave voutée. Votre contact BARNES : Constance PATTE au 06 61 42 82 07 Honoraires agence à la charge de l'acquéreur de 4%. Votre contact Barnes : Constance PATTE au 06 61 42 82 07 ou par email : c.patte@barnes-international.com Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr",
+   "dpe": "C",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "285 m²",
+     "Surfaces extérieures 1 416 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78146",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Chatou",
+    "prix_m2": 6316,
+    "usage": "habitation",
+    "dvf_med": 6608,
+    "dvf_n": 44,
+    "ecart_dvf": -0.044,
+    "atouts": [
+     "Jardin",
+     "Volumes",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 46
+   }
+  },
+  "barnes-APM-86389450": {
+   "id": "barnes-APM-86389450",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/le-chesnay/ref-APM-86389450.html",
+   "titre": "Co-exclusivité - Le Chesnay - Plateau Saint-Antoine - Exceptionnelle propriété de 481 m² - 8 chambres - Jardin - Ascenseur et climatisation",
+   "type": "maison",
+   "commune": "Le Chesnay",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 481.0,
+   "prix": 2950000.0,
+   "description": "Co-exclusivité Barnes Versailles vous invite à découvrir une demeure exceptionnelle par son architecture et ses prestations, en plein cœur du Plateau Saint-Antoine au Chesnay. Edifiée sur un terrain de 1.140 m², cette magnifique maison d'allure contemporaine trône élégamment au bout d'une belle allée gravillonnaire. Enveloppée de toutes parts par un jardin qui offre, à l'arrière, un joli bassin d'agrément, cette maison développe sur trois niveaux une surface habitable d'environ 341 m² habitables (344 m² au sol), plus un sous-sol total de 150 m² au sol, soit 481 m² habitables environ au total (près de 500 m² au sol). Elle se découvre de la manière suivante: - Au rez-de-chaussée: une entrée majestueuse avec dressing vous accueille avant de découvrir un monumental escalier Art Déco qui mène à l'étage; un triple salon avec cheminée et parquet en bois exotique lumineux et offrant des volumes généreux (75 m²) avec accès sur la terrasse arrière de 50 m² exposée Ouest et le jardin, une cuisine (18 m²) équipée et dinatoire, ainsi qu'un bureau, toilettes séparés; - A l'étage: un grand palier distribue de part et d'autre six chambres (entre 12 et 18 m²) avec quatre salles d'eau ou de bain (avec toilettes), et 2 toilettes séparés; - En rez-de-jardin: un sous-sol total non enterré permet de découvrir une pièce de plus de 60 m² pouvant aisément abriter une activité pour profession libérale ou accueil du public indépendante de l'accès aux étages de la maison; à cela s'ajoutent une chambre, une salle de douche avec toilettes, la buanderie, la chaufferie, une pièce de rangement et un accès aux deux places de garage (porte automatique); un studio adjacent au garage avec cuisine et salle d'eau/toilettes peut servir pour le personnel ou une jeune fille au pair, avec son accès autonome. - Accès aux combles offrant une surface de rangement supplémentaire. Deux atouts exceptionnels: un ascenseur permet d'accéder à tous les étages de la maison et la maison est climatisée entièrement. Possibilité de garer au moins 5 véhicules à l'avant de la propriété, en plus des deux places de garage fermé. La propriété, d'une élégance sobre et aux volumes confortables, dégage une atmosphère de sérénité et de discrétion absolue derrière sa magnifique grille. Prestations très haut de gamme pour le confort: Fermeture centralisée par domotique - Double vitrage- climatisation - chauffage au sol (planchers chauffants basse température grâce à une pompe à chaleur très performante) DPE:C/A Estimation des dépenses annuelles d'énergie (années de référence 2021, 2022, 2023) : entre 5 860 € et 7 990 € par an. Emplacement de premier ordre pour cette demeure à proximité immédiate des commerces du Chesnay, de la Place de la Loi et des écoles de renom (Les Châtaigniers, Saint Jean d'Hulst, Blanche de Castille). Prix de présentation: 2.950.000 euros HAI Honoraires à la charge des vendeurs Votre contact Barnes: Nathalie BOUE Tél: 06.44.07.93.50 ou n.boue@barnes-international.com",
+   "dpe": "C",
+   "extra": {
+    "criteres": [
+     "481 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78158",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Le Chesnay-Rocquencourt",
+    "prix_m2": 6133,
+    "usage": "habitation",
+    "dvf_med": 7953,
+    "dvf_n": 27,
+    "ecart_dvf": -0.229,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking",
+     "Ascenseur",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 65
+   }
+  },
+  "barnes-APM-85416577": {
+   "id": "barnes-APM-85416577",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/le-chesnay/ref-APM-85416577.html",
+   "titre": "Le Chesnay - Maison contemporaine climatisée - 4/5 chambres - Rénovation haut de gamme - Piscine - Jardin - Garage",
+   "type": "maison",
+   "commune": "Le Chesnay",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 330.0,
+   "prix": 1800000.0,
+   "description": "Barnes Versailles vous propose un bien d’exception : Superbe maison d'architecte de 330 m² habitables, édifiée sur une parcelle de 675 m² et située dans un cadre verdoyant et recherché au Chesnay, quartier Aubert. Alliant charme et modernité, cette propriété au standing grand luxe rénovée intégralement en 2024 par un architecte, offre des prestations très haut de gamme pour en faire un bien unique au style très contemporain. Mitoyenne d'un coté mais sans aucune nuisance acoustique, elle se découvre de la façon suivante : Au rez-de-chaussée : une galerie d'entrée cathédrale avec vestiaires, une chambre avec parquet en chêne massif, une salle de douche, WC séparé lavant et chauffant, un espace de vie de 45 m² comprenant une salle à manger, une cuisine avec îlot central en marbre et électroménager haut de gamme suisse (four vapeur, four pyrolyse, micro-ondes, réfrigérateur combiné, lave-vaisselle...), arrière cuisine composée d'un espace buanderie, plaque et four. Au 1er étage : un palier desservant une première chambre avec salle de bains, une deuxième chambre avec grand dressing et salle de bains, une magnifique suite parentale de plus de 56 m² avec dressing, placards intégrés, salle de bains/douche, toilettes séparés. Accès au rez-de-jardin par un escalier en marbre donnant sur un magnifique salon/bibliothèque de plus de 60 m² ouvert sur le jardin et la piscine, une salle de jeux ou salle de sport de 37m² climatisée ainsi qu'une salle de douche et toilettes. Un grand garage couvert avec portail électrique complète ce bien, possibilité de garer plusieurs voitures sur la parcelle. Maison intégralement ravalée en 2023, fenêtres en double vitrage verre acoustique thermique et anti-effraction, domotique, piscine 6X3 mètres avec liner et pompe à chaleur, climatisation chaud/froid, radiateurs extra plat encastrés... Proche Golf et Haras de Jardy, accès rapide autoroute A13, écoles, commerces et transports, elle saura vous séduire par ses grands espaces de vie, sa piscine plein sud et son jardin sans vis à vis. Les matériaux très haut de gamme, l'escalier graphique et les espaces généreux des pièces de vie et de la suite parentale font de cette maison moderne un bien hors-norme et rarissime à la vente. Propriété au calme absolu et dans un environnement exclusif. Maison entièrement climatisée et ne nécessitant aucun travaux pour une installation immédiate dans le plus grand confort. DPE très performant: B/C - Estimation des dépenses d'énergie annuelles (année de référence:2021) entre 1.620 euros et 2.260 euros Taxe foncière: 4.265 euros Honoraires charge acquéreurs 4% Prix net vendeur (hors honoraires):1.730.770 euros Votre contact Barnes: Nathalie BOUE Téléphone: 06.44.07.93.50 - email: n.boue@barnes-international.com",
+   "dpe": "B",
+   "extra": {
+    "criteres": [
+     "4 Chambres",
+     "330 m²",
+     "5 salles de bains/douche",
+     "Surfaces extérieures 675 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78158",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Le Chesnay-Rocquencourt",
+    "prix_m2": 5455,
+    "usage": "habitation",
+    "dvf_med": 7953,
+    "dvf_n": 27,
+    "ecart_dvf": -0.314,
+    "atouts": [
+     "Jardin",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 45
+   }
+  },
+  "barnes-APM-85842924": {
+   "id": "barnes-APM-85842924",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/le-chesnay/ref-APM-85842924.html",
+   "titre": "Magnifique Maison Le Chesnay/ Plateau Saint-Antoine - 325 m² - 6/8 chambres - monumental atelier d'artiste",
+   "type": "maison",
+   "commune": "Le Chesnay",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 275.0,
+   "prix": 1990000.0,
+   "description": "Barnes Versailles vous invite à découvrir cette magnifique demeure nichée au cœur du Plateau Saint-Antoine, édifiée sur un terrain de 667m². Cette maison non mitoyenne d’une superficie de 275 m² habitables (325 m² environ au sol) est enveloppée de tous côtés par son joli jardin arboré, bénéficiant de deux accès distincts. Environnement ultra privilégié et très recherché pour cette élégante bâtisse de 4 étages en pierre de meulière construite en 1902 avec 6/8 chambres et qui se présente de la façon suivante: Au Rez-de-Chaussée: Une première partie du rez-de-chaussée (\\\"maison principale\\\") est composée d'un grand hall d'entrée avec sa faïence d'époque menant à une cuisine équipée et dinatoire en excellent état (2023), puis à un grand salon/salle à manger de 36m² traversant et lumineux (double orientations Sud Ouest et Nord Est) avec cheminée; Jouxtant le salon, se trouve la partie correspondant à «la petite maison», avec son entrée indépendante par ailleurs: cette partie se compose d'une cuisine équipée, d'un grand salon bénéficiant d’une hauteur sous plafond monumentale de 7 mètres et d’une sublime verrière d’atelier d’artiste offrant une vue plongeante sur le jardin. Au bout d’un majestueux escalier, cette pièce particulièrement lumineuse permet de découvrir un autre salon en mezzanine, surplombant l'atelier d'artiste et au fond duquel vient se lover une chambre avec sa salle de douche et des toilettes. Au premier étage: on trouve deux chambres (dont une avec sa cheminée), un bureau (avec cheminée), une salle de bains et des toilettes séparés. Deuxième étage: trois chambres et une salle de douche/toilettes. Le grenier offre une surface de rangement supplémentaire. Sous-sol entier pour chaque partie de la maison: la maison \\\"principale\\\" dispose d'un local technique, de trois pièces de stockage; d'une chaufferie et un toilette. Le sous-sol de \\\"la petite maison\\\" est aménagé en véritable appartement indépendant avec son accès direct sur le jardin (composé de deux chambres, une cuisine, une salle de bains avec toilettes et une cave). Possibilité de garer deux voitures dans le jardin de chaque coté (soit 4 véhicules). La maison offre de multiples possibilités de réaménagements (pour une ou plusieurs familles) et bénéficie de volumes confortables dans toutes les pièces quelle que soit la configuration retenue. Au niveau du rez-de-chaussée, la maison peut en effet être scindée en deux parties cohabitant de façon autonome (chaque partie dispose d'une entrée distincte, de ses propres canalisations de chauffage et d'eau - chaudières et ballons d'eau distincts- et de ses caves respectives); l'organisation du rez-de-chaussée pourra tout aussi bien rester telle qu'elle est actuellement pour une seule famille bénéficiant ainsi de grands volumes avec un atelier d'artiste magistral et de plusieurs salons aux ambiances différentes. Une rénovation d'envergure permettra à cette superbe demeure de retrouver son charme d'antan et de mettre en relief ses atouts indéniables (verrière monumentale de l'atelier d'artiste, boiseries, escaliers sculptés, cheminées et radiateurs d'époque, faïences au sol...). Environnement exclusif très privilégié des familles pour la proximité avec les établissements scolaires réputés du Chesnay et de Versailles (école Blanche de Castille à 150 mètres, Saint-Jean d'Hulst à 400 mètres) et les commerces (la rue de Versailles est à 2 mn à pied). Accès facile pour la gare de Versailles Rive Droite à 10 mn à pied et bus pour toutes les gares de Versailles ou Vaucresson, La Celle Saint Cloud à 150 mètres. Chauffage: Gaz (deux chaudières récentes) Taxe foncière: 3.789 euros/an (année 2024) DPE: E/E Estimation du montant annuel des dépenses d'énergie pour un usage standard: entre 8.380 € et 11.380 € Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr Honoraires à la charge des acquéreurs: 72.852 euros (3.8% TTC du prix net vendeur) Prix Net Vendeur hors",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "8 Chambres",
+     "275 m²",
+     "4 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78158",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Le Chesnay-Rocquencourt",
+    "prix_m2": 7236,
+    "usage": "habitation",
+    "dvf_med": 7953,
+    "dvf_n": 27,
+    "ecart_dvf": -0.09,
+    "atouts": [
+     "Jardin",
+     "Verrière / atelier",
+     "Volumes",
+     "Sous-sol",
+     "Indépendant",
+     "Entrées séparées"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 46
+   }
+  },
+  "barnes-APM-86807968": {
+   "id": "barnes-APM-86807968",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-86807968.html",
+   "titre": "Versailles Glatigny - Maison familiale - 220 m² - 6/7 chambres - Terrain 566 m² - Stationnement",
+   "type": "maison",
+   "commune": "Versailles",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 271.0,
+   "prix": 1550000.0,
+   "description": "Barnes vous propose, au calme et bénéficiant d’une belle exposition, cette maison familiale inspirée de l’architecture des années 30, caractérisée par son élégante tour arrondie et ses lignes architecturales typiques de l’époque, offrant de beaux volumes et une belle luminosité, non mitoyenne de plus de 220 m² habitables (271 m² au sol), située sur une parcelle arborée de 566 m². La maison offre de beaux volumes de réception avec un séjour cheminée, une salle à manger véranda lumineuse avec accès direct à la terrasse, ainsi qu’une cuisine. L’espace nuit se compose de six chambres et d’un espace bureau/chambre idéal pour le télétravail ou une activité indépendante. À l’extérieur, vous profiterez d’un jardin arboré et d’un emplacement de stationnement pour voiture. La maison présente des éléments techniques appréciables : toiture récemment refaite, chauffage au gaz, DPE : D. Environnement privilégié : Forêt à proximité. Commerces à 8 minutes à pied. Place du Marché et gare Versailles Rive Droite à 11 minutes en bus. Établissements scolaires à 700 m : Saint-Jean de Hulst et Les Châtaigniers. Une maison familiale lumineuse et bien située, offrant calme et qualité de vie à Versailles. Honoraires à la charge de l'acquéreur de 4% TTC. Montant net vendeur de 1 490 384€. Votre contact BARNES: Frédérique Meinnier 07 82 80 15 21 f.meinnier@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr » À visiter sans tarder !",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "6 Chambres",
+     "271 m²",
+     "3 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 5720,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": -0.312,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Réception",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 49
+   }
+  },
+  "barnes-APM-86824966": {
+   "id": "barnes-APM-86824966",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/louveciennes/ref-APM-86824966.html",
+   "titre": "Sté Barnes - Propriété Louveciennes",
+   "type": "maison",
+   "commune": "Louveciennes",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 250.0,
+   "prix": 1990000.0,
+   "description": "Alexandre CHARLET : BARNES Yvelines vous propose cette superbe propriété, inspirée de l'architecture emblématique de l'aqueduc de Louveciennes, de 250 m² habitables, 300 m² au sol, implantée sur un terrain de plus de 1 300 m², bénéficie d'une luminosité exceptionnelle et d'une rénovation complète réalisée en 2023. Située dans les hauteurs du vieux village de, Louveciennes, à deux pas de la forêt de Marly et du Parc de Marly-le-Roi, elle s'inscrit dans un environnement verdoyant et préservé, idéalement positionné entre Versailles et Saint-Germain-en-Laye. Le rez-de-chaussée propose deux espaces de vie distincts et complémentaires. Le premier salon, avec cheminée à insert, crée une atmosphère chaleureuse et conviviale. La salle à manger, lumineuse, ouvre directement sur une terrasse avec espace barbecue aménagé. Le second salon, agrémenté de grandes baies vitrées et d'un chauffage au sol, donne accès au jardin paysagé soigneusement entretenu. Une partie de la maison peut être rendue entièrement indépendante, parfaite pour un appartement invité, un bureau autonome ou un usage locatif. Vous trouverez cinq chambres, dont une chambre parentale de 35 m² avec balcon privatif. La maison est desservie par quatre salles de bain et de douche. Une cave à vin et un garage complètent l'ensemble. La toiture en zinc a été intégralement refaite en 2016. L'agrandissement date de 2007. Il y a un CES résiduel. Une extension reste envisageable dans le cadre du PLU zone UC, secteur ABF, sans condition suspensive de permis, de division ou de travaux. Accès direct à l'autoroute A13. L'École Bilingue Montessori Academy de Louveciennes est accessible à proximité immédiate. Chauffage gaz et électricité. Plans et surfaces disponibles sur demande. Honoraires à la charge des vendeurs. Votre contact BARNES : Alexandre CHARLET 06 68 08 88 99 a.charlet@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr Nous possédons une large sélection de biens off market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas me contacter.",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "250 m²",
+     "4 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78350",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Louveciennes",
+    "prix_m2": 7960,
+    "usage": "habitation",
+    "dvf_med": 5877,
+    "dvf_n": 24,
+    "ecart_dvf": 0.354,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 26
+   }
+  },
+  "barnes-APM-85347320": {
+   "id": "barnes-APM-85347320",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/maisons-laffitte/ref-APM-85347320.html",
+   "titre": "Parc de Maisons-Laffitte - Propriété de prestige avec piscine, spa et discothèque",
+   "type": "maison",
+   "commune": "Maisons-Laffitte",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 950.0,
+   "prix": 3650000.0,
+   "description": "À seulement 20 minutes de Paris en voiture ou en RER, cette propriété exceptionnelle de près de 900 m², construite en 1912 par Frank Jay Gould, est située au cœur du Parc de Maisons-Laffitte sur un terrain arboré de 2.251 m². Elle se compose de deux espaces distincts : une maison principale et un espace réception-détente sous verrière, pour un cadre de vie unique. Maison Principale (environ 400 m²) : La maison principale allie le charme d’une construction historique à un confort moderne. Au rez-de-chaussée, elle propose une entrée, une cuisine équipée, une salle-à-manger, et un salon TV, un grand salon ouvrant sur une terrasse exposée sud avec piscine chauffée. Aux étages, elle comprend une suite parentale avec dressing et salle de bains, quatre autres chambres, un bureau, deux salles de bains, une salle de jeux et une buanderie. Espace réception-détente sous verrière (500 m²) : Relié à la maison principale à chaque niveau, cet espace est conçu pour les loisirs et la détente. Il inclut un bar au rez-de-chaussée ainsi que plusieurs salons/lieux de vie et une galerie en mezzanine baignée de lumière naturelle. On y trouve également une salle de sport équipée, un espace de repos, un spa avec sauna et jacuzzi, ainsi qu’une discothèque. Une chambre d’amis avec salle de douche et un studio avec kitchenette et salle de douche offrent un confort supplémentaire pour accueillir famille et amis. Chauffage au gaz, garage et places de stationnement. Proche de l’école bilingue l’Ermitage et à 2 km de la gare RER de Maisons-Laffitte. Prix 3.650.000€, incluant les honoraires Barnes de 5.00% TTC à la charge de l'acquéreur, soit 3.476.000€ nets vendeur. Contact Barnes : Agnès MEYER au (+33) 664361835 ou a.meyer@barnes-international.com",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "7 Chambres",
+     "950 m²",
+     "6 salles de bains/douche",
+     "Surfaces extérieures 2 251 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78358",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Maisons-Laffitte",
+    "prix_m2": 3842,
+    "usage": "habitation",
+    "dvf_med": 7819,
+    "dvf_n": 54,
+    "ecart_dvf": -0.509,
+    "atouts": [
+     "Terrasse",
+     "Verrière / atelier",
+     "Réception",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 66
+   }
+  },
+  "barnes-APM-87046113": {
+   "id": "barnes-APM-87046113",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/maisons-laffitte/ref-APM-87046113.html",
+   "titre": "MAISONS-LAFFITTE – Parc – Propriété de caractère - terrain de 3500 m²",
+   "type": "maison",
+   "commune": "Maisons-Laffitte",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 294.0,
+   "prix": 3500000.0,
+   "description": "Au cœur du prestigieux Parc de Maisons-Laffitte, Barnes International vous présente une propriété de caractère édifiée sur un remarquable terrain arboré d'environ 3 500 m². Nichée dans un environnement privilégié, cette demeure principale d'environ 212 m² séduit par son architecture intemporelle, ses beaux volumes et le charme de ses éléments anciens. Les espaces de réception baignés de lumière, les nombreuses chambres et les vues dégagées sur le parc offrent un cadre de vie rare au sein de l'un des secteurs les plus recherchés de l'Ouest parisien. La propriété comprend également une maison de gardien indépendante d'environ 80 m² ainsi qu'un pavillon de chasse d'environ 40 m² situé au fond du jardin. Ces bâtiments annexes offrent de multiples possibilités d'utilisation : maison d'amis, logement indépendant, espace professionnel ou activité complémentaire. Véritable écrin de verdure, le parc constitue l'un des principaux atouts de cette adresse confidentielle. Ses dimensions exceptionnelles, particulièrement rares dans le Parc de Maisons-Laffitte, confèrent à l'ensemble une atmosphère unique. Des travaux de rénovation permettront de révéler pleinement le potentiel de cette propriété et de lui redonner tout son cachet. Au-delà de ses qualités résidentielles, ce bien présente également un intérêt patrimonial remarquable. Son importante emprise foncière, ses dépendances et sa configuration générale offrent différentes perspectives d'évolution et de valorisation, susceptibles de séduire aussi bien une famille en quête d'espace et d'indépendance qu'un investisseur à la recherche d'une opportunité rare sur le secteur. Sous-sol complet, caves, espaces de stockage et stationnements complètent cette propriété rare. Prix : 3 500 000 € HAI (3 365 000 € net vendeur). Honoraires à la charge de l'acquéreur Contact Barnes International Agnès Meyer : +33 (0)6 64 36 18 35 - a.meyer@barnes-international.com",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "294 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 3 500 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78358",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Maisons-Laffitte",
+    "prix_m2": 11905,
+    "usage": "habitation",
+    "dvf_med": 7819,
+    "dvf_n": 54,
+    "ecart_dvf": 0.523,
+    "atouts": [
+     "Jardin",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 27
+   }
+  },
+  "barnes-APM-86900042": {
+   "id": "barnes-APM-86900042",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/maisons-laffitte/ref-APM-86900042.html",
+   "titre": "Maisons-Laffitte – Parc : propriété de charme de 293 m² sur un terrain arboré de 2 392 m²",
+   "type": "maison",
+   "commune": "Maisons-Laffitte",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 293.0,
+   "prix": 2390000.0,
+   "description": "Située au cœur du parc de Maisons-Laffitte, cette élégante maison de style normand d’environ 293 m² s’inscrit dans un environnement verdoyant et privilégié, sur un terrain paysager de 2 392 m². Dès l’entrée, les volumes, la luminosité et les éléments de caractère — parquet en point de Hongrie, cheminées — confèrent à la maison une atmosphère chaleureuse et pleine de charme. Le rez-de-chaussée propose de belles pièces de réception ouvertes sur une magnifique terrasse exposée sud-est d’environ 80 m², une cuisine indépendante, ainsi qu’une bibliothèque et un bureau pouvant faire office de chambre. L’étage accueille quatre chambres et deux salles de bains, tandis que le second niveau offre deux chambres supplémentaires, une salle de bains et un espace à aménager selon les besoins. Le jardin arboré, vaste et sans vis-à-vis, constitue un véritable espace de respiration, idéal pour profiter pleinement du cadre paisible. Un sous-sol total complète ce bien avec un garage double, une cave à vin, des espaces de stockage, une pièce avec salle d’eau et une pièce polyvalente pouvant faire office de salle de jeux. Une propriété de caractère, offrant un cadre de vie recherché et un fort potentiel, à proximité de l’Ermitage, école internationale de renom. À propos de Maisons-Laffitte : Réputée pour son cadre de vie exceptionnel entre Seine et forêt, Maisons-Laffitte séduit par son atmosphère résidentielle et son célèbre Parc. La ville offre de nombreux commerces de bouche de qualité ainsi qu’un marché apprécié. Dynamique, elle propose de nombreuses activités sportives et culturelles, particulièrement adaptées à la vie de famille. Elle bénéficie également d’un accès rapide à Paris grâce au RER A et aux trains reliant la gare Saint-Lazare, permettant de rejoindre la capitale en environ 20 minutes. Prix : 2 390 000 € (honoraires à 4 % inclus – 2 300 000 € nets vendeur) Contact BARNES : Agnès Meyer +33 6 64 36 18 35 a.meyer@barnes-international.com",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "6 Chambres",
+     "293 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 2 392 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78358",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Maisons-Laffitte",
+    "prix_m2": 8157,
+    "usage": "habitation",
+    "dvf_med": 7819,
+    "dvf_n": 54,
+    "ecart_dvf": 0.043,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 37
+   }
+  },
+  "barnes-APM-86095127": {
+   "id": "barnes-APM-86095127",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/maisons-laffitte/ref-APM-86095127.html",
+   "titre": "Maisons-Laffitte - Parc – Propriété familiale avec maison indépendante – Jardin paysager 1181 m²",
+   "type": "maison",
+   "commune": "Maisons-Laffitte",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 275.0,
+   "prix": 2250000.0,
+   "description": "BARNES International vous présente, au cœur du très recherché Parc de Maisons-Laffitte, à quelques pas de l’École Internationale Bilingue l’Ermitage et de l’école Colbert, cette propriété familiale qui développe un ensemble rare composé d’une maison principale d’environ 225 m², d’une maison d’invités totalement indépendante d’environ 50 m² et d’un magnifique terrain paysager de 1 181 m². Implantée dans un environnement résidentiel préservé, sans vis-à-vis et orientée plein sud, elle séduit par sa luminosité, ses volumes généreux et sa configuration particulièrement recherchée avec deux habitations distinctes. La maison principale se compose de la sorte : Le rez-de-chaussée s’ouvre sur une entrée desservant une triple réception d’environ 60 m² avec cheminée, baignée de lumière, ainsi qu’une grande cuisine indépendante avec espace repas. L’ensemble bénéficie d’un accès direct à une terrasse de plain-pied prolongée par un jardin arboré, véritable écrin de verdure. Un vestiaire et des toilettes invités complètent ce niveau. À l’étage, quatre grandes chambres, deux salles de bains avec WC ainsi qu’un dressing composent un espace nuit parfaitement adapté à une vie de famille. Le sous-sol total offre des prestations complémentaires appréciables : chambre ou bureau/salle de jeux, buanderie, cave à vin et garage triple sécurisé. Une maison d’invités indépendante : un atout patrimonial majeur Entièrement aménagée, la seconde maison constitue une véritable valeur ajoutée, rare dans le secteur. Elle comprend un salon, une cuisine avec espace repas, une salle de douche avec WC, une véranda et, à l’étage, une chambre avec dressing ou bureau. Cette configuration offre de multiples possibilités : • Logement d’au pair • Accueil confortable de la famille et des amis • Exercice d’une activité professionnelle indépendante • Investissement locatif ou complément de revenus Un emplacement stratégique • Gare RER A et Transilien L/J : 15–20 min à pied • Centre-ville : 15 min à pied • La Défense : env. 15 min via RER A • Paris (Charles de Gaulle – Étoile / Saint-Lazare) : env. 25–30 min via RER A ou Transilien Bien rare dans le Parc par sa configuration avec deux habitations indépendantes et son emplacement recherché. DPE : D – GES : B Prix de vente : 2 250 000 €, honoraires à la charge du vendeur. Contact Barnes : Agnès MEYER (+33) 6 64 36 18 35 ou a.meyer@barnes-international.com Contact BARNES : Agnès Meyer +33 6 64 36 18 35 ou a.meyer@barnes-international.com",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "275 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 1 180 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78358",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Maisons-Laffitte",
+    "prix_m2": 8182,
+    "usage": "habitation",
+    "dvf_med": 7819,
+    "dvf_n": 54,
+    "ecart_dvf": 0.046,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 37
+   }
+  },
+  "barnes-APM-86413002": {
+   "id": "barnes-APM-86413002",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/maisons-laffitte/ref-APM-86413002.html",
+   "titre": "Maisons-Laffitte – Élégante propriété Art Déco – 372 m² (278 m² habitables)– Jardin clos 1 210 m²",
+   "type": "maison",
+   "commune": "Maisons-Laffitte",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 278.0,
+   "prix": 2200000.0,
+   "description": "À l’entrée du Parc de Maisons-Laffitte, dans un environnement verdoyant et recherché, cette superbe maison Art Déco des années 1930 déploie environ 372 m² (dont 278 m² habitables) sur un terrain clos et paysager de 1 210 m². Rénovée avec soin tout en préservant son esprit d’origine, elle séduit par ses volumes généreux, sa luminosité et le raffinement de ses détails architecturaux. Le rez-de-chaussée s’ouvre sur une entrée élégante menant, d’un côté, à un bureau, un vaste séjour, une pièce pouvant servir de bibliothèque ou de chambre, ainsi qu’une chambre avec salle de bains et dressing, toilettes séparées. De l’autre côté, une salle à manger et une cuisine dinatoire semi-ouverte offrent un accès direct au jardin. Le premier étage accueille deux chambres lumineuses partageant une grande salle de bains, ainsi qu’une suite avec salle de douche privative et dressing ou espace bureau. Au rez-de-jardin, un pool bar avec salle d’eau et toilettes donne accès à un jardin d’hiver avec jacuzzi s'ouvrant sur une belle terrasse de 33 m². Une buanderie, une cave à vin et un garage fermé complètent ce bien d’exception. Prestations haut de gamme : Cheminée, double vitrage, éclairage extérieur, portail motorisé, interphone, porte blindée Une adresse prisée, à deux pas du Parc, du centre et de la gare, offrant le parfait équilibre entre cachet historique et confort contemporain. Honoraires 5.01% à la charge des acquéreurs (2 095 000 € net vendeur). Contact BARNES : Agnès Meyer – +33 6 64 36 18 35 ou a.meyer@barnes-international.com",
+   "dpe": "F",
+   "extra": {
+    "criteres": [
+     "4 Chambres",
+     "278 m²",
+     "4 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78358",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Maisons-Laffitte",
+    "prix_m2": 7914,
+    "usage": "habitation",
+    "dvf_med": 7819,
+    "dvf_n": 54,
+    "ecart_dvf": 0.012,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [
+     "DPE F ou G"
+    ],
+    "scr": null,
+    "score": 26
+   }
+  },
+  "barnes-APM-85894339": {
+   "id": "barnes-APM-85894339",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/maisons-laffitte/ref-APM-85894339.html",
+   "titre": "Parc de Maisons-Laffitte – charmante propriété atypique au cœur du parc – environ 250 m² – local professionnel & installations équestres",
+   "type": "maison",
+   "commune": "Maisons-Laffitte",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 1142.0,
+   "prix": 1890000.0,
+   "description": "Située dans l’environnement très privilégié du Parc de Maisons-Laffitte, à seulement 8 minutes à pied du centre-ville, cette propriété pleine de caractère est issue de la réhabilitation d’anciennes installations équestres. Elle mêle le charme de l’ancien au confort moderne, et se prête idéalement à une vie de famille, une activité professionnelle et/ou une passion équestre. - Maison principale – 5 chambres – espace bien-être Ce bien se distingue par ses volumes généreux et son agencement atypique : o Au rez-de-chaussée Hall d’entrée avec escalier central, toilettes invités. Une suite parentale avec salle de douche, une seconde suite avec salle de bains privative. Espace bien-être avec hammam, salle de douche et WC. Buanderie. o À l’étage Spacieux espace de vie avec salon cathédrale et mezzanine, cuisine ouverte et salle à manger chaleureuse. Une aile indépendante comprend trois chambres, une salle de douche, une salle de bains et un espace dressing. - Local professionnel indépendant – ancien cabinet vétérinaire Avec entrée séparée, il comprend un espace d’accueil, plusieurs salles de consultation et un espace technique. Parfait pour une activité libérale ou commerciale liée au secteur équin - Partie équestre Plusieurs boxes à chevaux et des combles aménageables complètent l’ensemble. Un potentiel pour compléter les locaux de l'activité professionnelle envisagée ou pour les amateurs du monde équestre. Une propriété unique, dans un cadre verdoyant et confidentiel, à proximité immédiate du RER A, des commerces et des établissements scolaires les plus prisés. Honoraires 5 % TTC à la charge des acquéreurs (1 800 000 € nets vendeur). Contact Barnes : Agnès MEYER au (+33) 664361835 ou a.meyer@barnes-international.com",
+   "dpe": "C",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "5 salles de bains/douche",
+     "Surfaces extérieures 1 142 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78358",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Maisons-Laffitte",
+    "prix_m2": 1655,
+    "usage": "habitation",
+    "dvf_med": 7819,
+    "dvf_n": 54,
+    "ecart_dvf": -0.788,
+    "atouts": [
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 54
+   }
+  },
+  "barnes-APM-84066663": {
+   "id": "barnes-APM-84066663",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/marly-le-roi/ref-APM-84066663.html",
+   "titre": "BARNES : Marly-le-Roi - Maison de 276 m² - 5 chambres et un bureau - Annexe - Terrain de 1443 m²",
+   "type": "maison",
+   "commune": "Marly-le-Roi",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 276.0,
+   "prix": 1548000.0,
+   "description": "MARLY-LE-ROI - À deux pas de la gare - Maison 1898 avec annexe et jardin clos - 5 chambres et bureau Dans un secteur recherché de Marly-le-Roi, à proximité immédiate de l'Abreuvoir du Château, site historique classé, BARNES Yvelines présente cette maison familiale édifiée en 1898. Le bien est clos de murs et associé à une annexe. La gare de Marly-le-Roi, à quelques minutes à pied, dessert Paris Saint-Lazare en 40 minutes par la ligne L. La maison développe 276 m² sur trois niveaux. Le rez-de-chaussée articule une entrée, un séjour, une cuisine aménagée et équipée, ainsi qu'une salle à manger rénovée en 2016. Cette pièce ouvre sur une terrasse d'environ 80 m² et sur une véranda de 25 m², baignée de lumière. Le premier étage réunit une chambre parentale de 20 m² avec sa salle de bains et douche privatives, une deuxième chambre, et un bureau aménagé dans une ancienne salle de bains. Le second étage compte trois chambres supplémentaires et une salle de douche commune. Le sous-sol complète l'ensemble avec une buanderie, une cave, et une pièce vidéo chauffée pouvant servir de salle de jeux. Le terrain dépasse 1 400 m² et bénéficie d'un éclairage extérieur, d'un atelier et de trois places de parking. Situé en zone UK et soumis à l'avis de l'Architecte des Bâtiments de France, il autorise un agrandissement ainsi que la construction d'une piscine, sous réserve d'autorisation. Le certificat d'assainissement est en cours d'obtention. La localisation permet un accès rapide aux autoroutes A86, A12 et A13. Le collège Louis Lumière est à 350 mètres, le lycée Louis de Broglie à 220 mètres, et le Parc de Marly à 450 mètres. Pour les familles internationales, l'EIB École Internationale Bilingue de La Jonchère et l'école anglaise de Croissy sont à 13 minutes, l'établissement Blanche de Castille au Chesnay à 10 minutes, Daniélou à Rueil-Malmaison à 21 minutes, et le lycée international de Saint-Germain-en-Laye à 10 minutes. La vente est proposée sans condition suspensive de division, de construction ou de travaux. Honoraires à la charge de l'acquéreur : 4 % TTC, soit 60 000 €, pour un prix net vendeur de 1 488 000 €. Prix HAI : 1 548 000 €. Contact BARNES : Alexandre Charlet 06 68 08 88 99 a.charlet@barnes-international.com Les informations sur les risques auxquels ce bien est exposé sont disponibles sur georisques.gouv.fr Nous possédons une large sélection de biens off market qui ne sont pas visibles en ligne. Pour accéder à ces offres confidentielles, n'hésitez pas à me contacter.",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "276 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 1 443 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78372",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Marly-le-Roi",
+    "prix_m2": 5609,
+    "usage": "habitation",
+    "dvf_med": 5158,
+    "dvf_n": 23,
+    "ecart_dvf": 0.087,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Verrière / atelier",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 34
+   }
+  },
+  "barnes-APM-87177593": {
+   "id": "barnes-APM-87177593",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/le-port-marly/ref-APM-87177593.html",
+   "titre": "LE PORT-MARLY - Hauteurs de Saint-Germain-en-Laye - Propriété familiale au calme, vue sur parc paysager de 3 729 m² et piscine intérieure chauffée",
+   "type": "maison",
+   "commune": "Le Port-Marly",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 323.0,
+   "prix": 1950000.0,
+   "description": "Sur les hauteurs du Port-Marly, à dix minutes du centre de Saint-Germain-en-Laye, BARNES INTERNATIONAL vous propose cette propriété familiale au calme et à l'abri des regards, avec une vue dégagée sur son parc et la vallée de la Seine. D'une surface habitable de 323 m² environ, plus un sous-sol intégral, elle s'implante au cœur d'un parc paysager de 3 729 m². Le rez-de-chaussée s'organise autour d'un séjour traversant de 65 m² environ, baigné de lumière naturelle et ouvert sur le parc, prolongé par une salle à manger et une cuisine donnant sur la terrasse. La piscine intérieure chauffée de 8 x 4 m, avec vue sur le jardin, s'intègre entre la maison et le parc. Une suite parentale avec dressing et salle de bains, ainsi qu'un bureau, complètent ce niveau. À l'étage, trois chambres disposent chacune d'une salle d'eau privative et d'un balcon avec vue sur le parc, avec la possibilité d'aménager une chambre supplémentaire. Le sous-sol, intégral, accueille une salle polyvalente pouvant recevoir un espace sport ou home cinéma, un garage pour trois à quatre véhicules, les locaux techniques ainsi qu'un accès direct à l'espace piscine avec une salle de douche. Dans un environnement calme et verdoyant, la maison se situe à quelques encablures des commerces, des établissements scolaires et des bords de Seine. Le RER A ainsi que le Lycée International de Saint-Germain-en-Laye sont accessibles en moins de 10 minutes en bus, facilitant l'accès à Paris. DPE : classe D. GES : classe D. Prix de vente : 1 950 000 € HAI (honoraires d'agence inclus), soit 1 875 000 € net vendeur. Honoraires agence à la charge de l'acquéreur : 4 %, soit 75 000 €. Votre contact BARNES : Anne-Sophie Landraud, 06 03 31 98 11, as.landraud@barnes-international.com Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "323 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78502",
+    "secteur": "Hors secteur",
+    "commune_ref": "Le Port-Marly",
+    "prix_m2": 6037,
+    "usage": "habitation",
+    "dvf_med": 5879,
+    "dvf_n": 1,
+    "ecart_dvf": 0.027,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 36
+   }
+  },
+  "barnes-APM-86333268": {
+   "id": "barnes-APM-86333268",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-86333268.html",
+   "titre": "Versailles coeur Notre Dame - Hôtel particulier du XIXe - 8 chambres - Jardin - Garage.",
+   "type": "maison",
+   "commune": "Versailles, Notre-Dame",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 319.0,
+   "prix": 3050000.0,
+   "description": "Votre consultant Antoine Béthune - BARNES Versailles - vous invite à découvrir ce somptueux hôtel particulier édifié au XIXe siècle, en plein coeur du quartier Notre Dame. Ce dernier bénéficie d’un environnement exceptionnel mêlant élégance architecturale, calme et proximité immédiate des transports pour Paris. Situé dans le quartier le plus prisé de Versailles, à deux pas de l'église Notre Dame, des commerces de la rue de la Paroisse et du marché, du parc et à seulement 5 minutes à pied de la gare Versailles Rive Droite (ligne L), vous bénéficierez d'un lieu de vie unique à quelques minutes à pied du château et des écoles de renom, offrant un cadre de vie aussi pratique que prestigieux. Édifié au XIXe siècle, ce bien d’exception séduit dès le premier regard par son allure noble et son cachet préservé. Les volumes sont généreux et les éléments anciens conservés avec soin : parquet en point de Hongrie, moulures, cheminées d’époque, boiseries et hauteurs sous plafond participent à l’atmosphère unique du lieu. Les pièces de réception sont de grand standing, idéales pour recevoir dans un cadre raffiné. Le jardin ensoleillé, au calme et sans vis à vis, offre un véritable havre de paix en plein centre-ville. D'une superficie généreuse de 319 m² habitables la maison se compose, au rez-de-chaussée, d’une belle entrée, double réception baignée de lumière, d'une salle à manger s'ouvrant sur le jardin, d’une cuisine séparée et équipée, d'un bureau (idéal profession libérale) et de toilettes séparées. Le premier étage accueille quatre chambres ainsi que trois salles de bains. Des toilettes séparées complète également ce niveau. Au deuxième étage, quatre chambres supplémentaires et deux salles de bains, ainsi que des toilettes séparées. En sous-sol : une salle de jeux, buanderie, cave à vin, chaufferie et pièces de stockage. Un grand garage complète également ce bien. Idéal pour une famille, cette propriété d'exception au charme intemporel séduira les amateurs d'histoire et d’élégance. Votre consultant Antoine Béthune est à votre disposition au +33(0)6 74 92 04 89 pour toute question et demande de visite. Eau chaude par ballons électriques et chauffage par chaudière au gaz. Honoraires charge acquéreur 5% TTC, soit 2 905 000€ net vendeur. DPE D / GES D.",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "8 Chambres",
+     "319 m²",
+     "5 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 9561,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": 0.15,
+    "atouts": [
+     "Jardin",
+     "Volumes",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 41
+   }
+  },
+  "barnes-APM-83177573": {
+   "id": "barnes-APM-83177573",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-83177573.html",
+   "titre": "VERSAILLES - NOTRE-DAME - Hôtel particulier en hypercentre et en seconde ligne, parcelle de 540 m², 6 chambres",
+   "type": "maison",
+   "commune": "Versailles, Notre-Dame",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 334.0,
+   "prix": 2990000.0,
+   "description": "Exceptionnel Au cœur du quartier Notre-Dame, à deux pas du marché et de ses commerces, cet hôtel particulier de la fin du XIXe siècle associe l’hypercentre et la seconde ligne. Il se tient en retrait de la rue, au fond d’une impasse fermée, à l’écart de l’animation de la place. La parcelle de 540 m², d’une ampleur inhabituelle à cet endroit, s’ouvre sur un jardin arboré et fleuri. La maison développe 334 m² au sol dont 228 m² habitables sur trois niveaux, avec un sous-sol total. Le rez-de-chaussée s’ouvre sur une entrée qui dessert un petit salon, une double réception au sud ornée de cheminées et une grande cuisine avec espace repas. Carreaux de ciment, parquets massifs, moulures et cimaises composent un décor d’époque, que la hauteur sous plafond met en valeur dans toutes les pièces, étages compris. Aux étages, six chambres se répartissent sur deux niveaux, dont quatre de belle dimension, avec trois salles de bains et une salle de douche. Une lingerie au dernier niveau permet d’aménager un espace indépendant. Le sous-sol réunit une cave, une cave à vin, une buanderie et la chaufferie au gaz de ville ; il offre le potentiel d’une grande pièce de jeux ou d’une family room. Dans le jardin, une dépendance chauffée, ancienne écurie, forme une pièce supplémentaire d’environ 32 m², complétée par un local à vélos. La façade principale est exposée plein sud, avec des ouvertures à l’est et au nord. Un emplacement de stationnement attitré dans la copropriété attenante s’ajoute à deux places dans le jardin, derrière un portail motorisé. La couverture, le ravalement, les huisseries, l’électricité et la plomberie ont été rénovés il y a une dizaine d’années. La gare de Versailles Rive-Droite, sur la ligne L vers Paris La Défense et Paris Saint-Lazare, se rejoint en cinq minutes à pied. Des lignes de bus passent à proximité et les accès aux autoroutes A86 et A13 se trouvent à dix minutes en voiture. Prix : 2 990 000 € honoraires d’agence inclus, soit 2 875 000 € net vendeur, avec 115 000 € TTC d’honoraires (4 % du prix net vendeur) à la charge de l’acquéreur. DPE : classe D (226 kWhEP/m²/an). GES : classe D (48 kg CO2/m²/an) Informations sur les risques : GEORISQUES.GOUV.FR.",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "6 Chambres",
+     "334 m²",
+     "4 salles de bains/douche",
+     "Surfaces extérieures 540 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 8952,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": 0.077,
+    "atouts": [
+     "Jardin",
+     "Volumes",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [
+     "Copropriété : activités autorisées ?"
+    ],
+    "scr": null,
+    "score": 35
+   }
+  },
+  "barnes-APM-86909153": {
+   "id": "barnes-APM-86909153",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-86909153.html",
+   "titre": "Versailles Clagny – Maison ancienne 380 m² – 9 chambres",
+   "type": "maison",
+   "commune": "Versailles, Clagny-Glatigny",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 380.0,
+   "prix": 2850000.0,
+   "description": "Barnes Versailles vous présente, au cœur de Versailles, dans le quartier recherché de Clagny, une maison ancienne d’environ 380 m² habitables, édifiée sur un terrain d’environ 650 m². Cette propriété bénéficie d’un environnement calme et préservé, tout en étant à proximité immédiate des écoles (St jean Hulst), des commerces et de la gare Versailles Rive Droite. Exposée plein sud, elle offre une belle luminosité et une vue dégagée. La maison se distingue par la qualité de ses volumes, ses hauteurs sous plafond (3,3 m) et la préservation de ses éléments anciens, tels que les cheminées et les parquets. Le rez-de-chaussée s’ouvre sur une galerie d’entrée avec vestiaire invités, menant à une vaste pièce de réception avec cheminée, prolongée par une terrasse et le jardin au sud. Une salle à manger, un bureau de belle taille, une cuisine équipée avec espace repas ainsi qu’un office complètent ce niveau. Au premier étage, un palier central distribue une suite parentale avec chambre sur terrasse, dressing, bureau et salle de bains complète, ainsi que deux chambres supplémentaires, chacune disposant de sa salle de bains ou salle d’eau et de rangements. Le deuxième étage propose 5 chambres, dont certaines avec salle d’eau ou salle de bains, ainsi que de nombreux dressings et espaces de rangement. Les combles offrent un volume complémentaire pouvant être aménagé. Le sous-sol total comprend une buanderie, un atelier, une chaufferie, une cave ainsi qu’un garage double. Le jardin, exposé au sud, est arboré et soigneusement paysagé, offrant un cadre agréable et intimiste. L’ensemble est en très bon état, les propriétaires ayant su conserver et valoriser les matériaux d’origine avec soin. À proximité des commerces, des établissements scolaires et des transports permettant de rejoindre rapidement Paris, ce bien s’inscrit dans un environnement résidentiel particulièrement recherché. Votre contact BARNES: Nicolas MOIRIGNOT : 06 63 26 32 32 ou par mail : n.moirignot@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr »",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "9 Chambres",
+     "380 m²",
+     "6 salles de bains/douche",
+     "Surfaces extérieures 650 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 7500,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": -0.098,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Verrière / atelier",
+     "Volumes",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 57
+   }
+  },
+  "barnes-APM-86747880": {
+   "id": "barnes-APM-86747880",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-86747880.html",
+   "titre": "Jouy-en-Josas – Quartier des Metz – Propriété Art Nouveau",
+   "type": "maison",
+   "commune": "Versailles",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 450.0,
+   "prix": 2690000.0,
+   "description": "Une adresse emblématique au cœur de Jouy-en-Josas Barnes Versailles, seul mandataire, vous présente, au cœur du très recherché quartier des Metz à Jouy-en-Josas, un remarquable ensemble immobilier d'environ 450 m2, composé d'une propriété de style Art nouveau d’environ 260 m² habitables, édifiée sur un vaste parc paysager de plus d’un hectare, avec une maison ancienne d’environ 180 m². Située dans l’un des environnements les plus privilégiés de la commune, cette demeure emblématique séduit par son cachet, son élégance architecturale et la beauté rare de son parc. Ce dernier, admirablement paysager, déploie une succession d’ambiances poétiques et exotiques : cèdres et séquoias centenaires côtoient palmiers, bananiers et essences rares, composant un écrin de nature unique. La maison principale, baignée de lumière, s’ouvre au rez-de-chaussée sur une vaste galerie d’entrée menant à un grand salon traversant baigné de lumière avec cheminée en pierre et boiseries d’époque, prolongé par une salle à manger ouvrant de plain-pied sur la terrasse, le jardin et la piscine. Une grande cuisine dinatoire, entièrement équipée, complète cet espace de vie chaleureux et raffiné. À l’étage, un palier distribue un grand bureau ou chambre, ainsi qu’une suite parentale ouvrant sur la terrasse avec vue sur le parc et la piscine, disposant d’une double salle de bains. Le dernier niveau abrite plusieurs chambres mansardées, dont l’une avec sa propre salle de bains. Le sous-sol comprend un atelier, une buanderie et une chaufferie. La dépendance, ancienne bâtisse en pierre d’environ 200 m², constitue une maison à part entière. Elle se compose, en rez-de-chaussée, d’un séjour avec cheminée, d’une grande cuisine conviviale, d’une suite parentale avec mezzanine, de plusieurs chambres et salles d’eau, ainsi qu’un appartement indépendant à l’étage. Une seconde dépendance au fond du jardin abrite des espaces de stockage et des ateliers. L’ensemble est en très bon état et offre de belles prestations, tout en conservant son authenticité et son âme. Idéalement située à proximité immédiate du centre de Jouy-en-Josas, des écoles, commerces et transports vers Paris, cette propriété unique incarne le charme et la discrétion d’une adresse d’exception, au cœur d’un environnement naturel rare. A moins de 1,5 km de deux villages, on y trouve toutes les commodités et écoles. Un club de golf et un club de tennis et deux clubs d'équitation. La gare est à 15 min. à pied avec des trains directs pour Versailles et Paris (RER B et C). On trouve de bonnes écoles à Buc comme le réputé Lycée Franco-Allemand, également de très bons lycées et collèges à Versailles à 8 km, sans parler de la proximité immédiate des campus d'HEC et de l'X. Avec l'autoroute, facilement accessible depuis la maison, le centre de Paris est à 20 km seulement, 18 km du quartier d'affaires de La Défense, il est aisé de rejoindre les grands axes de communication comme l'A86, la N118, les autoroutes A10, A11 et A13 et Orly. Contact BARNES : Nicolas MOIRIGNOT +33 (0)6 63 26 32 32",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "8 Chambres",
+     "450 m²",
+     "Surfaces extérieures 10 500 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 5978,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": -0.281,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Verrière / atelier",
+     "Sous-sol",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 64
+   }
+  },
+  "barnes-APM-86925933": {
+   "id": "barnes-APM-86925933",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-86925933.html",
+   "titre": "Versailles Montreuil - Maison 1930 climatisée - Garage - Jardin - 7 chambres - Parfait état - DPE B/A - Studio indépendant",
+   "type": "maison",
+   "commune": "Versailles, Montreuil",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 304.0,
+   "prix": 2080000.0,
+   "description": "Belle maison de caractère des années 1930, agrandie en 1980, développant 203,60 m² habitables et 268,20 m² au sol pour la maison principale, et 230 m² habitables / 304 m² au sol au total (incluant la dépendance), implantée sur une parcelle de 693 m², au calme et sans vis-à-vis. Ravalement réalisé en 2021 La maison offre de belles prestations : isolation intérieure et des combles, double vitrage, pompe à chaleur réversible avec climatisation, ainsi qu’une borne de recharge pour véhicule électrique. DPE : B/A. Le rez-de-chaussée s’organise autour d’une très vaste pièce de vie avec cheminées, baignée de lumière, et d’une cuisine ouverte prolongée par une terrasse exposée plein sud. À l’étage, quatre chambres, deux salles de bains/douche et des WC. Le dernier niveau accueille une grande suite parentale avec dressing. Un sous-sol total complète l’ensemble, offrant une pièce supplémentaire pouvant faire office de chambre, salle de jeux ou espace de vie. Un garage est également présent. La propriété dispose d’une dépendance indépendante comprenant un grand studio avec salon, cuisine, salle de douche, WC et chambre, idéal pour recevoir ou pour un usage indépendant. Exposition sud, est et ouest. Situation recherchée, à proximité immédiate de la rue de Montreuil, des commerces et des transports : Ligne L vers Saint-Lazare, gare de Montreuil, ainsi que les gares de Viroflay Rive Gauche et Viroflay Rive Droite, situées respectivement à 16 min à pied de la gare de Montreuil, 12 min à pied de la gare de Viroflay Rive Droite (ligne L) et 15 min à pied de la gare de Viroflay Rive Gauche (RER C, ligne N et tramway T6). Honoraires à la charge acquéreurs : 4% TTC (2 000 000€ net vendeurs). Votre contact BARNES : Frédérique Meinnier 07 82 80 15 21 f.meinnier@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr",
+   "dpe": "B",
+   "extra": {
+    "criteres": [
+     "7 Chambres",
+     "304 m²",
+     "2 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 6842,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": -0.177,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 48
+   }
+  },
+  "barnes-APM-86063869": {
+   "id": "barnes-APM-86063869",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-86063869.html",
+   "titre": "Viroflay Rive-Droite – Villa historique XVIIIème à rénover - Jardin - Garage - Localisation idéale pour les familles..",
+   "type": "maison",
+   "commune": "Versailles",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 364.0,
+   "prix": 1995000.0,
+   "description": "Sous promesse. Exclusivité. Votre consultant BARNES - Damien Portail - a le privilège de vous présenter cette incroyable demeure historique de charme et de caractère – baptisée villa «Les Ormes» - dans le quartier Rive-Droite de Viroflay, à proximité immédiate de Versailles. Venez découvrir ce joyau de 1753 agrandie en 1880 puis 1910, absolument unique et parfaitement placé qui fut, entre autres, la maison de campagne de Marat puis demeure principale de l’écrivain académicien français romancier, poète et directeur de la Comédie Française Jules Clarétie. Un vrai voyage dans le temps, l'histoire, le théâtre et la littérature ! Sise sur un terrain de plus de 1000m², d’une superficie de plus de 350m², elle se situe à proximité immédiate de la gare (ligne L pour La Défense et Paris Saint-Lazare), des commerces, des écoles maternelles et primaires, du tram pour relier le RER C ainsi que de la forêt de Fausses Reposes. Au calme, cette demeure sans mitoyenneté demandera à ses futurs propriétaires des travaux de rénovation qui pourront être échelonnés entre les étages pour lui redonner tout son lustre d’antan. Aujourd’hui, elle offre 3 plateaux de 120m² environ qui se découvrent de la manière suivante : - le rez-de-jardin se copmpose d'une entrée avec escalier, d'un grand triple séjour avec salle de billard, le tout sur parquet chevrons, avec plus de 3m de hauteur sous plafond et bénéficiant d’une cheminée monumentale historique venant du château d’Anne de Bretagne, d'une chambres, d'une antichambre, d'un bureau, d'une cuisine, d'une salle de bains avec poutres en bois peintes et de 2 toilettes. - le 1er étage est divisé en 2 appartements qui peuvent être facilement reliés comme à l’origine avec chacun une cuisine, un séjour dont l’un est l’ancienne bibliothèque de la maison tout en boiseries d’époque, de 3 chambres, d’une salle d’eau et de sanitaires. Au 2nd étage sous combles : un grand salon, une salle à manger, 3 chambres, un bureau, une salle de douche et un toilettes. Par son origine et l’organisation de ses espaces aujourd’hui, cette demeure pourrait s’envisager aussi en 3 ou 4 appartements de grand standing à l’emplacement parfait, pour plusieurs familles voulant habiter ensemble dans de grands espaces. En complément, un sous-sol semi-complet, un garage et 4 stationnements sur le terrain complètent cette villa réellement exceptionnelle à plus d’un titre, à l’architecture noble et pleine de charme, et destinée à une ou plusieurs familles recherchant les volumes, le calme, la verdure et la localisation au sein d’un quartier très privilégié. La campagne chic à la ville. Vraiment rarissime à la vente. Travaux de rénovation à prévoir, possibles à échelonner suivant les étages. Chauffage au gaz de ville et eau chaude par chauffe-eau récent. DPE : F / F. Honoraires charges acquéreurs 4 % (1 918 300€ net vendeurs). Votre contact BARNES: Damien PORTAIL 06 60 42 72 23 d.portail@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr »",
+   "dpe": "F",
+   "extra": {
+    "criteres": [
+     "7 Chambres",
+     "364 m²",
+     "5 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 5481,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": -0.341,
+    "atouts": [
+     "Jardin",
+     "Volumes",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [
+     "DPE F ou G",
+     "Travaux importants"
+    ],
+    "scr": null,
+    "score": 46
+   }
+  },
+  "barnes-APM-85700781": {
+   "id": "barnes-APM-85700781",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-85700781.html",
+   "titre": "Les Loges-en-Josas, propriété contemporaine, 5 chambres, tennis et piscine intérieure de 350 m2, chambres",
+   "type": "maison",
+   "commune": "Versailles",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 350.0,
+   "prix": 1990000.0,
+   "description": "Barnes Versailles vous propose : Située aux Loges en Josas, dans un environnement privilégié et calme, une propriété d'environ 350 m2, conçue en 1988 par un architecte et édifiée sur un terrain de 5035 m2. La maison s\\\"articule autour d'un patio. Le jeu des volumes invitant les espaces extérieurs, la luminosité intense et tamisée, donnent à l'ensemble une vraie dimension architecturale. Elle se compose : Au rez de chaussée, un hall d'entrée donne accès à un premier salon (salle de billard), un grand séjour avec cheminée (plafond Cathédrale) ouvrant sur une piscine intérieure (5x10m), un espace bar, une cuisine avec espace repas, une salle à manger, un salon tv. Chaque pièce de vie donne sur une terrasse (sud, ouest, est). Un espace parental est composé d'une suite avec chambre sur solarium, salle de bain complète et dressing, ainsi qu'un bureau et une lingerie. A l'étage, deux suites en mezzanine, composées chacune d'une chambre avec vue sur le jardin et la piscine, une salle de bain et espace bureau, deux chambres supplémentaires de belle taille, une salle de bain, de nombreux rangements. Un espace grenier A l'entresol, pièces techniques, cave à vin, salle de sport avec douche et sauna. Quatre garages. Le jardin paysager ne souffre d'aucun vis-à-vis, parfaitement au calme, il accompagne harmonieusement les différentes terrasses qui bordent la maison. Un terrain de tennis vient parfaire cet ensemble. A moins de 1,5 km de deux villages, on y trouve toutes les commodités et écoles. Un club de golf et un club de tennis et deux clubs d'équitation. La gare est proche avec des trains directs pour Versailles et Paris (RER B et C). On trouve de bonnes écoles à Buc comme le réputé Lycée Franco-Allemand, également de très bons lycées et collèges à Versailles à 8 km, sans parler de la proximité immédiate des campus d'HEC et de l'X. Avec l'autoroute, facilement accessible depuis la maison, le centre de Paris est à 20 km seulement, 18 km du quartier d'affaires de La Défense, il est aisé de rejoindre les grands axes de communication comme l'A86, la N118, les autoroutes A10, A11 et A13 et Orly. Votre contact BARNES: Nicolas MOIRIGNOT : 06 63 26 32 32 ou par mail : n.moirignot@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr »",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "350 m²",
+     "5 salles de bains/douche",
+     "Surfaces extérieures 5 035 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 5686,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": -0.316,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 51
+   }
+  },
+  "barnes-APM-86804323": {
+   "id": "barnes-APM-86804323",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/versailles/ref-APM-86804323.html",
+   "titre": "Versailles Clagny-Glatigny - Maison à rénover de 259 m² - Jardin - Piscine intérieure - Emplacement privilégié.",
+   "type": "maison",
+   "commune": "Versailles, Clagny-Glatigny",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 259.0,
+   "prix": 1750000.0,
+   "description": "Exclusivité. Votre Consultant Barnes à Versailles - Damien Portail - a le privilège de vous présenter cette belle demeure de style Mansart jouissant d’un terrain de près de 450m² au sein du quartier de Clagny-Glatigny. Elle se situe à proximité des écoles renommées (Saint Jean Hulst, Blanche de Castille, les Châtaigniers…), des premiers commerces et de la gare Rive-Droite (ligne L pour Paris-La Défense / Saint Lazare). D’une surface de près de 260 m² habitables (314 m² au sol), cette maison bénéficie d'une atout très rare dans le secteur : une piscine intérieure chauffée ! Un bien unique à la vente à Versailles qui nécessitera une belle rénovation à la hauteur de son standing et des attentes de la future famille qui s'y installera. Lumineuse, et très au calme, elle se découvre de la manière suivante : - En rez-de-jardin : entrée sur sol en cabochons de marbre, grand salon de près de 55 m² avec 3,20m de hauteur sous plafond et accès à la terrasse et au jardin, vaste cuisine dinatoire, vestiaire, toilettes invités et rangements. - A l’étage : palier et couloir desservent 4 chambres dont 2 avec point d'eau, salle de douche avec toilettes et toilettes indépendantes. A noter tout un sous-sol complet qui bénéficie notamment d'un vaste espace piscine ouvrant sur le jardin avec plage de repos et espace technique. Piscine de 9 x 5m avec rideau et chauffée par panneaux solaires. 2 stationnements sur le terrain complètent cette grande maison confortable et rare qui saura séduire les familles exigeantes recherchant une demeure élégante avec du caractère, de beaux volumes, de la luminosité et du calme, le tout en profitant d'un grand potentiel de rénovation et d’une localisation privilégiée. DPE : D / C. Toiture en ardoise et zinc. Travaux à prévoir en intérieur. Chauffage et eau chaude par pompe à chaleur, panneaux solaires et chaudière individuelle au gaz de ville. Honoraires charges acquéreurs de 4% (1 682 700 € net vendeurs). Votre contact BARNES: Damien PORTAIL 06 60 42 72 23 d.portail@barnes-international.com « Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques : www.georisques.gouv.fr »",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "4 Chambres",
+     "259 m²",
+     "4 salles de bains/douche",
+     "Surfaces extérieures 445 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "78646",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Versailles",
+    "prix_m2": 6757,
+    "usage": "habitation",
+    "dvf_med": 8313,
+    "dvf_n": 84,
+    "ecart_dvf": -0.187,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Volumes",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [
+     "Travaux importants"
+    ],
+    "scr": null,
+    "score": 42
+   }
+  },
+  "barnes-APM-87580823": {
+   "id": "barnes-APM-87580823",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/asnieres-sur-seine/ref-APM-87580823.html",
+   "titre": "Asnières-sur-Seine - Maison d'exception - rénovée et climatisée - 5 chambres",
+   "type": "maison",
+   "commune": "Asnières-sur-Seine",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 251.0,
+   "prix": 4480000.0,
+   "description": "Asnières-sur-Seine - Maison d'exception - rénovée et climatisée - 5 chambres Idéalement située, en plein cœur du quartier Bac et à proximité de la rue commerçante des Bourguignons, grande maison de 251 m² habitables (344 m² surface totale) sur une parcelle de 260 m². Cette maison familiale a été entièrement rénovée avec des matériaux, des finitions et des équipements de très grande qualité. Accessible par une ravissante terrasse aménagée, elle offre, au rez-de-chaussée, un grand espace de réception ouvert sur l'avant de la maison et comprenant une cuisine, une salle à manger et un grand salon ainsi qu'un toilette invités. Au 1er étage, un palier donne accès à deux grandes chambres dont la chambre parentale prolongée de son dressing et de sa vaste salle de bains desservant une ravissante terrasse. La deuxième chambre est munie d'une salle d'eau. Un toilette indépendant complète ce niveau. Au 2ème étage, un palier distribue trois grandes chambres, une salle de douche et un toilette indépendant. Un entresol total, constitué d'un bureau, d'une salle de sport, d’une buanderie, d’une salle d'eau avec toilettes est complété d'une cave. Côté rue, une entrée voiture donne accès à un garage. Cette grande maison de caractère, très équilibrée dans ses volumes et dans sa distribution, propose une rénovation exceptionnelle tout en restant fidèle et respectueuse de tous les attributs de l'ancien. Située au cœur d'un quartier résidentiel à Asnières-sur-Seine, cette maison offre un cadre de vie paisible et verdoyant. À deux pas des rues commerçantes et de la gare de Bois-Colombes, les habitants profitent d'une ambiance de village animée par de nombreuses boutiques de bouche, cafés et marchés. Ce quartier familial séduit par son architecture élégante, ses parcs de proximité et son accès rapide à La Défense et à Paris Saint-Lazare.",
+   "dpe": "C",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "251 m²",
+     "4 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92004",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Asnières-sur-Seine",
+    "prix_m2": 17849,
+    "usage": "habitation",
+    "dvf_med": 7254,
+    "dvf_n": 39,
+    "ecart_dvf": 1.461,
+    "atouts": [
+     "Terrasse",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 24
+   }
+  },
+  "barnes-APM-87544901": {
+   "id": "barnes-APM-87544901",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/asnieres-sur-seine/ref-APM-87544901.html",
+   "titre": "ASNIERES MAIRIE MAISON FAMILIALE DE CHARME",
+   "type": "maison",
+   "commune": "Asnières-sur-Seine",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 288.0,
+   "prix": 2480000.0,
+   "description": "Idéalement située, à proximité de la Place de la Mairie et en limite du quartier Bac, grande maison Ancienne de caractère, de 288m² sur un grand terrain arboré de 600m² avec une annexe. Cette maison familiale de charme, offre un grand espace de réception ouvert sur une terrasse et une extension de la cuisine, à l’arrière de la maison. Elle est constituée d’une galerie d’entrée, d’un séjour d’angle avec une cheminée, ouvert par de larges fenêtres sur le jardin, d’une salle à manger pour recevoir, d'une grande cuisine dinatoire, d'un cabinet de toilette. Au 1er étage un palier donne accès à une grande chambre parentale avec un dressing, une salle de bains et un cabinet de toilettes, un bureau, une chambre et une salle de bains ; au 2ème un large palier distribue deux grandes chambres avec une belle hauteur sous plafond, deux chambres coté jardin et une salle de douche. Un entresol aménagé, constitué d'une salle de jeux, d'une buanderie et d’une cave et d’une cave à vin. Sur le terrain une entrée voiture et un garage.",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "6 Chambres",
+     "288 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 600 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92004",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Asnières-sur-Seine",
+    "prix_m2": 8611,
+    "usage": "habitation",
+    "dvf_med": 7254,
+    "dvf_n": 39,
+    "ecart_dvf": 0.187,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Volumes",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 37
+   }
+  },
+  "barnes-APM-85467927": {
+   "id": "barnes-APM-85467927",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/bois-colombes/ref-APM-85467927.html",
+   "titre": "BOIS COLOMBES CENTRE AVEC JARDIN ET GARAGE",
+   "type": "maison",
+   "commune": "Bois-Colombes, Centre-ville",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 265.0,
+   "prix": 1590000.0,
+   "description": "A 10 minutes de la gare de Bois Colombes, belle maison ancienne de 265m² sur une parcelle de 400m². Cette maison familiale se compose au RDC : une entrée, un séjour lumineux avec cheminée, une cuisine d'été, le tout donnant sur le jardin et la terrasse; au 1er étage : une cuisine équipée, une salle à manger, deux chambres, un grand dressing et une salle de bain; au 2ème étage, deux chambres, un bureau et une salle de bain avec toilette séparé ; au 3ème étage : deux chambres, une salle d'eau. Ce bien comporte de nombreux placards intégrés. Sur le côté de la maison un garage pouvant accueillir deux voitures. Située dans une rue résidentielle calme, proche des écoles du quartier, des commerces et des transports. Contact Marie Blanc : 06 66 23 81 99",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "6 Chambres",
+     "265 m²",
+     "2 salles de bains/douche",
+     "Surfaces extérieures 400 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92009",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Bois-Colombes",
+    "prix_m2": 6000,
+    "usage": "habitation",
+    "dvf_med": 7618,
+    "dvf_n": 15,
+    "ecart_dvf": -0.212,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 41
+   }
+  },
+  "barnes-APM-85315613": {
+   "id": "barnes-APM-85315613",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/bois-colombes/ref-APM-85315613.html",
+   "titre": "BOIS COLOMBES CENTRE VILLE, MAISON ANCIENNE, 5 CHAMBRES",
+   "type": "maison",
+   "commune": "Bois-Colombes, Centre-ville",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 280.0,
+   "prix": 1890000.0,
+   "description": "A 5 minutes à pied de la Gare de Bois Colombes, belle maison familiale entièrement rénovée avec une extension contemporaine, d’une surface totale de 280m² avec un jardin arboré et un patio intérieur. Au RDC, une très belle entrée, un double espace de réception, une cuisine dînatoire, une salle à manger, une chambre avec une salle de douche, une salle de projection, une buanderie. Au 1er étage : une suite parentale avec un dressing et une salle de douche, deux chambres et une salle de douche; Au 2ème étage : une chambre ou (bureau). Sous-sol : une salle de sport et un hammam. Un grand garage. Contact Marie Blanc : 06 66 23 81 99",
+   "dpe": "D",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "280 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 327 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92009",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Bois-Colombes",
+    "prix_m2": 6750,
+    "usage": "habitation",
+    "dvf_med": 7618,
+    "dvf_n": 15,
+    "ecart_dvf": -0.114,
+    "atouts": [
+     "Jardin",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 38
+   }
+  },
+  "barnes-APM-86933468": {
+   "id": "barnes-APM-86933468",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/colombes/ref-APM-86933468.html",
+   "titre": "PETITE GARENNE MAISON D'ARCHITECTE AVEC JARDIN & PISCINE",
+   "type": "maison",
+   "commune": "Colombes",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 293.0,
+   "prix": 1995000.0,
+   "description": "À seulement 6 minutes à pied de la gare de La Garenne-Colombes (Ligne L) et à 10 minutes du tramway reliant La Défense, cette superbe maison contemporaine, construite en 2017, bénéficie d’un emplacement particulièrement recherché. Édifiée sur une parcelle de 605 m², elle développe environ 293 m² habitables hors sous-sol et séduit par ses volumes généreux, sa luminosité et la qualité de ses prestations. Au rez-de-chaussée, la maison offre une entrée élégante équipée de nombreux rangements toute hauteur. Celle-ci s’ouvre sur une vaste pièce de vie baignée de lumière, largement tournée vers la terrasse et le jardin exposé plein Sud, agrémenté d’une piscine. Cet espace de réception se compose d’une salle à manger, d’un salon chaleureux avec cheminée au gaz, d’une grande cuisine dînatoire ouverte ainsi que d’une buanderie. À l’étage, un palier dessert trois chambres, chacune bénéficiant de sa propre salle de douche, dont une avec accès à une terrasse privative. Un espace bureau complète ce niveau et se prolonge par une élégante passerelle menant à une superbe salle de bains avec baignoire, douche et hammam. Depuis cette salle de bains, un escalier conduit à une chambre supplémentaire située en rez-de-jardin, offrant ainsi une parfaite indépendance à ses occupants. Le sous-sol, particulièrement fonctionnel, propose de nombreux espaces dédiés au bien-être et au rangement : salle de sport, atelier, cave à vin, local piscine et nombreux rangements. À l’avant de la propriété, un portail permet d’accéder à une place de stationnement ainsi qu’au garage. Cette maison familiale rare sur le secteur conjugue avec élégance architecture contemporaine, confort, volumes exceptionnels et qualité de vie, dans un environnement privilégié à proximité immédiate des transports, tout en bénéficiant d’un ravissant jardin paysager avec piscine exposé Sud. Un bien particulièrement séduisant également par sa localisation et sa sectorisation scolaire ( École maternelle Jules Verne, école primaire Léon Bourgeois et collège Paparemborde). Contact : 06.76.12.78.59",
+   "dpe": "B",
+   "extra": {
+    "criteres": [
+     "4 Chambres",
+     "293 m²",
+     "4 salles de bains/douche",
+     "Surfaces extérieures 605 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92025",
+    "secteur": "Hors secteur",
+    "commune_ref": "Colombes",
+    "prix_m2": 6809,
+    "usage": "habitation",
+    "dvf_med": 6707,
+    "dvf_n": 29,
+    "ecart_dvf": 0.015,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Verrière / atelier",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 38
+   }
+  },
+  "barnes-APM-87537422": {
+   "id": "barnes-APM-87537422",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/colombes/ref-APM-87537422.html",
+   "titre": "PETITE GARENNE SUPERBE MAISON AVEC TERRASSES & JARDIN",
+   "type": "maison",
+   "commune": "Colombes",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 280.0,
+   "prix": 1660000.0,
+   "description": "Entièrement rénovée avec des prestations de qualité, cette superbe maison en meulière 1930 non mitoyenne développe une superficie de 280m² et est édifiée sur une parcelle de 318m². Idéalement située à 6min à pied de la gare de La Garenne Colombes (ligne L) et du tramway T2 (La Défense), ce bien possède également une bonne sectorisation scolaire. La maison offre au rez-de-chaussée, une entrée avec placards sur mesure, une superbe pièce de vie traversante composée d’un espace salon, un petit coin cheminée et une salle à manger ouvrant de plain-pied sur une terrasse et un jardin paysagé. Une belle cuisine dînatoire complète ce niveau. Au premier étage dédié aux enfants, un palier dessert trois chambres dont une donnant sur une superbe terrasse, une salle de bains et une buanderie. Au second étage, une très belle suite parentale avec placards sur mesure et une salle de bains avec baignoire & douche à l’italienne. Le sous-sol présente une pièce détente, une salle de douche, de nombreux placards de rangements, un local technique ainsi qu'une cave à vin, le tout avec une entrée indépendante pouvant donc être transformé en studio. Un espace traversant de l’avant de la maison jusqu’au jardin permet de ranger des vélos et de stocker de nombreux objets. A l’avant de la maison, un portail électrique ouvre sur une place de stationnement. Cette maison se distingue par la qualité de ses rénovations, son agencement, ses volumes généreux, sa luminosité, son excellente notation de DPE, son jardin paysagé, ses grandes terrasses, sa localisation au calme proche des transports, sa sectorisation (maternelle Anne Franck, école primaire Léon Bourgeois, collège Paparamborde) et son sous-sol aménagé. Contact: 06.03.84.60.34",
+   "dpe": "C",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "280 m²",
+     "3 salles de bains/douche",
+     "Surfaces extérieures 378 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92025",
+    "secteur": "Hors secteur",
+    "commune_ref": "Colombes",
+    "prix_m2": 5929,
+    "usage": "habitation",
+    "dvf_med": 6707,
+    "dvf_n": 29,
+    "ecart_dvf": -0.116,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant",
+     "Entrées séparées"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 44
+   }
+  },
+  "barnes-APM-87218200": {
+   "id": "barnes-APM-87218200",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/meudon/ref-APM-87218200.html",
+   "titre": "Maison familiale lumineuse avec jardin, piscine et dépendance",
+   "type": "maison",
+   "commune": "Meudon",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 250.0,
+   "prix": 1850000.0,
+   "description": "Maison familiale lumineuse avec jardin, piscine et dépendance Cette maison familiale bénéficie de volumes généreux, d’une belle luminosité et d’un jardin avec piscine, dans un environnement résidentiel recherché à proximité de Paris. Elle offre un cadre de vie particulièrement agréable, à la fois confortable et fonctionnel, idéal pour une famille à la recherche d’espace, de calme et de proximité avec les commodités. Le rez-de-jardin accueille une vaste pièce de réception largement éclairée par de grandes baies vitrées, avec un accès direct à la terrasse et au jardin. Ce niveau comprend également une salle à manger, une cuisine, une buanderie et des toilettes invités. Les espaces de vie s’ouvrent naturellement vers l’extérieur et permettent de profiter pleinement du jardin aux beaux jours. Le rez-de-chaussée dessert deux salons, un bureau et des toilettes. Ces différents espaces offrent de nombreuses possibilités d’aménagement selon les besoins de la famille, notamment pour créer un espace de travail ou de réception. À l’étage, quatre chambres, dont une avec terrasse privative et vue dégagée, ainsi qu’une salle d’eau avec toilettes. Les chambres bénéficient d’un environnement calme et agréable, adapté à une vie familiale. Le dernier niveau comprend une cinquième chambre, une salle de bains et des toilettes. Cet étage peut également être aménagé en suite parentale ou constituer un espace indépendant pour les invités, offrant ainsi une grande souplesse d’utilisation. À l’extérieur, le jardin arboré accueille une piscine ainsi qu’une dépendance aménagée en studio. Cet espace indépendant peut être utilisé comme bureau, logement d’appoint ou pour recevoir famille et amis. L’ensemble constitue un véritable prolongement des espaces de vie et offre un cadre privilégié pour profiter des beaux jours en toute tranquillité. La propriété permet par ailleurs le stationnement d’un à deux véhicules sur la parcelle. À proximité de la gare de Meudon Val Fleury, des lignes de bus, des établissements scolaires et des commerces, la maison bénéficie d’un accès direct aux commodités du quotidien et aux transports vers Paris. Son emplacement permet ainsi de concilier vie résidentielle, accessibilité et proximité immédiate de la capitale. Contact Barnes - Elise Karamujic : 06 30 71 18 45. Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques. Elise Karamujic immatriculée au RSAC de Nanterre 890 517 52",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "5 Chambres",
+     "250 m²",
+     "3 salles de bains/douche"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92048",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Meudon",
+    "prix_m2": 7400,
+    "usage": "habitation",
+    "dvf_med": 7499,
+    "dvf_n": 32,
+    "ecart_dvf": -0.013,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Réception",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 42
+   }
+  },
+  "barnes-APM-86980783": {
+   "id": "barnes-APM-86980783",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/meudon/ref-APM-86980783.html",
+   "titre": "Meulière de 280 m² - 5 Chambres - Jardin",
+   "type": "maison",
+   "commune": "Meudon",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 280.0,
+   "prix": 1690000.0,
+   "description": "Clamart - Limite Meudon. Meulière de caractère du XIXe d’environ 280 m², édifiée sur une parcelle de 576 m². Le rez-de-chaussée s’ouvre sur une entrée ayant conservé son carrelage d’origine, desservant de belles pièces de réception avec leur parquet en chêne : un double séjour lumineux, une salle à manger agrémentée d’une cheminée d’époque, ainsi qu’une cuisine équipée. Le séjour et la cuisine bénéficient d’un accès au jardin, offrant une agréable continuité entre intérieur et extérieur. Au premier étage, trois chambres composent l’espace nuit, dont deux avec accès à un balcon, complétées par un bureau, une salle de bains avec baignoire et douche, ainsi que des toilettes indépendantes. Le deuxième étage propose un vaste plateau à aménager selon vos envies : possibilité d’y créer une suite parentale avec salle d’eau et toilettes, ou bien deux chambres supplémentaires accompagnées d’une salle d’eau. Le sous-sol, entièrement aménagé, accueille une buanderie / chaufferie avec toilettes et arrivées prévues pour une salle de douche, un dressing, une pièce aménagée, une cave à vin ainsi qu’une chambre d’appoint. À l’extérieur, un jardin arboré soigneusement entretenu offre une terrasse et un espace détente. Deux dépendances viennent compléter ce bien : un garage aménagé en salle de sport avec salle de douche et toilettes, ainsi qu’un vaste bureau. Stationnement possible pour un véhicule avec prise de recharge électrique. Situation privilégiée, à proximité immédiate de la forêt, du collège et Lycée Rabelais et des commerces. Contact Barnes - Elise Karamujic : 06 30 71 18 45. Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques. Elise Karamujic immatriculée au RSAC de Nanterre 890 517 527.",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "280 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92048",
+    "secteur": "Banlieue ouest",
+    "commune_ref": "Meudon",
+    "prix_m2": 6036,
+    "usage": "habitation",
+    "dvf_med": 7499,
+    "dvf_n": 32,
+    "ecart_dvf": -0.195,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 45
+   }
+  },
+  "barnes-APM-86925831": {
+   "id": "barnes-APM-86925831",
+   "source": "barnes",
+   "url": "https://www.barnes-international.com/fr/vente/france/clamart/ref-APM-86925831.html",
+   "titre": "Meulière de 280 m² - 5 Chambres - Jardin",
+   "type": "maison",
+   "commune": "Clamart",
+   "code_postal": "",
+   "adresse": "",
+   "surface": 280.0,
+   "prix": 1690000.0,
+   "description": "Meulière de caractère du XIXe d’environ 280 m², édifiée sur une parcelle de 576 m². Le rez-de-chaussée s’ouvre sur une entrée ayant conservé son carrelage d’origine, desservant de belles pièces de réception avec leur parquet en chêne : un double séjour lumineux, une salle à manger agrémentée d’une cheminée d’époque, ainsi qu’une cuisine équipée. Le séjour et la cuisine bénéficient d’un accès au jardin, offrant une agréable continuité entre intérieur et extérieur. Au premier étage, trois chambres composent l’espace nuit, dont deux avec accès à un balcon, complétées par un bureau, une salle de bains avec baignoire et douche, ainsi que des toilettes indépendantes. Le deuxième étage propose un vaste plateau à aménager selon vos envies : possibilité d’y créer une suite parentale avec salle d’eau et toilettes, ou bien deux chambres supplémentaires accompagnées d’une salle d’eau. Le sous-sol, entièrement aménagé, accueille une buanderie / chaufferie avec toilettes et arrivées prévues pour une salle de douche, un dressing, une pièce aménagée, une cave à vin ainsi qu’une chambre d’appoint. À l’extérieur, un jardin arboré soigneusement entretenu offre une terrasse et un espace détente. Deux dépendances viennent compléter ce bien : un garage aménagé en salle de sport avec salle de douche et toilettes, ainsi qu’un vaste bureau. Stationnement possible pour un véhicule avec prise de recharge électrique. Situation privilégiée, à proximité immédiate de la forêt, du collège et Lycée Rabelais et des commerces. Contact Barnes - Elise Karamujic : 06 30 71 18 45. Les informations sur les risques auxquels ce bien est exposé sont disponibles sur le site Géorisques. Elise Karamujic immatriculée au RSAC de Nanterre 890 517 527.",
+   "dpe": "E",
+   "extra": {
+    "criteres": [
+     "280 m²"
+    ]
+   },
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "actif": true,
+   "eval": {
+    "insee": "92023",
+    "secteur": "Hors secteur",
+    "commune_ref": "Clamart",
+    "prix_m2": 6036,
+    "usage": "habitation",
+    "dvf_med": 6300,
+    "dvf_n": 39,
+    "ecart_dvf": -0.042,
+    "atouts": [
+     "Jardin",
+     "Terrasse",
+     "Réception",
+     "Sous-sol",
+     "Accès / parking",
+     "Indépendant"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 45
    }
   }
  }
