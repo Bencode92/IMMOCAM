@@ -32,6 +32,7 @@ ATOUTS = {  # mot-clé (sans accent) -> (libellé, points)
 ALERTES = {
     r"hameau|villa privee|voie privee|impasse privee|allee privee": "Voie privée / hameau : règlement à lire",
     r"copropriete": "Copropriété : activités autorisées ?",
+    r"\bappartement|\bduplex\b|\btriplex\b|dernier etage": "Appartement : copropriété, activités autorisées ?",
     r"dpe\W*[fg]\b|\(f\)|\(g\)": "DPE F ou G",
     r"travaux a prevoir|a renover|a restaurer|rehabiliter": "Travaux importants",
     r"monument historique|classe mh|inscrit (a l'inventaire|mh)": "Monument historique",
@@ -151,7 +152,7 @@ def enrich(x, ref, cache, zonages=None):
         sc += 25 if e["ecart_dvf"] <= -0.2 else 18 if e["ecart_dvf"] <= 0 else 10 if e["ecart_dvf"] <= 0.2 else 3
     sc += 30 if usage_pro else 0  # critère n°1 : pas de compensation
     sc += min(30, sum(pts for k, (_, pts) in ATOUTS.items() if re.search(k, texte)))
-    sc -= 10 * sum(1 for a in e["alertes"] if a.startswith(("Voie", "Copro")))
-    sc -= 3 * sum(1 for a in e["alertes"] if not a.startswith(("Voie", "Copro")))
+    sc -= 10 * sum(1 for a in e["alertes"] if a.startswith(("Voie", "Copro", "Appart")))
+    sc -= 3 * sum(1 for a in e["alertes"] if not a.startswith(("Voie", "Copro", "Appart")))
     e["score"] = max(0, min(100, sc))
     return e

@@ -111,15 +111,20 @@ header a.back{font-size:.78rem;color:var(--accent2);text-decoration:none;border:
         <a href="https://www.barnes-international.com/fr/vente/france/neuilly-sur-seine/maison.html" target="_blank">Barnes · Maisons Neuilly</a>
         <a href="https://www.barnes-international.com/fr/vente/france/hauts-de-seine/hotel-particulier.html" target="_blank">Barnes · Hôtels particuliers 92 (Neuilly gardé)</a>
         <a href="https://www.emilegarcin.com/fr/annonces/vente-immobilier" target="_blank">Émile Garcin · tous biens ≥ 500 m² (Paris + Neuilly gardés)</a>
+        <a href="https://www.sothebysrealty-france.com/fr/vente-proprietes-de-luxe/" target="_blank">Sotheby's France (+ Paris Ouest, Propriétés Parisiennes)</a>
+        <a href="https://danielfeau.com/fr/listing/france/vente/maisons/paris" target="_blank">Daniel Féau · maisons Paris / Neuilly</a>
+        <a href="https://kretzrealestate.com/fr/acheter/" target="_blank">Kretz Real Estate</a>
+        <a href="https://www.junot.fr/fr/biens-immobiliers/acheter/" target="_blank">Junot · maisons / hôtels particuliers</a>
+        <a href="https://www.coldwellbanker.fr/vente-immobilier?by_min_area=500" target="_blank">Coldwell Banker · ≥ 500 m²</a>
+        <a href="https://www.vaneau.fr/fr/" target="_blank">Vaneau</a>
+        <a href="https://www.engelvoelkers.com/fr/fr/propriete/res/vendre/maison/ile-de-france/paris" target="_blank">Engel &amp; Völkers · maisons Paris / Neuilly</a>
         <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/maison-pavillon-propriete.html" target="_blank">Licitor · Enchères maisons / propriétés</a>
         <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/immeuble-residentiel.html" target="_blank">Licitor · Enchères immeubles</a>
         <a href="https://www.licitor.com/ventes-aux-encheres-immobilieres/paris-et-ile-de-france/local-a-usage-de-commerce.html" target="_blank">Licitor · Enchères locaux commerciaux</a></div>
       <div><h4>À regarder toi-même (pas encore collectés)</h4>
         <a href="https://www.bnppre.fr/a-vendre/bureau/" target="_blank">BNP Paribas Real Estate · Bureaux à vendre</a>
         <a href="https://www.espaces-atypiques.com/" target="_blank">Espaces Atypiques · lofts, ateliers</a>
-        <a href="https://www.kretzfamily.com/" target="_blank">Kretz Family Real Estate</a>
-        <a href="https://www.junot.fr/" target="_blank">Junot</a>
-        <a href="https://www.feau-immobilier.fr/" target="_blank">Daniel Féau</a></div>
+        <a href="https://www.christiesrealestate.com/" target="_blank">Christie's International Real Estate</a><span>Site en JavaScript : utilise le favori « Copier les annonces »</span></div>
       <div><h4>Bloqués aux robots : crée une alerte e-mail</h4>
         <a href="https://www.bellesdemeures.com/" target="_blank">Belles Demeures</a><span>Type « Hôtel particulier », Paris + Neuilly, ≥ 500 m², alerte quotidienne</span>
         <a href="https://proprietes.lefigaro.fr/" target="_blank">Propriétés Le Figaro</a><span>Catégorie « Hôtel particulier », mêmes zones</span>
@@ -158,8 +163,23 @@ async function init() {
 }
 function setNew(v) { onlyNew = v; document.getElementById('fNew').classList.toggle('on', v); }
 
+// Même bien chez plusieurs agences : même lieu, surface à ±6 %, prix à ±3 % (ou prix caché et surface à ±2 %)
+let AUSSI = {}, CACHE = new Set();
+function regrouper() {
+  AUSSI = {}; CACHE = new Set();
+  const lieuDe = x => x.code_postal || (/neuilly/i.test(x.commune) ? 'neuilly' : x.commune);
+  const pareil = (a, b) => lieuDe(a) === lieuDe(b) && a.source !== b.source && a.surface && b.surface &&
+    (a.prix && b.prix ? Math.abs(a.surface / b.surface - 1) <= .06 && Math.abs(a.prix / b.prix - 1) <= .03 : Math.abs(a.surface / b.surface - 1) <= .02);
+  const L = Object.values(DB.annonces).filter(x => x.actif).sort((a, b) => a.first_seen.localeCompare(b.first_seen) || (b.eval?.score || 0) - (a.eval?.score || 0) || (b.prix ? 1 : 0) - (a.prix ? 1 : 0));
+  for (const x of L) {
+    if (CACHE.has(x.id)) continue;
+    for (const y of L) if (y !== x && !CACHE.has(y.id) && !AUSSI[y.id] && pareil(x, y)) { CACHE.add(y.id); (AUSSI[x.id] = AUSSI[x.id] || []).push(y); }
+  }
+}
+
 function render() {
-  const A = Object.values(DB.annonces);
+  regrouper();
+  const A = Object.values(DB.annonces).filter(x => !CACHE.has(x.id));
   const g = id => document.getElementById(id).value;
   const off = document.getElementById('fOff').checked;
   let L = A.filter(x => {
@@ -186,7 +206,7 @@ function render() {
   document.getElementById('sMaj').textContent = DB.meta.maj ? 'mise à jour ' + new Date(DB.meta.maj).toLocaleDateString('fr-FR') : '';
   const err = Object.keys(DB.meta.erreurs || {});
   document.getElementById('info').innerHTML = `<b>${L.length}</b> annonce${L.length > 1 ? 's' : ''} affichée${L.length > 1 ? 's' : ''}${onlyNew ? ' (nouvelles pour toi)' : ''}.
-    Collecte automatique chaque matin : Barnes, Émile Garcin, enchères Licitor. Belles Demeures, Figaro, CBRE et Leboncoin bloquent les robots : ils arriveront via tes alertes e-mail.
+    Collecte automatique chaque matin : Barnes, Sotheby's, Féau, Kretz, Junot, Émile Garcin, Coldwell, Vaneau, Engel &amp; Völkers, enchères Licitor. Un même bien chez plusieurs agences n'apparaît qu'une fois (« Aussi chez »). Belles Demeures, Figaro, CBRE et Leboncoin bloquent les robots : utilise le favori « Copier les annonces ».
     La note (sur 100) favorise la surface, un prix sous la référence DVF de la commune, un usage déjà bureaux ou commercial et les atouts événementiels ; elle retire des points pour voie privée, copropriété, DPE F/G.${err.length ? ' <span class="neg">Source en panne au dernier passage : ' + err.join(', ') + '.</span>' : ''}`;
   document.getElementById('grid').innerHTML = L.length ? L.map(card).join('') : `<div class="empty">${onlyNew ? 'Rien de nouveau depuis ta dernière visite.' : 'Aucune annonce pour ces filtres.'}</div>`;
 }
@@ -204,6 +224,7 @@ function card(x) {
       <div class="sub">${esc(x.commune)}${e.secteur ? ' · <b>' + esc(e.secteur) + '</b>' : ''} · ${esc(x.source)} · vue le ${new Date(x.first_seen).toLocaleDateString('fr-FR')}${x.dpe ? ' · DPE ' + x.dpe : ''}${x.extra?.audience ? ' · audience ' + esc(x.extra.audience) : ''}</div></div></div>
     <div class="figs"><div>${x.extra?.mise_a_prix ? 'Mise à prix' : 'Prix'}<b>${meur(x.prix)}</b></div><div>Surface<b>${x.surface ? fmt.format(x.surface) + ' m²' : '—'}</b></div>
       <div>€/m²<b>${e.prix_m2 ? fmt.format(e.prix_m2) : '—'}</b></div><div title="Écart avec la médiane DVF ${pro ? 'des immeubles commerciaux' : 'des grandes maisons'} de la commune (${e.dvf_n || 0} ventes)">vs DVF<b>${ecTxt}</b></div></div>
+    ${AUSSI[x.id] ? `<div class="sub" style="margin-top:.35rem">Aussi chez : ${AUSSI[x.id].map(y => `<a href="${esc(y.url)}" target="_blank" rel="noopener" style="color:var(--accent2)">${esc(y.source)}${y.prix && y.prix !== x.prix ? ' (' + meur(y.prix) + ')' : ''} ↗</a>`).join(' · ')}</div>` : ''}
     <div class="chips"><span class="chip ${pro ? 'usage-pro' : 'usage-hab'}">${esc(e.usage || '')}</span>${(e.alertes || []).map(a => `<span class="chip alert">⚠ ${esc(a)}</span>`).join('')}${(e.atouts || []).map(a => `<span class="chip">${esc(a)}</span>`).join('')}</div>
     ${x.description ? `<div class="desc">${esc(x.description)}</div>` : ''}
     <div class="foot"><a class="btn primary" href="${esc(x.url)}" target="_blank" rel="noopener" data-open="${esc(x.id)}" style="text-decoration:none;white-space:nowrap">Voir l'annonce ↗</a><select data-st="${esc(x.id)}">${STATUTS.map(([k, l]) => `<option value="${k}" ${k === st ? 'selected' : ''}>${l}</option>`).join('')}</select>

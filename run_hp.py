@@ -16,6 +16,9 @@ import requests
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from hp.sources import SOURCES, dans_perimetre  # noqa: E402
+from hp.agences import AGENCES  # noqa: E402
+
+SOURCES = {**SOURCES, **AGENCES}
 from hp.enrich import enrich, load_ref, load_cache, GEOCACHE  # noqa: E402
 
 DB = ROOT / "data" / "hp_db.json"
