@@ -1011,7 +1011,7 @@
    "id": "barnes-APM-6012399",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-6012399.html",
-   "titre": "PROPRIETE D'EXCEPTION - OUEST DE PARIS",
+   "titre": "Hôtel particulier | Le Vésinet",
    "type": "hotel particulier",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -1027,6 +1027,7 @@
      "8 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1053,7 +1054,7 @@
    "id": "barnes-APM-86357872",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-germain-en-laye/ref-APM-86357872.html",
-   "titre": "RARE - COEUR DE VILLE - PROPRIÉTÉ D'EXCEPTION-15 CHAMBRES - JARDIN INTERIEUR.",
+   "titre": "Hôtel particulier |...",
    "type": "hotel particulier",
    "commune": "Saint-Germain-en-Laye",
    "code_postal": "",
@@ -1068,6 +1069,7 @@
      "755 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1097,7 +1099,7 @@
    "id": "barnes-APM-84906913",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/paris-16eme/ref-APM-84906913.html",
-   "titre": "Paris XVI - Propriété avec jardin - RARE",
+   "titre": "Maison | Paris 16ème",
    "type": "maison",
    "commune": "Paris 16ème",
    "code_postal": "75016",
@@ -1112,6 +1114,7 @@
      "1 065 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1143,7 +1146,7 @@
    "id": "barnes-APM-87145688",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/paris-16eme/ref-APM-87145688.html",
-   "titre": "HOTEL PARTICULIER - PARIS 16 - FOCH/BOIS DE BOULOGNE - VOIE PRIVÉE - 5/7 CHAMBRES - PISCINE/HAMMAM",
+   "titre": "Maison | Paris 16ème",
    "type": "maison",
    "commune": "Paris 16ème",
    "code_postal": "75016",
@@ -1160,6 +1163,7 @@
      "Surfaces extérieures 40 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1192,7 +1196,7 @@
    "id": "barnes-APM-86500579",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/paris-16eme/ref-APM-86500579.html",
-   "titre": "PARIS XVI - MUETTE - PROPRIETE AVEC JARDIN ET TERRASSE",
+   "titre": "Maison | Paris 16ème",
    "type": "maison",
    "commune": "Paris 16ème, Muette",
    "code_postal": "75016",
@@ -1207,6 +1211,7 @@
      "484 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1239,7 +1244,7 @@
    "id": "barnes-APM-85268166",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/paris-16eme/ref-APM-85268166.html",
-   "titre": "MAISON FAMILIALE - JARDIN ET TERRASSES",
+   "titre": "Maison | Paris 16ème",
    "type": "maison",
    "commune": "Paris 16ème",
    "code_postal": "75016",
@@ -1256,6 +1261,7 @@
      "Surfaces extérieures 140 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1285,7 +1291,7 @@
    "id": "barnes-APM-87071733",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/paris-16eme/ref-APM-87071733.html",
-   "titre": "Paris 16 - Village d'Auteuil - Maison familiale entièrement climatisée",
+   "titre": "Maison | Paris 16ème",
    "type": "maison",
    "commune": "Paris 16ème, Auteuil",
    "code_postal": "75016",
@@ -1301,6 +1307,7 @@
      "5 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1330,7 +1337,7 @@
    "id": "barnes-APM-87172420",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/paris-17eme/ref-APM-87172420.html",
-   "titre": "Paris 17 - Villa des Ternes - Maison 9 chambres avec terrasse et jardin",
+   "titre": "Maison | Paris 17ème",
    "type": "maison",
    "commune": "Paris 17ème",
    "code_postal": "75017",
@@ -1347,6 +1354,7 @@
      "Surfaces extérieures 193 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1378,7 +1386,7 @@
    "id": "barnes-APM-87403225",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/neuilly-sur-seine/ref-APM-87403225.html",
-   "titre": "Neuilly - Peretti- Maison 4/5 chambres - Jardin central et terrasse",
+   "titre": "Maison | Neuilly-sur-Seine",
    "type": "maison",
    "commune": "Neuilly-sur-Seine",
    "code_postal": "",
@@ -1395,6 +1403,7 @@
      "Surfaces extérieures 48 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1422,7 +1431,7 @@
    "id": "barnes-APM-83951228",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/neuilly-sur-seine/ref-APM-83951228.html",
-   "titre": "Neuilly - Voie privée - Hôtel particulier avec jardin de 830 m²",
+   "titre": "Maison | Neuilly-sur-Seine",
    "type": "maison",
    "commune": "Neuilly-sur-Seine",
    "code_postal": "",
@@ -1439,6 +1448,7 @@
      "Surfaces extérieures 851 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1469,7 +1479,7 @@
    "id": "barnes-APM-85959427",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/neuilly-sur-seine/ref-APM-85959427.html",
-   "titre": "Neuilly-sur-Seine - Saussaye - Maison avec jardin 5/6 chambres.",
+   "titre": "Maison | Neuilly-sur-Seine",
    "type": "maison",
    "commune": "Neuilly-sur-Seine",
    "code_postal": "",
@@ -1486,6 +1496,7 @@
      "Surfaces extérieures 192 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1515,7 +1526,7 @@
    "id": "barnes-APM-85486959",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/paris-14eme/ref-APM-85486959.html",
-   "titre": "BIEN SOUS OFFRE ACCEPTÉE - Vente Ensemble Immobilier d'Exception - Paris XIV - Montparnasse - à rénover",
+   "titre": "Maison | Paris 14ème",
    "type": "maison",
    "commune": "Paris 14ème",
    "code_postal": "75014",
@@ -1531,6 +1542,7 @@
      "Surfaces extérieures 3 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1560,7 +1572,7 @@
    "id": "barnes-APM-86901641",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/paris-14eme/ref-APM-86901641.html",
-   "titre": "Paris 14 - Maison esprit loft avec extérieurs - Usage mixte possible",
+   "titre": "Maison | Paris 14ème",
    "type": "maison",
    "commune": "Paris 14ème, Petit-Montrouge",
    "code_postal": "75014",
@@ -1575,6 +1587,7 @@
      "415 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1604,7 +1617,7 @@
    "id": "barnes-APM-87067954",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/neuilly-sur-seine/ref-APM-87067954.html",
-   "titre": "Neuilly-sur-Seine - Saint James - Elégante maison - Terrasses et rooftop - 5 chambres",
+   "titre": "Maison | Neuilly-sur-Seine",
    "type": "maison",
    "commune": "Neuilly-sur-Seine",
    "code_postal": "",
@@ -1621,6 +1634,7 @@
      "Surfaces extérieures 120 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1649,7 +1663,7 @@
    "id": "barnes-APM-86792597",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/courbevoie/ref-APM-86792597.html",
-   "titre": "BECON LES BRUYERES - HOTEL PARTICULIER AVEC GRAND JARDIN",
+   "titre": "Maison | Courbevoie",
    "type": "maison",
    "commune": "Courbevoie",
    "code_postal": "",
@@ -1666,6 +1680,7 @@
      "Surfaces extérieures 16 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1697,7 +1712,7 @@
    "id": "barnes-APM-86722534",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/boulogne-billancourt/ref-APM-86722534.html",
-   "titre": "Somptueux hôtel particulier rénové avec jardin, piscine, terrasses et roof top à Boulogne-Billancourt",
+   "titre": "Maison | Boulogne-Billancourt",
    "type": "maison",
    "commune": "Boulogne-Billancourt",
    "code_postal": "",
@@ -1712,6 +1727,7 @@
      "762 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1742,7 +1758,7 @@
    "id": "barnes-APM-86462147",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/boulogne-billancourt/ref-APM-86462147.html",
-   "titre": "Boulogne Nord – Hôtel particulier 1930 - 11 pièces - Jardin",
+   "titre": "Maison | Boulogne-Billancourt",
    "type": "maison",
    "commune": "Boulogne-Billancourt",
    "code_postal": "",
@@ -1759,6 +1775,7 @@
      "Surfaces extérieures 332 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1786,7 +1803,7 @@
    "id": "barnes-APM-86993601",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/boulogne-billancourt/ref-APM-86993601.html",
-   "titre": "BOULOGNE NORD - Remarquable MAISON AVEC JARDIN & GARAGE",
+   "titre": "Maison | Boulogne-Billancourt",
    "type": "maison",
    "commune": "Boulogne-Billancourt",
    "code_postal": "",
@@ -1802,6 +1819,7 @@
      "5 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1829,7 +1847,7 @@
    "id": "barnes-APM-85999314",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/boulogne-billancourt/ref-APM-85999314.html",
-   "titre": "RARE - APPARTEMENT LOFT 350 m2 Patio, piscine & 2 parkings",
+   "titre": "Maison | Boulogne-Billancourt",
    "type": "maison",
    "commune": "Boulogne-Billancourt, Centre-ville",
    "code_postal": "",
@@ -1844,6 +1862,7 @@
      "350 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1870,7 +1889,7 @@
    "id": "barnes-APM-87037323",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/issy-les-moulineaux/ref-APM-87037323.html",
-   "titre": "Maison d’architecte avec accès direct à la Seine – Île Saint-Germain",
+   "titre": "Maison | Issy-les-Moulineaux",
    "type": "maison",
    "commune": "Issy-les-Moulineaux",
    "code_postal": "",
@@ -1887,6 +1906,7 @@
      "Surfaces extérieures 80 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1918,7 +1938,7 @@
    "id": "barnes-APM-6871147",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-cloud/ref-APM-6871147.html",
-   "titre": "Saint-Cloud Montretout - Maison d'architecte - 5 chambres et grand jardin",
+   "titre": "Maison | Saint-Cloud",
    "type": "maison",
    "commune": "Saint-Cloud",
    "code_postal": "",
@@ -1935,6 +1955,7 @@
      "Surfaces extérieures 689 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -1963,7 +1984,7 @@
    "id": "barnes-APM-86674183",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-cloud/ref-APM-86674183.html",
-   "titre": "Saint-Cloud Montretout - Maison ancienne sur beau jardin exposé sud",
+   "titre": "Maison | Saint-Cloud",
    "type": "maison",
    "commune": "Saint-Cloud",
    "code_postal": "",
@@ -1979,6 +2000,7 @@
      "3 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2011,7 +2033,7 @@
    "id": "barnes-APM-5011150",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/garches/ref-APM-5011150.html",
-   "titre": "Garches - vaste propriété sur très grand terrain",
+   "titre": "Maison | Garches",
    "type": "maison",
    "commune": "Garches",
    "code_postal": "",
@@ -2028,6 +2050,7 @@
      "Surfaces extérieures 2 357 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2056,7 +2079,7 @@
    "id": "barnes-APM-86743779",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/sevres/ref-APM-86743779.html",
-   "titre": "Belle maison ancienne rénovée",
+   "titre": "Maison | Sèvres",
    "type": "maison",
    "commune": "Sèvres",
    "code_postal": "",
@@ -2072,6 +2095,7 @@
      "3 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2101,7 +2125,7 @@
    "id": "barnes-APM-87110065",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/garches/ref-APM-87110065.html",
-   "titre": "Exclusivité- Golf de Saint-Cloud - Propriété de caractère style anglo-normand sur grand terrain arboré",
+   "titre": "Maison | Garches",
    "type": "maison",
    "commune": "Garches",
    "code_postal": "",
@@ -2118,6 +2142,7 @@
      "Surfaces extérieures 10 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2147,7 +2172,7 @@
    "id": "barnes-APM-87514039",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-87514039.html",
-   "titre": "LE VESINET - MAISON CONTEMPORAINE EN EXCELLENT ETAT - 264 M² - PISCINE - 4 CHAMBRES + BUREAU",
+   "titre": "Maison | Le Vésinet",
    "type": "maison",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -2164,6 +2189,7 @@
      "Surfaces extérieures 711 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2191,7 +2217,7 @@
    "id": "barnes-APM-87037126",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-87037126.html",
-   "titre": "LE VESINET - 10' RER - Propriété de charme de 323 m² sur un terrain arboré de 4 209 m² - Maison de gardien et annexe",
+   "titre": "Maison | Le Vésinet",
    "type": "maison",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -2207,6 +2233,7 @@
      "Surfaces extérieures 4 209 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2236,7 +2263,7 @@
    "id": "barnes-APM-86018964",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-86018964.html",
-   "titre": "Vésinet Sud à 10' à pied du RER, magnifique demeure de 300 m² hab., 8 pièces / 5 chambres sur 1.800 m² de terrain.",
+   "titre": "Propriété | Le Vésinet",
    "type": "maison",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -2253,6 +2280,7 @@
      "Surfaces extérieures 1 800 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2282,7 +2310,7 @@
    "id": "barnes-APM-3049635",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-3049635.html",
-   "titre": "LE VÉSINET - Quartier des Pelouses - Maison d'architecte, 5 chambres, à 10 minutes du RER",
+   "titre": "Maison | Le Vésinet",
    "type": "maison",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -2299,6 +2327,7 @@
      "Surfaces extérieures 1 450 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2326,7 +2355,7 @@
    "id": "barnes-APM-87019376",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-87019376.html",
-   "titre": "LE VESINET SUD - MAISON DE MAITRE - 4/5 CHAMBRES - 15 ' RER",
+   "titre": "Maison | Le Vésinet",
    "type": "maison",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -2343,6 +2372,7 @@
      "Surfaces extérieures 1 302 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2372,7 +2402,7 @@
    "id": "barnes-APM-3223355",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-3223355.html",
-   "titre": "Demeure vésigondine d'exception entièrement rénovée - 11 pièces, 310 m² - avec piscine chauffée.",
+   "titre": "Maison | Le Vésinet",
    "type": "maison",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -2389,6 +2419,7 @@
      "Surfaces extérieures 1 542 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2417,7 +2448,7 @@
    "id": "barnes-APM-86507119",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-86507119.html",
-   "titre": "LE VÉSINET - Lac Inférieur - Maison familiale, 5 chambres, jardin et piscine chauffée",
+   "titre": "Maison | Le Vésinet",
    "type": "maison",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -2434,6 +2465,7 @@
      "Surfaces extérieures 1 250 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2466,7 +2498,7 @@
    "id": "barnes-APM-86388028",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/le-vesinet/ref-APM-86388028.html",
-   "titre": "LE VESINET - VILLA CONTEMPORAINE - 5 CHAMBRES - SOUS SOL TOTAL",
+   "titre": "Maison | Le Vésinet",
    "type": "maison",
    "commune": "Le Vésinet",
    "code_postal": "",
@@ -2483,6 +2515,7 @@
      "Surfaces extérieures 1 000 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2512,7 +2545,7 @@
    "id": "barnes-APM-86187170",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-germain-en-laye/ref-APM-86187170.html",
-   "titre": "Rare-Saint Germain en laye-3'RER A -Propriété de charme-7 chambres",
+   "titre": "Maison | Saint-Germain-en-Laye",
    "type": "maison",
    "commune": "Saint-Germain-en-Laye, Alsace",
    "code_postal": "",
@@ -2528,6 +2561,7 @@
      "2 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2556,7 +2590,7 @@
    "id": "barnes-APM-85306189",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-germain-en-laye/ref-APM-85306189.html",
-   "titre": "SAINT-GERMAIN-EN-LAYE – HYPER-CENTRE – MAISON DE CARACTÈRE RÉNOVÉE – 228 M² – 5 CHAMBRES – GRANDE TERRASSE – PATIO – GARAGE DOUBLE",
+   "titre": "Maison | Saint-Germain-en-Laye",
    "type": "maison",
    "commune": "Saint-Germain-en-Laye, Centre Ville",
    "code_postal": "",
@@ -2572,6 +2606,7 @@
      "3 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2601,7 +2636,7 @@
    "id": "barnes-APM-86216197",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/rueil-malmaison/ref-APM-86216197.html",
-   "titre": "LOFT - RUEIL-MALMAISON",
+   "titre": "Maison | Rueil-Malmaison",
    "type": "maison",
    "commune": "Rueil-Malmaison, Jonchère-Malmaison-Saint-Cucufa",
    "code_postal": "",
@@ -2616,6 +2651,7 @@
      "896 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2644,7 +2680,7 @@
    "id": "barnes-APM-85321170",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/rueil-malmaison/ref-APM-85321170.html",
-   "titre": "RUEIL-MALMAISON - HAMEAU DE LA JONCHERE",
+   "titre": "Maison | Rueil-Malmaison",
    "type": "maison",
    "commune": "Rueil-Malmaison, Jonchère-Malmaison-Saint-Cucufa",
    "code_postal": "",
@@ -2661,6 +2697,7 @@
      "Surfaces extérieures 3 047 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2691,7 +2728,7 @@
    "id": "barnes-APM-86359197",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/rueil-malmaison/ref-APM-86359197.html",
-   "titre": "RUEIL-MALMAISON- PROPRIETE HISTORIQUE D'EXCEPTION",
+   "titre": "Maison | Rueil-Malmaison",
    "type": "maison",
    "commune": "Rueil-Malmaison, Bellerive",
    "code_postal": "",
@@ -2707,6 +2744,7 @@
      "Surfaces extérieures 6 151 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2735,7 +2773,7 @@
    "id": "barnes-APM-83317999",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/rueil-malmaison/ref-APM-83317999.html",
-   "titre": "RUEIL MALMAISON - DOMAINE D'EXCEPTION",
+   "titre": "Maison | Rueil-Malmaison",
    "type": "maison",
    "commune": "Rueil-Malmaison, Jonchère-Malmaison-Saint-Cucufa",
    "code_postal": "",
@@ -2752,6 +2790,7 @@
      "Surfaces extérieures 2 680 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2780,7 +2819,7 @@
    "id": "barnes-APM-87330252",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/rueil-malmaison/ref-APM-87330252.html",
-   "titre": "RUEIL-MALMAISON — PARC DE LA MALMAISON",
+   "titre": "Maison | Rueil-Malmaison",
    "type": "maison",
    "commune": "Rueil-Malmaison",
    "code_postal": "",
@@ -2797,6 +2836,7 @@
      "Surfaces extérieures 3 200 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2824,7 +2864,7 @@
    "id": "barnes-APM-87402962",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/rueil-malmaison/ref-APM-87402962.html",
-   "titre": "RUEIL-MALMAISON, BORDS DE SEINE",
+   "titre": "Maison | Rueil-Malmaison",
    "type": "maison",
    "commune": "Rueil-Malmaison",
    "code_postal": "",
@@ -2840,6 +2880,7 @@
      "Surfaces extérieures 2 139 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2871,7 +2912,7 @@
    "id": "barnes-APM-86210556",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/la-celle-saint-cloud/ref-APM-86210556.html",
-   "titre": "Sté Barnes - LA CELLE-SAINT-CLOUD - Coteau des Impressionnistes - Maison d'architecte avec piscine intérieure et home cinéma - 5 chambres",
+   "titre": "Maison | La Celle-Saint-Cloud",
    "type": "maison",
    "commune": "La Celle-Saint-Cloud",
    "code_postal": "",
@@ -2888,6 +2929,7 @@
      "Surfaces extérieures 120 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2917,7 +2959,7 @@
    "id": "barnes-APM-86407299",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/croissy-sur-seine/ref-APM-86407299.html",
-   "titre": "EMPLACEMENT EXCEPTIONNEL POUR CETTE ELEGANTE DEMEURE FIN XIX EME DE 400 M² DANS UN PARC DE 2631 M²",
+   "titre": "Maison | Croissy-sur-Seine",
    "type": "maison",
    "commune": "Croissy-sur-Seine",
    "code_postal": "",
@@ -2933,6 +2975,7 @@
      "4 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -2960,7 +3003,7 @@
    "id": "barnes-APM-87175297",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/bougival/ref-APM-87175297.html",
-   "titre": "BARNES - EXCLUSIVITÉ - BOUGIVAL Centre - Propriété de 364 m² sur 3 000 m² de terrain - 5 chambres",
+   "titre": "Maison | Bougival",
    "type": "maison",
    "commune": "Bougival",
    "code_postal": "",
@@ -2976,6 +3019,7 @@
      "3 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3006,7 +3050,7 @@
    "id": "barnes-APM-85976187",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/garches/ref-APM-85976187.html",
-   "titre": "Propriété d'exception sur grand parc avec piscine et appartement de service",
+   "titre": "Maison | Garches",
    "type": "maison",
    "commune": "Garches, Poincaré - Bergson - Brézin",
    "code_postal": "",
@@ -3022,6 +3066,7 @@
      "2 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3053,7 +3098,7 @@
    "id": "barnes-APM-86990348",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/bougival/ref-APM-86990348.html",
-   "titre": "Sté BARNES - Bougival Hauteurs Calme 5-6 Chambres - Piscine Parcelle 1 500 m² - DPE B",
+   "titre": "Maison | Bougival",
    "type": "maison",
    "commune": "Bougival",
    "code_postal": "",
@@ -3070,6 +3115,7 @@
      "Surfaces extérieures 170 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3096,7 +3142,7 @@
    "id": "barnes-APM-86356700",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/vaucresson/ref-APM-86356700.html",
-   "titre": "Vaucresson, Plateau de Cazes, maison familiale 7 chambres, sur terrain paysagé de 825 m²",
+   "titre": "Maison | Vaucresson",
    "type": "maison",
    "commune": "Vaucresson",
    "code_postal": "",
@@ -3113,6 +3159,7 @@
      "Surfaces extérieures 825 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3142,7 +3189,7 @@
    "id": "barnes-APM-86242611",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/la-celle-saint-cloud/ref-APM-86242611.html",
-   "titre": "Sté Barnes - Maison avec Appartement indépendant - La Celle-Saint-Cloud le Bourg",
+   "titre": "Maison | La Celle-Saint-Cloud",
    "type": "maison",
    "commune": "La Celle-Saint-Cloud",
    "code_postal": "",
@@ -3158,6 +3205,7 @@
      "5 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3188,7 +3236,7 @@
    "id": "barnes-APM-2594580",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-germain-en-laye/ref-APM-2594580.html",
-   "titre": "Saint-Germain-en-Laye - Victor Hugo - 5 chambres - piscine",
+   "titre": "Maison | Saint-Germain-en-Laye",
    "type": "maison",
    "commune": "Saint-Germain-en-Laye, Centre Ville",
    "code_postal": "",
@@ -3204,6 +3252,7 @@
      "5 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3231,7 +3280,7 @@
    "id": "barnes-APM-85586101",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-germain-en-laye/ref-APM-85586101.html",
-   "titre": "SAINT-GERMAIN-EN-LAYE – CENTRE-VILLE – PLACE DU MARCHÉ – MAISON DE CARACTÈRE – 301 M² – 6 CHAMBRES – JARDIN PAYSAGER – GARAGE – RER A",
+   "titre": "Maison | Saint-Germain-en-Laye",
    "type": "maison",
    "commune": "Saint-Germain-en-Laye",
    "code_postal": "",
@@ -3246,6 +3295,7 @@
      "301 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3275,7 +3325,7 @@
    "id": "barnes-APM-85688251",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-germain-en-laye/ref-APM-85688251.html",
-   "titre": "ST GERMAIN EN LAYE /FOURQUEUX - Maison d'architecte 14 pièces 6 chambres",
+   "titre": "Maison | Saint-Germain-en-Laye",
    "type": "maison",
    "commune": "Saint-Germain-en-Laye",
    "code_postal": "",
@@ -3292,6 +3342,7 @@
      "Surfaces extérieures 1 400 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3323,7 +3374,7 @@
    "id": "barnes-APM-87145635",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-germain-en-laye/ref-APM-87145635.html",
-   "titre": "LE PECQ - DOMAINE DE GRANDCHAMP - Villa moderniste 1932, 367 m², 7 chambres, terrasses, appartement indépendant",
+   "titre": "Maison | Saint-Germain-en-Laye",
    "type": "maison",
    "commune": "Saint-Germain-en-Laye",
    "code_postal": "",
@@ -3339,6 +3390,7 @@
      "4 salles de bains/douche"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3357,19 +3409,18 @@
      "Terrasse",
      "Réception",
      "Sous-sol",
-     "Accès / parking",
-     "Indépendant"
+     "Accès / parking"
     ],
     "alertes": [],
     "scr": null,
-    "score": 57
+    "score": 53
    }
   },
   "barnes-APM-87306614": {
    "id": "barnes-APM-87306614",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/saint-germain-en-laye/ref-APM-87306614.html",
-   "titre": "EXCLUSIVITÉ - ST GERMAIN EN LAYE/FOURQUEUX - Maison d'architecte familiale, volumes exceptionnels avec 265 m² habitables - 6 chambres",
+   "titre": "Maison | Saint-Germain-en-Laye",
    "type": "maison",
    "commune": "Saint-Germain-en-Laye",
    "code_postal": "",
@@ -3386,6 +3437,7 @@
      "Surfaces extérieures 1 359 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
@@ -3416,7 +3468,7 @@
    "id": "barnes-APM-84775518",
    "source": "barnes",
    "url": "https://www.barnes-international.com/fr/vente/france/maisons-laffitte/ref-APM-84775518.html",
-   "titre": "Maisons-Laffitte – Ensemble immobilier de caractère avec potentiel d’investissement",
+   "titre": "Maison | Maisons-Laffitte",
    "type": "maison",
    "commune": "Maisons-Laffitte",
    "code_postal": "",
@@ -3433,6 +3485,7 @@
      "Surfaces extérieures 527 m²"
     ]
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-16",
    "actif": true,
