@@ -2,7 +2,8 @@ name: Hotels particuliers
 
 on:
   schedule:
-    - cron: '30 4 * * *'   # chaque matin ~6h30 heure de Paris
+    - cron: '30 4 * * *'   # chaque matin ~5h30 heure de Paris
+    - cron: '15 11 * * *'  # rattrapage ~12h15 si GitHub a sauté le passage du matin
     - cron: '0 3 2 * *'    # le 2 de chaque mois : référentiel DVF
   workflow_dispatch:
 
