@@ -4,7 +4,9 @@
   "total": 113,
   "actives": 113,
   "nouveaux_du_jour": 1,
-  "erreurs": {}
+  "erreurs": {
+   "vaneau": "HTTPSConnectionPool(host='www.vaneau.fr', port=443): Max retries exceeded with url: /fr/vaneau-search/search?field_ad_type%5Beq%5D=buying&offset=0&limit=100&mode=list (Caused by ConnectTimeoutError(<H"
+  }
  },
  "annonces": {
   "barnes-APM-86345121": {
