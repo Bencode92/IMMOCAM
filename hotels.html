@@ -389,20 +389,41 @@ function extraire() {
   };
   // cartes visibles contenant des m² et un prix (ou « prix sur demande ») — lues à chaque pas du défilement,
   // car certains sites (Figaro) n'affichent que les cartes proches de l'écran
-  const lire = () => {
+  const STATS = /m²\s*\d+\s*pi[eè]ces|pi[eè]ces\s*•\s*\d|•\s*\d[\d\s.,]*\s*m(?:²|2)/i;
+  const estCarte = t => /m²|m2\b/.test(t) && (/€/.test(t) || SURDEM.test(t) || STATS.test(t));
+  const lien = u => u && /^http/.test(u) && u.split('#')[0] !== location.href.split('#')[0];
+  const carte = (el, u) => {
+    const t = (el.innerText || '').replace(/\s+/g, ' ').trim();
+    if (!estCarte(t) || t.length > 8000) return;
+    // surface du bien : d'abord la ligne de caractéristiques (« 598m² 10 pièces », « Pièces • 414 m² »), sinon la 1re surface de la carte
+    const st = t.match(/(\d[\d\s  .,]*)\s*m(?:²|2)\s*\d+\s*(?:pi[eè]ces|chambres)/i) || t.match(/•\s*(\d[\d\s  .,]*)\s*m(?:²|2)/);
+    const surf = (st && nb(st[1])) || [...t.matchAll(M2)].map(m => nb(m[1])).find(v => v >= 20 && v < 50000) || 0;
+    const prixs = [...new Set([...t.matchAll(/(\d[\d\s  .]{4,})\s*€/g)].map(m => nb(m[1])).filter(v => v >= 100000))];
+    if (prixs.length > 3) return; // bloc qui contient plusieurs annonces (en-tête, liste entière)
+    const prix = Math.max(0, ...prixs);
+    if (!surf || (!prix && !SURDEM.test(t) && !st)) return; // menus, bandeaux : pas une annonce
+    cartes.add(el);
+    // sans lien exploitable (lien en JavaScript) : adresse de la recherche + repère unique
+    ajoute(lien(u) ? u.split('#')[0] : location.href.split('#')[0] + '#annonce-' + Math.round(surf) + '-' + Math.round(prix), t, surf, prix);
+  };
+  let tour = 0;
+  const lire = (tout) => {
+    // 1) à partir des liens : on remonte jusqu'au bloc qui contient surface + prix
     document.querySelectorAll('a[href]').forEach(a => {
       let el = a;
-      for (let i = 0; i < 10 && el; i++) { const t = el.innerText || ''; if (/m²|m2\b/.test(t) && (/€/.test(t) || SURDEM.test(t) || /m²\s*\d+\s*pi[eè]ces/i.test(t))) break; el = el.parentElement; }
-      if (!el || cartes.has(el)) return;
-      const t = (el.innerText || '').replace(/\s+/g, ' ').trim(), u = a.href.split('#')[0];
-      if (!/m²|m2\b/.test(t) || !(/€/.test(t) || SURDEM.test(t) || /m²\s*\d+\s*pi[eè]ces/i.test(t)) || t.length > 8000 || u === location.href || /^javascript/.test(u)) return;
-      // surface du bien : d'abord la ligne de caractéristiques (« 598m² 10 pièces », « Pièces • 414 m² »), sinon la 1re surface de la carte
-      const st = t.match(/(\d[\d\s\u00a0\u202f.,]*)\s*m(?:²|2)\s*\d+\s*(?:pi[eè]ces|chambres)/i) || t.match(/•\s*(\d[\d\s\u00a0\u202f.,]*)\s*m(?:²|2)/);
-      const surf = (st && nb(st[1])) || [...t.matchAll(M2)].map(m => nb(m[1])).find(v => v >= 20 && v < 50000) || 0;
-      const prix = Math.max(0, ...[...t.matchAll(/(\d[\d\s  .]{4,})\s*€/g)].map(m => nb(m[1])).filter(v => v >= 100000));
-      if (!surf || (!prix && !SURDEM.test(t) && !st)) return; // menus, bandeaux : pas une annonce
-      cartes.add(el);
-      ajoute(u, t, surf, prix);
+      for (let i = 0; i < 10 && el; i++) { if (estCarte(el.innerText || '')) break; el = el.parentElement; }
+      if (!el || cartes.has(el) || !lien(a.href)) return;
+      carte(el, a.href);
+    });
+    // 2) cartes sans lien classique (clic géré en JavaScript) : plus petits blocs avec une ligne de caractéristiques
+    if (!tout && tour++ % 4) return; // passe coûteuse : un pas sur quatre, et à la fin
+    const cand = [...document.querySelectorAll('article, li, div, section')].filter(e => {
+      const t = e.textContent || ''; return t.length < 8000 && STATS.test(t) && /m²|m2\b/.test(t) && (/€/.test(t) || SURDEM.test(t)); // textContent : rapide
+    });
+    cand.filter(e => !cand.some(c => c !== e && e.contains(c))).forEach(e => {
+      if ([...cartes].some(c => c.contains(e) || e.contains(c))) return;
+      const a = e.querySelector('a[href]') || e.closest('a[href]');
+      carte(e, (a && a.href) || e.getAttribute('data-href') || e.getAttribute('data-url') || '');
     });
   };
   const sortir = () => {
@@ -421,7 +442,7 @@ function extraire() {
     if (best) sc = best;
   }
   let y = 0, n = 0;
-  const pas = () => { lire(); y += 600; n++; sc.scrollTo({ top: y, behavior: 'instant' }); if (y < sc.scrollHeight && n < 150) setTimeout(pas, 250); else setTimeout(() => { lire(); fin(); sortir(); sc.scrollTo({ top: 0, behavior: 'instant' }); }, 700); };
+  const pas = () => { lire(); y += 600; n++; sc.scrollTo({ top: y, behavior: 'instant' }); if (y < sc.scrollHeight && n < 150) setTimeout(pas, 250); else setTimeout(() => { lire(true); fin(); sortir(); sc.scrollTo({ top: 0, behavior: 'instant' }); }, 700); };
   pas();
 }
 const CODE = '(' + extraire.toString() + ')()';
@@ -454,7 +475,7 @@ document.getElementById('bColle').addEventListener('click', async () => {
   let ok = 0, hors = 0, deja = 0;
   for (const x of L) {
     const cp = cpDe(x.commune + ' ' + x.titre), neuilly = /neuilly/i.test(x.commune + x.titre);
-    if (!(cp || neuilly || /^paris$/i.test(x.commune)) || (x.surface && x.surface < 500)) { hors++; continue; }
+    if (!(cp || neuilly) || (x.surface && x.surface < 500)) { hors++; continue; } // « Paris » seul (ex. « à 10 min de Paris ») ne suffit pas
     if (DB.annonces[x.id]) {
       deja++;
       const y = DB.annonces[x.id];
