@@ -405,6 +405,7 @@ function extraire() {
     (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert(msg), () => prompt('Copie ce texte (Cmd+C) puis colle-le dans IMMOCAM :', txt));
   };
   // descend la page pas à pas pour charger les annonces affichées au défilement, puis extrait
+  console.log('%cIMMOCAM : lecture des annonces en cours, la page défile… attends le message (≈ 10 s).', 'font-size:14px;font-weight:bold;color:#1e3a5f');
   let y = 0, n = 0;
   const pas = () => { y += 1000; n++; window.scrollTo(0, y); if (y < document.body.scrollHeight && n < 80) setTimeout(pas, 150); else setTimeout(() => { window.scrollTo(0, 0); fin(); }, 600); };
   pas();
