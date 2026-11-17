@@ -412,7 +412,18 @@ document.getElementById('bColle').addEventListener('click', async () => {
   for (const x of L) {
     const cp = cpDe(x.commune + ' ' + x.titre), neuilly = /neuilly/i.test(x.commune + x.titre);
     if (!(cp || neuilly || /^paris$/i.test(x.commune)) || (x.surface && x.surface < 500)) { hors++; continue; }
-    if (DB.annonces[x.id]) { deja++; DB.annonces[x.id].last_seen = today; continue; }
+    if (DB.annonces[x.id]) {
+      deja++;
+      const y = DB.annonces[x.id];
+      y.last_seen = today; y.actif = true;
+      if (U.manuel[x.id]) { // annonce collée : on met à jour surface / prix / texte avec la nouvelle copie
+        if (y.prix && x.prix && y.prix !== x.prix) (y.historique_prix = y.historique_prix || []).push({ date: today, avant: y.prix });
+        Object.assign(y, { surface: x.surface, prix: x.prix, titre: x.titre, description: x.description });
+        y.eval.prix_m2 = x.surface && x.prix ? x.prix / x.surface : 0;
+        U.manuel[x.id] = y;
+      }
+      continue;
+    }
     const sect = neuilly ? 'Neuilly' : PARIS_OUEST.includes(cp) ? 'Paris ouest' : 'Paris (autre)';
     const y = { ...x, code_postal: cp, commune: neuilly ? 'Neuilly-sur-Seine' : cp ? 'Paris ' + (+cp.slice(3)) + 'e' : 'Paris', dpe: '', extra: { manuel: true },
       first_seen: today, last_seen: today, actif: true, historique_prix: [],
@@ -422,7 +433,7 @@ document.getElementById('bColle').addEventListener('click', async () => {
   save();
   const src = document.getElementById('fSource'), have = [...src.options].map(o => o.value);
   [...new Set(Object.values(U.manuel).map(x => x.source))].filter(s => !have.includes(s)).forEach(s => src.add(new Option(s, s)));
-  alert(`${ok} annonce(s) ajoutée(s), ${deja} déjà présente(s), ${hors} hors périmètre (hors Paris/Neuilly ou < 500 m²).`);
+  alert(`${ok} annonce(s) ajoutée(s), ${deja} déjà présente(s) (mises à jour), ${hors} hors périmètre (hors Paris/Neuilly ou < 500 m²).`);
   render();
 });
 init();
