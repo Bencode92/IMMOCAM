@@ -369,7 +369,7 @@ function extraire() {
     if (!/m²|m2\b/.test(t) || !/€/.test(t) || t.length > 2000 || vus.has(u) || u === location.href || /^javascript/.test(u)) return;
     if (cartes.has(el)) return;
     cartes.add(el); vus.add(u);
-    const surf = Math.max(0, ...[...t.matchAll(/(\d[\d\s\u00a0\u202f.,]*)\s*m(?:²|2\b)/g)].map(m => nb(m[1])).filter(v => v < 50000));
+    const surf = [...t.matchAll(/(\d[\d\s\u00a0\u202f.,]*)\s*m(?:²|2\b)/g)].map(m => nb(m[1])).find(v => v >= 20 && v < 50000) || 0; // 1re surface de la carte (pas le terrain cité dans la description)
     const prix = Math.max(0, ...[...t.matchAll(/(\d[\d\s\u00a0\u202f.]{4,})\s*€/g)].map(m => nb(m[1])));
     const v = (t.match(/Paris\s*\(?\d{1,2}|750\d\d|Neuilly[- ]sur[- ]Seine|Paris/i) || [''])[0];
     if (!surf || !prix) return; // menus, bandeaux : pas une annonce
