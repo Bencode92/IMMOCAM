@@ -359,27 +359,55 @@ document.getElementById('fImp').addEventListener('change', async e => {
 
 // Extracteur exécuté SUR le site d'annonces (favori ou console) : repère les cartes contenant m² et €
 function extraire() {
+  const cp = typeof copy === 'function' ? copy : null; // copy() de la console, capturé avant l'attente
   const R = [], vus = new Set(), cartes = new Set(), host = location.hostname.replace(/^www\./, '');
-  const nb = s => parseFloat(String(s).replace(/[\s\u00a0\u202f.]/g, '').replace(',', '.')) || 0;
-  document.querySelectorAll('a[href]').forEach(a => {
-    let el = a;
-    for (let i = 0; i < 7 && el; i++) { const t = el.innerText || ''; if (/m²|m2\b/.test(t) && /€/.test(t)) break; el = el.parentElement; }
-    if (!el) return;
-    const t = (el.innerText || '').replace(/\s+/g, ' ').trim(), u = a.href.split('#')[0];
-    if (!/m²|m2\b/.test(t) || !/€/.test(t) || t.length > 2000 || vus.has(u) || u === location.href || /^javascript/.test(u)) return;
-    if (cartes.has(el)) return;
-    cartes.add(el); vus.add(u);
-    const surf = [...t.matchAll(/(\d[\d\s\u00a0\u202f.,]*)\s*m(?:²|2\b)/g)].map(m => nb(m[1])).find(v => v >= 20 && v < 50000) || 0; // 1re surface de la carte (pas le terrain cité dans la description)
-    const prix = Math.max(0, ...[...t.matchAll(/(\d[\d\s\u00a0\u202f.]{4,})\s*€/g)].map(m => nb(m[1])));
+  const nb = s => parseFloat(String(s).replace(/[\s  .]/g, '').replace(',', '.')) || 0;
+  const M2 = /(\d[\d\s  .,]*)\s*m(?:²|2\b)/g, SURDEM = /sur demande|nous consulter|prix confidentiel/i;
+  const ajoute = (u, t, surf, prix) => {
+    if (!u || vus.has(u) || !surf) return;
+    vus.add(u);
     const v = (t.match(/Paris\s*\(?\d{1,2}|750\d\d|Neuilly[- ]sur[- ]Seine|Paris/i) || [''])[0];
-    if (!surf || !prix) return; // menus, bandeaux : pas une annonce
     R.push({ id: host + ':' + u, source: host, url: u, titre: t.slice(0, 140), commune: v, surface: surf, prix, description: t.slice(0, 800) });
-  });
-  const txt = JSON.stringify(R);
-  const msg = R.length + ' annonces copiées. Va sur IMMOCAM et clique « Coller des annonces ».';
-  if (typeof copy === 'function') { copy(txt); alert(msg); return; } // console Chrome/Safari : copie sans passer par le presse-papiers web
-  (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert(msg),
-    () => prompt('Copie ce texte (Cmd+C) puis colle-le dans IMMOCAM :', txt));
+  };
+  const fin = () => {
+    // 1) données structurées (ld+json) quand le site en publie
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(sc => {
+      let j; try { j = JSON.parse(sc.textContent); } catch (e) { return; }
+      const pile = [j];
+      while (pile.length) {
+        const o = pile.pop();
+        if (!o || typeof o !== 'object') continue;
+        if (Array.isArray(o)) { pile.push(...o); continue; }
+        Object.values(o).forEach(v => v && typeof v === 'object' && pile.push(v));
+        const fs = o.floorSize && (o.floorSize.value || o.floorSize), u = o.url || o['@id'];
+        if (fs && u && /^http/.test(u)) {
+          const off = o.offers || {}, prix = nb(off.price || o.price || 0);
+          ajoute(u.split('#')[0], [o.name, o.address && (o.address.addressLocality + ' ' + (o.address.postalCode || '')), o.description].filter(Boolean).join(' '), nb(fs), prix);
+        }
+      }
+    });
+    // 2) cartes visibles contenant des m² et un prix (ou « prix sur demande »)
+    document.querySelectorAll('a[href]').forEach(a => {
+      let el = a;
+      for (let i = 0; i < 10 && el; i++) { const t = el.innerText || ''; if (/m²|m2\b/.test(t) && (/€/.test(t) || SURDEM.test(t))) break; el = el.parentElement; }
+      if (!el || cartes.has(el)) return;
+      const t = (el.innerText || '').replace(/\s+/g, ' ').trim(), u = a.href.split('#')[0];
+      if (!/m²|m2\b/.test(t) || !(/€/.test(t) || SURDEM.test(t)) || t.length > 2500 || u === location.href || /^javascript/.test(u)) return;
+      const surf = [...t.matchAll(M2)].map(m => nb(m[1])).find(v => v >= 20 && v < 50000) || 0; // 1re surface de la carte (pas le terrain cité plus loin)
+      const prix = Math.max(0, ...[...t.matchAll(/(\d[\d\s  .]{4,})\s*€/g)].map(m => nb(m[1])).filter(v => v >= 100000));
+      if (!surf || (!prix && !SURDEM.test(t))) return; // menus, bandeaux : pas une annonce
+      cartes.add(el);
+      ajoute(u, t, surf, prix);
+    });
+    const txt = JSON.stringify(R);
+    const msg = R.length + ' annonces copiées. Va sur IMMOCAM et clique « Coller des annonces ».';
+    if (cp) { cp(txt); alert(msg); return; }
+    (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert(msg), () => prompt('Copie ce texte (Cmd+C) puis colle-le dans IMMOCAM :', txt));
+  };
+  // descend la page pas à pas pour charger les annonces affichées au défilement, puis extrait
+  let y = 0, n = 0;
+  const pas = () => { y += 1000; n++; window.scrollTo(0, y); if (y < document.body.scrollHeight && n < 80) setTimeout(pas, 150); else setTimeout(() => { window.scrollTo(0, 0); fin(); }, 600); };
+  pas();
 }
 const CODE = '(' + extraire.toString() + ')()';
 document.getElementById('bkm').href = 'javascript:' + encodeURIComponent(CODE);
