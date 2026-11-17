@@ -287,6 +287,7 @@ function render() {
     const st = U.st[x.id] || 'nouveau', e = x.eval || {};
     const pipe = vue === 'pipeline';
     if (!pipe && onlyNew && !isNew(x) && !ouvertes.has(x.id)) return false;
+    if (ARR_EXCLUS.includes(x.code_postal)) return false;
     if (!off && (!x.actif || st === 'ecarte')) return false;
     if (!pipe && g('fStatut') && st !== g('fStatut')) return false;
     if (g('fSource') && x.source !== g('fSource')) return false;
@@ -465,6 +466,7 @@ document.getElementById('bloques').addEventListener('click', e => {
 });
 
 const PARIS_OUEST = ['75007', '75008', '75015', '75016', '75116', '75017'];
+const ARR_EXCLUS = ['75010', '75011', '75013', '75018', '75019', '75020']; // arrondissements écartés
 function cpDe(v) { const m = String(v).match(/750(\d\d)/) || String(v).match(/Paris\s*\(?(\d{1,2})/i); return m ? '750' + String(+m[1]).padStart(2, '0') : ''; }
 document.getElementById('bColle').addEventListener('click', async () => {
   let txt = '';
@@ -475,7 +477,7 @@ document.getElementById('bColle').addEventListener('click', async () => {
   let ok = 0, hors = 0, deja = 0;
   for (const x of L) {
     const cp = cpDe(x.commune + ' ' + x.titre), neuilly = /neuilly/i.test(x.commune + x.titre);
-    if (!(cp || neuilly) || (x.surface && x.surface < 500)) { hors++; continue; } // « Paris » seul (ex. « à 10 min de Paris ») ne suffit pas
+    if (!(cp || neuilly) || ARR_EXCLUS.includes(cp) || (x.surface && x.surface < 500)) { hors++; continue; } // « Paris » seul (ex. « à 10 min de Paris ») ne suffit pas
     if (DB.annonces[x.id]) {
       deja++;
       const y = DB.annonces[x.id];
@@ -497,7 +499,7 @@ document.getElementById('bColle').addEventListener('click', async () => {
   save();
   const src = document.getElementById('fSource'), have = [...src.options].map(o => o.value);
   [...new Set(Object.values(U.manuel).map(x => x.source))].filter(s => !have.includes(s)).forEach(s => src.add(new Option(s, s)));
-  alert(`${ok} annonce(s) ajoutée(s), ${deja} déjà présente(s) (mises à jour), ${hors} hors périmètre (hors Paris/Neuilly ou < 500 m²).`);
+  alert(`${ok} annonce(s) ajoutée(s), ${deja} déjà présente(s) (mises à jour), ${hors} hors périmètre (hors Paris/Neuilly, 10e/11e/13e/18e/19e/20e, ou < 500 m²).`);
   render();
 });
 init();

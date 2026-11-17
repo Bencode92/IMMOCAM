@@ -39,9 +39,13 @@ BARNES = "https://www.barnes-international.com/fr/vente/france/"
 SURFACE_MIN = 500
 
 
+ARR_EXCLUS = {"75010", "75011", "75013", "75018", "75019", "75020"}  # arrondissements écartés à la demande
+
+
 def dans_perimetre(x):
-    """Paris ou Neuilly-sur-Seine, et au moins 500 m² (surface inconnue gardée : à vérifier)."""
-    lieu = (x.get("code_postal") or "").startswith("75") or "neuilly" in (x.get("commune") or "").lower()
+    """Paris (hors 10e, 11e, 13e, 18e, 19e, 20e) ou Neuilly-sur-Seine, et au moins 500 m² (surface inconnue gardée : à vérifier)."""
+    cp = x.get("code_postal") or ""
+    lieu = (cp.startswith("75") and cp not in ARR_EXCLUS) or "neuilly" in (x.get("commune") or "").lower()
     return lieu and not (x.get("surface") and x["surface"] < SURFACE_MIN)
 
 
