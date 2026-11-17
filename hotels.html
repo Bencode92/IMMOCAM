@@ -194,7 +194,7 @@ const SITES = [
   ['Belles Demeures', 'bellesdemeures.com', 'bloq', 'https://www.bellesdemeures.com/vente/france/ile-de-france/paris/hotel-particulier-luxe/tt-2-tb-14-pl-311/'],
   ['Propriétés Le Figaro / Figaro Immobilier', 'proprietes.lefigaro.fr', 'bloq', 'https://proprietes.lefigaro.fr/annonces/hotel+particulier-paris-ile+de+france-france/'],
   ['Leboncoin', 'leboncoin.fr', 'bloq', 'https://www.leboncoin.fr/recherche?category=9&locations=Paris&real_estate_type=1&square=500-max'],
-  ['Lux-Residence', 'lux-residence.com', 'bloq', 'https://www.lux-residence.com/fr/ventes/hotel-particulier/paris.htm'],
+  ['Lux-Residence', 'lux-residence.com', 'main', 'https://www.lux-residence.com/', 'Inutile : mêmes annonces que Belles Demeures (même groupe, mêmes numéros)'],
   ['JLL · bureaux', 'jll.fr', 'bloq', 'https://immobilier.jll.fr/'],
 ];
 const ETATS = { auto: ['auto', '✓ Automatique chaque matin — tout le catalogue'], part: ['part', 'Automatique, partiel'],
@@ -361,12 +361,13 @@ document.getElementById('fImp').addEventListener('change', async e => {
 function extraire() {
   const cp = typeof copy === 'function' ? copy : null; // copy() de la console, capturé avant l'attente
   const R = [], vus = new Set(), cartes = new Set(), host = location.hostname.replace(/^www\./, '');
-  const nb = s => parseFloat(String(s).replace(/[\s  .]/g, '').replace(',', '.')) || 0;
+  const nb = s => { s = String(s).replace(/[\s  ]/g, ''); if (/^\d+\.\d{1,2}$/.test(s)) return parseFloat(s); return parseFloat(s.replace(/\./g, '').replace(',', '.')) || 0; }; // « 955.7 » = décimal, « 1.261 » = milliers
   const M2 = /(\d[\d\s  .,]*)\s*m(?:²|2\b)/g, SURDEM = /sur demande|nous consulter|prix confidentiel/i;
   const ajoute = (u, t, surf, prix) => {
     if (!u || vus.has(u) || !surf) return;
     vus.add(u);
-    const v = (t.match(/Paris\s*\(?\d{1,2}|750\d\d|Neuilly[- ]sur[- ]Seine|Paris/i) || [''])[0];
+    const ar = u.match(/paris-(\d{1,2})(?:eme|er|e)\b/i) || u.match(/\b750(\d\d)\b/); // l'adresse de l'annonce donne souvent l'arrondissement
+    const v = (t.match(/Paris\s*\(?\d{1,2}|750\d\d|Neuilly[- ]sur[- ]Seine/i) || [''])[0] || (ar ? 'Paris ' + (+ar[1]) : /neuilly/i.test(u) ? 'Neuilly-sur-Seine' : '');
     R.push({ id: host + ':' + u, source: host, url: u, titre: t.slice(0, 140), commune: v, surface: surf, prix, description: t.slice(0, 800) });
   };
   const fin = () => {
@@ -456,7 +457,6 @@ const RECH = [
   ['Figaro Immobilier · ventes Paris', 'https://immobilier.lefigaro.fr/annonces/immobilier-vente-bien-paris+75000.html'],
   ['Leboncoin · maisons ≥ 500 m² Paris', 'https://www.leboncoin.fr/recherche?category=9&locations=Paris&real_estate_type=1&square=500-max'],
   ['Leboncoin · maisons ≥ 500 m² Neuilly', 'https://www.leboncoin.fr/recherche?category=9&locations=Neuilly-sur-Seine_92200&real_estate_type=1&square=500-max'],
-  ['Lux-Residence · hôtels particuliers Paris', 'https://www.lux-residence.com/fr/ventes/hotel-particulier/paris.htm'],
 ];
 document.getElementById('bloques').innerHTML = RECH.map(([n, u]) => `<tr><td><b>${esc(n)}</b></td><td><a class="btn" href="${u}" target="_blank" rel="noopener" style="text-decoration:none">Ouvrir la recherche ↗</a></td><td><button class="btn primary" data-code>Copier le code</button></td></tr>`).join('');
 document.getElementById('bloques').addEventListener('click', e => {
