@@ -392,13 +392,15 @@ function extraire() {
   const lire = () => {
     document.querySelectorAll('a[href]').forEach(a => {
       let el = a;
-      for (let i = 0; i < 10 && el; i++) { const t = el.innerText || ''; if (/m²|m2\b/.test(t) && (/€/.test(t) || SURDEM.test(t))) break; el = el.parentElement; }
+      for (let i = 0; i < 10 && el; i++) { const t = el.innerText || ''; if (/m²|m2\b/.test(t) && (/€/.test(t) || SURDEM.test(t) || /m²\s*\d+\s*pi[eè]ces/i.test(t))) break; el = el.parentElement; }
       if (!el || cartes.has(el)) return;
       const t = (el.innerText || '').replace(/\s+/g, ' ').trim(), u = a.href.split('#')[0];
-      if (!/m²|m2\b/.test(t) || !(/€/.test(t) || SURDEM.test(t)) || t.length > 2500 || u === location.href || /^javascript/.test(u)) return;
-      const surf = [...t.matchAll(M2)].map(m => nb(m[1])).find(v => v >= 20 && v < 50000) || 0; // 1re surface de la carte (pas le terrain cité plus loin)
+      if (!/m²|m2\b/.test(t) || !(/€/.test(t) || SURDEM.test(t) || /m²\s*\d+\s*pi[eè]ces/i.test(t)) || t.length > 8000 || u === location.href || /^javascript/.test(u)) return;
+      // surface du bien : d'abord la ligne de caractéristiques (« 598m² 10 pièces », « Pièces • 414 m² »), sinon la 1re surface de la carte
+      const st = t.match(/(\d[\d\s\u00a0\u202f.,]*)\s*m(?:²|2)\s*\d+\s*(?:pi[eè]ces|chambres)/i) || t.match(/•\s*(\d[\d\s\u00a0\u202f.,]*)\s*m(?:²|2)/);
+      const surf = (st && nb(st[1])) || [...t.matchAll(M2)].map(m => nb(m[1])).find(v => v >= 20 && v < 50000) || 0;
       const prix = Math.max(0, ...[...t.matchAll(/(\d[\d\s  .]{4,})\s*€/g)].map(m => nb(m[1])).filter(v => v >= 100000));
-      if (!surf || (!prix && !SURDEM.test(t))) return; // menus, bandeaux : pas une annonce
+      if (!surf || (!prix && !SURDEM.test(t) && !st)) return; // menus, bandeaux : pas une annonce
       cartes.add(el);
       ajoute(u, t, surf, prix);
     });
