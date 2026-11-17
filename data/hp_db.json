@@ -1,9 +1,9 @@
 {
  "meta": {
-  "maj": "2026-11-16",
-  "total": 112,
-  "actives": 112,
-  "nouveaux_du_jour": 155,
+  "maj": "2026-11-17",
+  "total": 113,
+  "actives": 113,
+  "nouveaux_du_jour": 1,
   "erreurs": {}
  },
  "annonces": {
@@ -28,7 +28,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -75,7 +75,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -118,7 +118,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -161,7 +161,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -205,7 +205,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -255,7 +255,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -298,7 +298,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -340,7 +340,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -373,7 +373,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -406,7 +406,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -441,7 +441,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -474,7 +474,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75107",
@@ -507,7 +507,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -542,7 +542,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -577,7 +577,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -612,7 +612,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -647,7 +647,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75104",
@@ -680,7 +680,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -716,7 +716,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -749,7 +749,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -782,7 +782,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -815,7 +815,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -848,7 +848,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -881,7 +881,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -916,7 +916,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -951,7 +951,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -989,7 +989,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1027,7 +1027,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1062,7 +1062,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -1100,7 +1100,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1135,7 +1135,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -1168,7 +1168,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1201,7 +1201,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -1234,7 +1234,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75104",
@@ -1272,7 +1272,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1307,7 +1307,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1340,7 +1340,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -1376,7 +1376,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -1412,7 +1412,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -1447,7 +1447,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -1483,7 +1483,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -1518,8 +1518,9 @@
    "description": "Idéalement situé au coeur du quartier Ternes, cet immeuble de bureaux et d'activités en pleine propriété est proposé à la vente entièrement loué.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75117",
@@ -1552,8 +1553,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1586,8 +1588,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1620,8 +1623,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -1654,8 +1658,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -1688,8 +1693,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75107",
@@ -1724,8 +1730,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1758,8 +1765,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1794,8 +1802,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1828,8 +1837,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1862,8 +1872,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1896,8 +1907,9 @@
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1930,8 +1942,9 @@
    "description": "Cette annonce de bureau en vente à 75005 PARIS - 816 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 160127",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75105",
@@ -1962,8 +1975,9 @@
    "description": "Cette annonce de bureau en vente à 75005 PARIS - 525,4 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 172060",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75105",
@@ -1994,8 +2008,9 @@
    "description": "Cette annonce de bureau en vente à 75006 PARIS - 737 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 169479",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -2026,8 +2041,9 @@
    "description": "Cette annonce de bureau en vente à 75008 PARIS - 911 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 160152",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2058,8 +2074,9 @@
    "description": "Cette annonce de bureau en vente à 75008 PARIS - 1453,8 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 177531",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2090,8 +2107,9 @@
    "description": "Cette annonce de bureau en vente à 75008 PARIS - 512 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 153125",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2122,8 +2140,9 @@
    "description": "Cette annonce de bureau en vente à 75009 PARIS - 598 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 161581",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75109",
@@ -2154,8 +2173,9 @@
    "description": "Cette annonce de bureau en vente/location 6 PLACE D'ALLERAY à 75015 PARIS - 17870,3 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 65893",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2186,8 +2206,9 @@
    "description": "Cette annonce de bureau en vente à 75015 PARIS - 630 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 64170",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2218,8 +2239,9 @@
    "description": "Cette annonce de bureau en vente 122 RUE DE JAVEL à 75015 PARIS - 565 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 167182",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2250,8 +2272,9 @@
    "description": "Cette annonce de bureau en vente à 75015 PARIS - 585 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 170245",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2282,8 +2305,9 @@
    "description": "Cette annonce de bureau en vente 72-76 RUE DE L'EGLISE à 75015 PARIS - 585 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 167183",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2314,8 +2338,9 @@
    "description": "Cette annonce de bureau en vente à 75116 PARIS - 856,9 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 67806",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -2346,8 +2371,9 @@
    "description": "Cette annonce de bureau en vente AVENEW, 113BIS AVENUE CHARLES DE GAULLE à 92200 NEUILLY SUR SEINE - 2044 m² vous est proposée par CBRE, votre conseil en immobilier d'entreprise. Référence de l'offre : 163093",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -2378,8 +2404,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 2525m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -2410,8 +2437,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 992m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2442,8 +2470,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 1053m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75117",
@@ -2474,8 +2503,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 823m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -2506,8 +2536,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 2623m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75114",
@@ -2538,8 +2569,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 1005m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2570,8 +2602,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 515m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75112",
@@ -2602,8 +2635,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 530m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75109",
@@ -2634,8 +2668,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 609m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75112",
@@ -2666,8 +2701,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 530m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75114",
@@ -2698,8 +2734,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 520m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2730,8 +2767,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 725m² à Paris en Île-de-France sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75112",
@@ -2762,8 +2800,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 734m² à Neuilly-sur-Seine 92200 – Ile-de-France - Hauts-de-Seine sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -2794,8 +2833,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 791m² à Neuilly-sur-Seine 92200 – Ile-de-France - Hauts-de-Seine sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -2826,8 +2866,9 @@
    "description": "Découvrez notre offre de bureau à vendre de 1198m² à Neuilly-Plaisance 93360 – Ile-de-France - Seine-Saint-Denis sur bnppre.fr, spécialiste en immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -2858,8 +2899,9 @@
    "description": "Entre Opéra et Vendôme, rue Louis le Grand (Paris 2e), l'agence YMA requalifie, pour ALTAREA et JP MORGAN, un ensemble immobilier de 15 000 m2 d'espaces de bureaux.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75102",
@@ -2890,8 +2932,9 @@
    "description": "Niché dans le cœur du Quartier Central des Affaires, cet immeuble de bureau à la location, conçu dans un style Art Nouveau, offre une signature architecturale distinctive qui marie l'histoire et la modernité.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75117",
@@ -2922,8 +2965,9 @@
    "description": "Entre Opéra et Vendôme, rue Louis le Grand (Paris 2e), l'agence YMA requalifie, pour ALTAREA et JP MORGAN, un ensemble immobilier de 15 000 m2 d'espaces de bureaux.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75102",
@@ -2954,8 +2998,9 @@
    "description": "Situé dans le prestigieux 7ème arrondissement, à deux pas de la Tour Eiffel, ce duplex de bureaux avec accès indépendant sur rue est disponible à la location.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75107",
@@ -2990,8 +3035,9 @@
    "description": "À la croisée des quartiers Batignolles et Épinettes, dans un secteur en pleine évolution, Knight Frank vous propose une surface de bureaux située dans un immeuble moderne et fonctionnel.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75117",
@@ -3022,8 +3068,9 @@
    "description": "INVESTISSEMENT - Nous vous proposons une surface à louer à l'acquisition. Au sud-ouest de Paris, le 15ème arrondissement borde la Seine et relie le centre de la capitale aux pôles d'Issy-les- Moulineaux et de Boulogne-Billancourt.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -3054,8 +3101,9 @@
    "description": "Knight Frank vous propose EN EXCLUSIVITÉ À LA VENTE un local commercial d'environ 673 m², idéalement situé au coeur du 1er arrondissement de Paris, à proximité immédiate de la Bourse de Commerce, de la rue Saint-Honoré et de la place des Victoires.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75101",
@@ -3086,8 +3134,9 @@
    "description": "Knight Frank vous propose à proximité de la place Denfert Rochereau et de toutes ses commodités une surface de bureaux dans une coproprieté. Les locaux, situés au 1er étage, ont très peu de contraintes porteuses ce qui permet un aménagement optimal.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75114",
@@ -3120,8 +3169,9 @@
    "description": "Proche des Grands Boulevards et de plusieurs lignes de transports en commun, Knight Frank vous propose dans un bel immeuble ancien rénové, une surface de bureaux climatisée à vendre répartie en plusieurs lots.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75109",
@@ -3152,8 +3202,9 @@
    "description": "Idéalement situé à proximité de la place Saint-George, nous vous proposons à l'acquisition un immeuble indépendant de bureaux en R+3. Cet immeuble offre plus de 146 m² d'espaces extérieurs répartis en 2 terrasses au rez-de-chaussée et au 1er étage et un patio au rez-de-jardin.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75109",
@@ -3188,8 +3239,9 @@
    "description": "Paris Beaugrenelle x Knight Frank vous propose une surface de bureaux à vendre située en plein cœur du 15 arrondissement de Paris / 37 quai de Grenelle.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -3220,8 +3272,9 @@
    "description": "Secteur Paris Étoile x Knight Frank vous propose une opportunité rare d'acquisition de bureaux, idéalement situés à proximité immédiate du Pont de l'Alma et du Triangle d'Or.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -3252,8 +3305,9 @@
    "description": "Nous vous proposons un immeuble indépendant à Neuilly sur Seine à louer ou à vendre de 1 441 m² idéalement situé sur l'axe de l'avenue Charles de Gaulle, à 2 minutes à pied du métro ligne 1 Pont de Neuilly.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -3286,8 +3340,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux 38 Rue Du General Foy 75008 Paris 582 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -3318,8 +3373,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux 12-14 Rue Lantiez 75017 Paris 570 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75117",
@@ -3350,8 +3406,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux Avenue Du President Wilson 75016 Paris 735 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -3382,8 +3439,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Ou Location Bureaux 241 Rue Saint-Denis 75002 Paris 1823.67 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75102",
@@ -3414,8 +3472,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Ou Location Bureaux 96 Rue Des Entrepreneurs 75015 Paris 1082.75 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -3446,8 +3505,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux 10 Rue Chevreul 92150 Suresnes 1344.8 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3478,8 +3538,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux 23 Rue Raspail 94200 Ivry Sur Seine 1904 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3510,8 +3571,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux 92120 Montrouge 3612.66 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3542,8 +3604,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux 92120 Montrouge 702.67 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3574,8 +3637,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux 77 Rue Jean Bleuzen 92170 Vanves 930 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3606,8 +3670,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Ou Location Bureaux 11-15 Avenue De La Paix 92120 Montrouge 1155.9 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3638,8 +3703,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Ou Location Bureaux 11-15 Avenue De La Paix 92120 Montrouge 671.2 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3670,8 +3736,9 @@
    "description": "Retrouvez toutes les informations sur ce Achat Ou Location Bureaux 22 Quai Du President Carnot 92210 Saint Cloud 2306 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3702,8 +3769,9 @@
    "description": "Nous vous proposons en exclusivité un magnifique hôtel particulier et son pavillon à la vente.Cet ensemble en parfait état vous étonnera par son architecture, ses vitraux et son cachet.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -3736,8 +3804,9 @@
    "description": "A proximité immédiate de l'avenue Hoche et du Parc Monceau, nous vous proposons un magnifique hôtel particulier d'angle de 700 m² édifié en 1881.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -3770,8 +3839,9 @@
    "description": "A vendre Opportunité. Situé dans le 5ème arrondissement, entre le Jardin du Luxembourg et le Jardin des Plantes et à proximité de la ligne de métro 7 Les Gobelins, cet immeuble indépendant en copropriété totalement restructuré offre des surfaces commerciales agrémentées d'une cour",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75105",
@@ -3808,8 +3878,9 @@
    "description": "Aussi rare qu'exceptionnel sur le secteur ! Au pied de la Gare de Lyon, Wellstone vous propose à la vente, dans un immeuble haussmannien de grand standing, différentes surfaces de 150m² environ à rénover.",
    "dpe": "",
    "extra": {},
+   "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
+   "last_seen": "2026-11-17",
    "actif": true,
    "eval": {
     "insee": "75112",
@@ -3826,6 +3897,40 @@
     ],
     "scr": null,
     "score": 62
+   }
+  },
+  "sothebys-pp3-1691": {
+   "id": "sothebys-pp3-1691",
+   "source": "sothebys",
+   "url": "https://www.sothebysrealty-france.com/fr/immobilier-luxe/ref-pp3-1691/vente-maison-de-ville-paris-8-pieces-5-chambres-75007/",
+   "titre": "maison de ville – Paris 7",
+   "type": "maison",
+   "commune": "Paris 7e",
+   "code_postal": "75007",
+   "adresse": "",
+   "surface": 509.0,
+   "prix": 25000000.0,
+   "description": "Quartier Musée Rodin, cette exceptionnelle maison de ville de 510 m² loi Carrez (680 m² au sol) est issue de la métamorphose d'un ancien atelier de menuiserie…",
+   "dpe": "",
+   "extra": {},
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "actif": true,
+   "eval": {
+    "insee": "75107",
+    "secteur": "Paris ouest",
+    "commune_ref": "Paris 7e Arrondissement",
+    "prix_m2": 49116,
+    "usage": "habitation : compensation à Paris",
+    "dvf_med": 30154,
+    "dvf_n": 12,
+    "ecart_dvf": 0.629,
+    "atouts": [
+     "Verrière / atelier"
+    ],
+    "alertes": [],
+    "scr": null,
+    "score": 26
    }
   }
  }
