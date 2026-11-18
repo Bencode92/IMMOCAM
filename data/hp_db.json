@@ -1901,13 +1901,18 @@
    "code_postal": "75016",
    "adresse": "",
    "surface": 549.0,
-   "prix": 9250000.0,
+   "prix": 8990000.0,
    "description": "View this luxury Apartment/Flat in Paris listed for  9.250.000,00 €. Browse 27 photos and property details.",
    "dpe": "",
    "extra": {
     "agence": "Daniel Féau Conseil Immobilier Christie's International Real Estate"
    },
-   "historique_prix": [],
+   "historique_prix": [
+    {
+     "date": "2026-11-18",
+     "avant": 9250000.0
+    }
+   ],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-18",
    "actif": true,
@@ -1915,11 +1920,11 @@
     "insee": "75116",
     "secteur": "Paris ouest",
     "commune_ref": "Paris 16e Arrondissement",
-    "prix_m2": 16849,
+    "prix_m2": 16375,
     "usage": "habitation : compensation à Paris",
     "dvf_med": 17867,
     "dvf_n": 93,
-    "ecart_dvf": -0.057,
+    "ecart_dvf": -0.084,
     "atouts": [],
     "alertes": [
      "Appartement : copropriété, activités autorisées ?"
