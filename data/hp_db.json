@@ -2,7 +2,7 @@
  "meta": {
   "maj": "2026-11-19",
   "total": 113,
-  "actives": 113,
+  "actives": 111,
   "nouveaux_du_jour": 0,
   "erreurs": {}
  },
@@ -299,7 +299,7 @@
    "historique_prix": [],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-19",
-   "actif": true,
+   "actif": false,
    "eval": {
     "insee": "92051",
     "secteur": "Neuilly",
@@ -1915,7 +1915,7 @@
    ],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-19",
-   "actif": true,
+   "actif": false,
    "eval": {
     "insee": "75116",
     "secteur": "Paris ouest",
