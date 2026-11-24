@@ -3346,11 +3346,16 @@
    "code_postal": "75008",
    "adresse": "",
    "surface": 582.0,
-   "prix": 12900000.0,
+   "prix": 11000000.0,
    "description": "Retrouvez toutes les informations sur ce Achat Bureaux 38 Rue Du General Foy 75008 Paris 582 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
    "dpe": "",
    "extra": {},
-   "historique_prix": [],
+   "historique_prix": [
+    {
+     "date": "2026-11-24",
+     "avant": 12900000.0
+    }
+   ],
    "first_seen": "2026-11-16",
    "last_seen": "2026-11-24",
    "actif": true,
@@ -3358,11 +3363,11 @@
     "insee": "75108",
     "secteur": "Paris ouest",
     "commune_ref": "Paris 8e Arrondissement",
-    "prix_m2": 22165,
+    "prix_m2": 18900,
     "usage": "bureaux / commercial (à vérifier)",
     "dvf_med": 13645,
     "dvf_n": 195,
-    "ecart_dvf": 0.624,
+    "ecart_dvf": 0.385,
     "atouts": [],
     "alertes": [],
     "scr": null,
