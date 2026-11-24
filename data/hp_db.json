@@ -1,8 +1,8 @@
 {
  "meta": {
-  "maj": "2026-11-23",
+  "maj": "2026-11-24",
   "total": 114,
-  "actives": 98,
+  "actives": 111,
   "nouveaux_du_jour": 0,
   "erreurs": {}
  },
@@ -28,7 +28,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -75,7 +75,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -118,7 +118,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -161,7 +161,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -205,7 +205,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -255,7 +255,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -298,7 +298,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -340,7 +340,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -373,7 +373,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -406,7 +406,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -441,7 +441,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -507,7 +507,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -542,7 +542,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -577,7 +577,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -612,7 +612,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -647,7 +647,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75104",
@@ -680,7 +680,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -716,7 +716,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -749,7 +749,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -782,7 +782,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -815,7 +815,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -848,7 +848,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -881,7 +881,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -916,7 +916,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -951,7 +951,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -989,7 +989,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1027,7 +1027,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1062,7 +1062,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -1100,7 +1100,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1135,7 +1135,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -1168,7 +1168,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1201,7 +1201,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -1234,7 +1234,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75104",
@@ -1272,7 +1272,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1307,7 +1307,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1340,7 +1340,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -1376,7 +1376,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -1412,7 +1412,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -1441,30 +1441,35 @@
    "code_postal": "",
    "adresse": "",
    "surface": 600.0,
-   "prix": 12640000.0,
+   "prix": 10000000.0,
    "description": "Hôtel particulier de 600m² entièrement refait à neuf par architecte en 2018. Aménagé sur quatre niveaux et un sous-sol, il se compose comme suit :\nAu rez-de-chaussée, un hall d'entrée desservant un vaste séjour, une salle à manger, un bureau et de WC séparés.",
    "dpe": "",
    "extra": {},
-   "historique_prix": [],
+   "historique_prix": [
+    {
+     "date": "2026-11-24",
+     "avant": 12640000.0
+    }
+   ],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
     "secteur": "Neuilly",
     "commune_ref": "Neuilly-sur-Seine",
-    "prix_m2": 21067,
+    "prix_m2": 16667,
     "usage": "habitation",
     "dvf_med": 15959,
     "dvf_n": 63,
-    "ecart_dvf": 0.32,
+    "ecart_dvf": 0.044,
     "atouts": [
      "Jardin",
      "Sous-sol"
     ],
     "alertes": [],
     "scr": null,
-    "score": 37
+    "score": 44
    }
   },
   "engel-voelkers-W-049UPL": {
@@ -1483,7 +1488,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -1520,7 +1525,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75117",
@@ -1555,7 +1560,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1590,7 +1595,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1625,7 +1630,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -1660,7 +1665,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -1695,7 +1700,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75107",
@@ -1767,7 +1772,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1804,7 +1809,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1839,7 +1844,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1874,7 +1879,7 @@
    },
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -1949,7 +1954,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75105",
@@ -1982,7 +1987,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75105",
@@ -2015,7 +2020,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -2048,7 +2053,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2081,7 +2086,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2114,7 +2119,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2147,7 +2152,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75109",
@@ -2180,7 +2185,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2213,7 +2218,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2246,7 +2251,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2279,7 +2284,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2312,7 +2317,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -2345,7 +2350,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -2378,7 +2383,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -2411,7 +2416,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -2444,7 +2449,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2477,7 +2482,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75117",
@@ -2510,7 +2515,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75106",
@@ -2543,7 +2548,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75114",
@@ -2576,7 +2581,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2609,7 +2614,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75112",
@@ -2642,7 +2647,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75109",
@@ -2675,7 +2680,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75112",
@@ -2708,7 +2713,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75114",
@@ -2741,7 +2746,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -2774,7 +2779,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75112",
@@ -2807,7 +2812,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -2840,7 +2845,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -2873,7 +2878,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "92051",
@@ -2906,8 +2911,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75102",
     "secteur": "Paris (autre)",
@@ -2939,8 +2944,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75117",
     "secteur": "Paris ouest",
@@ -2972,8 +2977,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75102",
     "secteur": "Paris (autre)",
@@ -3005,8 +3010,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75107",
     "secteur": "Paris ouest",
@@ -3042,8 +3047,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75117",
     "secteur": "Paris ouest",
@@ -3075,8 +3080,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75115",
     "secteur": "Paris ouest",
@@ -3108,8 +3113,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75101",
     "secteur": "Paris (autre)",
@@ -3141,8 +3146,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75114",
     "secteur": "Paris (autre)",
@@ -3176,8 +3181,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75109",
     "secteur": "Paris (autre)",
@@ -3209,8 +3214,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75109",
     "secteur": "Paris (autre)",
@@ -3246,8 +3251,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75115",
     "secteur": "Paris ouest",
@@ -3279,8 +3284,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "75116",
     "secteur": "Paris ouest",
@@ -3312,8 +3317,8 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22",
-   "actif": false,
+   "last_seen": "2026-11-24",
+   "actif": true,
    "eval": {
     "insee": "92051",
     "secteur": "Neuilly",
@@ -3347,7 +3352,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -3380,7 +3385,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75117",
@@ -3413,7 +3418,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -3446,7 +3451,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75102",
@@ -3479,7 +3484,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75115",
@@ -3512,7 +3517,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3545,7 +3550,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3578,7 +3583,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3611,7 +3616,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3644,7 +3649,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3677,7 +3682,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3710,7 +3715,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3743,7 +3748,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75100",
@@ -3776,7 +3781,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75116",
@@ -3811,7 +3816,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75108",
@@ -3846,7 +3851,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75105",
@@ -3885,7 +3890,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75112",
@@ -3920,7 +3925,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75107",
@@ -3955,7 +3960,7 @@
    "extra": {},
    "historique_prix": [],
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "actif": true,
    "eval": {
     "insee": "75117",
