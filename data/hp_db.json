@@ -1,9 +1,9 @@
 {
  "meta": {
   "maj": "2026-11-25",
-  "total": 114,
-  "actives": 111,
-  "nouveaux_du_jour": 0,
+  "total": 115,
+  "actives": 112,
+  "nouveaux_du_jour": 1,
   "erreurs": {}
  },
  "annonces": {
@@ -3983,6 +3983,38 @@
     "alertes": [],
     "scr": null,
     "score": 73
+   }
+  },
+  "cushman-198727": {
+   "id": "cushman-198727",
+   "source": "cushman",
+   "url": "https://immobilier.cushmanwakefield.fr/achat-bureaux/bureaux-a-vendre-paris-75009-198727",
+   "titre": "Bureaux – 13-15 Rue De Calais 75009 Paris",
+   "type": "bureaux",
+   "commune": "Paris 9e",
+   "code_postal": "75009",
+   "adresse": "",
+   "surface": 1677.0,
+   "prix": 25993500.0,
+   "description": "Retrouvez toutes les informations sur ce Achat Bureaux 13-15 Rue De Calais 75009 Paris 1677 M². Cushman & Wakefield le leader mondial de l’immobilier d’entreprise.",
+   "dpe": "",
+   "extra": {},
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "actif": true,
+   "eval": {
+    "insee": "75109",
+    "secteur": "Paris (autre)",
+    "commune_ref": "Paris 9e Arrondissement",
+    "prix_m2": 15500,
+    "usage": "bureaux / commercial (à vérifier)",
+    "dvf_med": 9827,
+    "dvf_n": 94,
+    "ecart_dvf": 0.577,
+    "atouts": [],
+    "alertes": [],
+    "scr": null,
+    "score": 58
    }
   }
  }
