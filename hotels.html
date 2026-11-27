@@ -153,6 +153,17 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '
 let DB = { meta: {}, annonces: {} }, U = load(), onlyNew = true;
 const ouvertes = new Set(); // traitées pendant cette visite : restent affichées jusqu'au rechargement
 function load() { let u; try { u = JSON.parse(localStorage.getItem(LS)); } catch (e) {} u = u || {}; return { vus: u.vus || {}, st: u.st || {}, notes: u.notes || {}, manuel: u.manuel || {} }; }
+// Annonce collée absente des collages des 10 derniers jours de son site → « Retirée » (le site l'a enlevée).
+// Un nouveau collage qui la contient la réactive.
+function majCollees() {
+  const dern = {};
+  for (const x of Object.values(U.manuel)) if (!dern[x.source] || x.last_seen > dern[x.source]) dern[x.source] = x.last_seen;
+  for (const x of Object.values(U.manuel)) {
+    const ecart = (new Date(dern[x.source]) - new Date(x.last_seen)) / 864e5;
+    x.actif = ecart <= 10;
+    if (DB.annonces[x.id]) DB.annonces[x.id].actif = x.actif;
+  }
+}
 function save() { try { localStorage.setItem(LS, JSON.stringify(U)); } catch (e) {} }
 const isNew = x => !U.vus[x.id];
 
@@ -161,6 +172,7 @@ async function init() {
     const r = await fetch('data/hp_db.json?t=' + Date.now());
     DB = await r.json();
     Object.assign(DB.annonces, U.manuel);
+    majCollees();
   } catch (e) {
     document.getElementById('info').textContent = 'Impossible de charger data/hp_db.json.';
     return;
@@ -288,7 +300,7 @@ function render() {
     const pipe = vue === 'pipeline';
     if (!pipe && onlyNew && !isNew(x) && !ouvertes.has(x.id)) return false;
     if (ARR_EXCLUS.includes(x.code_postal)) return false;
-    if (!off && (!x.actif || st === 'ecarte')) return false;
+    if (!off && (st === 'ecarte' || (!x.actif && st === 'nouveau'))) return false; // un bien déjà suivi reste visible, marqué « Retirée »
     if (!pipe && g('fStatut') && st !== g('fStatut')) return false;
     if (g('fSource') && x.source !== g('fSource')) return false;
     const z = g('fZone'), sec = e.secteur || '';
@@ -496,7 +508,7 @@ document.getElementById('bColle').addEventListener('click', async () => {
       eval: { secteur: sect, prix_m2: x.surface && x.prix ? x.prix / x.surface : 0, usage: 'à vérifier (collé à la main)', alertes: [], atouts: [], score: 0 } };
     U.manuel[x.id] = y; DB.annonces[x.id] = y; ok++;
   }
-  save();
+  majCollees(); save();
   const src = document.getElementById('fSource'), have = [...src.options].map(o => o.value);
   [...new Set(Object.values(U.manuel).map(x => x.source))].filter(s => !have.includes(s)).forEach(s => src.add(new Option(s, s)));
   alert(`${ok} annonce(s) ajoutée(s), ${deja} déjà présente(s) (mises à jour), ${hors} hors périmètre (hors Paris/Neuilly, 10e/11e/13e/18e/19e/20e, ou < 500 m²).`);
